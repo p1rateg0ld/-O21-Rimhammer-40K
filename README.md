@@ -1,11 +1,9 @@
 # N17 Rimhammer 40K
 Warhammer 40K introduced to Rimworld in a vanilla style. See discussions for full feature list and compatibility.
 #
-If you want help or to ask any questions, discuss anything about the mod with other users or simply keep up to date on progress, feel free to join the Rimhammer 40K Discord! I (Neronix17) won't be responding to comments on Steam itself anymore so it'll be the best way to contact me.
+If you want help or to ask any questions, discuss anything about the mod with other users or simply keep up to date on progress, feel free to join the Rimhammer 40K Discord!
 
 https://discord.gg/sApZcRS
-
-I've also made a submission form for anyone to add backstories to races, do as many as you want, I'll add them as I can. Submit Backstory[docs.google.com]
 
 ## Load Order:
 * Core
