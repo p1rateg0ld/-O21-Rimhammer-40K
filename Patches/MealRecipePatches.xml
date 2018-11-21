@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<!-- Meal Disallowed Defaults -->
+		<xpath>/Defs/RecipeDef[@Name="CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+		<value>
+			<li>Meat_Alien_Tau</li>
+			<li>Meat_Alien_Kroot</li>			
+			<li>Meat_Alien_Vespid</li>
+		</value>
+	</Operation>
+
+</Patch>

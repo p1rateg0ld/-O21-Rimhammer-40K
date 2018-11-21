@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!--==================== Imperial - Earthshaker Cannon Sound =========================-->
+	<SoundDef>
+		<defName>EarthshakerSound</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+					<clipFolderPath>Weapons/Ranged/Earthshaker_Shot</clipFolderPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>75.0</min>        
+					<max>85.0</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>false</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!--==================== Eldar - Vibro Cannon Sound =========================-->
+	<SoundDef>
+		<defName>VibrocannonSound</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+					<clipFolderPath>Weapons/Ranged/Vibrocannon_Shot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>65.0</min>        
+					<max>75.0</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>false</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

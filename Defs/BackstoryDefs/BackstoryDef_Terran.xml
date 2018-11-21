@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Terran Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Child of the Imperium -->
+		<defName>BackstoryTerranChild00</defName>
+		<title>Child of the Imperium</title>
+		<titleShort>Imperium Child</titleShort>
+		<baseDescription>This Terran grew up on one of the many relatively safe Imperium worlds.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+			<li>GuevesaBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Child of the Imperium -->
+		<defName>BackstoryTerranChild01</defName>
+		<title>Child of Valhalla</title>
+		<titleShort>Valhallan Child</titleShort>
+		<baseDescription>[PAWN_nameDef] grew up on Valhalla, surviving the harsh conditions of the frozen world. They spent most of their lives in Hive Cities and have adapted to living underground for long periods of time too.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>ValhallanBackstory</li>
+			<li>GuevesaBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Child of the Imperium -->
+		<defName>BackstoryTerranChild02</defName>
+		<title>Child of Krieg</title>
+		<titleShort>Krieg Child</titleShort>
+		<baseDescription>[PAWN_nameDef] grew up on Krieg, somehow surviving the deadly conditions of their irradiated world, little is know about Krieg children or how they can grow up in such a dangerous environment.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>KriegBackstory</li>
+			<li>GuevesaBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Terran Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Cadian Soldier -->
+		<defName>BackstoryTerran00</defName>
+		<title>Cadian Soldier</title>
+		<titleShort>Soldier</titleShort>
+		<baseDescription>Having known what life was like on Cadia before it was destroyed, this brave soldier of the Imperium has pushed out to the edge of the galaxy, to fight Chaos and get some revenge on them for destroying their home.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran01</defName>
+		<title>Cadian Farmer</title>
+		<titleShort>Farmer</titleShort>
+		<baseDescription>Cadian by heritage only, this farmer upped roots from their homeworld and joined up with the military.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran02</defName>
+		<title>Valhallan Conscript</title>
+		<titleShort>Valhallan Conscript</titleShort>
+		<baseDescription>After growing up on frozen tundras of Valhalla, [PAWN_nameDef] was recruited into a Valhallan Imperial Guard regiment to fight and defend the Imperium.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>ValhallanBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran03</defName>
+		<title>Valhallan Conscript</title>
+		<titleShort>Valhallan Conscript</titleShort>
+		<baseDescription>After growing up on frozen tundras of Valhalla, [PAWN_nameDef] was recruited into a Valhallan Imperial Guard regiment to fight and defend the Imperium.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>ValhallanBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran04</defName>
+		<title>Valhallan Conscript</title>
+		<titleShort>Valhallan Conscript</titleShort>
+		<baseDescription>After growing up on frozen tundras of Valhalla, [PAWN_nameDef] was recruited into a Valhallan Imperial Guard regiment to fight and defend the Imperium.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>ValhallanBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran05</defName>
+		<title>Cadian Medic</title>
+		<titleShort>Medic</titleShort>
+		<baseDescription>[PAWN_nameDef] wanted to be a doctor, curing various illnesses and helping humanity better themselves. That was before they were talked into being in the military as a combat medic, that recruiter sure was persistent...</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran06</defName>
+		<title>Cadian Builder</title>
+		<titleShort>Builder</titleShort>
+		<baseDescription>[PAWN_nameDef] started as an apprentice for their local construction company, rebuilding towns that were raveged on their homeworld by raiding Orks after they were run off the planet by Space Marines. The Orks returned and now [PAWN_nameDef] is fighting back, getting some well deserved revenge against the big green brutes that stole their family from them.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran07</defName>
+		<title>Cadian Colonist</title>
+		<titleShort>Colonist</titleShort>
+		<baseDescription>[PAWN_nameDef] enlisted so they could visit other worlds, coming from a poor background they aren't exactly great at anything in particular but have been around enough to know a little of everything.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran08</defName>
+		<title>Cadian Colonist</title>
+		<titleShort>Colonist</titleShort>
+		<baseDescription>[PAWN_nameDef] enlisted so they could visit other worlds, coming from a poor background they aren't exactly great at anything in particular but have been around enough to know a little of everything.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran09</defName>
+		<title>Cadian Colonist</title>
+		<titleShort>Colonist</titleShort>
+		<baseDescription>[PAWN_nameDef] enlisted so they could visit other worlds, coming from a poor background they aren't exactly great at anything in particular but have been around enough to know a little of everything.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran10</defName>
+		<title>Cadian Social Worker</title>
+		<titleShort>Social Worker</titleShort>
+		<baseDescription>[PAWN_nameDef] worked with orphaned children before enlisting, they are very well skilled at conflict resolution and negotiation.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran11</defName>
+		<title>Cadian Miner</title>
+		<titleShort>Miner</titleShort>
+		<baseDescription>[PAWN_nameDef] worked in mines before enlisting, since they spent all day swinging a pick they have quite a right hook.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran12</defName>
+		<title>Cadian Artist</title>
+		<titleShort>Artist</titleShort>
+		<baseDescription>[PAWN_nameDef] used to be an artist, they made wood sculptures as well as decorative furniture and paintings.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Cadian Farmer -->
+		<defName>BackstoryTerran13</defName>
+		<title>Cadian Carpenter</title>
+		<titleShort>Carpenter</titleShort>
+		<baseDescription>[PAWN_nameDef] practiced woodworking prior to becoming a Guardsman, they were also quite good with non-wood materials too.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Krieg Soldier -->
+		<defName>BackstoryTerran14</defName>
+		<title>Krieg Guardsman</title>
+		<titleShort>Krieg Guardsman</titleShort>
+		<baseDescription>Very little is known about Krieg and how they have so many guardsman, and since they aren't exactly the most talkative bunch nobody really learns much from them either.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>KriegBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-10</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Krieg Soldier -->
+		<defName>BackstoryTerran15</defName>
+		<title>Krieg Guardsman</title>
+		<titleShort>Krieg Guardsman</titleShort>
+		<baseDescription>Very little is known about Krieg and how they have so many guardsman, and since they aren't exactly the most talkative bunch nobody really learns much from them either.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>KriegBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-10</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Krieg Soldier -->
+		<defName>BackstoryTerran16</defName>
+		<title>Krieg Guardsman</title>
+		<titleShort>Krieg Guardsman</titleShort>
+		<baseDescription>Very little is known about Krieg and how they have so many guardsman, and since they aren't exactly the most talkative bunch nobody really learns much from them either.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>KriegBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-10</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

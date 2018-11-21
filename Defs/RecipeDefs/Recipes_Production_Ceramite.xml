@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>SmeltCeramiteLowGrade</defName>
+		<label>smelt low grade ceramite</label>
+		<description>Manufacture low grade ceramite from raw ceramite.</description>
+		<jobString>Smelting low grade ceramite.</jobString>
+		<workAmount>120</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCeramite</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<CeramiteLowGrade>30</CeramiteLowGrade>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCeramite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>N17_Imp_Refining</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>SmeltCeramiteMedGrade</defName>
+		<label>smelt medium grade ceramite</label>
+		<description>Manufacture medium grade ceramite from raw ceramite and steel.</description>
+		<jobString>Smelting medium grade ceramite.</jobString>
+		<workAmount>240</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCeramite</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<CeramiteMedGrade>30</CeramiteMedGrade>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCeramite</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>N17_Imp_Ceramite01</researchPrerequisite>
+	</RecipeDef>
+	
+
+	<RecipeDef>
+		<defName>SmeltCeramiteHighGrade</defName>
+		<label>smelt high grade ceramite</label>
+		<description>Manufacture high grade ceramite from raw ceramite and plasteel.</description>
+		<jobString>Smelting high grade ceramite.</jobString>
+		<workAmount>480</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCeramite</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<CeramiteHighGrade>30</CeramiteHighGrade>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCeramite</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>N17_Imp_Ceramite02</researchPrerequisite>
+	</RecipeDef>
+</Defs>

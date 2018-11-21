@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ================== Tau Railgun ================== -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="TAURailgun"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <canForceAttack>True</canForceAttack>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="TAURailgun"]/comps</xpath>
+		<value>			
+			<li Class="TurretExtensions.CompProperties_Upgradable">
+				<description>Replace the barrel, firing pin, and computer.</description>
+				<costList>
+					<Plasteel>30</Plasteel>
+					<ComponentSpacer>1</ComponentSpacer>
+				</costList>
+				<researchPrerequisites>
+					<li>HeavyTurrets</li>
+				</researchPrerequisites>
+				<workToUpgrade>3000</workToUpgrade>
+				<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyTurret>0.05</ShootingAccuracyTurret>
+				</statOffsets>
+				<barrelDurabilityFactor>1.6</barrelDurabilityFactor>
+				<turretTopGraphicPath>Things/Building/Security/TAU/TAU_railgun_top_upgrade</turretTopGraphicPath>
+				<turretTopDrawSize>6</turretTopDrawSize>
+			</li>
+        </value>
+    </Operation>
+	
+	<!-- ==================TAU Missle Pod================== -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="TAUMisslePod"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <canForceAttack>True</canForceAttack>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="TAUMisslePod"]/comps</xpath>
+		<value>			
+			<li Class="TurretExtensions.CompProperties_Upgradable">
+				<description>Replace the barrel, firing pin, and computer.</description>
+				<costList>
+					<Plasteel>30</Plasteel>
+					<ComponentSpacer>1</ComponentSpacer>
+				</costList>
+				<researchPrerequisites>
+					<li>HeavyTurrets</li>
+				</researchPrerequisites>
+				<workToUpgrade>3000</workToUpgrade>
+				<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyTurret>0.05</ShootingAccuracyTurret>
+				</statOffsets>
+				<barrelDurabilityFactor>1.6</barrelDurabilityFactor>
+				<turretTopGraphicPath>Things/Building/Security/TAU/TAU_missle_top_upgrade</turretTopGraphicPath>
+				<turretTopDrawSize>3</turretTopDrawSize>
+			</li>
+        </value>
+    </Operation>
+	
+	<!-- ==================TAU Gauss Cannon================== -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="TAUGaussCannon"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <canForceAttack>True</canForceAttack>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="TAUGaussCannon"]/comps</xpath>
+		<value>			
+			<li Class="TurretExtensions.CompProperties_Upgradable">
+				<description>Replace the barrel, firing pin, and computer.</description>
+				<costList>
+					<Plasteel>30</Plasteel>
+					<ComponentSpacer>1</ComponentSpacer>
+				</costList>
+				<researchPrerequisites>
+					<li>HeavyTurrets</li>
+				</researchPrerequisites>
+				<workToUpgrade>3000</workToUpgrade>
+				<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyTurret>0.05</ShootingAccuracyTurret>
+				</statOffsets>
+				<barrelDurabilityFactor>1.6</barrelDurabilityFactor>
+				<turretTopGraphicPath>Things/Building/Security/TAU/TAU_gauss_top_upgrade</turretTopGraphicPath>
+				<turretTopDrawSize>3</turretTopDrawSize>
+			</li>
+        </value>
+    </Operation>
+</Patch>

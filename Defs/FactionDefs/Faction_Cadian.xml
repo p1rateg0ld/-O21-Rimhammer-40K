@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FactionDef>
+		<defName>IGCadian412</defName>
+		<label>412th Cadian Regiment</label>
+		<description>The 412th Cadian took part in the campaign on the Ice World of Lorn V in order to retrieve a long-lost Imperator-class Titan known as the Dominatus.</description>
+		<pawnsPlural>Cadians</pawnsPlural>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>15</earliestRaidDays>
+		<canMakeRandomly>True</canMakeRandomly>
+		<autoFlee>false</autoFlee>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Commissar</leaderTitle>
+		<permanentEnemy>false</permanentEnemy>
+		<expandingIconTexture>World/IG412BaseIcon</expandingIconTexture>
+		<colorSpectrum>
+			<li>(107, 142, 35)</li>
+		</colorSpectrum>
+		<startingGoodwill>
+			<min>-100</min>
+			<max>-80</max>
+		</startingGoodwill>
+		<fixedName>412th Cadian Regiment</fixedName>
+		<settlementNameMaker>NamerIGCadianBase</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategories>
+			<li>TerranBackstory</li>
+		</backstoryCategories>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+		<naturalColonyGoodwill>
+			<min>-100</min>
+			<max>100</max>
+		</naturalColonyGoodwill>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Cadian_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-75</min>
+			<max>60</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<IGCommissar_Cadian>1</IGCommissar_Cadian>
+					<IGOfficer_Cadian>1</IGOfficer_Cadian>
+					<IGSoldier_Cadian>250</IGSoldier_Cadian>
+					<IGKasrkin_Cadian>250</IGKasrkin_Cadian>
+					<IGTrooper_Cadian>250</IGTrooper_Cadian>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<IGCommissar_Cadian>200</IGCommissar_Cadian>
+					<IGOfficer_Cadian>200</IGOfficer_Cadian>
+					<IGTrooper_Cadian>250</IGTrooper_Cadian>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<IGTrader_Cadian>1</IGTrader_Cadian>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<IGTrooper_Cadian>60</IGTrooper_Cadian>
+					<IGSoldier_Cadian>70</IGSoldier_Cadian>
+					<IGKasrkin_Cadian>80</IGKasrkin_Cadian>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<IGSoldier_Cadian>250</IGSoldier_Cadian>
+					<IGKasrkin_Cadian>350</IGKasrkin_Cadian>
+					<IGTrooper_Cadian>280</IGTrooper_Cadian>
+				</options>
+			</li>
+    </pawnGroupMakers>
+
+    <homeIconPath>World/ZoomedIn_Base</homeIconPath>
+  </FactionDef>
+</Defs>

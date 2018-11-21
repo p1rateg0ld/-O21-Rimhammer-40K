@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnTableDef>
+		<defName>Constructs</defName>
+		<columns>
+			<li>Constructs_Rename</li>
+			<li>GapTiny</li>
+			<li>Constructs_Label</li>
+			<li>GapSmall</li>
+			<li>Constructs_Charge</li>
+		<li>Constructs_ShutDown</li>
+			<li>Constructs_IsRecharging</li>
+			<li>GapTiny</li>
+			<li>AllowedAreaWide</li>
+			<li>GapWide</li>
+			<li>Gap</li>
+		<li>Constructs_ShutDownAll</li>
+			<li>Gap</li>
+			<li>RemainingSpace</li>
+		</columns>
+	</PawnTableDef>
+
+</Defs>

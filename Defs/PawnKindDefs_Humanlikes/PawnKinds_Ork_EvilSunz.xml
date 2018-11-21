@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="EvilSunzAbstractBase" Abstract="True">
+		<defaultFactionType>OrkEvilSunz</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>OrkBackstory</li>
+		</backstoryCategories>
+		<weaponTags>
+			<li>OrkRanged</li>
+			<li>OrkMelee</li>
+		</weaponTags>
+		<race>Alien_Ork</race>
+		<combatPower>25</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>100</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<apparelTags>
+			<li>EvilSunzApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- OrkSluggaBoy -->
+		<defName>OrkSluggaBoy_ES</defName>
+		<label>Slugga Boy</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>Choppa</li>
+			<li>Slugga</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>OrkClothingMedium</li>
+			<li>OrkMediumArmorRed</li>
+		</apparelRequired>
+		<combatPower>50</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarBanshee_Ulthwe -->
+		<defName>OrkShootaBoy_ES</defName>
+		<label>Shoota Boy</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>3000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>Shoota</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>OrkClothingMedium</li>
+			<li>OrkLightArmorRed</li>
+		</apparelRequired>
+		<combatPower>55</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarAutarch_Ulthwe -->
+		<defName>OrkArdBoy_ES</defName>
+		<label>'Ard Boy</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>OrkClothingHeavy</li>
+			<li>OrkMediumArmorRed</li>
+		</apparelRequired>
+		<combatPower>60</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarRanger_Ulthwe -->
+		<defName>OrkNob_ES</defName>
+		<label>Nob</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>OrkClothingHeavy</li>
+			<li>OrkHeavyArmorRed</li>
+			<li>OrkRedHelmet</li>
+		</apparelRequired>
+		<combatPower>65</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarRanger_Ulthwe -->
+		<defName>OrkKommando_ES</defName>
+		<label>Kommando</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>OrkClothingLight</li>
+			<li>OrkKommandoBandolier</li>
+			<li>OrkKommandoGoggles</li>
+		</apparelRequired>
+		<combatPower>65</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarTrader_Ulthwe -->
+		<defName>OrkTradaBoy_ES</defName>
+		<label>Trada Boy</label>
+		<isFighter>false</isFighter>
+		<combatPower>10</combatPower>
+		<trader>true</trader>
+		<apparelRequired>
+			<li>OrkClothingLight</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarFarseer_Ulthwe -->
+		<defName>OrkWarboss_ES</defName>
+		<label>Warboss</label>
+		<isFighter>true</isFighter>
+		<labelPlural>Warbosses</labelPlural>
+		<factionLeader>true</factionLeader>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>BigShoota</li>
+			<li>BigChoppa</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>10000</min>
+			<max>12000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>OrkClothingHeavy</li>
+			<li>OrkHeavyArmorRed</li>
+			<li>OrkRedHelmetHorned</li>
+		</apparelRequired>
+		<combatPower>75</combatPower>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnColumnDef>
+    <defName>Contruct_Label</defName>
+    <workerClass>PawnColumnWorker_Label</workerClass>
+    <widthPriority>100</widthPriority>
+    <sortable>true</sortable>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>Contruct_Charge</defName>
+    <workerClass>Rimhammer40k.AIRobot.X2_PawnColumnWorker_Charge</workerClass>
+    <widthPriority>60</widthPriority>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>Contruct_Rename</defName>
+    <workerClass>Rimhammer40k.AIRobot.X2_PawnColumnWorker_Rename</workerClass>
+    <widthPriority>30</widthPriority>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>Contruct_ShutDown</defName>
+    <workerClass>Rimhammer40k.AIRobot.X2_PawnColumnWorker_ShutDown</workerClass>
+    <widthPriority>20</widthPriority>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>Contruct_ShutDownAll</defName>
+    <workerClass>Rimhammer40k.AIRobot.X2_PawnColumnWorker_ShutDownAll</workerClass>
+    <widthPriority>20</widthPriority>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>Contruct_IsRecharging</defName>
+    <workerClass>Rimhammer40k.AIRobot.X2_PawnColumnWorker_IsInRecharge</workerClass>
+    <widthPriority>20</widthPriority>
+  </PawnColumnDef>
+
+</Defs>

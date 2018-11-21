@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Terran Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Child of the Imperium -->
+		<defName>BackstoryTerranChild00</defName>
+		<title>Child of the Imperium</title>
+		<titleShort>Imperium Child</titleShort>
+		<baseDescription>This Terran grew up on one of the many relatively safe Imperium worlds.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TerranBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Child of the Imperium -->
+		<defName>BackstoryTerranChild01</defName>
+		<title>Child of Valhalla</title>
+		<titleShort>Valhallan Child</titleShort>
+		<baseDescription>[PAWN_nameDef] grew up on Valhalla, surviving the harsh conditions of the frozen world. They spent most of their lives in Hive Cities and have adapted to living underground for long periods of time too.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>ValhallanBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Child of the Imperium -->
+		<defName>BackstoryTerranChild02</defName>
+		<title>Child of Krieg</title>
+		<titleShort>Krieg Child</titleShort>
+		<baseDescription>[PAWN_nameDef] grew up on Krieg, somehow surviving the deadly conditions of their irradiated world, little is know about Krieg children or how they can grow up in such a dangerous environment.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>KriegBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Terran Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Cadian Soldier -->
+		<defName>BackstoryGuevesa00</defName>
+		<title>Gue'vesa</title>
+		<titleShort>Gue'vesa</titleShort>
+		<baseDescription>After leaving their homeworld, [PAWN_nameDef] decided to join the T'au Empire. They seen their former home as unbearable to live on, under the rule of a fanatical religious empire.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>GuevesaBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

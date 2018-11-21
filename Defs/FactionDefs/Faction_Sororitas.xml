@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef Name="SistersOfBattleFactionBase">
+		<defName>MartyredLady</defName>
+		<label>Order of Our Martyred Lady</label>
+		<description>The Order of Our Martyred Lady is one of the Orders Militant of the Adepta Sororitas, or the Sisters of Battle, founded in honour of Saint Katherine by the Ecclesiarch Alexis XXII (the long-lived successor of the great reformer, Sebastian Thor) in the 36th Millennium when the location of the Adepta Sororitas' primary convent was split between Terra and Ophelia VII, creating, among others, the Order of Our Martyred Lady.</description>
+		<pawnsPlural>Sisters</pawnsPlural>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>85</earliestRaidDays>
+		<canMakeRandomly>True</canMakeRandomly>
+		<autoFlee>false</autoFlee>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Commander</leaderTitle>
+		<permanentEnemy>false</permanentEnemy>
+		<expandingIconTexture>World/SoBMLBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<startingGoodwill>
+			<min>-100</min>
+			<max>-80</max>
+		</startingGoodwill>
+		<fixedName>Order of Our Martyred Lady</fixedName>
+		<settlementNameMaker>NamerIGCadianBase</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategories>
+			<li>TerranBackstory</li>
+		</backstoryCategories>
+		<hairTags>
+			<li>SororitasHair</li>
+		</hairTags>
+		<naturalColonyGoodwill>
+			<min>-100</min>
+			<max>100</max>
+		</naturalColonyGoodwill>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Cadian_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-75</min>
+			<max>60</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SoBMartyredLadyCommander>1</SoBMartyredLadyCommander>
+					<SoBMartyredLadyCelestian>1</SoBMartyredLadyCelestian>
+					<SoBMartyredLadySister>250</SoBMartyredLadySister>
+					<SoBMartyredLadyRetributor>250</SoBMartyredLadyRetributor>
+					<SoBMartyredLadySisterSuperior>250</SoBMartyredLadySisterSuperior>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<IGTrader_Cadian>1</IGTrader_Cadian>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<SoBMartyredLadySister>30</SoBMartyredLadySister>
+					<SoBMartyredLadyCelestian>3</SoBMartyredLadyCelestian>
+					<SoBMartyredLadySisterSuperior>5</SoBMartyredLadySisterSuperior>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SoBMartyredLadyCommander>200</SoBMartyredLadyCommander>
+					<SoBMartyredLadyCelestian>200</SoBMartyredLadyCelestian>
+					<SoBMartyredLadySisterSuperior>250</SoBMartyredLadySisterSuperior>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SoBMartyredLadySister>250</SoBMartyredLadySister>
+					<SoBMartyredLadyRetributor>350</SoBMartyredLadyRetributor>
+					<SoBMartyredLadySisterSuperior>280</SoBMartyredLadySisterSuperior>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

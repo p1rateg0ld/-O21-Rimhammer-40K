@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+    <HairDef>
+		<defName>KrootQuills</defName>
+		<label>Short Quills</label>
+		<hairGender>Any</hairGender>
+		<texPath>Hairs/Quills</texPath>
+		<hairTags>
+			<li>KrootHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>QuillsBunched</defName>
+		<label>Long Quills</label>
+		<hairGender>Any</hairGender>
+		<texPath>Hairs/QuillsBunched</texPath>
+		<hairTags>
+			<li>KrootHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>SparseQuills</defName>
+		<label>Sparse Quills</label>
+		<hairGender>Any</hairGender>
+		<texPath>Hairs/QuillsStringy</texPath>
+		<hairTags>
+			<li>KrootHair</li>
+		</hairTags>
+	</HairDef>
+  
+</Defs>

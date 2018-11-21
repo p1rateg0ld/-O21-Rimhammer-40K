@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Craftworld Ulthwe -->
+
+	<FactionDef Name="FactionEldarBase">
+		<defName>CWUlthwe</defName>
+		<label>Ulthwe</label>
+		<description>Ulthwé, whose full name is actually Ulthanash Shelwé (which means "Song of Ulthanash" in the Eldar Lexicon), is one of the largest remaining Eldar Craftworlds that survived the Fall of the Eldar. It is whispered by those of other Craftworlds that the Eldar of Ulthwé have been damned by their proximity to the Eye of Terror, exaggerating their psychic potential. Those of Ulthwé know instead that they are a bulwark between the survival of their race and utter destruction. This Craftworld's world-rune, "The Eye of Isha," symbolises the sorrow of Isha, the fertility goddess from whom the Eldar believe they descend. Isha, it is said, wept bitterly when Asuryan, the king of the gods, ordered her separation from her mortal children. Vaul forged her tears into glittering Spirit Stones so that her grief might not be in vain. Today, the warriors of Ulthwé bear this symbol as their sigil, a poignant reminder of the godhood they lost long ago.</description>
+		<pawnsPlural>Ulthwe</pawnsPlural>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>15</earliestRaidDays>
+		<canMakeRandomly>True</canMakeRandomly>
+		<autoFlee>false</autoFlee>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Farseer</leaderTitle>
+		<permanentEnemy>false</permanentEnemy>
+		<expandingIconTexture>World/UlthweBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<startingGoodwill>
+			<min>-100</min>
+			<max>-80</max>
+		</startingGoodwill>
+		<fixedName>Ulthwe</fixedName>
+		<settlementNameMaker>NamerIGCadianBase</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategories>
+			<li>UlthweBackstory</li>
+		</backstoryCategories>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+		<naturalColonyGoodwill>
+			<min>-100</min>
+			<max>100</max>
+		</naturalColonyGoodwill>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Eldar_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-75</min>
+			<max>60</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<EldarFarseer_Ulthwe>1</EldarFarseer_Ulthwe>
+					<EldarAutarch_Ulthwe>4</EldarAutarch_Ulthwe>
+					<EldarRanger_Ulthwe>10</EldarRanger_Ulthwe>
+					<EldarBanshee_Ulthwe>20</EldarBanshee_Ulthwe>
+					<EldarGuardian_Ulthwe>50</EldarGuardian_Ulthwe>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<EldarFarseer_Ulthwe>1</EldarFarseer_Ulthwe>
+					<EldarAutarch_Ulthwe>3</EldarAutarch_Ulthwe>
+					<EldarGuardian_Ulthwe>50</EldarGuardian_Ulthwe>
+					<EldarRanger_Ulthwe>10</EldarRanger_Ulthwe>
+					<EldarBanshee_Ulthwe>20</EldarBanshee_Ulthwe>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<EldarTrader_Ulthwe>1</EldarTrader_Ulthwe>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<EldarAutarch_Ulthwe>1</EldarAutarch_Ulthwe>
+					<EldarGuardian_Ulthwe>50</EldarGuardian_Ulthwe>
+					<EldarRanger_Ulthwe>10</EldarRanger_Ulthwe>
+					<EldarBanshee_Ulthwe>20</EldarBanshee_Ulthwe>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<EldarFarseer_Ulthwe>1</EldarFarseer_Ulthwe>
+					<EldarAutarch_Ulthwe>4</EldarAutarch_Ulthwe>
+					<EldarRanger_Ulthwe>10</EldarRanger_Ulthwe>
+					<EldarBanshee_Ulthwe>50</EldarBanshee_Ulthwe>
+					<EldarGuardian_Ulthwe>20</EldarGuardian_Ulthwe>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+	<!-- Craftworld Alaitoc -->
+
+	<FactionDef ParentName="FactionEldarBase">
+		<defName>CWAlaitoc</defName>
+		<label>Alaitoc</label>
+		<description>Alaitoc is an Eldar Asuryani Craftworld known for having spread its influence further afield than other Craftworlds, sending agents across the galaxy to act as its eyes and ears. On the battlefield its forces favour stealth and misdirection over brute force, killing silently and with guile wherever they can.
+
+The world-rune of Alaitoc depicts the sword of Khaine bisecting the Red Moon; the sign of the House of Eldanesh, borne in grim memory of the act that brought about the War in Heaven. The Red Moon is an ill omen for the Eldar even now, used as a reminder of the fate of mortals who offend the gods. Alaitoc and its forces are associated with the colours blue and yellow. The Craftworld is known to be currently located in the Ultima Segmentum that was once the heart of the ancient Aeldari Empire.</description>
+		<pawnsPlural>Alaitoc</pawnsPlural>
+		<expandingIconTexture>World/AlaitocBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<fixedName>Alaitoc</fixedName>
+		<backstoryCategories>
+			<li>AlaitocBackstory</li>
+		</backstoryCategories>
+		<pawnGroupMakers Inherit="false">
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<EldarFarseer_Alaitoc>1</EldarFarseer_Alaitoc>
+					<EldarAutarch_Alaitoc>4</EldarAutarch_Alaitoc>
+					<EldarRanger_Alaitoc>10</EldarRanger_Alaitoc>
+					<EldarBanshee_Alaitoc>20</EldarBanshee_Alaitoc>
+					<EldarGuardian_Alaitoc>50</EldarGuardian_Alaitoc>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<EldarFarseer_Alaitoc>1</EldarFarseer_Alaitoc>
+					<EldarAutarch_Alaitoc>3</EldarAutarch_Alaitoc>
+					<EldarGuardian_Alaitoc>50</EldarGuardian_Alaitoc>
+					<EldarRanger_Alaitoc>10</EldarRanger_Alaitoc>
+					<EldarBanshee_Alaitoc>20</EldarBanshee_Alaitoc>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<EldarTrader_Alaitoc>1</EldarTrader_Alaitoc>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<EldarAutarch_Alaitoc>1</EldarAutarch_Alaitoc>
+					<EldarGuardian_Alaitoc>50</EldarGuardian_Alaitoc>
+					<EldarRanger_Alaitoc>10</EldarRanger_Alaitoc>
+					<EldarBanshee_Alaitoc>20</EldarBanshee_Alaitoc>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<EldarFarseer_Alaitoc>1</EldarFarseer_Alaitoc>
+					<EldarAutarch_Alaitoc>4</EldarAutarch_Alaitoc>
+					<EldarRanger_Alaitoc>10</EldarRanger_Alaitoc>
+					<EldarBanshee_Alaitoc>50</EldarBanshee_Alaitoc>
+					<EldarGuardian_Alaitoc>20</EldarGuardian_Alaitoc>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

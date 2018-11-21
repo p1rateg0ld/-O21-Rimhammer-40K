@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerPersonTauM</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[TauSept] [TauPStart][TauPEnd]</li>
+        <li>name->[TauSept] '[TauNickname]' [TauPStart][TauPEnd]</li>
+
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>TauSept</keyword>
+          <path>Tau_Names/TauSept</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TauPStart</keyword>
+          <path>Tau_Names/TauPStart</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TauPEnd</keyword>
+          <path>Tau_Names/TauPEnd</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TauNickname</keyword>
+          <path>Tau_Names/Concepts_Tau</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonTauF</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[TauSept] [TauPStart][TauPEnd]</li>
+        <li>name->[TauSept] '[TauNickname]' [TauPStart][TauPEnd]</li>
+
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>TauSept</keyword>
+          <path>Tau_Names/TauSept</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TauPStart</keyword>
+          <path>Tau_Names/TauPStart</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TauPEnd</keyword>
+          <path>Tau_Names/TauPEnd</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TauNickname</keyword>
+          <path>Tau_Names/Concepts_Tau</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

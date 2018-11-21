@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerPersonKrootM</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[KrootA][KrootB][KrootC] [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC] '[KrootA][KrootB][KrootC]' [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC] '[KrootN]' [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC][KrootB] [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC][KrootB] '[KrootA][KrootB][KrootC]' [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC][KrootB] '[KrootN]' [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC] [KrootA][KrootB][KrootC][KrootB]</li>
+        <li>name->[KrootA][KrootB][KrootC] '[KrootA][KrootB][KrootC]' [KrootA][KrootB][KrootC][KrootB]</li>
+        <li>name->[KrootA][KrootB][KrootC] '[KrootN]' [KrootA][KrootB][KrootC][KrootB]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>KrootA</keyword>
+          <path>Kroot_Names/KrootA</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>KrootB</keyword>
+          <path>Kroot_Names/KrootB</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>KrootC</keyword>
+          <path>Kroot_Names/KrootC</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TauNickname</keyword>
+          <path>Kroot_Names/Concepts_Kroot</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonKrootF</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[KrootA][KrootB][KrootC] [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC] '[KrootA][KrootB][KrootC]' [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC] '[KrootN]' [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC][KrootB] [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC][KrootB] '[KrootA][KrootB][KrootC]' [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC][KrootB] '[KrootN]' [KrootA][KrootB][KrootC]</li>
+        <li>name->[KrootA][KrootB][KrootC] [KrootA][KrootB][KrootC][KrootB]</li>
+        <li>name->[KrootA][KrootB][KrootC] '[KrootA][KrootB][KrootC]' [KrootA][KrootB][KrootC][KrootB]</li>
+        <li>name->[KrootA][KrootB][KrootC] '[KrootN]' [KrootA][KrootB][KrootC][KrootB]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>KrootA</keyword>
+          <path>Kroot_Names/KrootA</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>KrootB</keyword>
+          <path>Kroot_Names/KrootB</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>KrootC</keyword>
+          <path>Kroot_Names/KrootC</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TauNickname</keyword>
+          <path>Kroot_Names/Concepts_Kroot</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

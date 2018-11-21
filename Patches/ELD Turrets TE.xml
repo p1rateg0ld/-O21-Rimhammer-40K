@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ================== Tau Railgun ================== -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="ELDBrightlance"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <canForceAttack>True</canForceAttack>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ELDBrightlance"]/comps</xpath>
+		<value>			
+			<li Class="TurretExtensions.CompProperties_Upgradable">
+				<description>Upgrade the internal firing components.</description>
+				<costList>
+					<Plasteel>30</Plasteel>
+					<ComponentSpacer>1</ComponentSpacer>
+				</costList>
+				<researchPrerequisites>
+					<li>HeavyTurrets</li>
+				</researchPrerequisites>
+				<workToUpgrade>3000</workToUpgrade>
+				<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyTurret>0.05</ShootingAccuracyTurret>
+				</statOffsets>
+				<barrelDurabilityFactor>1.6</barrelDurabilityFactor>
+				<turretTopGraphicPath>Things/Building/Security/ELD/Eld_dual_lascannon_top</turretTopGraphicPath>
+				<turretTopDrawSize>6</turretTopDrawSize>
+				<turretBurstCooldownTimeFactor>0.5</turretBurstCooldownTimeFactor>
+			</li>
+        </value>
+    </Operation>
+	
+	<!-- ==================Eldar Vibrocannon================== -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="ELDVibrocannon"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <canForceAttack>True</canForceAttack>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ELDVibrocannon"]/comps</xpath>
+		<value>			
+			<li Class="TurretExtensions.CompProperties_Upgradable">
+				<description>Upgrade the internal firing components.</description>
+				<costList>
+					<Plasteel>30</Plasteel>
+					<ComponentSpacer>1</ComponentSpacer>
+				</costList>
+				<researchPrerequisites>
+					<li>HeavyTurrets</li>
+				</researchPrerequisites>
+				<workToUpgrade>3000</workToUpgrade>
+				<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyTurret>0.05</ShootingAccuracyTurret>
+				</statOffsets>
+				<barrelDurabilityFactor>1.6</barrelDurabilityFactor>
+				<turretTopGraphicPath>Things/Building/Security/ELD/Eld_vibro_upgrade_top</turretTopGraphicPath>
+				<turretTopDrawSize>6</turretTopDrawSize>
+			</li>
+        </value>
+    </Operation>
+</Patch>

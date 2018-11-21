@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonOrk</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[OrkList1][OrkList2][OrkList3][OrkList4][OrkList5] [OrkList4][OrkList5]</li>
+				<li>name->[OrkList2][OrkList3][OrkList4][OrkList5] [OrkList4][OrkList5]</li>
+
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>OrkList1</keyword>
+					<path>Ork_Names/OrkNameparts1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrkList2</keyword>
+					<path>Ork_Names/OrkNameparts2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrkList3</keyword>
+					<path>Ork_Names/OrkNameparts3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrkList4</keyword>
+					<path>Ork_Names/OrkNameparts4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrkList5</keyword>
+					<path>Ork_Names/OrkNameparts5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrkList6</keyword>
+					<path>Ork_Names/OrkNameparts6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrkList7</keyword>
+					<path>Ork_Names/OrkNameparts7</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

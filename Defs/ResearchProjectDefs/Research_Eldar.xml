@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Eldar  Research-->
+	
+	<ResearchProjectDef>
+		<tab>RH40K_Tab3</tab>
+		<defName>N17_Eld_Research</defName>
+		<label>Eldar Research</label>
+		<description>Allows you to research Eldar subjects.</description>
+		<baseCost>100</baseCost>
+		<prerequisites>
+		
+		</prerequisites>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab3</tab>
+				<defName>N17_Eld_DefensiveStructure</defName>
+				<label>Defensive Structures</label>
+				<description>Provides access to defensive structures like the Aegis.</description>
+				<baseCost>200</baseCost>
+				<prerequisites>
+					<li>N17_Eld_Research</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_DefensiveWeapons</defName>
+					<label>Defensive Weapons</label>
+					<description>Provides access to defensive weapons platforms.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_DefensiveStructure</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab3</tab>
+				<defName>N17_Eld_WarriorPath</defName>
+				<label>Path of the Warrior</label>
+				<description>Provides access to Path of the Warrior research.</description>
+				<baseCost>200</baseCost>
+				<prerequisites>
+					<li>N17_Eld_Research</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_WeaponsLight</defName>
+					<label>Light Weapons</label>
+					<description>Provides access to light weapons.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_WarriorPath</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+					<ResearchProjectDef>
+						<tab>RH40K_Tab3</tab>
+						<defName>N17_Eld_WeaponsHeavy</defName>
+						<label>Heavy Weapons</label>
+						<description>Provides access to heavy weapons.</description>
+						<baseCost>200</baseCost>
+						<prerequisites>
+							<li>N17_Eld_WeaponsLight</li>
+						</prerequisites>
+						<techLevel>Spacer</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>0</researchViewX>
+						<researchViewY>0</researchViewY>
+					</ResearchProjectDef>
+	
+					<ResearchProjectDef>
+						<tab>RH40K_Tab3</tab>
+						<defName>N17_Eld_WeaponsAdvanced</defName>
+						<label>Advanced Weapons</label>
+						<description>Provides access to advanced weapons.</description>
+						<baseCost>200</baseCost>
+						<prerequisites>
+							<li>N17_Eld_WeaponsLight</li>
+						</prerequisites>
+						<techLevel>Spacer</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>0</researchViewX>
+						<researchViewY>0</researchViewY>
+					</ResearchProjectDef>
+	
+					<ResearchProjectDef>
+						<tab>RH40K_Tab3</tab>
+						<defName>N17_Eld_WeaponsPower</defName>
+						<label>Power Weapons</label>
+						<description>Provides access to power weapons.</description>
+						<baseCost>200</baseCost>
+						<prerequisites>
+							<li>N17_Eld_WeaponsHeavy</li>
+							<li>N17_Eld_WeaponsAdvanced</li>
+						</prerequisites>
+						<techLevel>Spacer</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>0</researchViewX>
+						<researchViewY>0</researchViewY>
+					</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_Guardian</defName>
+					<label>Guardians</label>
+					<description>Provides access to Guardian armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_WarriorPath</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+				<!-- <ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_DireAvenger</defName>
+					<label>Dire Avengers</label>
+					<description>Provides access to Dire Avenger armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef> -->
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_HowlingBanshee</defName>
+					<label>Howling Banshees</label>
+					<description>Provides access to Howling Banshee armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+				<!-- <ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_StrikingScorpions</defName>
+					<label>Striking Scorpions</label>
+					<description>Provides access to Striking Scorpion armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_DarkReaper</defName>
+					<label>Dark Reapers</label>
+					<description>Provides access to Dark Reaper armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_FireDragon</defName>
+					<label>Fire Dragons</label>
+					<description>Provides access to Fire Dragon armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_SwoopingHawk</defName>
+					<label>Swooping Hawks</label>
+					<description>Provides access to Swooping Hawk armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_WarpSpider</defName>
+					<label>Warp Spiders</label>
+					<description>Provides access to Warp Spider armour.</description>
+					<baseCost>600</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_ShiningSpear</defName>
+					<label>Shining Spears</label>
+					<description>Provides access to Shining Spear armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_CrimsonHunter</defName>
+					<label>Crimson Hunters</label>
+					<description>Provides access to Crimson Hunters armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_ShadowSpectre</defName>
+					<label>Shadow Spectres</label>
+					<description>Provides access to Shadow Spectre armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef> -->
+	
+				<ResearchProjectDef>
+					<tab>RH40K_Tab3</tab>
+					<defName>N17_Eld_Ranger</defName>
+					<label>Rangers</label>
+					<description>Provides access to Ranger armour.</description>
+					<baseCost>200</baseCost>
+					<prerequisites>
+						<li>N17_Eld_Guardian</li>
+					</prerequisites>
+					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					<researchViewX>0</researchViewX>
+					<researchViewY>0</researchViewY>
+				</ResearchProjectDef>
+	
+					<ResearchProjectDef>
+						<tab>RH40K_Tab3</tab>
+						<defName>N17_Eld_Autarch</defName>
+						<label>Autarchs</label>
+						<description>Provides access to Autarch armour.</description>
+						<baseCost>200</baseCost>
+						<prerequisites>
+							<!-- <li>N17_Eld_DireAvenger</li> -->
+							<li>N17_Eld_HowlingBanshee</li>
+							<!-- <li>N17_Eld_StrikingScorpion</li>
+							<li>N17_Eld_DarkReaper</li>
+							<li>N17_Eld_FireDragon</li>
+							<li>N17_Eld_SwoopingHawk</li>
+							<li>N17_Eld_WarpSpider</li>
+							<li>N17_Eld_ShiningSpear</li>
+							<li>N17_Eld_CrimsonHunter</li>
+							<li>N17_Eld_ShadowSpectre</li> -->
+						</prerequisites>
+						<techLevel>Spacer</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>0</researchViewX>
+						<researchViewY>0</researchViewY>
+					</ResearchProjectDef>
+	
+					<ResearchProjectDef>
+						<tab>RH40K_Tab3</tab>
+						<defName>N17_Eld_Farseer</defName>
+						<label>Farseer</label>
+						<description>Provides access to Farseer armour.</description>
+						<baseCost>400</baseCost>
+						<prerequisites>
+							<li>N17_Eld_Autarch</li>
+						</prerequisites>
+						<techLevel>Spacer</techLevel>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+						<researchViewX>0</researchViewX>
+						<researchViewY>0</researchViewY>
+					</ResearchProjectDef>
+		
+</Defs>

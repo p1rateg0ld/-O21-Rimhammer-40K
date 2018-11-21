@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>TAURailgun</defName>
+		<label>Railgun Turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/TAU/TAU_railgun_bottom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>450</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,112,180,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>5.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until rearm</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>800</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<fuelMultiplier>0.75</fuelMultiplier>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot shoot: Needs rearm</outOfFuelMessage>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<description>Fortified dual rail gun tower, very durable but power hungry.</description>
+		<size>(5,5)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<costList>
+			<Plasteel>500</Plasteel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>36</specialDisplayRadius>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_TAURailgun</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Building/Security/TAU/TAU_railgun_top</turretTopGraphicPath>
+			<turretTopDrawSize>6</turretTopDrawSize>
+		</building>
+		<rotatable>true</rotatable>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>N17_Tau_Turrets</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Security/TAU/TAU_railgun_menu</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_TAURailgun</defName>
+		<label>Tau Rail Bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/RailgunLg</texPath>
+		<!--Obviously must change-->
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>50</damageAmountBase>
+			<speed>200</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_TAURailgun</defName>
+		<label>Tau Rail Gun</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<description>Carefully crafted gun attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_TAURailgun</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>500</range>
+				<minRange>10</minRange>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>RailgunSound</soundCast>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+<!--================== Missle Pod ================== -->
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>TAUMisslePod</defName>
+		<label> Missile Turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/TAU/TAU_missle_bottom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>4000</WorkToBuild>
+			<Mass>225</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(80,112,180,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until rearm</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>800</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<fuelMultiplier>0.75</fuelMultiplier>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot shoot: Needs tube maintenance</outOfFuelMessage>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<description>Fortified dual missile pod tower.</description>
+		<size>(3,3)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<costList>
+			<Plasteel>500</Plasteel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>36</specialDisplayRadius>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_TAUMisslePod</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Building/Security/TAU/TAU_missle_top</turretTopGraphicPath>
+			<turretTopDrawSize>3</turretTopDrawSize>
+		</building>
+		<rotatable>true</rotatable>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>N17_Tau_Turrets</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Security/TAU/TAU_missle_menu</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_TAUMisslePod</defName>
+		<label>Tau Missle Pod</label>
+		<graphicData>
+			<texPath>Things/Projectile/TauFragGrenade</texPath>
+		<!--Obviously must change-->
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<flyOverhead>true</flyOverhead>
+			<damageAmountBase>25</damageAmountBase>
+			<explosionRadius>4.5</explosionRadius>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_TAUMisslePod</defName>
+		<label>Tau Missle Pod</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<description>Carefully crafted missle pod attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_TAUMisslePod</defaultProjectile>
+				<forcedMissRadius>2</forcedMissRadius>
+				<warmupTime>1</warmupTime>
+				<requireLineOfSight>false</requireLineOfSight>
+				<minRange>10</minRange>				
+				<range>55</range>
+				<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Mortar_LaunchA</soundCast>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--================== Gauss Cannon ================== -->
+	
+		<ThingDef ParentName="BuildingBase">
+		<defName>TAUGaussCannon</defName>
+		<label> Gauss Cannon Turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/TAU/TAU_gauss_bottom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>4000</WorkToBuild>
+			<Mass>350</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(80,112,180,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until rearm</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>400</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<fuelMultiplier>0.75</fuelMultiplier>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot shoot: Needs rearm</outOfFuelMessage>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<description>Fortified gauss cannon tower, mainline defense.</description>
+		<size>(3,3)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<costList>
+			<Plasteel>500</Plasteel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>36</specialDisplayRadius>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_TAUGaussCannon</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Building/Security/TAU/TAU_gauss_top</turretTopGraphicPath>
+			<turretTopDrawSize>3</turretTopDrawSize>
+		</building>
+		<rotatable>true</rotatable>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>N17_Tau_Turrets</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Security/TAU/TAU_gauss_menu</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_TAUGaussCannon</defName>
+		<label>Tau Gauss Bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/GaussBolt</texPath>
+		<!--Obviously must change-->
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>35</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_TAUGaussCannon</defName>
+		<label>Tau Rail Gun</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<description>Carefully gauss cannon attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_TAUGaussCannon</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>54</range>
+				<minRange>3</minRange>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>PlasmaCannonSound</soundCast>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+</Defs>

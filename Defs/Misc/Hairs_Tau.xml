@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+    <HairDef>
+		<defName>TauBraid</defName>
+		<label>Tau Braid</label>
+		<hairGender>Female</hairGender>
+		<texPath>Things/Tau/Hairs/Female/Braid</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauHairFem01</defName>
+		<label>Tau Hair F1</label>
+		<hairGender>Female</hairGender>
+		<texPath>Things/Tau/Hairs/Female/FemTauhair1</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauHairFem02</defName>
+		<label>Tau Hair F2</label>
+		<hairGender>Female</hairGender>
+		<texPath>Things/Tau/Hairs/Female/FemTauhair2</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauHairFem03</defName>
+		<label>Tau Hair F3</label>
+		<hairGender>Female</hairGender>
+		<texPath>Things/Tau/Hairs/Female/FemTauhair3</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauHairFem04</defName>
+		<label>Tau Hair F4</label>
+		<hairGender>Female</hairGender>
+		<texPath>Things/Tau/Hairs/Female/FemTauhair4</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauHairFem05</defName>
+		<label>Tau Hair F5</label>
+		<hairGender>Female</hairGender>
+		<texPath>Things/Tau/Hairs/Female/FemTauhair5</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauBreaker</defName>
+		<label>Tau Breaker</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Tau/Hairs/Male/Breaker</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauFancy</defName>
+		<label>Tau Fancy</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Tau/Hairs/Male/Fancy</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauKnot</defName>
+		<label>Tau Knot</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Tau/Hairs/Male/PunkKnot</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauShaved</defName>
+		<label>Tau Shaved</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Tau/Hairs/Male/Shaved</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauSoap</defName>
+		<label>Tau Soap</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Tau/Hairs/Male/Soap</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TauUndercut</defName>
+		<label>Tau Undercut</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Tau/Hairs/Male/Undercut</texPath>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+	</HairDef>
+  
+</Defs>

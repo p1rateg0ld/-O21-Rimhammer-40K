@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <!-- <DesignatorDropdownGroupDef>
+		<defName>RH_OrbitalCommsList</defName>
+	</DesignatorDropdownGroupDef> -->
+	
+	<DesignatorDropdownGroupDef>
+		<defName>RH_IG_4Sabre</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_IG_5Stationary</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_IG_1Quadpod</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_IG_2Wheeled</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_IG_3Tarantula</defName>
+	</DesignatorDropdownGroupDef>
+
+</Defs>

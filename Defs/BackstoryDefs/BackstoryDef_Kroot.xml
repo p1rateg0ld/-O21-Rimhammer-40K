@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Kroot Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Child of the Hunt -->
+		<defName>BackstoryKrootChild00</defName>
+		<title>Child of the Hunt</title>
+		<titleShort>Young Hunter</titleShort>
+		<baseDescription>This Kroot has been hunting before they could properly stand upright, always going along with the adults on short hunts on Pech.</baseDescription>
+		<slot>Childhood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>KrootBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Kroot Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Kroot Warrior -->
+		<defName>BackstoryKroot00</defName>
+		<title>Kroot Warrior</title>
+		<titleShort>Warrior</titleShort>
+		<baseDescription>After leaving Pech, this Kroot decided to start hunting the enemies of their people, consuming them and becoming stronger.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>KrootBackstory</li>
+			<li>KrootFighterBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

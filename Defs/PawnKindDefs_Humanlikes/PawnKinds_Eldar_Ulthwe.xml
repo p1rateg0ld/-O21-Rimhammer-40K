@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="UlthweAbstractBase" Abstract="True">
+		<defaultFactionType>CWUlthwe</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>UlthweBackstory</li>
+		</backstoryCategories>
+		<weaponTags>
+			<li>EldarRanged</li>
+		</weaponTags>
+		<race>Alien_Eldar</race>
+		<combatPower>25</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>5000</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<apparelTags>
+			<li>UlthweApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UlthweAbstractBase"> <!-- EldarGuardian_Ulthwe -->
+		<defName>EldarGuardian_Ulthwe</defName>
+		<label>Guardian</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>EldarShurikenPistol</li>
+			<li>EldarShurikenCatapult</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>UlthweGuardianApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>UlthweGuardianArmor</li>
+		</apparelRequired>
+		<combatPower>70</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UlthweAbstractBase"> <!-- EldarBanshee_Ulthwe -->
+		<defName>EldarBanshee_Ulthwe</defName>
+		<label>Banshee</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>3000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>EldarPowerSword</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>UlthweBansheeApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>UlthweBansheeArmor</li>
+		</apparelRequired>
+		<combatPower>75</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UlthweAbstractBase"> <!-- EldarAutarch_Ulthwe -->
+		<defName>EldarAutarch_Ulthwe</defName>
+		<label>Autarch</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>EldarRanged</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>UlthweAutarchApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>UlthweAutarchArmor</li>
+		</apparelRequired>
+		<combatPower>80</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UlthweAbstractBase"> <!-- EldarRanger_Ulthwe -->
+		<defName>EldarRanger_Ulthwe</defName>
+		<label>Ranger</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>4000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>EldarLongrifle</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>UlthweRangerApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>UlthweRangerArmor</li>
+		</apparelRequired>
+		<combatPower>80</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UlthweAbstractBase"> <!-- EldarTrader_Ulthwe -->
+		<defName>EldarTrader_Ulthwe</defName>
+		<label>Eldar Provisioner</label>
+		<isFighter>false</isFighter>
+		<combatPower>25</combatPower>
+		<trader>true</trader>
+		<apparelTags Inherit="false">
+			<li>UlthweCivilianApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>UlthweGuardianArmor</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UlthweAbstractBase"> <!-- EldarFarseer_Ulthwe -->
+		<defName>EldarFarseer_Ulthwe</defName>
+		<label>Farseer</label>
+		<isFighter>true</isFighter>
+		<labelPlural>Farseers</labelPlural>
+		<factionLeader>true</factionLeader>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>EldarRanged</li>
+			<li>EldarMelee</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>UlthweFarseerApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>UlthweFarseerArmor</li>
+		</apparelRequired>
+		<combatPower>95</combatPower>
+	</PawnKindDef>
+
+</Defs>

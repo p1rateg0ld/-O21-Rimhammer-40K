@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerIGCadianBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[Impbase] [Impother] [Impdesc]</li>
+        <li>name->[Impbase] [Impdesc]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Impbase</keyword>
+          <path>Settlement_Names_IG/Impbase</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Impdesc</keyword>
+          <path>Settlement_Names_IG/Impdesc</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Impother</keyword>
+          <path>Settlement_Names_IG/Impother</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
+
+
+
+
+
+
+

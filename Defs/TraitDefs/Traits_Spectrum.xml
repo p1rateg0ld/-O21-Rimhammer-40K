@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TraitDef>
+		<defName>Scent</defName>
+		<commonality>2</commonality>
+		<degreeDatas>
+			<li>
+				<label>lovely scent</label>
+				<description>[PAWN_nameDef] gives off a lovely scent naturally, this strangely enticing attribute makes people attracted to [PAWN_objective] before [PAWN_pronoun] even opens [PAWN_possessive] mouth.</description>
+				<degree>1</degree>
+				<marketValueFactorOffset>0.40</marketValueFactorOffset>
+			</li>
+			<li>
+				<label>displeasing scent</label>
+				<description>[PAWN_nameDef] is somewhat smelly. This subtly repels others during social interactions.</description>
+				<degree>-1</degree>
+				<marketValueFactorOffset>-0.20</marketValueFactorOffset>
+			</li>
+			<li>
+				<label>deathly stench</label>
+				<description>[PAWN_nameDef] smells unbelievably bad. [PAWN_possessive] natural aroma is so awful that people are physically repelled by it. Others must exert conscious effort to even be near [PAWN_objective] while conversing.</description>
+				<degree>-2</degree>
+				<marketValueFactorOffset>-0.40</marketValueFactorOffset>
+			</li>      
+		</degreeDatas>
+	</TraitDef>
+
+</Defs>

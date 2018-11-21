@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Armors ====== -->
+	
+	<ThingDef ParentName="ArmorSmithableBase" Name="SororitasArmorBase">
+		<defName>SororitasArmor</defName>
+		<label>sororitas armor</label>
+		<description>Power Armour is an advanced form of powered combat armour, worn primarily by the Space Marines and the Chaos Space Marines, though suits have been created to be worn by mere mortals. It is a completely enclosed suit of combat armour composed of shaped Adamantium and Plasteel plates, encased in a Ceramite ablative layer.</description>
+		<graphicData>
+			<texPath>Things/SistersOfBattle/Apparel/Sororitas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories>
+			<li>SoBApparel</li>
+		</thingCategories>
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<costList>
+			<CeramiteLowGrade>120</CeramiteLowGrade>
+			<CeramiteMedGrade>100</CeramiteMedGrade>
+			<CeramiteHighGrade>80</CeramiteHighGrade>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>20</Mass>
+			<MarketValue>10000</MarketValue>
+			<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.03</ArmorRating_Heat>
+			<Insulation_Cold>80</Insulation_Cold>
+			<Insulation_Heat>80</Insulation_Heat>
+			<ToxicSensitivity>-0.70</ToxicSensitivity>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/SistersOfBattle/Apparel/Sororitas</wornGraphicPath>
+			<tags>
+				<li>SororitasApparel</li>
+			</tags>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

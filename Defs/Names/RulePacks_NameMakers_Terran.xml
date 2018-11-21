@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonTerranM</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[TerranList2][TerranList3] [TerranList4][TerranList5]</li>
+				<li>name->[TerranList2][TerranList3] '[TerranList8][TerranList9]' [TerranList4][TerranList5]</li>
+
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>TerranList1</keyword>
+					<path>Terran_Names/TerranNameparts1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList2</keyword>
+					<path>Terran_Names/TerranNameparts2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList3</keyword>
+					<path>Terran_Names/TerranNameparts3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList4</keyword>
+					<path>Terran_Names/TerranNameparts4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList5</keyword>
+					<path>Terran_Names/TerranNameparts5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList6</keyword>
+					<path>Terran_Names/TerranNameparts6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList7</keyword>
+					<path>Terran_Names/TerranNameparts7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList8</keyword>
+					<path>Terran_Names/TerranNameparts8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList9</keyword>
+					<path>Terran_Names/TerranNameparts9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList10</keyword>
+					<path>Terran_Names/TerranNameparts10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList11</keyword>
+					<path>Terran_Names/TerranNameparts11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList12</keyword>
+					<path>Terran_Names/TerranNameparts12</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList13</keyword>
+					<path>Terran_Names/TerranNameparts13</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonTerranF</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[TerranList2][TerranList3] [TerranList4][TerranList5]</li>
+				<li>name->[TerranList2][TerranList3] '[TerranList8][TerranList9]' [TerranList4][TerranList5]</li>
+
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>TerranList1</keyword>
+					<path>Terran_Names/TerranNameparts1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList2</keyword>
+					<path>Terran_Names/TerranNameparts2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList3</keyword>
+					<path>Terran_Names/TerranNameparts3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList4</keyword>
+					<path>Terran_Names/TerranNameparts4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList5</keyword>
+					<path>Terran_Names/TerranNameparts5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList6</keyword>
+					<path>Terran_Names/TerranNameparts6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList7</keyword>
+					<path>Terran_Names/TerranNameparts7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList8</keyword>
+					<path>Terran_Names/TerranNameparts8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList9</keyword>
+					<path>Terran_Names/TerranNameparts9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList10</keyword>
+					<path>Terran_Names/TerranNameparts10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList11</keyword>
+					<path>Terran_Names/TerranNameparts11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList12</keyword>
+					<path>Terran_Names/TerranNameparts12</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TerranList13</keyword>
+					<path>Terran_Names/TerranNameparts13</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

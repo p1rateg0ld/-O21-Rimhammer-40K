@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="MartyredLadyAbstractBase" Abstract="True">
+		<defaultFactionType>MartyredLady</defaultFactionType>
+		<chemicalAddictionChance>0.0</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>SororitasBackstory</li>
+		</backstoryCategories>
+		<apparelTags>
+			<li>SororitasApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="MartyredLadyBase" ParentName="MartyredLadyAbstractBase">
+		<defName>MartyredLadyBase</defName>
+		<label>Order of Our Martyred Lady</label>
+		<race>Alien_Sororitas</race>
+		<combatPower>60</combatPower>
+		<itemQuality>Good</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>140</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>10000</min>
+			<max>20000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>10000</min>
+			<max>20000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SMRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MartyredLadyBase"> <!-- SoBMartyredLadyCommander -->
+		<defName>SoBMartyredLadyCommander</defName>
+		<label>Cannoness Commander</label>
+		<labelPlural>Commanders</labelPlural>
+		<factionLeader>true</factionLeader>
+		<apparelRequired>
+			<li>SororitasArmor</li>
+		</apparelRequired>
+		<minGenerationAge>40</minGenerationAge>
+		<combatPower>140</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MartyredLadyBase"> <!-- SoBMartyredLadyCelestian -->
+		<defName>SoBMartyredLadyCelestian</defName>
+		<label>Celestian</label>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>SororitasArmor</li>
+		</apparelRequired>
+		<combatPower>130</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MartyredLadyBase"> <!-- SoBMartyredLadySister -->
+		<defName>SoBMartyredLadySister</defName>
+		<label>Sister of Battle</label>
+		<apparelRequired>
+			<li>SororitasArmor</li>
+		</apparelRequired>
+		<combatPower>120</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MartyredLadyBase"> <!-- SoBMartyredLadyRetributor -->
+		<defName>SoBMartyredLadyRetributor</defName>
+		<label>Retributor</label>
+		<apparelRequired>
+			<li>SororitasArmor</li>
+		</apparelRequired>
+		<combatPower>150</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MartyredLadyBase"> <!-- SoBMartyredLadySisterSuperior -->
+		<defName>SoBMartyredLadySisterSuperior</defName>
+		<label>Sister Superior</label>
+		<apparelRequired>
+			<li>SororitasArmor</li>
+		</apparelRequired>
+		<combatPower>100</combatPower>
+	</PawnKindDef>
+
+</Defs>

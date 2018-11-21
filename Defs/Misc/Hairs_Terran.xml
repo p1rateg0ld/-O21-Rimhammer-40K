@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+    <HairDef>
+		<defName>TerranHairBill</defName>
+		<label>Terran Bill</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Bill</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairBraid</defName>
+		<label>Terran Braid</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Braid</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairCassie</defName>
+		<label>Terran Cassie</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Cassie</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairEgoraptor</defName>
+		<label>Terran Egoraptor</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Egoraptor</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairEllie</defName>
+		<label>Terran Ellie</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Ellie</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairFrancis</defName>
+		<label>Terran Francis</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Francis</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairJack</defName>
+		<label>Terran Jack</label>
+		<hairGender>Any</hairGender>
+		<texPath>Hairs/Jack</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairJill</defName>
+		<label>Terran Jill</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Jill</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairJoel</defName>
+		<label>Terran Joel</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Joel</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairJohnWick</defName>
+		<label>Terran John Wick</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/JohnWick</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairJuli</defName>
+		<label>Terran Juli</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Juli</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairPharah</defName>
+		<label>Terran Pharah</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Pharah</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairPowergirl</defName>
+		<label>Terran Powergirl</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Powergirl</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairQuiet</defName>
+		<label>Terran Quiet</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Quiet</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairSam</defName>
+		<label>Terran Sam</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Sam</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairYoungBill</defName>
+		<label>Terran Young Bill</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/YoungBill</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairZoey</defName>
+		<label>Terran Zoey</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Zoey</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairWallabyA</defName>
+		<label>Terran Wallaby A</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Wallaby_A</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairWallabyB</defName>
+		<label>Terran Wallaby B</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/Wallaby_B</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>TerranHairShaved</defName>
+		<label>Terran Shaved</label>
+		<hairGender>Any</hairGender>
+		<texPath>Hairs/Shaved</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>TerranCrewCut</defName>
+		<label>Terran Crew Cut</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/CrewCut</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+
+    <HairDef>
+		<defName>TerranFade</defName>
+		<label>Terran Fade</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Fade</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranCombBack</defName>
+		<label>Terran Comb Back</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Combback</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranCombover</defName>
+		<label>Terran Comb Over</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Combover</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranTrooper</defName>
+		<label>Terran Trooper</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/TheTrooper</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+    <HairDef>
+		<defName>TerranGrimes</defName>
+		<label>Terran Grimes</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Grimes</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranUndercut</defName>
+		<label>Terran Undercut</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Undercut</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>UndercutBeard</defName>
+		<label>Terran Undercut Beard</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/UndercutBeard</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranPrice</defName>
+		<label>Terran Price</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Price</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranSoap</defName>
+		<label>Terran Soap</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Soap</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranShepherd</defName>
+		<label>Terran Shepherd</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Shepherd</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranCasual</defName>
+		<label>Terran Casual</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Casual</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranCurly</defName>
+		<label>Terran Curly</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Curly</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+	<HairDef>
+		<defName>TerranFancy</defName>
+		<label>Terran Fancy</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Fancy</texPath>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+	</HairDef>
+  
+</Defs>

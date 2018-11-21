@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="SalamandersAbstractBase" Abstract="True">
+		<defaultFactionType>Salamanders</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>AstartesBackstory</li>
+		</backstoryCategories>
+	</PawnKindDef>
+
+	<PawnKindDef Name="SalamandersBase" ParentName="SalamandersAbstractBase">
+		<defName>SalamandersBase</defName>
+		<label>Salamander</label>
+		<race>Alien_Salamander</race>
+		<combatPower>60</combatPower>
+		<itemQuality>Good</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>500</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>20000</min>
+			<max>20000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>10000</min>
+			<max>20000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SMRanged</li>
+			<li>SMMelee</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SalamandersBase"> <!-- SMSalamanderCommander -->
+		<defName>SMSalamanderCommander</defName>
+		<label>Commander</label>
+		<labelPlural>Commanders</labelPlural>
+		<factionLeader>true</factionLeader>
+		<apparelRequired>
+			<li>SalamandersCmdrArmor</li>
+			<li>SalamandersCmdrHelmet</li>
+		</apparelRequired>
+		<minGenerationAge>60</minGenerationAge>
+		<combatPower>300</combatPower>
+		<apparelTags>
+			<li>SalamanderApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SalamandersBase"> <!-- SMSalamanderSergeant -->
+		<defName>SMSalamanderSergeant</defName>
+		<label>Sergeant</label>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>SalamandersSgtArmor</li>
+			<li>SalamandersSgtHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>250</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<apparelTags>
+			<li>SalamanderApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SalamandersBase"> <!-- SMSalamanderGrunt -->
+		<defName>SMSalamanderGrunt</defName>
+		<label>Grunt</label>
+		<apparelRequired>
+			<li>SalamandersArmor</li>
+			<li>SalamandersHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>SalamanderApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SalamandersBase"> <!-- SMSalamanderTerminator -->
+		<defName>SMSalamanderTerminator</defName>
+		<label>Terminator</label>
+		<weaponTags>
+			<li>SMMelee</li>
+			<li>MetlaGun</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>SalamandersTermArmor</li>
+			<li>SalamandersTermHelmet</li>
+		</apparelRequired>
+		<combatPower>240</combatPower>
+		<apparelTags>
+			<li>SalamanderApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SalamandersBase"> <!-- SMSalamanderApothecary -->
+		<defName>SMSalamanderApothecary</defName>
+		<label>Apothecary</label>
+		<apparelRequired>
+			<li>SalamandersApothecaryArmor</li>
+			<li>SalamandersApothecaryHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>SalamanderApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+</Defs>

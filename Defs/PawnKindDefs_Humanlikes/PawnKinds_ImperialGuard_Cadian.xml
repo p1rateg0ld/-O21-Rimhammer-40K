@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="IGAbstractBase" Abstract="True">
+		<defaultFactionType>IGCadian412</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>TerranBackstory</li>
+		</backstoryCategories>
+		<apparelTags>
+			<li>CadianApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="IGBase" ParentName="IGAbstractBase">
+		<defName>IGBase</defName>
+		<label>Guardsman</label>
+		<race>Alien_Terran</race>
+		<combatPower>25</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>45</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>IGCadianRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGBase"> <!-- IGCommissar_Cadian -->
+		<defName>IGCommissar_Cadian</defName>
+		<label>Commissar</label>
+		<labelPlural>Commissars</labelPlural>
+		<factionLeader>true</factionLeader>
+		<isFighter>true</isFighter>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>1300</min>
+			<max>4000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>CommissarUniform</li>
+			<li>CommissarCap</li>
+		</apparelRequired>
+		<minGenerationAge>30</minGenerationAge>
+		<combatPower>25</combatPower>
+		<apparelTags>
+			<li>CommissarApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGBase"> <!-- IGOfficer_Cadian -->
+		<defName>IGOfficer_Cadian</defName>
+		<label>Officer</label>
+		<isFighter>true</isFighter>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>200</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>CadianTrenchcoat</li>
+			<li>CadianArmor</li>
+			<li>CadianOfficerCap</li>
+		</apparelRequired>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CommissarEquipment</li>
+		</weaponTags>
+		<combatPower>25</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGBase"> <!-- IGSoldier_Cadian -->
+		<defName>IGSoldier_Cadian</defName>
+		<label>Guardsman</label>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<apparelRequired>
+			<li>CadianUniform</li>
+			<li>CadianArmor</li>
+			<li>CadianHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>IGCadianRanged</li>
+		</weaponTags>
+		<combatPower>85</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGBase"> <!-- IGTrader_Cadian -->
+		<defName>IGTrader_Cadian</defName>
+		<label>Imperial Provisioner</label>
+		<combatPower>25</combatPower>
+		<trader>true</trader>
+		<isFighter>false</isFighter>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGBase"> <!-- IGHvyTrooper_Cadian -->
+		<defName>IGKasrkin_Cadian</defName>
+		<label>Kasrkin</label>
+		<weaponMoney>
+			<min>2040</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>IGCadianRanged</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>8070</min>
+			<max>8070</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>CadianUniform</li>
+			<li>KasrkinArmor</li>
+			<li>KasrkinHelmet</li>
+		</apparelRequired>
+		<combatPower>95</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGBase"> <!-- IGTrooper_Cadian -->
+		<defName>IGTrooper_Cadian</defName>
+		<label>Guardsman</label>
+		<weaponMoney>
+			<min>2040</min>
+			<max>7000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>IGCadianRanged</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>8070</min>
+			<max>8070</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>CadianUniform</li>
+			<li>CadianArmor</li>
+		</apparelRequired>
+		<combatPower>95</combatPower>
+	</PawnKindDef>
+
+</Defs>

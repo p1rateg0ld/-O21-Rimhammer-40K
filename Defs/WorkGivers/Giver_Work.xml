@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>DoBillsImperialRefinery</defName>
+		<label>work at imperial refinery</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>97</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ImperialRefinery</li>
+		</fixedBillGiverDefs>
+		<verb>refine materials</verb>
+		<gerund>refining materials at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Abstract="True" Name="BaseEldarPawnKind">
+		<race>Alien_Eldar</race>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseEldarPawnKind">
+		<defName>Eldar</defName>
+		<label>Eldar</label>
+		<defaultFactionType>EldarPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>UlthweBackstory</li>
+		</backstoryCategories>
+		<apparelTags>
+			<li>UlthweGuardianApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>500</min>
+			<max>800</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+</Defs>

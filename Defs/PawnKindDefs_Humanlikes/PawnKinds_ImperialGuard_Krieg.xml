@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="IGKriegAbstractBase" Abstract="True">
+		<defaultFactionType>IGKrieg143</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>KriegBackstory</li>
+		</backstoryCategories>
+		<apparelTags>
+			<li>KriegApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="IGKriegBase" ParentName="IGKriegAbstractBase">
+		<defName>IGKriegBase</defName>
+		<label>Guardsman</label>
+		<race>Alien_Krieg</race>
+		<combatPower>25</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>45</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>IGKriegRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGKriegBase"> <!-- IGCommissar_Krieg -->
+		<defName>IGCommissar_Krieg</defName>
+		<label>Krieg Commissar</label>
+		<labelPlural>Krieg Commissars</labelPlural>
+		<factionLeader>true</factionLeader>
+		<isFighter>true</isFighter>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>2000</min>
+			<max>4000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>KriegCommissarUniform</li>
+			<li>KriegCommissarCap</li>
+		</apparelRequired>
+		<combatPower>25</combatPower>
+		<apparelTags Inherit="False">
+			<li>KriegCommissarApparel</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CommissarEquipment</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGKriegBase"> <!-- IGGuardsman_Krieg -->
+		<defName>IGGuardsman_Krieg</defName>
+		<label>Krieg Guardsman</label>
+		<labelPlural>Krieg Guardsmen</labelPlural>
+		<isFighter>true</isFighter>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>KriegUniform</li>
+			<li>KriegHelmet</li>
+		</apparelRequired>
+		<apparelTags Inherit="False">
+			<li>KriegTrooperApparel</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>KriegCarbine</li>
+		</weaponTags>
+		<combatPower>25</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGKriegBase"> <!-- IGGuardsman_Krieg -->
+		<defName>IGPickelTrooper</defName>
+		<label>Krieg Veteran</label>
+		<isFighter>true</isFighter>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>KriegUniform</li>
+		</apparelRequired>
+		<apparelTags Inherit="False">
+			<li>KriegPickelTrooperApparel</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>KriegCarbine</li>
+		</weaponTags>
+		<combatPower>25</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGKriegBase"> <!-- IGGrenadier_Krieg -->
+		<defName>IGGrenadier_Krieg</defName>
+		<label>Krieg Grenadier</label>
+		<weaponMoney>
+			<min>2040</min>
+			<max>4000</max>
+		</weaponMoney>
+		<apparelRequired>
+			<li>KriegUniform</li>
+			<li>KriegHeavyHelmet</li>
+		</apparelRequired>
+		<apparelTags Inherit="False">
+			<li>KriegGrenadierApparel</li>
+		</apparelTags>
+		<weaponTags Inherit="False">
+			<li>KriegShotgun</li>
+		</weaponTags>
+		<combatPower>85</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGKriegBase"> <!-- IGGrenadier_Krieg -->
+		<defName>IGSniper_Krieg</defName>
+		<label>Krieg Sniper</label>
+		<weaponMoney>
+			<min>2040</min>
+			<max>4000</max>
+		</weaponMoney>
+		<apparelRequired>
+			<li>KriegSniperUniform</li>
+			<li>KriegSniperHelmet</li>
+		</apparelRequired>
+		<apparelTags Inherit="False">
+			<li>KriegSniperApparel</li>
+		</apparelTags>
+		<weaponTags Inherit="False">
+			<li>KriegSniper</li>
+		</weaponTags>
+		<combatPower>85</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGKriegBase"> <!-- IGTrader_Cadian -->
+		<defName>IGTrader_Krieg</defName>
+		<label>Krieg Provisioner</label>
+		<combatPower>25</combatPower>
+		<trader>true</trader>
+		<isFighter>false</isFighter>
+		<apparelRequired>
+			<li>KriegUniform</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+</Defs>

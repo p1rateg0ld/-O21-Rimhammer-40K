@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Plasma Pistol -->
+
+	<!-- <ThingDef ParentName="N17BaseMakeableGun">
+		<defName>OGI_Gun_PlasmaPistol</defName>
+		<label>Plasma Pistol</label>
+		<description>The Plasma Pistol is the smallest variant in the Plasma Weapons family. Each shot from a plasma pistol contains all the destructive fury of a larger Plasma Gun, although with a reduced range and rate of fire. The Traitor Legions have long made use of larger plasma weapons containing hydrogen fuel in a higher quantum state, making them both more powerful and more dangerous to wield. The Plasma Pistol is most commonly carried by officers of both the Space Marines and the Imperial Guard. Aside from individual Imperial officers, some specialized assault troops such as Assault Marines are also sometimes armed with Plasma Pistols.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/PlasmaPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MarketValue>2250</MarketValue>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.91</AccuracyTouch>
+			<AccuracyShort>0.81</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.42</AccuracyLong>
+			<RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>WRImpPlasmaTech</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>125</Steel>
+			<Plasteel>55</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Gold>2</Gold>
+		</costList>
+		<weaponTags>
+			<li>Gun</li>
+			<li>PlasmaPistol</li>
+			<li>GuevesaAdvPistol</li>
+		</weaponTags>
+		<thingCategories>
+			<li>OGIRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OGIRanged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<overheat>UR</overheat>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OGI_Bullet_PlasmaPistol</defaultProjectile>
+				<warmupTime>0.4</warmupTime>
+				<range>25</range>
+				<forcedMissRadius>0.5</forcedMissRadius>
+				<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>PlasmaPistolSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+		  <li>
+			<label>stock</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>1.8</cooldownTime>
+		  </li>
+		  <li>
+			<label>barrel</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>1.9</cooldownTime>
+		  </li>
+		</tools>
+	</ThingDef>
+	
+		<ThingDef ParentName="BaseBullet">
+			<defName>OGI_Bullet_PlasmaPistol</defName>
+			<label>Plasma Bolt</label>
+			<graphicData>
+				<texPath>Things/Projectile/PlamsShotSml</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<thingClass>Projectile_Explosive</thingClass>
+			<projectile>
+				<flyOverhead>false</flyOverhead>
+				<damageDef>OGIPlasma</damageDef>
+				<explosionRadius>0.50</explosionRadius>
+				<damageAmountBase>17</damageAmountBase>
+				<armorPenetrationBase>0.68</armorPenetrationBase>
+				<stoppingPower>1.5</stoppingPower>
+				<speed>55</speed>
+				<soundExplode>OGIPP_Explosion</soundExplode>
+			</projectile>
+		</ThingDef> -->
+ 
+	<!-- Plasma Gun -->
+
+	<!-- <ThingDef ParentName="N17BaseMakeableGun">
+		<thingClass>AdeptusMechanicus.ThingDef_GunOH</thingClass>
+		<defName>OGI_Gun_PlasmaGun</defName>
+		<label>Plasma Gun</label>
+		<description>The Plasma Gun is a rifle-sized Plasma Weapon common to many of the armed forces of the Imperium of Man. It is classified as a special weapon and is carried by a variety of Imperial infantry, including Space Marines, Imperial Guardsmen and Storm Troopers. Like other infantry-carried plasma weapons, Imperial Plasma Guns are more powerful than plasma weapons used by xenos races but far more unstable as they have a chance to malfunction and even explode, wounding or even killing the wielder.
+
+Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either fuel flasks or backpack containers. As the fuel is fed into the miniature fusion core inside the weapon, the hydrogen energises into the plasma state of matter which is held in the core by powerful magnetic containment fields. When fired, the fields dilate open and the plasma is ejected via a linear magnetic accelerator as a bolt of superheated matter akin to a solar flare in appearance and temperature. For this reason Plasma Weapons are sometimes colloquially called "Sun Guns" by the common population of the Imperium. Plasma Weapons tax their cooling systems considerably, and the Space Marines push the limits of their own resilience by using hydrogen in a higher quantum state than standard Imperial patterns.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/PlasmaGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MarketValue>3250</MarketValue>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.91</AccuracyTouch>
+			<AccuracyShort>0.81</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.52</AccuracyLong>
+			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>WRImpPlasmaTech</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>175</Steel>
+			<Plasteel>55</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Gold>4</Gold>
+		</costList>
+		<weaponTags>
+			<li>EliteGun</li>
+			<li>PlasmaGun</li>
+			<li>GuevesaAdvGun</li>
+		</weaponTags>
+		<thingCategories>
+			<li>OGIRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OGIRanged</li>
+		</tradeTags>
+		<verbs>
+			<li Class="AdeptusMechanicus.VerbPropertiesOH">
+				<verbClass>AdeptusMechanicus.Verb_ShootOHRF</verbClass>
+				<overheat>UR</overheat>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OGI_Bullet_PlasmaGun</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<range>31</range>
+				<forcedMissRadius>0.5</forcedMissRadius>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>PlasmaPistolSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+		  <li>
+			<label>stock</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>1.8</cooldownTime>
+		  </li>
+		  <li>
+			<label>barrel</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>1.9</cooldownTime>
+		  </li>
+		</tools>
+	</ThingDef>
+
+		<ThingDef ParentName="BaseBullet">
+			<defName>OGI_Bullet_PlasmaGun</defName>
+			<label>Plasma Bolt</label>
+			<graphicData>
+				<texPath>Things/Projectile/PlamsShotSml</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<thingClass>Projectile_Explosive</thingClass>
+			<projectile>
+				<flyOverhead>false</flyOverhead>
+				<damageDef>OGIPlasma</damageDef>
+				<explosionRadius>0.50</explosionRadius>
+				<damageAmountBase>45</damageAmountBase>
+				<armorPenetrationBase>0.68</armorPenetrationBase>
+				<stoppingPower>2</stoppingPower>
+				<speed>55</speed>
+				<soundExplode>OGIPP_Explosion</soundExplode>
+			</projectile>
+		</ThingDef> -->
+	
+	<!-- Plasma Cannon -->
+	
+	<!-- <ThingDef ParentName="N17BaseMakeableGun">
+		<thingClass>AdeptusMechanicus.ThingDef_GunOH</thingClass>
+		<defName>OGI_Gun_PlasmaCannon</defName>
+		<label>Plasma Cannon</label>
+		<description>The Plasma Cannon, also sometimes called the Heavy Plasma Gun, is an Imperial heavy weapon that relies on plasma technology to deliver lethal blasts of superheated matter to the target. Plasma Weapons work by using hydrogen fuel suspended in a cryogenic state, in either fuel flasks or backpack containers. As the fuel is fed into the miniature fusion core inside the weapon, the hydrogen energises into plasma which is held in the core of the weapon by powerful electromagnetic containment fields. When fired, the fields dilate open and the plasma is ejected via a linear magnetic accelerator as a bolt of superheated matter akin to a solar flare in appearance and temperature. This bolt will explode on impact and can generate the destructive heat of a small sun. For this reason, Plasma Weapons are sometimes called “Sun Guns” by the common Imperial population.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/PlasmaCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.250</drawSize>			
+		</graphicData>
+		<comps>     
+			<li>
+				<compClass>AdeptusMechanicus.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>120000</WorkToMake>
+			<MarketValue>8000</MarketValue>
+			<Mass>5.2</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>3.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>WRImpPlasmaTech</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>200</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Gold>6</Gold>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>PlasmaCannon</li>
+			<li>GuevesaHeavyGun</li>
+		</weaponTags>
+		<thingCategories>
+			<li>OGIRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OGIRanged</li>
+		</tradeTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.25</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="AdeptusMechanicus.VerbPropertiesOH">
+				<verbClass>AdeptusMechanicus.Verb_ShootOH</verbClass>
+				<overheat>UR</overheat>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OGI_Bullet_PlasmaCannon</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<range>45</range>
+				<forcedMissRadius>0.5</forcedMissRadius>
+				<soundCast>PlasmaCannonSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+		  </li>
+		</verbs>
+		<tools>
+		  <li>
+			<label>barrel</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>1.9</cooldownTime>
+		  </li>
+		</tools>
+	</ThingDef>
+
+		<ThingDef ParentName="BaseBullet">
+			<defName>N17_Bullet_PlasmaCannon</defName>
+			<label>Plasma Bolt</label>
+			<graphicData>
+				<texPath>Things/Projectile/PlamsShotLrg</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<thingClass>Projectile_Explosive</thingClass>
+			<projectile>
+				<flyOverhead>false</flyOverhead>
+				<damageDef>N17PlasmaCannon</damageDef>
+				<explosionRadius>2.55</explosionRadius>
+				<damageAmountBase>90</damageAmountBase>
+				<armorPenetrationBase>0.68</armorPenetrationBase>
+				<stoppingPower>3</stoppingPower>
+				<speed>55</speed>
+				<soundExplode>N17PC_Explosion</soundExplode>
+			</projectile>
+		</ThingDef> -->
+
+</Defs>

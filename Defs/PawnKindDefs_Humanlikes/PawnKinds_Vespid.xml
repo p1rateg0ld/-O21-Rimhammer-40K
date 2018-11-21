@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Tau Base ========================== -->
+
+	<PawnKindDef Name="VespidBase" Abstract="True">
+		<defaultFactionType>TauEmpire</defaultFactionType>
+		<race>Alien_Vespid</race>
+		<backstoryCategories>
+			<li>VespidBackstory</li>
+		</backstoryCategories>
+		<chemicalAddictionChance>0.035</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.60</baseRecruitDifficulty>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>VespidApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+  
+	<!-- ============================ Tau Civilian Base ========================== -->
+
+	<PawnKindDef Name="VespidCivBase" ParentName="VespidBase" Abstract="True">
+		<combatPower>25</combatPower>
+		<race>Alien_Vespid</race>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>VespidApparel</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>300</min>
+			<max>1200</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>1000</min>
+			<max>2500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>TauRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>200</min>
+			<max>300</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsChance>0.51</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.75</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>90</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>25</min>
+						<max>70</max>
+					</countRange>
+				</li>
+				<li>
+					<choiceChance>10</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>700</min>
+						<max>1000</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+  
+	<!-- ============================ Tau Civilian Castes ========================== -->
+	
+	<PawnKindDef ParentName="VespidCivBase">
+		<defName>VespidLeader</defName>
+		<label>Mal'Kor</label>
+		<backstoryCategories>
+			<li>VespidBackstory</li>
+		</backstoryCategories>
+		<labelPlural>Mal'Kor</labelPlural>
+		<factionLeader>true</factionLeader>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="VespidCivBase">
+		<defName>Vespid</defName>
+		<label>Vespid</label>
+		<backstoryCategories>
+			<li>VespidBackstory</li>
+		</backstoryCategories>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="VespidCivBase">
+		<defName>VespidSlave</defName>
+		<label>Vespid Slave</label>
+	</PawnKindDef>
+  
+ 
+	<!-- ============================ Tau Military Base ========================== -->
+  
+	<PawnKindDef Name="VespidMilBase" ParentName="VespidBase" Abstract="True">
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<isFighter>true</isFighter>
+		<race>Alien_Vespid</race>
+		<invNutrition>2.55</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<minGenerationAge>19</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>VespidApparel</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>2000</min>
+			<max>2800</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>3000</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>TauRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1500</max>
+		</techHediffsMoney>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>200</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+  
+	<!-- ============================ Tau Military Castes ========================== -->
+  
+	<PawnKindDef ParentName="VespidMilBase" Name="StingwingBase">
+		<defName>VespidStingwing</defName>
+		<label>Vespid Stingwing</label>
+		<backstoryCategories>
+			<li>StingwingBackstory</li>
+		</backstoryCategories>
+		<combatPower>135</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>VespidApparel</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>500</min>
+			<max>2500</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>VespidArmour</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>3000</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>TauRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>2000</min>
+			<max>3000</max>
+		</techHediffsMoney>
+		<combatEnhancingDrugsCount>
+			<min>0</min>
+			<max>2</max>
+		</combatEnhancingDrugsCount>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.88</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>180</min>
+						<max>400</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>  
+	
+	<PawnKindDef ParentName="StingwingBase">
+		<defName>VespidStingwingSacea</defName>
+		<label>Vespid Stingwing</label>
+		<backstoryCategories>
+			<li>StingwingBackstory</li>
+		</backstoryCategories>
+		<combatPower>135</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelTags Inherit="false">
+			<li>VespidSaceaApparel</li>
+		</apparelTags>
+		<apparelRequired Inherit="false">
+			<li>VespidArmourSacea</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>TauRanged</li>
+		</weaponTags>
+	</PawnKindDef>  
+
+</Defs>

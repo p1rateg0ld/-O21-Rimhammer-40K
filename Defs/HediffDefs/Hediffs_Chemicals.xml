@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<!-- Recaf Start -->
+	
+	<ChemicalDef>
+		<defName>N17Recaf</defName>
+		<label>recaf</label>
+		<addictionHediff>N17RecafAddiction</addictionHediff>
+		<toleranceHediff>N17RecafTolerance</toleranceHediff>
+		<canBinge>false</canBinge>
+		<onGeneratedAddictedToleranceChance>0.0</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+	
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_N17Recaf</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>recaf</label>
+		<description>Because of a recaf addiction, this person needs to regularly consume it regularly to avoid withdrawal symptoms.</description>
+		<listPriority>100</listPriority>
+	</NeedDef>
+	
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>N17RecafTolerance</defName>
+		<label>recaf tolerance</label>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.05</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>N17Recaf</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+  
+	<HediffDef ParentName="AddictionBase">
+		<defName>N17RecafAddiction</defName>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<label>recaf addiction</label>
+		<causesNeed>Chemical_N17Recaf</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>withdrawal</label>
+				<restFallFactorOffset>0.2</restFallFactorOffset>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>N17RecafWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>N17RecafAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>recaf withdrawal</label>
+				<description>I'm tired and unfocused. I could do with a cup of recaf</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Recaf End -->
+	
+</Defs>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>VespidMandibleL</defName>
+		<label>left mandible</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>VespidMandibleR</defName>
+		<label>right mandible</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>VespidAbdomen</defName>
+		<label>abdomen</label>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>VespidWing</defName>
+		<label>wing</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+  </BodyPartDef>
+  
+</Defs>

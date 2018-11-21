@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>TauFoot</defName>
+		<label>hoof</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+  
+</Defs>

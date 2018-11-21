@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="LeatherBase"> <!-- Tau Leather -->
+		<defName>Leather_Tau</defName>
+		<label>tau leather</label>
+		<description>Tanned, dried, scraped Tau skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(143,194,211)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase"> <!-- Kroot Leather -->
+		<defName>Leather_Kroot</defName>
+		<label>kroot leather</label>
+		<description>Tanned, dried, scraped Kroot skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(91,114,100)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(91,114,100)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Knarloc</defName>
+		<label>knarloc leather</label>
+		<description>Strong leather, almost as strong as the animal it came from. It's definitely prestigious to wear anything made out of knarloc leather, as a legacy of the hunt. This leather particularly insulates well against heat.</description>
+		<graphicData>
+			<color>(91,114,100)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>8.0</MarketValue>
+			<StuffPower_Armor_Sharp>1.88</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>32</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(91,114,100)</color>
+			<commonality>0.0025</commonality>
+			<statFactors>
+				<MaxHitPoints>2.0</MaxHitPoints>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+  
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_KrootHound</defName>
+		<label>kroot hound leather</label>
+		<description>The semi-strong leather of a kroot hound. Compared to most leather, it is a bit tougher and while it insulates against all kinds of temperature, this particular type works better against the heat.</description>
+		<graphicData>
+			<color>(91,114,100)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<StuffPower_Armor_Sharp>1.04</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(91,114,100)</color>
+			<commonality>0.05</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase"> <!-- Vespid Leather -->
+		<defName>Leather_Vespid</defName>
+		<label>chitinous leather</label>
+		<description>The hide of a Vespid is strange, not quite soft enough to be leather, not quite hard enough to be chitin, but that just makes it malleable and thick enough to be great for cold weather protection.</description>
+		<graphicData>
+			<color>(44,81,118)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.2</MarketValue>
+			<StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>32</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(143,194,211)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Eldar</defName>
+		<label>eldar leather</label>
+		<description>Tanned, dried, scraped eldar skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(211,194,143)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(211,194,143)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase"> <!-- Ork Leather -->
+		<defName>Leather_Ork</defName>
+		<label>ork leather</label>
+		<description>Tanned, dried, scraped Ork skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(91,114,100)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(91,114,100)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+</Defs>

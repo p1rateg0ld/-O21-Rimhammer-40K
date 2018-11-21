@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ====== Armors ====== -->
+	
+	<ThingDef ParentName="ArmorSmithableBase" Name="VespidArmorBase"> <!-- Vespid Combat Armour -->
+		<defName>VespidArmour</defName>
+		<label>vespid combat armor (t'au)</label>
+		<techLevel>Spacer</techLevel>
+		<description>Armour given to the Vespids by Tau, although they typically do not wear much apparel, this is designed to protect one of the few weaknesses in their exoskeleton.</description>
+		<graphicData>
+			<texPath>Things/Vespid/T'au/Armour/T'auVespidArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Tau_Allies_VespidEquipment</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>8</Steel>
+			<Plasteel>120</Plasteel>
+			<ComponentIndustrial>12</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>14</Mass>
+			<WorkToMake>32000</WorkToMake>
+			<MaxHitPoints>500</MaxHitPoints>
+			<MarketValue>2000</MarketValue>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>45</Insulation_Cold>
+			<Insulation_Heat>45</Insulation_Heat>
+		</statBases>
+		<thingCategories>
+			<li>TauApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags>
+				<li>TauApparel</li>
+				<li>VespidApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Vespid/T'au/Armour/T'auVespidArmor</wornGraphicPath>
+			<layers>
+			    <li>Middle</li>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="VespidArmorBase">
+		<defName>VespidArmourSacea</defName>
+		<label>vespid combat armor (sa'cea)</label>
+		<graphicData>
+			<texPath>Things/Vespid/Sa'cea/Armour/Sa'ceaVespidArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>TauApparel</li>
+				<li>VespidSaceaApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Vespid/Sa'cea/Armour/Sa'ceaVespidArmor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="BlackTemplarsAbstractBase" Abstract="True">
+		<defaultFactionType>BlackTemplars</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>AstartesBackstory</li>
+		</backstoryCategories>
+	</PawnKindDef>
+
+	<PawnKindDef Name="BlackTemplarsBase" ParentName="BlackTemplarsAbstractBase">
+		<defName>BlackTemplarsBase</defName>
+		<label>Black Templar</label>
+		<race>Alien_Astartes</race>
+		<combatPower>60</combatPower>
+		<itemQuality>Good</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>500</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>20000</min>
+			<max>20000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>10000</min>
+			<max>20000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SMRanged</li>
+			<li>SMMelee</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BlackTemplarsBase"> <!-- SMBlackTemplarCommander -->
+		<defName>SMBlackTemplarCommander</defName>
+		<label>Commander</label>
+		<labelPlural>Commanders</labelPlural>
+		<factionLeader>true</factionLeader>
+		<apparelRequired>
+			<li>BlackTemplarsCmdrArmor</li>
+		</apparelRequired>
+		<minGenerationAge>60</minGenerationAge>
+		<combatPower>300</combatPower>
+		<apparelTags>
+			<li>BlackTemplarApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BlackTemplarsBase"> <!-- SMBlackTemplarSergeant -->
+		<defName>SMBlackTemplarSergeant</defName>
+		<label>Sergeant</label>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>BlackTemplarsSgtArmor</li>
+			<li>BlackTemplarsSgtHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>250</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<apparelTags>
+			<li>BlackTemplarApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BlackTemplarsBase"> <!-- SMBlackTemplarGrunt -->
+		<defName>SMBlackTemplarGrunt</defName>
+		<label>Grunt</label>
+		<apparelRequired>
+			<li>BlackTemplarsArmor</li>
+			<li>BlackTemplarsHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>BlackTemplarApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BlackTemplarsBase"> <!-- SMBlackTemplarTerminator -->
+		<defName>SMBlackTemplarTerminator</defName>
+		<label>Terminator</label>
+		<weaponTags>
+			<li>SMMelee</li>
+			<li>MetlaGun</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>BlackTemplarsTermArmor</li>
+			<li>BlackTemplarsTermHelmet</li>
+		</apparelRequired>
+		<combatPower>240</combatPower>
+		<apparelTags>
+			<li>BlackTemplarApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BlackTemplarsBase"> <!-- SMBlackTemplarApothecary -->
+		<defName>SMBlackTemplarApothecary</defName>
+		<label>Apothecary</label>
+		<apparelRequired>
+			<li>BlackTemplarsApothecaryArmor</li>
+			<li>BlackTemplarsApothecaryHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>BlackTemplarApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+</Defs>

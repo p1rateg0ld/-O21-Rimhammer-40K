@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="KrootFactionBase">
+		<colorSpectrum>
+			<li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+	</FactionDef>
+  
+    <FactionDef Parent="KrootFactionBase">
+		<defName>KrootPlayerColonyTribal</defName>
+		<label>Kroot Kindred</label>
+		<description>Kroot Tribal Start.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Kroot</basicMemberKind>
+		<pawnsPlural>kindred</pawnsPlural>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<expandingIconTexture>World/TauBaseIcon</expandingIconTexture>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>KrootHair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<colorSpectrum>
+			<li>(0, 0.437, 0.847)</li>
+		</colorSpectrum>
+	</FactionDef>
+
+</Defs>

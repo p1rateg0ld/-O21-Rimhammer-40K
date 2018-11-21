@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Necron Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Previous Life of a Warrior -->
+		<defName>BackstoryNecronChild00</defName>
+		<title>Necrontyr Soldier</title>
+		<titleShort>Soldier</titleShort>
+		<baseDescription>Prior to their bio-transferrence [PAWN_nameDef] used to be a soldier, they have retained some of their skills in combat despite the damage the transfer did to their soul.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>NecronWarriorBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Necron Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Necron Warrior -->
+		<defName>BackstoryNecronWarrior00</defName>
+		<title>Necron Warrior</title>
+		<titleShort>Warrior</titleShort>
+		<baseDescription>After the bio-transferrence [PAWN_nameDef] became little more than a soulless husk, incapable of anything more than war.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>NecronWarriorBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

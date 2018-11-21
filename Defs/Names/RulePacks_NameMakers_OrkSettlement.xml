@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerOrkBase</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[OrkFirst] [OrkSecond] [OrkThird]</li>
+        <li>name->[OrkSecond] [OrkThird]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>OrkFirst</keyword>
+          <path>Settlement_Names_Ork/orkz_first</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>OrkSecond</keyword>
+          <path>Settlement_Names_Ork/orkz_second</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>OrkThird</keyword>
+          <path>Settlement_Names_Ork/orkz_third</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
+
+
+
+
+
+
+

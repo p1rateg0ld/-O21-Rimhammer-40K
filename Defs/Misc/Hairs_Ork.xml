@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+    <HairDef>
+		<defName>OrkBald</defName>
+		<label>Ork Bald</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/Bald</texPath>
+		<hairTags>
+			<li>OrkHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>OrkKnot</defName>
+		<label>Ork Knot</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/OrkHair_1</texPath>
+		<hairTags>
+			<li>OrkHair</li>
+		</hairTags>
+	</HairDef>
+  
+</Defs>

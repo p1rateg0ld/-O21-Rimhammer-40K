@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ==================Main Battle Cannon================== -->
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>IGStationaryMBC</defName>
+		<label>Main Battle Cannon Emplacement</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/IG/Stationary/IG_stationary_base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		<stealable>false</stealable>
+		<fillPercent>0.95</fillPercent>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>4500</WorkToBuild>
+			<Mass>350</Mass>
+			<Beauty>2</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<designatorDropdown>RH_IG_5Stationary</designatorDropdown>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until rearm</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<fuelFilter>
+					<thingDefs>
+						<li>CeramiteMedGrade</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>50</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<fuelMultiplier>0.75</fuelMultiplier>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot shoot: Needs rearm</outOfFuelMessage>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<description>Old yet reliable design for inflicting pain on heresy.</description>
+		<size>(5,5)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<costList>
+			<CeramiteMedGrade>800</CeramiteMedGrade>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_IGStationaryMBC</turretGunDef>
+			<turretBurstCooldownTime>3</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Building/Security/IG/Stationary/IG_stationary_mbc</turretTopGraphicPath>
+			<turretTopDrawSize>5</turretTopDrawSize>
+		</building>
+		<rotatable>true</rotatable>
+		<!-- <placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers> -->
+		<researchPrerequisites>
+			<li>N17_Imp_IGHeavyTurrets</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Security/IG/Stationary/IG_stationary_mbc_menu</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_IGStationaryMBC</defName>
+		<label>Genswick Round</label>
+		<graphicData>
+			<texPath>Things/Projectile/AutoShotLrg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<flyOverhead>true</flyOverhead>
+			<damageAmountBase>30</damageAmountBase>
+			<explosionRadius>6</explosionRadius>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_IGStationaryMBC</defName>
+		<label>Main Battle Cannon</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<description>Carefully crafted cannon attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.7</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_IGStationaryMBC</defaultProjectile>
+				<forcedMissRadius>4</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1</warmupTime>
+				<requireLineOfSight>True</requireLineOfSight>
+				<minRange>10</minRange>				
+				<range>500</range>
+				<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>EarthshakerSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+		<!-- ==================Heavy Flamer================== -->
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>IGStationaryFlamer</defName>
+		<label>Heavy Flamer Emplacement</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/IG/Stationary/IG_stationary_base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		<stealable>false</stealable>
+		<fillPercent>0.95</fillPercent>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>4500</WorkToBuild>
+			<Mass>350</Mass>
+			<Beauty>2</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<designatorDropdown>RH_IG_5Stationary</designatorDropdown>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until rearm</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<fuelFilter>
+					<thingDefs>
+						<li>CeramiteMedGrade</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>50</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<fuelMultiplier>0.75</fuelMultiplier>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot shoot: Needs rearm</outOfFuelMessage>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<description>Old yet reliable design for inflicting pain on heresy.</description>
+		<size>(5,5)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<costList>
+			<CeramiteMedGrade>800</CeramiteMedGrade>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_IGStationaryFlamer</turretGunDef>
+			<turretBurstCooldownTime>3</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Building/Security/IG/Stationary/IG_stationary_flamer</turretTopGraphicPath>
+			<turretTopDrawSize>5</turretTopDrawSize>
+		</building>
+		<rotatable>true</rotatable>
+		<!-- <placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers> -->
+		<researchPrerequisites>
+			<li>N17_Imp_IGHeavyTurrets</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Security/IG/Stationary/IG_stationary_flamer_menu</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_IGStationaryFlamer</defName>
+		<label>burning promethium </label>
+		<graphicData>
+			<texPath>Things/Projectile/FlamerShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<explosionRadius>1.00</explosionRadius>
+			<postExplosionSpawnThingDef>Filth_Fuel</postExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+			<stoppingPower>0.30</stoppingPower>
+			<speed>40</speed>
+			<soundExplode>N17FL_Explosion</soundExplode>
+		</projectile>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_IGStationaryFlamer</defName>
+		<label>Main Battle Cannon</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Weapons/Ranged/Flamer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<description>Carefully crafted cannon attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.7</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>N17_Bullet_Flamer</defaultProjectile>
+				<forcedMissRadius>.01</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1</warmupTime>
+				<requireLineOfSight>True</requireLineOfSight>
+				<minRange>10</minRange>				
+				<range>35</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>32</burstShotCount>
+				<soundCast>FlamerSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>.1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+			<!-- ==================Heavy Plasma================== -->
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>IGStationaryPlasma</defName>
+		<label>Heavy Plasma Emplacement</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/IG/Stationary/IG_stationary_base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		<stealable>false</stealable>
+		<fillPercent>0.95</fillPercent>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>4500</WorkToBuild>
+			<Mass>350</Mass>
+			<Beauty>2</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<designatorDropdown>RH_IG_5Stationary</designatorDropdown>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until rearm</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<fuelFilter>
+					<thingDefs>
+						<li>CeramiteMedGrade</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>50</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<fuelMultiplier>0.75</fuelMultiplier>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot shoot: Needs rearm</outOfFuelMessage>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<description>Old yet reliable design for inflicting pain on heresy.</description>
+		<size>(5,5)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<costList>
+			<CeramiteMedGrade>800</CeramiteMedGrade>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_IGStationaryPlasma</turretGunDef>
+			<turretBurstCooldownTime>3</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Building/Security/IG/Stationary/IG_stationary_plasma</turretTopGraphicPath>
+			<turretTopDrawSize>5</turretTopDrawSize>
+		</building>
+		<rotatable>true</rotatable>
+		<!-- <placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers> -->
+		<researchPrerequisites>
+			<li>N17_Imp_IGHeavyTurrets</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Security/IG/Stationary/IG_stationary_plasma_menu</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_IGStationaryPlasma</defName>
+		 <label>Plasma Bolt</label>
+            <graphicData>
+                <texPath>Things/Projectile/PlamsShotLrg</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+            </graphicData>
+            <thingClass>Projectile_Explosive</thingClass>
+            <projectile>
+                <flyOverhead>false</flyOverhead>
+                <damageDef>N17PlasmaCannon</damageDef>
+                <explosionRadius>2.55</explosionRadius>
+                <damageAmountBase>90</damageAmountBase>
+                <armorPenetrationBase>0.68</armorPenetrationBase>
+                <stoppingPower>3</stoppingPower>
+                <speed>55</speed>
+                <soundExplode>N17PC_Explosion</soundExplode>
+            </projectile>
+        </ThingDef>
+		
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_IGStationaryPlasma</defName>
+		<label>Main Battle Cannon</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Weapons/Ranged/Flamer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<description>Carefully crafted cannon attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.7</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_IGStationaryPlasma</defaultProjectile>
+				<forcedMissRadius>.01</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1</warmupTime>
+				<requireLineOfSight>True</requireLineOfSight>
+				<minRange>10</minRange>				
+				<range>35</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>32</burstShotCount>
+				<soundCast>FlamerSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>.1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+</Defs>

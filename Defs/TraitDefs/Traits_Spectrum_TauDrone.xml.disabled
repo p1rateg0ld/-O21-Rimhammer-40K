@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>TauDrone_BaseTrait</defName>
+    <commonality>0.001</commonality>
+    <degreeDatas>
+      <li>
+        <label>Tau Drone</label>
+        <description>NAME is a Tau drone. As a drone HE is a bit faster and not vulnerable to psychic disruptions and toxic environments.</description>
+        <degree>1</degree>
+        <statOffsets>
+          <MoveSpeed>0.1</MoveSpeed>
+          <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+          <PsychicSensitivity>-1</PsychicSensitivity>
+          <ToxicSensitivity>-1</ToxicSensitivity>
+		  <MentalBreakThreshold>-0.95</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+	<ThingDef ParentName="BuildingBase" Name="TyranidOrganicBuildingBase" Abstract="True">
+		<thingClass>Building_MyceticSpore</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>150</pathCost>
+		<blockWind>true</blockWind>
+		<passability>Impassable</passability>
+		<fillPercent>1.0</fillPercent>
+		<size>(6,3)</size>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-200</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<Steel>100</Steel>
+			<Plasteel>35</Plasteel>
+			<ChunkSlagSteel>8</ChunkSlagSteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</killedLeavings>
+		<rotatable>true</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<drawerType>MapMeshOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<building>
+			<claimable>false</claimable>
+			<soundAmbient>CrashedShipPart_Ambience</soundAmbient>
+			<roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
+		</building>
+		<comps>
+			<li Class="CompProperties_SnowExpand" />
+			<li Class="CompProperties_SpawnerMechanoidsOnDamaged" />
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TyranidOrganicBuildingBase">
+		<defName>CrashedMyceticSpore</defName>
+		<label>mycetic spore</label>
+		<description>Mycetic Spores are large, living shells used to transport Tyranid creatures from Tyranid Hive Ships to a planet's surface. They could be considered the Tyranid equivalent of an Imperial Drop Pod.</description>
+		<graphicData>
+			<texPath>Things/Building/Exotic/CrashedShipPart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,3)</drawSize>
+			<shadowData>
+				<volume>(5.17, 1.0, 2.4)</volume>
+				<offset>(-0.16, 0, -0.08)</offset>
+			</shadowData>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_PsychicDrone" />
+			<li Class="CompProperties_AnimalInsanityPulser" />
+		</comps>
+	</ThingDef>
+	-->
+</Defs>

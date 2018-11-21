@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef>
+		<defName>TauEmpire</defName>
+		<label>Tau Empire</label>
+		<description>A colony of the young but advanced Tau race.</description>
+		<pawnsPlural>Tau</pawnsPlural>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>35</earliestRaidDays>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Aun'o</leaderTitle>
+		<permanentEnemy>false</permanentEnemy>
+		<startingGoodwill>
+			<min>-100</min>
+			<max>-80</max>
+		</startingGoodwill>
+		<fixedName>Tau Empire</fixedName>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategories>
+			<li>TauBackstory</li>
+		</backstoryCategories>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+		<naturalColonyGoodwill>
+			<min>-80</min>
+			<max>0</max>
+		</naturalColonyGoodwill>
+		<visitorTraderKinds>
+			<li>Visitor_Tau_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+		  <min>-50</min>
+		  <max>45</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<TauAirCaste>5</TauAirCaste>
+					<TauFireCaste>40</TauFireCaste>
+					<TauEtherealCaste>1</TauEtherealCaste>
+					<KrootWarrior>20</KrootWarrior>
+					<KrootSoldier>20</KrootSoldier>
+					<KrootTrusted>10</KrootTrusted>
+					<Tau_GuevesaUi>5</Tau_GuevesaUi>
+					<Tau_GuevesaLa>5</Tau_GuevesaLa>
+					<VespidStingwing>5</VespidStingwing>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<TauFireCaste>40</TauFireCaste>
+					<TauEtherealCaste>1</TauEtherealCaste>
+					<TauAirCaste>10</TauAirCaste>
+					<TauWaterCaste>5</TauWaterCaste>
+					<KrootTrusted>20</KrootTrusted>
+					<Tau_GuevesaUi>5</Tau_GuevesaUi>
+					<Tau_GuevesaLa>5</Tau_GuevesaLa>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<TauWaterCasteTrader>1</TauWaterCasteTrader>
+				</traders>
+				<carriers>
+					<Muffalo>4</Muffalo>
+				</carriers>
+				<guards>
+					<TauFireCaste>40</TauFireCaste>
+					<TauAirCaste>15</TauAirCaste>
+					<KrootTrusted>10</KrootTrusted>
+					<Tau_GuevesaUi>5</Tau_GuevesaUi>
+					<Tau_GuevesaLa>5</Tau_GuevesaLa>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<TauEarthCaste>5</TauEarthCaste>
+					<TauFireCaste>30</TauFireCaste>
+					<TauEtherealCaste>1</TauEtherealCaste>
+					<TauWaterCaste>5</TauWaterCaste>
+					<TauAirCaste>10</TauAirCaste>
+					<Tau_GuevesaUi>10</Tau_GuevesaUi>
+					<Tau_GuevesaLa>10</Tau_GuevesaLa>
+					<KrootTrusted>10</KrootTrusted>
+					<VespidStingwing>5</VespidStingwing>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<expandingIconTexture>World/TauBaseIcon</expandingIconTexture>
+	</FactionDef>
+
+</Defs>

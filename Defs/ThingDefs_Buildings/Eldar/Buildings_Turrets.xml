@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ================== Eldar Brightlance ================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>ELDBrightlance</defName>
+		<label>Brightlance Turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/ELD/Eld_small_bottom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>450</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(80,112,180,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>5.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>2500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until rearm</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>800</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<fuelMultiplier>0.75</fuelMultiplier>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot shoot: Needs rearm</outOfFuelMessage>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<description>A small Brightlance Tower, Extremeley power hungry.</description>
+		<size>(3,3)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<costList>
+			<Plasteel>500</Plasteel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>50</specialDisplayRadius>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_ELDBrightlance</turretGunDef>
+			<turretBurstCooldownTime>10</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Building/Security/ELD/Eld_lascannon_top</turretTopGraphicPath>
+			<turretTopDrawSize>4</turretTopDrawSize>
+		</building>
+		<rotatable>true</rotatable>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>N17_Eld_DefensiveWeapons</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Security/ELD/Eld_lascannon_menu</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+		
+	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+		<defName>Bullet_ELDBrightlance</defName>
+		<label>Eldar Brightlance Beam</label>
+		<graphicData>
+			<texPath>Things/Projectile/LasCShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>N17Las</damageDef>
+			<explosionRadius>0.75</explosionRadius>
+			<damageAmountBase>80</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>135</speed>
+			<soundExplode>N17PP_Explosion</soundExplode>
+		</projectile>
+		<thingClass>JecsTools.Projectile_Laser</thingClass>
+		<createsExplosion>true</createsExplosion>
+		<preFiringInitialIntensity>0</preFiringInitialIntensity>
+		<preFiringFinalIntensity>2</preFiringFinalIntensity>
+		<postFiringInitialIntensity>2</postFiringInitialIntensity>
+		<postFiringFinalIntensity>0</postFiringFinalIntensity>
+		<preFiringDuration>30</preFiringDuration>
+		<postFiringDuration>15</postFiringDuration>
+		<StartFireChance>1</StartFireChance>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_ELDBrightlance</defName>
+		<label>Eldar Brightlance Cannon</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<description>Carefully crafted gun attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.96</AccuracyShort>
+			<AccuracyMedium>0.97</AccuracyMedium>
+			<AccuracyLong>0.98</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ELDBrightlance</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>50</range>
+				<minRange>5</minRange>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>BrightlanceSound</soundCast>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- ================== Eldar Vibro Cannon ================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>ELDVibrocannon</defName>
+		<label>Vibro Cannon Turret</label>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/ELD/Eld_medium_bottom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>350</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(80,112,180,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until rearm</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>400</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<fuelMultiplier>0.75</fuelMultiplier>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot shoot: Needs rearm</outOfFuelMessage>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+		<description>Eldar heavy weapon based on sonic technology. A special field generates resonant sonic waves and tunnels them to a direction.</description>
+		<size>(4,4)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<costList>
+			<Plasteel>500</Plasteel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>36</specialDisplayRadius>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_ELDVibrocannon</turretGunDef>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Building/Security/ELD/Eld_vibro_top</turretTopGraphicPath>
+			<turretTopDrawSize>5</turretTopDrawSize>
+		</building>
+		<rotatable>true</rotatable>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>N17_Eld_DefensiveWeapons</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Security/ELD/Eld_vibro_menu</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+		
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ELDVibrocannon</defName>
+		<label>Tau Gauss Bolt</label>
+		<graphicData>
+			<texPath>Things/Projectile/SonicShotSml</texPath>
+		<!--Obviously must change-->
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>35</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>Gun_ELDVibrocannon</defName>
+		<label>Vibro Cannon Turret</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<description>Carefully gauss cannon attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.96</AccuracyShort>
+			<AccuracyMedium>0.97</AccuracyMedium>
+			<AccuracyLong>0.98</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ELDVibrocannon</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>45</range>
+				<minRange>2</minRange>
+				<ticksBetweenBurstShots>240</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>VibrocannonSound</soundCast>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+</Defs>	

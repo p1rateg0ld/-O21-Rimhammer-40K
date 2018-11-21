@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Tau Base ========================== -->
+
+	<PawnKindDef Name="KrootBaseTribal" Abstract="True">
+		<defaultFactionType>KrootTribal</defaultFactionType>
+		<race>Alien_Kroot</race>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+		<chemicalAddictionChance>0.035</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.60</baseRecruitDifficulty>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KrootApparel</li>
+		</apparelTags>
+		<weaponTags>
+			<li>TauRanged</li>
+		</weaponTags>
+	</PawnKindDef>
+  
+	<!-- ============================ Tau Civilian Base ========================== -->
+
+	<PawnKindDef Name="KrootCivBaseTribal" ParentName="KrootBaseTribal" Abstract="True">
+		<combatPower>25</combatPower>
+		<race>Alien_Kroot</race>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>300</min>
+			<max>900</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>1000</min>
+			<max>1200</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>200</min>
+			<max>300</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsChance>0.51</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.75</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>90</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>25</min>
+						<max>70</max>
+					</countRange>
+				</li>
+				<li>
+					<choiceChance>10</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>700</min>
+						<max>1000</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+  
+	<!-- ============================ Tau Civilian Castes ========================== -->
+  
+	<PawnKindDef ParentName="KrootCivBaseTribal">
+		<defName>KrootHunter</defName>
+		<label>Kroot Hunter</label>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="KrootCivBaseTribal">
+		<defName>KrootLeader</defName>
+		<label>Kroot Shaper</label>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+		<labelPlural>Tau leaders</labelPlural>
+		<factionLeader>true</factionLeader>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="KrootCivBaseTribal">
+		<defName>KrootTrader</defName>
+		<label>Kroot Trader</label>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+		<trader>true</trader>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="KrootCivBaseTribal">
+		<defName>KrootGrower</defName>
+		<label>Kroot Grower</label>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="KrootCivBaseTribal">
+		<defName>KrootSlave</defName>
+		<label>Kroot Slave</label>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+	</PawnKindDef>
+  
+ 
+	<!-- ============================ Tau Military Base ========================== -->
+  
+	<PawnKindDef Name="KrootMilBaseTribal" ParentName="KrootBaseTribal" Abstract="True">
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<isFighter>true</isFighter>
+		<race>Alien_Kroot</race>
+		<invNutrition>2.55</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<minGenerationAge>19</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>1000</min>
+			<max>2800</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>1000</min>
+			<max>1000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1500</max>
+		</techHediffsMoney>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>200</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+  
+	<!-- ============================ Tau Military Castes ========================== -->
+  
+	<PawnKindDef ParentName="KrootMilBaseTribal">
+		<defName>KrootWarrior</defName>
+		<label>Kroot Warrior</label>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+		<combatPower>135</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>1000</min>
+			<max>2600</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<techHediffsMoney>
+			<min>2000</min>
+			<max>3000</max>
+		</techHediffsMoney>
+		<combatEnhancingDrugsCount>
+			<min>0</min>
+			<max>2</max>
+		</combatEnhancingDrugsCount>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.88</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>180</min>
+						<max>400</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="KrootMilBaseTribal">
+		<defName>KrootSoldier</defName>
+		<label>Kroot Soldier</label>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+		<combatPower>200</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>1000</min>
+			<max>2600</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>1200</min>
+			<max>2000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>2000</min>
+			<max>3000</max>
+		</techHediffsMoney>
+		<combatEnhancingDrugsCount>
+			<min>0</min>
+			<max>2</max>
+		</combatEnhancingDrugsCount>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.88</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>180</min>
+						<max>400</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="KrootMilBaseTribal">
+		<defName>KrootTrusted</defName>
+		<label>Kroot Trusted</label>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+		<combatPower>200</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>2000</min>
+			<max>2600</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>KrootTrustedArmour</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>1200</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>TauRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>2000</min>
+			<max>3000</max>
+		</techHediffsMoney>
+		<combatEnhancingDrugsCount>
+			<min>0</min>
+			<max>2</max>
+		</combatEnhancingDrugsCount>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.88</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>180</min>
+						<max>400</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="KrootMilBaseTribal">
+		<defName>KrootTrustedSacea</defName>
+		<label>Kroot Trusted</label>
+		<backstoryCategories>
+			<li>KrootBackstory</li>
+		</backstoryCategories>
+		<combatPower>200</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>2000</min>
+			<max>2600</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>KrootSaceaApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>KrootTrustedArmourSacea</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>1200</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>TauRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>2000</min>
+			<max>3000</max>
+		</techHediffsMoney>
+		<combatEnhancingDrugsCount>
+			<min>0</min>
+			<max>2</max>
+		</combatEnhancingDrugsCount>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.88</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>180</min>
+						<max>400</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>2</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+  
+
+</Defs>

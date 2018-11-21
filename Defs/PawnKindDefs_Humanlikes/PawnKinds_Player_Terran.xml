@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Abstract="True" Name="BaseTerranPawnKind">
+		<race>Alien_Terran</race>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseTerranPawnKind">
+		<defName>Terran</defName>
+		<label>Terran</label>
+		<defaultFactionType>TerranPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>TerranBackstory</li>
+		</backstoryCategories>
+		<apparelTags Inherit="false">
+			<li>CadianApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>100</min>
+			<max>600</max>
+		</apparelMoney>
+		<apparelRequired Inherit="False">
+			<li>CadianUniform</li>
+			<li>CadianArmor</li>
+		</apparelRequired>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef Abstract="True" Name="BaseValhallanPawnKind">
+		<race>Alien_Valhallan</race>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseValhallanPawnKind">
+		<defName>Valhallan</defName>
+		<label>Valhallan</label>
+		<defaultFactionType>ValhallanPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>ValhallanBackstory</li>
+		</backstoryCategories>
+		<apparelTags Inherit="false">
+			<li>ValhallanApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>100</min>
+			<max>600</max>
+		</apparelMoney>
+		<apparelRequired Inherit="False">
+			<li>ValhallanUniform</li>
+			<li>ValhallanArmor</li>
+		</apparelRequired>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef Abstract="True" Name="BaseKriegPawnKind">
+		<race>Alien_Krieg</race>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseKriegPawnKind">
+		<defName>Krieg</defName>
+		<label>Krieg</label>
+		<defaultFactionType>KriegPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>KriegBackstory</li>
+		</backstoryCategories>
+		<apparelTags Inherit="false">
+			<li>KriegApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>100</min>
+			<max>2000</max>
+		</apparelMoney>
+		<apparelRequired Inherit="False">
+			<li>KriegUniform</li>
+			<li>KriegHelmet</li>
+		</apparelRequired>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+	<PawnKindDef Abstract="True" Name="BaseGuevesaPawnKind">
+		<race>Alien_Guevesa</race>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseGuevesaPawnKind">
+		<defName>Guevesa</defName>
+		<label>Gue'vesa</label>
+		<defaultFactionType>TauPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>GuevesaBackstory</li>
+		</backstoryCategories>
+		<apparelTags Inherit="false">
+			<li>T'auGuevesaApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>100</min>
+			<max>2000</max>
+		</apparelMoney>
+		<apparelRequired Inherit="False">
+			<li>GuevesaUniform</li>
+			<li>GuevesaArmor</li>
+		</apparelRequired>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+</Defs>

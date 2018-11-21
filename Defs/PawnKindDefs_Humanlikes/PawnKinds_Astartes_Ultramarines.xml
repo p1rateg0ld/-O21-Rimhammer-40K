@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="UltramarinesAbstractBase" Abstract="True">
+		<defaultFactionType>Ultramarines</defaultFactionType>
+		<chemicalAddictionChance>0.0</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>AstartesBackstory</li>
+		</backstoryCategories>
+	</PawnKindDef>
+
+	<PawnKindDef Name="UltramarinesBase" ParentName="UltramarinesAbstractBase">
+		<defName>UltramarinesBase</defName>
+		<label>Ultramarine</label>
+		<race>Alien_Astartes</race>
+		<combatPower>60</combatPower>
+		<itemQuality>Good</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>500</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>10000</min>
+			<max>20000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>20000</min>
+			<max>20000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SMRanged</li>
+			<li>SMMelee</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UltramarinesBase"> <!-- SMUltramarineCommander -->
+		<defName>SMUltramarineCommander</defName>
+		<label>Commander</label>
+		<labelPlural>Commanders</labelPlural>
+		<factionLeader>true</factionLeader>
+		<apparelRequired>
+			<li>UltramarineCmdrArmor</li>
+			<li>UltramarineCmdrHelmet</li>
+		</apparelRequired>
+		<minGenerationAge>60</minGenerationAge>
+		<combatPower>300</combatPower>
+		<apparelTags>
+			<li>UltramarineApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UltramarinesBase"> <!-- SMUltramarineSergeant -->
+		<defName>SMUltramarineSergeant</defName>
+		<label>Sergeant</label>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>UltramarineSgtArmor</li>
+			<li>UltramarineSgtHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>250</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<apparelTags>
+			<li>UltramarineApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UltramarinesBase"> <!-- SMUltramarineGrunt -->
+		<defName>SMUltramarineGrunt</defName>
+		<label>Grunt</label>
+		<apparelRequired>
+			<li>UltramarineArmor</li>
+			<li>UltramarineHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>UltramarineApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UltramarinesBase"> <!-- SMUltramarineTerminator -->
+		<defName>SMUltramarineTerminator</defName>
+		<label>Terminator</label>
+		<weaponTags>
+			<li>SMMelee</li>
+			<li>MetlaGun</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>UltramarineTermArmor</li>
+			<li>UltramarineTermHelmet</li>
+		</apparelRequired>
+		<combatPower>240</combatPower>
+		<apparelTags>
+			<li>UltramarineApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="UltramarinesBase"> <!-- SMUltramarineApothecary -->
+		<defName>SMUltramarineApothecary</defName>
+		<label>Apothecary</label>
+		<apparelRequired>
+			<li>UltramarineApothecaryArmor</li>
+			<li>UltramarineApothecaryHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>UltramarineApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+</Defs>

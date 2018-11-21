@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+    <HairDef>
+		<defName>SoB1Hair</defName>
+		<label>SoB1 Hair</label>
+		<hairGender>Any</hairGender>
+		<texPath>Hairs/SoB1</texPath>
+		<hairTags>
+			<li>SisterHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>SoB2Hair</defName>
+		<label>SoB2 Hair</label>
+		<hairGender>Any</hairGender>
+		<texPath>Hairs/SoB2</texPath>
+		<hairTags>
+			<li>SisterHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>SoB3Hair</defName>
+		<label>SoB3 Hair</label>
+		<hairGender>Any</hairGender>
+		<texPath>Hairs/SoB3</texPath>
+		<hairTags>
+			<li>SisterHair</li>
+		</hairTags>
+	</HairDef>
+  
+</Defs>

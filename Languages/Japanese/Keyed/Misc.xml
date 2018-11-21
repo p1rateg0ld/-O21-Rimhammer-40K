@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Orbital Relay -->
+	<NoFriendlyFactionRH>no friendly factions</NoFriendlyFactionRH>
+	<RequestFreeMilitaryAidRH>Request weak reinforcements (free)</RequestFreeMilitaryAidRH>
+	<RequestPaidMilitaryAidRH>Request decent reinforcements (500 silver)</RequestPaidMilitaryAidRH>
+	<RequestHeavyPaidMilitaryAidRH>Request strong reinforcements (900 silver)</RequestHeavyPaidMilitaryAidRH>
+	
+	<!-- Mod General Settings -->
+	<SettingsGeneral>General Settings</SettingsGeneral>
+	<UseCustomBackgroundLabel>Use Custom Background</UseCustomBackgroundLabel>
+	<UseCustomBackgroundDesc>Enables the custom background to show on the main menu.</UseCustomBackgroundDesc>
+ 
+</LanguageData>

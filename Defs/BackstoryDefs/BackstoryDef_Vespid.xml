@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Kroot Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Child of the Hunt -->
+		<defName>BackstoryVespidChild00</defName>
+		<title>Gas Grazer</title>
+		<titleShort>Gas Grazer</titleShort>
+		<baseDescription>This Vespid grew up on the homeworld of their kind, soaring through the dense atmosphere of the gas giant, Vespid.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>VespidBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Kroot Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Kroot Warrior -->
+		<defName>BackstoryStingwing</defName>
+		<title>Stingwing</title>
+		<titleShort>Stingwing</titleShort>
+		<baseDescription>After leaving Vespid, this Stingwing decided to start hunting the enemies of their people, consuming them and becoming stronger.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>VespidBackstory</li>
+			<li>VespidFighterBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="TerranFactionBase">
+		<colorSpectrum>
+			<li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+	</FactionDef>
+  
+	<FactionDef Parent="TerranFactionBase">
+		<defName>TerranPlayerColony</defName>
+		<label>Terran Colony</label>
+		<description>Your own community.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Terran</basicMemberKind>
+		<pawnsPlural>Terran citizens</pawnsPlural>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategories>
+			<li>TerranBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	
+	<FactionDef Parent="TerranFactionBase">
+		<defName>ValhallanPlayerColony</defName>
+		<label>Valhallan Colony</label>
+		<description>Your own community.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Valhallan</basicMemberKind>
+		<pawnsPlural>Valhallan citizens</pawnsPlural>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategories>
+			<li>TerranBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	
+	<FactionDef Parent="TerranFactionBase">
+		<defName>KriegPlayerColony</defName>
+		<label>Krieg Colony</label>
+		<description>Your own community.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Krieg</basicMemberKind>
+		<pawnsPlural>Krieg citizens</pawnsPlural>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategories>
+			<li>KriegBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

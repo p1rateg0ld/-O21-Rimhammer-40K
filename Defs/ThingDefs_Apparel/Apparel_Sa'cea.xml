@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ===== Clothing ===== -->
+
+	<!-- ====== Armors ====== -->
+	
+	<ThingDef ParentName="TauArmorBase">
+		<defName>TauCombatArmorSacea</defName>
+		<label>tau combat armor (sa'cea)</label>
+		<graphicData>
+			<texPath>Things/Tau/Sa'cea/Armour/Sa'ceaArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>SaceaApparel</li>
+				<li>SaceaCombatApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Tau/Sa'cea/Armour/Sa'ceaArmor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="TauLightArmorBase"> <!-- Tau Scout Armour -->
+		<defName>TauScoutArmorSacea</defName>
+		<label>tau scout armor (sa'cea)</label>
+		<graphicData>
+			<texPath>Things/Tau/Sa'cea/Armour/Sa'ceaArmorScout</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>SaceaApparel</li>
+				<li>SaceaScoutApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Tau/Sa'cea/Armour/Sa'ceaArmorScout</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+
+	<ThingDef ParentName="TauHelmetBase"><!-- Tau Combat Helmet -->
+		<defName>TauCombatHelmetSacea</defName>
+		<label>tau combat helmet (sa'cea)</label>
+		<graphicData> 
+			<texPath>Things/Tau/Sa'cea/Hats/Sa'ceaHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>SaceaApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Tau/Sa'cea/Hats/Sa'ceaHelmet</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+</Defs>

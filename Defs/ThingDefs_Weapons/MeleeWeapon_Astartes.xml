@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== Imperial  - Power Fist =========================-->
+
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>SMPowerFist</defName>
+		<label>Power Fist</label>
+		<description>A Power Fist (also known as a Power Glove) is essentially an over-sized, armoured gauntlet that generates an energy field around it, one that is capable of violently disrupting any solid matter it touches. It is a favoured close combat weapon for many warriors of the Imperium of Man, as well as the Forces of Chaos (particularly the Chaos Space Marines). It is especially an iconic weapon of the Loyalist Space Marines. A Power Fist is large and slow in combat, and so the bearer must be willing to risk the blows of his enemy before he can strike back. However, a Power Fist vastly augments a user's strength, much as Power Armour does due to the power provided its mechanical servos. The disadvantages of its unwieldy nature are often well worth the limitations, as the combination of the disruptive power field and sheer physical strength afforded by a Power Fist allows a Space Marine to pulverize and tear apart armour plate from even the most well-protected of vehicles, and to wound and kill colossal monstrous creatures in close combat; its brutal effects against more mundane foes goes without saying. It is most commonly found fitted to Space Marine Tactical Dreadnought (Terminator) Armour.</description>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Weapons/Melee/Powerclaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<costStuffCount>400</costStuffCount>
+		<statBases>
+			<WorkToMake>27500</WorkToMake>
+			<Mass>2.5</Mass>
+			<MarketValue>750</MarketValue>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50</power>
+				<armorPenetration>1</armorPenetration>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			
+			<researchPrerequisite>N17_Imp_SMBasicWeapons</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<CeramiteHighGrade>80</CeramiteHighGrade>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<weaponTags>
+			<li>SMPowerFist</li>
+		</weaponTags>
+		<thingCategories>
+			<li>SMMelee</li>
+		</thingCategories>
+		<tradeTags>
+			<li>SMMelee</li>
+		</tradeTags>
+	 </ThingDef>
+
+</Defs>

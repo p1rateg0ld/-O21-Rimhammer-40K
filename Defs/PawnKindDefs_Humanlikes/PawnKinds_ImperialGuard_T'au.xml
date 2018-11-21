@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="GuevesaAbstractBase" Abstract="True">
+		<defaultFactionType>TauEmpire</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>TerranBackstory</li>
+		</backstoryCategories>
+		<apparelTags>
+			<li>T'auGuevesaApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="GuevesaBase" ParentName="GuevesaAbstractBase">
+		<defName>GuevesaBase</defName>
+		<label>Gue'vesa</label>
+		<race>Alien_Terran</race>
+		<combatPower>25</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>45</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>TauRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GuevesaBase"> <!-- IGOfficer_Cadian -->
+		<defName>Tau_GuevesaUi</defName>
+		<label>Gue'vesa'ui</label>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>GuevesaUniform</li>
+			<li>GuevesaArmor</li>
+			<li>GuevesaHelmet</li>
+		</apparelRequired>
+		<weaponTags Inherit="false">
+			<li>TauRanged</li>
+			<li>LasPistol</li>
+			<li>Lasgun</li>
+			<li>Hellgun</li>
+			<li>LongLas</li>
+			<li>KriegCarbine</li>
+		</weaponTags>
+		<combatPower>55</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GuevesaBase"> <!-- IGSoldier_Cadian -->
+		<defName>Tau_GuevesaLa</defName>
+		<label>Gue'vesa'la</label>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>GuevesaUniform</li>
+			<li>GuevesaArmor</li>
+			<li>GuevesaHelmet</li>
+		</apparelRequired>
+		<weaponTags Inherit="false">
+			<li>TauRanged</li>
+			<li>LasPistol</li>
+			<li>Lasgun</li>
+			<li>Hellgun</li>
+			<li>LongLas</li>
+			<li>KriegCarbine</li>
+		</weaponTags>
+		<combatPower>55</combatPower>
+	</PawnKindDef>
+
+</Defs>

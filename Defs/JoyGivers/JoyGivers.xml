@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Paradox Poker -->
+
+	<JoyGiverDef>
+		<defName>PlayParadoxPoker</defName>
+		<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+		<baseChance>1.5</baseChance>
+		<thingDefs>
+			<li>ParadoxPokerTable</li>
+		</thingDefs>
+		<jobDef>PlayParadoxPoker</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
+	<!-- Regicide -->
+
+	<JoyGiverDef>
+		<defName>PlayRegicide</defName>
+		<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+		<baseChance>2</baseChance>
+		<thingDefs>
+			<li>RegicideTable</li>
+		</thingDefs>
+		<jobDef>PlayRegicide</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
+</Defs>

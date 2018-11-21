@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>SecondaryHeart</defName>
+		<label>secondary heart</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+		</tags>
+		<spawnThingOnRemoved>Heart</spawnThingOnRemoved>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Ossmodula</defName>
+		<label>ossmodula</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Bidcopea</defName>
+		<label>biscopea</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>LarramansOrgan</defName>
+		<label>Larraman's organ</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>CatelpseanNode</defName>
+		<label>catelpsean node</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Preomnor</defName>
+		<label>preomnor</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Omophadea</defName>
+		<label>omophadea</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>MultiLung</defName>
+		<label>multi-lung</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Occulobe</defName>
+		<label>Occulobe</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>SusanMembrane</defName>
+		<label>Sus-an Membrane</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>OoliticKidney</defName>
+		<label>oolitic kidney</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BloodFiltrationLiver</li>
+			<li>BloodFiltrationKidney</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Neuroglottis</defName>
+		<label>neuroglottis</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Mucranoid</defName>
+		<label>mucranoid</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>	
+	
+	<BodyPartDef>
+		<defName>BetchersGland</defName>
+		<label>Betcher's gland</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>	
+	
+	<BodyPartDef>
+		<defName>Progenoid</defName>
+		<label>progenoid gland</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>	
+  
+</Defs>

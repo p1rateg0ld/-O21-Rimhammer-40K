@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ================== Wheeled ================== -->
+   
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGWheeledBolter"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGWheeledAutocannon"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGWheeledLascannon"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGWheeledStubber"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+    <!-- ================== Quadpod ================== -->
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGQuadpodBolter"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGQuadpodAutocannon"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGQuadpodLascannon"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGQuadpodMissile"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+    <!-- ================== Tarantula ================== -->
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGTarantulaBolter"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <canForceAttack>True</canForceAttack>
+			</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGTarantulaMissile"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <canForceAttack>True</canForceAttack>
+			</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGTarantulaLascannon"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <canForceAttack>True</canForceAttack>
+			</li>
+		</value>
+	</Operation>
+
+    <!-- ================== Sabre ================== -->
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGSabreAutocannon"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGSabreBolter"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGSabreLascannon"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+    <!-- ================== Stationary ================== -->
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGStationaryMBC"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGStationaryFlamer"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGStationaryPlasma"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+
+
+<!--- UPGRADES
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="IGMannedComplex"]/comps</xpath>
+		<value>			
+			<li Class="TurretExtensions.CompProperties_Upgradable">
+				<description>Replace the barrel, firing pin, and sights.</description>
+				<costList>
+					<CeramiteMedGrade>50</CeramiteMedGrade>
+					<ComponentSpacer>1</ComponentSpacer>
+				</costList>
+				<researchPrerequisites>
+					<li>N17_Imp_IGHeavyTurrets</li>
+				</researchPrerequisites>
+				<workToUpgrade>3000</workToUpgrade>
+				<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyTurret>0.05</ShootingAccuracyTurret>
+				</statOffsets>
+				<barrelDurabilityFactor>1.6</barrelDurabilityFactor>
+				<turretTopGraphicPath>Things/Building/Security/IG/IG_manned_top_upgrade</turretTopGraphicPath>
+				<turretTopDrawSize>3</turretTopDrawSize>
+			</li>
+        </value>
+    </Operation>
+	-->
+
+	<!-- ==================Sabre Turret================== -->
+   <!-- <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGSabreTurret"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="IGSabreTurret"]/comps</xpath>
+		<value>			
+			<li Class="TurretExtensions.CompProperties_Upgradable">
+				<description>Replace the barrel, firing pin, and sights.</description>
+				<costList>
+					<CeramiteMedGrade>100</CeramiteMedGrade>
+					<CeramiteHighGrade>20</CeramiteHighGrade>
+					<ComponentSpacer>2</ComponentSpacer>
+				</costList>
+				<researchPrerequisites>
+					<li>N17_Imp_IGHeavyTurrets</li>
+				</researchPrerequisites>
+				<workToUpgrade>6000</workToUpgrade>
+				<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyTurret>0.05</ShootingAccuracyTurret>
+				</statOffsets>
+				<barrelDurabilityFactor>1.6</barrelDurabilityFactor>
+				<turretTopGraphicPath>Things/Building/Security/IG/IG_sabre_turret_top_upgrade</turretTopGraphicPath>
+				<turretTopDrawSize>5</turretTopDrawSize>
+			</li>
+        </value>
+    </Operation> -->
+	
+	<!-- ==================Earthshaker Turret================== -->
+	<!-- <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="IGEarthshaker"]</xpath>
+        <value>
+            <li Class="TurretExtensions.TurretFrameworkExtension">
+				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
+			    <useMannerShootingAccuracy>True</useMannerShootingAccuracy>
+				<useMannerAimingDelayFactor>True</useMannerAimingDelayFactor>
+				<mannerShootingAccuracyOffset>0</mannerShootingAccuracyOffset>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="IGEarthshaker"]/comps</xpath>
+		<value>			
+			<li Class="TurretExtensions.CompProperties_Upgradable">
+				<description>Replace the barrel, firing pin, and sights.</description>
+				<costList>
+					<Plasteel>120</Plasteel>
+					<ComponentSpacer>4</ComponentSpacer>
+				</costList>
+				<researchPrerequisites>
+					<li>HeavyTurrets</li>
+				</researchPrerequisites>
+				<workToUpgrade>6000</workToUpgrade>
+				<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+				<statFactors>
+					<MaxHitPoints>1.5</MaxHitPoints>
+				</statFactors>
+				<statOffsets>
+					<ShootingAccuracyTurret>0.05</ShootingAccuracyTurret>
+				</statOffsets>
+				<barrelDurabilityFactor>1.6</barrelDurabilityFactor>
+				<turretTopGraphicPath>Things/Building/Security/IG/IG_earthshaker_top_upgrade</turretTopGraphicPath>
+				<turretTopDrawSize>5</turretTopDrawSize>
+			</li>
+        </value>
+    </Operation> -->
+</Patch>

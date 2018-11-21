@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="OrkFactionBase">
+		<colorSpectrum>
+			<li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+	</FactionDef>
+  
+	<FactionDef Parent="OrkFactionBase">
+		<defName>OrkPlayerColony</defName>
+		<label>Ork Colony</label>
+		<description>Your own community.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Ork</basicMemberKind>
+		<pawnsPlural>Ork citizens</pawnsPlural>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategories>
+			<li>OrkBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/ZoomedIn_OrkzBase</homeIconPath>
+		<expandingIconTexture>World/OrkBaseIcon</expandingIconTexture>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>OrkHair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<SoundDef>
+		<defName>AstartesOvenDone</defName>	
+		<eventNames />	
+		<maxVoices>1</maxVoices> 
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>  
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Building/AstartesOvenDing</clipPath>
+					</li>
+				</grains>			
+				<volumeRange>
+					<min>60.0</min>				
+					<max>62.0</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>FreeReinforcementsOneShotRH</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Interact/FlickSwitch</clipPath>
+					</li>
+				</grains>			
+				<volumeRange>
+					<min>18.70844</min>				
+					<max>20.70332</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>MediumReinforcementsOneShotRH</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Interact/FlickSwitch</clipPath>
+					</li>
+				</grains>			
+				<volumeRange>
+					<min>18.70844</min>				
+					<max>20.70332</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>StrongReinforcementsOneShotRH</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Interact/FlickSwitch</clipPath>
+					</li>
+				</grains>			
+				<volumeRange>
+					<min>18.70844</min>				
+					<max>20.70332</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AmbientRequisitionRelayRH</defName>	
+		<sustain>True</sustain>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<priorityMode>PrioritizeNearest</priorityMode>	
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>			
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Interact/Work/Research</clipFolderPath>
+					</li>
+				</grains>			
+				<volumeRange>
+					<min>30</min>				
+					<max>30</max>
+				</volumeRange>			
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>			
+				<sustainIntervalRange>
+					<min>5</min>				
+					<max>5</max>
+				</sustainIntervalRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>PickUpRequisitionRelayRH</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Interact/FlickSwitch</clipPath>
+					</li>
+				</grains>			
+				<volumeRange>
+					<min>18.70844</min>				
+					<max>20.70332</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

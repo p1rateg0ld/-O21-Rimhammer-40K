@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<RecipeDef>
+		<defName>Brew_N17Recaf</defName>
+		<label>brew 4 cups of recaf</label>
+		<description>Brew four cups of recaf</description>
+		<jobString>Brewing recaf.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>ElectricStove</li>
+				<li>FueledStove</li>
+			<li>Campfire</li>
+		</recipeUsers>
+		<workAmount>300</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>N17RawRecaf</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>N17RawRecaf</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<N17Recaf>4</N17Recaf>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>N17_Imp_FoodDrink</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+    <HairDef>
+		<defName>FemEldar1</defName>
+		<label>Female Eldar Hair 01</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/FemEldarhair1</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>FemEldar2</defName>
+		<label>Female Eldar Hair 02</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/FemEldarhair2</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>FemEldar3</defName>
+		<label>Female Eldar Hair 03</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/FemEldarhair3</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>FemEldar4</defName>
+		<label>Female Eldar Hair 04</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/FemEldarhair4</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>FemEldar5</defName>
+		<label>Female Eldar Hair 05</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/FemEldarhair5</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>FemEldar6</defName>
+		<label>Female Eldar Hair 06</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/FemEldarhair6</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+    <HairDef>
+		<defName>MaleEldar1</defName>
+		<label>Male Eldar Hair 01</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/MaleEldarhair1</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>MaleEldar2</defName>
+		<label>Male Eldar Hair 02</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/MaleEldarhair2</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>MaleEldar3</defName>
+		<label>Male Eldar Hair 03</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/MaleEldarhair3</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>MaleEldar4</defName>
+		<label>Male Eldar Hair 04</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/MaleEldarhair4</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>MaleEldar5</defName>
+		<label>Male Eldar Hair 05</label>
+		<hairGender>Male</hairGender>
+		<texPath>Hairs/MaleEldarhair5</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+  
+</Defs>

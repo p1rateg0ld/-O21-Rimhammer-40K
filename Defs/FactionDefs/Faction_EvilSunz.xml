@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Name="FactionOrkBase">
+		<defName>OrkEvilSunz</defName>
+		<label>Evil Sunz</label>
+		<description>'da evil sunz are an ork "klan" 'oo are dedicated ta speed an mak'n as loud a noise as possible when 'n kombat. Jus as 'da goffs klan loves violence an' aggression, so 'da evil sunz love speed. ‘da evil sunz have adopted ‘da general ork maxim dat "red 'uns go faster" as dere klan motto. Evil sunz prize fast vehicles like ork warbikes, warbuggiez an' trukks on which dere boyz kan ride ta WAAGH!.
+ 
+ta assist dere highly-mobile warbands, da evil sunz have many mekboyz, ta keep dose vehicles tuned an’ runn'n. By far ‘da largest numba uv ork speed freeks kome from ‘da evil sunz klan. An ork's love uv speed kan easily affect its brain, ta ‘da point where an ork becomes addicted ta ‘da drill uv a wild ride into WAAGH!. Beyond even a speed freek's delirium 'der are also flyboyz, whose need for speed ‘as driven im into da air ‘n search uv eva greata drills, pilot'n da ork's fightas an fighta-bommaz.</description>
+		<pawnsPlural>Orks</pawnsPlural>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>15</earliestRaidDays>
+		<canMakeRandomly>True</canMakeRandomly>
+		<autoFlee>false</autoFlee>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Warboss</leaderTitle>
+		<permanentEnemy>false</permanentEnemy>
+		<expandingIconTexture>World/EvilSunzBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_OrkzBase</homeIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<startingGoodwill>
+			<min>-100</min>
+			<max>-80</max>
+		</startingGoodwill>
+		<fixedName>Evil Sunz</fixedName>
+		<settlementNameMaker>NamerOrkBase</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategories>
+			<li>OrkBackstory</li>
+		</backstoryCategories>
+		<hairTags>
+			<li>OrkHair</li>
+		</hairTags>
+		<naturalColonyGoodwill>
+			<min>-100</min>
+			<max>100</max>
+		</naturalColonyGoodwill>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-75</min>
+			<max>60</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<OrkWarboss_ES>1</OrkWarboss_ES>
+					<OrkNob_ES>4</OrkNob_ES>
+					<OrkKommando_ES>4</OrkKommando_ES>
+					<OrkArdBoy_ES>10</OrkArdBoy_ES>
+					<OrkShootaBoy_ES>20</OrkShootaBoy_ES>
+					<OrkSluggaBoy_ES>50</OrkSluggaBoy_ES>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<OrkWarboss_ES>1</OrkWarboss_ES>
+					<OrkNob_ES>3</OrkNob_ES>
+					<OrkKommando_ES>4</OrkKommando_ES>
+					<OrkSluggaBoy_ES>50</OrkSluggaBoy_ES>
+					<OrkArdBoy_ES>10</OrkArdBoy_ES>
+					<OrkShootaBoy_ES>20</OrkShootaBoy_ES>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<OrkTradaBoy_ES>1</OrkTradaBoy_ES>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<OrkNob_ES>1</OrkNob_ES>
+					<OrkSluggaBoy_ES>50</OrkSluggaBoy_ES>
+					<OrkArdBoy_ES>10</OrkArdBoy_ES>
+					<OrkShootaBoy_ES>20</OrkShootaBoy_ES>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<OrkWarboss_ES>1</OrkWarboss_ES>
+					<OrkNob_ES>4</OrkNob_ES>
+					<OrkKommando_ES>4</OrkKommando_ES>
+					<OrkArdBoy_ES>10</OrkArdBoy_ES>
+					<OrkShootaBoy_ES>50</OrkShootaBoy_ES>
+					<OrkSluggaBoy_ES>20</OrkSluggaBoy_ES>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

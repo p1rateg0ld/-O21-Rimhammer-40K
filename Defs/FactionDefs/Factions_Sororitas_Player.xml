@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="SororitasFactionBase">
+		<colorSpectrum>
+			<li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+	</FactionDef>
+  
+	<FactionDef Parent="SororitasFactionBase">
+		<defName>SororitasPlayerColony</defName>
+		<label>Sororitas Colony</label>
+		<description>Your own community.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Sororitas</basicMemberKind>
+		<pawnsPlural>Sororitas citizens</pawnsPlural>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategories>
+			<li>TerranBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>SisterHair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

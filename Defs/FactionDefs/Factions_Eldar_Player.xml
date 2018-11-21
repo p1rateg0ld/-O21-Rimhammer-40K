@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="EldarFactionBase">
+		<colorSpectrum>
+			<li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+	</FactionDef>
+  
+	<FactionDef Parent="EldarFactionBase">
+		<defName>EldarPlayerColony</defName>
+		<label>Eldar Colony</label>
+		<description>Your own community.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Eldar</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategories>
+			<li>UlthweBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<expandingIconTexture>World/EldarBaseIcon</expandingIconTexture>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

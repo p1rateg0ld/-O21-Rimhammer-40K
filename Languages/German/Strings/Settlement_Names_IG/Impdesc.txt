@@ -1,0 +1,8 @@
+﻿Legion
+Batallion
+Platoon
+Company
+Outpost
+Stronghold
+Firebase
+Fortress

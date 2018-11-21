@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="BloodRavensAbstractBase" Abstract="True">
+		<defaultFactionType>BloodRavens</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>AstartesBackstory</li>
+		</backstoryCategories>
+	</PawnKindDef>
+
+	<PawnKindDef Name="BloodRavensBase" ParentName="BloodRavensAbstractBase">
+		<defName>BloodRavensBase</defName>
+		<label>Blood Raven</label>
+		<race>Alien_Astartes</race>
+		<combatPower>60</combatPower>
+		<itemQuality>Good</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>500</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>20000</min>
+			<max>20000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>10000</min>
+			<max>20000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SMRanged</li>
+			<li>SMMelee</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BloodRavensBase"> <!-- SMBloodRavenCommander -->
+		<defName>SMBloodRavenCommander</defName>
+		<label>Commander</label>
+		<labelPlural>Commanders</labelPlural>
+		<factionLeader>true</factionLeader>
+		<apparelRequired>
+			<li>BloodRavensCmdrArmor</li>
+			<li>BloodRavensCmdrHelmet</li>
+		</apparelRequired>
+		<minGenerationAge>60</minGenerationAge>
+		<combatPower>300</combatPower>
+		<apparelTags>
+			<li>BloodRavenApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BloodRavensBase"> <!-- SMBloodRavenSergeant -->
+		<defName>SMBloodRavenSergeant</defName>
+		<label>Sergeant</label>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>BloodRavensSgtArmor</li>
+			<li>BloodRavensSgtHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>250</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<apparelTags>
+			<li>BloodRavenApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BloodRavensBase"> <!-- SMBloodRavenGrunt -->
+		<defName>SMBloodRavenGrunt</defName>
+		<label>Grunt</label>
+		<apparelRequired>
+			<li>BloodRavensArmor</li>
+			<li>BloodRavensHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>BloodRavenApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BloodRavensBase"> <!-- SMBloodRavenTerminator -->
+		<defName>SMBloodRavenTerminator</defName>
+		<label>Terminator</label>
+		<weaponTags>
+			<li>SMMelee</li>
+			<li>MetlaGun</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>BloodRavensTermArmor</li>
+			<li>BloodRavensTermHelmet</li>
+		</apparelRequired>
+		<combatPower>240</combatPower>
+		<apparelTags>
+			<li>BloodRavenApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BloodRavensBase"> <!-- SMBloodRavenApothecary -->
+		<defName>SMBloodRavenApothecary</defName>
+		<label>Apothecary</label>
+		<apparelRequired>
+			<li>BloodRavensApothecaryArmor</li>
+			<li>BloodRavensApothecaryHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>BloodRavenApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+</Defs>

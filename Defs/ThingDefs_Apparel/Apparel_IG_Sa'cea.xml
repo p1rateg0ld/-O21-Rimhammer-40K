@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Clothing ====== -->
+	
+	<ThingDef ParentName="CadianUniformBase"> <!-- Cadian Uniform -->
+		<defName>GuevesaUniformSacea</defName>
+		<label>gue'vesa uniform (sa'cea)</label>
+		<description>A full-body uniform the Gue'vesa most often wear, typically under their armor.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Cadian/Clothing/CadianUniform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories Inherit="false">
+			<li>TauApparel</li>
+		</thingCategories>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Clothing/CadianUniform</wornGraphicPath>
+			<tags Inherit="false">
+				<li>TauApparel</li>
+				<li>Sa'ceaGuevesaApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>N17_Tau_Allies_HumanApparel</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!-- ====== Armors ====== -->
+	
+	<ThingDef ParentName="CadianArmorBase"> <!-- Cadian Armour -->
+		<defName>GuevesaArmorSacea</defName>
+		<label>gue'vesa armor (sa'cea)</label>
+		<description>The armor commonly worn by the Tau Gue'vesa.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Sa'cea/Armour/Sa'ceaHumanArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories Inherit="false">
+			<li>TauApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags Inherit="false">
+				<li>TauApparel</li>
+				<li>Sa'ceaGuevesaApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Sa'cea/Armour/Sa'ceaHumanArmor</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>N17_Tau_Allies_HumanApparel</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+
+	<ThingDef ParentName="CadianHelmet"><!-- Cadian Helmet -->
+		<defName>GuevesaHelmetSacea</defName>
+		<label>gue'vesa helmet (sa'cea)</label>
+		<description>The helmet commonly worn by the Tau Gue'vesa.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Sa'cea/Hats/Sa'ceaHumanHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories Inherit="false">
+			<li>TauApparel</li>
+		</thingCategories>
+		<apparel>
+    		<tags Inherit="false">
+				<li>TauApparel</li>
+				<li>Sa'ceaGuevesaApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Sa'cea/Hats/Sa'ceaHumanHelmet</wornGraphicPath>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>N17_Tau_Allies_HumanApparel</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

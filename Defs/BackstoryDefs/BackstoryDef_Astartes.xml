@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Terran Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Child of the Imperium -->
+		<defName>BackstoryAstartesChild00</defName>
+		<title>Astartes Initiate</title>
+		<titleShort>Astartes Initiate</titleShort>
+		<baseDescription>As a young boy this Terran was chosen to go through training and implantation process for becoming a Space Marine.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>AstartesBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Terran Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryAstartes00</defName>
+		<title>Space Marine</title>
+		<titleShort>Space Marine</titleShort>
+		<baseDescription>Having finished his training, this Terran became one of the greatest warriors in the Imperium, part of the Adeptus Astartes, a Space Marine.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>AstartesBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryAstartes01</defName>
+		<title>Space Marine</title>
+		<titleShort>Space Marine</titleShort>
+		<baseDescription>Having finished his training, this Terran became one of the greatest warriors in the Imperium, part of the Adeptus Astartes, a Space Marine.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>AstartesBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryAstartes02</defName>
+		<title>Space Marine</title>
+		<titleShort>Space Marine</titleShort>
+		<baseDescription>Having finished his training, this Terran became one of the greatest warriors in the Imperium, part of the Adeptus Astartes, a Space Marine.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>2</maleCommonality>
+		<spawnCategories>
+			<li>AstartesBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>10</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>7</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

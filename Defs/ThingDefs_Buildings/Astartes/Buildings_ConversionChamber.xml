@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>SpacemarineConversionDeviceRH</defName>
+		<label>astartes oven</label>
+		<description>An automated device for converting astartes in the field. The process can have interesting effects on the persons mind and often the people they once knew will be strangers, even those people may have a hard time recognising the man who entered the chamber as the same one who left.</description>
+		<thingClass>Rimhammer40k.SpacemarineConversionDeviceRH</thingClass>
+		
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1, 2)</drawSize>
+			<shadowData>
+				<volume>(0.83, 0.3, 1.7)</volume>
+			</shadowData>
+		</graphicData>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		
+		<statBases>
+			<WorkToBuild>3200</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		
+		<tickerType>Normal</tickerType>
+		<size>(1,2)</size>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		
+		<costList>
+		  <CeramiteMedGrade>200</CeramiteMedGrade>
+		  <CeramiteHighGrade>60</CeramiteHighGrade>
+		  <ComponentIndustrial>20</ComponentIndustrial>
+		  <ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>N17_Imp_SMGeneSeed</li>
+		</researchPrerequisites>
+		
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
+</Defs>

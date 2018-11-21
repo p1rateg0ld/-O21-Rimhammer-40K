@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Abstract="True" Name="BaseVespidPawnKind">
+		<race>Alien_Vespid</race>
+		<combatPower>40</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseVespidPawnKind">
+		<defName>Vespid</defName>
+		<label>Vespid</label>
+		<defaultFactionType>TauPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>VespidBackstory</li>
+		</backstoryCategories>
+		<apparelTags>
+			<li>VespidApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>350</min>
+			<max>600</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+</Defs>

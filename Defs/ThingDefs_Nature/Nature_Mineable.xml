@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Abstract Bases -->
+
+	<ThingDef Name="N17_BuildingNaturalBase" Abstract="True">
+		<category>Building</category>
+		<selectable>true</selectable>
+		<drawerType>MapMeshOnly</drawerType>
+		<filthLeaving>Filth_RubbleRock</filthLeaving>
+	</ThingDef>
+
+	<ThingDef Name="N17_RockBase" ParentName="N17_BuildingNaturalBase" Abstract="True" >
+		<thingClass>Mineable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Linked/Rock_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Rock</li>
+				<li>MapEdge</li>
+			</linkFlags>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<neverMultiSelect>true</neverMultiSelect>
+		<rotatable>false</rotatable>
+		<saveCompressible>true</saveCompressible>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<mineable>true</mineable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<isNaturalRock>true</isNaturalRock>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+
+	<!-- Raw Ceramite -->
+
+	<ThingDef ParentName="N17_RockBase">
+		<defName>MineableCeramite</defName>
+		<label>Raw Ceramite</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(137, 108, 82)</color>
+			<colorTwo>(107, 78, 52)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<description>Raw Ceramite</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>RawCeramite</mineableThing>
+			<mineableYield>80</mineableYield>
+			<mineableScatterCommonality>0.90</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>10</min>
+				<max>30</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+</Defs>

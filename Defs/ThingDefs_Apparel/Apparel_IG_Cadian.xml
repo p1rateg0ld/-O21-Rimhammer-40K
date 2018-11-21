@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Clothing ====== -->
+	
+	<ThingDef ParentName="ApparelMakeableBase" Name="CadianUniformBase"> <!-- Cadian Uniform -->
+		<defName>CadianUniform</defName>
+		<label>cadian uniform</label>
+		<description>A full-body uniform the Imperial Guard most often wear, typically under their armor.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Cadian/Clothing/CadianUniform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>1</Mass>
+			<Insulation_Cold>7</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>IGApparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Clothing/CadianUniform</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>ImperialGuardApparel</li>
+				<li>CadianApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>N17_Imp_IGBasicArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianUniformBase">
+		<defName>CadianTrenchcoat</defName>
+		<label>cadian trenchcoat</label>
+		<description>A trenchcoat the Imperial Guard sometimes wear, provides a little more protection in the cold than the standard uniform.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>1</Mass>
+			<Insulation_Cold>14</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Cadian/Clothing/CadianTrenchcoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Clothing/CadianTrenchcoat</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Armors ====== -->
+	
+	<ThingDef ParentName="ArmorMachineableBase" Name="CadianArmorBase"> <!-- Cadian Armour -->
+		<defName>CadianArmor</defName>
+		<label>cadian armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>The armor commonly worn by the Imperial Guard Cadian regiments.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Cadian/Armor/CadianArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_IGBasicArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>10</Cloth>
+			<CeramiteLowGrade>60</CeramiteLowGrade>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<WorkToMake>64000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.46</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>IGApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags>
+				<li>ImperialGuardApparel</li>
+				<li>CadianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Armor/CadianArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="ArmorMachineableBase"> <!-- Kasrkin Armour -->
+		<defName>KasrkinArmor</defName>
+		<label>kasrkin armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>The armor commonly worn by Kasrkin troops, part of the Imperial Guard Cadian regiments.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Kasrkin/CadianKasrkinArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_IGHeavyArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>10</Cloth>
+			<CeramiteMedGrade>60</CeramiteMedGrade>
+		</costList>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.50</ToxicSensitivity>
+		</equippedStatOffsets>
+		<statBases>
+			<Mass>4</Mass>
+			<WorkToMake>64000</WorkToMake>
+			<MaxHitPoints>800</MaxHitPoints>
+			<MarketValue>650</MarketValue>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.37</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>IGApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags>
+				<li>ImperialGuardApparel</li>
+				<li>KasrkinApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Kasrkin/CadianKasrkinArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="CadianHelmet"><!-- Cadian Helmet -->
+		<defName>CadianHelmet</defName>
+		<label>cadian helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>The helmet commonly worn by the Imperial Guard Cadian regiments.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Cadian/Hats/CadianHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_IGBasicArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>5</Cloth>
+			<CeramiteLowGrade>20</CeramiteLowGrade>
+		</costList>
+		<statBases>
+			<Mass>1.8</Mass>
+			<WorkToMake>24000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>IGApparel</li>
+		</thingCategories>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+    		<tags>
+				<li>ImperialGuardApparel</li>
+				<li>CadianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Hats/CadianHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>CadianHelmetGoggles</defName>
+		<label>Cadian Helmet (Goggles)</label>
+		<description>The helmet commonly worn by the Imperial Guard Cadian regiments.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Cadian/Hats/CadianHelmetGoggles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Hats/CadianHelmetGoggles</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>CadianHelmetGasGoggles</defName>
+		<label>Cadian Helmet (Gasmask &amp; Goggles)</label>
+		<description>The helmet commonly worn by the Imperial Guard Cadian regiments.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Cadian/Hats/CadianHelmet_GasGoggles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Hats/CadianHelmet_GasGoggles</wornGraphicPath>
+		</apparel>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>CadianHelmetGas</defName>
+		<label>Cadian Helmet (Gasmask)</label>
+		<description>The helmet commonly worn by the Imperial Guard Cadian regiments.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Cadian/Hats/CadianHelmet_Gas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Hats/CadianHelmet_Gas</wornGraphicPath>
+		</apparel>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>CadianFieldCap</defName>
+		<label>Cadian Fieldcap</label>
+		<description>A hat commonly worn by the Imperial Guard Cadian regiments.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Cadian/Hats/CadianFieldcap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Hats/CadianFieldcap</wornGraphicPath>
+		</apparel>
+		<costList Inherit="false">
+			<Cloth>20</Cloth>
+			<CeramiteLowGrade>5</CeramiteLowGrade>
+		</costList>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>CadianOfficerCap</defName>
+		<label>Cadian Officers Cap</label>
+		<description>A hat commonly worn by the Imperial Guard Cadian officers.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Cadian/Hats/CadianOfficercap</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Hats/CadianOfficercap</wornGraphicPath>
+		</apparel>
+		<costList Inherit="false">
+			<Cloth>20</Cloth>
+			<CeramiteLowGrade>5</CeramiteLowGrade>
+		</costList>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>CadianHelmetMask</defName>
+		<label>Cadian Helmet (Balaclava)</label>
+		<description>The helmet commonly worn by the Imperial Guard Cadian regiments. Provides a small bonus to cold protection.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Cadian/Hats/CadianHelmet_Mask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Hats/CadianHelmet_Mask</wornGraphicPath>
+		</apparel>
+		<statBases>
+			<Mass>1.8</Mass>
+			<WorkToMake>24000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>KasrkinHelmet</defName>
+		<label>Kasrkin Helmet (Gasmask &amp; Goggles)</label>
+		<description>The helmet commonly worn by Kasrkin troops, part of the Imperial Guard Cadian regiments.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Kasrkin/CadianHelmet_Kasrkin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_IGHeavyArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList Inherit="false">
+			<Cloth>5</Cloth>
+			<CeramiteMedGrade>20</CeramiteMedGrade>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/Kasrkin/CadianHelmet_Kasrkin</wornGraphicPath>
+		</apparel>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+		<statBases>
+			<Mass>1.8</Mass>
+			<WorkToMake>24000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>250</MarketValue>
+			<ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+	</ThingDef>
+
+</Defs>

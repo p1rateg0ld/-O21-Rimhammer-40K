@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- EGGS -->
+	
+	<ThingDef ParentName="EggFertBase">
+    <defName>EggKnarlocFertilized</defName>
+    <label>knarloc egg (fert.)</label>
+    <description>Fertilized knarloc egg. If all goes well, it should hatch into a baby knarloc. Mom won't be happy if you snatch it away.</description>
+    <graphicData>
+		<color>(227,246,230)</color>
+		<drawSize>1.6</drawSize>
+    </graphicData>
+    <statBases>
+		<MarketValue>140.0</MarketValue>
+    </statBases>
+    <comps>
+		<li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>15</hatcherDaystoHatch>
+			<hatcherPawn>Knarloc</hatcherPawn>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggGreaterKnarlocFertilized</defName>
+    <label>greater knarloc egg (fert.)</label>
+    <description>Fertilized greater knarloc egg. If all goes well, it should hatch into a baby knarloc. Mom won't be happy if you snatch it away.</description>
+    <graphicData>
+		<color>(227,246,230)</color>
+		<drawSize>1.6</drawSize>
+    </graphicData>
+    <statBases>
+		<MarketValue>380.0</MarketValue>
+    </statBases>
+    <comps>
+		<li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>15</hatcherDaystoHatch>
+			<hatcherPawn>GreaterKnarloc</hatcherPawn>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggKrootHoundFertilized</defName>
+    <label>kroot hound egg (fert.)</label>
+    <description>Fertilized kroot hound egg. If all goes well, it should hatch into a kroot hound pup.</description>
+    <graphicData>
+		<color>(227,246,230)</color>
+		<drawSize>1.6</drawSize>
+    </graphicData>
+    <statBases>
+		<MarketValue>140.0</MarketValue>
+    </statBases>
+    <comps>
+		<li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>7</hatcherDaystoHatch>
+			<hatcherPawn>KrootHound</hatcherPawn>
+		</li>
+    </comps>
+  </ThingDef>
+
+</Defs>

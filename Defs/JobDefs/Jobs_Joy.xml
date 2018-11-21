@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Paradox Poker -->
+
+	<JobDef>
+		<defName>PlayParadoxPoker</defName>
+		<driverClass>JobDriver_PlayPoker</driverClass>
+		<reportString>playing paradox poker.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>4</joyMaxParticipants>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.004</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>PlayRegicide</defName>
+		<driverClass>JobDriver_SitFacingBuilding</driverClass>
+		<reportString>playing regicide.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>2</joyMaxParticipants>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.002</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+  </Defs>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Ork Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Child of the Hunt -->
+		<defName>BackstoryOrkChild00</defName>
+		<title>Orkoid</title>
+		<titleShort>Orkoid</titleShort>
+		<baseDescription>Dis boy wuz jus' a little snot, now he's eatin' an' bashin'!</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>OrkBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<forcedHediffs>
+			<li>OrkoidHealing</li>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Ork Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryOrkAdult01</defName>
+		<title>Ork Boy</title>
+		<titleShort>Ork Boy</titleShort>
+		<baseDescription>[PAWN_nameDef] woz a good lil git until he krumped sum squigs an got bandished.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>OrkBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryOrkAdult02</defName>
+		<title>Ork Boy</title>
+		<titleShort>Ork Boy</titleShort>
+		<baseDescription>[PAWN_nameDef] lowz dem metly bits...</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>OrkBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryOrkAdult03</defName>
+		<title>Kommando</title>
+		<titleShort>Kommando</titleShort>
+		<baseDescription>[PAWN_nameDef] is right properly cunnin', and dead killy, some of tha boyz even say e'z touched by Mork</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>OrkBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryOrkAdult04</defName>
+		<title>Squig 'andler</title>
+		<titleShort>Squig 'andler</titleShort>
+		<baseDescription>[PAWN_nameDef] always liked handl'n squigs. Big un's, small un's, fat un's, even un that tried to bite 'is 'ead off. Ya need squigs? Ya git [PAWN_nameDef]</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>OrkBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryOrkAdult05</defName>
+		<title>Orkphan</title>
+		<titleShort>Orkphan</titleShort>
+		<baseDescription>[PAWN_nameDef] iz a bleat'n foal, a kurdled stagger'n mutant dwarf smeared richly wit' 'da effluvia an' offal accompany'n yer alleged birth into dis world. An insensate, blink'n kalf, meaningful ta nobody, abandoned by da puke-drooling, giggl'n beasts 'oo sired yer an’ den kilt demselves 'n recognition uv wot dey had done.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>OrkBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryOrkAdult06</defName>
+		<title>'ard Boy</title>
+		<titleShort>'ard Boy</titleShort>
+		<baseDescription>[PAWN_nameDef] az gained a reputashun fer twuu stuff in 'is life. Clompting stuff rilly 'ard, an 'is vast fang collecshun from clompting evreefin' so 'ard.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>OrkBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>
+
+
+
+

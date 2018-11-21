@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Ulthwe Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Craftworld Child -->
+		<defName>BackstoryEldarChild00</defName>
+		<title>Eldar Child</title>
+		<titleShort>Eldar Child</titleShort>
+		<baseDescription>Grew up on the craftworld Ulthwe.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>UlthweBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Craftworld Child -->
+		<defName>BackstoryEldarChild01</defName>
+		<title>Eldar Child</title>
+		<titleShort>Eldar Child</titleShort>
+		<baseDescription>Grew up on the craftworld Alaitoc.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>AlaitocBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Ulthwe Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Ulthwe Warrior -->
+		<defName>BackstoryEldarUlthwe00</defName>
+		<title>Ulthwe Warrior</title>
+		<titleShort>Ulthwe Warrior</titleShort>
+		<baseDescription>Well trained warrior of the Craftworld Ulthwe.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>UlthweBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Ulthwe Warrior -->
+		<defName>BackstoryEldarUlthwe01</defName>
+		<title>Ulthwe Warrior</title>
+		<titleShort>Ulthwe Warrior</titleShort>
+		<baseDescription>Very well trained warrior of the Craftworld Ulthwe.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>UlthweBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Ulthwe Warrior -->
+		<defName>BackstoryEldarUlthwe02</defName>
+		<title>Ulthwe Warrior</title>
+		<titleShort>Ulthwe Warrior</titleShort>
+		<baseDescription>Exceptionally well trained warrior of the Craftworld Ulthwe.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>UlthweBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Alaitoc Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Alaitoc Warrior -->
+		<defName>BackstoryEldarAlaitoc00</defName>
+		<title>Alaitoc Warrior</title>
+		<titleShort>Alaitoc Warrior</titleShort>
+		<baseDescription>Well trained warrior of the Craftworld Alaitoc.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>AlaitocBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Alaitoc Warrior -->
+		<defName>BackstoryEldarAlaitoc01</defName>
+		<title>Alaitoc Warrior</title>
+		<titleShort>Alaitoc Warrior</titleShort>
+		<baseDescription>Very well trained warrior of the Craftworld Alaitoc.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>AlaitocBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Alaitoc Warrior -->
+		<defName>BackstoryEldarAlaitoc02</defName>
+		<title>Alaitoc Warrior</title>
+		<titleShort>Alaitoc Warrior</titleShort>
+		<baseDescription>Exceptionally well trained warrior of the Craftworld Alaitoc.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>AlaitocBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

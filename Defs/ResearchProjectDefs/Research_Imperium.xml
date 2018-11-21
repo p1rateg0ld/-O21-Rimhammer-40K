@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Imperial  Research-->
+	
+	<ResearchProjectDef>
+		<tab>RH40K_Tab</tab>
+		<defName>N17_Imp_Research</defName>
+		<label>Imperial Research</label>
+		<description>Allows you to research Imperial Guard subjects.</description>
+		<baseCost>100</baseCost>
+		<prerequisites>
+		
+		</prerequisites>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_Refining</defName>
+				<label>Imperial Refining</label>
+				<description>Provides access to knowledge of standard Imperial refinement processes.</description>
+				<baseCost>200</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Research</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_Ceramite01</defName>
+				<label>Mid-Grade Ceramite</label>
+				<description>Provides access to refinemend of medium grade ceramite refinement, using a mixture of ceramite and steel.</description>
+				<baseCost>400</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Refining</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_Ceramite02</defName>
+				<label>High-Grade Ceramite</label>
+				<description>Provides access to refinemend of high grade ceramite refinement, using a mixture of ceramite and plasteel.</description>
+				<baseCost>400</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Ceramite01</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_Agriculture</defName>
+				<label>Imperial Agriculture</label>
+				<description>Provides access to knowledge of standard Imperial crops.</description>
+				<baseCost>200</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Research</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_FoodDrink</defName>
+				<label>Imperial Food and Drink</label>
+				<description>Provides access to standard Imperial food and drink preperation.</description>
+				<baseCost>200</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Agriculture</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_OrbitalRequisition</defName>
+				<label>Orbital Requisition</label>
+				<description>Provides access to requisitions, what is available will rely on other research.</description>
+				<baseCost>1200</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Research</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+			
+		<!-- IG Armour and Weapons -->
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_IGBasicWeapons</defName>
+				<label>IG Basic Weapons</label>
+				<description>Provides access to basic Imperial Guard Weapons.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Research</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_IGHeavyWeapons</defName>
+				<label>IG Heavy Weapons</label>
+				<description>Provides access to heavy Imperial Guard Weapons.</description>
+				<baseCost>400</baseCost>
+				<prerequisites>
+					<li>N17_Imp_IGBasicWeapons</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_IGAdvancedWeapons</defName>
+				<label>IG Advanced Weapons</label>
+				<description>Provides access to Advanced Imperial Guard Weapons.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_IGHeavyWeapons</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+		
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_IGBasicArmor</defName>
+				<label>IG Basic Armor</label>
+				<description>Provides access to basic Imperial Guard armor and uniforms.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Research</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_IGHeavyArmor</defName>
+				<label>IG Heavy Armor</label>
+				<description>Provides access to heavy Imperial Guard armor.</description>
+				<baseCost>400</baseCost>
+				<prerequisites>
+					<li>N17_Imp_IGBasicArmor</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_IGAdvancedArmor</defName>
+				<label>IG Advanced Armor</label>
+				<description>Provides Access to advanced Imperial Guard equipment.</description>
+				<baseCost>400</baseCost>
+				<prerequisites>
+					<li>N17_Imp_IGHeavyArmor</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+			
+		<!-- SM Armour and Weapons -->
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_SMGeneSeed</defName>
+				<label>Gene-Seed Implantation</label>
+				<description>Provides access to the gene-seed implantation process for creating Astartes from humans.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_OrbitalRequisition</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_SMPowerArmor</defName>
+				<label>SM Power Armor</label>
+				<description>Provides access to Space Marine power armor.</description>
+				<baseCost>400</baseCost>
+				<prerequisites>
+					<li>N17_Imp_SMGeneSeed</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_SMTerminatorArmor</defName>
+				<label>SM Terminator Armor</label>
+				<description>Provides access to Space Marine Terminator armor.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_SMPowerArmor</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+		
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_SMBasicWeapons</defName>
+				<label>SM Basic Weapons</label>
+				<description>Provides access to Space Marine basic weapons.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_SMGeneSeed</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<!-- <ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_SMHeavyWeapons</defName>
+				<label>SM Heavy Weapons</label>
+				<description>Provides access to Space Marine heavy weapons.</description>
+				<baseCost>400</baseCost>
+				<prerequisites>
+					<li>N17_Imp_SMBasicWeapons</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef> -->
+			
+		<!-- Turrets -->
+		
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_Construction</defName>
+				<label>IG Construction</label>
+				<description>Provides access to basic Imperial Guard construction and defences.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Research</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_IGBasicTurrets</defName>
+				<label>IG Basic Turrets</label>
+				<description>Provides access to basic Imperial Guard turrets.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_Construction</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_IGHeavyTurrets</defName>
+				<label>IG Heavy Turrets</label>
+				<description>Provides access to heavy Imperial Guard turrets.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_IGBasicTurrets</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+	
+			<ResearchProjectDef>
+				<tab>RH40K_Tab</tab>
+				<defName>N17_Imp_IGPortableTurrets</defName>
+				<label>IG Portable Turrets</label>
+				<description>Provides access to portable Imperial Guard turrets.</description>
+				<baseCost>300</baseCost>
+				<prerequisites>
+					<li>N17_Imp_IGHeavyTurrets</li>
+				</prerequisites>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				<researchViewX>0</researchViewX>
+				<researchViewY>0</researchViewY>
+			</ResearchProjectDef>
+		
+</Defs>

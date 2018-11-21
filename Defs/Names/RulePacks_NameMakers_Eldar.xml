@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonEldarM</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[EldarListA][EldarListB] [EldarListC][EldarListD]</li>
+				<li>name->[EldarListA][EldarListB] '[EldarListA][EldarListB]' [EldarListC][EldarListD]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>EldarListA</keyword>
+					<path>Eldar_Names/EldarNameparts1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>EldarListB</keyword>
+					<path>Eldar_Names/EldarNameparts2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>EldarListC</keyword>
+					<path>Eldar_Names/EldarNameparts3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>EldarListD</keyword>
+					<path>Eldar_Names/EldarNameparts4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonEldarF</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[EldarListA][EldarListB] [EldarListC][EldarListD]</li>
+				<li>name->[EldarListA][EldarListB] '[EldarListC][EldarListD]' [EldarListC][EldarListD]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>EldarListA</keyword>
+					<path>Eldar_Names/EldarNameparts1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>EldarListB</keyword>
+					<path>Eldar_Names/EldarNameparts2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>EldarListC</keyword>
+					<path>Eldar_Names/EldarNameparts3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>EldarListD</keyword>
+					<path>Eldar_Names/EldarNameparts4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

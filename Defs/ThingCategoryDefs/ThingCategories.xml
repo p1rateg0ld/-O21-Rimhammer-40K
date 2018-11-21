@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Rimhammer 40k - Catagories -->
+	
+	<!-- Imperial Guard -->
+		
+		<!-- Weapons -->
+		
+		<ThingCategoryDef>
+			<defName>IGWeapons</defName>
+			<label>Imperial Guard</label>
+			<parent>Weapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>IGRanged</defName>
+			<label>Ranged</label>
+			<parent>IGWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>IGMelee</defName>
+			<label>Melee</label>
+			<parent>IGWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>IGGrenades</defName>
+			<label>Grenades</label>
+			<parent>IGWeapons</parent>
+		</ThingCategoryDef>
+		
+		<!-- Apparel -->
+		
+		<ThingCategoryDef>
+			<defName>IGApparel</defName>
+			<label>Imperial Guard</label>
+			<parent>Apparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>IGArmor</defName>
+			<label>Armor</label>
+			<parent>IGApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>IGHelmets</defName>
+			<label>Helmets</label>
+			<parent>IGApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>IGClothing</defName>
+			<label>Clothing</label>
+			<parent>IGApparel</parent>
+		</ThingCategoryDef>
+	
+	<!-- Space Marines -->
+		
+		<!-- Weapons -->
+		
+		<ThingCategoryDef>
+			<defName>SMWeapons</defName>
+			<label>Space Marines</label>
+			<parent>Weapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>SMRanged</defName>
+			<label>Ranged</label>
+			<parent>SMWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>SMMelee</defName>
+			<label>Melee</label>
+			<parent>SMWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>SMGrenades</defName>
+			<label>Grenades</label>
+			<parent>SMWeapons</parent>
+		</ThingCategoryDef>
+		
+		<!-- Apparel -->
+		
+		<ThingCategoryDef>
+			<defName>SMApparel</defName>
+			<label>Space Marine</label>
+			<parent>Apparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>SMArmor</defName>
+			<label>Armor</label>
+			<parent>SMApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>SMHelmets</defName>
+			<label>Helmets</label>
+			<parent>SMApparel</parent>
+		</ThingCategoryDef>
+		
+	<!-- Sororitas -->
+		
+		<!-- Apparel -->
+		
+		<ThingCategoryDef>
+			<defName>SoBApparel</defName>
+			<label>Sisters of Battle</label>
+			<parent>Apparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>SoBArmor</defName>
+			<label>Armor</label>
+			<parent>SoBApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>SoBHelmets</defName>
+			<label>Helmets</label>
+			<parent>SoBApparel</parent>
+		</ThingCategoryDef>
+		
+		
+	<!-- Tau -->
+		
+		<!-- Weapons -->
+		
+		<ThingCategoryDef>
+			<defName>TauWeapons</defName>
+			<label>Tau</label>
+			<parent>Weapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>TauRanged</defName>
+			<label>Ranged</label>
+			<parent>TauWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>TauMelee</defName>
+			<label>Melee</label>
+			<parent>TauWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>TauGrenades</defName>
+			<label>Grenades</label>
+			<parent>TauWeapons</parent>
+		</ThingCategoryDef>
+		
+		<!-- Apparel -->
+		
+		<ThingCategoryDef>
+			<defName>TauApparel</defName>
+			<label>Tau</label>
+			<parent>Apparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>TauArmor</defName>
+			<label>Armor</label>
+			<parent>TauApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>TauHelmets</defName>
+			<label>Helmets</label>
+			<parent>TauApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>TauClothing</defName>
+			<label>Clothing</label>
+			<parent>TauApparel</parent>
+		</ThingCategoryDef>
+	
+	<!-- Eldar -->
+		
+		<!-- Weapons -->
+		
+		<ThingCategoryDef>
+			<defName>EldarWeapons</defName>
+			<label>Eldar</label>
+			<parent>Weapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>EldarRanged</defName>
+			<label>Ranged</label>
+			<parent>EldarWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>EldarMelee</defName>
+			<label>Melee</label>
+			<parent>EldarWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>EldarGrenades</defName>
+			<label>Grenades</label>
+			<parent>EldarWeapons</parent>
+		</ThingCategoryDef>
+		
+		<!-- Apparel -->
+		
+		<ThingCategoryDef>
+			<defName>EldarApparel</defName>
+			<label>Eldar</label>
+			<parent>Apparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>EldarArmor</defName>
+			<label>Armor</label>
+			<parent>EldarApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>EldarHelmets</defName>
+			<label>Helmets</label>
+			<parent>EldarApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>EldarClothing</defName>
+			<label>Clothing</label>
+			<parent>EldarApparel</parent>
+		</ThingCategoryDef>
+	
+	<!-- Ork -->
+		
+		<!-- Weapons -->
+		
+		<ThingCategoryDef>
+			<defName>OrkWeapons</defName>
+			<label>Ork</label>
+			<parent>Weapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>OrkRanged</defName>
+			<label>Ranged</label>
+			<parent>OrkWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>OrkMelee</defName>
+			<label>Melee</label>
+			<parent>OrkWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>OrkGrenades</defName>
+			<label>Grenades</label>
+			<parent>OrkWeapons</parent>
+		</ThingCategoryDef>
+		
+		<!-- Apparel -->
+		
+		<ThingCategoryDef>
+			<defName>OrkApparel</defName>
+			<label>Ork</label>
+			<parent>Apparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>OrkArmor</defName>
+			<label>Armor</label>
+			<parent>OrkApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>OrkHelmets</defName>
+			<label>Helmets</label>
+			<parent>OrkApparel</parent>
+		</ThingCategoryDef>
+	
+	<!-- Necron -->
+		
+		<!-- Weapons -->
+		
+		<ThingCategoryDef>
+			<defName>NecronWeapons</defName>
+			<label>Necron</label>
+			<parent>Weapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>NecronRanged</defName>
+			<label>Ranged</label>
+			<parent>NecronWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>NecronMelee</defName>
+			<label>Melee</label>
+			<parent>NecronWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>NecronGrenades</defName>
+			<label>Grenades</label>
+			<parent>NecronWeapons</parent>
+		</ThingCategoryDef>
+		
+		<!-- Apparel -->
+		
+		<ThingCategoryDef>
+			<defName>NecronApparel</defName>
+			<label>Necron</label>
+			<parent>Apparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>NecronArmor</defName>
+			<label>Armor</label>
+			<parent>NecronApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>NecronHelmets</defName>
+			<label>Helmets</label>
+			<parent>NecronApparel</parent>
+		</ThingCategoryDef>
+	
+</Defs>

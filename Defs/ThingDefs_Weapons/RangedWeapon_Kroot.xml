@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--==================== Tau - Kroot Rifle =========================-->
+
+		<ThingDef ParentName="N17BaseMakeableGun">
+			<defName>KrootRifle</defName>
+			<label>Kroot Rifle</label>
+			<description>The Kroot Rifle is the basic weapon used by the Kroot. It works by firing a solid slug propelled by a chemical reaction, although it was adapted by the Tau to fire Pulse rounds to make it the equivalent to the Boltgun. It is armed with blades near the muzzle and stock and are a throwback to earlier Kroot Fighting Staves, allowing them to use their incredible speed to tear their opponents to pieces in close combat. It is still quite bulky however, and so is not ever combined with another weapon, although it doesn't often need to be.</description>
+			<graphicData>
+				<texPath>Things/Kroot/Weapons/Ranged/KrootRifle</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<soundInteract>Interact_Autopistol</soundInteract>
+			<statBases>
+				<WorkToMake>32000</WorkToMake>
+				<MarketValue>2750</MarketValue>
+				<Mass>2</Mass>
+				<AccuracyTouch>0.75</AccuracyTouch>
+				<AccuracyShort>0.50</AccuracyShort>
+				<AccuracyMedium>0.65</AccuracyMedium>
+				<AccuracyLong>0.55</AccuracyLong>
+				<RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
+			</statBases>
+			<equippedStatOffsets>
+				<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+				<PsychicSensitivity>-0.05</PsychicSensitivity>
+				<MoveSpeed>-0.25</MoveSpeed>
+			</equippedStatOffsets>
+			<verbs>
+				<li>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>N17_Bullet_TKrootRifle</defaultProjectile>
+					<warmupTime>0.8</warmupTime>
+					<range>24</range>
+					<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+					<burstShotCount>4</burstShotCount>
+					<soundCast>Shot_Revolver</soundCast>
+					<soundCastTail>GunTail_Light</soundCastTail>
+					<muzzleFlashScale>8</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				</li>
+			</verbs>
+		<tools>
+		  <li>
+			<label>stock blade</label>
+			<capacities>
+			  <li>Stab</li>
+			</capacities>
+			<power>18</power>
+			<cooldownTime>1.4</cooldownTime>
+		  </li>
+		  <li>
+			<label>barrel blade</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>25</power>
+			<cooldownTime>1.9</cooldownTime>
+		  </li>
+		</tools>
+			<techLevel>Spacer</techLevel>
+			<weaponTags>
+				<li>Gun</li>
+				<li>TKrootRifle</li>
+			</weaponTags>
+			<thingCategories>
+				<li>TauRanged</li>
+			</thingCategories>
+			<tradeTags>
+				<li>TauRanged</li>
+				<li>KrootRanged</li>
+			</tradeTags>
+			<recipeMaker>
+				<researchPrerequisite>N17_Tau_Allies_KrootWeapons</researchPrerequisite>
+			</recipeMaker>
+			<costList>
+				<ComponentIndustrial>1</ComponentIndustrial>
+				<Plasteel>2</Plasteel>
+				<Steel>10</Steel>
+			</costList>
+		</ThingDef>
+
+		<ThingDef ParentName="BaseBullet">
+			<defName>N17_Bullet_TKrootRifle</defName>
+			<label>Kroot Round</label>
+			<graphicData>
+				<texPath>Things/Projectile/BoltShotSml</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<projectile>
+				<damageDef>N17Kroot</damageDef>
+				<damageAmountBase>6</damageAmountBase>
+				<armorPenetrationBase>0.16</armorPenetrationBase>
+				<speed>100</speed>
+			</projectile>
+		</ThingDef>
+		
+</Defs>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Sororitas Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Child of the Imperium -->
+		<defName>BackstorySororitasChild00</defName>
+		<title>Sororitas Initiate</title>
+		<titleShort>Initiate</titleShort>
+		<baseDescription>As a child this Sister grew up in the convents of the Adepta Sororitas</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Female</bodyTypeGlobal>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>SororitasBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Sororitas Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Sister of Battle -->
+		<defName>BackstorySororitas00</defName>
+		<title>Sister of Battle</title>
+		<titleShort>Sister</titleShort>
+		<baseDescription>Well trained Sister of the Adepta Sororitas.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Female</bodyTypeGlobal>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>SororitasBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Sister of Battle -->
+		<defName>BackstorySororitas01</defName>
+		<title>Sister of Battle</title>
+		<titleShort>Sister</titleShort>
+		<baseDescription>Very well trained Sister of the Adepta Sororitas.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Female</bodyTypeGlobal>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>SororitasBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Sister of Battle -->
+		<defName>BackstorySororitas02</defName>
+		<title>Sister of Battle</title>
+		<titleShort>Sister</titleShort>
+		<baseDescription>Exceptionally well trained Sister of the Adepta Sororitas.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Female</bodyTypeGlobal>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>SororitasBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

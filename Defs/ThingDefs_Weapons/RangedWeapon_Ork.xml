@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Ork - Slugga -->
+	<ThingDef ParentName="N17BaseMakeableGun">
+		<defName>OrkSlugga</defName>
+		<label>Slugga</label>
+		<description>A slugga iz da ork equivalent uv a space marine bolt pistol. It iz usually paired wit' a choppa, an mobs uv boyz 'oo karry 'da two are kalled slugga boyz. Due ta ‘da ramshackle nature uv ork weaponry, every slugga iz different, but most if not all sluggas are semi-automatic, large kalibre side arms. Dough not as sophisticated as most otha weapons used ‘n ‘da imperium, sluggas are no less effective dan other, more advanced side arms when used korrectly. As far as ‘da melee-focused ork hold'n it iz koncerned, ‘da effectiveness uv a slugga iz uv little importance, as long as it iz big an' makes a loud noise when it fires.</description>
+		<graphicData>
+			<texPath>Things/Ork/Weapons/Ranged/Slugga</texPath>
+			<graphicClass>Graphic_Single</graphicClass>		
+    </graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>750</MarketValue>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.55</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+		</statBases>
+	<recipeMaker>
+		<researchPrerequisite>N17_Ork_Weapons_Basic</researchPrerequisite>
+	</recipeMaker>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+			<PsychicSensitivity>-0.5</PsychicSensitivity>
+			<MoveSpeed>0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>N17_Bullet_Slugga</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>26</range>
+				<soundCast>Shot_Revolver</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>OrkRanged</li>
+			<li>Slugga</li>
+		</weaponTags>
+		<thingCategories>
+			<li>OrkRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OrkRanged</li>
+		</tradeTags>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>2</Plasteel>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>N17_Bullet_Slugga</defName>
+		<label>Slugga Slug</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- Ork - Shoota -->
+	<ThingDef ParentName="N17BaseMakeableGun">
+		<defName>OrkShoota</defName>
+		<label>Shoota</label>
+		<description>A shoota iz a kinetic, ballistic weapon used by da orks ‘dat iz chosen not for its efficiency but for da amount uv noise it makes an’ da amount uv damage it kan do. ‘da best shootas are deafen'n an' deadly 'n equal measure. Like da slugga, shootas are not very accurate. Dis suits da orks jus fine since dey seem less interested ‘n accuracy dan ‘n kaus'n damage an' rais'n a ruckus. 'da noise uv a shoota will give orks a morale boost an' kan kause enemiez ta lose dere morale an' retreat from 'da overpower'n noise uv dozens uv shootas. None ‘da less, mobs uv shoota boyz make up for dere lack uv accuracy wit' ‘da shea volume uv fire directed at dere targets.</description>
+		<graphicData>
+			<texPath>Things/Ork/Weapons/Ranged/Shoota</texPath>
+			<graphicClass>Graphic_Single</graphicClass>		
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>2250</MarketValue>
+			<Mass>3</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>N17_Ork_Weapons_Shootas</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<PsychicSensitivity>0.05</PsychicSensitivity>
+			<MoveSpeed>0.25</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>N17_Bullet_Shoota</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>31</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>12</burstShotCount>
+				<soundCast>Shot_Revolver</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>OrkRanged</li>
+			<li>Shoota</li>
+		</weaponTags>
+		<thingCategories>
+			<li>OrkRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OrkRanged</li>
+		</tradeTags>
+		<costList>				<!-- USED TO CONTROL WHAT IS GIVEN WHEN ITEM IS SMELTED TIER 1-->
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>2</Plasteel>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>N17_Bullet_Shoota</defName>
+		<label>Shoota Slug</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- Ork - Twin Linked Shoota -->
+	<!-- <ThingDef ParentName="BaseBullet">
+		<defName>OGO_Bullet_OTwinLinkedShoota</defName>
+		<label>Shoota Slug</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<speed>40</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="N17GunMakeableBase">
+		<defName>OGO_Gun_OTwinLinkedShoota</defName>
+		<label>Ork Twin Linked Shoota</label>
+		<description>Ork Mekboyz often customise their Shootas by adding an additional barrel for more firepower. These custom Shootas cost their clients much more teef than the usual Shoota, and are often utilised by both Ork Nobs and Warbosses. Often times these deadly weapons are incorporated into Mega Armour.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Ork/TwinLinkedShoota</texPath>
+			<graphicClass>Graphic_Single</graphicClass>		
+    </graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>3550</MarketValue>
+			<Mass>6</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+		</statBases>
+	<recipeMaker>
+		<researchPrerequisite>OrkishIntenseCunning</researchPrerequisite>
+	</recipeMaker>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<PsychicSensitivity>0.05</PsychicSensitivity>
+			<MoveSpeed>0.25</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>AdeptusMechanicus.Verb_ShootRF</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OGO_Bullet_OTwinLinkedShoota</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>31</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>24</burstShotCount>
+				<soundCast>Shot_Revolver</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			</li>
+		</verbs>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>Gun</li>
+			<li>OTwinLinkedShoota</li>
+			<li>OICunningGun</li>
+		</weaponTags>
+		<thingCategories>
+			<li>OrkRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OrkRanged</li>
+		</tradeTags>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>2</Plasteel>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef> -->
+
+	<!--==================== Ork - Big Shoota =========================-->
+	<ThingDef ParentName="N17BaseMakeableGun">
+		<defName>OrkBigShoota</defName>
+		<label>Big Shoota</label>
+		<description>A Big Shoota is a loud, heavy, large-calibre machine gun that bucks and sparks when the trigger is pulled. Quite simply it is a larger caliber Shoota, and has a greater range and damage potential compared to a Shoota. A Big Shoota is also commonly fitted with an attached bayonet for melee. A Big Shoota has twice the range of a regular Shoota. Big Shootas are also less prevalent on the battlefield, as on average there is only one Ork armed with a Big Shoota for every 10 Orks in a mob, up to an average of three Big Shootas in a mob of 30 Ork Boyz.</description>
+		<graphicData>
+			<texPath>Things/Ork/Weapons/Ranged/BigShoota</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1.250</drawSize>			
+    </graphicData>
+	<comps>     
+		<li>
+			<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+		</li>
+	</comps>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>42000</WorkToMake>
+			<MarketValue>4000</MarketValue>
+			<Mass>6</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+		</statBases>
+	<recipeMaker>
+		<researchPrerequisite>N17_Ork_Weapons_Shootas</researchPrerequisite>
+	</recipeMaker>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+			<PsychicSensitivity>0.05</PsychicSensitivity>
+			<MoveSpeed>0.25</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>N17_Bullet_BigShoota</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>38</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>36</burstShotCount>
+				<soundCast>Shot_Revolver</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			</li>
+		</verbs>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>OrkRanged</li>
+			<li>BigShoota</li>
+		</weaponTags>
+		<thingCategories>
+			<li>OrkRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>OrkRanged</li>
+		</tradeTags>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>2</Plasteel>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>N17_Bullet_BigShoota</defName>
+		<label>Big Shoota Slug</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>			
+    </graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationBase>0.32</armorPenetrationBase>
+			<speed>135</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

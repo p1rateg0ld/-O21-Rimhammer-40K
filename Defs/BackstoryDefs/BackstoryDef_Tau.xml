@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Childhood Backstories ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Child of the Empire -->
+		<defName>BackstoryTauChild00</defName>
+		<title>Child of the Empire</title>
+		<titleShort>Tau'saal</titleShort>
+		<baseDescription>Belonged to the Tau Empire as a child, for their brief time before being assigned to a caste anyway.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauFireBackstory</li>
+			<li>TauAirBackstory</li>
+			<li>TauEarthBackstory</li>
+			<li>TauWaterBackstory</li>
+			<li>TauEtherealBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Tau Fire Caste ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- Fire Cadet -->
+		<defName>BackstoryTauFireCaste00</defName>
+		<title>Fire Cadet</title>
+		<titleShort>Shas'saal</titleShort>
+		<baseDescription>Cadet of the Fire Caste. This rank is given to Tau as soon as they enter service.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauFireBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Fire Warrior -->
+		<defName>BackstoryTauFireCaste01</defName>
+		<title>Fire Warrior</title>
+		<titleShort>Shas'la</titleShort>
+		<baseDescription>The first and lowest true rank of Tau society. A Shas'la would be a standard Fire Warrior.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauFireBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Fire Veteran -->
+		<defName>BackstoryTauFireCaste02</defName>
+		<title>Fire Veteran</title>
+		<titleShort>Shas'ui</titleShort>
+		<baseDescription>The second rank among the Tau. A Shas'ui is the typically the leader of a squad of Fire Warriors, or a Battlesuit pilot.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauFireBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Fire Hero -->
+		<defName>BackstoryTauFireCaste03</defName>
+		<title>Fire Hero</title>
+		<titleShort>Shas'vre</titleShort>
+		<baseDescription>The third rank among the Tau. A Shas'vre is typically a Battlesuit team leader or bodyguard.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauFireBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Fire Knight -->
+		<defName>BackstoryTauFireCaste04</defName>
+		<title>Fire Knight</title>
+		<titleShort>Shas'el</titleShort>
+		<baseDescription>The fourth and second highest Tau rank, acknowledged as one of high esteem. Shas'el are Commanders.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauFireBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Fire Commander -->
+		<defName>BackstoryTauFireCaste05</defName>
+		<title>Fire Commander</title>
+		<titleShort>Shas'o</titleShort>
+		<baseDescription>The highest Tau rank. A Shas'o is of the highest levels of command and a fearsome warrior, usually placed in command of one or more cadres.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauFireBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<!-- ============================ Tau Air Caste ========================== -->
+	
+	<AlienRace.BackstoryDef> <!-- Air Cadet -->
+		<defName>BackstoryTauAirCaste00</defName>
+		<title>Air Cadet</title>
+		<titleShort>Kor'saal</titleShort>
+		<baseDescription>Cadet of the Air Caste. This rank is given to Tau as soon as they enter service.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauAirBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-1</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Air Messenger -->
+		<defName>BackstoryTauAirCaste01</defName>
+		<title>Air Messenger</title>
+		<titleShort>Kor'la</titleShort>
+		<baseDescription>The first and lowest true rank of Tau society. A Kor'la would be a simple crewman aboard a spaceship.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauAirBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-1</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Air Carrier -->
+		<defName>BackstoryTauAirCaste02</defName>
+		<title>Air Carrier</title>
+		<titleShort>Kor'ui</titleShort>
+		<baseDescription>The second rank among the Tau. A Kor'ui would likely be an officer on board spacecraft.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauAirBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Air Pilot -->
+		<defName>BackstoryTauAirCaste03</defName>
+		<title>Air Pilot</title>
+		<titleShort>Kor'vre</titleShort>
+		<baseDescription>The third rank among the Tau. A Kor'vre is typically a fighter pilot.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauAirBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Air Captain -->
+		<defName>BackstoryTauAirCaste04</defName>
+		<title>Air Captain</title>
+		<titleShort>Kor'el</titleShort>
+		<baseDescription>The fourth and second highest Tau rank, commanders of Tau spacecraft.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauAirBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Air Admiral -->
+		<defName>BackstoryTauAirCaste05</defName>
+		<title>Air Admiral</title>
+		<titleShort>Kor'o</titleShort>
+		<baseDescription>The highest Tau rank. A Kor'o is of the highest levels of command, typically admiral of a fleet.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Thin</bodyTypeFemale>
+	<bodyTypeMale>Thin</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauAirBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>-8</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>10</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Tau Earth Caste ========================== -->
+	
+	<AlienRace.BackstoryDef> <!-- Earth Cadet -->
+		<defName>BackstoryTauEarthCaste00</defName>
+		<title>Earth Cadet</title>
+		<titleShort>Fio'saal</titleShort>
+		<baseDescription>Cadet of the Earth Caste. This rank is given to Tau as soon as they enter service.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEarthBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Earth Worker -->
+		<defName>BackstoryTauEarthCaste01</defName>
+		<title>Earth Worker</title>
+		<titleShort>Fio'la</titleShort>
+		<baseDescription>First real rank of the Earth Caste, these Tau typically do basic labour tasks like construction and factory work.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEarthBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef> <!-- Earth Worker -->
+		<defName>BackstoryTauEarthCaste01</defName>
+		<title>Earth Worker</title>
+		<titleShort>Fio'la</titleShort>
+		<baseDescription>First real rank of the Earth Caste, these Tau are well suited to farming and ranching.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEarthBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Plants</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Earth Senior -->
+		<defName>BackstoryTauEarthCaste02</defName>
+		<title>Earth Senior</title>
+		<titleShort>Fio'ui</titleShort>
+		<baseDescription>Second rank of the Earth Caste, these Tau typically go into the more advanced labour professions.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEarthBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>7</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Earth Overseer -->
+		<defName>BackstoryTauEarthCaste03</defName>
+		<title>Earth Overseer</title>
+		<titleShort>Fio'vre</titleShort>
+		<baseDescription>Third rank of the Earth Caste, they delegate tasks to the lower ranks, only performing the labour themselves when their skills are absolutely necessary.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEarthBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>10</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Earth Engineer -->
+		<defName>BackstoryTauEarthCaste04</defName>
+		<title>Earth Engineer</title>
+		<titleShort>Fio'el</titleShort>
+		<baseDescription>Fourth rank of the Earth Caste, used to handling advanced equipment and highly complex construction. </baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEarthBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>12</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>12</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Earth Planner -->
+		<defName>BackstoryTauEarthCaste05</defName>
+		<title>Earth Planner</title>
+		<titleShort>Fio'o</titleShort>
+		<baseDescription>Final rank of the Earth Caste, living in practical luxury has made them lose most of their skills gained previously, they have become rather intelligent and capable of instructing others better than most to compensate.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEarthBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Tau Water Caste ========================== -->
+	
+	<AlienRace.BackstoryDef> <!-- Water Cadet -->
+		<defName>BackstoryTauWaterCaste00</defName>
+		<title>Water Cadet</title>
+		<titleShort>Por'saal</titleShort>
+		<baseDescription>Cadet of the Water Caste. This rank is given to Tau as soon as they enter service. The Water Caste serve the Tau Empire as traders, merchants, public servants, bureaucrats, administrators, diplomats, and ambassadors.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauWaterBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Water Bureaucrat -->
+		<defName>BackstoryTauWaterCaste01</defName>
+		<title>Water Bureaucrat</title>
+		<titleShort>Por'la</titleShort>
+		<baseDescription>First rank of the Water Caste. The Water Caste serve the Tau Empire as traders, merchants, public servants, bureaucrats, administrators, diplomats, and ambassadors.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauWaterBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Water Envoy -->
+		<defName>BackstoryTauWaterCaste02</defName>
+		<title>Water Envoy</title>
+		<titleShort>Por'ui</titleShort>
+		<baseDescription>Second rank of the water caste. The Water Caste serve the Tau Empire as traders, merchants, public servants, bureaucrats, administrators, diplomats, and ambassadors.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauWaterBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Water Magister -->
+		<defName>BackstoryTauWaterCaste03</defName>
+		<title>Water Magister</title>
+		<titleShort>Por'vre</titleShort>
+		<baseDescription>Third Rank of the water caste. The Water Caste serve the Tau Empire as traders, merchants, public servants, bureaucrats, administrators, diplomats, and ambassadors.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauWaterBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Water Diplomat -->
+		<defName>BackstoryTauWaterCaste04</defName>
+		<title>Water Diplomat</title>
+		<titleShort>Por'el</titleShort>
+		<baseDescription>Fourth rank of the water caste. The Water Caste serve the Tau Empire as traders, merchants, public servants, bureaucrats, administrators, diplomats, and ambassadors.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauWaterBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Water Ambassador -->
+		<defName>BackstoryTauWaterCaste05</defName>
+		<title>Water Ambassador</title>
+		<titleShort>Por'o</titleShort>
+		<baseDescription>A leader among the water caste, the fifth and final rank achievable. The Water Caste serve the Tau Empire as traders, merchants, public servants, bureaucrats, administrators, diplomats, and ambassadors.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauWaterBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Tau Ethereal ========================== -->
+	
+	<AlienRace.BackstoryDef> <!-- Ethereal Cadet -->
+		<defName>BackstoryTauEtherealCaste00</defName>
+		<title>Ethereal Cadet</title>
+		<titleShort>Aun'saal</titleShort>
+		<baseDescription>Cadet of the Ethereal Caste. This rank is given to Tau as soon as they enter service.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEtherealBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Ethereal Prince -->
+		<defName>BackstoryTauEtherealCaste01</defName>
+		<title>Ethereal Prince</title>
+		<titleShort>Aun'la</titleShort>
+		<baseDescription>First real rank of the Ethereal caste. They serve as the undisputed rulers of the Tau Empire. Their unique role is a combination of spiritual and political duties, and their declarations shape and steer every action of the Tau Empire.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEtherealBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Ethereal Prelate -->
+		<defName>BackstoryTauEtherealCaste02</defName>
+		<title>Ethereal Prelate</title>
+		<titleShort>Aun'ui</titleShort>
+		<baseDescription>Second rank of the Ethereal caste. They serve as the undisputed rulers of the Tau Empire. Their unique role is a combination of spiritual and political duties, and their declarations shape and steer every action of the Tau Empire.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEtherealBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Ethereal King -->
+		<defName>BackstoryTauEtherealCaste03</defName>
+		<title>Ethereal King</title>
+		<titleShort>Aun'vre</titleShort>
+		<baseDescription>Third rank of the Ethereal caste. They serve as the undisputed rulers of the Tau Empire. Their unique role is a combination of spiritual and political duties, and their declarations shape and steer every action of the Tau Empire.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEtherealBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Ethereal Holy -->
+		<defName>BackstoryTauEtherealCaste04</defName>
+		<title>Ethereal Holy</title>
+		<titleShort>Aun'el</titleShort>
+		<baseDescription>Fourth rank of the Ethereal caste. They serve as the undisputed rulers of the Tau Empire. Their unique role is a combination of spiritual and political duties, and their declarations shape and steer every action of the Tau Empire.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEtherealBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Ethereal -->
+		<defName>BackstoryTauEtherealCaste05</defName>
+		<title>Ethereal</title>
+		<titleShort>Aun'o</titleShort>
+		<baseDescription>Fifth and final rank of the Ethereal caste. They serve as the undisputed rulers of the Tau Empire. Their unique role is a combination of spiritual and political duties, and their declarations shape and steer every action of the Tau Empire.</baseDescription>
+		<slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>TauBackstory</li>
+			<li>TauEtherealBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

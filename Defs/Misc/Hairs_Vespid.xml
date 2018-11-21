@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+    <HairDef>
+		<defName>VespidHair</defName>
+		<label>Vespidian Baldness</label>
+		<hairGender>Any</hairGender>
+		<texPath>Hairs/Bald</texPath>
+		<hairTags>
+			<li>VespidHair</li>
+		</hairTags>
+	</HairDef>
+  
+</Defs>
