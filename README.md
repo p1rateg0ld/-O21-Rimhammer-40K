@@ -1,5 +1,5 @@
 # -N17--Rimhammer-40K
-#Warhammer 40K introduced to Rimworld in a vanilla style. See discussions for full feature list and compatibility.
+Warhammer 40K introduced to Rimworld in a vanilla style. See discussions for full feature list and compatibility.
 #
 If you want help or to ask any questions, discuss anything about the mod with other users or simply keep up to date on progress, feel free to join the Rimhammer 40K Discord! I (Neronix17) won't be responding to comments on Steam itself anymore so it'll be the best way to contact me.
 
