@@ -82,7 +82,7 @@
 		</building>
 		<!-- <staticSunShadowHeight>0.40</staticSunShadowHeight> -->
 		<researchPrerequisites>
-			<li>N17_Imp_IGHeavyTurrets</li>
+			<li>N17_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/Sabre/IG_sabre_autocannon_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
@@ -223,7 +223,7 @@
 			<turretTopDrawSize>4</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGHeavyTurrets</li>
+			<li>N17_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/Sabre/IG_sabre_bolter_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
@@ -350,7 +350,7 @@
 			<turretTopDrawSize>4</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGHeavyTurrets</li>
+			<li>N17_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/Sabre/IG_sabre_lascannon_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
