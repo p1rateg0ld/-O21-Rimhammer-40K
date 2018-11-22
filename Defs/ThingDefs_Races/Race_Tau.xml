@@ -242,7 +242,7 @@
 					<li>TauCombatHelmet</li>
 					<li>TauCombatHelmetSacea</li>
 				</apparelList>
-				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 			</raceRestriction>
 		</alienRace>
 		<statBases>

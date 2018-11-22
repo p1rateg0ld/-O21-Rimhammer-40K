@@ -118,7 +118,7 @@
 			<raceRestriction>
 				<apparelList>
 				</apparelList>
-				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 			</raceRestriction>
 		</alienRace>
 		<statBases>

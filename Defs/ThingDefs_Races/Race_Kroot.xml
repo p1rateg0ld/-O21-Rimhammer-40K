@@ -137,7 +137,7 @@
 					<li>KrootTrustedArmour</li>
 					<li>KrootTrustedArmourSacea</li>
 				</apparelList>
-				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 			</raceRestriction>
 		</alienRace>
 		<statBases>
