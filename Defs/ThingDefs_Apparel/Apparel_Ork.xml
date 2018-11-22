@@ -539,7 +539,7 @@
 	
 	<ThingDef ParentName="OrkRedHelmetBase">
 		<defName>OrkRedJaw</defName>
-		<label>Ork Jaw (Red)</label>
+		<label>Ork Gob (Red)</label>
 		<graphicData> 
 			<texPath>Things/Ork/Hats/OrkJawRed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
