@@ -5,7 +5,7 @@
 	
 	<ThingDef ParentName="BuildingBase">
 		<defName>IGSabreAutocannon</defName>
-		<label> Sabre Autocannon</label>
+		<label>Sabre Autocannon</label>
 		<thingClass>Building_TurretGun</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Security/IG/Sabre/IG_sabre_base</texPath>
@@ -82,7 +82,7 @@
 		</building>
 		<!-- <staticSunShadowHeight>0.40</staticSunShadowHeight> -->
 		<researchPrerequisites>
-			<li>N17_Imp_IGHeavyTurrets</li>
+			<li>N17_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/Sabre/IG_sabre_autocannon_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
@@ -105,7 +105,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGSabreAutocannon</defName>
-		<label>IG Manned Gun</label>
+		<label>Sabre Autocannon</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -147,7 +147,7 @@
 	
 	<ThingDef ParentName="BuildingBase">
 		<defName>IGSabreBolter</defName>
-		<label> Sabre Bolter</label>
+		<label>Sabre Bolter</label>
 		<thingClass>Building_TurretGun</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Security/IG/Sabre/IG_sabre_base</texPath>
@@ -223,7 +223,7 @@
 			<turretTopDrawSize>4</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGHeavyTurrets</li>
+			<li>N17_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/Sabre/IG_sabre_bolter_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
@@ -231,7 +231,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGSabreBolter</defName>
-		<label>IG Manned Gun</label>
+		<label>Sabre Bolter</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -274,7 +274,7 @@
 	
 	<ThingDef ParentName="BuildingBase">
 		<defName>IGSabreLascannon</defName>
-		<label> Sabre Lascannon</label>
+		<label>Sabre Lascannon</label>
 		<thingClass>Building_TurretGun</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Security/IG/Sabre/IG_sabre_base</texPath>
@@ -350,7 +350,7 @@
 			<turretTopDrawSize>4</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGHeavyTurrets</li>
+			<li>N17_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/Sabre/IG_sabre_lascannon_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
@@ -374,20 +374,20 @@
 			<soundExplode>N17PP_Explosion</soundExplode>
 		</projectile>
 		<thingClass>JecsTools.Projectile_Laser</thingClass>
-			<createsExplosion>true</createsExplosion>
-			<preFiringInitialIntensity>0</preFiringInitialIntensity>
-			<preFiringFinalIntensity>2</preFiringFinalIntensity>
-			<postFiringInitialIntensity>2</postFiringInitialIntensity>
-			<postFiringFinalIntensity>0</postFiringFinalIntensity>
-			<preFiringDuration>2</preFiringDuration>
-			<postFiringDuration>50</postFiringDuration>
-			<StartFireChance>0.1</StartFireChance>
-			<CanStartFire>true</CanStartFire>
+		<createsExplosion>true</createsExplosion>
+		<preFiringInitialIntensity>0</preFiringInitialIntensity>
+		<preFiringFinalIntensity>2</preFiringFinalIntensity>
+		<postFiringInitialIntensity>2</postFiringInitialIntensity>
+		<postFiringFinalIntensity>0</postFiringFinalIntensity>
+		<preFiringDuration>2</preFiringDuration>
+		<postFiringDuration>50</postFiringDuration>
+		<StartFireChance>0.1</StartFireChance>
+		<CanStartFire>true</CanStartFire>
  	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGSabreLascannon</defName>
-		<label>IG Manned Gun</label>
+		<label>Sabre Lascannon</label>
 		<graphicData>     
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

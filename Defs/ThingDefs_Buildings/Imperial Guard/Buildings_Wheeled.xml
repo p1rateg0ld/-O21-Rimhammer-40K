@@ -215,7 +215,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGWheeledAutocannon</defName>
-		<label>Wheeled Bolter</label>
+		<label>Wheeled Autocannon</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -340,7 +340,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGWheeledLascannon</defName>
-		<label>Wheeled Bolter</label>
+		<label>Wheeled Lascannon</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -466,7 +466,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGWheeledStubber</defName>
-		<label>Wheeled Bolter</label>
+		<label>Wheeled Stubber</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
