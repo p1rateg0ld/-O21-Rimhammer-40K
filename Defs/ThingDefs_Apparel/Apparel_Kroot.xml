@@ -286,7 +286,7 @@
 	
 	<ThingDef ParentName="ArmorSmithableBase" Name="KootTrustedArmorBase"> <!-- Tau Combat Armour -->
 		<defName>KrootTrustedArmour</defName>
-		<label>kroot trusted armor (Sa'cea)</label>
+		<label>kroot trusted armor (t'au)</label>
 		<techLevel>Spacer</techLevel>
 		<description>This armour is only given to the most loyal among the Kroot, as a sign of trust between them and the Tau.</description>
 		<graphicData>

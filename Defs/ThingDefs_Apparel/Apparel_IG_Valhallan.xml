@@ -233,7 +233,7 @@
 			<wornGraphicPath>Things/Imperial Guard/Valhallan/Hats/ValhallanHelmet_gasmask</wornGraphicPath>
 		</apparel>
 		<equippedStatOffsets>
-			<ToxicSensitivity>-0.70</ToxicSensitivity>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
 		</equippedStatOffsets>
 	</ThingDef>
 	

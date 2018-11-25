@@ -74,7 +74,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<equippedStatOffsets Inherit="False">
-			<ToxicSensitivity>-0.60</ToxicSensitivity>
+			<ToxicSensitivity>-0.70</ToxicSensitivity>
 			<SocialImpact>0.25</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
@@ -151,7 +151,7 @@
 		<label>Krieg Commissar Cap</label>
 		<description>The cap most fitting for a Commissar, demands respect, either that or a bullet to the head.</description>
 		<equippedStatOffsets Inherit="False">
-			<ToxicSensitivity>-0.40</ToxicSensitivity>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
 			<SocialImpact>0.25</SocialImpact>
 		</equippedStatOffsets>
 		<graphicData> 

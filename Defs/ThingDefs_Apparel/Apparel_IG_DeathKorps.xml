@@ -18,7 +18,7 @@
 		</costList>
 		<tradeability>Sellable</tradeability>
 		<equippedStatOffsets>
-			<ToxicSensitivity>-0.60</ToxicSensitivity>
+			<ToxicSensitivity>-0.70</ToxicSensitivity>
 		</equippedStatOffsets>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -220,7 +220,7 @@
 			<CeramiteLowGrade>20</CeramiteLowGrade>
 		</costList>
 		<equippedStatOffsets>
-			<ToxicSensitivity>-0.40</ToxicSensitivity>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
 		</equippedStatOffsets>
 		<statBases>
 			<Mass>1.8</Mass>
