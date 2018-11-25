@@ -215,7 +215,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGQuadpodAutocannon</defName>
-		<label>Mobile Bolter</label>
+		<label>Mobile Autocannon</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -340,7 +340,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGQuadpodLascannon</defName>
-		<label>Mobile Bolter</label>
+		<label>Mobile Lascannon</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -483,7 +483,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGQuadpodMissile</defName>
-		<label>Mobile Bolter</label>
+		<label>Mobile Missile</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

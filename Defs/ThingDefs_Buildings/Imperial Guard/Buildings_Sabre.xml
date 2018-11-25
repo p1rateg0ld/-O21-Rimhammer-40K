@@ -105,7 +105,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGSabreAutocannon</defName>
-		<label>IG Manned Gun</label>
+		<label>Sabre Autocannon</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -231,7 +231,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGSabreBolter</defName>
-		<label>IG Manned Gun</label>
+		<label>Sabre Bolter</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -387,7 +387,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGSabreLascannon</defName>
-		<label>IG Manned Gun</label>
+		<label>Sabre Lascannon</label>
 		<graphicData>     
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

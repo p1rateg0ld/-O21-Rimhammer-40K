@@ -86,7 +86,7 @@
 		
 		<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGTarantulaBolter</defName>
-		<label>Wheeled Bolter</label>
+		<label>Tarantula Heavy Bolter</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -226,7 +226,7 @@
 
 	<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGTarantulaMissile</defName>
-		<label>Mobile Bolter</label>
+		<label>Tarantula Missile</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -353,7 +353,7 @@
 		
 		<ThingDef ParentName="BaseHumanGun">
 		<defName>Gun_IGTarantulaLascannon</defName>
-		<label>Wheeled Bolter</label>
+		<label>Tarantula Lascannon</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
