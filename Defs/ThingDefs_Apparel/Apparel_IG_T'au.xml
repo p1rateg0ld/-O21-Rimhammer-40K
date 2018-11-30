@@ -8,7 +8,7 @@
 		<label>gue'vesa uniform</label>
 		<description>A full-body uniform the Gue'vesa most often wear, typically under their armor.</description>
 		<graphicData>
-			<texPath>Things/Imperial Guard/Cadian/Clothing/CadianUniform</texPath>
+			<texPath>Things/Imperial Guard/Gue'vesa/Fatigues/TauFatigues</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -16,7 +16,7 @@
 			<li>TauApparel</li>
 		</thingCategories>
 		<apparel>
-			<wornGraphicPath>Things/Imperial Guard/Cadian/Clothing/CadianUniform</wornGraphicPath>
+			<wornGraphicPath>Things/Imperial Guard/Gue'vesa/Fatigues/TauFatigues</wornGraphicPath>
 			<tags Inherit="false">
 				<li>TauApparel</li>
 				<li>T'auGuevesaApparel</li>
