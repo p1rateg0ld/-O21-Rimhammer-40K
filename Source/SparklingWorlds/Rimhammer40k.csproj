@@ -32,7 +32,7 @@
   <ItemGroup>
     <Reference Include="0Harmony, Version=1.0.9.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\Humanoid Alien Races 2.0\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AbilityUser">
@@ -43,9 +43,8 @@
       <HintPath>..\..\..\JecsTools\Assemblies\AbilityUserAI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Assembly-CSharp, Version=1.0.6864.30166, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,41 +62,12 @@
     <None Include="Necrons\Buildings\ThingDef_Building_ScarabObelisk.cs" />
     <None Include="MainButtonWorker_ToggleRimhammer40kTab.cs" />
     <None Include="MainTabWindow_Rimhammer40k.cs" />
+    <Compile Include="Necrons\Extensions\FleshTypeDefOf.cs" />
     <Compile Include="Necrons\HediffNecronGrowingPart.cs" />
     <None Include="Rimhammer40kMenuItemDef.cs" />
     <Compile Include="Tau\TauDroneDef.cs" />
     <None Include="MissionBoard.cs" />
     <None Include="Building_GraphicSwitchableDef.cs" />
-    <None Include="AIRobot\MinifiedThing_AIRobot.cs" />
-    <None Include="AIRobot\MoteThrowHelper.cs" />
-    <None Include="AIRobot\X2_AIRobot.cs" />
-    <None Include="AIRobot\X2_AIRobot_disabled.cs" />
-    <None Include="AIRobot\X2_AIRobot_Helper.cs" />
-    <None Include="AIRobot\X2_AIRobot_Pawn_WorkSettings.cs" />
-    <None Include="AIRobot\X2_Building_AIRobotCreator.cs" />
-    <None Include="AIRobot\X2_Building_AIRobotRechargeStation.cs" />
-    <None Include="AIRobot\X2_Dialog_ChangeNameTriple_Robots.cs" />
-    <None Include="AIRobot\X2_JobDriver_GoDespawning.cs" />
-    <None Include="AIRobot\X2_JobDriver_GoRecharging.cs" />
-    <None Include="AIRobot\X2_JobDriver_GoToCellAndDeconstructDisabledRobot.cs" />
-    <None Include="AIRobot\X2_JobDriver_RepairDamagedRobot.cs" />
-    <None Include="AIRobot\X2_JobGiver_LeaveLord.cs" />
-    <None Include="AIRobot\X2_JobGiver_RechargeEnergy.cs" />
-    <None Include="AIRobot\X2_JobGiver_RechargeEnergyIdle.cs" />
-    <None Include="AIRobot\X2_JobGiver_RepairDamagedRobot.cs" />
-    <None Include="AIRobot\X2_JobGiver_Return2BaseDespawn.cs" />
-    <None Include="AIRobot\X2_JobGiver_Return2BaseRoom.cs" />
-    <None Include="AIRobot\X2_JobGiver_Work.cs" />
-    <None Include="AIRobot\X2_JobGiver_Work_old.cs" />
-    <None Include="AIRobot\X2_MainTabWindow_Robots.cs" />
-    <None Include="AIRobot\X2_PawnColumnWorker_Charge.cs" />
-    <None Include="AIRobot\X2_PawnColumnWorker_IsInRecharge.cs" />
-    <None Include="AIRobot\X2_PawnColumnWorker_Rename.cs" />
-    <None Include="AIRobot\X2_PawnColumnWorker_ShutDown.cs" />
-    <None Include="AIRobot\X2_PawnColumnWorker_ShutDownAll.cs" />
-    <None Include="AIRobot\X2_ThingDef_AIRobot.cs" />
-    <None Include="AIRobot\X2_ThingDef_AIRobot_Building_RechargeStation.cs" />
-    <None Include="AIRobot\X2_ThinkNode_Conditional_DoWork.cs" />
     <Compile Include="Bunker\Building_Bunker.cs" />
     <Compile Include="Bunker\JobDriver_EnterBunker.cs" />
     <Compile Include="Bunker\Verb_Bunker.cs" />
@@ -110,7 +80,7 @@
     <None Include="Eldar\CompEldarPsyker.cs" />
     <None Include="Eldar\EldarCardUtility.cs" />
     <None Include="Eldar\ITab_Pawn_Eldar.cs" />
-    <None Include="Necrons\Extensions\PawnExt.cs" />
+    <Compile Include="Necrons\Extensions\PawnExt.cs" />
     <Compile Include="Necrons\NecronHediffDefOf.cs" />
     <Compile Include="Orks\HediffOrkGrowingPart.cs" />
     <Compile Include="Orks\HediffOrkHealing.cs" />
