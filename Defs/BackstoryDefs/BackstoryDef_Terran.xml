@@ -57,6 +57,24 @@
 		</skillGains>
 	</AlienRace.BackstoryDef>
 	
+	<AlienRace.BackstoryDef> <!-- Child of the Imperium -->
+		<defName>BackstoryTerranChild03</defName>
+		<title>Child of Armageddon</title>
+		<titleShort>Armageddon Child</titleShort>
+		<baseDescription>[PAWN_nameDef] grew up on the hive world Armageddon, trained from a young age to specialize in mechanised infantry.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>SteelLegionBackstory</li>
+			<li>GuevesaBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
 	<!-- ============================ Terran Adulthoods ========================== -->
 
 	<AlienRace.BackstoryDef> <!-- Cadian Soldier -->
@@ -564,6 +582,91 @@
 			<li>
 				<defName>Social</defName>
 				<amount>-10</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Krieg Soldier -->
+		<defName>BackstoryTerran17</defName>
+		<title>Steel Legion Guardsman</title>
+		<titleShort>Steel Legion Guardsman</titleShort>
+		<baseDescription>Hailing from the hive world Armageddon, these guardsmen are well trained in the use of many of the Astra Militarums vehicles.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>SteelLegionBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-10</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Krieg Soldier -->
+		<defName>BackstoryTerran18</defName>
+		<title>Steel Legion Guardsman</title>
+		<titleShort>Steel Legion Guardsman</titleShort>
+		<baseDescription>Hailing from the hive world Armageddon, these guardsmen are well trained in the use of many of the Astra Militarums vehicles.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>SteelLegionBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Krieg Soldier -->
+		<defName>BackstoryTerran19</defName>
+		<title>Steel Legion Guardsman</title>
+		<titleShort>Steel Legion Guardsman</titleShort>
+		<baseDescription>Hailing from the hive world Armageddon, these guardsmen are well trained in the use of many of the Astra Militarums vehicles.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<spawnCategories>
+			<li>SteelLegionBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
 			</li>
 		</skillGains>
 	</AlienRace.BackstoryDef>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FactionDef>
+		<defName>IGSteelLegion808</defName>
+		<label>808th Steel Legion</label>
+		<description>The Armageddon 808th  Steel Legion is known for its aggressive and hard-charging officers, whose leadership style has earned the regiment a considerable reputation for trying unusual -- and often quite risky -- manoeuvres to approach the enemy by surprise or at great speed. This regiment first attracted attention during the Imperial Crusade into the Spinward Front, when it became engaged in a bitter and violent battle against a group of Orks on the world of Ganf Magna. Despite the primitive weapons and equipment of the local Ork mobs, they won several victories over the 808th through surprisingly cunning use of terrain, stranding the regiment's transport vehicles in a series of narrow passes and overwhelming the Imperial soldiers within with their characteristic brutality. The 808th recovered from their losses and proved more successful in later engagements, swearing to avenge themselves upon the Greenskins by seeing every Ork expunged from Ganf Magna -- only to be redeployed shortly thereafter, their tempers still unquenched in the black blood of the Orks. The 808th recently saw action in a bizarre engagement on the planet of Sisk. Originally meant as a training exercise, a Steel Legion convoy of Chimeras was on patrol in the outer fringes of the northern continent when they encountered a band of rogue psykers and mutants led by a hulking figure in spiked Power Armour. The battle that followed was nightmarish -- dramatic seismic upheavals rendered many of the Chimeras useless, and the Steel Legion was forced to dismount. The Armageddon troopers fought through the enemy's psychic projections, crossing trenches of living fire and enduring assaults by ambulatory slime. The mutants and the warband's commander inflicted severe casualties on the Steel Legion, but the regiments' ability to withstand toxic environments enabled them to survive the onslaught and press on to claim a pyrrhic victory. Few other Guardsmen could have accomplished such a feat, and the banner of the 808th received a blessing from Sisk's Ecclesiarchy high cleric in honour of their bravery.</description>
+		<pawnsPlural>Steel Legion</pawnsPlural>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>20</earliestRaidDays>
+		<canMakeRandomly>True</canMakeRandomly>
+		<autoFlee>false</autoFlee>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Commissar</leaderTitle>
+		<permanentEnemy>false</permanentEnemy>
+		<expandingIconTexture>World/IG808BaseIcon</expandingIconTexture>
+		<colorSpectrum>
+			<li>(169, 169, 169)</li>
+		</colorSpectrum>
+		<startingGoodwill>
+			<min>-100</min>
+			<max>-80</max>
+		</startingGoodwill>
+		<fixedName>808th Steel Legion</fixedName>
+		<settlementNameMaker>NamerIGCadianBase</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategories>
+			<li>SteelLegionBackstory</li>
+		</backstoryCategories>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+		<naturalColonyGoodwill>
+			<min>-100</min>
+			<max>100</max>
+		</naturalColonyGoodwill>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Cadian_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-75</min>
+			<max>60</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<IGCommissar_SteelLegion>1</IGCommissar_SteelLegion>
+					<IGGuardsman_SteelLegion>30</IGGuardsman_SteelLegion>
+					<IGSniper_SteelLegion>20</IGSniper_SteelLegion>
+					<IGOfficer_SteelLegion>5</IGOfficer_SteelLegion>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<IGCommissar_SteelLegion>1</IGCommissar_SteelLegion>
+					<IGGuardsman_SteelLegion>30</IGGuardsman_SteelLegion>
+					<IGOfficer_SteelLegion>5</IGOfficer_SteelLegion>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<IGTrader_SteelLegion>1</IGTrader_SteelLegion>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<IGGuardsman_SteelLegion>30</IGGuardsman_SteelLegion>
+					<IGSniper_SteelLegion>10</IGSniper_SteelLegion>
+					<IGOfficer_SteelLegion>3</IGOfficer_SteelLegion>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<IGCommissar_SteelLegion>1</IGCommissar_SteelLegion>
+					<IGGrenadier_Krieg>30</IGGrenadier_Krieg>
+					<IGSniper_SteelLegion>20</IGSniper_SteelLegion>
+					<IGOfficer_SteelLegion>5</IGOfficer_SteelLegion>
+				</options>
+			</li>
+    </pawnGroupMakers>
+
+    <homeIconPath>World/ZoomedIn_Base</homeIconPath>
+  </FactionDef>
+</Defs>

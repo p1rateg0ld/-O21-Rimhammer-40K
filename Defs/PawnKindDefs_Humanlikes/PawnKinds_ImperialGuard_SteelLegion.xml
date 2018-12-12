@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="IGSteelLegionAbstractBase" Abstract="True">
+		<defaultFactionType>IGSteelLegion808</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>SteelLegionBackstory</li>
+		</backstoryCategories>
+		<apparelTags>
+			<li>SteelLegionApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="IGSteelLegionBase" ParentName="IGSteelLegionAbstractBase">
+		<defName>IGSteelLegionBase</defName>
+		<label>Guardsman</label>
+		<race>Alien_Terran</race>
+		<combatPower>25</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>45</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>IGSteelLegionRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGSteelLegionBase"> <!-- IGCommissar_Krieg -->
+		<defName>IGCommissar_SteelLegion</defName>
+		<label>Steel Legion Commissar</label>
+		<labelPlural>Steel Legion Commissars</labelPlural>
+		<factionLeader>true</factionLeader>
+		<isFighter>true</isFighter>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>2000</min>
+			<max>4000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>SteelLegionCommissarUniform</li>
+			<li>SteelLegionCommissarCap</li>
+		</apparelRequired>
+		<combatPower>90</combatPower>
+		<apparelTags Inherit="False">
+			<li>SteelLegionCommissarApparel</li>
+		</apparelTags>
+		<weaponTags>
+			<li>CommissarEquipment</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGSteelLegionBase"> <!-- IGGuardsman_Krieg -->
+		<defName>IGOfficer_SteelLegion</defName>
+		<label>Steel Legion Officer</label>
+		<labelPlural>Steel Legion Officers</labelPlural>
+		<isFighter>true</isFighter>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>SteelLegionUniform</li>
+			<li>SteelLegionArmor</li>
+		</apparelRequired>
+		<apparelTags Inherit="False">
+			<li>SteelLegionOfficerApparel</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>VossLasgun</li>
+		</weaponTags>
+		<combatPower>90</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGSteelLegionBase"> <!-- IGGuardsman_Krieg -->
+		<defName>IGGuardsman_SteelLegion</defName>
+		<label>Steel Legion Guardsman</label>
+		<labelPlural>Steel Legion Guardsmen</labelPlural>
+		<isFighter>true</isFighter>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>SteelLegionUniform</li>
+		</apparelRequired>
+		<apparelTags Inherit="False">
+			<li>SteelLegionTrooperApparel</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>VossLasgun</li>
+		</weaponTags>
+		<combatPower>90</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGSteelLegionBase"> <!-- IGGrenadier_Krieg -->
+		<defName>IGSniper_SteelLegion</defName>
+		<label>Steel Legion Sniper</label>
+		<labelPlural>Steel Legion Snipers</labelPlural>
+		<weaponMoney>
+			<min>3500</min>
+			<max>4000</max>
+		</weaponMoney>
+		<apparelRequired>
+			<li>SteelLegionCamoUniform</li>
+		</apparelRequired>
+		<weaponTags Inherit="False">
+			<li>LongLas</li>
+		</weaponTags>
+		<combatPower>90</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGSteelLegionBase"> <!-- IGTrader_Cadian -->
+		<defName>IGTrader_SteelLegion</defName>
+		<label>Steel Legion Provisioner</label>
+		<combatPower>25</combatPower>
+		<trader>true</trader>
+		<isFighter>false</isFighter>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelRequired>
+			<li>SteelLegionUniform</li>
+		</apparelRequired>
+		<apparelTags Inherit="False">
+			<li>SteelLegionTraderApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+</Defs>
