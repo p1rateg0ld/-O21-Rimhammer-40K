@@ -45,6 +45,7 @@
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,9 +63,36 @@
     <None Include="Necrons\Buildings\ThingDef_Building_ScarabObelisk.cs" />
     <None Include="MainButtonWorker_ToggleRimhammer40kTab.cs" />
     <None Include="MainTabWindow_Rimhammer40k.cs" />
-    <Compile Include="Necrons\Extensions\FleshTypeDefOf.cs" />
+    <None Include="Necrons\Old\CompProperties_EnergySource.cs" />
+    <None Include="Necrons\Old\CompProperties_EnergyTracker.cs" />
+    <None Include="Necrons\Old\CompProperties_SpawnPawn.cs" />
+    <None Include="Necrons\Old\Comp_EnergySource.cs" />
+    <None Include="Necrons\Old\Comp_EnergyTracker.cs" />
+    <Compile Include="Necrons\BodyPartTagDefOf.cs" />
+    <Compile Include="Necrons\CompProperties_SpawnPawn.cs" />
+    <Compile Include="Necrons\CompUseEffect_SpawnNecron.cs" />
+    <Compile Include="Necrons\GEnergyCategory.cs" />
+    <Compile Include="Necrons\HediffGiver_BirthdayNecron.cs" />
+    <Compile Include="Necrons\NecronTweaker.cs" />
+    <Compile Include="Necrons\NeedDefOf.cs" />
+    <Compile Include="Necrons\Need_GaussEnergy.cs" />
+    <Compile Include="Necrons\PawnCapacityWorker_CoolantPumping.cs" />
+    <Compile Include="Necrons\NecronCapacities.cs" />
+    <Compile Include="Necrons\Patches\HarmonyPatches.cs" />
     <Compile Include="Necrons\HediffNecronGrowingPart.cs" />
     <None Include="Rimhammer40kMenuItemDef.cs" />
+    <None Include="Necrons\Old\NecronPawn.cs" />
+    <None Include="Necrons\Old\NecronPawnProperties.cs" />
+    <None Include="Necrons\Old\NeedDefOf.cs" />
+    <None Include="Necrons\Old\Need_GaussEnergy.cs" />
+    <None Include="Necrons\Patches\HealthCardUtility_DrawHediffListing.cs" />
+    <None Include="Necrons\Patches\HealthCardUtility_DrawHediffRow.cs" />
+    <None Include="Necrons\Patches\HealthCardUtility_GetTooltip.cs" />
+    <Compile Include="Necrons\PawnCapacityWorker_GaussEfficiency.cs" />
+    <Compile Include="Necrons\PawnCapacityWorker_HeatVenting.cs" />
+    <Compile Include="Necrons\PawnKindDef.cs" />
+    <Compile Include="Necrons\TaleDefOf.cs" />
+    <Compile Include="Settings\Rimhammer40kModSettings.cs" />
     <Compile Include="Tau\TauDroneDef.cs" />
     <None Include="MissionBoard.cs" />
     <None Include="Building_GraphicSwitchableDef.cs" />

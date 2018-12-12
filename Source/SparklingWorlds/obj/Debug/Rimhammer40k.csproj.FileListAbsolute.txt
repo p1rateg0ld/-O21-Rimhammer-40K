@@ -2,3 +2,7 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\[N17] Rimhammer 40K\Assemblies\Ra
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\[N17] Rimhammer 40K\Source\SparklingWorlds\obj\Debug\Rimhammer40k.csproj.CoreCompileInputs.cache
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\[N17] Rimhammer 40K\Source\SparklingWorlds\obj\Debug\Rarhammer40k.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\[N17] Rimhammer 40K\Source\SparklingWorlds\obj\Debug\Rimhammer40k.csprojAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Rimhammer 40K\Source\SparklingWorlds\obj\Debug\Rimhammer40k.csprojAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Rimhammer 40K\Source\SparklingWorlds\obj\Debug\Rimhammer40k.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Rimhammer 40K\Source\SparklingWorlds\obj\Debug\Rarhammer40k.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\[O21] Rimhammer 40K\Assemblies\Rarhammer40k.dll

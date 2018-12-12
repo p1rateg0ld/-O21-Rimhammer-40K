@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TaleDef>
+		<defName>Drained</defName>
+		<label>drained</label>
+		<taleClass>Tale_SinglePawn</taleClass>
+		<type>Volatile</type>
+		<baseInterest>4</baseInterest>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef] collapsing from exhaustion</li>
+				<li>image->[PAWN_nameFull] collapsing on the ground [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] lying on the ground [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] lying in bed [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] collapsed in a chair [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] peacefully sleeping [circumstance_group]</li>
+				<li>circumstance_phrase->with eyes closed</li>
+				<li>circumstance_phrase->with a visible look of exhaustion</li>
+				<li>circumstance_phrase->while covered in sweat</li>
+				<li>circumstance_phrase->and unable to move a muscle</li>
+				<li>desc_sentence->[PAWN_nameDef]'s last project sits nearby, complete.</li>
+				<li>desc_sentence->A marvelous construction surrounds [PAWN_nameDef].</li>
+				<li>desc_sentence->[Quantity_adjphrase] [PersonJob]s look grateful for [PAWN_nameDef]'s heroic effort.</li>
+				<li>desc_sentence->[Quantity_adjphrase] [PersonJob]s lie nearby in a similar state.</li>
+				<li>desc_sentence->The scene takes place inside a newly-built [Community].</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+	
+</Defs>

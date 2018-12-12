@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Rimhammer40k.Necrons.Extensions
+namespace Rimhammer40k.Necrons
 {
-    class FleshTypeDefOf
+    class HarmonyPatches
     {
     }
 }

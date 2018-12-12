@@ -16,19 +16,19 @@ namespace Rimhammer40k
 {
     public static class Rimhammer40kSettings
     {
-        public static Rimhammer40Settings settings;
+        public static Settings.Rimhammer40kModSettings settings;
     }
 
     [StaticConstructorOnStartup]
     public class Rimhammer40kMod : Mod
     {
-        public Rimhammer40Settings settings;
+        public Settings.Rimhammer40kModSettings settings;
 
         public Vector2 scrollPos = new Vector2();
 
         public Rimhammer40kMod(ModContentPack content) : base(content)
         {
-            this.settings = GetSettings<Rimhammer40Settings>();
+            this.settings = GetSettings<Settings.Rimhammer40kModSettings>();
             Rimhammer40kSettings.settings = this.settings;
         }
 
@@ -74,37 +74,6 @@ namespace Rimhammer40k
             Widgets.Label(rect, label);
             Widgets.DrawLine(new Vector2(rect.xMin, rect.yMax), new Vector2(rect.xMin + rect.width, rect.yMax), Color.gray, 1f);
             Text.Font = GameFont.Small;
-        }
-    }
-
-    public class Rimhammer40Settings : ModSettings
-    {
-        //General Settings:
-        public bool UseCustomBackground = true;
-
-        public bool AllowOrksHumanClothes = false;
-
-        public bool FirstStartUp = true;
-
-        public void ResetToDefault()
-        {
-            UseCustomBackground = true;
-        }
-
-        public void SetBool(ref bool b, bool set)
-        {
-            b = set;
-        }
-
-        public void SetValue(ref int i, int set)
-        {
-            i = set;
-        }
-
-        public override void ExposeData()
-        {
-            Scribe_Values.Look(ref this.UseCustomBackground, "UseCustomBackground", true, true);
-            Scribe_Values.Look(ref this.FirstStartUp, "FirstStartUp", true, true);
         }
     }
 }
