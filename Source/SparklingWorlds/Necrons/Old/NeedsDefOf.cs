@@ -9,9 +9,9 @@ using UnityEngine;
 namespace Rimhammer40k.Necrons
 {
     [DefOf]
-    public static class NeedDefOf
+    public static class NeedsDefOf
     {
-        static NeedDefOf()
+        static NeedsDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(NeedDefOf));
         }

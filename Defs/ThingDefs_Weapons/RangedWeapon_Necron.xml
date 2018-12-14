@@ -27,7 +27,7 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.60</AccuracyMedium>
 			<AccuracyLong>0.50</AccuracyLong>
-			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
@@ -70,7 +70,7 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
         <cooldownTime>1.6</cooldownTime>
       </li>
     </tools>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Archotech</techLevel>
 		<weaponTags>
 			<li>NecronGun</li>
 			<li>GaussFlayer</li>
@@ -97,7 +97,7 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 		</graphicData>
 		<projectile>
 			<damageDef>N17Gauss</damageDef>
-			<damageAmountBase>10</damageAmountBase>
+			<damageAmountBase>18</damageAmountBase>
 			<armorPenetrationBase>0.16</armorPenetrationBase>
 			<speed>105</speed>
 		</projectile>
@@ -110,7 +110,8 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 		<postFiringDuration>50</postFiringDuration>
 	</ThingDef>
 
-	<!-- Gause Blaster -->
+	<!-- Gauss Blaster -->
+	
 	<ThingDef ParentName="N17BaseMakeableGun">
 		<defName>NecronGaussBlaster</defName>
 		<label>Necron Gauss Blaster</label>
@@ -158,7 +159,7 @@ Unlike more conventional directed energy weapons, a Gauss Blaster does not deliv
 			</targetParams>
 			</li>
 		</verbs>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Archotech</techLevel>
 		<weaponTags>
 			<li>NecronGun</li>
 			<li>GaussBlaster</li>
@@ -280,7 +281,7 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 
 	<!-- Staff of Light -->
 	<ThingDef ParentName="N17BaseMakeableGun">
-		<defName>StaffOfLight</defName>
+		<defName>NecronStaffOfLight</defName>
 		<label>Necron Staff Of Light</label>
 		<description>A Staff of Light is a device of arcane Necron technology that serves as both a symbol of rank and authority, as well as a potent weapon for Necron royals. Shaped like a traditional Necrontyr staff with an ornate headpiece, its haft is actually a disguised power generator rod; and the crest a finely tuned focussing device which allows the wielder to unleash searing bolts of viridian energy at a rapid rate towards the enemy. These beams are so potent that they are even capable of penetrating Astartes Power Armour with ease. As well as being capable of projecting devastating blasts of energy at range, a Staff of Light also serves a similar function to a Power Weapon in close combat. A Staff of Light is usually only found in the armouries of Necron royalty, including those belonging to Necron Overlords, Necron Lords or Necron Destroyer Lords. However, Crypteks of an unspecialised nature in their techno-sorcerous arts also commonly wield a Staff of Light in battle.</description>
 		<graphicData>
@@ -302,7 +303,7 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.60</AccuracyMedium>
 			<AccuracyLong>0.50</AccuracyLong>
-			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 		</equippedStatOffsets>
@@ -314,8 +315,8 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 				<warmupTime>0.5</warmupTime>
 				<range>18</range>
 				<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
-				<soundCast>GaussSound</soundCast>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>GaussFlayerSound</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>8</muzzleFlashScale>
 			<targetParams>
@@ -341,7 +342,7 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
         <cooldownTime>1.5</cooldownTime>
       </li>
     </tools>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Archotech</techLevel>
 		<weaponTags>
 			<li>StaffOfLight</li>
 		</weaponTags>

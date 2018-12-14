@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<NeedDef>
+	<!-- <NeedDef>
 		<defName>GaussEnergy</defName>
 		<needClass>Rimhammer40k.Necrons.Need_GaussEnergy</needClass>
 		<label>Gauss Energy</label>
@@ -8,5 +8,5 @@
 		<listPriority>699</listPriority>
 		<major>true</major>
 		<showForCaravanMembers>true</showForCaravanMembers>
-	</NeedDef>
+	</NeedDef> -->
 </Defs>

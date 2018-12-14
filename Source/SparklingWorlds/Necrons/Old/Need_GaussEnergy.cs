@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using RimWorld;
 using RimWorld.Planet;
-using Verse;
 using UnityEngine;
+using Verse;
 
 namespace Rimhammer40k.Necrons
 {
-    class Need_GaussEnergy : Need
+    public class Need_GaussEnergy : Need
     {
-        public static float rechargePercentage = 0.5f;
+        public static float rechargePercentage = 0.505f;
 
         public Need_GaussEnergy(Pawn pawn)
         {
@@ -46,10 +45,10 @@ namespace Rimhammer40k.Necrons
 
         public override void NeedInterval()
         {
-            bool flag = false;
+            bool flag = this.pawn.def.HasModExtension<NecronPawnProperties>();
             if (flag)
             {
-                foreach (Need need in this.pawn.needs.AllNeeds)
+                foreach(Need need in this.pawn.needs.AllNeeds)
                 {
                     bool flag2 = need.def != NeedsDefOf.GaussEnergy;
                     if (flag2)
@@ -59,8 +58,8 @@ namespace Rimhammer40k.Necrons
                 }
             }
             float num = 1f;
-            Comp_EnergyTracker comp_EnergyTracker;
-            bool flag3 = !CaravanUtility.IsCaravanMember(this.pawn) && (comp_EnergyTracker = ThingCompUtility.TryGetComp<Comp_EnergyTracker>(this.pawn)) != null && comp_EnergyTracker.EnergyProperties.canHibernate && this.pawn.CurJobDef == comp_EnergyTracker.EnergyProperties.hibernationJob;
+            Comp_EnergyTracker energyTrackerComp;
+            bool flag3 = !CaravanUtility.IsCaravanMember(this.pawn) && (energyTrackerComp = ThingCompUtility.TryGetComp<Comp_EnergyTracker>(this.pawn)) != null && energyTrackerComp.EnergyProperties.canHibernate && this.pawn.CurJobDef == energyTrackerComp.EnergyProperties.hibernationJob;
             if (flag3)
             {
                 num = -0.1f;
@@ -93,17 +92,17 @@ namespace Rimhammer40k.Necrons
                     Caravan caravan = CaravanUtility.GetCaravan(this.pawn);
                     Thing thing3 = caravan.Goods.FirstOrDefault(delegate (Thing thing)
                     {
-                        EnergySourceComp energySourceComp4;
-                        return (energySourceComp4 = ThingCompUtility.TryGetComp<EnergySourceComp>(thing)) != null && energySourceComp4.EnergyProps.isConsumable;
+                        Comp_EnergyTracker energySourceComp4;
+                        return (energySourceComp4 = ThingCompUtility.TryGetComp<Comp_EnergyTracker>(thing)) != null && energySourceComp4.EnergyProps.isConsumable;
                     });
                     bool flag9 = thing3 != null;
                     if (flag9)
                     {
-                        EnergySourceComp energySourceComp2 = ThingCompUtility.TryGetComp<EnergySourceComp>(thing3);
+                        Comp_EnergyTracker energySourceComp2 = ThingCompUtility.TryGetComp<Comp_EnergyTracker>(thing3);
                         int num2 = (int)Math.Ceiling((double)((this.MaxLevel - this.CurLevel) / energySourceComp2.EnergyProps.energyWhenConsumed));
                         num2 = Math.Min(num2, thing3.stackCount);
                         Thing thing2 = thing3.SplitOff(num2);
-                        EnergySourceComp energySourceComp3 = ThingCompUtility.TryGetComp<EnergySourceComp>(thing2);
+                        Comp_EnergyTracker energySourceComp3 = ThingCompUtility.TryGetComp<Comp_EnergyTracker>(thing2);
                         energySourceComp3.RechargeEnergyNeed(this.pawn);
                         thing2.Destroy(0);
                     }

@@ -21,6 +21,7 @@
 		<hitPoints>20</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<bleedRate>0.1</bleedRate>
 		<tags>
 			<li>HVSource</li>
@@ -33,6 +34,7 @@
 		<hitPoints>20</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
 		<bleedRate>0.1</bleedRate>	
 		<tags>
 			<li>HVSource</li>

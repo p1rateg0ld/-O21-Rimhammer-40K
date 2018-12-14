@@ -12,14 +12,14 @@
 		<label>Necron Tomb</label>
 		<description>Your own community.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>Necron</basicMemberKind>
+		<basicMemberKind>NecronWarrior</basicMemberKind>
 		<pawnsPlural>Necrons</pawnsPlural>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<techLevel>Ultra</techLevel>
 		<backstoryCategories>
-			<li>NecronWarriorBackstory</li>
+			<li>NecronBackstory</li>
 		</backstoryCategories>
 		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
 		<expandingIconTexture>World/NecronBaseIcon</expandingIconTexture>

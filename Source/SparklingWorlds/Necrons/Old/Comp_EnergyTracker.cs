@@ -78,6 +78,21 @@ namespace Rimhammer40k.Necrons
                 yield return gizmo3;
                 gizmo3 = null;
             }
+            Pawn pawn = this.parent as Pawn;
+            bool flag2 = Rimhammer40k.Settings.Rimhammer40kModSettings.Instance.NecronsTeleportOnDeath && pawn != null && pawn.IsColonistPlayerControlled && pawn.def.HasModExtension<NecronPawnProperties>();
+            if (flag2)
+            {
+                Command_Action gizmo4 = new Command_Action();
+                gizmo4.defaultLabel = Translator.Translate("NecronGizmoHomeTeleportLabel");
+                gizmo4.defaultDesc = Translator.Translate("NecronGizmoHomeTeleportDescription");
+                gizmo4.icon = ContentFinder<Texture2D>.Get("UI/Commands/Teleport", true);
+                gizmo4.action = delegate ()
+                {
+                    throw new NotImplementedException();
+                };
+                yield return gizmo4;
+                gizmo4 = null;
+            }
             yield break;
         }
     }
