@@ -330,5 +330,13 @@
 			<label>Helmets</label>
 			<parent>NecronApparel</parent>
 		</ThingCategoryDef>
+		
+	<!-- Necron Corpses -->
+	
+    <ThingCategoryDef>
+		<defName>CorpsesNecron</defName>
+		<label>necron corpses</label>
+		<parent>Corpses</parent>
+    </ThingCategoryDef>
 	
 </Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- <NeedDef>
+		<defName>GaussEnergy</defName>
+		<needClass>Rimhammer40k.Necrons.Need_GaussEnergy</needClass>
+		<label>Gauss Energy</label>
+		<description>Gauss Energy is the amount of remaining power this Necron has remaining, it is what keeps them alive. If a Necron runs out of Gauss Energy, they will die unless they have a sarcophogus available and marked as theirs. If they have a sarcophogus they will teleport to itin an emergency situation that could potentially cause them death, regardless of cause, as long as their teleport module is intact.</description>
+		<listPriority>699</listPriority>
+		<major>true</major>
+		<showForCaravanMembers>true</showForCaravanMembers>
+	</NeedDef> -->
+</Defs>

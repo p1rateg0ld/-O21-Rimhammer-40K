@@ -41,7 +41,7 @@ namespace Rimhammer40k.Necrons
         public void TrySealWounds()
         {
             IEnumerable<Hediff> enumerable = from hd in this.pawn.health.hediffSet.hediffs
-                                                where hd.Bleeding
+                                                where hd.TendableNow()
                                                 select hd;
             bool flag = enumerable != null;
             if (flag)
@@ -89,7 +89,7 @@ namespace Rimhammer40k.Necrons
         public int ticksUntilNextGrow;
         public void SetNextGrowTick()
         {
-            this.ticksUntilNextGrow = Current.Game.tickManager.TicksGame + 100;
+            this.ticksUntilNextGrow = Current.Game.tickManager.TicksGame + 200;
         }
     }
 }

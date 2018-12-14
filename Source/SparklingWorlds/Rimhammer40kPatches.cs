@@ -20,9 +20,9 @@ namespace Rimhammer40k
     {
         static Rimhammer40kPatches()
         {
-            HarmonyInstance TiberiumRim = HarmonyInstance.Create("com.rimhammer40k.rimworld.mod");
+            HarmonyInstance Rimhammer40k = HarmonyInstance.Create("com.rimhammer40k.rimworld.mod");
 
-            TiberiumRim.PatchAll(Assembly.GetExecutingAssembly());
+            Rimhammer40k.PatchAll(Assembly.GetExecutingAssembly());
         }
 
         [HarmonyPatch(typeof(UI_BackgroundMain)), HarmonyPatch("BackgroundOnGUI"), StaticConstructorOnStartup]

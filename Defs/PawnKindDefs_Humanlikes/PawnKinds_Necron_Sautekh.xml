@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="SautekhAbstractBase" Abstract="True">
+		<defaultFactionType>Sautekh</defaultFactionType>
+		<baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>NecronBackstory</li>
+		</backstoryCategories>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<weaponMoney>
+			<min>40000</min>
+			<max>40000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>1.0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SautekhAbstractBase">
+		<defName>Sautekh_WarriorR</defName>
+		<label>Ranged Warrior</label>
+		<race>Alien_NecronWarrior</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>GaussFlayer</li>
+		</weaponTags>
+		<combatPower>250</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SautekhAbstractBase">
+		<defName>Sautekh_WarriorM</defName>
+		<label>Melee Warrior</label>
+		<race>Alien_NecronWarrior</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>HyperphaseSword</li>
+		</weaponTags>
+		<combatPower>250</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SautekhAbstractBase">
+		<defName>Sautekh_WarriorH</defName>
+		<label>Heavy Warrior</label>
+		<race>Alien_NecronWarrior</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>GaussBlaster</li>
+		</weaponTags>
+		<combatPower>250</combatPower>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SautekhAbstractBase">
+		<defName>Sautekh_Deathmark</defName>
+		<label>Deathmark</label>
+		<race>Alien_NecronDeathmark</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>GaussFlayer</li>
+		</weaponTags>
+		<combatPower>300</combatPower>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SautekhAbstractBase">
+		<defName>Sautekh_Lord</defName>
+		<label>Lord</label>
+		<race>Alien_NecronLord</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>NecronRanged</li>
+			<li>NecronMelee</li>
+		</weaponTags>
+		<combatPower>250</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SautekhAbstractBase">
+		<defName>Sautekh_Overlord</defName>
+		<label>Overlord</label>
+		<race>Alien_NecronOverlord</race>
+		<labelPlural>Overlords</labelPlural>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>
+		<weaponTags>
+			<li>StaffOfLight</li>
+		</weaponTags>
+		<combatPower>350</combatPower>
+	</PawnKindDef>
+
+</Defs>

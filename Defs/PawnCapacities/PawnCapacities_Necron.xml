@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<PawnCapacityDef>
+		<defName>GaussEfficiency</defName>
+		<label>energy distribution</label>
+		<listOrder>90</listOrder>
+		<workerClass>Rimhammer40k.Necrons.PawnCapacityWorker_GaussEfficiency</workerClass>
+		<lethalFlesh>true</lethalFlesh>
+		<showOnMechanoids>false</showOnMechanoids>
+	</PawnCapacityDef>
+
+		<PawnCapacityDef>
+		<defName>HeatVenting</defName>
+		<label>ventilation</label>
+		<listOrder>80</listOrder>
+		<workerClass>Rimhammer40k.Necrons.PawnCapacityWorker_HeatVenting</workerClass>
+		<lethalFlesh>true</lethalFlesh>
+		<showOnMechanoids>false</showOnMechanoids>
+	</PawnCapacityDef>
+	
+	<PawnCapacityDef>
+		<defName>CoolantPumping</defName>
+		<label>coolant pumping</label>
+		<listOrder>100</listOrder>
+		<workerClass>Rimhammer40k.Necrons.PawnCapacityWorker_CoolantPumping</workerClass>
+		<lethalFlesh>true</lethalFlesh>
+		<showOnMechanoids>false</showOnMechanoids>
+	</PawnCapacityDef>
+	
+</Defs>

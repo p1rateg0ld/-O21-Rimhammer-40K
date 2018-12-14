@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef>
+		<defName>NecronWarrior</defName>
+		<label>Necron Warrior</label>
+		<race>Alien_NecronWarrior</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronLowerBackstory</li>
+			<li>NecronWarriorBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>80</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<!-- <techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>
+			<min>500</min>
+			<max>1200</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>NecronWarriorTech</li>
+		</techHediffsTags> -->
+	</PawnKindDef>
+
+	<PawnKindDef>
+		<defName>NecronDeathmark</defName>
+		<label>Necron Deathmark</label>
+		<race>Alien_NecronDeathmark</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronLowerBackstory</li>
+			<li>NecronDeathmarkBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>80</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<!-- <techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>
+			<min>500</min>
+			<max>1200</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>NecronWarriorTech</li>
+		</techHediffsTags> -->
+	</PawnKindDef>
+
+	<PawnKindDef>
+		<defName>NecronLord</defName>
+		<label>Necron Lord</label>
+		<race>Alien_NecronLord</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronHighBackstory</li>
+			<li>NecronLordBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>90</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<!-- <techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>
+			<min>500</min>
+			<max>1200</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>NecronWarriorTech</li>
+		</techHediffsTags> -->
+	</PawnKindDef>
+
+	<PawnKindDef>
+		<defName>NecronOverlord</defName>
+		<label>Necron Overlord</label>
+		<race>Alien_NecronOverlord</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronHighBackstory</li>
+			<li>NecronOverlordBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>100</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<!-- <techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>
+			<min>500</min>
+			<max>1200</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>NecronWarriorTech</li>
+		</techHediffsTags> -->
+	</PawnKindDef>
+
+</Defs>

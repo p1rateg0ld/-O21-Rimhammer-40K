@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>NecronHyperphaseSword</defName>
+		<label>Hyperphase Sword</label>
+		<description>A Hyperphase Sword is a Necron melee weapon whose energy blade vibrates across dimensional states and can easily slice through armour and flesh to sever the vital organs within. A Hyperphase Sword can be considered an advanced type of Power Weapon.
+
+Hyperphase Swords are found exclusively as part of the armouries of Necron royals, such as Necron Overlords, Necron Lords, Necron Destroyer Lords, and their favoured Lychguards.</description>
+		<graphicData>
+			<texPath>Things/Necron/Weapons/Melee/HyperphaseSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>	
+			<drawSize>2.0</drawSize>	
+		</graphicData>
+		<comps>     
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<techLevel>Archotech</techLevel>
+		<weaponTags>
+			<li>NecronMelee</li>
+			<li>HyperphaseSword</li>
+		</weaponTags>
+		<thingCategories>
+			<li>NecronMelee</li>
+		</thingCategories>
+		<costList>
+			<Steel>60</Steel>
+			<Plasteel>15</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<MarketValue>2400</MarketValue>
+			<Mass>2.1</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<!-- <researchPrerequisite>N17_Nec_WeaponsMelee</researchPrerequisite>-->
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	  </ThingDef>
+	  
+</Defs>

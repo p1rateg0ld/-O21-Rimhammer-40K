@@ -12,7 +12,8 @@
 		<bodyTypeGlobal>Male</bodyTypeGlobal>
 		<maleCommonality>20</maleCommonality>
 		<spawnCategories>
-			<li>NecronWarriorBackstory</li>
+			<li>NecronBackstory</li>
+			<li>NecronLowerBackstory</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -24,6 +25,36 @@
 				<amount>5</amount>
 			</li>
 		</skillGains>
+		<forcedHediffs>
+			<li>NecrodermisRepair</li>
+		</forcedHediffs>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Previous Life of a Leader -->
+		<defName>BackstoryNecronChild01</defName>
+		<title>Necrontyr Soldier</title>
+		<titleShort>Soldier</titleShort>
+		<baseDescription>Prior to their bio-transferrence [PAWN_nameDef] used to be a leader of the Necrontyr, they have retained some of their skills despite the damage the transfer did to their soul.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>NecronBackstory</li>
+			<li>NecronHighBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+		<forcedHediffs>
+			<li>NecrodermisRepair</li>
+		</forcedHediffs>
 	</AlienRace.BackstoryDef>
 	
 	<!-- ============================ Necron Adulthoods ========================== -->
@@ -37,6 +68,7 @@
 		<bodyTypeGlobal>Male</bodyTypeGlobal>
 		<maleCommonality>20</maleCommonality>
 		<spawnCategories>
+			<li>NecronBackstory</li>
 			<li>NecronWarriorBackstory</li>
 		</spawnCategories>
 		<skillGains>
@@ -47,6 +79,82 @@
 			<li>
 				<defName>Melee</defName>
 				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Necron Deathmark -->
+		<defName>BackstoryNecronDeathmark00</defName>
+		<title>Necron Deathmark</title>
+		<titleShort>Deathmark</titleShort>
+		<baseDescription>After the bio-transferrence [PAWN_nameDef] became little more than a soulless husk, incapable of anything more than war.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>NecronBackstory</li>
+			<li>NecronDeathmarkBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Necron Lord -->
+		<defName>BackstoryNecronLord00</defName>
+		<title>Necron Lord</title>
+		<titleShort>Lord</titleShort>
+		<baseDescription>After the bio-transferrence [PAWN_nameDef] retained their personality, despite the removal of their soul they still act similarly to how they were when they were alive.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>NecronBackstory</li>
+			<li>NecronLordBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Necron Overlord -->
+		<defName>BackstoryNecronOverlord00</defName>
+		<title>Necron Overlord</title>
+		<titleShort>Overlord</titleShort>
+		<baseDescription>After the bio-transferrence [PAWN_nameDef] retained their personality, despite the removal of their soul they still act similarly to how they were when they were alive. Overlords tend to remain in a command position, at the top of their dynasty.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>NecronBackstory</li>
+			<li>NecronOverlordBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>7</amount>
 			</li>
 		</skillGains>
 	</AlienRace.BackstoryDef>

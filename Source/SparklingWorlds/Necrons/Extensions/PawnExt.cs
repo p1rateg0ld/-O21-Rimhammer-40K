@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using System;
+using Verse;
 using RimWorld;
 
 namespace Rimhammer40k.Necrons.Extensions

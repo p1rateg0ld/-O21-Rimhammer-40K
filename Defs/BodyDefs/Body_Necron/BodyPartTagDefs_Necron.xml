@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartTagDef>
+		<defName>CPSource</defName>
+		<vital>true</vital>
+	</BodyPartTagDef>
+
+	<BodyPartTagDef>
+		<defName>HVSource</defName>
+		<vital>true</vital>
+	</BodyPartTagDef>
+
+	<BodyPartTagDef>
+		<defName>GEKidney</defName>
+		<vital>true</vital>
+	</BodyPartTagDef>
+
+	<BodyPartTagDef>
+		<defName>GELiver</defName>
+		<vital>true</vital>
+	</BodyPartTagDef>
+
+	<BodyPartTagDef>
+		<defName>MetabolismSource</defName>
+		<vital>true</vital>
+	</BodyPartTagDef>
+
+	<BodyPartTagDef>
+		<defName>HVPathway</defName>
+		<vital>true</vital>
+	</BodyPartTagDef>
+
+	<BodyPartTagDef>
+		<defName>EatingPathway</defName>
+		<vital>true</vital>
+	</BodyPartTagDef>
+
+	<BodyPartTagDef>
+		<defName>TalkingPathway</defName>
+		<vital>true</vital>
+	</BodyPartTagDef>
+	
+	<BodyPartDef>
+		<defName>NecronFramework</defName>
+		<label>framework</label>
+		<hitPoints>60</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>NecronThorax</defName>
+		<label>thorax</label>
+		<hitPoints>40</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>LeftHand</defName>
+		<label>left hand</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightHand</defName>
+		<label>right hand</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>NecronNeck</defName>
+		<label>neck</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>HVPathway</li>
+			<li>EatingPathway</li>
+			<li>TalkingPathway</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>NecronHead</defName>
+		<label>head</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftSightSensor</defName>
+		<label>left sight sensor</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<socketed>true</socketed>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightSightSensor</defName>
+		<label>right sight sensor</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<socketed>true</socketed>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftHearingSensor</defName>
+		<label>left hearing sensor</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>HearingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightHearingSensor</defName>
+		<label>right hearing sensor</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>HearingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>SmellSensor</defName>
+		<label>smell sensor</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftNecronShoulder</defName>
+		<label>left shoulder</label>
+		<hitPoints>25</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftNecronArm</defName>
+		<label>left arm</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftNecronHand</defName>
+		<label>left hand</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftHandNecronPinky</defName>
+		<label>left pinky</label>
+		<hitPoints>7</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftHandNecronMiddleFinger</defName>
+		<label>left middle finger</label>
+		<hitPoints>7</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftHandNecronIndexFinger</defName>
+		<label>left index finger</label>
+		<hitPoints>7</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftHandNecronThumb</defName>
+		<label>left thumb</label>
+		<hitPoints>7</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightNecronShoulder</defName>
+		<label>right shoulder</label>
+		<hitPoints>25</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightNecronArm</defName>
+		<label>right arm</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightNecronHand</defName>
+		<label>right hand</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightHandNecronPinky</defName>
+		<label>right pinky</label>
+		<hitPoints>7</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightHandNecronMiddleFinger</defName>
+		<label>right middle finger</label>
+		<hitPoints>7</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightHandNecronIndexFinger</defName>
+		<label>right index finger</label>
+		<hitPoints>7</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		
+		<tags>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightHandNecronThumb</defName>
+		<label>right thumb</label>
+		<hitPoints>7</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ManipulationLimbDigit</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftNecronLeg</defName>
+		<label>left leg</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>LeftNecronFoot</defName>
+		<label>left foot</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightNecronLeg</defName>
+		<label>right leg</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>RightNecronFoot</defName>
+		<label>right foot</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>ArtificialBrain</defName>
+		<label>artificial brain</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+		<solid>true</solid>
+		<tags>
+			<li>ConsciousnessSource</li>
+		</tags>
+	</BodyPartDef>
+	
+</Defs>

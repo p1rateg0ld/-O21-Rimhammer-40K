@@ -13,5 +13,11 @@ namespace Rimhammer40k.Necrons
         public static HediffDef NecronProtoBodypart;
 
         public static HediffDef NecronCuredBodypart;
+
+        //public static HediffDef CorruptMemory;
+
+        //public static HediffDef NoFreeWill;
+
+        //public static HediffDef NecronCoolantLoss;
     }
 }

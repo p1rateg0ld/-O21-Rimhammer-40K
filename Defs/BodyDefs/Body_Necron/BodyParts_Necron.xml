@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<BodyPartDef>
+		<defName>NecronHeart</defName>
+		<label>Repair Module</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0.5</bleedRate>
+		<tags>
+			<li>CPSource</li>
+		</tags>
+		<canSuggestAmputation>true</canSuggestAmputation>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>NecronLeftLung</defName>
+		<label>Left Heatsink</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<bleedRate>0.1</bleedRate>
+		<tags>
+			<li>HVSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>NecronRightLung</defName>
+		<label>Right Heatsink</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<bleedRate>0.1</bleedRate>	
+		<tags>
+			<li>HVSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>NecronLeftKidney</defName>
+		<label>Gauss Cell</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0.1</bleedRate>
+		<tags>
+			<li>GEKidney</li>
+		</tags>
+	<canSuggestAmputation>true</canSuggestAmputation>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>NecronRightKidney</defName>
+		<label>Microscarab Storage</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0.2</bleedRate>
+		<tags>
+			<li>GEKidney</li>
+		</tags>
+	<canSuggestAmputation>true</canSuggestAmputation>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>NecronLiver</defName>
+		<label>Gauss Purifier</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0.1</bleedRate>
+		<tags>
+			<li>GELiver</li>
+		</tags>
+		<canSuggestAmputation>true</canSuggestAmputation>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>NecronStomach</defName>
+		<label>Bio-processor</label>
+		<hitPoints>25</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0.1</bleedRate>
+		<tags>
+			<li>MetabolismSource</li>
+		</tags>
+	</BodyPartDef>
+	
+ 
+	<BodyPartDef>
+		<defName>NecronRightServo</defName>
+		<label>Movement Servos</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0.1</bleedRate>
+		<tags>
+			<li>GEKidney</li>
+		</tags>
+	<canSuggestAmputation>true</canSuggestAmputation>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>NecronGenerator</defName>
+		<label>Gauss Collector</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0.3</bleedRate>
+		<tags>
+		<li>MetabolismSource</li>
+		</tags>
+	</BodyPartDef>
+	
+</Defs>
