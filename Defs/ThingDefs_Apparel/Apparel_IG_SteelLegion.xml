@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Clothing ====== -->
+	
+	<ThingDef ParentName="ApparelMakeableBase" Name="SteelLegionUniform"> <!-- Krieg Uniform -->
+		<defName>SteelLegionUniform</defName>
+		<label>Steel Legion Uniform</label>
+		<description>A full-body uniform the Armageddon Steel Legion most often wear, typically under their armor.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/SteelLegion/Clothing/SteelLegionUniform_normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.70</ToxicSensitivity>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>3600</WorkToMake>
+			<MarketValue>300</MarketValue>
+			<Mass>1</Mass>
+			<Insulation_Cold>18</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+			<EquipDelay>2.0</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>IGApparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Clothing/SteelLegionUniform_normal</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>ImperialGuardApparel</li>
+				<li>SteelLegionApparel</li>
+				<li>SteelLegionTrooperApparel</li>
+				<li>SteelLegionTraderApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>N17_Imp_IGBasicArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SteelLegionUniform">
+		<defName>SteelLegionCamoUniform</defName>
+		<label>Steel Legion Uniform (Camo)</label>
+		<description>A full-body camo uniform the Steel Legion most often wear, typically under their armor.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/SteelLegion/Clothing/SteelLegionUniform_Camo</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Clothing/SteelLegionUniform_Camo</wornGraphicPath>
+			<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>SteelLegionApparel</li>
+				<li>SteelLegionCamoApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Armors ====== -->
+	
+	<ThingDef ParentName="ArmorMachineableBase"> <!-- Krieg Armour -->
+		<defName>SteelLegionArmor</defName>
+		<label>Steel Legion Harness</label>
+		<techLevel>Spacer</techLevel>
+		<description>The light harness commonly worn by the Steel Legion.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/SteelLegion/Belt/SteelLegionHarness</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_IGBasicArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>10</Cloth>
+			<CeramiteLowGrade>60</CeramiteLowGrade>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<WorkToMake>64000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>IGApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags>
+				<li>ImperialGuardApparel</li>
+				<li>SteelLegionApparel</li>
+				<li>SteelLegionTrooperApparel</li>
+				<li>SteelLegionCamoApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Belt/SteelLegionHarness</wornGraphicPath>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Helmets (Gasmask) ====== -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="SteelLegionHelmet"><!-- Cadian Helmet -->
+		<defName>SteelLegionHelmet</defName>
+		<label>Steel Legion Helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>The helmet commonly worn by the Steel Legion.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionHelmet_normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_IGBasicArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>5</Cloth>
+			<CeramiteLowGrade>20</CeramiteLowGrade>
+		</costList>
+		<statBases>
+			<Mass>1.8</Mass>
+			<WorkToMake>24000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<MarketValue>250</MarketValue>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>2.7</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>IGApparel</li>
+		</thingCategories>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+    		<tags>
+				<li>ImperialGuardApparel</li>
+				<li>SteelLegionApparel</li>
+				<li>SteelLegionTrooperApparel</li>
+				<li>SteelLegionCamoApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionHelmet_normal</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="SteelLegionHelmet">
+		<defName>SteelLegionHelmetGasmask</defName>
+		<label>Steel Legion Helmet (Gasmask)</label>
+		<techLevel>Spacer</techLevel>
+		<description>The helmet commonly worn by the Steel Legion, includes gasmask.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionHelmet_Gasmask</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionHelmet_Gasmask</wornGraphicPath>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>SteelLegionApparel</li>
+				<li>SteelLegionTrooperApparel</li>
+				<li>SteelLegionCamoApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SteelLegionHelmet">
+		<defName>SteelLegionOfficerHelmet</defName>
+		<label>Steel Legion Officer Helmet</label>
+		<description>A stronger helmet commonly worn by the Steel Legion officers.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionHelmet_Officer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>N17_Imp_IGHeavyArmor</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>300</MarketValue>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.74</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.42</ArmorRating_Heat>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionHelmet_Officer</wornGraphicPath>
+			<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>SteelLegionApparel</li>
+				<li>SteelLegionOfficerApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SteelLegionHelmet">
+		<defName>SteelLegionOfficerHelmet</defName>
+		<label>Steel Legion Officer Helmet</label>
+		<description>A stronger helmet commonly worn by the Steel Legion officers, includes gasmask.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionHelmet_OfficerGasmask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>N17_Imp_IGHeavyArmor</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>300</MarketValue>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.74</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.42</ArmorRating_Heat>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionHelmet_OfficerGasmask</wornGraphicPath>
+			<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>SteelLegionApparel</li>
+				<li>SteelLegionOfficerApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SteelLegionHelmet">
+		<defName>SteelLegionCap</defName>
+		<label>Steel Legion Fieldcap</label>
+		<description>A hat commonly worn by the Armageddon Steel Legion regiments.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionCap_normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionCap_normal</wornGraphicPath>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>SteelLegionApparel</li>
+				<li>SteelLegionTrooperApparel</li>
+				<li>SteelLegionTraderApparel</li>
+			</tags>
+		</apparel>
+		<costList Inherit="false">
+			<Cloth>20</Cloth>
+			<CeramiteLowGrade>5</CeramiteLowGrade>
+		</costList>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="SteelLegionHelmet">
+		<defName>SteelLegionCapGasmask</defName>
+		<label>Steel Legion Fieldcap (gasmask)</label>
+		<description>A hat commonly worn by the Armageddon Steel Legion regiments, includes gasmask.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionCap_Gasmask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionCap_Gasmask</wornGraphicPath>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>SteelLegionApparel</li>
+				<li>SteelLegionTrooperApparel</li>
+				<li>SteelLegionTraderApparel</li>
+			</tags>
+		</apparel>
+		<costList Inherit="false">
+			<Cloth>20</Cloth>
+			<CeramiteLowGrade>5</CeramiteLowGrade>
+		</costList>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+	</ThingDef>
+
+</Defs>
