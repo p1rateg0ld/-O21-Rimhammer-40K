@@ -87,29 +87,6 @@
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="CommissarUniform"> <!-- Krieg Uniform -->
-		<defName>SteelLegionCommissarUniform</defName>
-		<label>Steel Legion Commissar Uniform</label>
-		<description>A full-body uniform for the Commissary, includes a layer of armour equivalent to standard issue Imperial Guard gear.</description>
-		<graphicData>
-			<texPath>Things/Imperial Guard/SteelLegion/Clothing/SteelLegionCommissar</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<equippedStatOffsets Inherit="False">
-			<ToxicSensitivity>-0.70</ToxicSensitivity>
-			<SocialImpact>0.25</SocialImpact>
-		</equippedStatOffsets>
-		<apparel>
-			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Clothing/SteelLegionCommissar</wornGraphicPath>
-			<tags Inherit="False">
-				<li>ImperialGuardApparel</li>
-				<li>SteelLegionApparel</li>
-				<li>SteelLegionCommissarApparel</li>
-			</tags>
-		</apparel>
-	</ThingDef>
-	
 	<!-- ====== Hats ====== -->
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="CommissarCap"><!-- Cadian Helmet -->
@@ -188,29 +165,6 @@
 				<li>ImperialGuardApparel</li>
 				<li>KriegApparel</li>
 				<li>KriegCommissarApparel</li>
-			</tags>
-		</apparel>
-	</ThingDef>
-	
-	<ThingDef ParentName="CommissarCap">
-		<defName>SteelLegionCommissarCap</defName>
-		<label>Steel Legion Commissar Cap</label>
-		<description>The cap most fitting for a Commissar, demands respect, either that or a bullet to the head.</description>
-		<equippedStatOffsets Inherit="False">
-			<ToxicSensitivity>-0.30</ToxicSensitivity>
-			<SocialImpact>0.25</SocialImpact>
-		</equippedStatOffsets>
-		<graphicData> 
-			<texPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionCommissarcap</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<apparel>
-			<wornGraphicPath>Things/Imperial Guard/SteelLegion/Hats/SteelLegionCommissarcap</wornGraphicPath>
-			<tags Inherit="False">
-				<li>ImperialGuardApparel</li>
-				<li>SteelLegionApparel</li>
-				<li>SteelLegionCommissarApparel</li>
 			</tags>
 		</apparel>
 	</ThingDef>

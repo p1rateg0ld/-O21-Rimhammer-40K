@@ -115,10 +115,10 @@
 	
 	<!-- LasGun -->
 
-	<ThingDef ParentName="N17BaseMakeableGun" Name="BaseLasgun">
+	<ThingDef ParentName="N17BaseMakeableGun">
 		<defName>LasGun</defName>
-		<label>Kantrael Pattern Lasrifle</label>
-		<description>The M36 Kantrael Pattern Lasrifle is the standard variant for Cadians, it lacks the scope of the M35 Standard Pattern and as such has a slightly reduced range.</description>
+		<label>Lasrifle</label>
+		<description>The Lasrifle, also sometimes referred to as a Lasrifle, is a directed-energy antipersonnel weapon used by the military forces of the Imperium of Man, and it is the most common and widely-used type of laser weapon in the galaxy. It is standard-issue for the Adeptus Mechanicus' cybernetic Skitarii infantry, all Astra Militarum rank-and-file infantry and most junior Astra Militarum officers. Lasrifles are reliable, easy to maintain and to produce, and are readily available on most Imperial worlds. A Lasrifle has a longer range than a Laspistol, but is nowhere near as powerful as a Lascannon nor does it possess the rapid-firing qualities of the Multi-Laser or the Hellgun. Though not as powerful as kinetic projectile weapons such as the ubiquitous Bolter, the lower cost of production, the lack of a requirement for ammunition production and resupply make the Lasrifle the best choice for the large forces of the Imperial Guard. The Lasrifle uses a small portable capacitor power pack to produce a focused pinpoint laser beam which is strong enough to take an ordinary human arm off with one shot but is not as effective against the more durable alien bodies and stronger types of personal armour. A Lasrifle's beam also cauterizes the wounds it inflicts due to the immense heat given off by the shot. The Lasrifle is effective when used en masse, but considerably less effective when used alone.</description>
 		<graphicData>
 			<texPath>Things/Imperial Guard/Weapons/Ranged/LasGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -134,10 +134,10 @@
 			<WorkToMake>32000</WorkToMake>
 			<MarketValue>2000</MarketValue>
 			<Mass>3.2</Mass>
-			<AccuracyTouch>0.60</AccuracyTouch>
-			<AccuracyShort>0.72</AccuracyShort>
-			<AccuracyMedium>0.63</AccuracyMedium>
-			<AccuracyLong>0.52</AccuracyLong>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.68</AccuracyShort>
+			<AccuracyMedium>0.59</AccuracyMedium>
+			<AccuracyLong>0.49</AccuracyLong>
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
@@ -231,64 +231,37 @@
 				<StartFireChance>0.1</StartFireChance>	
 	</ThingDef>
 	
-	<!-- LasGun -->
-
-	<ThingDef ParentName="BaseLasgun">
-		<defName>VossLasGun</defName>
-		<label>Voss Pattern Lasgun</label>
-		<description>Voss Pattern Lasgun is a stockless lasrifle used by the Armageddon Steel Legion. The  lack of stock means this gun has a slightly lower accuracy rating than a standard lasgun, also lacking the scope so it has a slightly reduced range.</description>
-		<graphicData>
-			<texPath>Things/Imperial Guard/Weapons/Ranged/SteelLegionLasgun</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.15</drawSize>	
-		</graphicData>
-		<comps>     
-			<li>
-				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-			</li>
-		</comps>
-		<soundInteract>Interact_Rifle</soundInteract>
-		<statBases>
-			<WorkToMake>32000</WorkToMake>
-			<MarketValue>2000</MarketValue>
-			<Mass>3.2</Mass>
-			<AccuracyTouch>0.55</AccuracyTouch>
-			<AccuracyShort>0.68</AccuracyShort>
-			<AccuracyMedium>0.59</AccuracyMedium>
-			<AccuracyLong>0.49</AccuracyLong>
-			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
-		</statBases>
-		<weaponTags Inherit="false">
-			<li>IGRanged</li>
-			<li>IGSteelLegionRanged</li>
-			<li>VossLasgun</li>
-		</weaponTags>
-		<tools Inherit="false">
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>1.9</cooldownTime>
-			</li>
-			<li>
-				<label>bayonet</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.2</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-	
 	<!-- Valhallan LasGun -->
+
+	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+		<defName>N17_Bullet_LasGun</defName>
+		<label>Las Gun Blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/LasShotLrg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>N17Las</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.14</armorPenetrationBase>
+			<stoppingPower>0.9</stoppingPower>
+			<speed>105</speed>
+		</projectile>
+		<thingClass>JecsTools.Projectile_Laser</thingClass>
+		<preFiringInitialIntensity>0</preFiringInitialIntensity>
+		<preFiringFinalIntensity>2</preFiringFinalIntensity>
+		<postFiringInitialIntensity>2</postFiringInitialIntensity>
+		<postFiringFinalIntensity>0</postFiringFinalIntensity>
+		<preFiringDuration>2</preFiringDuration>
+		<postFiringDuration>10</postFiringDuration>
+		<StartFireChance>0.1</StartFireChance>	
+	</ThingDef>
 
 	<ThingDef ParentName="N17BaseMakeableGun">
 		<defName>LasGunValhallan</defName>
-		<label>M35 Standard Lasrifle</label>
-		<description>Standard pattern Lasrifle with scope.</description>
+		<label>Valhallan Lasrifle</label>
+		<description>The Lasrifle, also sometimes referred to as a Lasrifle, is a directed-energy antipersonnel weapon used by the military forces of the Imperium of Man, and it is the most common and widely-used type of laser weapon in the galaxy. It is standard-issue for the Adeptus Mechanicus' cybernetic Skitarii infantry, all Astra Militarum rank-and-file infantry and most junior Astra Militarum officers. Lasrifles are reliable, easy to maintain and to produce, and are readily available on most Imperial worlds. A Lasrifle has a longer range than a Laspistol, but is nowhere near as powerful as a Lascannon nor does it possess the rapid-firing qualities of the Multi-Laser or the Hellgun. Though not as powerful as kinetic projectile weapons such as the ubiquitous Bolter, the lower cost of production, the lack of a requirement for ammunition production and resupply make the Lasrifle the best choice for the large forces of the Imperial Guard. The Lasrifle uses a small portable capacitor power pack to produce a focused pinpoint laser beam which is strong enough to take an ordinary human arm off with one shot but is not as effective against the more durable alien bodies and stronger types of personal armour. A Lasrifle's beam also cauterizes the wounds it inflicts due to the immense heat given off by the shot. The Lasrifle is effective when used en masse, but considerably less effective when used alone.</description>
 		<graphicData>
 			<texPath>Things/Imperial Guard/Weapons/Ranged/m35lasgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -532,7 +505,6 @@
 			<li>IGRanged</li>
 				<li>IGCadianRanged</li>
 				<li>IGValhallanRanged</li>
-				<li>IGSteelLegionRanged</li>
 			<li>LongLas</li>
 		</weaponTags>
 		<thingCategories>
@@ -960,8 +932,8 @@
 
 	<ThingDef ParentName="N17BaseMakeableGun">
 		<defName>KriegLasCarbine</defName>
-		<label>Lucius no.98 Pattern Lasrifle</label>
-		<description>A variation of the lasgun technology used by the Death Korps of Krieg. Much the same in terms of accuracy but slower firing, this has resulted in the weapon being stronger per shot but overall much preferred by the Death Korps.</description>
+		<label>Krieg Lascarbine</label>
+		<description>A variation of the lasgun technology used by the Death Korps of Krieg. Much the same in terms of accuracy but faster firing, this has resulted in the weapon being weaker per shot but overall much preferred by the Death Korps.</description>
 		<graphicData>
 			<texPath>Things/Imperial Guard/Weapons/Ranged/Lascarbine</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1012,7 +984,7 @@
 				<warmupTime>0.5</warmupTime>
 				<range>31</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-				<burstShotCount>2</burstShotCount>
+				<burstShotCount>6</burstShotCount>
 				<soundCast>HellgunSound</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
@@ -1059,7 +1031,7 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>N17Las</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>14</damageAmountBase>
 			<armorPenetrationBase>0.14</armorPenetrationBase>
 			<stoppingPower>0.9</stoppingPower>
 			<speed>105</speed>
