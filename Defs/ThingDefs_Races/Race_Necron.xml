@@ -78,12 +78,6 @@
 		<label>Necron</label>
 		<description>The Necrons are a mysterious race of robotic skeletal warriors that have lain dormant in their stasis-tombs for more than 60 million Terran years and who are the soulless creations and former servants of the ancient C'tan, the terrible Star Gods of Eldar myth. The Necrons are ancient beyond reckoning, predating even the birth of the Eldar. At long last, however, they are beginning to awaken from their Tomb Worlds, for the galaxy is ripe for conquest and the restoration of the Necron Empire since the disappearance of the Old Ones more than 60 million standard years ago. The Necrons are a completely robotic humanoid species whose technological prowess is probably unmatched by any of the other intelligent species of the galaxy. Yet out of a desire for vengeance against the more fortunate long-lived ancient xenos race called the Old Ones, and the trickery of the godlike intelligences known as the C'tan, the Necrons shed their original organic forms and lost all forms of compassion and empathy, becoming ruthless, undying killing machines who are determined to exert their mastery over the galaxy once more.</description>
 		<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
-		<!-- <comps>
-			<li Class="Rimhammer40k.CompProperties_GaussTracker">
-				<canHibernate>true</canHibernate>
-				<hibernationJob>NecronHibernate</hibernationJob>
-			</li>
-		</comps> -->
 		<alienRace>
 			<generalSettings>
 				<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
@@ -270,13 +264,15 @@
 		<race>
 			<fleshType>Necron</fleshType>
 			<hasGenders>false</hasGenders>
-			<thinkTreeMain>Humanlike</thinkTreeMain>
-			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<thinkTreeMain>Necron</thinkTreeMain>
+			<thinkTreeConstant>NecronConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>2500</lifeExpectancy>
 			<nameGenerator>NamerNecron</nameGenerator>
 			<body>Necron</body>
+			<useMeatFrom>Human</useMeatFrom>
+			<canBePredatorPrey>false</canBePredatorPrey>
 			<bloodDef>FilthBloodNecron</bloodDef>
 			<baseBodySize>1.0</baseBodySize>
 			<baseHealthScale>1.0</baseHealthScale>
@@ -326,9 +322,7 @@
 			</hediffGiverSets>
 		</race>
 		<butcherProducts>
-			<Steel>50</Steel>
-			<Plasteel>10</Plasteel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Necrodermis>80</Necrodermis>
 		</butcherProducts>
 		<recipes>
 			<li>RemoveBodyPart</li>
@@ -336,6 +330,7 @@
 		</recipes>
 		<modExtensions>
 			<li Class="Rimhammer40k.Necrons.NecronTweaker">
+				<tweakNecronResurrect>true</tweakNecronResurrect>
 				<tweakCorpseRot>true</tweakCorpseRot>
 			</li>
 		</modExtensions>

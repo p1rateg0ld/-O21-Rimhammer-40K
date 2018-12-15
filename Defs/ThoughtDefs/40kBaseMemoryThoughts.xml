@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>SoullessNecron</defName>
+		<workerClass>Rimhammer40k.ThoughtWorker_ConstructAlways</workerClass>
+   		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>soulless necron</label>
+				<description>I am unable to feel anything...</description>
+				<baseMoodEffect>200</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

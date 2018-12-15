@@ -20,22 +20,6 @@ namespace Rimhammer40k.Necrons
             return !flag;
         }
 
-        public static bool Patch_ThoughtWorker_NeedFood_CurrentStateInternal(ref ThoughtState __result, Pawn p)
-        {
-            bool flag = p.IsNecron();
-            bool result;
-            if (flag)
-            {
-                __result = ThoughtState.Inactive;
-                result = false;
-            }
-            else
-            {
-                result = true;
-            }
-            return result;
-        }
-
         public static bool Patch_SkillRecord_Interval(SkillRecord __instance)
         {
             Pawn pawn = (Pawn)AccessTools.Field(typeof(SkillRecord), "pawn").GetValue(__instance);

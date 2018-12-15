@@ -1,0 +1,186 @@
+﻿<?xml	version="1.0"	encoding="utf-8"	?>
+<Defs>
+
+
+	<BodyDef>
+		<defName>CanoptekScarab</defName>
+		<label>Canoptek Scarab</label>
+		<corePart>
+			<def>ScarabOuterShell</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>ScarabHead</def>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>ScarabThoughtCore</def>
+							<coverage>0.02</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>ScarabOptic</def>
+							<coverage>0.02</coverage>
+							<depth>Outside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>ScarabGaussExtractor</def>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>ScarabManipulatorSocket</def>
+					<customLabel>front left socket</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>ScarabManipulator</def>
+							<customLabel>front left arm</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Outside</depth>
+							<parts>
+								<li>
+									<def>ScarabManipulatorDigit</def>
+									<customLabel>front left manipulator</customLabel>
+									<coverage>0.01</coverage>
+									<depth>Outside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>ScarabManipulatorSocket</def>
+					<customLabel>mid left socket</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>ScarabManipulator</def>
+							<customLabel>mid left arm</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Outside</depth>
+							<parts>
+								<li>
+									<def>ScarabManipulatorDigit</def>
+									<customLabel>mid left manipulator</customLabel>
+									<coverage>0.01</coverage>
+									<depth>Outside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>ScarabManipulatorSocket</def>
+					<customLabel>back left socket</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>ScarabManipulator</def>
+							<customLabel>back left arm</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Outside</depth>
+							<parts>
+								<li>
+									<def>ScarabManipulatorDigit</def>
+									<customLabel>back left manipulator</customLabel>
+									<coverage>0.01</coverage>
+									<depth>Outside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>ScarabManipulatorSocket</def>
+					<customLabel>front right socket</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>ScarabManipulator</def>
+							<customLabel>front right arm</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Outside</depth>
+							<parts>
+								<li>
+									<def>ScarabManipulatorDigit</def>
+									<customLabel>front right manipulator</customLabel>
+									<coverage>0.01</coverage>
+									<depth>Outside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>ScarabManipulatorSocket</def>
+					<customLabel>mid right socket</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>ScarabManipulator</def>
+							<customLabel>mid right arm</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Outside</depth>
+							<parts>
+								<li>
+									<def>ScarabManipulatorDigit</def>
+									<customLabel>mid right manipulator</customLabel>
+									<coverage>0.01</coverage>
+									<depth>Outside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>ScarabManipulatorSocket</def>
+					<customLabel>back right socket</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>ScarabManipulator</def>
+							<customLabel>back right arm</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Outside</depth>
+							<parts>
+								<li>
+									<def>ScarabManipulatorDigit</def>
+									<customLabel>back right manipulator</customLabel>
+									<coverage>0.01</coverage>
+									<depth>Outside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>ScarabHoverPlate</def>
+					<customLabel>left hover plate</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>ScarabHoverPlate</def>
+					<customLabel>right hover plate</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Outside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+		
+</Defs>

@@ -32,8 +32,8 @@
 
 	<AlienRace.BackstoryDef> <!-- Previous Life of a Leader -->
 		<defName>BackstoryNecronChild01</defName>
-		<title>Necrontyr Soldier</title>
-		<titleShort>Soldier</titleShort>
+		<title>Necrontyr Leader</title>
+		<titleShort>Leader</titleShort>
 		<baseDescription>Prior to their bio-transferrence [PAWN_nameDef] used to be a leader of the Necrontyr, they have retained some of their skills despite the damage the transfer did to their soul.</baseDescription>
 		<slot>Childhood</slot>
 		<bodyTypeGlobal>Male</bodyTypeGlobal>

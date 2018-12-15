@@ -8,7 +8,7 @@
 		<graphicData>
 			<texPath>Things/Necron/Building/Sarcophagus/NecronSarcophagus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
+			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -54,7 +54,7 @@
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
-		<size>(3,3)</size>
+		<size>(1,1)</size>
 		<inspectorTabs>
 			<li>ITab_Art</li>
 		</inspectorTabs>

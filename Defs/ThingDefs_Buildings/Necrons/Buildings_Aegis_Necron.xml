@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Embrasure for Necrons-->
+	<ThingDef Name="NEC_Aegis_Green" ParentName="Aegis_Wall_Base">
+		<defName>NEC_Aegis_Green</defName>
+		<label>Necron Aegis Wall (Green)</label>
+		<description>A defensive laser wall that is impassable and provides cover to fire from.</description>
+		<<researchPrerequisites>
+			<li>N17_Nec_DefStructures</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NEC_Aegis</designatorDropdown>
+		<costList>
+			<Necrodermis>5</Necrodermis>
+		</costList>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>700</WorkToBuild>
+		</statBases>
+		<passability>Impassable</passability>
+		<fillPercent>0.75</fillPercent>
+		<uiIconPath>Things/Building/Structure/Aegis/NEC/NEC_aegis_menu1</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/Structure/Aegis/NEC/NEC_aegis_atlas1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef Name="NEC_Aegis_Blue" ParentName="NEC_Aegis_Green">
+		<defName>NEC_Aegis_Blue</defName>
+		<label>Necron Aegis Wall (Blue)</label>
+		<uiIconPath>Things/Building/Structure/Aegis/NEC/NEC_aegis_menu2</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/Structure/Aegis/NEC/NEC_aegis_atlas2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef Name="NEC_Aegis_Orange" ParentName="NEC_Aegis_Green">
+		<defName>NEC_Aegis_Orange</defName>
+		<label>Necron Aegis Wall (Orange)</label>
+		<uiIconPath>Things/Building/Structure/Aegis/NEC/NEC_aegis_menu3</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/Structure/Aegis/NEC/NEC_aegis_atlas3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

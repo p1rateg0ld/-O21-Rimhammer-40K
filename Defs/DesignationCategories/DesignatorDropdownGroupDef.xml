@@ -25,4 +25,8 @@
 		<defName>RH_IG_3Tarantula</defName>
 	</DesignatorDropdownGroupDef>
 
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NEC_Aegis</defName>
+	</DesignatorDropdownGroupDef>
+
 </Defs>

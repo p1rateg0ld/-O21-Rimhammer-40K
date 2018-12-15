@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ThoughtWorker_ConstructAlways.cs" />
     <None Include="Necrons\Buildings\Building_ScarabObelisk.cs" />
     <None Include="Necrons\Buildings\ThingDef_Building_ScarabObelisk.cs" />
     <None Include="MainButtonWorker_ToggleRimhammer40kTab.cs" />
@@ -68,11 +69,14 @@
     <None Include="Necrons\Old\Comp_EnergySource.cs" />
     <None Include="Necrons\Old\Comp_EnergyTracker.cs" />
     <Compile Include="Necrons\BodyPartTagDefOf.cs" />
-    <Compile Include="Necrons\CompProperties_SpawnPawn.cs" />
-    <Compile Include="Necrons\CompUseEffect_SpawnNecron.cs" />
+    <Compile Include="Necrons\CompProperties_NecronResurrection.cs" />
+    <Compile Include="Necrons\CompProperties_SpawnNecron.cs" />
+    <Compile Include="Necrons\CompSpawnNecron.cs" />
+    <None Include="Necrons\CompUseEffect_SpawnNecron.cs" />
     <None Include="Necrons\Old\GEnergyCategory.cs" />
     <Compile Include="Necrons\HediffGiver_BirthdayNecron.cs" />
     <None Include="Necrons\Old\JobDriver_Hibernate.cs" />
+    <Compile Include="Necrons\CompNecronResurrection.cs" />
     <Compile Include="Necrons\NecronTweaker.cs" />
     <None Include="Necrons\Old\NeedsDefOf.cs" />
     <None Include="Necrons\Old\Need_GaussEnergy.cs" />
@@ -88,7 +92,6 @@
     <Compile Include="Necrons\PawnCapacityWorker_GaussEfficiency.cs" />
     <Compile Include="Necrons\PawnCapacityWorker_HeatVenting.cs" />
     <Compile Include="Necrons\PawnKindDef.cs" />
-    <Compile Include="Necrons\TaleDefOf.cs" />
     <Compile Include="Settings\Rimhammer40kModSettings.cs" />
     <Compile Include="Tau\TauDroneDef.cs" />
     <None Include="MissionBoard.cs" />

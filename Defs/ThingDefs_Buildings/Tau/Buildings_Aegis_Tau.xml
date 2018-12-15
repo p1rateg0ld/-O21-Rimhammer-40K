@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Embrasure for Tau-->
+	<ThingDef Name="TAU_Aegis" ParentName="Aegis_Wall_Base">
+		<defName>TAU_Aegis</defName>
+		<label>Tau Aegis Wall</label>
+		<description>A defensive laser wall that is impassable and provides cover to fire from.</description>
+		<researchPrerequisites>
+			<li>N17_Tau_DefStructures</li>
+		</researchPrerequisites>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>700</WorkToBuild>
+		</statBases>
+		<passability>Impassable</passability>
+		<fillPercent>0.75</fillPercent>
+		<uiIconPath>Things/Building/Structure/Aegis/TAU/TAU_aegis_menu</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/Structure/Aegis/TAU/TAU_aegis_atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+</Defs>

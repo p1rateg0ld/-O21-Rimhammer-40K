@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef>
+		<defName>CanoptekScarab</defName>
+		<label>canoptek scarab</label>
+		<race>CanoptekScarab</race>
+		<combatPower>40</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Necron/Constructs/Scarab/Necron_Scarab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.8, 0.2)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

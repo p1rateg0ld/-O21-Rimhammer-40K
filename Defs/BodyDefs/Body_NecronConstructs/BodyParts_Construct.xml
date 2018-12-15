@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>ScarabOuterShell</defName>
+    <label>outer shell</label>
+    <hitPoints>32</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+	<bleedRate>0</bleedRate>
+    <alive>false</alive>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ScarabCore</defName>
+    <label>core</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	<bleedRate>4</bleedRate>
+    <skinCovered>false</skinCovered>
+    <alive>false</alive>
+    <tags>
+      <li>ConsciousnessSource</li>
+	  <li>ManipulationLimbCore</li>
+	  <li>MovingLimbCore</li>
+	  <li>HearingSource</li>
+	  <li>TalkingSource</li>
+	  <li>EatingSource</li>
+	  <li>MetabolismSource</li>
+	  <li>BloodFiltrationLiver</li>
+	  <li>BreathingSource</li>
+	  <li>BloodPumpingSource</li>
+	  <li>BloodFiltrationKidney</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ScarabThoughtCore</defName>
+    <label>thought core</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	<bleedRate>3</bleedRate>
+    <skinCovered>false</skinCovered>
+    <alive>false</alive>
+    <tags>
+      <li>ConsciousnessSource</li>
+	  <li>HearingSource</li>
+      <li>BreathingSource</li>
+	  <li>BloodPumpingSource</li>
+	  <li>BloodFiltrationKidney</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ScarabOptic</defName>
+    <label>optic</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <socketed>true</socketed>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ScarabShell</defName>
+    <label>shell</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+	<bleedRate>0</bleedRate>
+    <alive>false</alive>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ScarabHead</defName>
+    <label>head</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+	<bleedRate>0</bleedRate>
+    <alive>false</alive>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ScarabManipulatorSocket</defName>
+    <label>manipulator socket</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+	<bleedRate>0</bleedRate>
+    <alive>false</alive>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ScarabManipulator</defName>
+    <label>right manipulator</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+	<bleedRate>0</bleedRate>
+    <alive>false</alive>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ScarabManipulatorDigit</defName>
+    <label>digit</label>
+    <hitPoints>7</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+	<bleedRate>0</bleedRate>
+    <alive>false</alive>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>ScarabHoverPlate</defName>
+    <label>hover plate</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+	<bleedRate>0</bleedRate>
+    <alive>false</alive>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>ScarabGaussExtractor</defName>
+    <label>gauss extractor</label>
+    <hitPoints>25</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+	<bleedRate>2</bleedRate>
+    <skinCovered>false</skinCovered>
+    <alive>true</alive>
+    <tags>
+	  <li>MetabolismSource</li>
+	  <li>BloodFiltrationLiver</li>
+    </tags>
+  </BodyPartDef>
+  
+</Defs>

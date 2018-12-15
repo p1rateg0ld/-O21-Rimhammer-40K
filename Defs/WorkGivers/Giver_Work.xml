@@ -17,5 +17,22 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsNecronFabricator</defName>
+		<label>work at fabrication altar</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>97</priorityInType>
+		<fixedBillGiverDefs>
+			<li>NecronFabricationAltar</li>
+		</fixedBillGiverDefs>
+		<verb>fabricating</verb>
+		<gerund>fabricating at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
 	
 </Defs>

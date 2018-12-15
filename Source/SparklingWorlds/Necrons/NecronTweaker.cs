@@ -13,6 +13,9 @@ namespace Rimhammer40k.Necrons
         //remove corpse rotting
         public bool tweakCorpseRot = true;
 
+        //add necron resurrection
+        public bool tweakNecronResurrect = true;
+
         //products butchering gives
         public RecipeDef recipeDef;
 
@@ -54,6 +57,12 @@ namespace Rimhammer40k.Necrons
                         {
                             corpseDef.comps.RemoveAll(compProperties => compProperties is CompProperties_Rottable);
                             corpseDef.comps.RemoveAll(compProperties => compProperties is CompProperties_SpawnerFilth);
+                        }
+
+                        if (tweaker.tweakNecronResurrect)
+                        {
+                            CompProperties_NecronResurrection compProperties_NecronResurrection = new CompProperties_NecronResurrection();
+                            corpseDef.comps.Add(compProperties_NecronResurrection);
                         }
 
                         //Modifies the butchering products by importing the costs from a recipe.
