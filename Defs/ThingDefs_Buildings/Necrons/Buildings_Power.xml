@@ -30,6 +30,7 @@
 		</thingCategories>
 		<statBases>
 			<MarketValue>1200</MarketValue>
+			<WorkToBuild>2000</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<Mass>15</Mass>
