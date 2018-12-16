@@ -59,6 +59,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CompHelp.cs" />
+    <Compile Include="Constructs\AI\JobDriver_ReturnToStation.cs" />
+    <Compile Include="Constructs\AI\JobDriver_SelfTerminate.cs" />
+    <Compile Include="Constructs\AI\JobGiver_ConstructFlee.cs" />
+    <Compile Include="Constructs\AI\JobGiver_ConstructMain.cs" />
+    <Compile Include="Constructs\Building_ConstructStation.cs" />
+    <Compile Include="Constructs\Building_ConstructStationRefuelable.cs" />
+    <Compile Include="Constructs\Building_ConstructStationSpecialGraphics.cs" />
+    <Compile Include="Constructs\Building_WorkGiver_ConstructStation.cs" />
+    <Compile Include="Constructs\ConstructBackstories.cs" />
+    <Compile Include="Constructs\ConstructDefOf.cs" />
+    <Compile Include="Constructs\DefModExtension_ConstructStation.cs" />
+    <Compile Include="Constructs\Pawn_Construct.cs" />
     <Compile Include="ThoughtWorker_ConstructAlways.cs" />
     <None Include="Necrons\Buildings\Building_ScarabObelisk.cs" />
     <None Include="Necrons\Buildings\ThingDef_Building_ScarabObelisk.cs" />
@@ -72,7 +85,6 @@
     <Compile Include="Necrons\CompProperties_NecronResurrection.cs" />
     <Compile Include="Necrons\CompProperties_SpawnNecron.cs" />
     <Compile Include="Necrons\CompSpawnNecron.cs" />
-    <None Include="Necrons\CompUseEffect_SpawnNecron.cs" />
     <None Include="Necrons\Old\GEnergyCategory.cs" />
     <Compile Include="Necrons\HediffGiver_BirthdayNecron.cs" />
     <None Include="Necrons\Old\JobDriver_Hibernate.cs" />

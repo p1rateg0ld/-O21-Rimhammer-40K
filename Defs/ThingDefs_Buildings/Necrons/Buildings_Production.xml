@@ -16,7 +16,7 @@
 		</statBases>
 		<minifiedDef />
 		<thingCategories Inherit="false" />
-		<size>(3,2)</size>
+		<size>(4,2)</size>
 		<costList>
 			<Necrodermis>50</Necrodermis>
 		</costList>
@@ -32,10 +32,10 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<graphicData>
-			<texPath>Things/Imperial Guard/Production/Refinery</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Necron/Building/Production/FabricationAltar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(3,2)</drawSize>
+			<drawSize>(4.8,2.2)</drawSize>
 			<shadowData>
 				<volume>(2.22, 0.8, 0.62)</volume>
 				<offset>(0, 0, -0.13)</offset>
@@ -56,9 +56,71 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Production</designationCategory>
 		<surfaceType>Item</surfaceType>
-		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<researchPrerequisites>
-			<!-- <li>N17_Imp_Refining</li> -->
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>NecronResearchBench</defName>
+		<label>Necron Research Archive</label>
+		<description>Research bench for Necrons, all of their research is done here.</description>
+		<thingClass>Building_ResearchBench</thingClass>
+		<size>(5,3)</size>
+		<minifiedDef />
+		<thingCategories Inherit="false" />
+		<costList>
+			<Necrodermis>120</Necrodermis>
+		</costList>
+		<graphicData>
+			<texPath>Things/Necron/Building/ArchiveBench</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<ResearchSpeedFactor>1.0</ResearchSpeedFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>MultiAnalyzer</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<fillPercent>0.5</fillPercent>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<surfaceType>Item</surfaceType>
+		<designationHotKey>Misc4</designationHotKey>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
 		</researchPrerequisites>
 	</ThingDef>
 

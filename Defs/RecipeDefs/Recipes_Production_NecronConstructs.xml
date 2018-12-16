@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	
+	<!--
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>UnfinishedScarab</defName>
 		<label>unfinished scarab</label>
@@ -37,7 +38,6 @@
 				<li>Necrodermis</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<!-- <researchPrerequisite>N17_Imp_Ceramite02</researchPrerequisite> -->
 		<unfinishedThingDef>UnfinishedScarab</unfinishedThingDef>
 		<workSkill>Crafting</workSkill>
 		<effectWorking>Repair</effectWorking>
@@ -46,5 +46,6 @@
 			<li>NecronFabricationAltar</li>
 		</recipeUsers>
 	</RecipeDef>
+	-->
 	
 </Defs>

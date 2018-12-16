@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>GaussGenerator_Small</defName>
+		<label>Small Gauss Generator</label>
+		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe.</description>
+		<graphicData>
+			<texPath>Things/Necron/Building/Power/GaussGeneratorSmall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.4, 3.4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>700</pathCost>
+		<fillPercent>1.0</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>false</castEdgeShadows>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<surfaceType>Item</surfaceType>
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3, 3)</size>
+		<costList>
+			<Necrodermis>150</Necrodermis>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-400</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>10000</storedEnergyMax>
+				<efficiency>1.0</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(168,233,168,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>5.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+	
+</Defs>

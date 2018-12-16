@@ -6,7 +6,7 @@
 		<defName>NEC_Aegis_Green</defName>
 		<label>Necron Aegis Wall (Green)</label>
 		<description>A defensive laser wall that is impassable and provides cover to fire from.</description>
-		<<researchPrerequisites>
+		<researchPrerequisites>
 			<li>N17_Nec_DefStructures</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_NEC_Aegis</designatorDropdown>

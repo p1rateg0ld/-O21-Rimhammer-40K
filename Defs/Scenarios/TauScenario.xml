@@ -84,7 +84,7 @@
 				</li>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text />
+					<text>The last thing you seen before the escape pod door closed was what looked like a gargantuan tooth piercing the bulkhead only meters away, crunching the walls in as if they were made of paper. The plan to colonize this world is looking less likely to happen now, you need to just try and stay alive.</text>
 					<textKey>GameStartDialog</textKey>
 					<closeSound>GameStartSting</closeSound>
 				</li>

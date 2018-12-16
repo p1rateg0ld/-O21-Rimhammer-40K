@@ -36,8 +36,7 @@
 		</tools>
 		<race>
 			<intelligence>ToolUser</intelligence>
-			<thinkTreeMain>Humanlike</thinkTreeMain>
-			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<body>CanoptekScarab</body>
 			<lifeExpectancy>2750</lifeExpectancy>
 			<baseBodySize>0.3</baseBodySize>

@@ -10,7 +10,7 @@ Hyperphase Swords are found exclusively as part of the armouries of Necron royal
 		<graphicData>
 			<texPath>Things/Necron/Weapons/Melee/HyperphaseSword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>	
-			<drawSize>2.0</drawSize>	
+			<drawSize>1.8</drawSize>	
 		</graphicData>
 		<comps>     
 			<li>
@@ -62,10 +62,13 @@ Hyperphase Swords are found exclusively as part of the armouries of Necron royal
 			</li>
 		</tools>
 		<recipeMaker>
-			<!-- <researchPrerequisite>N17_Nec_WeaponsMelee</researchPrerequisite>-->
+			<researchPrerequisite>N17_Nec_BasicWeapons</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>8</Crafting>
+				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>NecronFabricationAltar</li>
+			</recipeUsers>
 		</recipeMaker>
 	  </ThingDef>
 	  

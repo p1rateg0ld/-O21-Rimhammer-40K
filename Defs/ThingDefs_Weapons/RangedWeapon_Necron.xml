@@ -11,7 +11,7 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 		<graphicData>
 			<texPath>Things/Necron/Weapons/Ranged/GaussFlayer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>	
-			<drawSize>1.15</drawSize>	
+			<drawSize>1.4</drawSize>	
 		</graphicData>
 		<comps>     
 			<li>
@@ -27,11 +27,10 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.60</AccuracyMedium>
 			<AccuracyLong>0.50</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
-			<PsychicSensitivity>-0.5</PsychicSensitivity>
 			<MoveSpeed>0.5</MoveSpeed>
 		</equippedStatOffsets>
 		<verbs>
@@ -42,7 +41,7 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 				<warmupTime>0.3</warmupTime>
 				<range>24</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
+				<burstShotCount>1</burstShotCount>
 				<soundCast>GaussFlayerSound</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>8</muzzleFlashScale>
@@ -82,10 +81,17 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 			<li>NecronRanged</li>
 		</tradeTags>
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Plasteel>2</Plasteel>
-			<Steel>10</Steel>
+			<Necrodermis>45</Necrodermis>
 		</costList>
+		<recipeMaker>
+			<researchPrerequisite>N17_Nec_BasicWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>NecronFabricationAltar</li>
+			</recipeUsers>
+		</recipeMaker>
 	</ThingDef>
 	
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
@@ -97,8 +103,8 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 		</graphicData>
 		<projectile>
 			<damageDef>N17Gauss</damageDef>
-			<damageAmountBase>18</damageAmountBase>
-			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
 			<speed>105</speed>
 		</projectile>
 		<thingClass>JecsTools.Projectile_Laser</thingClass>
@@ -121,7 +127,7 @@ Unlike more conventional directed energy weapons, a Gauss Blaster does not deliv
 		<graphicData>
 			<texPath>Things/Necron/Weapons/Ranged/GaussBlaster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>	
-			<drawSize>1.2</drawSize>		
+			<drawSize>1.3</drawSize>		
 		</graphicData>
 		<comps>     
 			<li>
@@ -139,9 +145,6 @@ Unlike more conventional directed energy weapons, a Gauss Blaster does not deliv
 			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
 		</statBases>
-		<equippedStatOffsets>
-			<PsychicSensitivity>-0.05</PsychicSensitivity>
-		</equippedStatOffsets>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -171,10 +174,17 @@ Unlike more conventional directed energy weapons, a Gauss Blaster does not deliv
 			<li>NecronRanged</li>
 		</tradeTags>
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Plasteel>2</Plasteel>
-			<Steel>10</Steel>
+			<Necrodermis>60</Necrodermis>
 		</costList>
+		<recipeMaker>
+			<researchPrerequisite>N17_Nec_HeavyWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>NecronFabricationAltar</li>
+			</recipeUsers>
+		</recipeMaker>
 	</ThingDef>
 	
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
@@ -287,7 +297,7 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 		<graphicData>
 			<texPath>Things/Necron/Weapons/Ranged/StaffOfLight</texPath>
 			<graphicClass>Graphic_Single</graphicClass>		
-			<drawSize>1.3</drawSize>	
+			<drawSize>1.6</drawSize>	
 		</graphicData>
 		<comps>     
 			<li>
@@ -305,8 +315,6 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
 		</statBases>
-		<equippedStatOffsets>
-		</equippedStatOffsets>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -353,10 +361,17 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 			<li>NecronRanged</li>
 		</tradeTags>
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Plasteel>2</Plasteel>
-			<Steel>10</Steel>
+			<Necrodermis>100</Necrodermis>
 		</costList>
+		<recipeMaker>
+			<researchPrerequisite>N17_Nec_HeavyWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>NecronFabricationAltar</li>
+			</recipeUsers>
+		</recipeMaker>
 	</ThingDef>
 	
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">

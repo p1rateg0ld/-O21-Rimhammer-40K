@@ -91,7 +91,7 @@
 				</li>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text />
+					<text>"Something went wrong, we were supposed to be sent down in a Valkyrie, not shot down in escape pods!" It almost looks like the ship is split down the middle, all you can remember is hitting your head on the bulkhead as a grean glow engulfed the ship, then you woke up as you were thrown into an escape pod by on of those monstrous Space Marines.</text>
 					<textKey>GameStartDialog</textKey>
 					<closeSound>GameStartSting</closeSound>
 				</li>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef>
+		<defName>NecronScenario</defName>
+		<label>Necron Awakening</label>
+		<description>After millenia you are once again awake on a world you once called home, no idea why or how you have been awoken, but your do know you need to help the others awaken too.</description>
+		<scenario>
+			<summary>Two Necrons awaken on the surface, your job, awaken the others.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>NecronPlayerColony</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>2</pawnCount>
+					<pawnChoiceCount>6</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>N17_Nec_Research</project>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>NecronGaussFlayer</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>NecronHyperphaseSword</thingDef>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Necrodermis</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>InactiveScarab</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>6</count>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>After millenia you are once again awake on a world you once called home, no idea why or how you have been awoken, but your do know you need to help the others awaken too.
+
+	Note: Necrons are unfinished, but playable, there will be a lot of weirdness compared to lore, some of it just can't be helped with Rimworld, some of it is just down to not being done yet. All Necron tech uses Necrodermis, you can craft this from nothing at a crafting spot for now, to guarantee you can always get some.</text>
+					<textKey>GameStartDialog</textKey>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--============= Construct Duty ============-->
+	<ThinkTreeDef>
+		<defName>AIConstruct_LordDuty</defName>
+		<thinkRoot Class="ThinkNode_Tagger">
+			<tagToGive>UnspecifiedLordDuty</tagToGive>
+			<subNodes>
+				<li Class="ThinkNode_ConditionalHasLord">
+					<subNodes>
+						<li Class="Rimhammer40k.Constructs.JobGiver_LeaveLord" />
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+
+	<ThinkTreeDef>
+		<defName>AIConstruct_LordDutyConstant</defName>
+		<thinkRoot Class="ThinkNode_Tagger">
+			<tagToGive>UnspecifiedLordDuty</tagToGive>
+			<subNodes>
+				<li Class="ThinkNode_ConditionalHasLord">
+					<subNodes>
+						<li Class="Rimhammer40k.Constructs.JobGiver_LeaveLord" />
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+
+</Defs>
+
+

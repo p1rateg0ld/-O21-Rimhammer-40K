@@ -26,15 +26,6 @@
 				<letter>[PAWN_nameDef]'s brain injury has caused [PAWN_pronoun] to develop strange savant-like abilities.</letter>
 			</li>
 		</hediffGivers>
-	</HediffGiverSetDef>	
-
-	<HediffGiverSetDef>
-		<defName>NecronConstruct</defName>
-		<hediffGivers>
-			<li Class="HediffGiver_Bleeding">
-				<hediff>GaussPlasmaLoss</hediff>
-			</li>
-		</hediffGivers>
 	</HediffGiverSetDef>
 	
 </Defs>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>Construct_ReturnToStation</defName>
+    <driverClass>Rimhammer40k.Constructs.AI.JobDriver_ReturnToStation</driverClass>
+    <reportString>returning to station.</reportString>
+  </JobDef>
+  <JobDef>
+    <defName>Construct_SelfTerminate</defName>
+    <driverClass>Rimhammer40k.Constructs.AI.JobDriver_SelfTerminate</driverClass>
+    <reportString>self-terminating.</reportString>
+  </JobDef>
+</Defs>

@@ -66,8 +66,7 @@
 		<pathCost>60</pathCost>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<costList>
-			<Steel>40</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Necrodermis>40</Necrodermis>
 		</costList>
 		<building>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
@@ -81,9 +80,9 @@
 		<fillPercent>0.8</fillPercent>
 		<castEdgeShadows>false</castEdgeShadows>
 		<techLevel>Archotech</techLevel>
-		<!-- <researchPrerequisites>
-			<li>Necron_Hibernation</li>
-		</researchPrerequisites> -->
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
 		<uiIconScale>0.90</uiIconScale>
 	</ThingDef>
 </Defs>

@@ -33,7 +33,7 @@
 			</categories>
 			<commonality>0.05</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
-			<color>(10, 10, 10)</color>
+			<color>(30, 30, 30)</color>
 			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
@@ -53,6 +53,42 @@
 			<min>2</min>
 			<max>10</max>
 		</deepLumpSizeRange>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>InactiveScarab</defName>
+		<label>inactive scarab</label>
+		<description>Canoptek scarab, installed in a Scarab Platform to activate it.</description>
+		<graphicData>
+			<texPath>Things/Necron/Constructs/Scarab/Stack/Necron_Scarab</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.1</Mass>
+			<MarketValue>600</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<deepCommonality>0.005</deepCommonality>
+		<deepCountPerPortion>1</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>1</min>
+			<max>2</max>
+		</deepLumpSizeRange>
+		<costList>
+			<Necrodermis>25</Necrodermis>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>N17_Nec_Research</researchPrerequisite>
+			<recipeUsers>
+				<li>NecronFabricationAltar</li>
+			</recipeUsers>
+		</recipeMaker>
 	</ThingDef>
 	
 </Defs>

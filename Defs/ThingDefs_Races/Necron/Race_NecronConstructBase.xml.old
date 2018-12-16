@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="NecronConstructBasePawn" Abstract="True">
+	<ThingDef Name="ConstructBasePawn" Abstract="True">
 		<thingClass>Pawn</thingClass>
 		<category>Pawn</category>
 		<selectable>true</selectable>
@@ -36,7 +36,7 @@
 		<drawGUIOverlay>true</drawGUIOverlay>
 	</ThingDef>
 
-	<ThingDef ParentName="NecronConstructBasePawn" Name="BaseNecronConstruct" Abstract="True">
+	<ThingDef ParentName="ConstructBasePawn" Name="BaseNecronConstruct" Abstract="True">
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<PsychicSensitivity>0</PsychicSensitivity>

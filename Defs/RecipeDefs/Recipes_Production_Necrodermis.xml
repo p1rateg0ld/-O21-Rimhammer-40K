@@ -13,9 +13,27 @@
 		<products>
 			<Necrodermis>15</Necrodermis>
 		</products>
-		<researchPrerequisite>N17_Imp_Ceramite02</researchPrerequisite>
+		<researchPrerequisite>N17_Nec_Research</researchPrerequisite>
 		<recipeUsers>
 			<li>NecronFabricationAltar</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>FabricateNecrodermis</defName>
+		<label>fabricate necrodermis</label>
+		<description>Create Necrodermis from raw energy.</description>
+		<jobString>Smelting high grade ceramite.</jobString>
+		<workAmount>15000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<products>
+			<Necrodermis>15</Necrodermis>
+		</products>
+		<researchPrerequisite>N17_Nec_Research</researchPrerequisite>
+		<recipeUsers>
+			<li>CraftingSpot</li>
 		</recipeUsers>
 	</RecipeDef>
 	

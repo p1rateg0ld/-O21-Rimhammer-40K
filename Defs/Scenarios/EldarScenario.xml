@@ -87,7 +87,7 @@
 				</li>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text />
+					<text>You arrive on the maiden world, unsure what might be waiting for you, all seems quiet for now, you'd best set up a base of operations as quickly as possible, you could be here for some time.</text>
 					<textKey>GameStartDialog</textKey>
 					<closeSound>GameStartSting</closeSound>
 				</li>
