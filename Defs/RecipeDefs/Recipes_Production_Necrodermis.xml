@@ -20,7 +20,7 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>FabricateNecrodermis</defName>
+		<defName>FabricateNecrodermisPowerless</defName>
 		<label>fabricate necrodermis</label>
 		<description>Create Necrodermis from raw energy.</description>
 		<jobString>Smelting high grade ceramite.</jobString>
