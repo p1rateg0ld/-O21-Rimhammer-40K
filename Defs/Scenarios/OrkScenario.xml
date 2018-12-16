@@ -88,13 +88,12 @@
 				</li>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text />
+					<text>Rite you gitz, git down dere and krump 'em!</text>
 					<textKey>GameStartDialog</textKey>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<text>Rite you gitz, git down dere and krump 'em!</text>
 					<project>N17_Ork_Research</project>
 				</li>
 			</parts>

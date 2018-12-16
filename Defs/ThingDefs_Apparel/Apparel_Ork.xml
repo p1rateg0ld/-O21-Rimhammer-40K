@@ -474,6 +474,7 @@
 	<ThingDef ParentName="OrkRedHelmetBase">
 		<defName>OrkRedBandana</defName>
 		<label>Ork Bandana (Red)</label>
+		<description>Bit uv cloth, won't do much, but itz betta than nuthin!</description>
 		<graphicData> 
 			<texPath>Things/Ork/Hats/OrkBandanaRed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -495,6 +496,7 @@
 	<ThingDef ParentName="OrkRedHelmetBase">
 		<defName>OrkKommandoGoggles</defName>
 		<label>Ork Kommando Goggles</label>
+		<description>Set uv of shiny glass, won't do much, but itz betta than nuthin!</description>
 		<graphicData> 
 			<texPath>Things/Ork/Hats/OrkKommandoGoggles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
