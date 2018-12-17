@@ -43,7 +43,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
-				<basePowerConsumption>-400</basePowerConsumption>
+				<basePowerConsumption>-800</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Battery">
@@ -57,9 +57,9 @@
 				<glowColor>(168,233,168,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>5.5</explosiveRadius>
+				<explosiveRadius>8.5</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
-				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+				<chanceNeverExplodeFromDamage>0.1</chanceNeverExplodeFromDamage>
 			</li>
 		</comps>
 		<researchPrerequisites>
