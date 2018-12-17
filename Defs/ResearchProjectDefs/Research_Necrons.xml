@@ -13,7 +13,7 @@
 		
 		</prerequisites>
 		<techLevel>Spacer</techLevel>
-		<requiredResearchBuilding>NecronResearchBench</requiredResearchBuilding>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>

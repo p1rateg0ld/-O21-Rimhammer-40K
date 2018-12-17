@@ -47,6 +47,7 @@
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
 			<foodType>None</foodType>
+			<canBePredatorPrey>false</canBePredatorPrey>
 		</race>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		

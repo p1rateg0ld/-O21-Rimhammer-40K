@@ -192,7 +192,7 @@
 			<raceRestriction>
 				<apparelList>
 				</apparelList>
-				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 			</raceRestriction>
 		</alienRace>
 		<statBases>
