@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Blood Raven Armour -->
+	
+	<ThingDef ParentName="SMArmorBase"> <!-- BloodRavens Grunt Armour -->
+		<defName>BloodRavensArmor</defName>
+		<label>blood ravens armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryArmorBase"> <!-- BloodRavens Apothecary Armour -->
+		<defName>BloodRavensApothecaryArmor</defName>
+		<label>blood ravens apothecary armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtArmorBase"> <!-- BloodRavens Sergeant Armour -->
+		<defName>BloodRavensSgtArmor</defName>
+		<label>blood ravens sergeant armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermArmorBase"> <!-- BloodRavens Terminator Armour -->
+		<defName>BloodRavensTermArmor</defName>
+		<label>blood ravens terminator armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets Inherit="False">
+            <MoveSpeed>-1.5</MoveSpeed>
+            <CarryingCapacity>100</CarryingCapacity>
+            <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+        </equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMCmdrArmorBase"> <!-- BloodRavens Commander Armour -->
+		<defName>BloodRavensCmdrArmor</defName>
+		<label>blood ravens commander armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Commander</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Armor/BloodRavens_Commander</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- Blood Raven Helmets -->
+	
+	<ThingDef ParentName="SMHelmetBase"> <!-- BloodRavens Grunt Armour -->
+		<defName>BloodRavensHelmet</defName>
+		<label>blood ravens Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryHelmetBase"> <!-- BloodRavens Apothecary Armour -->
+		<defName>BloodRavensApothecaryHelmet</defName>
+		<label>blood ravens apothecary Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtHelmetBase"> <!-- BloodRavens Sergeant Armour -->
+		<defName>BloodRavensSgtHelmet</defName>
+		<label>blood ravens sergeant Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermHelmetBase"> <!-- BloodRavens Terminator Armour -->
+		<defName>BloodRavensTermHelmet</defName>
+		<label>blood ravens terminator Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMCmdrHelmetBase"> <!-- BloodRavens Commander Armour -->
+		<defName>BloodRavensCmdrHelmet</defName>
+		<label>blood ravens commander Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Commander</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Helmet/BloodRavens_Commander</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

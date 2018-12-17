@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="SpaceMarineFactionBase">
+		<defName>BloodRavens</defName>
+		<label>Blood Ravens</label>
+		<description>The Blood Ravens are a Loyalist Space Marine Chapter of unknown origins and Founding. The origins of the Blood Ravens are shrouded in mystery and are believed to be tied to a dark truth related to the Horus Heresy. This elusive Chapter has always been drawn to the pursuit of knowledge and the acquisition of ancient lore. It produces an unusually large number of Librarians among its ranks as a high proportion of Neophytes develop psychic abilities soon after their implantation with the Blood Ravens' gene-seed organs.</description>
+		<expandingIconTexture>World/SMBRBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<fixedName>Blood Ravens</fixedName>
+		<pawnGroupMakers Inherit="false">
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SMBloodRavenCommander>1</SMBloodRavenCommander>
+					<SMBloodRavenSergeant>3</SMBloodRavenSergeant>
+					<SMBloodRavenGrunt>30</SMBloodRavenGrunt>
+					<SMBloodRavenTerminator>10</SMBloodRavenTerminator>
+					<SMBloodRavenApothecary>5</SMBloodRavenApothecary>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SMBloodRavenCommander>1</SMBloodRavenCommander>
+					<SMBloodRavenGrunt>30</SMBloodRavenGrunt>
+					<SMBloodRavenSergeant>20</SMBloodRavenSergeant>
+					<SMBloodRavenApothecary>3</SMBloodRavenApothecary>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<IGTrader_Cadian>1</IGTrader_Cadian>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<SMBloodRavenGrunt>30</SMBloodRavenGrunt>
+					<SMBloodRavenSergeant>3</SMBloodRavenSergeant>
+					<SMBloodRavenApothecary>5</SMBloodRavenApothecary>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SMBloodRavenCommander>1</SMBloodRavenCommander>
+					<SMBloodRavenSergeant>3</SMBloodRavenSergeant>
+					<SMBloodRavenGrunt>50</SMBloodRavenGrunt>
+					<SMBloodRavenTerminator>10</SMBloodRavenTerminator>
+					<SMBloodRavenApothecary>5</SMBloodRavenApothecary>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

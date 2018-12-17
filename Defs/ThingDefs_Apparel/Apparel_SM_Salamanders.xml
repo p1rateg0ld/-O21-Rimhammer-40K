@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Salamander Armour -->
+	
+	<ThingDef ParentName="SMArmorBase"> <!-- Salamanders Grunt Armour -->
+		<defName>SalamandersArmor</defName>
+		<label>Salamanders armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryArmorBase"> <!-- Salamanders Apothecary Armour -->
+		<defName>SalamandersApothecaryArmor</defName>
+		<label>Salamanders apothecary armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtArmorBase"> <!-- Salamanders Sergeant Armour -->
+		<defName>SalamandersSgtArmor</defName>
+		<label>Salamanders sergeant armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermArmorBase"> <!-- Salamanders Terminator Armour -->
+		<defName>SalamandersTermArmor</defName>
+		<label>Salamanders terminator armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets Inherit="False">
+            <MoveSpeed>-1.5</MoveSpeed>
+            <CarryingCapacity>100</CarryingCapacity>
+            <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+        </equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMCmdrArmorBase"> <!-- Salamanders Commander Armour -->
+		<defName>SalamandersCmdrArmor</defName>
+		<label>Salamanders commander armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Commander</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Armor/Salamander_Commander</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- Salamander Helmets -->
+	
+	<ThingDef ParentName="SMHelmetBase"> <!-- Salamanders Grunt Armour -->
+		<defName>SalamandersHelmet</defName>
+		<label>Salamanders Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryHelmetBase"> <!-- Salamanders Apothecary Armour -->
+		<defName>SalamandersApothecaryHelmet</defName>
+		<label>Salamanders apothecary Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtHelmetBase"> <!-- Salamanders Sergeant Armour -->
+		<defName>SalamandersSgtHelmet</defName>
+		<label>Salamanders sergeant Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermHelmetBase"> <!-- Salamanders Terminator Armour -->
+		<defName>SalamandersTermHelmet</defName>
+		<label>Salamanders terminator Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMCmdrHelmetBase"> <!-- Salamanders Commander Armour -->
+		<defName>SalamandersCmdrHelmet</defName>
+		<label>Salamanders commander Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Commander</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Helmet/Salamander_Commander</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

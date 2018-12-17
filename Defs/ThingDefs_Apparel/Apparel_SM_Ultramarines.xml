@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ===== Armour ===== -->
+	
+	<ThingDef ParentName="SMArmorBase">
+		<defName>UltramarineArmor</defName>
+		<label>ultramarine armor</label>
+		<description>Power Armour is an advanced form of powered combat armour, worn primarily by the Space Marines and the Chaos Space Marines, though suits have been created to be worn by mere mortals. It is a completely enclosed suit of combat armour composed of shaped Adamantium and Plasteel plates, encased in a Ceramite ablative layer.</description>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_SMPowerArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryArmorBase"> <!-- Ultramarine Apothecary Armour -->
+		<defName>UltramarineApothecaryArmor</defName>
+		<label>ultramarine apothecary armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtArmorBase"> <!-- Ultramarine Sergeant Armour -->
+		<defName>UltramarineSgtArmor</defName>
+		<label>ultramarine sergeant armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermArmorBase"> <!-- Ultramarine Terminator Armour -->
+		<defName>UltramarineTermArmor</defName>
+		<label>ultramarine terminator armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>24</Mass>
+			<ArmorRating_Blunt>1.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.18</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+            <MoveSpeed>-1.75</MoveSpeed>
+            <CarryingCapacity>100</CarryingCapacity>
+            <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+        </equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_SMTerminatorArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMCmdrArmorBase"> <!-- Ultramarine Commander Armour -->
+		<defName>UltramarineCmdrArmor</defName>
+		<label>ultramarine commander armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Commander</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Armor/Ultramarine_Commander</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+
+	<ThingDef ParentName="SMHelmetBase">
+		<defName>UltramarineHelmet</defName>
+		<label>ultramarine Helmet</label>
+		<description>Power Armour is an advanced form of powered combat armour, worn primarily by the Space Marines and the Chaos Space Marines, though suits have been created to be worn by mere mortals. It is a completely enclosed suit of combat armour composed of shaped Adamantium and Plasteel plates, encased in a Ceramite ablative layer.</description>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_SMPowerArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryHelmetBase"> <!-- Ultramarine Apothecary Armour -->
+		<defName>UltramarineApothecaryHelmet</defName>
+		<label>ultramarine apothecary Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtHelmetBase"> <!-- Ultramarine Sergeant Armour -->
+		<defName>UltramarineSgtHelmet</defName>
+		<label>ultramarine sergeant Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermHelmetBase"> <!-- Ultramarine Terminator Armour -->
+		<defName>UltramarineTermHelmet</defName>
+		<label>ultramarine terminator Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_SMTerminatorArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMCmdrHelmetBase"> <!-- Ultramarine Commander Armour -->
+		<defName>UltramarineCmdrHelmet</defName>
+		<label>ultramarine commander Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Commander</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Helmet/Ultramarine_Commander</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

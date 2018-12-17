@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<FactionDef ParentName="SpaceMarineFactionBase">
+		<defName>SpaceWolves</defName>
+		<label>Space Wolves</label>
+		<description>The Space Wolves, known in their own dialect of Juvjk as the Vlka Fenryka or "Wolves of Fenris," are one of the original 20 First Founding Space Marine Chapters, and were once led by their famed Primarch, Leman Russ. Originally the VI Legion of Astartes raised by the Emperor at the dawn of the Great Crusade, the Space Wolves are renowned for their anti-authoritarian ways and their embrace of their homeworld Fenris' savage barbarian culture as well as their extreme deviation from the Codex Astartes in the Chapter's organisation.
+
+After the Horus Heresy and the resultant Second Founding reforms of the Adeptus Astartes, the Space Wolves Legion was divided into two Chapters: the new Space Wolves Chapter, which was not compliant with the dictates of the Codex Astartes and retained the name of its parent Legion, and the second Chapter which took the name of the Wolf Brothers. The Wolf Brothers suffered from rampant mutation of their gene-seed not long after their Founding and were later disbanded. It is currently unknown if there are any other Successor Chapters of the Space Wolves in the Imperium.</description>
+		<expandingIconTexture>World/SMBRBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<fixedName>Space Wolves</fixedName>
+		<pawnGroupMakers Inherit="false">
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SMSpaceWolfCommander>1</SMSpaceWolfCommander>
+					<SMSpaceWolfSergeant>3</SMSpaceWolfSergeant>
+					<SMSpaceWolfGrunt>30</SMSpaceWolfGrunt>
+					<SMSpaceWolfTerminator>10</SMSpaceWolfTerminator>
+					<SMSpaceWolfApothecary>5</SMSpaceWolfApothecary>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SMSpaceWolfCommander>1</SMSpaceWolfCommander>
+					<SMSpaceWolfGrunt>30</SMSpaceWolfGrunt>
+					<SMSpaceWolfSergeant>20</SMSpaceWolfSergeant>
+					<SMSpaceWolfApothecary>3</SMSpaceWolfApothecary>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<IGTrader_Cadian>1</IGTrader_Cadian>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<SMSpaceWolfGrunt>30</SMSpaceWolfGrunt>
+					<SMSpaceWolfSergeant>3</SMSpaceWolfSergeant>
+					<SMSpaceWolfApothecary>5</SMSpaceWolfApothecary>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SMSpaceWolfCommander>1</SMSpaceWolfCommander>
+					<SMSpaceWolfSergeant>3</SMSpaceWolfSergeant>
+					<SMSpaceWolfGrunt>50</SMSpaceWolfGrunt>
+					<SMSpaceWolfTerminator>10</SMSpaceWolfTerminator>
+					<SMSpaceWolfApothecary>5</SMSpaceWolfApothecary>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

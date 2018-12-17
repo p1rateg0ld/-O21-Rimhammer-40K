@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<FactionDef ParentName="SpaceMarineFactionBase">
+		<defName>BlackTemplars</defName>
+		<label>Black Templars</label>
+		<description>The Black Templars is a Loyalist Second Founding Space Marines Chapter derived from the Imperial Fists' gene-seed and their Primarch, Rogal Dorn. Their origin can be traced back to the Imperial Fists' defence of Terra during the Horus Heresy. Since that time, the Black Templars have been on the longest Crusade the Imperium of Man has ever known to prove their loyalty to the Emperor of Mankind. They are not a Codex Astartes-compliant Chapter and maintain a very different Chapter structure and Chapter culture than is the norm amongst most of the Adeptus Astartes.
+
+After the Great Heresy, Rogal Dorn, Primarch of the Imperial Fists, resisted the breaking-up of the Space Marine Legions into smaller Chapters. It was only when the Imperial Fists were branded Heretics that Dorn relented, allowing his beloved Legion to be subdivided into Chapters. One of the new Chapters born of this time was the Black Templars. To prove his loyalty to the Emperor, the first Chapter Master of the Black Templars -- the High Marshal Sigismund -- assembled a massive war ﬂeet and began the greatest Space Marine Crusade in the history of the Imperium. It has lasted for 10,000 standard years.</description>
+		<expandingIconTexture>World/SMBTBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<fixedName>Black Templars</fixedName>
+		<pawnGroupMakers Inherit="false">
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SMBlackTemplarCommander>1</SMBlackTemplarCommander>
+					<SMBlackTemplarSergeant>3</SMBlackTemplarSergeant>
+					<SMBlackTemplarGrunt>30</SMBlackTemplarGrunt>
+					<SMBlackTemplarTerminator>10</SMBlackTemplarTerminator>
+					<SMBlackTemplarApothecary>5</SMBlackTemplarApothecary>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SMBlackTemplarCommander>1</SMBlackTemplarCommander>
+					<SMBlackTemplarGrunt>30</SMBlackTemplarGrunt>
+					<SMBlackTemplarSergeant>20</SMBlackTemplarSergeant>
+					<SMBlackTemplarApothecary>3</SMBlackTemplarApothecary>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<IGTrader_Cadian>1</IGTrader_Cadian>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<SMBlackTemplarGrunt>30</SMBlackTemplarGrunt>
+					<SMBlackTemplarSergeant>3</SMBlackTemplarSergeant>
+					<SMBlackTemplarApothecary>5</SMBlackTemplarApothecary>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SMBlackTemplarCommander>1</SMBlackTemplarCommander>
+					<SMBlackTemplarSergeant>3</SMBlackTemplarSergeant>
+					<SMBlackTemplarGrunt>50</SMBlackTemplarGrunt>
+					<SMBlackTemplarTerminator>10</SMBlackTemplarTerminator>
+					<SMBlackTemplarApothecary>5</SMBlackTemplarApothecary>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

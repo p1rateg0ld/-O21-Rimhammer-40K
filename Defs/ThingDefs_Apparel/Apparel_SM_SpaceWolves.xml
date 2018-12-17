@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- SpaceWolf Armour -->
+	
+	<ThingDef ParentName="SMArmorBase"> <!-- space wolves Grunt Armour -->
+		<defName>SpaceWolvesArmor</defName>
+		<label>space wolves armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryArmorBase"> <!-- space wolves Apothecary Armour -->
+		<defName>SpaceWolvesApothecaryArmor</defName>
+		<label>space wolves apothecary armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtArmorBase"> <!-- space wolves Sergeant Armour -->
+		<defName>SpaceWolvesSgtArmor</defName>
+		<label>space wolves sergeant armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermArmorBase"> <!-- space wolves Terminator Armour -->
+		<defName>SpaceWolvesTermArmor</defName>
+		<label>space wolves terminator armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets Inherit="False">
+            <MoveSpeed>-1.5</MoveSpeed>
+            <CarryingCapacity>100</CarryingCapacity>
+            <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+        </equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMCmdrArmorBase"> <!-- space wolves Commander Armour -->
+		<defName>SpaceWolvesCmdrArmor</defName>
+		<label>space wolves commander armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Commander</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Armor/SpaceWolf_Commander</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- SpaceWolf Helmets -->
+	
+	<ThingDef ParentName="SMHelmetBase"> <!-- space wolves Grunt Armour -->
+		<defName>SpaceWolvesHelmet</defName>
+		<label>space wolves Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryHelmetBase"> <!-- space wolves Apothecary Armour -->
+		<defName>SpaceWolvesApothecaryHelmet</defName>
+		<label>space wolves apothecary Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtHelmetBase"> <!-- space wolves Sergeant Armour -->
+		<defName>SpaceWolvesSgtHelmet</defName>
+		<label>space wolves sergeant Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermHelmetBase"> <!-- space wolves Terminator Armour -->
+		<defName>SpaceWolvesTermHelmet</defName>
+		<label>space wolves terminator Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMCmdrHelmetBase"> <!-- space wolves Commander Armour -->
+		<defName>SpaceWolvesCmdrHelmet</defName>
+		<label>space wolves commander Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Commander</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Helmet/SpaceWolf_Commander</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

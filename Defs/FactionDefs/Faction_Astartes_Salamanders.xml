@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<FactionDef ParentName="SpaceMarineFactionBase">
+		<defName>Salamanders</defName>
+		<label>Salamanders</label>
+		<description>The Salamanders are one of the Loyalist First Founding Chapters of Space Marines. They originally served as the Imperium's XVIII Space Marine Legion during the Great Crusade and the Horus Heresy and for some time before the return of their Primarch were known as the "Dragon Warriors." Their homeworld is the volcanic Death World of Nocturne.
+
+The Salamanders as a Chapter are unusually concerned with civilian casualties compared to most other Space Marines and believe that one of their most important duties is to protect the lives of the Emperor of Mankind's innocent subjects whenever and wherever possible. This is an attitude that developed as a consequence of the Salamanders' own unusually close connections to the Nocturnean people, as they are one of the only Chapters of Astartes who continue to interact with their families and the people of their homeworld after their transformation into Space Marines. For instance, it is not uncommon for a Salamander to serve as a clan leader among the Nocturneans and live with them when Chapter business does not require him to remain at the Chapter's fortress-monastery on Nocturne's moon of Prometheus. The Salamanders and their people as a whole are also defined by their adherence to a variation of the Imperial Cult called the Promethean Cult.</description>
+		<expandingIconTexture>World/SMSBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<fixedName>Salamanders</fixedName>
+		<pawnGroupMakers Inherit="false">
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SMSalamanderCommander>1</SMSalamanderCommander>
+					<SMSalamanderSergeant>3</SMSalamanderSergeant>
+					<SMSalamanderGrunt>30</SMSalamanderGrunt>
+					<SMSalamanderTerminator>10</SMSalamanderTerminator>
+					<SMSalamanderApothecary>5</SMSalamanderApothecary>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<SMSalamanderCommander>1</SMSalamanderCommander>
+					<SMSalamanderGrunt>30</SMSalamanderGrunt>
+					<SMSalamanderSergeant>20</SMSalamanderSergeant>
+					<SMSalamanderApothecary>3</SMSalamanderApothecary>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<IGTrader_Cadian>1</IGTrader_Cadian>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<SMSalamanderGrunt>30</SMSalamanderGrunt>
+					<SMSalamanderSergeant>3</SMSalamanderSergeant>
+					<SMSalamanderApothecary>5</SMSalamanderApothecary>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<SMSalamanderCommander>1</SMSalamanderCommander>
+					<SMSalamanderSergeant>3</SMSalamanderSergeant>
+					<SMSalamanderGrunt>50</SMSalamanderGrunt>
+					<SMSalamanderTerminator>10</SMSalamanderTerminator>
+					<SMSalamanderApothecary>5</SMSalamanderApothecary>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

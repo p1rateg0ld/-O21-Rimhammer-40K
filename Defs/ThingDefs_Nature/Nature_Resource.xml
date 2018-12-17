@@ -43,6 +43,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(137, 108, 82)</color>
 		</graphicData>
+		<statBases>
+			<Flammability>0.0</Flammability>
+		</statBases>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<deepCommonality>1</deepCommonality>
@@ -69,6 +72,7 @@
 			<WorkToMake>100</WorkToMake>
 			<Mass>0.05</Mass>
 			<MarketValue>1.9</MarketValue>
+			<Flammability>0.0</Flammability>
 			<StuffPower_Armor_Sharp>1.26</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.63</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Heat>1.08</StuffPower_Armor_Heat>
@@ -117,6 +121,7 @@
 			<WorkToMake>200</WorkToMake>
 			<Mass>0.075</Mass>
 			<MarketValue>7.5</MarketValue>
+			<Flammability>0.0</Flammability>
 			<StuffPower_Armor_Sharp>1.62</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.81</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Heat>1.44</StuffPower_Armor_Heat>
@@ -165,6 +170,7 @@
 			<WorkToMake>400</WorkToMake>
 			<Mass>0.1</Mass>
 			<MarketValue>12</MarketValue>
+			<Flammability>0.0</Flammability>
 			<StuffPower_Armor_Sharp>1.98</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.99</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Heat>1.80</StuffPower_Armor_Heat>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="SpaceWolvesAbstractBase" Abstract="True">
+		<defaultFactionType>SpaceWolves</defaultFactionType>
+		<baseRecruitDifficulty>1.00</baseRecruitDifficulty>
+		<backstoryCategories>
+			<li>AstartesBackstory</li>
+		</backstoryCategories>
+	</PawnKindDef>
+
+	<PawnKindDef Name="SpaceWolvesBase" ParentName="SpaceWolvesAbstractBase">
+		<defName>SpaceWolvesBase</defName>
+		<label>Space Wolf</label>
+		<labelPlural>Space Wolves</labelPlural>
+		<race>Alien_Astartes</race>
+		<combatPower>60</combatPower>
+		<itemQuality>Good</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>500</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>20000</min>
+			<max>20000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>10000</min>
+			<max>20000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SMRanged</li>
+			<li>SMMelee</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SpaceWolvesBase"> <!-- SMSpaceWolfCommander -->
+		<defName>SMSpaceWolfCommander</defName>
+		<label>Commander</label>
+		<labelPlural>Commanders</labelPlural>
+		<factionLeader>true</factionLeader>
+		<apparelRequired>
+			<li>SpaceWolvesCmdrArmor</li>
+			<li>SpaceWolvesCmdrHelmet</li>
+		</apparelRequired>
+		<minGenerationAge>60</minGenerationAge>
+		<combatPower>300</combatPower>
+		<apparelTags>
+			<li>SpaceWolfApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SpaceWolvesBase"> <!-- SMSpaceWolfSergeant -->
+		<defName>SMSpaceWolfSergeant</defName>
+		<label>Sergeant</label>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>SpaceWolvesSgtArmor</li>
+			<li>SpaceWolvesSgtHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>250</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<apparelTags>
+			<li>SpaceWolfApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SpaceWolvesBase"> <!-- SMSpaceWolfGrunt -->
+		<defName>SMSpaceWolfGrunt</defName>
+		<label>Grunt</label>
+		<apparelRequired>
+			<li>SpaceWolvesArmor</li>
+			<li>SpaceWolvesHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>SpaceWolfApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SpaceWolvesBase"> <!-- SMSpaceWolfTerminator -->
+		<defName>SMSpaceWolfTerminator</defName>
+		<label>Terminator</label>
+		<weaponTags>
+			<li>SMMelee</li>
+			<li>MetlaGun</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>SpaceWolvesTermArmor</li>
+			<li>SpaceWolvesTermHelmet</li>
+		</apparelRequired>
+		<combatPower>240</combatPower>
+		<apparelTags>
+			<li>SpaceWolfApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="SpaceWolvesBase"> <!-- SMSpaceWolfApothecary -->
+		<defName>SMSpaceWolfApothecary</defName>
+		<label>Apothecary</label>
+		<apparelRequired>
+			<li>SpaceWolvesApothecaryArmor</li>
+			<li>SpaceWolvesApothecaryHelmet</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>BoltGun</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+		<apparelTags>
+			<li>SpaceWolfApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+</Defs>

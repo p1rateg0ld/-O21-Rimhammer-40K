@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Black Templar Armour -->
+	
+	<ThingDef ParentName="SMArmorBase"> <!-- BlackTemplars Grunt Armour -->
+		<defName>BlackTemplarsArmor</defName>
+		<label>black templars armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryArmorBase"> <!-- BlackTemplars Apothecary Armour -->
+		<defName>BlackTemplarsApothecaryArmor</defName>
+		<label>black templars apothecary armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtArmorBase"> <!-- BlackTemplars Sergeant Armour -->
+		<defName>BlackTemplarsSgtArmor</defName>
+		<label>black templars sergeant armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermArmorBase"> <!-- BlackTemplars Terminator Armour -->
+		<defName>BlackTemplarsTermArmor</defName>
+		<label>black templars terminator armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets Inherit="False">
+            <MoveSpeed>-1.5</MoveSpeed>
+            <CarryingCapacity>100</CarryingCapacity>
+            <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+        </equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMCmdrArmorBase"> <!-- BlackTemplars Commander Armour -->
+		<defName>BlackTemplarsCmdrArmor</defName>
+		<label>black templars commander armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Commander</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Armor/BlackTemplars_Commander</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- black templar Helmets -->
+	
+	<ThingDef ParentName="SMHelmetBase"> <!-- BlackTemplars Grunt Armour -->
+		<defName>BlackTemplarsHelmet</defName>
+		<label>black templars Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Helmet/BlackTemplars_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Helmet/BlackTemplars_Normal</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMApothecaryHelmetBase"> <!-- BlackTemplars Apothecary Armour -->
+		<defName>BlackTemplarsApothecaryHelmet</defName>
+		<label>black templars apothecary Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Helmet/BlackTemplars_Apothecary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Helmet/BlackTemplars_Apothecary</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMSgtHelmetBase"> <!-- BlackTemplars Sergeant Armour -->
+		<defName>BlackTemplarsSgtHelmet</defName>
+		<label>black templars sergeant Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Helmet/BlackTemplars_Sergeant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Helmet/BlackTemplars_Sergeant</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMTermHelmetBase"> <!-- BlackTemplars Terminator Armour -->
+		<defName>BlackTemplarsTermHelmet</defName>
+		<label>black templars terminator Helmet</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Helmet/BlackTemplars_Terminator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Helmet/BlackTemplars_Terminator</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

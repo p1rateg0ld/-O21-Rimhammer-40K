@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ===== Armour ===== -->
+	
+	<ThingDef ParentName="ArmorSmithableBase" Name="SMArmorBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<costList>
+			<CeramiteLowGrade>140</CeramiteLowGrade>
+			<CeramiteMedGrade>120</CeramiteMedGrade>
+			<CeramiteHighGrade>100</CeramiteHighGrade>
+			<ComponentSpacer>18</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<WorkToMake>86000</WorkToMake>
+			<Mass>20</Mass>
+			<MarketValue>8000</MarketValue>
+			<ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.08</ArmorRating_Heat>
+			<Insulation_Cold>75</Insulation_Cold>
+			<Insulation_Heat>75</Insulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.70</ToxicSensitivity>
+            <CarryingCapacity>75</CarryingCapacity>
+			<ConstructionSpeed>1.2</ConstructionSpeed>
+			<MiningSpeed>1.2</MiningSpeed>
+			<PlantWorkSpeed>-0.5</PlantWorkSpeed>
+			<MoveSpeed>-0.5</MoveSpeed>
+        </equippedStatOffsets>
+		<thingCategories>
+			<li>SMArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_SMPowerArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMArmorBase" Name="SMApothecaryArmorBase" Abstract="True"> <!-- Apothecary Armour -->
+	</ThingDef>
+	
+	<ThingDef ParentName="SMArmorBase" Name="SMSgtArmorBase" Abstract="True"> <!-- Sergeant Armour -->
+	</ThingDef>
+	
+	<ThingDef ParentName="SMArmorBase" Name="SMTermArmorBase" Abstract="True"> <!-- Terminator Armour -->
+		<statBases>
+			<Mass>24</Mass>
+			<ArmorRating_Blunt>1.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.18</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+            <MoveSpeed>-1.75</MoveSpeed>
+            <CarryingCapacity>100</CarryingCapacity>
+            <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+        </equippedStatOffsets>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_SMTerminatorArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMArmorBase" Name="SMCmdrArmorBase" Abstract="True"> <!-- Commander Armour -->
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+
+	<ThingDef ParentName="ArmorSmithableBase" Name="SMHelmetBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+		<costList>
+			<CeramiteLowGrade>45</CeramiteLowGrade>
+			<CeramiteMedGrade>30</CeramiteMedGrade>
+			<CeramiteHighGrade>25</CeramiteHighGrade>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<statBases>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>3</Mass>
+			<MarketValue>10000</MarketValue>
+			<ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.85</ArmorRating_Heat>
+			<Insulation_Cold>25</Insulation_Cold>
+			<Insulation_Heat>25</Insulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+        </equippedStatOffsets>
+		<thingCategories>
+			<li>SMHelmets</li>
+		</thingCategories>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_SMPowerArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMHelmetBase" Name="SMApothecaryHelmetBase" Abstract="True"> <!-- Apothecary Armour -->
+	</ThingDef>
+	
+	<ThingDef ParentName="SMHelmetBase" Name="SMSgtHelmetBase" Abstract="True"> <!-- Sergeant Armour -->
+	</ThingDef>
+	
+	<ThingDef ParentName="SMHelmetBase" Name="SMTermHelmetBase" Abstract="True"> <!-- Terminator Armour -->
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>N17_Imp_SMTerminatorArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SMHelmetBase" Name="SMCmdrHelmetBase" Abstract="True"> <!-- Commander Armour -->
+	</ThingDef>
+
+</Defs>
