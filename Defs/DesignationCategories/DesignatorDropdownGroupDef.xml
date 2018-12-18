@@ -29,4 +29,12 @@
 		<defName>RH_NEC_Aegis</defName>
 	</DesignatorDropdownGroupDef>
 
+	<DesignatorDropdownGroupDef>
+		<defName>RH_SmallPowerGen</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_LargePowerGen</defName>
+	</DesignatorDropdownGroupDef>
+
 </Defs>
