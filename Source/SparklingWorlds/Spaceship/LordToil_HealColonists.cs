@@ -12,7 +12,7 @@ using RimWorld.Planet;
 using Verse.AI;
 using Verse.AI.Group;
 
-namespace Spaceship
+namespace Rimhammer40k.Spaceship
 {
     public class LordToil_HealColonists : LordToil
     {

@@ -13,5 +13,7 @@ namespace Rimhammer40k.Orks
         public static HediffDef OrkProtoBodypart;
 
         public static HediffDef OrkCuredBodypart;
+
+        public static HediffDef OrkoidHealing;
     }
 }

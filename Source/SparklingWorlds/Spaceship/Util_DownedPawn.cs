@@ -11,7 +11,7 @@ using RimWorld;
 using RimWorld.Planet;
 using Verse.AI;
 
-namespace Spaceship
+namespace Rimhammer40k.Spaceship
 {
     public static class Util_DownedPawn
     {

@@ -11,7 +11,7 @@ using Verse.AI;
 using RimWorld;
 using RimWorld.Planet;
 
-namespace Spaceship
+namespace Rimhammer40k.Spaceship
 {
     public static class Expedition
     {

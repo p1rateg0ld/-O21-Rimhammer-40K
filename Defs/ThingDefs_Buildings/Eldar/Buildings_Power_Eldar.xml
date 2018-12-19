@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>EldGenerator_A_Small</defName>
+		<label>Small Eldar Generator</label>
+		<description>Our power generation is far superior to the more pitiful attempts by inferior races, bask in its majesty!</description>
+		<graphicData>
+			<texPath>Things/Eldar/Building/Power/SmallGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.0, 3.0)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>10000</pathCost>
+		<fillPercent>1.0</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>false</castEdgeShadows>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2, 2)</size>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-600</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>2000</storedEnergyMax>
+				<efficiency>1.0</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(250,100,200,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.1</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+		<researchPrerequisites>
+			<li>N17_Eld_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_EldarPowerGen</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>EldGenerator_B_Large</defName>
+		<label>Large Eldar Generator</label>
+		<description>Our power generation is far superior to the more pitiful attempts by inferior races, bask in its majesty! Note: Must be placed on a steam geyser</description>
+		<graphicData>
+			<texPath>Things/Eldar/Building/Power/LargeGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6, 6)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>10000</pathCost>
+		<fillPercent>1.0</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>false</castEdgeShadows>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<statBases>
+			<WorkToBuild>4000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(6, 6)</size>
+		<costList>
+			<Steel>340</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlantSteam</compClass>
+				<basePowerConsumption>-4000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>10000</storedEnergyMax>
+				<efficiency>1.0</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(250,100,200,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.1</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_OnSteamGeyser</li>
+		</placeWorkers>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+		<researchPrerequisites>
+			<li>N17_Eld_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_EldarPowerGen</designatorDropdown>
+	</ThingDef>
+	
+</Defs>

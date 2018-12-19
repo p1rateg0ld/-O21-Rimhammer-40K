@@ -309,7 +309,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicAgeless</li>
-				<!-- <li>Orkoid</li>-->
+				<li>OrkBasic</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>NecronTileDarkGold</defName>
+		<label>necrodermis tile (dark w/ gold trim)</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Necrodermis tiles, strong, durable, sexy.</description>
+		<texturePath>Things/Necron/Floor/Floor1</texturePath>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>14</Beauty>
+			<Cleanliness>0.6</Cleanliness>
+		</statBases>
+		<costList>
+			<Necrodermis>3</Necrodermis>
+			<Gold>2</Gold>
+		</costList>
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecronFloors</designatorDropdown>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>NecronTileBrightGold</defName>
+		<label>necrodermis tile (bright w/ gold trim)</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Necrodermis tiles, strong, durable, sexy. Functions as a light source.</description>
+		<texturePath>Things/Necron/Floor/Floor2</texturePath>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>14</Beauty>
+			<Cleanliness>0.6</Cleanliness>
+		</statBases>
+		<costList>
+			<Necrodermis>5</Necrodermis>
+			<Gold>2</Gold>
+		</costList>
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecronFloors</designatorDropdown>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>NecronTileNeutralGold</defName>
+		<label>necrodermis tile (neutral w/ gold trim)</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Necrodermis tiles, strong, durable, sexy.</description>
+		<texturePath>Things/Necron/Floor/Floor3</texturePath>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>14</Beauty>
+			<Cleanliness>0.6</Cleanliness>
+		</statBases>
+		<costList>
+			<Necrodermis>3</Necrodermis>
+			<Gold>2</Gold>
+		</costList>
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecronFloors</designatorDropdown>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>NecronTileDark</defName>
+		<label>necrodermis tile (dark)</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Necrodermis tiles, strong, durable, sexy.</description>
+		<texturePath>Things/Necron/Floor/Floor4</texturePath>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>3</Beauty>
+			<Cleanliness>0.2</Cleanliness>
+		</statBases>
+		<costList>
+			<Necrodermis>3</Necrodermis>
+		</costList>
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecronFloors</designatorDropdown>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>NecronTileBright</defName>
+		<label>necrodermis tile (bright)</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Necrodermis tiles, strong, durable, sexy. Functions as a light source.</description>
+		<texturePath>Things/Necron/Floor/Floor5</texturePath>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>3</Beauty>
+			<Cleanliness>0.2</Cleanliness>
+		</statBases>
+		<costList>
+			<Necrodermis>5</Necrodermis>
+		</costList>
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecronFloors</designatorDropdown>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>NecronTileNeutral</defName>
+		<label>necrodermis tile (neutral)</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Necrodermis tiles, strong, durable, sexy.</description>
+		<texturePath>Things/Necron/Floor/Floor6</texturePath>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>3</Beauty>
+			<Cleanliness>0.2</Cleanliness>
+		</statBases>
+		<costList>
+			<Necrodermis>3</Necrodermis>
+		</costList>
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecronFloors</designatorDropdown>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>NecronTileGlower</defName>
+		<label>necrodermis tile (glowing)</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Necrodermis tiles, strong, durable, sexy. Functions as a small light source.</description>
+		<texturePath>Things/Necron/Floor/Floor7</texturePath>
+		<statBases>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>3</Beauty>
+			<Cleanliness>0.2</Cleanliness>
+		</statBases>
+		<costList>
+			<Necrodermis>5</Necrodermis>
+			<Gold>1</Gold>
+		</costList>
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecronFloors</designatorDropdown>
+	</TerrainDef>
+
+</Defs>

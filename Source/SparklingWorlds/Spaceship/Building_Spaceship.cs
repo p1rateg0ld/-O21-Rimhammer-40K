@@ -10,7 +10,7 @@ using Verse.AI;       // Needed when you do something with the AI
 using Verse.AI.Group; // Needed when you do something with group of pawn AI
 using Verse.Sound;    // Needed when you do something with the Sound
 
-namespace Spaceship
+namespace Rimhammer40k.Spaceship
 {
     // TODO: add a chance for the ship to crash (nearby tile with pirate around after some times).
     // TODO: cannot build ship buildings in cave biome (add NotinCave place worker).

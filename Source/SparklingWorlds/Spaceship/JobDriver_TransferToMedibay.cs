@@ -11,7 +11,7 @@ using Verse.Sound;
 using RimWorld;
 
 
-namespace Spaceship
+namespace Rimhammer40k.Spaceship
 {
     /// <summary>
     /// Order a pawn to go and carry a downed pawn to a medical spaceship.

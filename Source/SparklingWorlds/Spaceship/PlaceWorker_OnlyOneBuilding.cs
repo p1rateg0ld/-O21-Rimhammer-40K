@@ -9,7 +9,7 @@ using Verse;         // RimWorld universal objects are here
 using Verse.AI;      // Needed when you do something with the AI
 using Verse.Sound;   // Needed when you do something with the Sound
 
-namespace Spaceship
+namespace Rimhammer40k.Spaceship
 {
     public class PlaceWorker_OnlyOneBuilding : PlaceWorker
     {

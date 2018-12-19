@@ -5,7 +5,7 @@ using Verse;
 
 namespace Rimhammer40k.Necrons
 {
-    class HediffGiver_BirthdayNecron : HediffGiver
+    public class HediffGiver_BirthdayNecron : HediffGiver
     {
         public void TryApplyAndSimulateSeverityChange(Pawn pawn, float gotAtAge, bool tryNotToKillPawn)
         {

@@ -30,11 +30,27 @@
 	</DesignatorDropdownGroupDef>
 
 	<DesignatorDropdownGroupDef>
-		<defName>RH_SmallPowerGen</defName>
+		<defName>RH_EldarPowerGen</defName>
 	</DesignatorDropdownGroupDef>
 
 	<DesignatorDropdownGroupDef>
-		<defName>RH_LargePowerGen</defName>
+		<defName>RH_NecPowerGen</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_ImpPowerGen</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_OrkPowerGen</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_TauPowerGen</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NecronFloors</defName>
 	</DesignatorDropdownGroupDef>
 
 </Defs>

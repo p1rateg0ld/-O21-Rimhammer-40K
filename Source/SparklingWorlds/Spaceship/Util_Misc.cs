@@ -10,7 +10,7 @@ using Verse.Noise;
 using RimWorld;
 using RimWorld.Planet;
 
-namespace Spaceship
+namespace Rimhammer40k.Spaceship
 {
     public static class Util_Misc
     {

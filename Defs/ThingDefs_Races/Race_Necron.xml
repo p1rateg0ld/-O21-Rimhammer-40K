@@ -319,6 +319,7 @@
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>
+				<li>NecronBasic</li>
 			</hediffGiverSets>
 		</race>
 		<butcherProducts>

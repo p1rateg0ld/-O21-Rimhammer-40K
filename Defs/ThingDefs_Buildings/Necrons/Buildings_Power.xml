@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>GaussGenerator_Small</defName>
+		<defName>GaussGenerator_A_Small</defName>
 		<label>Small Gauss Generator</label>
 		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe.</description>
 		<graphicData>
@@ -64,11 +64,11 @@
 		<researchPrerequisites>
 			<li>N17_Nec_Research</li>
 		</researchPrerequisites>
-		<designatorDropdown>RH_SmallPowerGen</designatorDropdown>
+		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>GaussGenerator_Large</defName>
+		<defName>GaussGenerator_B_Large</defName>
 		<label>Large Gauss Generator</label>
 		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe. Note: Must be placed on a steam geyser</description>
 		<graphicData>
@@ -133,7 +133,7 @@
 		<researchPrerequisites>
 			<li>N17_Nec_Research</li>
 		</researchPrerequisites>
-		<designatorDropdown>RH_LargePowerGen</designatorDropdown>
+		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
 	</ThingDef>
 	
 </Defs>

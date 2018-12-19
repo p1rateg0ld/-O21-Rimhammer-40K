@@ -10,7 +10,7 @@ using Verse.Sound;
 using RimWorld;
 
 
-namespace Spaceship
+namespace Rimhammer40k.Spaceship
 {
     /// <summary>
     /// Order a pawn to trade with a cargo spaceship.

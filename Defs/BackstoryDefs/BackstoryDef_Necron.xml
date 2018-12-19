@@ -25,9 +25,6 @@
 				<amount>5</amount>
 			</li>
 		</skillGains>
-		<forcedHediffs>
-			<li>NecrodermisRepair</li>
-		</forcedHediffs>
 	</AlienRace.BackstoryDef>
 
 	<AlienRace.BackstoryDef> <!-- Previous Life of a Leader -->
@@ -52,9 +49,6 @@
 				<amount>5</amount>
 			</li>
 		</skillGains>
-		<forcedHediffs>
-			<li>NecrodermisRepair</li>
-		</forcedHediffs>
 	</AlienRace.BackstoryDef>
 	
 	<!-- ============================ Necron Adulthoods ========================== -->

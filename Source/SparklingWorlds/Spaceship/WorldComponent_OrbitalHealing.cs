@@ -10,7 +10,7 @@ using Verse;           // RimWorld universal objects are here
 using Verse.AI;        // Needed when you do something with the AI
 using Verse.AI.Group;  // Needed when you do something with the AI
 
-namespace Spaceship
+namespace Rimhammer40k.Spaceship
 {
     public class WorldComponent_OrbitalHealing : WorldComponent
     {

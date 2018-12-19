@@ -7,7 +7,7 @@
 		<description>The Space Wolves, known in their own dialect of Juvjk as the Vlka Fenryka or "Wolves of Fenris," are one of the original 20 First Founding Space Marine Chapters, and were once led by their famed Primarch, Leman Russ. Originally the VI Legion of Astartes raised by the Emperor at the dawn of the Great Crusade, the Space Wolves are renowned for their anti-authoritarian ways and their embrace of their homeworld Fenris' savage barbarian culture as well as their extreme deviation from the Codex Astartes in the Chapter's organisation.
 
 After the Horus Heresy and the resultant Second Founding reforms of the Adeptus Astartes, the Space Wolves Legion was divided into two Chapters: the new Space Wolves Chapter, which was not compliant with the dictates of the Codex Astartes and retained the name of its parent Legion, and the second Chapter which took the name of the Wolf Brothers. The Wolf Brothers suffered from rampant mutation of their gene-seed not long after their Founding and were later disbanded. It is currently unknown if there are any other Successor Chapters of the Space Wolves in the Imperium.</description>
-		<expandingIconTexture>World/SMBRBaseIcon</expandingIconTexture>
+		<expandingIconTexture>World/SMSWBaseIcon</expandingIconTexture>
 		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
 		<fixedName>Space Wolves</fixedName>
 		<pawnGroupMakers Inherit="false">

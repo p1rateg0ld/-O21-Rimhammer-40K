@@ -16,6 +16,9 @@ namespace Rimhammer40k.Necrons
         //add necron resurrection
         public bool tweakNecronResurrect = true;
 
+        //add necron repair ability
+        public bool tweakNecronRepair = true;
+
         //products butchering gives
         public RecipeDef recipeDef;
 

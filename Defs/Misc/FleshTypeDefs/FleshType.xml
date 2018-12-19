@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+
 	<FleshTypeDef>
 		<defName>Necron</defName>
 		<corpseCategory>CorpsesNecron</corpseCategory>
@@ -16,4 +17,10 @@
 			</li>
 		</wounds>
 	</FleshTypeDef>
+	
+	<FleshTypeDef>
+		<defName>Ork</defName>
+		<corpseCategory>Corpses</corpseCategory>
+	</FleshTypeDef>
+	
 </Defs>

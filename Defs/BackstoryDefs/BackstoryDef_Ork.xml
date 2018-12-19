@@ -20,9 +20,6 @@
 				<amount>2</amount>
 			</li>
 		</skillGains>
-		<forcedHediffs>
-			<li>OrkoidHealing</li>
-		</forcedHediffs>
 	</AlienRace.BackstoryDef>
 	
 	<!-- ============================ Ork Adulthoods ========================== -->
