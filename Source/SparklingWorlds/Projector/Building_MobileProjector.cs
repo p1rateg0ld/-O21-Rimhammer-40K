@@ -64,13 +64,13 @@ namespace Rimhammer40k.Projector
         public bool groupIdJustChanged = false;
 
         // Textures.
-        public static Material projectorOnTexture = MaterialPool.MatFrom("Things/Building/Security/ProjectorTower_ProjectorOn");
-        public static Material projectorOffTexture = MaterialPool.MatFrom("Things/Building/Security/ProjectorTower_ProjectorOff");
+        public static Material projectorOnTexture = MaterialPool.MatFrom("Things/Building/Security/IG/Sabre/IG_sabre_searchlight", ShaderDatabase.CutoutComplex);
+        public static Material projectorOffTexture = MaterialPool.MatFrom("Things/Building/Security/IG/Sabre/IG_sabre_searchlight", ShaderDatabase.CutoutComplex);
         public Matrix4x4 projectorMatrix = default(Matrix4x4);
-        public Vector3 projectorScale = new Vector3(3.5f, 1f, 3.5f);
+        public Vector3 projectorScale = new Vector3(4f, 1f, 4f);
         public Matrix4x4 projectorLightEffectMatrix = default(Matrix4x4);
-        public Vector3 projectorLightEffectScale = new Vector3(5f, 1f, 5f);
-        public static Material projectorLightEffectTexture = MaterialPool.MatFrom("Things/Building/Security/ProjectorTower_LightEffect", ShaderDatabase.Transparent);
+        public Vector3 projectorLightEffectScale = new Vector3(12f, 1f, 12f);
+        public static Material projectorLightEffectTexture = MaterialPool.MatFrom("Things/Building/Security/IG/Sabre/IG_sabre_searchlight_LightEffect", ShaderDatabase.Transparent);
         public static Material targetLineTexture = MaterialPool.MatFrom(GenDraw.LineTexPath, ShaderDatabase.Transparent, new Color(1f, 1f, 1f));
 
         // ===================== Setup Work =====================
@@ -399,7 +399,7 @@ namespace Rimhammer40k.Projector
                     projectorsList.Add(projector);
                 }
             }
-            foreach (Building building in this.Map.listerBuildings.AllBuildingsColonistOfDef(Util_Projector.ProjectorTurretDef))
+            /**foreach (Building building in this.Map.listerBuildings.AllBuildingsColonistOfDef(Util_Projector.ProjectorTurretDef))
             {
                 Building_MobileProjectorTurret projector = building as Building_MobileProjectorTurret;
                 if ((projector != null)
@@ -409,7 +409,7 @@ namespace Rimhammer40k.Projector
                 {
                     projectorsList.Add(projector);
                 }
-            }
+            }**/
             return projectorsList;
         }
 
@@ -613,7 +613,7 @@ namespace Rimhammer40k.Projector
                     lightModeButton.defaultDesc = "In this mode, the projector lights a fixed area.";
                     break;
             }
-            lightModeButton.icon = ContentFinder<Texture2D>.Get("Ui/Commands/CommandButton_SwitchMode");
+            lightModeButton.icon = ContentFinder<Texture2D>.Get("ui/Commands/CommandButton_SwitchMode");
             lightModeButton.activateSound = SoundDef.Named("Click");
             lightModeButton.action = new Action(SwitchLigthMode);
             lightModeButton.groupKey = groupKeyBase + 1;
@@ -623,7 +623,7 @@ namespace Rimhammer40k.Projector
                 || (this.lightMode == LightMode.Fixed))
             {
                 Command_Action decreaseRangeButton = new Command_Action();
-                decreaseRangeButton.icon = ContentFinder<Texture2D>.Get("Ui/Commands/CommandButton_DecreaseRange");
+                decreaseRangeButton.icon = ContentFinder<Texture2D>.Get("ui/Commands/CommandButton_DecreaseRange");
                 decreaseRangeButton.defaultLabel = "Range: " + this.projectorRangeBaseOffset;
                 decreaseRangeButton.defaultDesc = "Decrease range.";
                 decreaseRangeButton.activateSound = SoundDef.Named("Click");
@@ -632,7 +632,7 @@ namespace Rimhammer40k.Projector
                 buttonList.Add(decreaseRangeButton);
 
                 Command_Action increaseRangeButton = new Command_Action();
-                increaseRangeButton.icon = ContentFinder<Texture2D>.Get("Ui/Commands/CommandButton_IncreaseRange");
+                increaseRangeButton.icon = ContentFinder<Texture2D>.Get("ui/Commands/CommandButton_IncreaseRange");
                 increaseRangeButton.defaultLabel = "";
                 increaseRangeButton.defaultDesc = "Increase range.";
                 increaseRangeButton.activateSound = SoundDef.Named("Click");
@@ -642,7 +642,7 @@ namespace Rimhammer40k.Projector
 
                 float rotation = Mathf.Repeat(this.Rotation.AsAngle + this.projectorRotationBaseOffset, 360f);
                 Command_Action turnLeftButton = new Command_Action();
-                turnLeftButton.icon = ContentFinder<Texture2D>.Get("Ui/Commands/CommandButton_TurnLeft");
+                turnLeftButton.icon = ContentFinder<Texture2D>.Get("ui/Commands/CommandButton_TurnLeft");
                 turnLeftButton.defaultLabel = "Rotation: " + rotation + "°";
                 turnLeftButton.defaultDesc = "Turn left.";
                 turnLeftButton.activateSound = SoundDef.Named("Click");
@@ -651,7 +651,7 @@ namespace Rimhammer40k.Projector
                 buttonList.Add(turnLeftButton);
 
                 Command_Action turnRightButton = new Command_Action();
-                turnRightButton.icon = ContentFinder<Texture2D>.Get("Ui/Commands/CommandButton_TurnRight");
+                turnRightButton.icon = ContentFinder<Texture2D>.Get("ui/Commands/CommandButton_TurnRight");
                 turnRightButton.defaultLabel = "";
                 turnRightButton.defaultDesc = "Turn right.";
                 turnRightButton.activateSound = SoundDef.Named("Click");
@@ -670,7 +670,7 @@ namespace Rimhammer40k.Projector
             buttonList.Add(setTargetButton);
 
             Command_Action synchronizeButton = new Command_Action();
-            synchronizeButton.icon = ContentFinder<Texture2D>.Get("Ui/Commands/CommandButton_Synchronize");
+            synchronizeButton.icon = ContentFinder<Texture2D>.Get("ui/Commands/CommandButton_Synchronize");
             synchronizeButton.defaultLabel = "Group: " + this.groupId;
             synchronizeButton.defaultDesc = "Synchronize the selected projectors and select conic mode.";
             synchronizeButton.activateSound = SoundDef.Named("Click");
@@ -860,7 +860,7 @@ namespace Rimhammer40k.Projector
                         break;
                     }
                 }
-                foreach (Thing thing in this.Map.listerThings.ThingsOfDef(Util_Projector.ProjectorTurretDef))
+                /**foreach (Thing thing in this.Map.listerThings.ThingsOfDef(Util_Projector.ProjectorTurretDef))
                 {
                     Building_MobileProjector turret = thing as Building_MobileProjector;
                     if ((turret != null)
@@ -869,7 +869,7 @@ namespace Rimhammer40k.Projector
                         idIsFree = false;
                         break;
                     }
-                }
+                }**/
                 if (idIsFree)
                 {
                     nextGroupId = id;

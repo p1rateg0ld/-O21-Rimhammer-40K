@@ -24,25 +24,25 @@ namespace Rimhammer40k.Projector
         {
             get
             {
-                return ThingDef.Named("ProjectorTower");
+                return ThingDef.Named("IGSabreProjector");
             }
         }
 
         // Projector turret.
-        public static ThingDef ProjectorTurretDef
+        /** public static ThingDef ProjectorTurretDef
         {
             get
             {
                 return ThingDef.Named("ProjectorTurret");
             }
-        }
+        } **/
 
         // Projector glower.
         public static ThingDef MobileProjectorLightDef
         {
             get
             {
-                return ThingDef.Named("MobileProjectorLight");
+                return ThingDef.Named("IGSabreProjectorLight");
             }
         }
 

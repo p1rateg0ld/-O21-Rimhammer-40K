@@ -25,6 +25,7 @@
 		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>
 		<startingResearchTags>
 			<li>ClassicStart</li>
+			<li>ImperiumStart</li>
 		</startingResearchTags>
 		<hairTags>
 			<li>TerranHair</li>
@@ -54,6 +55,7 @@
 		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>
 		<startingResearchTags>
 			<li>ClassicStart</li>
+			<li>ImperiumStart</li>
 		</startingResearchTags>
 		<hairTags>
 			<li>TerranHair</li>
@@ -78,6 +80,7 @@
 		<techLevel>Ultra</techLevel>
 		<backstoryCategories>
 			<li>KriegBackstory</li>
+			<li>ImperiumStart</li>
 		</backstoryCategories>
 		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
 		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>

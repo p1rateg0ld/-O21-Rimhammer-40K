@@ -24,7 +24,8 @@
 		<homeIconPath>World/ZoomedIn_OrkzBase</homeIconPath>
 		<expandingIconTexture>World/OrkBaseIcon</expandingIconTexture>
 		<startingResearchTags>
-			<li>ClassicStart</li>
+			<li>TribalStart</li>
+			<li>OrkStart</li>
 		</startingResearchTags>
 		<hairTags>
 			<li>OrkHair</li>

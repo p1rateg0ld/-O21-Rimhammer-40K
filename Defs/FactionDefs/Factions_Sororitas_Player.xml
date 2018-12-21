@@ -25,6 +25,7 @@
 		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>
 		<startingResearchTags>
 			<li>ClassicStart</li>
+			<li>ImperiumStart</li>
 		</startingResearchTags>
 		<hairTags>
 			<li>SisterHair</li>

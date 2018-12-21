@@ -67,7 +67,6 @@
 		</costList>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
-		<specialDisplayRadius>36</specialDisplayRadius>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
@@ -211,7 +210,6 @@
 		</costList>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
-		<specialDisplayRadius>36</specialDisplayRadius>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
@@ -362,7 +360,6 @@
 		</costList>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
-		<specialDisplayRadius>36</specialDisplayRadius>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>

@@ -25,6 +25,7 @@
 		<expandingIconTexture>World/NecronBaseIcon</expandingIconTexture>
 		<startingResearchTags>
 			<li>ClassicStart</li>
+			<li>NecronStart</li>
 		</startingResearchTags>
 		<hairTags>
 			<li>NecronHair</li>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>IGSabreProjector</defName>
+		<label>sabre projector</label>
+		<description>A projector mounted on a sabre turret chassis. Can automatically lock onto a nearby hostile. Can be built under roof.</description>
+		<thingClass>Rimhammer40k.Projector.Building_MobileProjectorTower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/IG/Sabre/IG_sabre_base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/IG/Sabre/IG_sabre_searchlight_menu</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>3800</WorkToBuild>
+			<Mass>24000</Mass>
+			<Beauty>5</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<designatorDropdown>RH_IG_4Sabre</designatorDropdown>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+			<CeramiteMedGrade>250</CeramiteMedGrade>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<size>(4,4)</size>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<specialDisplayRadius>30</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>N17_Imp_IGBasicTurrets</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>Rimhammer40k.Projector.PlaceWorker_DrawProjector</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+	<defName>IGSabreProjectorLight</defName>
+	<label>projector light</label>
+	<description>Projector light.</description>
+	<graphicData>
+		<texPath>Things/Building/Security/DummyTexture</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<selectable>false</selectable>
+	<building>
+		<isInert>true</isInert>
+		<isEdifice>false</isEdifice>
+		<deconstructible>false</deconstructible>
+	</building>
+	<comps>
+		<li Class="CompProperties_Glower">
+		<glowRadius>7</glowRadius>
+		<overlightRadius>3</overlightRadius>
+		<glowColor>(255,255,255,0)</glowColor>
+		</li>
+	</comps>
+	</ThingDef>
+	
+</Defs>

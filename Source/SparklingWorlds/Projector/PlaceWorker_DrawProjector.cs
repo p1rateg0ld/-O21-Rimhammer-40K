@@ -21,7 +21,7 @@ namespace Rimhammer40k.Projector
     {
         public override void DrawGhost(ThingDef def, IntVec3 loc, Rot4 rot, Color ghostCol)
         {
-            Graphic baseGraphic = GraphicDatabase.Get<Graphic_Single>("Things/Building/Security/ProjectorTower_ProjectorOff", ShaderDatabase.Cutout, new Vector2(3.5f, 3.5f), Color.white);
+            Graphic baseGraphic = GraphicDatabase.Get<Graphic_Single>("Things/Building/Security/IG/Sabre/IG_sabre_searchlight", ShaderDatabase.Cutout, new Vector2(4f, 4f), Color.white);
             Graphic graphic = GhostUtility.GhostGraphicFor(baseGraphic, def, ghostCol);
             graphic.DrawFromDef(GenThing.TrueCenter(loc, rot, def.Size, AltitudeLayer.MetaOverlays.AltitudeFor()), rot, def, 0f);
         }

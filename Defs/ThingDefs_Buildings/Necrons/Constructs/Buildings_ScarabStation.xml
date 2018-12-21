@@ -3,7 +3,7 @@
 	<ThingDef ParentName="N17BuildingBase">
 		<defName>ConstructStation_Scarab</defName>
 		<label>scarab platform</label>
-		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. (This spawns a single scarab capable of msot simple tasks.)</description>
+		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. (This spawns a single scarab capable of most simple tasks.)</description>
 		<thingClass>Rimhammer40k.Constructs.Building_ConstructStationSpecialGraphics</thingClass>
 		<costList>
 			<Necrodermis>50</Necrodermis>

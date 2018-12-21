@@ -25,6 +25,7 @@
 		<expandingIconTexture>World/TauBaseIcon</expandingIconTexture>
 		<startingResearchTags>
 			<li>ClassicStart</li>
+			<li>TauStart</li>
 		</startingResearchTags>
 		<hairTags>
 			<li>TauHair</li>

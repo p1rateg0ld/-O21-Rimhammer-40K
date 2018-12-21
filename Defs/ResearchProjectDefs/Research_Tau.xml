@@ -2,6 +2,10 @@
 <Defs>
 
 	<!-- Tau  Research-->
+
+	<ResearchProjectTagDef>
+		<defName>TauStart</defName>
+	</ResearchProjectTagDef>
 	
 	<ResearchProjectDef>
 		<tab>RH40K_Tab4</tab>
@@ -9,11 +13,10 @@
 		<label>Tau Research</label>
 		<description>Allows you to research Tau subjects.</description>
 		<baseCost>100</baseCost>
-		<prerequisites>
-		
-		</prerequisites>
 		<techLevel>Spacer</techLevel>
-		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tags>
+			<li>TauStart</li>
+		</tags>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>

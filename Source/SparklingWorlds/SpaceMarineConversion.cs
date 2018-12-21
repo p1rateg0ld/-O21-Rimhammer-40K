@@ -154,7 +154,8 @@ namespace Rimhammer40k
             pawn.drugs = pawnToConvert.drugs;
             pawn.foodRestriction = pawnToConvert.foodRestriction;
             //pawn.guilt = pawnToConvert.guilt;
-            pawn.health = pawnToConvert.health;
+            //pawn.health = pawnToConvert.health;
+            pawn.health.hediffSet = pawnToConvert.health.hediffSet;
             //pawn.needs = pawnToConvert.needs;
             pawn.records = pawnToConvert.records;
             pawn.skills = pawnToConvert.skills;

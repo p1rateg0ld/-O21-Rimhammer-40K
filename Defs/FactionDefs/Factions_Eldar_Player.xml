@@ -25,6 +25,7 @@
 		<expandingIconTexture>World/EldarBaseIcon</expandingIconTexture>
 		<startingResearchTags>
 			<li>ClassicStart</li>
+			<li>EldarStart</li>
 		</startingResearchTags>
 		<hairTags>
 			<li>EldarHair</li>
