@@ -11,10 +11,9 @@
 		<graphicData>
 			<texPath>Things/Building/Linked/Wall</texPath>
 			<graphicClass>Graphic_Single</graphicClass> 
-			<linkType>CornerFiller</linkType>
+			<linkType>Basic</linkType>
 			<linkFlags>
-				<li>Wall</li>
-				<li>Rock</li>
+				<li>Sandbags</li>
 			</linkFlags>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -31,22 +30,16 @@
 		<statBases>
 			<Flammability>0</Flammability>
 		</statBases>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
-		<blockWind>true</blockWind>
 		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1</fillPercent>
-		<coversFloor>true</coversFloor>
+		<fillPercent>0.65</fillPercent>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
-		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
 		<neverMultiSelect>true</neverMultiSelect>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<holdsRoof>False</holdsRoof>
-		<designationCategory>Structure</designationCategory>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>False</blockLight>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<staticSunShadowHeight>0.40</staticSunShadowHeight>
 		<canOverlapZones>false</canOverlapZones>
 		<building>
 			<isInert>true</isInert>
@@ -55,13 +48,6 @@
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 		</building>
-		<damageMultipliers>
-			<li>
-				<damageDef>Bomb</damageDef>
-				<multiplier>2</multiplier>
-			</li>
-		</damageMultipliers>
-		<designationHotKey>Misc3</designationHotKey>
 	</ThingDef>
 	
 </Defs>

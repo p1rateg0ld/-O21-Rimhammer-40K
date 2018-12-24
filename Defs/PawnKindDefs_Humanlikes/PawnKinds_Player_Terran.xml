@@ -50,7 +50,7 @@
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="BaseValhallanPawnKind">
+	<PawnKindDef ParentName="BaseTerranPawnKind">
 		<defName>Valhallan</defName>
 		<label>Valhallan</label>
 		<defaultFactionType>ValhallanPlayerColony</defaultFactionType>
@@ -90,7 +90,7 @@
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="BaseKriegPawnKind">
+	<PawnKindDef ParentName="BaseTerranPawnKind">
 		<defName>Krieg</defName>
 		<label>Krieg</label>
 		<defaultFactionType>KriegPlayerColony</defaultFactionType>
@@ -130,7 +130,7 @@
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="BaseGuevesaPawnKind">
+	<PawnKindDef ParentName="BaseTerranPawnKind">
 		<defName>Guevesa</defName>
 		<label>Gue'vesa</label>
 		<defaultFactionType>TauPlayerColony</defaultFactionType>
