@@ -35,4 +35,4 @@ Permission must be requested for any addons, alternative versions, or any other 
 * Thom Blair III - Hairstyles (Quills) for Kroot
 * [Chicken Pluckston](https://steamcommunity.com/id/chickenfcker/myworkshopfiles/?appid=294100) - Hair assets, CP has also provided quite a few other assets to the mod including map icons and help with balancing.
 * Syrchalis - Recaf Leaf textures.
-* Rikiki - [MiningCo. Projectors, Mining Helmets and Spaceships.](https://ludeon.com/forums/index.php?topic=14711.0)
+* Rikiki - [MiningCo. Projectors, Mining Helmets and Spaceships.](https://ludeon.com/forums/index.php?topic=14711.0) - Integrated so they aren't a dependancy, but will work perfectly fine alongside Rimhammer 40k and are well worth using.
