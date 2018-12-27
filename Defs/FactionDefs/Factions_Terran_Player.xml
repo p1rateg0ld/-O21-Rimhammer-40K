@@ -80,12 +80,42 @@
 		<techLevel>Ultra</techLevel>
 		<backstoryCategories>
 			<li>KriegBackstory</li>
-			<li>ImperiumStart</li>
 		</backstoryCategories>
 		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
 		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>
 		<startingResearchTags>
 			<li>ClassicStart</li>
+			<li>ImperiumStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>TerranHair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	
+	<FactionDef Parent="TerranFactionBase">
+		<defName>SteelLegionPlayerColony</defName>
+		<label>Steel Legion Colony</label>
+		<description>Your own community.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>SteelLegion</basicMemberKind>
+		<pawnsPlural>Steel Legion citizens</pawnsPlural>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryCategories>
+			<li>SteelLegionBackstory</li>
+		</backstoryCategories>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<expandingIconTexture>World/TerranBaseIcon</expandingIconTexture>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<li>ImperiumStart</li>
 		</startingResearchTags>
 		<hairTags>
 			<li>TerranHair</li>

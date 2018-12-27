@@ -86,10 +86,12 @@
 							<li>IGCadian412</li>
 							<li>IGValhallan597</li>
 							<li>IGKrieg143</li>
+							<li>IGSteelLegion808</li>
 							<li>Ultramarines</li>
 							<li>BloodRavens</li>
 							<li>BlackTemplars</li>
 							<li>Salamanders</li>
+							<li>SpaceWolves</li>
 							<li>MartyredLady</li>
 						</factions>
 						<goodwill>
@@ -102,6 +104,7 @@
 							<li>TerranPlayerColony</li>
 							<li>ValhallanPlayerColony</li>
 							<li>KriegPlayerColony</li>
+							<li>SteelLegionPlayerColony</li>
 							<li>SororitasPlayerColony</li>
 							<li>AstartesPlayerColony</li>
 						</factions>
@@ -464,14 +467,19 @@ Needless to say, Gue'vesa are considered the worst kind of Traitors to the Emper
 					<li>SalamandersTermHelmet</li>
 					<li>SalamandersCmdrArmor</li>
 					<li>SalamandersCmdrHelmet</li>
+					<li>SpaceWolvesArmor</li>
+					<li>SpaceWolvesHelmet</li>
+					<li>SpaceWolvesApothecaryArmor</li>
+					<li>SpaceWolvesApothecaryHelmet</li>
+					<li>SpaceWolvesSgtArmor</li>
+					<li>SpaceWolvesSgtHelmet</li>
+					<li>SpaceWolvesTermArmor</li>
+					<li>SpaceWolvesTermHelmet</li>
+					<li>SpaceWolvesCmdrArmor</li>
+					<li>SpaceWolvesCmdrHelmet</li>
 				</apparelList>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 				<researchList>
-					<li>
-						<projects>
-							<li>ImperialResearch</li>
-						</projects>
-					</li>
 				</researchList>
 			</raceRestriction>
 		</alienRace>

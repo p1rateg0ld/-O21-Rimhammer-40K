@@ -120,6 +120,37 @@
 			<li>Simple</li>
 		</techHediffsTags>
 	</PawnKindDef>
+	
+	<PawnKindDef ParentName="BaseTerranPawnKind">
+		<defName>SteelLegion</defName>
+		<label>Steel Legion</label>
+		<defaultFactionType>SteelLegionPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>SteelLegionBackstory</li>
+		</backstoryCategories>
+		<apparelTags Inherit="false">
+			<li>SteelLegionApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>100</min>
+			<max>2000</max>
+		</apparelMoney>
+		<apparelRequired Inherit="False">
+			<li>SteelLegionUniform</li>
+			<li>SteelLegionHelmet</li>
+		</apparelRequired>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
 
 	<PawnKindDef Abstract="True" Name="BaseGuevesaPawnKind">
 		<race>Alien_Guevesa</race>

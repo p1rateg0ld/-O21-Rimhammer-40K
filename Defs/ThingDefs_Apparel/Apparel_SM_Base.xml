@@ -39,8 +39,11 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Legs</li>
+				<li>Feet</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Hands</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<layers>
 				<li>OnSkin</li>
