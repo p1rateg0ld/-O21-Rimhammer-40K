@@ -14,13 +14,18 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1, 1)</drawSize>
 		</graphicData>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
 		<size>(1, 1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.1</fillPercent>
 		<castEdgeShadows>false</castEdgeShadows>
 		<tickerType>Normal</tickerType>
 		<statBases>
+			<Mass>10</Mass>
 			<WorkToBuild>3000</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>

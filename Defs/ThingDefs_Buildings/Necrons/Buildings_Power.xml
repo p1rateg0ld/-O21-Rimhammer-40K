@@ -1,6 +1,135 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<ThingDef ParentName="PowerConduit">
+		<defName>GaussConduit</defName>
+		<label>gauss conduit</label>
+		<description>Necron gauss conduit, for transferring power. Being covered in Necrodermis means this cable is just as durable as the rest of their constructions.</description>
+		<graphicData>
+			<texPath>Things/Necron/Building/GaussConduitUnlit_Atlas</texPath>
+		</graphicData>
+		<uiIconPath>Things/Necron/Building/GaussConduitUnlit_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<WorkToBuild>50</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList Inherit="false">
+			<Necrodermis>1</Necrodermis>
+		</costList>
+		<designatorDropdown>RH_NecPowerConnectors</designatorDropdown>
+		<researchPrerequisites Inherit="false">
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="PowerConduit">
+		<defName>GaussConduitGlowing</defName>
+		<label>gauss conduit (green)</label>
+		<description>Necron green gauss conduit, for transferring power. Being covered in Necrodermis means this cable is just as durable as the rest of their constructions. Slight glow produced at the cost of a tiny amount of power.</description>
+		<graphicData>
+			<texPath>Things/Necron/Building/GaussConduit_Atlas</texPath>
+		</graphicData>
+		<uiIconPath>Things/Necron/Building/GaussConduit_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<WorkToBuild>50</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList Inherit="false">
+			<Necrodermis>2</Necrodermis>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(80,217,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>2</basePowerConsumption>
+			</li>
+		</comps>
+		<designatorDropdown>RH_NecPowerConnectors</designatorDropdown>
+		<researchPrerequisites Inherit="false">
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="PowerConduit">
+		<defName>GaussConduitGlowingOrange</defName>
+		<label>gauss conduit (orange)</label>
+		<description>Necron orange gauss conduit, for transferring power. Being covered in Necrodermis means this cable is just as durable as the rest of their constructions. Slight glow produced at the cost of a tiny amount of power.</description>
+		<graphicData>
+			<texPath>Things/Necron/Building/GaussConduitOrange_Atlas</texPath>
+		</graphicData>
+		<uiIconPath>Things/Necron/Building/GaussConduitOrange_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<WorkToBuild>50</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList Inherit="false">
+			<Necrodermis>2</Necrodermis>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(252,187,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>2</basePowerConsumption>
+			</li>
+		</comps>
+		<designatorDropdown>RH_NecPowerConnectors</designatorDropdown>
+		<researchPrerequisites Inherit="false">
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="PowerConduit">
+		<defName>GaussConduitGlowingBlue</defName>
+		<label>gauss conduit (blue)</label>
+		<description>Necron blue gauss conduit, for transferring power. Being covered in Necrodermis means this cable is just as durable as the rest of their constructions. Slight glow produced at the cost of a tiny amount of power.</description>
+		<graphicData>
+			<texPath>Things/Necron/Building/GaussConduitBlue_Atlas</texPath>
+		</graphicData>
+		<uiIconPath>Things/Necron/Building/GaussConduitBlue_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<WorkToBuild>50</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<costList Inherit="false">
+			<Necrodermis>2</Necrodermis>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>2</basePowerConsumption>
+			</li>
+		</comps>
+		<designatorDropdown>RH_NecPowerConnectors</designatorDropdown>
+		<researchPrerequisites Inherit="false">
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>GaussGenerator_A_Small</defName>
 		<label>Small Gauss Generator</label>
@@ -49,7 +178,7 @@
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
-				<glowColor>(168,233,168,0)</glowColor>
+				<glowColor>(80,217,80,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>8.5</explosiveRadius>
@@ -115,7 +244,7 @@
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>
-				<glowColor>(100,250,100,0)</glowColor>
+				<glowColor>(80,217,80,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>8.5</explosiveRadius>

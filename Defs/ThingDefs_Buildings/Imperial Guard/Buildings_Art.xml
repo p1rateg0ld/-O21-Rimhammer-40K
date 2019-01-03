@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>GuardsmanStatue</defName>
+		<label>guardsman statue</label>
+		<description>Decorative Statue of an Imperial Guard Officer.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Imperium/Buildings/Decoration/Statue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.5,4.5)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.85</fillPercent>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<sowTag>Decorative</sowTag>
+		</building>
+		<rotatable>false</rotatable>
+		<uiIconOffset>(0, -0.05)</uiIconOffset>
+	</ThingDef>
+
+</Defs>

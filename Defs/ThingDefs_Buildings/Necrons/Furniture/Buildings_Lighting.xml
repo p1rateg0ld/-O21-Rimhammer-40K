@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef>
+		<defName>NecronFloorLamp_Green</defName>
+		<label>necron floor lamp (green)</label>
+		<description>Glowing green floor panel of Necrodermis.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Lighting/FloorLampGreen</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<category>Building</category>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.01</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>false</rotatable>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<costList>
+			<Necrodermis>20</Necrodermis>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(80,217,80,0)</glowColor>
+			</li>
+		</comps>
+		<designatorDropdown>RH_NecronFloorLamp</designatorDropdown>
+		<researchPrerequisites Inherit="false">
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>NecronFloorLamp_Blue</defName>
+		<label>necron floor lamp (blue)</label>
+		<description>Glowing blue floor panel of Necrodermis.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Lighting/FloorLampBlue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<category>Building</category>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.01</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>false</rotatable>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<costList>
+			<Necrodermis>20</Necrodermis>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+		</comps>
+		<designatorDropdown>RH_NecronFloorLamp</designatorDropdown>
+		<researchPrerequisites Inherit="false">
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef>
+		<defName>NecronFloorLamp_Orange</defName>
+		<label>necron floor lamp (orange)</label>
+		<description>Glowing orange floor panel of Necrodermis.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Lighting/FloorLampOrange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<category>Building</category>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.01</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>false</rotatable>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<costList>
+			<Necrodermis>20</Necrodermis>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(252,187,80,0)</glowColor>
+			</li>
+		</comps>
+		<designatorDropdown>RH_NecronFloorLamp</designatorDropdown>
+		<researchPrerequisites Inherit="false">
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

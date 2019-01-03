@@ -53,4 +53,12 @@
 		<defName>RH_NecronFloors</defName>
 	</DesignatorDropdownGroupDef>
 
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NecronFloorLamp</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NecPowerConnectors</defName>
+	</DesignatorDropdownGroupDef>
+
 </Defs>
