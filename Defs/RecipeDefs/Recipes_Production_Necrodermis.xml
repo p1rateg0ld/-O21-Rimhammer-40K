@@ -5,13 +5,13 @@
 		<defName>FabricateNecrodermis</defName>
 		<label>fabricate necrodermis</label>
 		<description>Create Necrodermis from raw energy.</description>
-		<jobString>Smelting high grade ceramite.</jobString>
-		<workAmount>2000</workAmount>
+		<jobString>Fabricating necrodermis from energy grid.</jobString>
+		<workAmount>1000</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
 		<products>
-			<Necrodermis>15</Necrodermis>
+			<Necrodermis>4</Necrodermis>
 		</products>
 		<researchPrerequisite>N17_Nec_Research</researchPrerequisite>
 		<recipeUsers>
@@ -23,13 +23,13 @@
 		<defName>FabricateNecrodermisPowerless</defName>
 		<label>fabricate necrodermis</label>
 		<description>Create Necrodermis from raw energy.</description>
-		<jobString>Smelting high grade ceramite.</jobString>
-		<workAmount>15000</workAmount>
+		<jobString>Fabricating necrodermis from internal energy stores.</jobString>
+		<workAmount>2000</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
 		<products>
-			<Necrodermis>15</Necrodermis>
+			<Necrodermis>2</Necrodermis>
 		</products>
 		<researchPrerequisite>N17_Nec_Research</researchPrerequisite>
 		<recipeUsers>

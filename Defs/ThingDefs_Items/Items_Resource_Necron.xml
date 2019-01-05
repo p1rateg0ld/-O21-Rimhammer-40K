@@ -13,9 +13,9 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
-			<WorkToMake>4000</WorkToMake>
+			<WorkToMake>2000</WorkToMake>
 			<Mass>0.1</Mass>
-			<MarketValue>20</MarketValue>
+			<MarketValue>10</MarketValue>
 			<StuffPower_Armor_Sharp>1.98</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.99</StuffPower_Armor_Blunt>
 			<StuffPower_Armor_Heat>1.80</StuffPower_Armor_Heat>
@@ -56,6 +56,33 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
+		<defName>GaussCrystal</defName>
+		<label>gauss crystal</label>
+		<description>Energy filled crystals that seem to grow naturally, heavily used by Necrons in production of their equipment, buildings and even creating their energy sources.</description>
+		<graphicData>
+			<texPath>Things/Resource/GaussCrystal</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.1</Mass>
+			<MarketValue>18</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>0.05</deepCommonality>
+		<deepCountPerPortion>7</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>2</min>
+			<max>10</max>
+		</deepLumpSizeRange>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
 		<defName>InactiveScarab</defName>
 		<label>inactive scarab</label>
 		<description>Canoptek scarab, installed in a Scarab Platform to activate it.</description>
@@ -67,7 +94,7 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 			<Mass>0.1</Mass>
 			<MarketValue>600</MarketValue>
 		</statBases>

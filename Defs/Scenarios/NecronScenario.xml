@@ -42,16 +42,11 @@
 					<thingDef>InactiveScarab</thingDef>
 					<count>2</count>
 				</li>
-				<li Class="ScenPart_ScatterThingsAnywhere">
-					<def>ScatterThingsAnywhere</def>
-					<thingDef>ShipChunk</thingDef>
-					<count>6</count>
-				</li>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
 					<text>After millenia you are once again awake on a world you once called home, no idea why or how you have been awoken, but your do know you need to help the others awaken too.
 
-	Note: Necrons are unfinished, but playable, there will be a lot of weirdness compared to lore, some of it just can't be helped with Rimworld, some of it is just down to not being done yet. All Necron tech uses Necrodermis, you can craft this from nothing at a crafting spot for now, to guarantee you can always get some.</text>
+	Note: Necrons are unfinished, but playable, there will be a lot of weirdness compared to lore, some of it just can't be helped with Rimworld, some of it is just down to not being done yet. All Necron tech uses Necrodermis, you can craft this from nothing at a crafting spot for now, to guarantee you can always get some. Make sure to build a generator and scarab platform to get started, using scarabs is pretty much essential.</text>
 					<textKey>GameStartDialog</textKey>
 					<closeSound>GameStartSting</closeSound>
 				</li>

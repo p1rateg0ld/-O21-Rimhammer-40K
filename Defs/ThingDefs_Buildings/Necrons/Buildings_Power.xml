@@ -48,11 +48,6 @@
 				<glowRadius>2</glowRadius>
 				<glowColor>(80,217,80,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<basePowerConsumption>2</basePowerConsumption>
-			</li>
 		</comps>
 		<designatorDropdown>RH_NecPowerConnectors</designatorDropdown>
 		<researchPrerequisites Inherit="false">
@@ -83,11 +78,6 @@
 				<glowRadius>2</glowRadius>
 				<glowColor>(252,187,80,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<basePowerConsumption>2</basePowerConsumption>
-			</li>
 		</comps>
 		<designatorDropdown>RH_NecPowerConnectors</designatorDropdown>
 		<researchPrerequisites Inherit="false">
@@ -117,11 +107,6 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(80,80,217,0)</glowColor>
-			</li>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<basePowerConsumption>2</basePowerConsumption>
 			</li>
 		</comps>
 		<designatorDropdown>RH_NecPowerConnectors</designatorDropdown>
