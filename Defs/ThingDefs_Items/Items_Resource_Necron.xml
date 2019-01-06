@@ -55,32 +55,46 @@
 		</deepLumpSizeRange>
 	</ThingDef>
 
-	<ThingDef ParentName="ResourceBase">
-		<defName>GaussCrystal</defName>
-		<label>gauss crystal</label>
-		<description>Energy filled crystals that seem to grow naturally, heavily used by Necrons in production of their equipment, buildings and even creating their energy sources.</description>
+	<ThingDef ParentName="ResourceBase" Name="GaussCrystalBase">
+		<defName>GaussCrystalGreen</defName>
+		<label>gauss crystal (green)</label>
+		<description>Energy filled crystals that seem to grow by some unknown means, heavily used by Necrons in production of their equipment, buildings and even creating their energy sources.</description>
 		<graphicData>
 			<texPath>Things/Resource/GaussCrystal</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(255, 255, 255)</color>
+			<color>(0, 255, 0)</color>
 		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
 			<WorkToMake>4000</WorkToMake>
 			<Mass>0.1</Mass>
-			<MarketValue>18</MarketValue>
+			<MarketValue>5</MarketValue>
 		</statBases>
 		<thingCategories>
 			<li>ResourcesRaw</li>
 		</thingCategories>
-		<deepCommonality>0.05</deepCommonality>
-		<deepCountPerPortion>7</deepCountPerPortion>
-		<deepLumpSizeRange>
-			<min>2</min>
-			<max>10</max>
-		</deepLumpSizeRange>
 	</ThingDef>
+
+		<ThingDef ParentName="GaussCrystalBase">
+			<defName>GaussCrystalBlue</defName>
+			<label>gauss crystal (blue)</label>
+			<graphicData>
+				<texPath>Things/Resource/GaussCrystal</texPath>
+				<graphicClass>Graphic_StackCount</graphicClass>
+				<color>(0, 195, 255)</color>
+			</graphicData>
+		</ThingDef>
+
+		<ThingDef ParentName="GaussCrystalBase">
+			<defName>GaussCrystalOrange</defName>
+			<label>gauss crystal (orange)</label>
+			<graphicData>
+				<texPath>Things/Resource/GaussCrystal</texPath>
+				<graphicClass>Graphic_StackCount</graphicClass>
+				<color>(255, 157, 0)</color>
+			</graphicData>
+		</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>InactiveScarab</defName>

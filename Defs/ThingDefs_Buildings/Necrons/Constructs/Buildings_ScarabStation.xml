@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="N17BuildingBase">
-		<defName>ConstructStation_Scarab</defName>
-		<label>scarab platform</label>
-		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. (This spawns a single scarab capable of most simple tasks.)</description>
+
+	<ThingDef ParentName="N17BuildingBase" Name="ScarabStationBase">
+		<defName>ConstructStation_ScarabConstructor</defName>
+		<label>scarab platform (basic constructor)</label>
+		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. This platform spawns scarabs capable of firefighting, construction and repair. All basic platforms are capable of firefighting, hauling, cleaning and unskilled tasks like flicking switches.</description>
 		<thingClass>Rimhammer40k.Constructs.Building_ConstructStationSpecialGraphics</thingClass>
 		<costList>
-			<Necrodermis>50</Necrodermis>
+			<Necrodermis>25</Necrodermis>
 		</costList>
 		<graphicData>
 			<texPath>Things/Necron/Building/ScarabStation</texPath>
@@ -37,18 +38,16 @@
 				<workTypes>
 					<li>Firefighter</li>
 					<li>BasicWorker</li>
+					<li>Construction</li>
 					<li>Hauling</li>
 					<li>Cleaning</li>
-					<li>Construction</li>
-					<li>Mining</li>
-					<li>Growing</li>
-					<li>Crafting</li>
-					<li>PlantCutting</li>
 				</workTypes>
 			</li>
 		</modExtensions>
 		<comps>
-			<li><compClass>Rimhammer40k.Common.CompHelp</compClass></li>
+			<li>
+				<compClass>Rimhammer40k.Common.CompHelp</compClass>
+			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>0</fuelConsumptionRate>
 				<fuelCapacity>4</fuelCapacity>
@@ -60,7 +59,7 @@
 					</thingDefs>
 				</fuelFilter>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-				<initialConfigurableTargetFuelLevel>2</initialConfigurableTargetFuelLevel>
+				<initialConfigurableTargetFuelLevel>4</initialConfigurableTargetFuelLevel>
 				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
 			</li>
 			<li Class="CompProperties_Power">
@@ -71,8 +70,101 @@
 		</comps>
 		<rotatable>false</rotatable>
 		<designationCategory>Misc</designationCategory>
+		<designatorDropdown>RH_NecScarabPlatforms</designatorDropdown>
 		<researchPrerequisites>
 			<li>N17_Nec_Research</li>
 		</researchPrerequisites>
 	</ThingDef>
+
+	<ThingDef ParentName="ScarabStationBase">
+		<defName>ConstructStation_ScarabCook</defName>
+		<label>scarab platform (basic cook)</label>
+		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. This platform spawns scarabs capable of cooking. All basic platforms are capable of firefighting, hauling, cleaning and unskilled tasks like flicking switches.</description>
+		<modExtensions Inherit="false">
+			<li Class="Rimhammer40k.Constructs.DefModExtension_ConstructStation">
+				<displayDormantConstructs>true</displayDormantConstructs>
+				<workTypes>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+					<li>Cooking</li>
+					<li>Hauling</li>
+					<li>Cleaning</li>
+				</workTypes>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="ScarabStationBase">
+		<defName>ConstructStation_ScarabMedical</defName>
+		<label>scarab platform (basic medical)</label>
+		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. This platform spawns scarabs capable of dealing with patients. All basic platforms are capable of firefighting, hauling, cleaning and unskilled tasks like flicking switches.</description>
+		<modExtensions Inherit="false">
+			<li Class="Rimhammer40k.Constructs.DefModExtension_ConstructStation">
+				<displayDormantConstructs>true</displayDormantConstructs>
+				<workTypes>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+					<li>Doctor</li>
+					<li>Hauling</li>
+					<li>Cleaning</li>
+				</workTypes>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="ScarabStationBase">
+		<defName>ConstructStation_ScarabHunting</defName>
+		<label>scarab platform (basic hunting)</label>
+		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. This platform spawns scarabs capable of hunting. All basic platforms are capable of firefighting, hauling, cleaning and unskilled tasks like flicking switches.</description>
+		<modExtensions Inherit="false">
+			<li Class="Rimhammer40k.Constructs.DefModExtension_ConstructStation">
+				<displayDormantConstructs>true</displayDormantConstructs>
+				<workTypes>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+					<li>Hunting</li>
+					<li>Hauling</li>
+					<li>Cleaning</li>
+				</workTypes>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="ScarabStationBase">
+		<defName>ConstructStation_ScarabFarmer</defName>
+		<label>scarab platform (basic farmer)</label>
+		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. This platform spawns scarabs capable of farming. All basic platforms are capable of firefighting, hauling, cleaning and unskilled tasks like flicking switches.</description>
+		<modExtensions Inherit="false">
+			<li Class="Rimhammer40k.Constructs.DefModExtension_ConstructStation">
+				<displayDormantConstructs>true</displayDormantConstructs>
+				<workTypes>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+					<li>Growing</li>
+					<li>PlantCutting</li>
+					<li>Hauling</li>
+					<li>Cleaning</li>
+				</workTypes>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="ScarabStationBase">
+		<defName>ConstructStation_ScarabMining</defName>
+		<label>scarab platform (basic mining)</label>
+		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. This platform spawns scarabs capable of mining. All basic platforms are capable of firefighting, hauling, cleaning and unskilled tasks like flicking switches.</description>
+		<modExtensions Inherit="false">
+			<li Class="Rimhammer40k.Constructs.DefModExtension_ConstructStation">
+				<displayDormantConstructs>true</displayDormantConstructs>
+				<workTypes>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+					<li>Mining</li>
+					<li>Hauling</li>
+					<li>Cleaning</li>
+				</workTypes>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
 </Defs>

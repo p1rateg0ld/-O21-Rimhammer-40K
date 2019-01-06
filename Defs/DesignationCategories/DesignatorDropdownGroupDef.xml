@@ -61,4 +61,8 @@
 		<defName>RH_NecPowerConnectors</defName>
 	</DesignatorDropdownGroupDef>
 
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NecScarabPlatforms</defName>
+	</DesignatorDropdownGroupDef>
+
 </Defs>

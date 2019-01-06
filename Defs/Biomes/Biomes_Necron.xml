@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiomeDef>
+		<defName>GaussDesertGreen</defName>
+		<label>gauss desert</label>
+		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
+		<workerClass>BiomeWorker_GaussDesertGreen</workerClass>
+		<animalDensity>0.0</animalDensity>
+		<plantDensity>0.1</plantDensity>
+		<settlementSelectionWeight>0.05</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<texture>World/Biomes/BlackDesert</texture>
+		<forageability>0.0</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		<wildPlantsCareAboutLocalFertility>false</wildPlantsCareAboutLocalFertility>
+		<wildPlantRegrowDays>35</wildPlantRegrowDays>
+		<diseaseMtbDays>90</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>NecronBlackSand</terrain>
+				<min>-999</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>1</RainyThunderstorm>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<Plant_GaussCrystalSmall>6</Plant_GaussCrystalSmall>
+			<Plant_GaussCrystalMed_Green>3</Plant_GaussCrystalMed_Green>
+			<Plant_GaussCrystalHuge_Green>1</Plant_GaussCrystalHuge_Green>
+		</wildPlants>
+		<wildAnimals>
+		</wildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Dromedary</li>
+		</allowedPackAnimals>
+	</BiomeDef>
+
+</Defs>

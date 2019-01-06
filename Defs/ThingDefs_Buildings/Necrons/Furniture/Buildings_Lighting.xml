@@ -45,7 +45,7 @@
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>12</glowRadius>
-				<glowColor>(80,217,80,0)</glowColor>
+				<glowColor>(0, 255, 0, 0)</glowColor>
 			</li>
 		</comps>
 		<designatorDropdown>RH_NecronFloorLamp</designatorDropdown>
@@ -63,6 +63,17 @@
 			<texPath>Things/Necron/Building/Lighting/FloorLampBlue</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<comps Inherit="false">
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(0, 195, 255, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="NecronLamp">
@@ -73,6 +84,17 @@
 			<texPath>Things/Necron/Building/Lighting/FloorLampOrange</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<comps Inherit="false">
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(255, 157, 0, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
 </Defs>

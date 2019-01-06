@@ -59,6 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BiomeDefOf.cs" />
+    <Compile Include="BiomeWorker_GaussDesertGreen.cs" />
     <Compile Include="Common\CompHelp.cs" />
     <Compile Include="Constructs\AI\JobDriver_ReturnToStation.cs" />
     <Compile Include="Constructs\AI\JobDriver_SelfTerminate.cs" />
