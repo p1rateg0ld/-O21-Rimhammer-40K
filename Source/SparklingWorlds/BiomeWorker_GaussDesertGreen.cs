@@ -13,15 +13,24 @@ namespace Rimhammer40k
     {
         public override float GetScore(Tile tile, int tileID)
         {
+            float result;
             if (tile.WaterCovered)
             {
-                return -100f;
+                result = -100f;
             }
-            if (tile.rainfall >= 600f)
+            else if (tile.temperature < 34f)
             {
-                return 0f;
+                result = 0f;
             }
-            return tile.temperature + 0.0001f;
+            else if (tile.rainfall < 600f || tile.rainfall >= 2000f)
+            {
+                result = 0f;
+            }
+            else
+            {
+                result = 22.5f + tile.temperature * 1.8f + (tile.rainfall - 600f) / 85f;
+            }
+            return result;
         }
     }
 }

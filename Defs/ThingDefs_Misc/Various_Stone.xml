@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================ Blackstone ================ -->
+
+	<ThingDef ParentName="UglyRockBase" Name="BlackstoneBase">
+		<defName>Blackstone</defName>
+		<label>blackstone</label>
+		<description>A dark-colored metamorphic rock. Its fine layers are emblematic of slaty cleavage.</description>
+		<graphicData>
+			<color>(20,20,20)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+		</statBases>
+		<building>
+			<mineableThing>ChunkBlackstone</mineableThing>
+			<mineableDropChance>0.25</mineableDropChance>
+			<smoothedThing>SmoothedBlackstone</smoothedThing>
+		</building>
+		
+	</ThingDef>
+
+	<ThingDef ParentName="BlackstoneBase">
+		<defName>SmoothedBlackstone</defName>
+		<label>smoothed blackstone</label>
+		<description>A dark-colored metamorphic rock. Its fine layers are emblematic of slaty cleavage. Interior strata are clearly visible through the polished surface.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<MarketValue>20</MarketValue>
+		</statBases>
+		<building>
+			<isNaturalRock>false</isNaturalRock>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<smoothedThing />
+		</building>
+		<saveCompressible>false</saveCompressible>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+	
+	<ThingDef ParentName="ChunkRockBase">
+		<defName>ChunkBlackstone</defName>
+		<label>blackstone chunk</label>
+		<graphicData>
+			<color>(20,20,20)</color>
+		</graphicData>
+		<statBases>
+			<Mass>18</Mass>
+		</statBases>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<butcherProducts>
+			<BlocksBlackstone>20</BlocksBlackstone>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>BlocksBlackstone</defName>
+		<label>blackstone blocks</label>
+		<description>Blocks of solid blackstone. A dull-looking rock that chips easily.</description>
+		<graphicData>
+			<color>(20,20,20)</color>
+		</graphicData>
+		<statBases>
+			<Mass>0.9</Mass>
+		</statBases>
+		<stuffProps>
+			<color>(70,70,70)</color>
+			<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<stuffAdjective>blackstone</stuffAdjective>
+			<statFactors>
+				<Beauty>1.1</Beauty>
+				<MaxHitPoints>1.3</MaxHitPoints>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>Make_StoneBlocksBlackstone</defName>
+		<label>make blackstone blocks</label>
+		<description>Cuts blackstone chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkBlackstone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkBlackstone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksBlackstone>20</BlocksBlackstone>
+		</products>
+	</RecipeDef>
+
+</Defs>

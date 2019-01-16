@@ -15,22 +15,22 @@ namespace Rimhammer40k.Spaceship
     public static class Util_ThingDefOf
     {
         // Orbital relay.
-        public static ThingDef OrbitalRelay
+        /** public static ThingDef OrbitalRelay
         {
             get
             {
                 return ThingDef.Named("OrbitalRelay");
             }
-        }
+        } **/
 
         // Landing pad.
-        public static ThingDef LandingPad
+        /** public static ThingDef LandingPad
         {
             get
             {
                 return ThingDef.Named("LandingPad");
             }
-        }
+        } **/
 
         public static ThingDef LandingPadBeacon
         {

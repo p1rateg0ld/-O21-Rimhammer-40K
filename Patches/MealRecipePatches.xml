@@ -7,7 +7,9 @@
 		<value>
 			<li>Meat_Alien_Tau</li>
 			<li>Meat_Alien_Kroot</li>			
-			<li>Meat_Alien_Vespid</li>
+			<li>Meat_Alien_Vespid</li>		
+			<li>Meat_Alien_Eldar</li>		
+			<li>Meat_Alien_Ork</li>
 		</value>
 	</Operation>
 

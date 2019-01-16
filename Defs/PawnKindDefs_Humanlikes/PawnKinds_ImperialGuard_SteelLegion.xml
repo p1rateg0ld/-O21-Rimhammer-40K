@@ -14,7 +14,7 @@
 		</apparelTags>
 	</PawnKindDef>
 
-	<PawnKindDef Name="IGSteelLegionBase" ParentName="IGSteelLegionAbstractBase">
+	<PawnKindDef Name="IGSteelLegionBase" ParentName="IGSteelLegionAbstractBase" Abstract="True">
 		<defName>IGSteelLegionBase</defName>
 		<label>Guardsman</label>
 		<race>Alien_Terran</race>

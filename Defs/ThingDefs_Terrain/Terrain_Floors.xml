@@ -1,148 +1,233 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<TerrainDef ParentName="FloorBase">
-		<defName>NecronTileDarkGold</defName>
-		<label>necrodermis tile (dark w/ gold trim)</label>
+	<!-- Necrodermis Floors -->
+
+	<TerrainDef ParentName="FloorBase" Name="NecronFloorBase" Abstract="True">
 		<renderPrecedence>400</renderPrecedence>
-		<description>Necrodermis tiles, strong, durable, sexy.</description>
-		<texturePath>Things/Necron/Floor/Floor1</texturePath>
 		<statBases>
 			<WorkToBuild>300</WorkToBuild>
 			<Beauty>14</Beauty>
 			<Cleanliness>0.6</Cleanliness>
 		</statBases>
+		<researchPrerequisites>
+			<li>N17_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecronFloors</designatorDropdown>
+	</TerrainDef>
+
+	<TerrainDef ParentName="NecronFloorBase" Name="NecronTileGoldBase">
+		<defName>NecronTileGoldGreenA</defName>
+		<label>necrodermis tile (green, gold, low)</label>
+		<description>Necrodermis tiles, strong, durable, sexy.</description>
+		<texturePath>Things/Necron/Floor/TileGreen1</texturePath>
 		<costList>
 			<Necrodermis>3</Necrodermis>
 			<Gold>2</Gold>
 		</costList>
-		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
-		</researchPrerequisites>
-		<designatorDropdown>RH_NecronFloors</designatorDropdown>
 	</TerrainDef>
 
-	<TerrainDef ParentName="FloorBase">
-		<defName>NecronTileBrightGold</defName>
-		<label>necrodermis tile (bright w/ gold trim)</label>
-		<renderPrecedence>400</renderPrecedence>
-		<description>Necrodermis tiles, strong, durable, sexy. Functions as a light source.</description>
-		<texturePath>Things/Necron/Floor/Floor2</texturePath>
-		<statBases>
-			<WorkToBuild>300</WorkToBuild>
-			<Beauty>14</Beauty>
-			<Cleanliness>0.6</Cleanliness>
-		</statBases>
-		<costList>
-			<Necrodermis>5</Necrodermis>
-			<Gold>2</Gold>
-		</costList>
-		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
-		</researchPrerequisites>
-		<designatorDropdown>RH_NecronFloors</designatorDropdown>
-	</TerrainDef>
+		<TerrainDef ParentName="NecronTileGoldBase">
+			<defName>NecronTileGoldGreenB</defName>
+			<label>necrodermis tile (green, gold, med)</label>
+			<texturePath>Things/Necron/Floor/TileGreen2</texturePath>
+		</TerrainDef>
 
-	<TerrainDef ParentName="FloorBase">
-		<defName>NecronTileNeutralGold</defName>
-		<label>necrodermis tile (neutral w/ gold trim)</label>
-		<renderPrecedence>400</renderPrecedence>
+		<TerrainDef ParentName="NecronTileGoldBase">
+			<defName>NecronTileGoldGreenC</defName>
+			<label>necrodermis tile (green, gold, high)</label>
+			<texturePath>Things/Necron/Floor/TileGreen3</texturePath>
+		</TerrainDef>
+
+	<TerrainDef ParentName="NecronFloorBase" Name="NecronTileBasicBase">
+		<defName>NecronTileBasicA</defName>
+		<label>necrodermis tile (green, basic, low)</label>
 		<description>Necrodermis tiles, strong, durable, sexy.</description>
-		<texturePath>Things/Necron/Floor/Floor3</texturePath>
-		<statBases>
-			<WorkToBuild>300</WorkToBuild>
-			<Beauty>14</Beauty>
-			<Cleanliness>0.6</Cleanliness>
-		</statBases>
-		<costList>
-			<Necrodermis>3</Necrodermis>
-			<Gold>2</Gold>
-		</costList>
-		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
-		</researchPrerequisites>
-		<designatorDropdown>RH_NecronFloors</designatorDropdown>
-	</TerrainDef>
-
-	<TerrainDef ParentName="FloorBase">
-		<defName>NecronTileDark</defName>
-		<label>necrodermis tile (dark)</label>
-		<renderPrecedence>400</renderPrecedence>
-		<description>Necrodermis tiles, strong, durable, sexy.</description>
-		<texturePath>Things/Necron/Floor/Floor4</texturePath>
-		<statBases>
-			<WorkToBuild>300</WorkToBuild>
-			<Beauty>3</Beauty>
-			<Cleanliness>0.2</Cleanliness>
-		</statBases>
-		<costList>
-			<Necrodermis>3</Necrodermis>
-		</costList>
-		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
-		</researchPrerequisites>
-		<designatorDropdown>RH_NecronFloors</designatorDropdown>
-	</TerrainDef>
-
-	<TerrainDef ParentName="FloorBase">
-		<defName>NecronTileBright</defName>
-		<label>necrodermis tile (bright)</label>
-		<renderPrecedence>400</renderPrecedence>
-		<description>Necrodermis tiles, strong, durable, sexy. Functions as a light source.</description>
-		<texturePath>Things/Necron/Floor/Floor5</texturePath>
-		<statBases>
-			<WorkToBuild>300</WorkToBuild>
-			<Beauty>3</Beauty>
-			<Cleanliness>0.2</Cleanliness>
-		</statBases>
+		<texturePath>Things/Necron/Floor/FloorGreen1</texturePath>
 		<costList>
 			<Necrodermis>5</Necrodermis>
 		</costList>
-		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
-		</researchPrerequisites>
-		<designatorDropdown>RH_NecronFloors</designatorDropdown>
 	</TerrainDef>
 
-	<TerrainDef ParentName="FloorBase">
-		<defName>NecronTileNeutral</defName>
-		<label>necrodermis tile (neutral)</label>
-		<renderPrecedence>400</renderPrecedence>
+		<TerrainDef ParentName="NecronTileBasicBase">
+			<defName>NecronTileBasicB</defName>
+			<label>necrodermis tile (green, basic, med)</label>
+			<texturePath>Things/Necron/Floor/FloorGreen2</texturePath>
+		</TerrainDef>
+
+			<TerrainDef ParentName="NecronTileBasicBase">
+				<defName>NecronTileBasicC</defName>
+				<label>necrodermis tile (green, basic, high)</label>
+				<texturePath>Things/Necron/Floor/FloorGreen3</texturePath>
+			</TerrainDef>
+
+	<TerrainDef ParentName="NecronFloorBase" Name="NecronTileCrystalBase">
+		<defName>NecronTileCrystalA</defName>
+		<label>necrodermis tile (green, crystal, low)</label>
 		<description>Necrodermis tiles, strong, durable, sexy.</description>
-		<texturePath>Things/Necron/Floor/Floor6</texturePath>
-		<statBases>
-			<WorkToBuild>300</WorkToBuild>
-			<Beauty>3</Beauty>
-			<Cleanliness>0.2</Cleanliness>
-		</statBases>
+		<texturePath>Things/Necron/Floor/BacklitTileGreen1</texturePath>
 		<costList>
 			<Necrodermis>3</Necrodermis>
+			<GaussCrystalGreen>2</GaussCrystalGreen>
 		</costList>
-		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
-		</researchPrerequisites>
-		<designatorDropdown>RH_NecronFloors</designatorDropdown>
 	</TerrainDef>
 
-	<!-- <TerrainDef ParentName="FloorBase">
-		<defName>NecronTileGlower</defName>
-		<label>necrodermis tile (glowing)</label>
-		<renderPrecedence>400</renderPrecedence>
-		<description>Necrodermis tiles, strong, durable, sexy. Functions as a small light source.</description>
-		<texturePath>Things/Necron/Floor/Floor7</texturePath>
-		<statBases>
-			<WorkToBuild>300</WorkToBuild>
-			<Beauty>3</Beauty>
-			<Cleanliness>0.2</Cleanliness>
-		</statBases>
+		<TerrainDef ParentName="NecronTileCrystalBase">
+			<defName>NecronTileCrystalB</defName>
+			<label>necrodermis tile (green, crystal, med)</label>
+			<texturePath>Things/Necron/Floor/BacklitTileGreen2</texturePath>
+			<costList>
+				<Necrodermis>3</Necrodermis>
+				<GaussCrystalGreen>4</GaussCrystalGreen>
+			</costList>
+		</TerrainDef>
+
+			<TerrainDef ParentName="NecronTileCrystalBase">
+				<defName>NecronTileCrystalC</defName>
+				<label>necrodermis tile (green, crystal, high)</label>
+				<texturePath>Things/Necron/Floor/BacklitTileGreen3</texturePath>
+				<costList>
+					<Necrodermis>3</Necrodermis>
+					<GaussCrystalGreen>6</GaussCrystalGreen>
+				</costList>
+			</TerrainDef>
+
+		<TerrainDef ParentName="NecronTileCrystalBase">
+			<defName>NecronTileCrystalD</defName>
+			<label>necrodermis tile (blue, crystal, low)</label>
+			<texturePath>Things/Necron/Floor/BacklitTileBlue1</texturePath>
+			<costList>
+				<Necrodermis>3</Necrodermis>
+				<GaussCrystalBlue>2</GaussCrystalBlue>
+			</costList>
+		</TerrainDef>
+
+			<TerrainDef ParentName="NecronTileCrystalBase">
+				<defName>NecronTileCrystalE</defName>
+				<label>necrodermis tile (blue, crystal, med)</label>
+				<texturePath>Things/Necron/Floor/BacklitTileBlue2</texturePath>
+				<costList>
+					<Necrodermis>3</Necrodermis>
+					<GaussCrystalBlue>4</GaussCrystalBlue>
+				</costList>
+			</TerrainDef>
+
+				<TerrainDef ParentName="NecronTileCrystalBase">
+					<defName>NecronTileCrystalF</defName>
+					<label>necrodermis tile (blue, crystal, high)</label>
+					<texturePath>Things/Necron/Floor/BacklitTileBlue3</texturePath>
+					<costList>
+						<Necrodermis>3</Necrodermis>
+						<GaussCrystalBlue>6</GaussCrystalBlue>
+					</costList>
+				</TerrainDef>
+
+		<TerrainDef ParentName="NecronTileCrystalBase">
+			<defName>NecronTileCrystalG</defName>
+			<label>necrodermis tile (orange, crystal, low)</label>
+			<texturePath>Things/Necron/Floor/BacklitTileOrange1</texturePath>
+			<costList>
+				<Necrodermis>3</Necrodermis>
+				<GaussCrystalOrange>2</GaussCrystalOrange>
+			</costList>
+		</TerrainDef>
+
+			<TerrainDef ParentName="NecronTileCrystalBase">
+				<defName>NecronTileCrystalH</defName>
+				<label>necrodermis tile (orange, crystal, med)</label>
+				<texturePath>Things/Necron/Floor/BacklitTileOrange2</texturePath>
+				<costList>
+					<Necrodermis>3</Necrodermis>
+					<GaussCrystalOrange>4</GaussCrystalOrange>
+				</costList>
+			</TerrainDef>
+
+				<TerrainDef ParentName="NecronTileCrystalBase">
+					<defName>NecronTileCrystalI</defName>
+					<label>necrodermis tile (orange, crystal, high)</label>
+					<texturePath>Things/Necron/Floor/BacklitTileOrange3</texturePath>
+					<costList>
+						<Necrodermis>3</Necrodermis>
+						<GaussCrystalOrange>6</GaussCrystalOrange>
+					</costList>
+				</TerrainDef>
+				
+	<TerrainDef ParentName="NecronFloorBase" Name="NecronTileVentBase">
+		<defName>NecronTileVentA</defName>
+		<label>necrodermis tile (green, vent, low)</label>
+		<description>Necrodermis tiles, strong, durable, sexy.</description>
+		<texturePath>Things/Necron/Floor/VentGreen1</texturePath>
 		<costList>
 			<Necrodermis>5</Necrodermis>
-			<Gold>1</Gold>
 		</costList>
-		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
-		</researchPrerequisites>
-		<designatorDropdown>RH_NecronFloors</designatorDropdown>
-	</TerrainDef> -->
+	</TerrainDef>
+
+		<TerrainDef ParentName="NecronTileVentBase">
+			<defName>NecronTileVentB</defName>
+			<label>necrodermis tile (green, vent, med)</label>
+			<texturePath>Things/Necron/Floor/VentGreen2</texturePath>
+		</TerrainDef>
+
+			<TerrainDef ParentName="NecronTileVentBase">
+				<defName>NecronTileVentC</defName>
+				<label>necrodermis tile (green, vent, high)</label>
+				<texturePath>Things/Necron/Floor/VentGreen3</texturePath>
+			</TerrainDef>
+
+		<TerrainDef ParentName="NecronTileVentBase">
+			<defName>NecronTileVentD</defName>
+			<label>necrodermis tile (blue, vent, low)</label>
+			<texturePath>Things/Necron/Floor/VentBlue1</texturePath>
+		</TerrainDef>
+
+			<TerrainDef ParentName="NecronTileVentBase">
+				<defName>NecronTileVentE</defName>
+				<label>necrodermis tile (blue, vent, med)</label>
+				<texturePath>Things/Necron/Floor/VentBlue2</texturePath>
+			</TerrainDef>
+
+				<TerrainDef ParentName="NecronTileVentBase">
+					<defName>NecronTileVentF</defName>
+					<label>necrodermis tile (blue, vent, high)</label>
+					<texturePath>Things/Necron/Floor/VentBlue3</texturePath>
+				</TerrainDef>
+
+		<TerrainDef ParentName="NecronTileVentBase">
+			<defName>NecronTileVentG</defName>
+			<label>necrodermis tile (orange, vent, low)</label>
+			<texturePath>Things/Necron/Floor/VentOrange1</texturePath>
+		</TerrainDef>
+
+			<TerrainDef ParentName="NecronTileVentBase">
+				<defName>NecronTileVentH</defName>
+				<label>necrodermis tile (orange, vent, med)</label>
+				<texturePath>Things/Necron/Floor/VentOrange2</texturePath>
+			</TerrainDef>
+
+				<TerrainDef ParentName="NecronTileVentBase">
+					<defName>NecronTileVentI</defName>
+					<label>necrodermis tile (orange, vent, high)</label>
+					<texturePath>Things/Necron/Floor/VentOrange3</texturePath>
+				</TerrainDef>
+	
+	<!-- Blackstone Tiles -->
+
+	<TerrainDef ParentName="TileStoneBase">
+		<defName>TileBlackstone</defName>
+		<label>blackstone tile</label>
+		<color>(20,20,20)</color>
+		<costList>
+			<BlocksBlackstone>4</BlocksBlackstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FlagstoneBase">
+		<defName>FlagstoneBlackstone</defName>
+		<label>blackstone flagstone</label>
+		<color>(20,20,20)</color>
+		<costList>
+			<BlocksBlackstone>4</BlocksBlackstone>
+		</costList>
+	</TerrainDef>
 
 </Defs>

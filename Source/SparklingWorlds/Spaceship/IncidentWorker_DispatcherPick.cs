@@ -64,8 +64,7 @@ namespace Rimhammer40k.Spaceship
         
         public void ApplyInjuriesOrIllnessToTeam(Map map, List<Pawn> teamPawns)
         {
-            if ((map.Biome == BiomeDefOf.TropicalRainforest)
-                || (map.Biome == BiomeDef.Named("TropicalSwamp")))
+            if (map.Biome == BiomeDef.Named("TropicalSwamp"))
             {
                 // Apply malaria/sleeping sickness to all team pawns in tropical or swamp biomes.
                 HediffDef illness = null;

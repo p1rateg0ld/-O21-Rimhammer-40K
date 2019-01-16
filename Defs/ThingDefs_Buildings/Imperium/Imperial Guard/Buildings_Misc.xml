@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingDef Name="N17BuildingBase" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<statBases>
+			<SellPriceFactor>0.70</SellPriceFactor>
+		</statBases>
+	</ThingDef>
+  
+	<!-- <ThingDef ParentName="N17BuildingBase">
+		<defName>N17ReinforcementBeaconIG</defName>
+		<label>orbital communications array</label>
+		<thingClass>Rimhammer40k.Building_RequisitionRelay</thingClass>
+		<description>A powerful beacon for contacting any allied factions in the area.</description>
+		<graphicData>
+			<texPath>Things/Building/ReinforcementCaller/ImperialGuard/TarantulaRadar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.6,3.6)</drawSize>
+			<shadowData>
+				<volume>(0.60, 0.60, 0.60)</volume>
+			</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.75</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Mass>5</Mass>
+		</statBases>
+		<size>(3,3)</size>
+		<costList>
+			<CeramiteMedGrade>200</CeramiteMedGrade>
+			<CeramiteHighGrade>20</CeramiteHighGrade>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<uiIconPath>Things/Building/ReinforcementCaller/ImperialGuard/TarantulaRadar</uiIconPath>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<rotatable>false</rotatable>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>N17_Imp_OrbitalRequisition</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef> -->
+	
+</Defs>

@@ -14,7 +14,7 @@
 		</apparelTags>
 	</PawnKindDef>
 
-	<PawnKindDef Name="IGValhallanBase" ParentName="IGValhallanAbstractBase">
+	<PawnKindDef Name="IGValhallanBase" ParentName="IGValhallanAbstractBase" Abstract="True">
 		<defName>IGValhallanBase</defName>
 		<label>Guardsman</label>
 		<race>Alien_Valhallan</race>

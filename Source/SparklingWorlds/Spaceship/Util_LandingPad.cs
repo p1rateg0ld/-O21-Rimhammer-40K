@@ -79,13 +79,13 @@ namespace Rimhammer40k.Spaceship
         // Return a list of all free and powered landing pads.
         public static List<Building_LandingPad> GetAllFreeAndPoweredLandingPads(Map map)
         {
-            if (map.listerBuildings.ColonistsHaveBuilding(Util_ThingDefOf.LandingPad) == false)
+            if (map.listerBuildings.AllBuildingsColonistOfClass<Building_LandingPad>() == null)
             {
                 // No landing pad on the map.
                 return null;
             }
             List<Building_LandingPad> allFreeAndPoweredLandingPads = new List<Building_LandingPad>();
-            foreach (Building building in map.listerBuildings.AllBuildingsColonistOfDef(Util_ThingDefOf.LandingPad))
+            foreach (Building building in map.listerBuildings.AllBuildingsColonistOfClass<Building_LandingPad>())
             {
                 Building_LandingPad landingPad = building as Building_LandingPad;
                 if (landingPad.isFreeAndPowered)
@@ -103,13 +103,13 @@ namespace Rimhammer40k.Spaceship
         // Return a list of all free landing pads.
         public static List<Building_LandingPad> GetAllFreeLandingPads(Map map)
         {
-            if (map.listerBuildings.ColonistsHaveBuilding(Util_ThingDefOf.LandingPad) == false)
+            if (map.listerBuildings.AllBuildingsColonistOfClass<Building_LandingPad>() == null)
             {
                 // No landing pad on the map.
                 return null;
             }
             List<Building_LandingPad> allFreeLandingPads = new List<Building_LandingPad>();
-            foreach (Building building in map.listerBuildings.AllBuildingsColonistOfDef(Util_ThingDefOf.LandingPad))
+            foreach (Building building in map.listerBuildings.AllBuildingsColonistOfClass<Building_LandingPad>())
             {
                 Building_LandingPad landingPad = building as Building_LandingPad;
                 if (landingPad.isFree)

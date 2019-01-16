@@ -16,6 +16,8 @@ namespace Rimhammer40k.Spaceship
         public bool isPrimary = true;
         public bool isReserved = false;
 
+        // Get list of landingpad lights
+
         // Blocked by things check (trees, building, ...).
         public const int blockCheckPerioInTicks = GenTicks.TicksPerRealSecond;
         public int nextBlockCheckTick = 0;
@@ -57,9 +59,9 @@ namespace Rimhammer40k.Spaceship
             this.powerComp.powerStoppedAction = Notify_PowerStopped;
 
             // Check if there is already another primary landing pad.
-            if (this.Map.listerBuildings.ColonistsHaveBuilding(Util_ThingDefOf.LandingPad))
+            if (this.Map.listerBuildings.AllBuildingsColonistOfClass<Building_LandingPad>() != null)
             {
-                foreach (Building building in this.Map.listerBuildings.AllBuildingsColonistOfDef(Util_ThingDefOf.LandingPad))
+                foreach (Building building in this.Map.listerBuildings.AllBuildingsColonistOfClass<Building_LandingPad>())
                 {
                     Building_LandingPad landingPad = building as Building_LandingPad;
                     if ((landingPad != this)
@@ -80,6 +82,7 @@ namespace Rimhammer40k.Spaceship
 
         public void SpawnBeacons()
         {
+            /**
             // Internal cross: external green beacons.
             Building_LandingPadBeacon beacon = GenSpawn.Spawn(Util_ThingDefOf.LandingPadBeacon, this.Position + new IntVec3(0, 0, 3).RotatedBy(this.Rotation), this.Map) as Building_LandingPadBeacon;
             beacon.InitializeParameters(this, Color.white, lightPeriodInTicks, lightInternalCrossDurationInTicks, 0);
@@ -138,7 +141,7 @@ namespace Rimhammer40k.Spaceship
             beacon = GenSpawn.Spawn(Util_ThingDefOf.LandingPadBeacon, this.Position + new IntVec3(-1, 0, 9).RotatedBy(this.Rotation), this.Map) as Building_LandingPadBeacon;
             beacon.InitializeParameters(this, Color.red, lightPeriodInTicks, lightExternalFrameDurationInTicks, lightPeriodInTicks / 2 + 6 * lightExternalFrameDelayInTicks);
             beacon = GenSpawn.Spawn(Util_ThingDefOf.LandingPadBeacon, this.Position + new IntVec3(1, 0, 9).RotatedBy(this.Rotation), this.Map) as Building_LandingPadBeacon;
-            beacon.InitializeParameters(this, Color.red, lightPeriodInTicks, lightExternalFrameDurationInTicks, lightPeriodInTicks / 2 + 6 * lightExternalFrameDelayInTicks);
+            beacon.InitializeParameters(this, Color.red, lightPeriodInTicks, lightExternalFrameDurationInTicks, lightPeriodInTicks / 2 + 6 * lightExternalFrameDelayInTicks); **/
         }
 
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
@@ -148,7 +151,7 @@ namespace Rimhammer40k.Spaceship
             // Destroy all landing pad beacons.
             foreach (IntVec3 cell in this.OccupiedRect().Cells)
             {
-                Thing thing = cell.GetFirstThing(this.Map, Util_ThingDefOf.LandingPadBeacon);
+                Thing thing = cell.GetFirstThing<Building_LandingPadBeacon>(this.Map);
                 if (thing != null)
                 {
                     thing.Destroy();
@@ -219,7 +222,7 @@ namespace Rimhammer40k.Spaceship
         public void Notify_PowerStarted()
         {
             Util_OrbitalRelay.TryUpdateLandingPadAvailability(this.Map);
-            foreach (Building building in this.Map.listerBuildings.AllBuildingsColonistOfDef(Util_ThingDefOf.LandingPadBeacon))
+            foreach (Building building in this.Map.listerBuildings.AllBuildingsColonistOfClass<Building_LandingPad>())
             {
                 Building_LandingPadBeacon beacon = building as Building_LandingPadBeacon;
                 if (beacon.landingPad == this)
@@ -235,7 +238,7 @@ namespace Rimhammer40k.Spaceship
         public void Notify_PowerStopped()
         {
             Util_OrbitalRelay.TryUpdateLandingPadAvailability(this.Map);
-            foreach (Building building in this.Map.listerBuildings.AllBuildingsColonistOfDef(Util_ThingDefOf.LandingPadBeacon))
+            foreach (Building building in this.Map.listerBuildings.AllBuildingsColonistOfClass<Building_LandingPad>())
             {
                 Building_LandingPadBeacon beacon = building as Building_LandingPadBeacon;
                 if (beacon.landingPad == this)
@@ -287,13 +290,13 @@ namespace Rimhammer40k.Spaceship
             {
                 setTargetButton.icon = ContentFinder<Texture2D>.Get("Ui/Commands/Commands_Primary");
                 setTargetButton.defaultLabel = "Primary";
-                setTargetButton.defaultDesc = "Spaceships will land there in priority if landing pad is clear. Otherwise, they will choose another.";
+                setTargetButton.defaultDesc = "Ships will land there in priority if landing pad is clear. Otherwise, they will choose another.";
             }
             else
             {
                 setTargetButton.icon = ContentFinder<Texture2D>.Get("Ui/Commands/Commands_Ancillary");
                 setTargetButton.defaultLabel = "Ancillary";
-                setTargetButton.defaultDesc = "Spaceships may only land there if primary landing pad is busy. Click to set it as primary.";
+                setTargetButton.defaultDesc = "Ships may only land there if primary landing pad is busy. Click to set it as primary.";
             }
             setTargetButton.activateSound = SoundDef.Named("Click");
             setTargetButton.action = new Action(SetAsPrimary);
@@ -318,7 +321,7 @@ namespace Rimhammer40k.Spaceship
         /// </summary>
         public void SetAsPrimary()
         {
-            foreach (Building landingPad in this.Map.listerBuildings.AllBuildingsColonistOfDef(Util_ThingDefOf.LandingPad))
+            foreach (Building landingPad in this.Map.listerBuildings.AllBuildingsColonistOfClass<Building_LandingPad>())
             {
                 (landingPad as Building_LandingPad).isPrimary = false;
             }

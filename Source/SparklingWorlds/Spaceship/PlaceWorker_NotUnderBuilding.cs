@@ -22,9 +22,9 @@ namespace Rimhammer40k.Spaceship
                 {
                     if (((thing.def.category == ThingCategory.Building)
                         && thing.def.building.isEdifice)
-                        || (thing.def == Util_ThingDefOf.LandingPad)
-                        || (thing.def == Util_ThingDefOf.LandingPad.frameDef)
-                        || (thing.def == Util_ThingDefOf.LandingPad.blueprintDef))
+                        || (thing.def == checkingDef)
+                        || (thing.def == checkingDef.frameDef)
+                        || (thing.def == checkingDef.blueprintDef))
                     {
                         return new AcceptanceReport("SpaceAlreadyOccupied".Translate());
                     }

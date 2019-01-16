@@ -41,9 +41,10 @@ namespace Rimhammer40k.Spaceship
         public Sustainer rotationSoundSustainer = null;
 
         // Texture.
-        public static Material dishTexture = MaterialPool.MatFrom("Things/Building/OrbitalRelay/SatelliteDish");
+        public Comp_OrbitalRelay orbitalRelayComp = null;
+        //public static Material dishTexture = DefModExtension_OrbitalRelay.orbitalRelayDishTexture;
         public float dishRotation = 0f;
-        public static Vector3 dishScale = new Vector3(5f, 0, 5f);
+        //public static Vector3 dishScale = new DefModExtension_OrbitalRelay.orbitalRelayDishSize;
         public Matrix4x4 dishMatrix = default(Matrix4x4);
 
         public bool canUseConsoleNow
@@ -417,8 +418,8 @@ namespace Rimhammer40k.Spaceship
         public override void Draw()
         {
             base.Draw();
-            dishMatrix.SetTRS(this.DrawPos + Altitudes.AltIncVect + new Vector3(0f, 3f, 0f), this.dishRotation.ToQuat(), dishScale); // Mind the small offset so dish is above colonists.
-            Graphics.DrawMesh(MeshPool.plane10, dishMatrix, Building_OrbitalRelay.dishTexture, 0);
+            dishMatrix.SetTRS(this.DrawPos + Altitudes.AltIncVect + new Vector3(0f, 3f, 0f), this.dishRotation.ToQuat(), orbitalRelayComp.Props.size); // Mind the small offset so dish is above colonists.
+            Graphics.DrawMesh(MeshPool.plane10, dishMatrix, MaterialPool.MatFrom(orbitalRelayComp.Props.dishTexture), 0);
         }
         
         // Debug gizmo.

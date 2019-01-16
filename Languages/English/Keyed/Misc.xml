@@ -11,5 +11,9 @@
 	<SettingsGeneral>General Settings</SettingsGeneral>
 	<UseCustomBackgroundLabel>Use Custom Background</UseCustomBackgroundLabel>
 	<UseCustomBackgroundDesc>Enables the custom background to show on the main menu.</UseCustomBackgroundDesc>
+	
+	<!-- Zones -->
+	<CrystalGrowingZone>crystal growing zone</CrystalGrowingZone>
+	<DesignatorGrowingZoneDesc>Create a zone where your colonists will try to grow a certain kind of crystal.</DesignatorGrowingZoneDesc>
  
 </LanguageData>

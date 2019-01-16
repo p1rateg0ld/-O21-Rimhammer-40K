@@ -44,6 +44,7 @@
 			<manhunterOnTameFailChance>0.003</manhunterOnTameFailChance>
 			<nameOnNuzzleChance>0.5</nameOnNuzzleChance>
 			<fleshType>Necron</fleshType>
+			<useMeatFrom>Human</useMeatFrom>
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
 			<foodType>None</foodType>

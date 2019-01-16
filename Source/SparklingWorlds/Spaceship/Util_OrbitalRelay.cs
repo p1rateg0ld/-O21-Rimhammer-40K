@@ -16,12 +16,12 @@ namespace Rimhammer40k.Spaceship
     {
         public static Building_OrbitalRelay GetOrbitalRelay(Map map)
         {
-            if (map.listerBuildings.ColonistsHaveBuilding(Util_ThingDefOf.OrbitalRelay) == false)
+            if (map.listerBuildings.AllBuildingsColonistOfClass<Building_OrbitalRelay>() == null)
             {
                 // No orbital relay on the map.
                 return null;
             }
-            return map.listerBuildings.AllBuildingsColonistOfDef(Util_ThingDefOf.OrbitalRelay).First() as Building_OrbitalRelay;
+            return map.listerBuildings.AllBuildingsColonistOfClass<Building_OrbitalRelay>().First() as Building_OrbitalRelay;
         }
 
         public static void TryUpdateLandingPadAvailability(Map map)

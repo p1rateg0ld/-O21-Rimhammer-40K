@@ -73,7 +73,7 @@ namespace Rimhammer40k.Spaceship
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {
             // Free landing pad.
-            Thing landingPad = this.Position.GetFirstThing(this.Map, Util_ThingDefOf.LandingPad);
+            Thing landingPad = this.Position.GetFirstThing<Building_LandingPad>(this.Map);
             if (landingPad != null)
             {
                 (landingPad as Building_LandingPad).Notify_ShipTakingOff();
@@ -112,9 +112,9 @@ namespace Rimhammer40k.Spaceship
                 GenSpawn.Spawn(spaceship, this.Position, this.Map, this.Rotation);
                 spaceship.InitializeTakingOffParameters(this.Position, this.Rotation, this.spaceshipKind);
                 spaceship.HitPoints = this.HitPoints;
-                if (this.Map.listerBuildings.ColonistsHaveBuilding(Util_ThingDefOf.OrbitalRelay))
+                if (this.Map.listerBuildings.AllBuildingsColonistOfClass<Building_OrbitalRelay>() != null)
                 {
-                    Messages.Message("A MiningCo. spaceship is taking off.", spaceship, MessageTypeDefOf.NeutralEvent);
+                    Messages.Message("A ship is taking off.", spaceship, MessageTypeDefOf.NeutralEvent);
                 }
                 DestroyRoof();
             }

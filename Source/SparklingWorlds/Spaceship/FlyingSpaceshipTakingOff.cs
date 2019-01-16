@@ -50,7 +50,7 @@ namespace Rimhammer40k.Spaceship
             this.ticksSinceTakeOff++;
             if (this.ticksSinceTakeOff <= verticalTrajectoryDurationInTicks)
             {
-                MoteMaker.ThrowDustPuff(GenAdj.CellsAdjacentCardinal(this.landingPadPosition, this.landingPadRotation, Util_ThingDefOf.LandingPad.Size).RandomElement(), this.Map, 3f * (1f - (float)this.ticksSinceTakeOff / (float)verticalTrajectoryDurationInTicks));
+                MoteMaker.ThrowDustPuff(GenAdj.CellsOccupiedBy(this).RandomElement(), this.Map, 3f * (1f - (float)this.ticksSinceTakeOff / (float)verticalTrajectoryDurationInTicks));
             }
             if (this.ticksSinceTakeOff == 1)
             {

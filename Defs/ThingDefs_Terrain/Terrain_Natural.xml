@@ -9,6 +9,7 @@
 		<renderPrecedence>350</renderPrecedence>
 		<pathCost>4</pathCost>
 		<statBases>
+			<WorkToBuild>100</WorkToBuild>
 			<Beauty>-1</Beauty>
 			<Cleanliness>-1</Cleanliness>
 		</statBases>
@@ -16,10 +17,11 @@
 			<li>Light</li>
 			<li>Medium</li>
 			<li>Heavy</li>
+			<li>GrowSoil</li>
 			<li>Diggable</li>
 		</affordances>
 		<generatedFilth>Filth_Sand</generatedFilth>
-		<fertility>0.10</fertility>
+		<fertility>0.7</fertility>
 		<takeFootprints>True</takeFootprints>
 		<tools>
 			<li>
@@ -31,6 +33,13 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
+		
+			<!-- Temporary Buildable Data -->
+			<designationCategory>Floors</designationCategory>
+			<costList />
+			<researchPrerequisites>
+				<li>N17_Nec_Research</li>
+			</researchPrerequisites>
 	</TerrainDef>
 
 </Defs>

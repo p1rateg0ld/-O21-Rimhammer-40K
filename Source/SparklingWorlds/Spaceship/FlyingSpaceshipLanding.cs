@@ -54,7 +54,6 @@ namespace Rimhammer40k.Spaceship
         public override void Tick()
         {
             base.Tick();
-
             if (this.ticksToLanding == horizontalTrajectoryDurationInTicks + verticalTrajectoryDurationInTicks)
             {
                 // Atmosphere entry sound.
@@ -69,7 +68,7 @@ namespace Rimhammer40k.Spaceship
             if (this.ticksToLanding <= verticalTrajectoryDurationInTicks)
             {
                 // Throw dust during descent.
-                MoteMaker.ThrowDustPuff(GenAdj.CellsAdjacentCardinal(this.landingPadPosition, this.landingPadRotation, Util_ThingDefOf.LandingPad.Size).RandomElement(), this.Map, 3f * (1f - (float)this.ticksToLanding / (float)verticalTrajectoryDurationInTicks));
+                MoteMaker.ThrowDustPuff(GenAdj.CellsOccupiedBy(this).RandomElement(), this.Map, 3f * (1f - (float)this.ticksToLanding / (float)verticalTrajectoryDurationInTicks));
             }
             if (this.ticksToLanding == 0)
             {

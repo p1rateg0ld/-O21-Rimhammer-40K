@@ -52,7 +52,6 @@
 				<glowColor>(30,255,30,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Flickable" />
-			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<size>(1,1)</size>
 		<inspectorTabs>

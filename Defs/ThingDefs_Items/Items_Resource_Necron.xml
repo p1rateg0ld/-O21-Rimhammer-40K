@@ -74,6 +74,12 @@
 		<thingCategories>
 			<li>ResourcesRaw</li>
 		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(0, 255, 0, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
 		<ThingDef ParentName="GaussCrystalBase">

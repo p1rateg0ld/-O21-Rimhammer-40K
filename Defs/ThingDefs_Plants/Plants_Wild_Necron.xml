@@ -3,188 +3,337 @@
 
 	<ThingDef Name="NecCrystalPlantBase" Abstract="True">
 		<category>Plant</category>
-		<thingClass>Plant</thingClass>
+		<thingClass>Rimhammer40k.Crystal</thingClass>
 		<altitudeLayer>LowPlant</altitudeLayer>
-		<useHitPoints>True</useHitPoints>
-		<statBases>
-			<Flammability>0.0</Flammability>
-		</statBases>
-		<tickerType>Long</tickerType>
-		<selectable>False</selectable>
-		<neverMultiSelect>True</neverMultiSelect>
-		<drawerType>MapMeshOnly</drawerType>
-		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>CutoutPlant</shaderType>
 		</graphicData>
+		<statBases>
+			<Flammability>0.0</Flammability>
+			<Nutrition>0</Nutrition>
+			<Beauty>1</Beauty>
+		</statBases>
+		<useHitPoints>True</useHitPoints>
+		<tickerType>Long</tickerType>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<drawerType>MapMeshOnly</drawerType>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
 		<ingestible>
 			<foodType>Plant</foodType>
-			<preferability>RawBad</preferability>
+			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<plant>
-			<fertilityMin>0.7</fertilityMin>
-			<fertilitySensitivity>1.0</fertilitySensitivity>
+			<topWindExposure>0.0</topWindExposure>
+			<visualSizeRange>
+				<min>0.4</min>
+				<max>0.6</max>
+			</visualSizeRange>
+			<fertilityMin>0.0</fertilityMin>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
 			<soundHarvesting>Harvest_Standard</soundHarvesting>
 			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+			<blockAdjacentSow>true</blockAdjacentSow>
 			<sowWork>170</sowWork>
-			<harvestWork>250</harvestWork>
-			<visualSizeRange>
-				<min>0.3</min>
-				<max>1.00</max>
-			</visualSizeRange>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<neverBlightable>True</neverBlightable>
+			<growDays>5</growDays>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<harvestTag>Standard</harvestTag>
+			<harvestWork>150</harvestWork>
+			<harvestYield>5</harvestYield>
+			<harvestFailable>false</harvestFailable>
+			<maxMeshCount>9</maxMeshCount>
+			<wildOrder>1</wildOrder>
+			<sowResearchPrerequisites>
+				<li>N17_Nec_Research</li>
+			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
 
 	<ThingDef ParentName="NecCrystalPlantBase" Name="NecCrystalBushBase" Abstract="True">
-		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
-			<Nutrition>0.3</Nutrition>
-		</statBases>
 		<graphicData>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
 				<offset>(0,0,-0.25)</offset>
 			</shadowData>
 		</graphicData>
-		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Nutrition>0</Nutrition>
+			<Beauty>2</Beauty>
+		</statBases>
+		<selectable>True</selectable>
 		<fillPercent>0.20</fillPercent>
 		<pathCost>30</pathCost>
 		<plant>
-			<fertilitySensitivity>0.5</fertilitySensitivity>
-			<growDays>3</growDays>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>5</wildClusterWeight>
+			<growDays>10</growDays>
 			<visualSizeRange>
 				<min>0.7</min>
-				<max>1.1</max>
+				<max>1.0</max>
 			</visualSizeRange>
+			<harvestWork>300</harvestWork>
+			<harvestYield>20</harvestYield>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+			<maxMeshCount>4</maxMeshCount>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="NecCrystalPlantBase" Name="NecCrystalTreeBase" Abstract="True">
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Flammability>0.0</Flammability>
-			<Nutrition>1.7</Nutrition>
-		</statBases>
-		<altitudeLayer>Building</altitudeLayer>
-		<selectable>true</selectable>
-		<fillPercent>0.25</fillPercent>
+	<ThingDef ParentName="NecCrystalBushBase" Name="NecCrystalTreeBase" Abstract="True">
 		<graphicData>
 			<shadowData>
 				<volume>(0.2, 0.35, 0.13)</volume>
 				<offset>(0,0,-0.42)</offset>
 			</shadowData>
 		</graphicData>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Nutrition>0</Nutrition>
+			<Beauty>4</Beauty>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>True</selectable>
+		<fillPercent>0.25</fillPercent>
 		<passability>PassThroughOnly</passability>
 		<pathCost>130</pathCost>
 		<blockWind>true</blockWind>
 		<plant>
-			<lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
-			<fertilitySensitivity>0.5</fertilitySensitivity>
-			<soundHarvesting>Harvest_Tree</soundHarvesting>
-			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
-			<sowWork>4000</sowWork>
-			<sowMinSkill>6</sowMinSkill>
-			<sowResearchPrerequisites>
-				<li>N17_Nec_Research</li>
-			</sowResearchPrerequisites>
-			<mustBeWildToSow>true</mustBeWildToSow>
-			<harvestWork>800</harvestWork>
-			<harvestYield>50</harvestYield>
-			<harvestTag>Wood</harvestTag>
-			<harvestMinGrowth>0.40</harvestMinGrowth>
-			<harvestFailable>false</harvestFailable>
-			<blockAdjacentSow>true</blockAdjacentSow>
-			<sowTags>
-				<li>Ground</li>
-			</sowTags>
+			<growDays>30</growDays>
 			<visualSizeRange>
 				<min>2.5</min>
 				<max>3.2</max>
 			</visualSizeRange>
+			<lifespanDaysPerGrowDays>10</lifespanDaysPerGrowDays>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<sowWork>4000</sowWork>
+			<sowMinSkill>6</sowMinSkill>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<harvestWork>900</harvestWork>
+			<harvestYield>30</harvestYield>
+			<harvestMinGrowth>0.40</harvestMinGrowth>
+			<harvestTag>Wood</harvestTag>
 			<wildClusterRadius>8</wildClusterRadius>
-			<wildClusterWeight>24</wildClusterWeight>
+			<wildClusterWeight>35</wildClusterWeight>
 			<wildOrder>3</wildOrder>
+			<maxMeshCount>1</maxMeshCount>
 			<interferesWithRoof>true</interferesWithRoof>
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantBase">
-		<defName>Plant_GaussCrystalSmall</defName>
-		<label>grass</label>
-		<description>A cluster of green crystals, they seem to be brimminf with some kind of energy.</description>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Flammability>1.3</Flammability>
-			<Nutrition>0.15</Nutrition>
-		</statBases>
+	<ThingDef ParentName="NecCrystalPlantBase">
+		<defName>Plant_GaussCrystalSmall_Green</defName>
+		<label>gauss crystal cluster (green)</label>
+		<description>A cluster of green crystals, they seem to be brimming with some kind of energy.</description>
 		<graphicData>
 			<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
+			<color>(0, 255, 0, 0)</color>
 		</graphicData>
-		<hideAtSnowDepth>0.75</hideAtSnowDepth>
-		<ingestible />
+		<hideAtSnowDepth>0.60</hideAtSnowDepth>
 		<plant>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0.3</fertilitySensitivity>
-			<growDays>2.5</growDays>
-			<harvestWork>100</harvestWork>
 			<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
-			<harvestYield>5</harvestYield>
-			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>
-				<min>0.4</min>
-				<max>0.6</max>
-			</visualSizeRange>
-			<wildOrder>1</wildOrder>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(0, 255, 0, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="BushBase">
-		<defName>Plant_GaussCrystalMed_Green</defName>
-		<label>large gauss crystal (green)</label>
-		<description>A large green crystal, it's brimming with some kind of energy.</description>
+		<ThingDef ParentName="NecCrystalBushBase">
+			<defName>Plant_GaussCrystalMed_Green</defName>
+			<label>large gauss crystal cluster (green)</label>
+			<description>A large green crystal, it's brimming with some kind of energy.</description>
+			<graphicData>
+				<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+				<graphicClass>Graphic_Random</graphicClass>
+				<drawSize>1.0</drawSize>
+				<shadowData>
+					<volume>(0.55, 0.2, 0.2)</volume>
+				</shadowData>
+				<color>(0, 255, 0, 0)</color>
+			</graphicData>
+			<plant>
+				<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
+			</plant>
+			<comps>
+				<li Class="CompProperties_Glower">
+					<glowRadius>4</glowRadius>
+					<glowColor>(0, 255, 0, 0)</glowColor>
+				</li>
+			</comps>
+		</ThingDef>
+
+			<ThingDef ParentName="NecCrystalTreeBase">
+				<defName>Plant_GaussCrystalHuge_Green</defName>
+				<label>huge gauss crystal (green)</label>
+				<description>A massive green crystal, it's brimming with some kind of energy.</description>
+				<graphicData>
+					<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+					<graphicClass>Graphic_Random</graphicClass>
+					<shadowData>
+						<volume>(0.2, 0.35, 0.13)</volume>
+						<offset>(-0.03,0,-0.44)</offset>
+					</shadowData>
+					<color>(0, 255, 0, 0)</color>
+				</graphicData>
+				<plant>
+					<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
+				</plant>
+				<comps>
+					<li Class="CompProperties_Glower">
+						<glowRadius>6</glowRadius>
+						<glowColor>(0, 255, 0, 0)</glowColor>
+					</li>
+				</comps>
+			</ThingDef>
+
+	<ThingDef ParentName="NecCrystalPlantBase">
+		<defName>Plant_GaussCrystalSmall_Orange</defName>
+		<label>gauss crystal cluster (orange)</label>
+		<description>A cluster of orange crystals, they seem to be brimming with some kind of energy.</description>
 		<graphicData>
 			<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>1.0</drawSize>
-			<shadowData>
-				<volume>(0.55, 0.2, 0.2)</volume>
-			</shadowData>
+			<color>(255, 157, 0, 0)</color>
 		</graphicData>
+		<hideAtSnowDepth>0.60</hideAtSnowDepth>
 		<plant>
-			<growDays>3</growDays>
-			<harvestWork>400</harvestWork>
-			<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
-			<harvestYield>20</harvestYield>
+			<harvestedThingDef>GaussCrystalOrange</harvestedThingDef>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255, 157, 0, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="NecCrystalTreeBase">
-		<defName>Plant_GaussCrystalHuge_Green</defName>
-		<label>huge gauss crystal (green)</label>
-		<description>A massive green crystal, it's brimming with some kind of energy.</description>
+		<ThingDef ParentName="NecCrystalBushBase">
+			<defName>Plant_GaussCrystalMed_Orange</defName>
+			<label>large gauss crystal (orange)</label>
+			<description>A large orange crystal, it's brimming with some kind of energy.</description>
+			<graphicData>
+				<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+				<graphicClass>Graphic_Random</graphicClass>
+				<drawSize>1.0</drawSize>
+				<shadowData>
+					<volume>(0.55, 0.2, 0.2)</volume>
+				</shadowData>
+				<color>(255, 157, 0, 0)</color>
+			</graphicData>
+			<plant>
+				<harvestedThingDef>GaussCrystalOrange</harvestedThingDef>
+			</plant>
+			<comps>
+				<li Class="CompProperties_Glower">
+					<glowRadius>4</glowRadius>
+					<glowColor>(255, 157, 0, 0)</glowColor>
+				</li>
+			</comps>
+		</ThingDef>
+
+			<ThingDef ParentName="NecCrystalTreeBase">
+				<defName>Plant_GaussCrystalHuge_Orange</defName>
+				<label>huge gauss crystal (orange)</label>
+				<description>A massive orange crystal, it's brimming with some kind of energy.</description>
+				<graphicData>
+					<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+					<graphicClass>Graphic_Random</graphicClass>
+					<shadowData>
+						<volume>(0.2, 0.35, 0.13)</volume>
+						<offset>(-0.03,0,-0.44)</offset>
+					</shadowData>
+					<color>(255, 157, 0, 0)</color>
+				</graphicData>
+				<plant>
+					<harvestedThingDef>GaussCrystalOrange</harvestedThingDef>
+				</plant>
+				<comps>
+					<li Class="CompProperties_Glower">
+						<glowRadius>6</glowRadius>
+						<glowColor>(255, 157, 0, 0)</glowColor>
+					</li>
+				</comps>
+			</ThingDef>
+
+	<ThingDef ParentName="NecCrystalPlantBase">
+		<defName>Plant_GaussCrystalSmall_Blue</defName>
+		<label>gauss crystal cluster (blue)</label>
+		<description>A cluster of blue crystals, they seem to be brimming with some kind of energy.</description>
 		<graphicData>
 			<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<shadowData>
-				<volume>(0.2, 0.35, 0.13)</volume>
-				<offset>(-0.03,0,-0.44)</offset>
-			</shadowData>
+			<color>(0, 195, 255, 0)</color>
 		</graphicData>
-		<statBases>
-			<Beauty>2</Beauty>
-		</statBases>
+		<hideAtSnowDepth>0.60</hideAtSnowDepth>
 		<plant>
-			<growDays>30</growDays>
-			<harvestWork>1000</harvestWork>
-			<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
-			<harvestYield>50</harvestYield>
-			<wildClusterWeight>35</wildClusterWeight>
+			<harvestedThingDef>GaussCrystalBlue</harvestedThingDef>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(0, 195, 255, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
+
+		<ThingDef ParentName="NecCrystalBushBase">
+			<defName>Plant_GaussCrystalMed_Blue</defName>
+			<label>large gauss crystal (blue)</label>
+			<description>A large blue crystal, it's brimming with some kind of energy.</description>
+			<graphicData>
+				<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+				<graphicClass>Graphic_Random</graphicClass>
+				<drawSize>1.0</drawSize>
+				<shadowData>
+					<volume>(0.55, 0.2, 0.2)</volume>
+				</shadowData>
+				<color>(0, 195, 255, 0)</color>
+			</graphicData>
+			<plant>
+				<harvestedThingDef>GaussCrystalBlue</harvestedThingDef>
+			</plant>
+			<comps>
+				<li Class="CompProperties_Glower">
+					<glowRadius>4</glowRadius>
+					<glowColor>(0, 195, 255, 0)</glowColor>
+				</li>
+			</comps>
+		</ThingDef>
+
+			<ThingDef ParentName="NecCrystalTreeBase">
+				<defName>Plant_GaussCrystalHuge_Blue</defName>
+				<label>huge gauss crystal (blue)</label>
+				<description>A massive blue crystal, it's brimming with some kind of energy.</description>
+				<graphicData>
+					<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+					<graphicClass>Graphic_Random</graphicClass>
+					<shadowData>
+						<volume>(0.2, 0.35, 0.13)</volume>
+						<offset>(-0.03,0,-0.44)</offset>
+					</shadowData>
+					<color>(0, 195, 255, 0)</color>
+				</graphicData>
+				<plant>
+					<harvestedThingDef>GaussCrystalBlue</harvestedThingDef>
+				</plant>
+				<comps>
+					<li Class="CompProperties_Glower">
+						<glowRadius>6</glowRadius>
+						<glowColor>(0, 195, 255, 0)</glowColor>
+					</li>
+				</comps>
+			</ThingDef>
 
 </Defs>

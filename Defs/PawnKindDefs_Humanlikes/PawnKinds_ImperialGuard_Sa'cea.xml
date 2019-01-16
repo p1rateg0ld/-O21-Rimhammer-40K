@@ -14,7 +14,7 @@
 		</apparelTags>
 	</PawnKindDef>
 
-	<PawnKindDef Name="GuevesaSaceaBase" ParentName="GuevesaSaceaAbstractBase">
+	<PawnKindDef Name="GuevesaSaceaBase" ParentName="GuevesaSaceaAbstractBase" Abstract="True">
 		<defName>GuevesaSaceaBase</defName>
 		<label>Gue'vesa</label>
 		<race>Alien_Terran</race>

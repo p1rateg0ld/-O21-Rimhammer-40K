@@ -107,7 +107,7 @@ namespace Rimhammer40k.Spaceship
                         orbitalRelay.Notify_CargoSpaceshipPeriodicLanding();
                     }
                     Util_Misc.Partnership.nextPeriodicSupplyTick[landingPad.Map] = Find.TickManager.TicksGame + WorldComponent_Partnership.cargoSpaceshipPeriodicSupplyPeriodInTicks;
-                    Messages.Message("A MiningCo. cargo spaceship is landing.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
+                    Messages.Message("A cargo spaceship is landing.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
                     break;
                 case SpaceshipKind.CargoRequested:
                     landingDuration = cargoRequestedSupplyLandingDuration;
@@ -116,7 +116,7 @@ namespace Rimhammer40k.Spaceship
                         orbitalRelay.Notify_CargoSpaceshipRequestedLanding();
                     }
                     Util_Misc.Partnership.nextRequestedSupplyMinTick[landingPad.Map] = Find.TickManager.TicksGame + WorldComponent_Partnership.cargoSpaceshipRequestedSupplyPeriodInTicks;
-                    Messages.Message("A MiningCo. cargo spaceship is landing.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
+                    Messages.Message("A cargo spaceship is landing.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
                     break;
                 case SpaceshipKind.Damaged:
                     landingDuration = damagedSpaceshipLandingDuration.RandomInRange;
@@ -124,11 +124,11 @@ namespace Rimhammer40k.Spaceship
                     break;
                 case SpaceshipKind.DispatcherDrop:
                     landingDuration = dispatcherDropDurationInTicks;
-                    Messages.Message("A MiningCo. dispatcher is dropping an expedition team.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
+                    Messages.Message("A dispatcher is dropping an expedition team.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
                     break;
                 case SpaceshipKind.DispatcherPick:
                     landingDuration = dispatcherPickDurationInTicks;
-                    Messages.Message("A MiningCo. dispatcher is picking an expedition team.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
+                    Messages.Message("A dispatcher is picking an expedition team.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
                     break;
                 case SpaceshipKind.Medical:
                     landingDuration = medicalSupplyLandingDuration;
@@ -137,11 +137,11 @@ namespace Rimhammer40k.Spaceship
                         orbitalRelay.Notify_MedicalSpaceshipLanding();
                     }
                     Util_Misc.Partnership.nextMedicalSupplyMinTick[landingPad.Map] = Find.TickManager.TicksGame + WorldComponent_Partnership.medicalSpaceshipRequestedSupplyPeriodInTicks;
-                    Messages.Message("A MiningCo. medical spaceship is landing.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
+                    Messages.Message("A medical spaceship is landing.", new TargetInfo(landingPad.Position, landingPad.Map), MessageTypeDefOf.NeutralEvent);
                     break;
                 //case SpaceshipKind.Airstrike: // This case is handled in SpawnStrikeShip function.
                 default:
-                    Log.ErrorOnce("MiningCo. Spaceship: unhandled SpaceshipKind (" + spaceshipKind.ToString() + ").", 123456780);
+                    Log.ErrorOnce("Spaceship: unhandled SpaceshipKind (" + spaceshipKind.ToString() + ").", 123456780);
                     break;
             }
 

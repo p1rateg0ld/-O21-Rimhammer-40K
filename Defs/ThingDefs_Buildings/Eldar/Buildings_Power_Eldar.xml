@@ -16,6 +16,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>10000</pathCost>
 		<fillPercent>1.0</fillPercent>
@@ -83,6 +84,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>10000</pathCost>
 		<fillPercent>1.0</fillPercent>
