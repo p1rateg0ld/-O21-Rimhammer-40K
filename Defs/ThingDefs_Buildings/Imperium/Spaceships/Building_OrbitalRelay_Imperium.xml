@@ -2,8 +2,8 @@
 <Defs>
 
 	<ThingDef ParentName="SpaceshipBuildingBase">
-		<defName>OrbitalRelay</defName>
-		<label>orbital relay</label>
+		<defName>OrbitalRelayImperium</defName>
+		<label>orbital relay (imperium)</label>
 		<description>This communication array is able to contact nearby factions, ships and comms satellites orbiting around the planet.</description>
 		<thingClass>Rimhammer40k.Spaceship.Building_OrbitalRelay</thingClass>
 		<tickerType>Normal</tickerType>
@@ -53,7 +53,7 @@
 			<li Class="Rimhammer40k.Spaceship.CompProperties_OrbitalRelay">
 				<compClass>Rimhammer40k.Spaceship.Comp_OrbitalRelay</compClass>
 				<dishTexture>Things/Building/Security/IG/IG_tarantula_comms</dishTexture>
-				<size>(3.6, 1, 3.6)</size>
+				<size>(3.6, 1.0, 3.6)</size>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>

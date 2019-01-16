@@ -419,7 +419,7 @@ namespace Rimhammer40k.Spaceship
         {
             base.Draw();
             dishMatrix.SetTRS(this.DrawPos + Altitudes.AltIncVect + new Vector3(0f, 3f, 0f), this.dishRotation.ToQuat(), orbitalRelayComp.Props.size); // Mind the small offset so dish is above colonists.
-            Graphics.DrawMesh(MeshPool.plane10, dishMatrix, MaterialPool.MatFrom(orbitalRelayComp.Props.dishTexture), 0);
+            Graphics.DrawMesh(MeshPool.plane10, dishMatrix, MaterialPool.MatFrom(orbitalRelayComp.Props.dishTexture, ShaderDatabase.Cutout), 0);
         }
         
         // Debug gizmo.
