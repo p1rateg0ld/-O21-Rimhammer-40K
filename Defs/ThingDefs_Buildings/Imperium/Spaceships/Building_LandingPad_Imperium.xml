@@ -10,7 +10,7 @@
 		<graphicData>
 			<texPath>Things/Ships/Imperium/LandingPad</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(15,15)</drawSize>
+			<drawSize>(11,11)</drawSize>
 		</graphicData>
 		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
@@ -29,7 +29,7 @@
 			<Flammability>0</Flammability>
 			<Beauty>-20</Beauty>
 		</statBases>
-		<size>(15,15)</size>
+		<size>(11,11)</size>
 		<costList>
 			<Steel>100</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>

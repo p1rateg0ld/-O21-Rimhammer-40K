@@ -35,9 +35,9 @@ namespace Rimhammer40k.Spaceship
                 }
                 if (medicine != null)
                 {
-                    return new Job(JobDefOf.TendPatient, patient, medicine);
+                    return new Job(RimWorld.JobDefOf.TendPatient, patient, medicine);
                 }
-                return new Job(JobDefOf.TendPatient, patient);
+                return new Job(RimWorld.JobDefOf.TendPatient, patient);
             }
             else
             {

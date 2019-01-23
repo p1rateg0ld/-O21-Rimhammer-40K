@@ -52,7 +52,7 @@ namespace Rimhammer40k.Spaceship
                 // Generate pilots.
                 for (int pilotIndex = 0; pilotIndex < pilotsNumber; pilotIndex++)
                 {
-                    Pawn pilot = MiningCoPawnGenerator.GeneratePawn(Util_PawnKindDefOf.Pilot, this.Map);
+                    Pawn pilot = FactionPawnGenerator.GeneratePawn(Util_PawnKindDefOf.Pilot, this.Map);
                     if (pilot != null)
                     {
                         this.pawnsAboard.Add(pilot);

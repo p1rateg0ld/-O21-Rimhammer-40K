@@ -31,7 +31,7 @@ namespace Rimhammer40k.Spaceship
         {
             if (pawn.Position != pawn.DutyLocation())
             {
-                return new Job(JobDefOf.Goto, pawn.DutyLocation())
+                return new Job(RimWorld.JobDefOf.Goto, pawn.DutyLocation())
                 {
                     locomotionUrgency = pawn.mindState.duty.locomotion,
                     expiryInterval = this.jobMaxDuration
@@ -50,7 +50,7 @@ namespace Rimhammer40k.Spaceship
                 }
                 if (spaceship != null)
                 {
-                    return new Job(Util_JobDefOf.BoardSpaceship, spaceship);
+                    return new Job(JobDefOf.BoardSpaceship, spaceship);
                 }
             }
             return null;

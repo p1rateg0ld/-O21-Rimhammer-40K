@@ -494,6 +494,7 @@ Needless to say, Gue'vesa are considered the worst kind of Traitors to the Emper
 			<MiningSpeed>2.0</MiningSpeed>
 			<ImmunityGainSpeed>4.0</ImmunityGainSpeed>
 			<PainShockThreshold>5</PainShockThreshold>
+			<RestRateMultiplier>0.5</RestRateMultiplier>
 		</statBases>
 		<tools>
 			<li>

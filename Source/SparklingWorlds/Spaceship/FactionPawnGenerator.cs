@@ -14,7 +14,7 @@ using Verse.AI.Group; // Needed when you do something with the AI
 
 namespace Rimhammer40k.Spaceship
 {
-    public static class MiningCoPawnGenerator
+    public static class FactionPawnGenerator
     {
         // Predefined colors.
         static Color colorArmyGreenBright = new Color(50f / 255f, 100f / 255f, 0);

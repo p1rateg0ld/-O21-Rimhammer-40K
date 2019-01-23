@@ -94,7 +94,7 @@ namespace Rimhammer40k.Spaceship
                 {
                     for (int pawnIndex = 0; pawnIndex < expedition[pawnKind]; pawnIndex++)
                     {
-                        Pawn pawn = MiningCoPawnGenerator.GeneratePawn(pawnKind, map);
+                        Pawn pawn = FactionPawnGenerator.GeneratePawn(pawnKind, map);
                         expeditionPawns.Add(pawn);
                     }
                 }

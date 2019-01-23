@@ -88,7 +88,7 @@ namespace Rimhammer40k.Spaceship
             {
                 Action action2 = delegate
                 {
-                    Job job = new Job(Util_JobDefOf.TradeWithCargoSpaceship, this);
+                    Job job = new Job(JobDefOf.TradeWithCargoSpaceship, this);
                     selPawn.jobs.TryTakeOrderedJob(job);
 
                 };

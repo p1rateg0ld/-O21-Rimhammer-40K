@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+ 
+	<!-- Necrons -->
+	<!-- <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>
+					/Defs/AlienRace.ThingDef_AlienRace [defName = "ConstructScarab"]/statBases
+				</xpath>
+				<success>Always</success>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace [defName = "ConstructScarab"]/statBases</xpath>
+					<value>
+						<comps />
+					</value>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation> -->
+	
+</Patch>

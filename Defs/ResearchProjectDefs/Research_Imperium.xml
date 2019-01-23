@@ -40,7 +40,7 @@
 				<tab>RH40K_Tab</tab>
 				<defName>N17_Imp_Ceramite01</defName>
 				<label>Mid-Grade Ceramite</label>
-				<description>Provides access to refinemend of medium grade ceramite refinement, using a mixture of ceramite and steel.</description>
+				<description>Provides access to refinement of medium grade ceramite, using a mixture of ceramite and steel.</description>
 				<baseCost>400</baseCost>
 				<prerequisites>
 					<li>N17_Imp_Refining</li>
@@ -55,7 +55,7 @@
 				<tab>RH40K_Tab</tab>
 				<defName>N17_Imp_Ceramite02</defName>
 				<label>High-Grade Ceramite</label>
-				<description>Provides access to refinemend of high grade ceramite refinement, using a mixture of ceramite and plasteel.</description>
+				<description>Provides access to refinement of high grade ceramite, using a mixture of ceramite and plasteel.</description>
 				<baseCost>400</baseCost>
 				<prerequisites>
 					<li>N17_Imp_Ceramite01</li>

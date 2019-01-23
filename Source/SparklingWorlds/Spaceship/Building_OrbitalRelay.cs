@@ -15,6 +15,9 @@ namespace Rimhammer40k.Spaceship
     [StaticConstructorOnStartup]
     public class Building_OrbitalRelay : Building
     {
+
+        private float curRotationInt;
+
         // Supply ship data.
         public const int spaceshipLandingCheckPeriodInTick = GenTicks.TicksPerRealSecond;
 
@@ -61,6 +64,7 @@ namespace Rimhammer40k.Spaceship
         {
             base.SpawnSetup(map, respawningAfterLoad);
             this.powerComp = base.GetComp<CompPowerTrader>();
+            this.orbitalRelayComp = base.GetComp<Comp_OrbitalRelay>();
 
             if (respawningAfterLoad == false)
             {
@@ -311,54 +315,7 @@ namespace Rimhammer40k.Spaceship
         }
 
         // ===================== Float menu options =====================
-        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
-        {
-            if (selPawn.CanReach(this, PathEndMode.InteractionCell, Danger.Some, false, TraverseMode.ByPawn) == false)
-            {
-                FloatMenuOption item = new FloatMenuOption("CannotUseNoPath".Translate(), null);
-                return new List<FloatMenuOption>
-                {
-                    item
-                };
-            }
-            if (base.Spawned && base.Map.gameConditionManager.ConditionIsActive(GameConditionDefOf.SolarFlare))
-            {
-                FloatMenuOption item2 = new FloatMenuOption("CannotUseSolarFlare".Translate(), null);
-                return new List<FloatMenuOption>
-                {
-                    item2
-                };
-            }
-            if (this.powerComp.PowerOn == false)
 
-            {
-                FloatMenuOption item3 = new FloatMenuOption("CannotUseNoPower".Translate(), null);
-                return new List<FloatMenuOption>
-                {
-                    item3
-                };
-            }
-            if (selPawn.health.capacities.CapableOf(PawnCapacityDefOf.Talking) == false)
-            {
-                FloatMenuOption item4 = new FloatMenuOption("CannotUseReason".Translate("IncapableOfCapacity".Translate(PawnCapacityDefOf.Talking.label)), null);
-                return new List<FloatMenuOption>
-                {
-                    item4
-                };
-            }
-
-            // Call MiningCo.
-            Action action = delegate
-            {
-                Job job = new Job(Util_JobDefOf.UseOrbitalRelayConsole, this);
-                selPawn.jobs.TryTakeOrderedJob(job);
-            };
-            FloatMenuOption callMiningCoOption = new FloatMenuOption("Call MiningCo.", action);
-            return new List<FloatMenuOption>
-            {
-                callMiningCoOption
-            };
-        }
         
         // ===================== Sound =====================
         public void StartRotationSound()
@@ -419,9 +376,9 @@ namespace Rimhammer40k.Spaceship
         {
             base.Draw();
             dishMatrix.SetTRS(this.DrawPos + Altitudes.AltIncVect + new Vector3(0f, 3f, 0f), this.dishRotation.ToQuat(), orbitalRelayComp.Props.size); // Mind the small offset so dish is above colonists.
-            Graphics.DrawMesh(MeshPool.plane10, dishMatrix, MaterialPool.MatFrom(orbitalRelayComp.Props.dishTexture, ShaderDatabase.Cutout), 0);
+            Graphics.DrawMesh(MeshPool.plane10, dishMatrix, MaterialPool.MatFrom(this.orbitalRelayComp.Props.dishTexture, ShaderDatabase.Cutout), 0);
         }
-        
+
         // Debug gizmo.
         // ===================== Gizmos =====================
         /*public override IEnumerable<Gizmo> GetGizmos()

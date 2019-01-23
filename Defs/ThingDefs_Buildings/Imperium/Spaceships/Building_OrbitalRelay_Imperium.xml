@@ -8,7 +8,7 @@
 		<thingClass>Rimhammer40k.Spaceship.Building_OrbitalRelay</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-			<texPath>Things/Building/Security/IG/IG_tarantula_base</texPath>
+			<texPath>Things/Building/Security/IG/Tarantula/IG_tarantula_comms_menu</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.6,3.6)</drawSize>
 			<shadowData>
@@ -19,7 +19,7 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-		<uiIconPath>Things/Building/Security/IG/IG_tarantula_comms_menu</uiIconPath>
+		<uiIconPath>Things/Building/Security/IG/Tarantula/IG_tarantula_comms_menu</uiIconPath>
 		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<altitudeLayer>Building</altitudeLayer>
@@ -37,7 +37,7 @@
 		</statBases>
 		<size>(3,3)</size>
 		<hasInteractionCell>true</hasInteractionCell>
-		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<costList>
 			<CeramiteMedGrade>200</CeramiteMedGrade>
 			<CeramiteHighGrade>20</CeramiteHighGrade>
@@ -50,11 +50,11 @@
 			<li>Rimhammer40k.Spaceship.PlaceWorker_OnlyOneBuilding</li>
 		</placeWorkers>
 		<comps>
-			<li Class="Rimhammer40k.Spaceship.CompProperties_OrbitalRelay">
+			<!-- <li Class="Rimhammer40k.Spaceship.CompProperties_OrbitalRelay">
 				<compClass>Rimhammer40k.Spaceship.Comp_OrbitalRelay</compClass>
-				<dishTexture>Things/Building/Security/IG/IG_tarantula_comms</dishTexture>
+				<dishTexture>Things/Building/Security/IG/Tarantula/IG_tarantula_comms</dishTexture>
 				<size>(3.6, 1.0, 3.6)</size>
-			</li>
+			</li> -->
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>350</basePowerConsumption>

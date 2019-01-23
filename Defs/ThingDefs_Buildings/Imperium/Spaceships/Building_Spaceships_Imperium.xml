@@ -1,110 +1,136 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SpaceshipBuildingBase" Name="BaseSpaceship">
-		<defName>Spaceship</defName>
-		<label>spaceship</label>
-		<description>A spaceship used by MiningCo. to maintain a link between ground operations and the orbital station orbiting around the planet.</description>
-		<thingClass>Rimhammer40k.Spaceship.Building_Spaceship</thingClass>
-		<graphicData>
-			<texPath>Things/SupplySpaceship/SupplySpaceship</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(11,20)</drawSize>
-			<damageData>
-				<rect>(1,4,7,10)</rect>
-			</damageData>
-		</graphicData>
-		<altitudeLayer>PawnUnused</altitudeLayer> <!-- To be over pawns but under fire effect. -->
-		<passability>PassThroughOnly</passability>
-		<castEdgeShadows>false</castEdgeShadows>
-		<staticSunShadowHeight>0.0</staticSunShadowHeight>
-		<fillPercent>0.0</fillPercent>
-		<building>
-			<isEdifice>false</isEdifice>
-			<claimable>false</claimable>
-			<deconstructible>false</deconstructible>
-		</building>
-		<useHitPoints>true</useHitPoints>
-		<statBases>
-			<MaxHitPoints>3000</MaxHitPoints>
-			<WorkToBuild>15000</WorkToBuild>
-			<Flammability>0.1</Flammability>
-			<Mass>10000</Mass>
-		</statBases>
-		<tickerType>Normal</tickerType>
-		<size>(9,9)</size>
-		<costList>
-			<Steel>5000</Steel>
-			<Plasteel>1000</Plasteel>
-			<ComponentIndustrial>50</ComponentIndustrial>
-			<ComponentSpacer>5</ComponentSpacer>
-		</costList>
-		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseSpaceship">
-		<defName>ShipArvusLighter</defName>
+	<O21ToolBox.Spaceships.ThingDef_Spaceship Name="Ship_Arvus">
+		<defName>Ship_ArvusLighter</defName>
 		<label>arvus lighter</label>
 		<description>A voidship used by various Imperium factions to convey bulk resources, materials and personnel.</description>
+		<spaceshipSettings>
+			<graphicPaths>
+				<!-- Texture used when landing and taking off, good for providing a middle animation. Example: Folding wings, or VTOL engines. -->
+				<landingTexPath>Things/Ships/Imperium/ArvusLighterImperium</landingTexPath>
+				<!-- Texture used when in flight. -->
+				<flyingTexPath>Things/Ships/Imperium/ArvusLighterImperium</flyingTexPath>
+				<!-- Texture used for the shadow projected onto the ground below. -->
+				<shadowTexPath>Things/Ships/Imperium/ArvusLighterImperiumShadow</shadowTexPath>
+				<!-- Drawsize used for flight. -->
+				<drawSize>(5.5, 5.5)</drawSize>
+				<!-- Actual size of ship. -->
+				<size>(5,5)</size>
+			</graphicPaths>
+			<!-- List of roles this ship can perform in -->
+			<roles>
+				<!-- Can show up periodically to trade -->
+				<li>CargoPeriodic</li>
+				<!-- Can show up when requested to trade -->
+				<li>CargoRequested</li>
+				<!-- Can show up damaged requesting for you to repair it -->
+				<li>Damaged</li>
+				<!-- Can show up to drop off an expidition/raid -->
+				<li>DispatcherDrop</li>
+				<!-- Can show up to pick up an expidition/raid -->
+				<li>DispatcherPick</li>
+				<!-- Can show up for medical purposes -->
+				<li>Medical</li>
+			</roles>
+			<!-- Designate the required and maximum slots pawns can fill in the ship. -->
+			<crewSettings>
+				<!-- Pilots, if the ship can function unmanned then use 0 for the required -->
+				<pilotReq>1</pilotReq>
+				<pilotMax>1</pilotMax>
+				<!-- Total Maximum Passengers, this does NOT include pilots. In PawnGroups this includes everything that isn't a pilot. -->
+				<passengerMax>12</passengerMax>
+			</crewSettings>
+			<!-- List of factions who can use this ship in the listed roles. If factions are assigned multiple ships for any roles they will select one at random. -->
+			<factions>
+				<li>IGCadian412</li>
+			</factions>
+			<!-- Pawns used are handled in the faction def, using a new pawnGroupMaker, use a standard name suffixed with _Cargo etc. to designate the needed groups depending on the roles the ship can do. -->
+			<pawnGroupTag>Arvus</pawnGroupTag>
+			<!-- Settings for if the ship is buildable by players. -->
+			<landedDef>Building_ArvusImperium</landedDef>
+		</spaceshipSettings>
+		<!-- Stats - Generally the same as pawn stats. Sensitivity changes how much pawns inside are affected, so 0 means they are 100% safe from it. -->
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MoveSpeed>10</MoveSpeed>
+			<Flammability>0.3</Flammability>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
+		</statBases>
+		<!-- Basically surgery for spaceships. Texture overlays for paint jobs, changing the weapon they have, etc. -->
+		<modifications/>
+	</ThingDef>
+
+	<O21ToolBox.ThingDef_Spaceship Name="BaseSpaceshipBomber">
+		<defName>ShipMarauderBomber</defName>
+		<label>marauder bomber</label>
+		<description>A voidship used by various Imperium factions in combat as a fighter but primarily as a bomber.</description>
 		<thingClass>Rimhammer40k.Spaceship.Building_SpaceshipCargo</thingClass>
 		<graphicData>
-			<texPath>Things/Ships/Imperium/ArvusLighterImperium</texPath>
+			<texPath>Things/Ships/Imperium/MarauderImperium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(9.5,9.5)</drawSize>
+			<drawSize>(7.5,7.5)</drawSize>
 		</graphicData>
-		<size>(9,9)</size>
+		<size>(7,7)</size>
+		<comps>
+			<!-- graphicData and size only applies to the landed ship. Comp_Spaceship is used to provide the flying and shadow textures, as well as any other needed data. -->
+			<li Class="Rimhammer40k.Spaceship.CompProperties_Spaceship">
+				<compClass>Rimhammer40k.Spaceship.Comp_Spaceship</compClass>
+				<!-- Texture used when in flight, turrets are only really there when landed so it is best to have a texture with them included for during flight. -->
+				<flyingTexPath>Things/Ships/Imperium/MarauderImperiumFlying</flyingTexPath>
+				<!-- Texture used when in flight for the shadow projected onto the ground below. -->
+				<shadowTexPath>Things/Ships/Imperium/MarauderImperiumShadow</shadowTexPath>
+				<!-- Texture used when landing and taking off, good for providing a middle animation. Example: Folding wings, or VTOL engines. -->
+				<landingTexPath>Things/Ships/Imperium/MarauderImperiumFlying</landingTexPath>
+				<!-- Drawsize used for flight. -->
+				<drawSize>(7.5, 1, 7.5)</drawSize>
+				<!-- Actual size of ship in flight. -->
+				<size>(7, 1, 7)</size>
+				<!-- List of roles this ship can perform in -->
+				<typeList>
+					<!-- Can show up as a bombing craft in airstrikes -->
+					<li>Airstrike</li>
+					<!-- Can show up damaged requesting for you to repair it -->
+					<li>Damaged</li>
+				</typeList>
+				<!-- Designate the required and maximum slots pawns can fill in the ship. -->
+				<crewSettings>
+					<!-- Pilots, if the ship can function unmanned then use 0 for the required -->
+					<pilotReq>1</pilotReq>
+					<pilotMax>1</pilotMax>
+					<!-- Total Maximum Passengers, this does NOT include pilots. In PawnGroups this includes everything that isn't a pilot. -->
+					<passengerMax>0</passengerMax>
+				</crewSettings>
+				<!-- Addon Settings -->
+				<!-- Addons can attach things like turrets to the ship, as well as setting when they can be active. -->
+				<addonSettings>
+					<li>
+						<!-- Type of addon to be applied, this changes what settings are available to it and how it behaves. -->
+						<addonType>Turret</addonType>
+						<!-- Def for the turret. -->
+						<turretDef>MarauderTurret</turretDef>
+						<!-- Offset applied to this turret -->
+						<turretOffset>(0, 0, 3)</turretOffset>
+						<!-- When the turret can fire. Always = Any time at all, Landed = Only when on the ground, Flying = Only while flying. -->
+						<activeWhen>Always</activeWhen>
+					</li>
+				</addonSettings>
+				<!-- List of factions who can use this ship in the listed roles. If factions are assigned multiple ships for any roles they will select one at random. -->
+				<factions>
+					<li>IGCadian412</li>
+				</factions>
+				<!-- Pawns used are handled in the faction def, using a new pawnGroupMaker, use a standard name suffixed with _Cargo etc. to designate the needed groups depending on the roles the ship can do. -->
+				<pawnGroupTag>Arvus</pawnGroupTag>
+			</li>
+		</comps>
 		<researchPrerequisites>
 			<li>N17_Imp_Research</li>
 		</researchPrerequisites>
 		<designationCategory>Ship</designationCategory>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseSpaceship">
-		<defName>SpaceshipDamaged</defName>
-		<label>damaged spaceship</label>
-		<description>A spaceship used by MiningCo. in various missions.
-This ship is damaged and need materials to begin repairs.</description>
-		<thingClass>Rimhammer40k.Spaceship.Building_SpaceshipDamaged</thingClass>
-		<specialDisplayRadius>9.9</specialDisplayRadius>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseSpaceship">
-		<defName>SpaceshipDispatcherDrop</defName>
-		<label>dispatcher spaceship</label>
-		<description>A spaceship used by MiningCo. to transport and dispatch expedition teams.</description>
-		<thingClass>Rimhammer40k.Spaceship.Building_SpaceshipDispatcherDrop</thingClass>
-		<graphicData>
-			<texPath>Things/Dispatcher/Dispatcher</texPath>
-		</graphicData>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseSpaceship">
-		<defName>SpaceshipDispatcherPick</defName>
-		<label>dispatcher spaceship</label>
-		<description>A spaceship used by MiningCo. to transport and dispatch expedition teams.</description>
-		<thingClass>Rimhammer40k.Spaceship.Building_SpaceshipDispatcherPick</thingClass>
-		<graphicData>
-			<texPath>Things/Dispatcher/Dispatcher</texPath>
-		</graphicData>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseSpaceship">
-		<defName>SpaceshipMedical</defName>
-		<label>medical spaceship</label>
-		<description>A spaceship used by MiningCo. to assist ground operations. It provides medical assistance to nearby personnel.</description>
-		<thingClass>Rimhammer40k.Spaceship.Building_SpaceshipMedical</thingClass>
-		<graphicData>
-			<texPath>Things/MedicalSpaceship/MedicalSpaceship</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(7,11)</drawSize>
-		</graphicData>
-		<size>(5,9)</size>
-		<statBases>
-			<MaxHitPoints>2000</MaxHitPoints>
-			<WorkToBuild>12000</WorkToBuild>
-			<Mass>7500</Mass>
-		</statBases>
 	</ThingDef>
 
 </Defs>

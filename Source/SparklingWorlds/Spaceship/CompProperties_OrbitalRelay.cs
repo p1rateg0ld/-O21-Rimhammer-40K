@@ -13,6 +13,6 @@ namespace Rimhammer40k.Spaceship
         // File path for OrbitalRelay dish texture.
         public String dishTexture;
         // Size of OrbitalRelay dish texture.
-        public Vector3 size = new Vector3(1, 1, 1);
+        public Vector3 size;
     }
 }

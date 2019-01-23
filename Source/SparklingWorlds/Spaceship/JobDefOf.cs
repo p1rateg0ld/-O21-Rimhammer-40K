@@ -12,7 +12,7 @@ using RimWorld.Planet;
 
 namespace Rimhammer40k.Spaceship
 {
-    public static class Util_JobDefOf
+    public static class JobDefOf
     {
         public static JobDef UseOrbitalRelayConsole
         {

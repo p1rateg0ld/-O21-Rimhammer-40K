@@ -32,7 +32,7 @@ namespace Rimhammer40k.Spaceship
             Pawn pawnToRescue = Util_DownedPawn.GetNearestReachableDownedPawn(pawn);
             if (pawnToRescue != null)
             {
-                return new Job(Util_JobDefOf.CarryDownedPawn, pawnToRescue, toil.Data.targetDestination)
+                return new Job(JobDefOf.CarryDownedPawn, pawnToRescue, toil.Data.targetDestination)
                 {
                     count = 1
                 };

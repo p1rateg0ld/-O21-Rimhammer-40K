@@ -40,7 +40,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
-				<basePowerConsumption>-1200</basePowerConsumption>
+				<basePowerConsumption>-800</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Battery">

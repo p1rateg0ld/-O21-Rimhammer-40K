@@ -84,7 +84,7 @@ namespace Rimhammer40k.Spaceship
                     nearestMedicalSpaceship = spaceship as Building_SpaceshipMedical;
                 }
             }
-            return new Job(Util_JobDefOf.TransferToMedibay, t, nearestMedicalSpaceship)
+            return new Job(JobDefOf.TransferToMedibay, t, nearestMedicalSpaceship)
             {
                 count = 1
             };

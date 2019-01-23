@@ -40,7 +40,7 @@ namespace Rimhammer40k.Spaceship
             {
                 for (int pawnindex = 0; pawnindex < medicsNumber; pawnindex++)
                 {
-                    Pawn medic = MiningCoPawnGenerator.GeneratePawn(Util_PawnKindDefOf.Medic, this.Map);
+                    Pawn medic = FactionPawnGenerator.GeneratePawn(Util_PawnKindDefOf.Medic, this.Map);
                     this.medics.Add(medic);
                     this.pawnsAboard.Add(medic);
                 }
@@ -251,7 +251,7 @@ namespace Rimhammer40k.Spaceship
                     {
                         Action action = delegate
                         {
-                            Job job = new Job(Util_JobDefOf.BoardMedicalSpaceship, this);
+                            Job job = new Job(JobDefOf.BoardMedicalSpaceship, this);
                             selPawn.jobs.TryTakeOrderedJob(job);
                         };
                         string optionLabel = "Board medical spaceship (" + Util_Spaceship.orbitalHealingCost + " silver)";

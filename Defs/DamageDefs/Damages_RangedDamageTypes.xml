@@ -253,7 +253,7 @@
 		<label>plasma pulse</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished for the Greater Good.</deathMessage>
+		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
 		<hediff>PlasmaBurn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -270,7 +270,7 @@
 		<label>ion beam</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished for the Greater Good.</deathMessage>
+		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
 		<hediff>Burn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -287,7 +287,7 @@
 		<label>Railgun Slug</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished for the Greater Good.</deathMessage>
+		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
 		<hediff>Gunshot</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -303,7 +303,7 @@
 		<label>Kroot Slug</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished for the Greater Good.</deathMessage>
+		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
 		<hediff>Burn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -319,7 +319,7 @@
 		<label>Neutron blast</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished for the Greater Good.</deathMessage>
+		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
 		<hediff>Gunshot</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
