@@ -180,9 +180,6 @@
     <Compile Include="Settings\Rimhammer40kModSettings.cs" />
     <None Include="MissionBoard.cs" />
     <None Include="Building_GraphicSwitchableDef.cs" />
-    <Compile Include="Bunker\Building_Bunker.cs" />
-    <Compile Include="Bunker\JobDriver_EnterBunker.cs" />
-    <Compile Include="Bunker\Verb_Bunker.cs" />
     <Compile Include="Logic\BodyPartUtility.cs" />
     <Compile Include="MechanicalPawn.cs" />
     <Compile Include="Necrons\HediffNecrodermisRepair.cs" />

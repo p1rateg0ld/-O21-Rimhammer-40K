@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- Marauder Bomber Turret -->
+	
 	<ThingDef ParentName="SpaceshipBuildingBase">
-		<defName>VulcanTurret</defName>
-		<label>vulcan turret</label>
-		<description>An advanced gun mounted on MiningCo. military spaceships to protect squads during their deployment. Local tribes fear it as they believe it to be a tool forged by the Fire god himself. Mercenaries... well, the lucky ones who survived the first volley can report its efficiency.</description>
+		<defName>MarauderTurret</defName>
+		<label>marauder turret</label>
+		<description>Roof mounted turret attached to the Marauder Bomber.</description>
 		<thingClass>Building_TurretGun</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Security/VulcanTurret/DummyTexture</texPath>
@@ -42,12 +44,69 @@
 		<specialDisplayRadius>25.9</specialDisplayRadius>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Gun_VulcanTurret</turretGunDef>
+			<turretGunDef>Gun_MarauderTurret</turretGunDef>
 			<turretBurstCooldownTime>4.0</turretBurstCooldownTime>
 			<turretTopGraphicPath>Things/Building/Security/VulcanTurret/VulcanTurret_Top</turretTopGraphicPath>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MarauderTurret</defName>
+		<label>stubber shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Gun_MarauderTurret</defName>
+		<label>marauder turret gun</label>
+		<description>An stubber gun canopy mounted on a marauder bomber.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>PawnState</altitudeLayer>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<menuHidden>true</menuHidden>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>50</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>MarauderTurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MarauderTurret</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>30.0</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
 	</ThingDef>
 
 </Defs>

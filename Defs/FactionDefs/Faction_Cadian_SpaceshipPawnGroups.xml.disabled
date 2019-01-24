@@ -1,0 +1,40 @@
+
+			<!-- Spaceship PawnGroups -->
+			<!-- If a spaceship role requires a PawnGroup, it will not fire if not provided one. -->
+			<!-- If the number of pawns in a group exceeds the maximum a ship can carry, it will not function. -->
+			<!-- These PawnGroups will use EXACT numbers unless stated otherwise, as in the number you provide is precisely how many are in the ship. -->
+			<li>
+				<!-- PawnGroups will use _Cargo at the end for the either of the cargo types. -->
+				<kindDef>Arvus_Cargo</kindDef>
+				<!-- Pilots are the required pawns for the ship to be able to fly, they only leave if the ship is damaged and will enter again once repaired, these must meet minimum requirements for the ship to work. -->
+				<pilot>
+					<IGTrooper_Cadian>1</IGTrooper_Cadian>
+				</pilot>
+				<!-- Traders will exit the ship and head into the colony as any walking trader would, leaving via the ship again. -->
+				<traders>
+					<IGTrader_Cadian>1</IGTrader_Cadian>
+				</traders>
+				<!-- Guards will follow the trader when they leave the ship -->
+				<guards>
+					<IGTrooper_Cadian>2</IGTrooper_Cadian>
+				</guards>
+			</li>
+			<li>
+				<!-- PawnGroups will use _Raid for when the faction is an enemy and comes to raid your settlement -->
+				<kindDef>Arvus_Raid</kindDef>
+				<!-- Pilots are the required pawns for the ship to be able to fly, they only leave if the ship is damaged and will enter again once repaired, these must meet minimum requirements for the ship to work. -->
+				<pilot>
+					<IGTrooper_Cadian>1</IGTrooper_Cadian>
+				</pilot>
+				<!-- Raiders that leave the ship to attack. -->
+				<raid>
+					<IGCommissar_Cadian>1</IGCommissar_Cadian>
+					<IGOfficer_Cadian>1</IGOfficer_Cadian>
+					<!-- This selector will choose a single one at random and use the number there, these are not weights, they are precise numbers providing an OR option for variety. -->
+					<options>
+						<IGSoldier_Cadian>10</IGSoldier_Cadian>
+						<IGTrooper_Cadian>10</IGTrooper_Cadian>
+						<IGKasrkin_Cadian>10</IGKasrkin_Cadian>
+					<options>
+				</raid>
+			</li>
