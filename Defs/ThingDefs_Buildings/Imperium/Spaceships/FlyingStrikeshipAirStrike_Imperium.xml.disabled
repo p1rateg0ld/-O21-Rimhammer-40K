@@ -4,7 +4,7 @@
 	<ThingDef>
 		<defName>FlyingSpaceshipAirStrike</defName>
 		<label>strikeship</label>
-		<thingClass>Rimhammer40k.Spaceship.FlyingSpaceshipAirStrike</thingClass>
+		<thingClass>O21Toolbox.Spaceship.FlyingSpaceshipAirStrike</thingClass>
 		<category>Ethereal</category>
 		<tickerType>Normal</tickerType>
 		<graphicData>

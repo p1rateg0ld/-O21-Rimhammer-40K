@@ -84,7 +84,7 @@
 			<li>OrkClothingMedium</li>
 			<li>OrkMediumArmorRed</li>
 		</apparelRequired>
-		<combatPower>50</combatPower>
+		<combatPower>150</combatPower>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarBanshee_Ulthwe -->
@@ -106,7 +106,7 @@
 			<li>OrkClothingMedium</li>
 			<li>OrkLightArmorRed</li>
 		</apparelRequired>
-		<combatPower>55</combatPower>
+		<combatPower>155</combatPower>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarAutarch_Ulthwe -->
@@ -125,7 +125,7 @@
 			<li>OrkClothingHeavy</li>
 			<li>OrkMediumArmorRed</li>
 		</apparelRequired>
-		<combatPower>60</combatPower>
+		<combatPower>160</combatPower>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarRanger_Ulthwe -->
@@ -145,7 +145,7 @@
 			<li>OrkHeavyArmorRed</li>
 			<li>OrkRedHelmet</li>
 		</apparelRequired>
-		<combatPower>65</combatPower>
+		<combatPower>165</combatPower>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarRanger_Ulthwe -->
@@ -165,7 +165,7 @@
 			<li>OrkKommandoBandolier</li>
 			<li>OrkKommandoGoggles</li>
 		</apparelRequired>
-		<combatPower>65</combatPower>
+		<combatPower>165</combatPower>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="EvilSunzAbstractBase"> <!-- EldarTrader_Ulthwe -->
@@ -202,7 +202,7 @@
 			<li>OrkHeavyArmorRed</li>
 			<li>OrkRedHelmetHorned</li>
 		</apparelRequired>
-		<combatPower>75</combatPower>
+		<combatPower>250</combatPower>
 	</PawnKindDef>
 
 </Defs>

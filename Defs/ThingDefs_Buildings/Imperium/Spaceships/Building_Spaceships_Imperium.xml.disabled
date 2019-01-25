@@ -69,7 +69,7 @@
 		<defName>ShipMarauderBomber</defName>
 		<label>marauder bomber</label>
 		<description>A voidship used by various Imperium factions in combat as a fighter but primarily as a bomber.</description>
-		<thingClass>Rimhammer40k.Spaceship.Building_SpaceshipCargo</thingClass>
+		<thingClass>O21Toolbox.Spaceship.Building_SpaceshipCargo</thingClass>
 		<graphicData>
 			<texPath>Things/Ships/Imperium/MarauderImperium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -78,8 +78,8 @@
 		<size>(7,7)</size>
 		<comps>
 			<!-- graphicData and size only applies to the landed ship. Comp_Spaceship is used to provide the flying and shadow textures, as well as any other needed data. -->
-			<li Class="Rimhammer40k.Spaceship.CompProperties_Spaceship">
-				<compClass>Rimhammer40k.Spaceship.Comp_Spaceship</compClass>
+			<li Class="O21Toolbox.Spaceship.CompProperties_Spaceship">
+				<compClass>O21Toolbox.Spaceship.Comp_Spaceship</compClass>
 				<!-- Texture used when in flight, turrets are only really there when landed so it is best to have a texture with them included for during flight. -->
 				<flyingTexPath>Things/Ships/Imperium/MarauderImperiumFlying</flyingTexPath>
 				<!-- Texture used when in flight for the shadow projected onto the ground below. -->
@@ -87,9 +87,9 @@
 				<!-- Texture used when landing and taking off, good for providing a middle animation. Example: Folding wings, or VTOL engines. -->
 				<landingTexPath>Things/Ships/Imperium/MarauderImperiumFlying</landingTexPath>
 				<!-- Drawsize used for flight. -->
-				<drawSize>(7.5, 1, 7.5)</drawSize>
+				<drawSize>(7.5, 7.5)</drawSize>
 				<!-- Actual size of ship in flight. -->
-				<size>(7, 1, 7)</size>
+				<size>(7, 7)</size>
 				<!-- List of roles this ship can perform in -->
 				<typeList>
 					<!-- Can show up as a bombing craft in airstrikes -->
@@ -114,7 +114,7 @@
 						<!-- Def for the turret. -->
 						<turretDef>MarauderTurret</turretDef>
 						<!-- Offset applied to this turret -->
-						<turretOffset>(0, 0, 3)</turretOffset>
+						<turretOffset>(0, 3)</turretOffset>
 						<!-- When the turret can fire. Always = Any time at all, Landed = Only when on the ground, Flying = Only while flying. -->
 						<activeWhen>Always</activeWhen>
 					</li>

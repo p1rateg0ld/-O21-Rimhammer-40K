@@ -5,7 +5,7 @@
 		<defName>OrbitalRelayImperium</defName>
 		<label>orbital relay (imperium)</label>
 		<description>This communication array is able to contact nearby factions, ships and comms satellites orbiting around the planet.</description>
-		<thingClass>Rimhammer40k.Spaceship.Building_OrbitalRelay</thingClass>
+		<thingClass>O21Toolbox.Spaceship.Building_OrbitalRelay</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/Security/IG/Tarantula/IG_tarantula_comms_menu</texPath>
@@ -46,12 +46,12 @@
 		<designationCategory>Ship</designationCategory>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<placeWorkers>
-			<li>Rimhammer40k.Spaceship.PlaceWorker_TotallyNotUnderRoof</li>
-			<li>Rimhammer40k.Spaceship.PlaceWorker_OnlyOneBuilding</li>
+			<li>O21Toolbox.Spaceship.PlaceWorker_TotallyNotUnderRoof</li>
+			<li>O21Toolbox.Spaceship.PlaceWorker_OnlyOneBuilding</li>
 		</placeWorkers>
 		<comps>
-			<!-- <li Class="Rimhammer40k.Spaceship.CompProperties_OrbitalRelay">
-				<compClass>Rimhammer40k.Spaceship.Comp_OrbitalRelay</compClass>
+			<!-- <li Class="O21Toolbox.Spaceship.CompProperties_OrbitalRelay">
+				<compClass>O21Toolbox.Spaceship.Comp_OrbitalRelay</compClass>
 				<dishTexture>Things/Building/Security/IG/Tarantula/IG_tarantula_comms</dishTexture>
 				<size>(3.6, 1.0, 3.6)</size>
 			</li> -->

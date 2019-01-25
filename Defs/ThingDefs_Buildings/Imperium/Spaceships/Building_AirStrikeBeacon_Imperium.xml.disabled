@@ -5,7 +5,7 @@
 		<defName>AirStrikeBeacon</defName>
 		<label>air strike beacon</label>
 		<description>A beacon to designate an air strike target position.</description>
-		<thingClass>Rimhammer40k.Spaceship.Building_AirStrikeBeacon</thingClass>
+		<thingClass>O21Toolbox.Spaceship.Building_AirStrikeBeacon</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Building/AirStrikeBeacon/AirStrikeBeacon</texPath>

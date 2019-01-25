@@ -9,13 +9,6 @@
 	</JobDef>
 	
 	<JobDef>
-		<defName>EnterSMCDRMH</defName>
-		<driverClass>Rimhammer40k.JobDriver_EnterSMCD_RH</driverClass>
-		<reportString>using requisition relay.</reportString>
-		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	</JobDef>
-	
-	<JobDef>
 		<defName>EnterBunker</defName>
 		<driverClass>O21Toolbox.Bunker.JobDriver_EnterBunker</driverClass>
 		<reportString>entering bunker.</reportString>

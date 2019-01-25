@@ -5,7 +5,7 @@
 		<defName>LandingPad_Imperium</defName>
 		<label>landing pad (imperium)</label>
 		<description>Flat platform allowing voidships to land.</description>
-		<thingClass>Rimhammer40k.Spaceship.Building_LandingPad</thingClass>
+		<thingClass>O21Toolbox.Spaceship.Building_LandingPad</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Ships/Imperium/LandingPad</texPath>
@@ -37,8 +37,8 @@
 		<designationCategory>Ship</designationCategory>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<placeWorkers>
-			<li>Rimhammer40k.Spaceship.PlaceWorker_TotallyNotUnderRoof</li>
-			<li>Rimhammer40k.Spaceship.PlaceWorker_NotUnderBuilding</li>
+			<li>O21Toolbox.Spaceship.PlaceWorker_TotallyNotUnderRoof</li>
+			<li>O21Toolbox.Spaceship.PlaceWorker_NotUnderBuilding</li>
 		</placeWorkers>
 		<comps>
 			<li Class="CompProperties_Power">

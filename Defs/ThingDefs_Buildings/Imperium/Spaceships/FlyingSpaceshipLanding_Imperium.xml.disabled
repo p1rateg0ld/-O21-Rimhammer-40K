@@ -2,10 +2,10 @@
 <Defs>
 
 	<ThingDef>
-		<defName>FlyingSpaceshipTakingOff</defName>
+		<defName>FlyingSpaceshipLanding</defName>
 		<label>spaceship</label>
 		<description>A spaceship used by MiningCo. to maintain a link between ground operations and the orbital station orbiting around the planet.</description>
-		<thingClass>Rimhammer40k.Spaceship.FlyingSpaceshipTakingOff</thingClass>
+		<thingClass>O21Toolbox.Spaceship.FlyingSpaceshipLanding</thingClass>
 		<category>Ethereal</category>
 		<tickerType>Normal</tickerType>
 		<graphicData>
