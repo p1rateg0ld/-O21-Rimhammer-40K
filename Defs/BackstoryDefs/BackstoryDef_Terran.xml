@@ -587,7 +587,7 @@
 	</AlienRace.BackstoryDef>
 
 	<AlienRace.BackstoryDef> <!-- Krieg Soldier -->
-		<defName>BackstoryTerraO21</defName>
+		<defName>BackstoryTerran17</defName>
 		<title>Steel Legion Guardsman</title>
 		<titleShort>Steel Legion Guardsman</titleShort>
 		<baseDescription>Hailing from the hive world Armageddon, these guardsmen are well trained in the use of many of the Astra Militarums vehicles.</baseDescription>
