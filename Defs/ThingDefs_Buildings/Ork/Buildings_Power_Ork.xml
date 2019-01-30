@@ -64,7 +64,7 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Ork_Research</li>
+			<li>O21_Ork_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_OrkPowerGen</designatorDropdown>
 	</ThingDef>
@@ -135,7 +135,7 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Ork_Research</li>
+			<li>O21_Ork_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_OrkPowerGen</designatorDropdown>
 	</ThingDef>

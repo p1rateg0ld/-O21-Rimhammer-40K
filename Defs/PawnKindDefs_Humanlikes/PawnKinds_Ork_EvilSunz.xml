@@ -9,6 +9,7 @@
 		<backstoryCategories>
 			<li>OrkBackstory</li>
 		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<weaponTags>
 			<li>OrkRanged</li>
 			<li>OrkMelee</li>

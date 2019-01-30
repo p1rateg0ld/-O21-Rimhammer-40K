@@ -21,7 +21,7 @@
 		</apparel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Imp_SMPowerArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_SMPowerArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -87,7 +87,7 @@
 		</apparel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Imp_SMTerminatorArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_SMTerminatorArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -128,7 +128,7 @@
 		</apparel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Imp_SMPowerArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_SMPowerArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -183,7 +183,7 @@
 		</apparel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Imp_SMTerminatorArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_SMTerminatorArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	

@@ -3,7 +3,7 @@
 
 	<!--==================== Base Weapon Template =========================-->
 	
-	<ThingDef Abstract="True" Name="N17BaseWeapon">
+	<ThingDef Abstract="True" Name="O21BaseWeapon">
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
 		<drawGUIOverlay>true</drawGUIOverlay>
@@ -34,7 +34,7 @@
 	
 	<!--==================== Mod - Base Gun Weapon Template =========================-->
 			
-	<ThingDef Name="N17BaseGun" Abstract="True" ParentName="N17BaseWeapon">
+	<ThingDef Name="O21BaseGun" Abstract="True" ParentName="O21BaseWeapon">
 		<techLevel>Industrial</techLevel>
 		<smeltable>true</smeltable>
 		<thingCategories>
@@ -57,7 +57,7 @@
 
 	<!--==================== Mod - Base Makeable Gun Weapon Template =========================-->
   
-	<ThingDef Name="N17BaseMakeableGun" ParentName="N17BaseGun" Abstract="True">
+	<ThingDef Name="O21BaseMakeableGun" ParentName="O21BaseGun" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>

@@ -38,7 +38,7 @@
 			<designationCategory>Floors</designationCategory>
 			<costList />
 			<researchPrerequisites>
-				<li>N17_Nec_Research</li>
+				<li>O21_Nec_Research</li>
 			</researchPrerequisites>
 	</TerrainDef>
 

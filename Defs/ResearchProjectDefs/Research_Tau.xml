@@ -9,7 +9,7 @@
 	
 	<ResearchProjectDef>
 		<tab>RH40K_Tab4</tab>
-		<defName>N17_Tau_Research</defName>
+		<defName>O21_Tau_Research</defName>
 		<label>Tau Research</label>
 		<description>Allows you to research Tau subjects.</description>
 		<baseCost>100</baseCost>
@@ -23,12 +23,12 @@
 	
 			<ResearchProjectDef>
 				<tab>RH40K_Tab4</tab>
-				<defName>N17_Tau_WaterCaste</defName>
+				<defName>O21_Tau_WaterCaste</defName>
 				<label>Water Caste</label>
 				<description>Provides access to knowledge of the Water Caste.</description>
 				<baseCost>200</baseCost>
 				<prerequisites>
-					<li>N17_Tau_Research</li>
+					<li>O21_Tau_Research</li>
 				</prerequisites>
 				<techLevel>Spacer</techLevel>
 				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -38,12 +38,12 @@
 	
 				<ResearchProjectDef>
 					<tab>RH40K_Tab4</tab>
-					<defName>N17_Tau_Allies</defName>
+					<defName>O21_Tau_Allies</defName>
 					<label>Member Races</label>
 					<description>Provides access to knowledge of the member races of the Tau Empire.</description>
 					<baseCost>300</baseCost>
 					<prerequisites>
-						<li>N17_Tau_WaterCaste</li>
+						<li>O21_Tau_WaterCaste</li>
 					</prerequisites>
 					<techLevel>Spacer</techLevel>
 					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -53,12 +53,12 @@
 	
 					<ResearchProjectDef>
 						<tab>RH40K_Tab4</tab>
-						<defName>N17_Tau_Allies_Human</defName>
+						<defName>O21_Tau_Allies_Human</defName>
 						<label>Gue'vesa</label>
 						<description>Provides access to knowledge of the Gue'vesa, humans that work for the Greater Good. This includes the ability to access them as reinforcements from an Orbital Relay (separate research).</description>
 						<baseCost>300</baseCost>
 						<prerequisites>
-							<li>N17_Tau_Allies</li>
+							<li>O21_Tau_Allies</li>
 						</prerequisites>
 						<techLevel>Spacer</techLevel>
 						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -68,12 +68,12 @@
 	
 						<ResearchProjectDef>
 							<tab>RH40K_Tab4</tab>
-							<defName>N17_Tau_Allies_HumanApparel</defName>
+							<defName>O21_Tau_Allies_HumanApparel</defName>
 							<label>Gue'vesa Apparel</label>
 							<description>Provides access to knowledge of the Gue'vesa uniform and armour.</description>
 							<baseCost>400</baseCost>
 							<prerequisites>
-								<li>N17_Tau_Allies_Human</li>
+								<li>O21_Tau_Allies_Human</li>
 							</prerequisites>
 							<techLevel>Spacer</techLevel>
 							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -83,12 +83,12 @@
 		
 						<!-- <ResearchProjectDef>
 							<tab>RH40K_Tab4</tab>
-							<defName>N17_Tau_Allies_HumanWeapons</defName>
+							<defName>O21_Tau_Allies_HumanWeapons</defName>
 							<label>Gue'vesa Weapons</label>
 							<description>Provides access to knowledge of the Gue'vesa lasweapons.</description>
 							<baseCost>400</baseCost>
 							<prerequisites>
-								<li>N17_Tau_Allies_Human</li>
+								<li>O21_Tau_Allies_Human</li>
 							</prerequisites>
 							<techLevel>Spacer</techLevel>
 							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -98,12 +98,12 @@
 	
 					<ResearchProjectDef>
 						<tab>RH40K_Tab4</tab>
-						<defName>N17_Tau_Allies_Kroot</defName>
+						<defName>O21_Tau_Allies_Kroot</defName>
 						<label>Kroot</label>
 						<description>Provides access to knowledge of the Kroot. This includes the ability to access them as reinforcements from an Orbital Relay (separate research).</description>
 						<baseCost>300</baseCost>
 						<prerequisites>
-							<li>N17_Tau_Allies</li>
+							<li>O21_Tau_Allies</li>
 						</prerequisites>
 						<techLevel>Spacer</techLevel>
 						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -113,12 +113,12 @@
 	
 						<ResearchProjectDef>
 							<tab>RH40K_Tab4</tab>
-							<defName>N17_Tau_Allies_KrootApparel</defName>
+							<defName>O21_Tau_Allies_KrootApparel</defName>
 							<label>Kroot Apparel</label>
 							<description>Provides access to knowledge of the Kroot clothing and armour.</description>
 							<baseCost>400</baseCost>
 							<prerequisites>
-								<li>N17_Tau_Allies_Kroot</li>
+								<li>O21_Tau_Allies_Kroot</li>
 							</prerequisites>
 							<techLevel>Spacer</techLevel>
 							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -128,12 +128,12 @@
 		
 						<ResearchProjectDef>
 							<tab>RH40K_Tab4</tab>
-							<defName>N17_Tau_Allies_KrootWeapons</defName>
+							<defName>O21_Tau_Allies_KrootWeapons</defName>
 							<label>Kroot Weapons</label>
 							<description>Provides access to knowledge of the Kroot rifles and knives.</description>
 							<baseCost>400</baseCost>
 							<prerequisites>
-								<li>N17_Tau_Allies_Kroot</li>
+								<li>O21_Tau_Allies_Kroot</li>
 							</prerequisites>
 							<techLevel>Spacer</techLevel>
 							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -143,12 +143,12 @@
 		
 						<ResearchProjectDef>
 							<tab>RH40K_Tab4</tab>
-							<defName>N17_Tau_Allies_KrootTrusted</defName>
+							<defName>O21_Tau_Allies_KrootTrusted</defName>
 							<label>Kroot Trusted</label>
 							<description>Provides access to knowledge of the Kroot Trusted armour.</description>
 							<baseCost>400</baseCost>
 							<prerequisites>
-								<li>N17_Tau_Allies_Kroot</li>
+								<li>O21_Tau_Allies_Kroot</li>
 							</prerequisites>
 							<techLevel>Spacer</techLevel>
 							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -158,12 +158,12 @@
 						
 					<ResearchProjectDef>
 						<tab>RH40K_Tab4</tab>
-						<defName>N17_Tau_Allies_Vespid</defName>
+						<defName>O21_Tau_Allies_Vespid</defName>
 						<label>Vespids</label>
 						<description>Provides access to knowledge of the Vespids. This includes the ability to access them as reinforcements from an Orbital Relay (separate research).</description>
 						<baseCost>300</baseCost>
 						<prerequisites>
-							<li>N17_Tau_Allies</li>
+							<li>O21_Tau_Allies</li>
 						</prerequisites>
 						<techLevel>Spacer</techLevel>
 						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -173,12 +173,12 @@
 	
 						<ResearchProjectDef>
 							<tab>RH40K_Tab4</tab>
-							<defName>N17_Tau_Allies_VespidEquipment</defName>
+							<defName>O21_Tau_Allies_VespidEquipment</defName>
 							<label>Vespid Equipment</label>
 							<description>Provides access to knowledge of the Vespid armour made by the Tau, and their weapon the Neutron Blaster.</description>
 							<baseCost>400</baseCost>
 							<prerequisites>
-								<li>N17_Tau_Allies_Vespid</li>
+								<li>O21_Tau_Allies_Vespid</li>
 							</prerequisites>
 							<techLevel>Spacer</techLevel>
 							<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -188,12 +188,12 @@
 	
 			<ResearchProjectDef>
 				<tab>RH40K_Tab4</tab>
-				<defName>N17_Tau_FireCaste</defName>
+				<defName>O21_Tau_FireCaste</defName>
 				<label>Fire Caste</label>
 				<description>Provides access to knowledge of the Fire Caste.</description>
 				<baseCost>200</baseCost>
 				<prerequisites>
-					<li>N17_Tau_Research</li>
+					<li>O21_Tau_Research</li>
 				</prerequisites>
 				<techLevel>Spacer</techLevel>
 				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -203,12 +203,12 @@
 	
 				<ResearchProjectDef>
 					<tab>RH40K_Tab4</tab>
-					<defName>N17_Tau_BasicArmor</defName>
+					<defName>O21_Tau_BasicArmor</defName>
 					<label>Basic Armour</label>
 					<description>Provides access to knowledge of the Tau basic armour for Scouts and Fire Warriors.</description>
 					<baseCost>400</baseCost>
 					<prerequisites>
-						<li>N17_Tau_FireCaste</li>
+						<li>O21_Tau_FireCaste</li>
 					</prerequisites>
 					<techLevel>Spacer</techLevel>
 					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -218,12 +218,12 @@
 	
 				<ResearchProjectDef>
 					<tab>RH40K_Tab4</tab>
-					<defName>N17_Tau_BasicWeapons</defName>
+					<defName>O21_Tau_BasicWeapons</defName>
 					<label>Basic Weapons</label>
 					<description>Provides access to knowledge of the Tau basic weapons.</description>
 					<baseCost>400</baseCost>
 					<prerequisites>
-						<li>N17_Tau_FireCaste</li>
+						<li>O21_Tau_FireCaste</li>
 					</prerequisites>
 					<techLevel>Spacer</techLevel>
 					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -233,12 +233,12 @@
 	
 					<ResearchProjectDef>
 						<tab>RH40K_Tab4</tab>
-						<defName>N17_Tau_HeavyWeapons</defName>
+						<defName>O21_Tau_HeavyWeapons</defName>
 						<label>Heavy Weapons</label>
 						<description>Provides access to knowledge of the Tau heavy weapons.</description>
 						<baseCost>400</baseCost>
 						<prerequisites>
-							<li>N17_Tau_BasicWeapons</li>
+							<li>O21_Tau_BasicWeapons</li>
 						</prerequisites>
 						<techLevel>Spacer</techLevel>
 						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -248,12 +248,12 @@
 	
 			<ResearchProjectDef>
 				<tab>RH40K_Tab4</tab>
-				<defName>N17_Tau_EarthCaste</defName>
+				<defName>O21_Tau_EarthCaste</defName>
 				<label>Earth Caste</label>
 				<description>Provides access to knowledge of the Earth Caste.</description>
 				<baseCost>200</baseCost>
 				<prerequisites>
-					<li>N17_Tau_Research</li>
+					<li>O21_Tau_Research</li>
 				</prerequisites>
 				<techLevel>Spacer</techLevel>
 				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -263,12 +263,12 @@
 	
 				<ResearchProjectDef>
 					<tab>RH40K_Tab4</tab>
-					<defName>N17_Tau_Turrets</defName>
+					<defName>O21_Tau_Turrets</defName>
 					<label>Turret Emplacements</label>
 					<description>Provides access to turret emplacements from the Tau.</description>
 					<baseCost>200</baseCost>
 					<prerequisites>
-						<li>N17_Tau_EarthCaste</li>
+						<li>O21_Tau_EarthCaste</li>
 					</prerequisites>
 					<techLevel>Spacer</techLevel>
 					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -278,12 +278,12 @@
 		
 				<ResearchProjectDef>
 					<tab>RH40K_Tab4</tab>
-					<defName>N17_Tau_DefStructures</defName>
+					<defName>O21_Tau_DefStructures</defName>
 					<label>Defensive Structures</label>
 					<description>Provides access defensive structures like the Aegis.</description>
 					<baseCost>200</baseCost>
 					<prerequisites>
-						<li>N17_Tau_EarthCaste</li>
+						<li>O21_Tau_EarthCaste</li>
 					</prerequisites>
 					<techLevel>Spacer</techLevel>
 					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -293,12 +293,12 @@
 	
 			<!-- <ResearchProjectDef>
 				<tab>RH40K_Tab4</tab>
-				<defName>N17_Tau_AirCaste</defName>
+				<defName>O21_Tau_AirCaste</defName>
 				<label>Air Caste</label>
 				<description>Provides access to knowledge of the Air Caste.</description>
 				<baseCost>200</baseCost>
 				<prerequisites>
-					<li>N17_Tau_Research</li>
+					<li>O21_Tau_Research</li>
 				</prerequisites>
 				<techLevel>Spacer</techLevel>
 				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -308,12 +308,12 @@
 	
 			<!-- <ResearchProjectDef>
 				<tab>RH40K_Tab4</tab>
-				<defName>N17_Tau_EtherealCaste</defName>
+				<defName>O21_Tau_EtherealCaste</defName>
 				<label>Ethereal Caste</label>
 				<description>Provides access to knowledge of the Ethereal Caste.</description>
 				<baseCost>200</baseCost>
 				<prerequisites>
-					<li>N17_Tau_Research</li>
+					<li>O21_Tau_Research</li>
 				</prerequisites>
 				<techLevel>Spacer</techLevel>
 				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>

@@ -3,7 +3,7 @@
 
 	<!-- Plasma Pistol -->
 
-	<!-- <ThingDef ParentName="N17BaseMakeableGun">
+	<!-- <ThingDef ParentName="O21BaseMakeableGun">
 		<defName>OGI_Gun_PlasmaPistol</defName>
 		<label>Plasma Pistol</label>
 		<description>The Plasma Pistol is the smallest variant in the Plasma Weapons family. Each shot from a plasma pistol contains all the destructive fury of a larger Plasma Gun, although with a reduced range and rate of fire. The Traitor Legions have long made use of larger plasma weapons containing hydrogen fuel in a higher quantum state, making them both more powerful and more dangerous to wield. The Plasma Pistol is most commonly carried by officers of both the Space Marines and the Imperial Guard. Aside from individual Imperial officers, some specialized assault troops such as Assault Marines are also sometimes armed with Plasma Pistols.</description>
@@ -104,7 +104,7 @@
  
 	<!-- Plasma Gun -->
 
-	<!-- <ThingDef ParentName="N17BaseMakeableGun">
+	<!-- <ThingDef ParentName="O21BaseMakeableGun">
 		<thingClass>AdeptusMechanicus.ThingDef_GunOH</thingClass>
 		<defName>OGI_Gun_PlasmaGun</defName>
 		<label>Plasma Gun</label>
@@ -208,7 +208,7 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 	
 	<!-- Plasma Cannon -->
 	
-	<!-- <ThingDef ParentName="N17BaseMakeableGun">
+	<!-- <ThingDef ParentName="O21BaseMakeableGun">
 		<thingClass>AdeptusMechanicus.ThingDef_GunOH</thingClass>
 		<defName>OGI_Gun_PlasmaCannon</defName>
 		<label>Plasma Cannon</label>
@@ -288,7 +288,7 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 	</ThingDef>
 
 		<ThingDef ParentName="BaseBullet">
-			<defName>N17_Bullet_PlasmaCannon</defName>
+			<defName>O21_Bullet_PlasmaCannon</defName>
 			<label>Plasma Bolt</label>
 			<graphicData>
 				<texPath>Things/Projectile/PlamsShotLrg</texPath>
@@ -297,13 +297,13 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 			<thingClass>Projectile_Explosive</thingClass>
 			<projectile>
 				<flyOverhead>false</flyOverhead>
-				<damageDef>N17PlasmaCannon</damageDef>
+				<damageDef>O21PlasmaCannon</damageDef>
 				<explosionRadius>2.55</explosionRadius>
 				<damageAmountBase>90</damageAmountBase>
 				<armorPenetrationBase>0.68</armorPenetrationBase>
 				<stoppingPower>3</stoppingPower>
 				<speed>55</speed>
-				<soundExplode>N17PC_Explosion</soundExplode>
+				<soundExplode>O21PC_Explosion</soundExplode>
 			</projectile>
 		</ThingDef> -->
 

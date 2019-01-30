@@ -12,6 +12,7 @@
 		<apparelTags>
 			<li>SororitasApparel</li>
 		</apparelTags>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	</PawnKindDef>
 
 	<PawnKindDef Name="MartyredLadyBase" ParentName="MartyredLadyAbstractBase">

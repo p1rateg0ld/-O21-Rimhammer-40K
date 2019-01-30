@@ -9,7 +9,7 @@
 	
 	<ResearchProjectDef>
 		<tab>RH40K_Tab4</tab>
-		<defName>N17_Nec_Research</defName>
+		<defName>O21_Nec_Research</defName>
 		<label>Necron Research</label>
 		<description>Allows you to research Necron subjects.</description>
 		<baseCost>100</baseCost>
@@ -23,12 +23,12 @@
 	
 		<ResearchProjectDef>
 			<tab>RH40K_Tab4</tab>
-			<defName>N17_Nec_BasicWeapons</defName>
+			<defName>O21_Nec_BasicWeapons</defName>
 			<label>Basic Weapons</label>
 			<description>Provides access to knowledge of the Necron basic weapons.</description>
 			<baseCost>400</baseCost>
 			<prerequisites>
-				<li>N17_Nec_Research</li>
+				<li>O21_Nec_Research</li>
 			</prerequisites>
 			<techLevel>Spacer</techLevel>
 			<requiredResearchBuilding>NecronResearchBench</requiredResearchBuilding>
@@ -38,12 +38,12 @@
 		
 			<ResearchProjectDef>
 				<tab>RH40K_Tab4</tab>
-				<defName>N17_Nec_HeavyWeapons</defName>
+				<defName>O21_Nec_HeavyWeapons</defName>
 				<label>Heavy Weapons</label>
 				<description>Provides access to knowledge of the Necron heavy weapons.</description>
 				<baseCost>400</baseCost>
 				<prerequisites>
-					<li>N17_Nec_BasicWeapons</li>
+					<li>O21_Nec_BasicWeapons</li>
 				</prerequisites>
 				<techLevel>Spacer</techLevel>
 				<requiredResearchBuilding>NecronResearchBench</requiredResearchBuilding>
@@ -53,12 +53,12 @@
 		
 		<!-- <ResearchProjectDef>
 			<tab>RH40K_Tab4</tab>
-			<defName>N17_Nec_Turrets</defName>
+			<defName>O21_Nec_Turrets</defName>
 			<label>Turret Emplacements</label>
 			<description>Provides access to turret emplacements from the Necron.</description>
 			<baseCost>400</baseCost>
 			<prerequisites>
-				<li>N17_Nec_Research</li>
+				<li>O21_Nec_Research</li>
 			</prerequisites>
 			<techLevel>Spacer</techLevel>
 			<requiredResearchBuilding>NecronResearchBench</requiredResearchBuilding>
@@ -68,12 +68,12 @@
 			
 		<ResearchProjectDef>
 			<tab>RH40K_Tab4</tab>
-			<defName>N17_Nec_DefStructures</defName>
+			<defName>O21_Nec_DefStructures</defName>
 			<label>Defensive Structures</label>
 			<description>Provides access defensive structures like the Aegis.</description>
 			<baseCost>400</baseCost>
 			<prerequisites>
-				<li>N17_Nec_Research</li>
+				<li>O21_Nec_Research</li>
 			</prerequisites>
 			<techLevel>Spacer</techLevel>
 			<requiredResearchBuilding>NecronResearchBench</requiredResearchBuilding>

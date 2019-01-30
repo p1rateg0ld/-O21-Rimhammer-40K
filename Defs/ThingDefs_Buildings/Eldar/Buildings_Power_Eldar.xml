@@ -64,7 +64,7 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Eld_Research</li>
+			<li>O21_Eld_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_EldarPowerGen</designatorDropdown>
 	</ThingDef>
@@ -135,7 +135,7 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Eld_Research</li>
+			<li>O21_Eld_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_EldarPowerGen</designatorDropdown>
 	</ThingDef>

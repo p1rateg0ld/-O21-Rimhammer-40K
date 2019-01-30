@@ -50,7 +50,7 @@
 				<li>FueledSmithy</li>
 				<li>CraftingSpot</li>
 			</recipeUsers>
-			<researchPrerequisite>N17_Ork_Weapons_Basic</researchPrerequisite>
+			<researchPrerequisite>O21_Ork_Weapons_Basic</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>10</Steel>
@@ -231,7 +231,7 @@
 				<li>FueledSmithy</li>
 				<li>CraftingSpot</li>
 			</recipeUsers>
-		<researchPrerequisite>N17_Ork_Weapons_Choppas</researchPrerequisite>
+		<researchPrerequisite>O21_Ork_Weapons_Choppas</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>150</costStuffCount>
 		<costList>				<!-- USED TO CONTROL WHAT IS GIVEN WHEN ITEM IS SMELTED TIER 1-->

@@ -2,8 +2,8 @@
 <Defs>
 
 	<ThingDef ParentName="BenchBase">
-		<defName>ImperialRefinery</defName>
-		<label>imperial refinery</label>
+		<defName>O21_CeramiteRefinery</defName>
+		<label>ceramite refinery</label>
 		<description>Refines ceramite and other imperial resources into their various forms.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
@@ -64,7 +64,7 @@
 		<surfaceType>Item</surfaceType>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<researchPrerequisites>
-			<li>N17_Imp_Refining</li>
+			<li>O21_Imp_Refining</li>
 		</researchPrerequisites>
 	</ThingDef>
 

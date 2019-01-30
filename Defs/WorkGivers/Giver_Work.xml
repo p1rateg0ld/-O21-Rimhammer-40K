@@ -8,7 +8,7 @@
 		<workType>Crafting</workType>
 		<priorityInType>97</priorityInType>
 		<fixedBillGiverDefs>
-			<li>ImperialRefinery</li>
+			<li>O21_CeramiteRefinery</li>
 		</fixedBillGiverDefs>
 		<verb>refine materials</verb>
 		<gerund>refining materials at</gerund>

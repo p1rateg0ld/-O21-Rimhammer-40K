@@ -58,7 +58,7 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -122,7 +122,7 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -188,7 +188,7 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGAdvancedWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGAdvancedWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>

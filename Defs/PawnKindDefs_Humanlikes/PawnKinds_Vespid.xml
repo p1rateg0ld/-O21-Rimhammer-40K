@@ -15,6 +15,7 @@
 		<apparelTags>
 			<li>VespidApparel</li>
 		</apparelTags>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	</PawnKindDef>
   
 	<!-- ============================ Tau Civilian Base ========================== -->

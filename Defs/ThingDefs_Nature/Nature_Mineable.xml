@@ -3,14 +3,14 @@
 
 	<!-- Abstract Bases -->
 
-	<ThingDef Name="N17_BuildingNaturalBase" Abstract="True">
+	<ThingDef Name="O21_BuildingNaturalBase" Abstract="True">
 		<category>Building</category>
 		<selectable>true</selectable>
 		<drawerType>MapMeshOnly</drawerType>
 		<filthLeaving>Filth_RubbleRock</filthLeaving>
 	</ThingDef>
 
-	<ThingDef Name="N17_RockBase" ParentName="N17_BuildingNaturalBase" Abstract="True" >
+	<ThingDef Name="O21_RockBase" ParentName="O21_BuildingNaturalBase" Abstract="True" >
 		<thingClass>Mineable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Linked/Rock_Atlas</texPath>
@@ -47,7 +47,7 @@
 
 	<!-- Raw Ceramite -->
 
-	<ThingDef ParentName="N17_RockBase">
+	<ThingDef ParentName="O21_RockBase">
 		<defName>MineableCeramite</defName>
 		<label>Raw Ceramite</label>
 		<graphicData>

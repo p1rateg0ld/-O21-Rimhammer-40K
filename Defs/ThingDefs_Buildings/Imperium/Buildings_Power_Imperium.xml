@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>ImpGenerator_A_Small</defName>
+		<defName>O21_ImpGenerator_A_Small</defName>
 		<label>Small Imperial Generator</label>
 		<description>Generates energy through technology unknown to most of the Imperium, all they need to know is that it works.</description>
 		<graphicData>
@@ -65,13 +65,13 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_Research</li>
+			<li>O21_Imp_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_ImpPowerGen</designatorDropdown>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>ImpGenerator_B_Large</defName>
+		<defName>O21_ImpGenerator_B_Large</defName>
 		<label>Large Imperial Generator</label>
 		<description>Generates energy through technology unknown to most of the Imperium, all they need to know is that it works. Note: Must be placed on a steam geyser</description>
 		<graphicData>
@@ -138,7 +138,7 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_Research</li>
+			<li>O21_Imp_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_ImpPowerGen</designatorDropdown>
 	</ThingDef>

@@ -80,7 +80,7 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<techLevel>Archotech</techLevel>
 		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
+			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
 		<uiIconScale>0.90</uiIconScale>
 	</ThingDef>

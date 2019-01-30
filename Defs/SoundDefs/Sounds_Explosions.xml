@@ -4,7 +4,7 @@
 	<!--==================== Imperial - Plasma Pistol Explosion Sound =========================-->
 
 	<SoundDef>
-		<defName>N17PP_Explosion</defName>
+		<defName>O21PP_Explosion</defName>
 		<context>MapOnly</context>
 		<eventNames />  
 		<maxSimultaneous>1</maxSimultaneous>  
@@ -32,7 +32,7 @@
 	<!--==================== Imperial - Plasma Cannon Explosion Sound =========================-->
 
 	<SoundDef>
-		<defName>N17PC_Explosion</defName>
+		<defName>O21PC_Explosion</defName>
 		<context>MapOnly</context>
 		<eventNames />  
 		<maxSimultaneous>1</maxSimultaneous>  
@@ -60,7 +60,7 @@
 	<!--==================== Imperial - Autocannon Explosion Sound =========================-->
 
 	<SoundDef>
-		<defName>N17AC_Explosion</defName>
+		<defName>O21AC_Explosion</defName>
 		<context>MapOnly</context>
 		<eventNames />  
 		<maxSimultaneous>1</maxSimultaneous>  
@@ -87,7 +87,7 @@
 	<!--==================== Imperial - Flamer Explosion Sound =========================-->
 
 	<SoundDef>
-		<defName>N17FL_Explosion</defName>
+		<defName>O21FL_Explosion</defName>
 		<context>MapOnly</context>
 		<eventNames />  
 		<maxSimultaneous>1</maxSimultaneous>  

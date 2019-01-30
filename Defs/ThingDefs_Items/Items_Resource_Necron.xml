@@ -131,7 +131,7 @@
 			<Necrodermis>25</Necrodermis>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>N17_Nec_Research</researchPrerequisite>
+			<researchPrerequisite>O21_Nec_Research</researchPrerequisite>
 			<recipeUsers>
 				<li>NecronFabricationAltar</li>
 			</recipeUsers>

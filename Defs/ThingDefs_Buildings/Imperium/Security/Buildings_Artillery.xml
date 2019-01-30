@@ -82,7 +82,7 @@
 			<turretTopDrawSize>2</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGBasicTurrets</li>
+			<li>O21_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/IG_manned_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>

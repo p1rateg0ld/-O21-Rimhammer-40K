@@ -48,7 +48,7 @@
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
 			</recipeUsers>
-			<researchPrerequisite>N17_Ork_Apparel</researchPrerequisite>
+			<researchPrerequisite>O21_Ork_Apparel</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -159,7 +159,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Ork_Apparel_Kommando</researchPrerequisite>
+			<researchPrerequisite>O21_Ork_Apparel_Kommando</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 			</skillRequirements>
@@ -214,7 +214,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Ork_Apparel_Red</researchPrerequisite>
+			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>2</Crafting>
 			</skillRequirements>
@@ -276,7 +276,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Ork_Apparel_Red</researchPrerequisite>
+			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -338,7 +338,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Ork_Apparel_Red</researchPrerequisite>
+			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -402,7 +402,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Ork_Apparel_Red</researchPrerequisite>
+			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -514,7 +514,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Ork_Apparel_Kommando</researchPrerequisite>
+			<researchPrerequisite>O21_Ork_Apparel_Kommando</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	

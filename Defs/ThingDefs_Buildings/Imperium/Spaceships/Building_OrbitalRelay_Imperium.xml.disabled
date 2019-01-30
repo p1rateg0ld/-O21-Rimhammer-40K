@@ -68,7 +68,7 @@
 			<ChunkSlagSteel>5</ChunkSlagSteel>
 		</killedLeavings>
 		<researchPrerequisites>
-			<li>N17_Imp_OrbitalRequisition</li>
+			<li>O21_Imp_OrbitalRequisition</li>
 		</researchPrerequisites>
 	</ThingDef>
 

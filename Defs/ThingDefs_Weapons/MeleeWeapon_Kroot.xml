@@ -52,7 +52,7 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>N17_Tau_Allies_KrootWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_KrootWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>

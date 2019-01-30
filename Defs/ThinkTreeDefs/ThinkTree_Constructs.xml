@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThinkTreeDef>
-		<defName>N17Construct</defName>
+		<defName>O21Construct</defName>
 		<thinkRoot Class="ThinkNode_Priority">
       <subNodes>
         <!-- Keep lying down if we have to -->
@@ -149,7 +149,7 @@
 	</ThinkTreeDef>
 
 	<ThinkTreeDef>
-		<defName>N17ConstructConstant</defName>
+		<defName>O21ConstructConstant</defName>
 		<thinkRoot Class="ThinkNode_Priority">
 			<subNodes>
         <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">

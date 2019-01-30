@@ -50,7 +50,7 @@
 		</comps>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<researchPrerequisites>
-			<li>N17_Imp_OrbitalRequisition</li>
+			<li>O21_Imp_OrbitalRequisition</li>
 		</researchPrerequisites>
 	</ThingDef>
 

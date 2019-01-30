@@ -3,7 +3,7 @@
 
 	<!-- Eldar - Shuriken Pistol -->
 
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>EldarShurikenPistol</defName>
 		<label>Eldar Shuriken Pistol</label>
 		<description>The Shuriken Pistol, known in the Eldar Lexicon as murekh, is a smaller one-handed pistol version of the Shuriken Catapult. Amongst humans these weapons are sometimes referred to as "slingers" or "sling pistols." The shorter barrel length and smaller capacity reduces the weapon's efficiency and so limits the range, rate of fire and power. The shurikens it fires are identical to those used in the larger weapon; a spinning disc which can slice straight through flesh and bone. Certain Eldar heroes and warriors, such as Striking Scorpion Aspect Warriors, use Shuriken Pistols as their main weapon. Other Eldar units usually use them as secondary backup weapons.</description>
@@ -13,7 +13,7 @@
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_WeaponsLight</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_WeaponsLight</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>32000</WorkToMake>
@@ -34,7 +34,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_EShurikenPistol</defaultProjectile>
+				<defaultProjectile>O21_Bullet_EShurikenPistol</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<range>25</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -85,14 +85,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_EShurikenPistol</defName>
+		<defName>O21_Bullet_EShurikenPistol</defName>
 		<label>small Shuriken</label>
 		<graphicData>
 			<texPath>Things/Projectile/ShurikenSml</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>N17Shuriken</damageDef>
+			<damageDef>O21Shuriken</damageDef>
 			<damageAmountBase>3</damageAmountBase>
 			<armorPenetrationBase>0.16</armorPenetrationBase>
 			<speed>100</speed>
@@ -102,7 +102,7 @@
 
 	<!--==================== Eldar - Shuriken Catapult =========================-->
 
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>Eldar_Gun_EShurikenCatapult</defName>
 		<label>Eldar Shuriken Catapult</label>
 		<description>The Shuriken Catapult, or tuelean in the Eldar Lexicon, is the primary infantry weapon of Eldar Guardians. Like much of the technology of the Eldar, shuriken catapults are grown from the same psychoactive Wraithbone that forms the physical shell of the Craftworlds. A specialised subset of Bonesingers, taken from those who have previously walked the Path of the Warrior, are tasked with crafting the weapons used by those who would defend their home. All citizens of the craftworlds are trained in the use of the Shuriken Catapult as part of their preparation to form the Guardian militia in times of conflict. In the age of constant war that is the 41st Millennium, most Craftworlds are forced to become better acquainted with these lethal weapons than many of them would like.</description>
@@ -112,7 +112,7 @@
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_WeaponsLight</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_WeaponsLight</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>32000</WorkToMake>
@@ -133,7 +133,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_EShurikenCatapult</defaultProjectile>
+				<defaultProjectile>O21_Bullet_EShurikenCatapult</defaultProjectile>
 				<warmupTime>0.7</warmupTime>
 				<range>34</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -184,14 +184,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_EShurikenCatapult</defName>
+		<defName>O21_Bullet_EShurikenCatapult</defName>
 		<label>medium Shuriken</label>
 		<graphicData>
 			<texPath>Things/Projectile/ShurikenMed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>N17Shuriken</damageDef>
+			<damageDef>O21Shuriken</damageDef>
 			<damageAmountBase>8</damageAmountBase>
 			<armorPenetrationBase>0.16</armorPenetrationBase>
 			<speed>100</speed>
@@ -200,7 +200,7 @@
 	
 	<!--==================== Eldar - Range Longrifle =========================-->
 
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>EldarRangerLongrifle</defName>
 		<label>Eldar Longrifle</label>
 		<description>The Ranger Long Rifle is the favoured weapon of Eldar Rangers and Pathfinders. It is a long-barrelled rifle, superficially similar to the Imperial Sniper Rifle and Imperial Long-Las Rifle, that fires energy bolts capable of piercing most armour when aimed correctly. Unlike the mass-produced weapons of the Imperium, these potent Eldar weapons are hand-grown by Bonesingers with specific attention paid to the eyesight and grip, creating a weapon perfectly adapted to its user. The Ranger Long Rifle uses a Gyrostatic Arm to keep the weapon stable, dispensing with the clumsy bipods that must be used by the lesser races with their Sniper Rifles. The Gyrostatic Arm also all but eliminates recoil. Whereas the artificial crystals used by Imperial laser–technology struggle to maintain a focused beam over long distances, the psychically-grown crystals used by Eldar laser weapons are able to focus a tight beam of coherent light over a much greater distance, allowing a skilled user to punch through weak points in armour at great distances.</description>
@@ -210,7 +210,7 @@
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_WeaponsAdvanced</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_WeaponsAdvanced</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>42000</WorkToMake>
@@ -230,7 +230,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_ERangerLR</defaultProjectile>
+				<defaultProjectile>O21_Bullet_ERangerLR</defaultProjectile>
 				<warmupTime>2</warmupTime>
 				<range>45</range>
 				<soundCast>RangerLongrifleSound</soundCast>
@@ -279,14 +279,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_ERangerLR</defName>
+		<defName>O21_Bullet_ERangerLR</defName>
 		<label>Longrifle Round</label>
 		<graphicData>
 			<texPath>Things/Projectile/RailgunSml</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>N17Railgun</damageDef>
+			<damageDef>O21Railgun</damageDef>
 			<damageAmountBase>35</damageAmountBase>
 			<armorPenetrationBase>0.50</armorPenetrationBase>
 			<speed>135</speed>

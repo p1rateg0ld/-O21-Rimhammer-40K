@@ -9,6 +9,7 @@
 		<backstoryCategories>
 			<li>TerranBackstory</li>
 		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelTags>
 			<li>Sa'ceaGuevesaApparel</li>
 		</apparelTags>

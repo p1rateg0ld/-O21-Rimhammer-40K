@@ -14,7 +14,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Tau_Allies_VespidEquipment</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_VespidEquipment</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>8</Steel>

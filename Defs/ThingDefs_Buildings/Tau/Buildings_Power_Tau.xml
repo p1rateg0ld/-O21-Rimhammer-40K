@@ -64,7 +64,7 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Tau_Research</li>
+			<li>O21_Tau_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_TauPowerGen</designatorDropdown>
 	</ThingDef>
@@ -135,7 +135,7 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Tau_Research</li>
+			<li>O21_Tau_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_TauPowerGen</designatorDropdown>
 	</ThingDef>

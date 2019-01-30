@@ -45,7 +45,7 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>N17_Tau_Allies_KrootApparel</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_KrootApparel</researchPrerequisite>
 			<recipeUsers>
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -119,7 +119,7 @@
 			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>N17_Tau_Allies_KrootApparel</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_KrootApparel</researchPrerequisite>
 			<recipeUsers>
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -256,7 +256,7 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>N17_Tau_Allies_KrootApparel</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_KrootApparel</researchPrerequisite>
 			<recipeUsers>
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
@@ -296,7 +296,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Tau_Allies_KrootTrusted</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_KrootTrusted</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>8</Steel>

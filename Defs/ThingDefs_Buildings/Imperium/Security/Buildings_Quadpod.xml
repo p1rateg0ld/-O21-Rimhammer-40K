@@ -3,11 +3,11 @@
 
 <!-- ================== Heavy Bolter ================== -->
 	<ThingDef ParentName="BuildingBase">
-		<defName>IGWheeledBolter</defName>
-		<label>Wheeled Heavy Bolter</label>
+		<defName>O21_Turret_ImpQuadpod_Bolter</defName>
+		<label>Mobile Heavy Bolter</label>
 		<thingClass>Building_TurretGun</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Security/IG/Wheeled/IG_wheeled_base</texPath>
+			<texPath>Things/Building/Security/IG/Quadpod/IG_quadpod_base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -23,11 +23,11 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<WorkToBuild>1500</WorkToBuild>
-			<Mass>35</Mass>
+			<Mass>75</Mass>
 			<Beauty>0</Beauty>
 			<!-- <ShootingAccuracyTurret>0.80</ShootingAccuracyTurret>-->
 		</statBases>
-		<designatorDropdown>RH_IG_2Wheeled</designatorDropdown>
+		<designatorDropdown>RH_IG_1Quadpod</designatorDropdown>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Explosive">
@@ -59,7 +59,7 @@
 				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 			</li>
 		</comps>
-		<description>A wheeled weapons platform fitted with a Heavy Bolter.</description>
+		<description>A mobile weapons platform fitted with a Heavy Bolter.</description>
 		<size>(2,2)</size>
 		<drawGUIOverlay>True</drawGUIOverlay>
 		<passability>Impassable</passability>
@@ -75,21 +75,21 @@
 		<specialDisplayRadius>50</specialDisplayRadius>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Gun_IGWheeledBolter</turretGunDef>
+			<turretGunDef>O21_Gun_ImpQuadpod_Bolter</turretGunDef>
 			<turretBurstCooldownTime>2</turretBurstCooldownTime>
-			<turretTopGraphicPath>Things/Building/Security/IG/Wheeled/IG_wheeled_bolter</turretTopGraphicPath>
+			<turretTopGraphicPath>Things/Building/Security/IG/Quadpod/IG_quadpod_bolter</turretTopGraphicPath>
 			<turretTopDrawSize>2</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGPortableTurrets</li>
+			<li>O21_Imp_IGPortableTurrets</li>
 		</researchPrerequisites>
-		<uiIconPath>Things/Building/Security/IG/Wheeled/IG_wheeled_bolter_menu</uiIconPath>
+		<uiIconPath>Things/Building/Security/IG/Quadpod/IG_quadpod_bolter_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanGun">
-		<defName>Gun_IGWheeledBolter</defName>
-		<label>Wheeled Bolter</label>
+		<defName>O21_Gun_ImpQuadpod_Bolter</defName>
+		<label>Mobile Bolter</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -100,7 +100,7 @@
 		<tradeability>None</tradeability>
 		<destroyOnDrop>true</destroyOnDrop>
 		<statBases>
-			<Mass>35</Mass>
+			<Mass>75</Mass>
 			<AccuracyTouch>0.65</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
@@ -114,7 +114,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_BoltGun</defaultProjectile>
+				<defaultProjectile>O21_Bullet_BoltGun</defaultProjectile>
 				<warmupTime>.30</warmupTime>
 				<range>38</range>
 				<forcedMissRadius>0.5</forcedMissRadius>
@@ -130,11 +130,11 @@
 	
 <!-- ================== Autocannon ================== -->
 	<ThingDef ParentName="BuildingBase">
-		<defName>IGWheeledAutocannon</defName>
-		<label>Wheeled Autocannon</label>
+		<defName>O21_Turret_ImpQuadpod_Autocannon</defName>
+		<label>Mobile Autocannon</label>
 		<thingClass>Building_TurretGun</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Security/IG/Wheeled/IG_wheeled_base</texPath>
+			<texPath>Things/Building/Security/IG/Quadpod/IG_quadpod_base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -150,10 +150,10 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<WorkToBuild>1500</WorkToBuild>
-			<Mass>35</Mass>
+			<Mass>75</Mass>
 			<Beauty>0</Beauty>
 		</statBases>
-		<designatorDropdown>RH_IG_2Wheeled</designatorDropdown>
+		<designatorDropdown>RH_IG_1Quadpod</designatorDropdown>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Explosive">
@@ -185,7 +185,7 @@
 				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 			</li>
 		</comps>
-		<description>A wheeled weapons platform fitted with an autocannon.</description>
+		<description>A mobile weapons platform fitted with an autocannon.</description>
 		<size>(2,2)</size>
 		<drawGUIOverlay>True</drawGUIOverlay>
 		<passability>Impassable</passability>
@@ -201,21 +201,21 @@
 		<specialDisplayRadius>50</specialDisplayRadius>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Gun_IGWheeledAutocannon</turretGunDef>
+			<turretGunDef>O21_Gun_ImpQuadpod_Autocannon</turretGunDef>
 			<turretBurstCooldownTime>2</turretBurstCooldownTime>
-			<turretTopGraphicPath>Things/Building/Security/IG/Wheeled/IG_wheeled_autocannon</turretTopGraphicPath>
+			<turretTopGraphicPath>Things/Building/Security/IG/Quadpod/IG_quadpod_autocannon</turretTopGraphicPath>
 			<turretTopDrawSize>2</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGPortableTurrets</li>
+			<li>O21_Imp_IGPortableTurrets</li>
 		</researchPrerequisites>
-		<uiIconPath>Things/Building/Security/IG/Wheeled/IG_wheeled_autocannon_menu</uiIconPath>
+		<uiIconPath>Things/Building/Security/IG/Quadpod/IG_quadpod_autocannon_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanGun">
-		<defName>Gun_IGWheeledAutocannon</defName>
-		<label>Wheeled Autocannon</label>
+		<defName>O21_Gun_ImpQuadpod_Autocannon</defName>
+		<label>Mobile Autocannon</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -226,7 +226,7 @@
 		<tradeability>None</tradeability>
 		<destroyOnDrop>true</destroyOnDrop>
 		<statBases>
-			<Mass>35</Mass>
+			<Mass>75</Mass>
 			<AccuracyTouch>0.8</AccuracyTouch>
 			<AccuracyShort>0.7</AccuracyShort>
 			<AccuracyMedium>0.6</AccuracyMedium>
@@ -255,11 +255,11 @@
 
 <!-- ================== Lascannon ================== -->
 	<ThingDef ParentName="BuildingBase">
-		<defName>IGWheeledLascannon</defName>
-		<label>Wheeled Lascannon</label>
+		<defName>O21_Turret_ImpQuadpod_Lascannon</defName>
+		<label>Mobile Lascannon</label>
 		<thingClass>Building_TurretGun</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Security/IG/Wheeled/IG_wheeled_base</texPath>
+			<texPath>Things/Building/Security/IG/Quadpod/IG_quadpod_base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -275,10 +275,10 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<WorkToBuild>1500</WorkToBuild>
-			<Mass>35</Mass>
+			<Mass>75</Mass>
 			<Beauty>0</Beauty>
 		</statBases>
-		<designatorDropdown>RH_IG_2Wheeled</designatorDropdown>
+		<designatorDropdown>RH_IG_1Quadpod</designatorDropdown>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Explosive">
@@ -310,7 +310,7 @@
 				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 			</li>
 		</comps>
-		<description>A wheeled weapons platform fitted with an lascannon.</description>
+		<description>A mobile weapons platform fitted with an lascannon.</description>
 		<size>(2,2)</size>
 		<drawGUIOverlay>True</drawGUIOverlay>
 		<passability>Impassable</passability>
@@ -326,21 +326,21 @@
 		<specialDisplayRadius>50</specialDisplayRadius>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Gun_IGWheeledLascannon</turretGunDef>
+			<turretGunDef>O21_Gun_ImpQuadpod_Lascannon</turretGunDef>
 			<turretBurstCooldownTime>2</turretBurstCooldownTime>
-			<turretTopGraphicPath>Things/Building/Security/IG/Wheeled/IG_wheeled_lascannon</turretTopGraphicPath>
+			<turretTopGraphicPath>Things/Building/Security/IG/Quadpod/IG_quadpod_lascannon</turretTopGraphicPath>
 			<turretTopDrawSize>2</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGPortableTurrets</li>
+			<li>O21_Imp_IGPortableTurrets</li>
 		</researchPrerequisites>
-		<uiIconPath>Things/Building/Security/IG/Wheeled/IG_wheeled_lascannon_menu</uiIconPath>
+		<uiIconPath>Things/Building/Security/IG/Quadpod/IG_quadpod_lascannon_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanGun">
-		<defName>Gun_IGWheeledLascannon</defName>
-		<label>Wheeled Lascannon</label>
+		<defName>O21_Gun_ImpQuadpod_Lascannon</defName>
+		<label>Mobile Lascannon</label>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -351,7 +351,7 @@
 		<tradeability>None</tradeability>
 		<destroyOnDrop>true</destroyOnDrop>
 		<statBases>
-			<Mass>35</Mass>
+			<Mass>75</Mass>
 			<AccuracyTouch>0.9</AccuracyTouch>
 			<AccuracyShort>0.9</AccuracyShort>
 			<AccuracyMedium>0.8</AccuracyMedium>
@@ -378,14 +378,14 @@
 		</verbs>
 	</ThingDef>
 
-	<!-- ================== Stubber ================== -->
+	<!-- ================== Missile ================== -->
 	
 	<ThingDef ParentName="BuildingBase">
-		<defName>IGWheeledStubber</defName>
-		<label>Wheeled Stubber</label>
+		<defName>O21_Turret_ImpQuadpod_Missile</defName>
+		<label>Mobile Missle Launcher</label>
 		<thingClass>Building_TurretGun</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Security/IG/Wheeled/IG_wheeled_base</texPath>
+			<texPath>Things/Building/Security/IG/Quadpod/IG_quadpod_base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -401,10 +401,10 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<WorkToBuild>1500</WorkToBuild>
-			<Mass>35</Mass>
+			<Mass>75</Mass>
 			<Beauty>0</Beauty>
 		</statBases>
-		<designatorDropdown>RH_IG_2Wheeled</designatorDropdown>
+		<designatorDropdown>RH_IG_1Quadpod</designatorDropdown>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Explosive">
@@ -424,7 +424,7 @@
 						<li>CeramiteLowGrade</li>
 					</thingDefs>
 				</fuelFilter>
-				<fuelCapacity>500</fuelCapacity>
+				<fuelCapacity>10</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
 				<autoRefuelPercent>0.75</autoRefuelPercent>
 				<showFuelGizmo>true</showFuelGizmo>
@@ -436,7 +436,7 @@
 				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 			</li>
 		</comps>
-		<description>A wheeled weapons platform fitted with a stubber.</description>
+		<description>A mobile weapons platform fitted with a missile launcher.</description>
 		<size>(2,2)</size>
 		<drawGUIOverlay>True</drawGUIOverlay>
 		<passability>Impassable</passability>
@@ -452,23 +452,40 @@
 		<specialDisplayRadius>50</specialDisplayRadius>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Gun_IGWheeledStubber</turretGunDef>
+			<turretGunDef>O21_Gun_ImpQuadpod_Missile</turretGunDef>
 			<turretBurstCooldownTime>2</turretBurstCooldownTime>
-			<turretTopGraphicPath>Things/Building/Security/IG/Wheeled/IG_wheeled_stubber</turretTopGraphicPath>
+			<turretTopGraphicPath>Things/Building/Security/IG/Quadpod/IG_quadpod_missile</turretTopGraphicPath>
 			<turretTopDrawSize>2</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGPortableTurrets</li>
+			<li>O21_Imp_IGPortableTurrets</li>
 		</researchPrerequisites>
-		<uiIconPath>Things/Building/Security/IG/Wheeled/IG_wheeled_stubber_menu</uiIconPath>
+		<uiIconPath>Things/Building/Security/IG/Quadpod/IG_quadpod_missile_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
 	</ThingDef>
 
+	<ThingDef ParentName="BaseBullet">
+	    <defName>Bullet_IGQuadpodMissile</defName>
+	    <label>rocket</label>
+	    <graphicData>
+      		<texPath>Things/Projectile/Rocket_Big</texPath>
+      		<graphicClass>Graphic_Single</graphicClass>
+	      	<shaderType>TransparentPostLight</shaderType>
+    	</graphicData>
+	    <thingClass>Projectile_Explosive</thingClass>
+	    <projectile>
+      		<damageDef>Bomb</damageDef>
+      		<damageAmountBase>25</damageAmountBase>
+      		<explosionRadius>3.9</explosionRadius>
+      		<speed>50</speed>
+    	</projectile>
+  	</ThingDef>
+
 	<ThingDef ParentName="BaseHumanGun">
-		<defName>Gun_IGWheeledStubber</defName>
-		<label>Wheeled Stubber</label>
+		<defName>O21_Gun_ImpQuadpod_Missile</defName>
+		<label>Mobile Missile</label>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/RocketLauncher</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<menuHidden>true</menuHidden>
@@ -477,11 +494,11 @@
 		<tradeability>None</tradeability>
 		<destroyOnDrop>true</destroyOnDrop>
 		<statBases>
-			<Mass>35</Mass>
-			<AccuracyTouch>0.7</AccuracyTouch>
-			<AccuracyShort>0.6</AccuracyShort>
-			<AccuracyMedium>0.4</AccuracyMedium>
-			<AccuracyLong>0.4</AccuracyLong>
+			<Mass>75</Mass>
+			<AccuracyTouch>0.3</AccuracyTouch>
+			<AccuracyShort>0.4</AccuracyShort>
+			<AccuracyMedium>0.7</AccuracyMedium>
+			<AccuracyLong>0.8</AccuracyLong>
 			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags Inherit="false">
@@ -491,13 +508,15 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_IGSabreAutocannon</defaultProjectile>
+				<defaultProjectile>Bullet_IGQuadpodMissile</defaultProjectile>
+				<forcedMissRadius>2.9</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
 				<warmupTime>2</warmupTime>
-				<range>45</range>
-				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-				<burstShotCount>30</burstShotCount>
-				<soundCast>AutocannonSound</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<range>50</range>
+				<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+        		<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>15</muzzleFlashScale>
 				<consumeFuelPerShot>1</consumeFuelPerShot>
 			</li>

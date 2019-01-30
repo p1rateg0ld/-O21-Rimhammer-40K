@@ -15,6 +15,7 @@
 		<apparelTags>
 			<li>T'auApparel</li>
 		</apparelTags>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	</PawnKindDef>
   
 	<!-- ============================ Tau Civilian Base ========================== -->

@@ -2,16 +2,10 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingNaturalBase">
-		<defName>NecronCatacombAccess</defName>
+		<defName>O21_NecronCatacombAccess</defName>
 		<label>necron catacomb access</label>
 		<description>An opening in the ground, appearing to lead into a dormant Necron tomb, best not disturb it unless you want them to awaken.</description>
 		<thingClass>Building_SteamGeyser</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Natural/SteamGeyser</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>Transparent</shaderType>
-			<drawSize>(4,4)</drawSize>
-		</graphicData>
 		<altitudeLayer>Floor</altitudeLayer>
 		<rotatable>false</rotatable>
 		<destroyable>false</destroyable>
@@ -21,11 +15,23 @@
 		<size>(2,2)</size>
 		<neverOverlapFloors>true</neverOverlapFloors>
 		<blockPlants>true</blockPlants>
+		
+		<graphicData>
+			<texPath>Things/Building/Natural/SteamGeyser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		
 		<building>
 			<isEdifice>false</isEdifice>
 			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<!-- <ThingDef ParentName="BuildingNaturalBase">

@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Gauss Flayer -->
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>NecronGaussFlayer</defName>
 		<label>Necron Gauss Flayer</label>
 		<description>A Gauss Flayer is a type of Necron Gauss Weapon that can strip a target down to nothing molecule by molecule, reducing it to its constituent atoms in a matter of seconds. Gauss Flayers are rifle-like weapons consisting of a stock, a transparent tube containing the unholy and unknown viridian energy the weapon fires, and sometimes an axe-like bayonet underneath the circular muzzle.
@@ -37,7 +37,7 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_GaussFlayer</defaultProjectile>
+				<defaultProjectile>O21_Bullet_GaussFlayer</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<range>24</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -84,7 +84,7 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 			<Necrodermis>45</Necrodermis>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>N17_Nec_BasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Nec_BasicWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -95,14 +95,14 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 	</ThingDef>
 	
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-		<defName>N17_Bullet_GaussFlayer</defName>
+		<defName>O21_Bullet_GaussFlayer</defName>
 		<label>Gauss Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/GaussBolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>N17Gauss</damageDef>
+			<damageDef>O21Gauss</damageDef>
 			<damageAmountBase>24</damageAmountBase>
 			<armorPenetrationBase>0.6</armorPenetrationBase>
 			<speed>105</speed>
@@ -118,7 +118,7 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 
 	<!-- Gauss Blaster -->
 	
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>NecronGaussBlaster</defName>
 		<label>Necron Gauss Blaster</label>
 		<description>A Gauss Blaster is a type of horrifying Necron Gauss Weapon that can strip a target down molecule by molecule, reducing it to its constituent atoms in a matter of seconds. Gauss Blasters are larger than the more common Gauss Flayers and feature two barrels which lead to transparent tubes containing the unholy and unknown viridian energy the weapon fires, and an axe-like bayonet underneath the muzzle.
@@ -149,7 +149,7 @@ Unlike more conventional directed energy weapons, a Gauss Blaster does not deliv
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_GaussBlaster</defaultProjectile>
+				<defaultProjectile>O21_Bullet_GaussBlaster</defaultProjectile>
 				<warmupTime>0.75</warmupTime>
 				<range>20</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
@@ -177,7 +177,7 @@ Unlike more conventional directed energy weapons, a Gauss Blaster does not deliv
 			<Necrodermis>60</Necrodermis>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>N17_Nec_HeavyWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Nec_HeavyWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -188,14 +188,14 @@ Unlike more conventional directed energy weapons, a Gauss Blaster does not deliv
 	</ThingDef>
 	
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-		<defName>N17_Bullet_GaussBlaster</defName>
+		<defName>O21_Bullet_GaussBlaster</defName>
 		<label>Necron Gauss Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/GaussBolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>N17Gauss</damageDef>
+			<damageDef>O21Gauss</damageDef>
 			<damageAmountBase>9</damageAmountBase>
 			<armorPenetrationBase>0.48</armorPenetrationBase>
 			<speed>105</speed>
@@ -210,7 +210,7 @@ Unlike more conventional directed energy weapons, a Gauss Blaster does not deliv
 	</ThingDef>
 
 	<!-- Gauss Cannon -->
-	<!-- <ThingDef ParentName="N17BaseMakeableGun">
+	<!-- <ThingDef ParentName="O21BaseMakeableGun">
 		<defName>NecronGaussCannon</defName>
 		<label>Necron Gauss Cannon</label>
 		<description>A Gauss Cannon is type of horrifying Necron Gauss Weapon that can strip a target down molecule by molecule, reducing it to its constituent atoms in a matter of seconds. Gauss Cannons are larger than the more common Gauss Flayers and Gauss Blasters, and feature four barrels which lead to transparent tubes containing the unholy and unknown viridian energy the weapon fires, and an axe-like bayonet underneath the muzzle.
@@ -238,7 +238,7 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_GaussCannon</defaultProjectile>
+				<defaultProjectile>O21_Bullet_GaussCannon</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>45</range>
 				<soundCast>GaussCannonSound</soundCast>
@@ -268,14 +268,14 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 	</ThingDef>
 	
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-		<defName>N17_Bullet_GaussCannon</defName>
+		<defName>O21_Bullet_GaussCannon</defName>
 		<label>Necron Gauss Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/GaussBolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>N17Gauss</damageDef>
+			<damageDef>O21Gauss</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.68</armorPenetrationBase>
 			<speed>105</speed>
@@ -290,7 +290,7 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 	</ThingDef> -->
 
 	<!-- Staff of Light -->
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>NecronStaffOfLight</defName>
 		<label>Necron Staff Of Light</label>
 		<description>A Staff of Light is a device of arcane Necron technology that serves as both a symbol of rank and authority, as well as a potent weapon for Necron royals. Shaped like a traditional Necrontyr staff with an ornate headpiece, its haft is actually a disguised power generator rod; and the crest a finely tuned focussing device which allows the wielder to unleash searing bolts of viridian energy at a rapid rate towards the enemy. These beams are so potent that they are even capable of penetrating Astartes Power Armour with ease. As well as being capable of projecting devastating blasts of energy at range, a Staff of Light also serves a similar function to a Power Weapon in close combat. A Staff of Light is usually only found in the armouries of Necron royalty, including those belonging to Necron Overlords, Necron Lords or Necron Destroyer Lords. However, Crypteks of an unspecialised nature in their techno-sorcerous arts also commonly wield a Staff of Light in battle.</description>
@@ -319,7 +319,7 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_StaffOfLight</defaultProjectile>
+				<defaultProjectile>O21_Bullet_StaffOfLight</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>18</range>
 				<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
@@ -364,7 +364,7 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 			<Necrodermis>100</Necrodermis>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>N17_Nec_HeavyWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Nec_HeavyWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>16</Crafting>
 			</skillRequirements>
@@ -375,14 +375,14 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 	</ThingDef>
 	
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-		<defName>N17_Bullet_StaffOfLight</defName>
+		<defName>O21_Bullet_StaffOfLight</defName>
 		<label>Necron Light Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/GaussBolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>N17Gauss</damageDef>
+			<damageDef>O21Gauss</damageDef>
 			<damageAmountBase>30</damageAmountBase>
 			<armorPenetrationBase>0.68</armorPenetrationBase>
 			<speed>60</speed>

@@ -59,7 +59,7 @@
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 		<specialDisplayRadius>30</specialDisplayRadius>
 		<researchPrerequisites>
-			<li>N17_Imp_IGBasicTurrets</li>
+			<li>O21_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>

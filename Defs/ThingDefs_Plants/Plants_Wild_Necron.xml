@@ -50,7 +50,7 @@
 			<maxMeshCount>9</maxMeshCount>
 			<wildOrder>1</wildOrder>
 			<sowResearchPrerequisites>
-				<li>N17_Nec_Research</li>
+				<li>O21_Nec_Research</li>
 			</sowResearchPrerequisites>
 		</plant>
 	</ThingDef>

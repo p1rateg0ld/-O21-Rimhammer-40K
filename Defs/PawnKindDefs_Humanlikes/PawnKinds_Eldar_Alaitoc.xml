@@ -9,6 +9,7 @@
 		<backstoryCategories>
 			<li>AlaitocBackstory</li>
 		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<weaponTags>
 			<li>EldarRanged</li>
 		</weaponTags>

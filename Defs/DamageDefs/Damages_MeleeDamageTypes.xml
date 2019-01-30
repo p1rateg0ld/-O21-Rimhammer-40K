@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<DamageDef Name="N17LocalInjuryBase" Abstract="True" ParentName="LocalInjuryBase">
+	<DamageDef Name="O21LocalInjuryBase" Abstract="True" ParentName="LocalInjuryBase">
 		<workerClass>DamageWorker_AddInjury</workerClass>
 	</DamageDef>
 
 	<!--==================== Common Damage Types =========================-->
 	
-  <DamageDef ParentName="N17LocalInjuryBase">
-    <defName>N17PowerWeapon</defName>
+  <DamageDef ParentName="O21LocalInjuryBase">
+    <defName>O21PowerWeapon</defName>
     <label>power field</label>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} was ended by a Power Weapon.</deathMessage>
@@ -21,8 +21,8 @@
   
 	<!--==================== Power Maul Damage Type =========================-->
 
-	<DamageDef ParentName="N17LocalInjuryBase">
-    <defName>N17PowerMaul</defName>
+	<DamageDef ParentName="O21LocalInjuryBase">
+    <defName>O21PowerMaul</defName>
     <label>PowerMaul</label>
     <workerClass>DamageWorker_Blunt</workerClass>
 	<hasForcefulImpact>false</hasForcefulImpact>
@@ -67,8 +67,8 @@
 	
 		<!--==================== ThunderHammer Damage Type =========================-->
 
-	<DamageDef ParentName="N17LocalInjuryBase">
-    <defName>N17Thunderhammer</defName>
+	<DamageDef ParentName="O21LocalInjuryBase">
+    <defName>O21Thunderhammer</defName>
     <label>ThunderHammer</label>
     <workerClass>DamageWorker_Blunt</workerClass>
 	<hasForcefulImpact>true</hasForcefulImpact>

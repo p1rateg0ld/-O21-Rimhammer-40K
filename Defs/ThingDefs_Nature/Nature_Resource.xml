@@ -3,7 +3,7 @@
 	
 	<!-- Base Abstracts -->
 	
-	<ThingDef Name="N17ResourceBase" Abstract="True">
+	<ThingDef Name="O21ResourceBase" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -34,7 +34,7 @@
 
 	<!-- Raw Ceramite - Resource -->
 
-	<ThingDef ParentName="N17ResourceBase">
+	<ThingDef ParentName="O21ResourceBase">
 		<defName>RawCeramite</defName>
 		<label>raw ceramite</label>
 		<description>Ceramite is a form of heat and shock-resistant ceramic material that is widely used throughout the Imperium of Man.</description>

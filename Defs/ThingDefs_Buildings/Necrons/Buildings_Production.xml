@@ -57,7 +57,7 @@
 		<designationCategory>Production</designationCategory>
 		<surfaceType>Item</surfaceType>
 		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
+			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -120,7 +120,7 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
+			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
 	</ThingDef>
 

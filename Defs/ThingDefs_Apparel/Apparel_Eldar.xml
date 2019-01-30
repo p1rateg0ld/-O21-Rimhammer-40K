@@ -15,7 +15,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Eld_Guardian</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_Guardian</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -74,7 +74,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_HowlingBanshee</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_HowlingBanshee</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
 			<tags Inherit="false">
@@ -96,7 +96,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_Autarch</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_Autarch</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
 			<tags Inherit="false">
@@ -118,7 +118,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_Ranger</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_Ranger</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
 			<tags Inherit="false">
@@ -140,7 +140,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_Farseer</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_Farseer</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
 			<tags Inherit="false">
@@ -166,7 +166,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Eld_Guardian</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_Guardian</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -220,7 +220,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_HowlingBanshee</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_HowlingBanshee</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
     		<tags Inherit="false">
@@ -242,7 +242,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_Ranger</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_Ranger</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
     		<tags Inherit="false">
@@ -264,7 +264,7 @@
 			<shaderType>CutoutComplex</shaderType> 
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_Autarch</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_Autarch</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
     		<tags Inherit="false">
@@ -283,7 +283,7 @@
 		<label>Ulthwe Headgear</label>
 		<description>Some Eldar like to wear this headgear which covers the jaw and often neck, while not particularly effective for defence it does seem to have an unknown purpose.</description>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_Farseer</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_Farseer</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>20</Steel>
@@ -339,7 +339,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_Ranger</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_Ranger</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
 			<Insulation_Cold>4</Insulation_Cold>

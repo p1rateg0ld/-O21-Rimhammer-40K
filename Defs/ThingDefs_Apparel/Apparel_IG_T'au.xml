@@ -23,7 +23,7 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>N17_Tau_Allies_HumanApparel</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_HumanApparel</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -49,7 +49,7 @@
 			<wornGraphicPath>Things/Imperial Guard/T'au/Armour/T'auHumanArmor</wornGraphicPath>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>N17_Tau_Allies_HumanApparel</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_HumanApparel</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -75,7 +75,7 @@
 			<wornGraphicPath>Things/Imperial Guard/T'au/Hats/T'auHumanHelmet</wornGraphicPath>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>N17_Tau_Allies_HumanApparel</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_HumanApparel</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 

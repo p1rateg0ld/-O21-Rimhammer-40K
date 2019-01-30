@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="N17BuildingBase" Name="ScarabStationBase">
+	<ThingDef ParentName="O21BuildingBase" Name="ScarabStationBase">
 		<defName>ConstructStation_ScarabConstructor</defName>
 		<label>scarab platform (basic constructor)</label>
 		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. This platform spawns scarabs capable of firefighting, construction and repair. All basic platforms are capable of firefighting, hauling, cleaning and unskilled tasks like flicking switches.</description>
@@ -72,7 +72,7 @@
 		<designationCategory>Misc</designationCategory>
 		<designatorDropdown>RH_NecScarabPlatforms</designatorDropdown>
 		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
+			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
 	</ThingDef>
 

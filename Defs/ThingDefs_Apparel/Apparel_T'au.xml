@@ -70,7 +70,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Tau_BasicArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_BasicArmor</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>80</Steel>
@@ -127,7 +127,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Tau_BasicArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_BasicArmor</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>60</Steel>
@@ -186,7 +186,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Tau_BasicArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_BasicArmor</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>40</Steel>

@@ -4,21 +4,21 @@
 	<!--==================== Tau - Vespid Neutrino Blaster =========================-->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_TNeutronBlaster</defName>
+		<defName>O21_Bullet_TNeutronBlaster</defName>
 		<label>Neutron Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/BoltShotSml</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>N17Neutron</damageDef>
+			<damageDef>O21Neutron</damageDef>
 			<damageAmountBase>18</damageAmountBase>
 			<armorPenetrationBase>0.32</armorPenetrationBase>
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="N17BaseGun">
+	<ThingDef ParentName="O21BaseGun">
 		<defName>TauNeutronBlaster</defName>
 		<label>Tau Neutron Blaster</label>
 		<description>A Neutron Blaster is a unique and potent weapon utilised only by the Vespid, representing a technology unique to that alien species. A hybrid of Vespid and Tau technology, the bulk of a Neutron Blaster is of Tau manufacture as the Vespid have not yet attained the technical facility to fabricate it themselves. Mounted at the barrel of the weapon is a highly energetic and unstable crystal harvested from the lowest levels of the largest stalactite islands of the Vespid homeworld in the deepest reaches of Vespid's cloud seas. At such depths, the atmospheric pressures create all manner of exotic, bizarre and unique crystal formations, and it is only the larger female Vespid, those who form the leader class of the species, who have the constitution to descend to such depths and harvest the purest crystals.</description>
@@ -46,7 +46,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_TNeutronBlaster</defaultProjectile>
+				<defaultProjectile>O21_Bullet_TNeutronBlaster</defaultProjectile>
 				<warmupTime>1.3</warmupTime>
 				<range>24</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -75,7 +75,7 @@
 			<li>TauRanged</li>
 		</tradeTags>
 		<recipeMaker>
-			<researchPrerequisite>N17_Tau_Allies_VespidEquipment</researchPrerequisite>
+			<researchPrerequisite>O21_Tau_Allies_VespidEquipment</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>

@@ -9,6 +9,7 @@
 		<backstoryCategories>
 			<li>ValhallanBackstory</li>
 		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelTags>
 			<li>ValhallanApparel</li>
 		</apparelTags>

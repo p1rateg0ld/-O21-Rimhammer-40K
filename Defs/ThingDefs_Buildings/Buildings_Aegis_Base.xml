@@ -2,12 +2,25 @@
 <Defs>
 
 	<!--Setting up the base for Aegis walls -->
-	<ThingDef ParentName="BuildingBase" Name="Aegis_Wall_Base" Abstract="True">
-		<defName>Aegis_Wall_Base</defName>
+	<ThingDef ParentName="BuildingBase" Name="O21_AegisWall_Base" Abstract="True">
+		<defName>AegisWall_Base</defName>
 		<label>Aegis Wall</label>
 		<description>A defensive wall that provide cover to fire from.</description>
 		<thingClass>Building</thingClass>
 		<category>Building</category>
+		<altitudeLayer>Building</altitudeLayer>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.65</fillPercent>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<staticSunShadowHeight>0.40</staticSunShadowHeight>
+		<canOverlapZones>false</canOverlapZones>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		
 		<graphicData>
 			<texPath>Things/Building/Linked/Wall</texPath>
 			<graphicClass>Graphic_Single</graphicClass> 
@@ -26,21 +39,11 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		
 		<statBases>
 			<Flammability>0</Flammability>
 		</statBases>
-		<altitudeLayer>Building</altitudeLayer>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>0.65</fillPercent>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
-		<rotatable>false</rotatable>
-		<selectable>true</selectable>
-		<neverMultiSelect>true</neverMultiSelect>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Security</designationCategory>
-		<staticSunShadowHeight>0.40</staticSunShadowHeight>
-		<canOverlapZones>false</canOverlapZones>
+		
 		<building>
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>

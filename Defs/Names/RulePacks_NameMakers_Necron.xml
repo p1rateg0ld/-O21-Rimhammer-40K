@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <RulePackDef>
-    <defName>NamerNecron</defName>
-    <rulePack>
-      <rulesStrings>
-        <li>name->[NecronA][NecronB] [NecronA][NecronB]</li>
-      </rulesStrings>
-      <rulesRaw>
-        <li Class="Rule_File">
-          <keyword>NecronA</keyword>
-          <path>Necron_Names/NecronA</path>
-        </li>
-        <li Class="Rule_File">
-          <keyword>NecronB</keyword>
-          <path>Necron_Names/NecronB</path>
-        </li>
-      </rulesRaw>
-    </rulePack>
-  </RulePackDef>
+	<RulePackDef>
+		<defName>NamerNecron</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[NecronA][NecronB] [NecronA][NecronB]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>NecronA</keyword>
+					<path>Necron_Names/NecronA</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>NecronB</keyword>
+					<path>Necron_Names/NecronB</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
 
 </Defs>

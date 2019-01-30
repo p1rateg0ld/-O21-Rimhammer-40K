@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="N17BaseConstruct" Abstract="True">
+	<ThingDef Name="O21BaseConstruct" Abstract="True">
 		<thingClass>Pawn</thingClass>
 		<category>Pawn</category>
 		<selectable>false</selectable>
@@ -26,7 +26,7 @@
 		<drawGUIOverlay>true</drawGUIOverlay>
 	</ThingDef>
 
-	<ThingDef ParentName="N17BaseConstruct" Name="BaseScarab" Abstract="True">
+	<ThingDef ParentName="O21BaseConstruct" Name="BaseScarab" Abstract="True">
 		<statBases>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<ToxicSensitivity>0</ToxicSensitivity>
@@ -88,8 +88,8 @@
 		<race>
 			<petness>0</petness>
 			<intelligence>ToolUser</intelligence>
-			<thinkTreeMain>N17Construct</thinkTreeMain>
-			<thinkTreeConstant>N17ConstructConstant</thinkTreeConstant>
+			<thinkTreeMain>O21Construct</thinkTreeMain>
+			<thinkTreeConstant>O21ConstructConstant</thinkTreeConstant>
 			<body>CanoptekScarab</body>
 			<baseBodySize>0.5</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>

@@ -2,31 +2,35 @@
 <Defs>
 	
 	<!--Embrasure for Imperial Guard -->
-	<ThingDef Name="IG_Aegis" ParentName="Aegis_Wall_Base">
-		<defName>IG_Aegis</defName>
+	<ThingDef Name="O21_ImperiumAegis" ParentName="O21_AegisWall_Base">
+		<defName>O21_ImperiumAegis</defName>
 		<label>IG Aegis Wall</label>
-		<description>A defensive wall that provides cover to fire from.</description>
-		<researchPrerequisites>
-			<li>N17_Imp_Construction</li>
-		</researchPrerequisites>
-		<costStuffCount>5</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Stony</li>
-		</stuffCategories>
-		<statBases>
-			<MaxHitPoints>400</MaxHitPoints>
-			<WorkToBuild>500</WorkToBuild>
-		</statBases>
+		<description>A chest high defensive wall that provides cover to fire from.</description>
 		<passability>PassThroughOnly</passability>
 		<pathCost>300</pathCost>
 		<pathCostIgnoreRepeat>True</pathCostIgnoreRepeat>
 		<fillPercent>0.80</fillPercent>
 		<uiIconPath>Things/Building/Structure/Aegis/IG/IG_aegis_menu</uiIconPath>
+		
 		<graphicData>
 			<texPath>Things/Building/Structure/Aegis/IG/IG_aegis_atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		
+		<costStuffCount>5</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		
+		<researchPrerequisites>
+			<li>O21_Imp_Construction</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 </Defs>

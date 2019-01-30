@@ -3,7 +3,7 @@
 
 	<!-- LasPistol -->
 
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>LasPistol</defName>
 		<label>Laspistol</label>
 		<description>The Laspistol is the pistol version of the Lasgun and like that weapon fires a coherent beam of energetic photons that can burn through most materials. The Laspistol is powered by a miniature power pack that is usually placed within the grip. The Laspistol is used most often by officers or Commissars of the Imperial Guard in conjunction with a close combat weapon, often a Chainsword or Power Sword. The Laspistol was specifically intended to allow the user to fire one-handed and wield a melee weapon in the other hand. The Laspistol is also a favoured weapon of Tech-priest Enginseers and Sanctioned Psykers.
@@ -30,7 +30,7 @@
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteLowGrade>80</CeramiteLowGrade>
@@ -55,7 +55,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_LasPistol</defaultProjectile>
+				<defaultProjectile>O21_Bullet_LasPistol</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<range>25</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -89,7 +89,7 @@
 	</ThingDef>
 
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-		<defName>N17_Bullet_LasPistol</defName>
+		<defName>O21_Bullet_LasPistol</defName>
 		<label>Laspistol Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/LasShotLrg</texPath>
@@ -97,7 +97,7 @@
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>N17Las</damageDef>
+			<damageDef>O21Las</damageDef>
 			<damageAmountBase>6</damageAmountBase>
 			<armorPenetrationBase>0.16</armorPenetrationBase>
 			<stoppingPower>0.8</stoppingPower>
@@ -115,7 +115,7 @@
 
 	<!-- LasGun -->
 
-	<ThingDef ParentName="N17BaseMakeableGun" Name="BaseLasgun">
+	<ThingDef ParentName="O21BaseMakeableGun" Name="BaseLasgun">
 		<defName>LasGun</defName>
 		<label>Kantrael Pattern Lasrifle</label>
 		<description>The M36 Kantrael Pattern Lasrifle is the standard variant for Cadians, it lacks the scope of the M35 Standard Pattern and as such has a slightly reduced range.</description>
@@ -141,7 +141,7 @@
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteLowGrade>120</CeramiteLowGrade>
@@ -165,7 +165,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_LasGun</defaultProjectile>
+				<defaultProjectile>O21_Bullet_LasGun</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>31</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -207,7 +207,7 @@
 	</ThingDef>
 
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-		<defName>N17_Bullet_LasGun</defName>
+		<defName>O21_Bullet_LasGun</defName>
 		<label>Las Gun Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/LasShotLrg</texPath>
@@ -215,7 +215,7 @@
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>N17Las</damageDef>
+			<damageDef>O21Las</damageDef>
 			<damageAmountBase>16</damageAmountBase>
 			<armorPenetrationBase>0.14</armorPenetrationBase>
 			<stoppingPower>0.9</stoppingPower>
@@ -285,7 +285,7 @@
 
 	<!-- Valhallan LasGun -->
 
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>LasGunValhallan</defName>
 		<label>M35 Standard Lasrifle</label>
 		<description>Standard pattern Lasrifle with scope.</description>
@@ -306,7 +306,7 @@
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteLowGrade>120</CeramiteLowGrade>
@@ -330,7 +330,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_LasGun</defaultProjectile>
+				<defaultProjectile>O21_Bullet_LasGun</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>36</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -373,7 +373,7 @@
 
 	<!-- Hellgun -->
 
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>Hellgun</defName>
 		<label>Hellgun</label>
 		<description>A Hellgun, also called a Hot-shot Lasgun, is a pattern of Imperial Lasgun that possesses a more advanced and powerful laser generation system intended to provide more potent laser fire on-target. This makes the Hellgun superior in both range and power output compared to the standard-issue Lasgun. However, the higher power output requires superior quality power cells or the use of a separate backpack power supply, and the more complex inner workings of the weapon require more time and resources to manufacture than the standard Lasgun. This makes it more costly to field and so it is not generally issued to the average soldier of most Astra Militarum regiments.</description>
@@ -393,7 +393,7 @@
 				<RangedWeapon_Cooldown>2.15</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGHeavyWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGHeavyWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteMedGrade>120</CeramiteMedGrade>
@@ -416,7 +416,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_Hellgun</defaultProjectile>
+				<defaultProjectile>O21_Bullet_Hellgun</defaultProjectile>
 				<warmupTime>1</warmupTime>
 				<range>35</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
@@ -450,7 +450,7 @@
 	</ThingDef>
 
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-		<defName>N17_Bullet_Hellgun</defName>
+		<defName>O21_Bullet_Hellgun</defName>
 		<label>Hellgun Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/LasShotLrg</texPath>
@@ -458,7 +458,7 @@
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>N17Las</damageDef>
+			<damageDef>O21Las</damageDef>
 			<damageAmountBase>18</damageAmountBase>
 			<armorPenetrationBase>0.32</armorPenetrationBase>
 			<stoppingPower>1.25</stoppingPower>
@@ -477,7 +477,7 @@
 	<!-- ====================== Long-Las ===================== -->
 
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-	<defName>N17_Bullet_LongLas</defName>
+	<defName>O21_Bullet_LongLas</defName>
 		<label>Long-Las Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/LongLasShot</texPath>
@@ -485,7 +485,7 @@
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>N17Las</damageDef>
+			<damageDef>O21Las</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.42</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
@@ -501,7 +501,7 @@
 		<StartFireChance>0.1</StartFireChance>
 	</ThingDef>
 
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>LongLas</defName>
 		<label>Long-Las</label>
 		<description>Favoured by Imperial Guard Sharpshooters, the Long-Las, originally known as the "Sniper Variant Lasgun," is a specially modified version of the standard Lasgun constructed for increased range and accuracy. In addition to the redoubtable Lasgun's many variants, there are certain types of weapons that exhibit differences enough to be considered seperate weapons. One such weapon is the Sniper Variant Lasgun, better known as the Long-Las. Such weapons are only ever issued to those Guardsmen of the Astra Militarum who have displayed a flair for marksmanship, stealth operations and scout movement, for such weapons are difficult to produce and require more training and intelligence to utilise properly.</description>
@@ -521,7 +521,7 @@
 			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteLowGrade>120</CeramiteLowGrade>
@@ -548,7 +548,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_LongLas</defaultProjectile>
+				<defaultProjectile>O21_Bullet_LongLas</defaultProjectile>
 				<warmupTime>2</warmupTime>
 				<range>45</range>
 				<soundCast>LongLasSound</soundCast>
@@ -582,7 +582,7 @@
 	<!-- ====================== Las Cannon ===================== -->
 <!--
 <ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-	<defName>N17_Bullet_LasCannon</defName>
+	<defName>O21_Bullet_LasCannon</defName>
 		<label>Las Blast</label>
 		<graphicData>
 		<texPath>Things/Projectile/LasCShot</texPath>
@@ -590,13 +590,13 @@
 		</graphicData>
 		<projectile>
 		<flyOverhead>false</flyOverhead>
-		<damageDef>N17Las</damageDef>
+		<damageDef>O21Las</damageDef>
 	 	<explosionRadius>0.55</explosionRadius>
 		<damageAmountBase>75</damageAmountBase>
 		<stoppingPower>4</stoppingPower>
 		<armorPenetrationBase>0.84</armorPenetrationBase>
 		<speed>105</speed>
-		<soundExplode>N17PP_Explosion</soundExplode>
+		<soundExplode>O21PP_Explosion</soundExplode>
 		</projectile>
 		<thingClass>JecsTools.Projectile_Laser</thingClass>
 			<createsExplosion>true</createsExplosion>
@@ -611,7 +611,7 @@
  </ThingDef>
 
 
- <ThingDef ParentName="N17BaseMakeableGun">
+ <ThingDef ParentName="O21BaseMakeableGun">
 		<defName>LasCannon</defName>
 		<label>Lascannon</label>
 		<description>The powerful Lascannon is a formidable Laser Weapon whose energetic shot of coherent light is capable of penetrating most armoured vehicles. It is the favourite anti-tank weapon of the Imperial Guard and is also commonly used by the Space Marines. Its high strength and armour-piercing ability make it a formidable weapon and when it is twin-linked, it becomes even more deadly. However, it is very heavy and power-consuming, and must recharge after every shot, making it a poor anti-personnel weapon. As a result, it is usually installed on tanks or Sentinel platforms, and in the Imperial Guard, two-man teams are required to operate and carry around a single Lascannon. To accommodate the increased power output, the Lascannon has become the largest man-portable form of Las-weaponry, the barrel being several times larger in diameter and length than the standard Lasgun. Space Marines also make extensive use of the Lascannon.</description>
@@ -662,7 +662,7 @@
 		<li>
 			<verbClass>Verb_Shoot</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>N17_Bullet_LasCannon</defaultProjectile>
+			<defaultProjectile>O21_Bullet_LasCannon</defaultProjectile>
 			<warmupTime>4</warmupTime>
 			<range>45</range>
 			<soundCast>LascannonSound</soundCast>
@@ -688,7 +688,7 @@
 	<!-- ====================== Bolt Pistol ===================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_BoltPistol</defName>
+		<defName>O21_Bullet_BoltPistol</defName>
 		<label>Pistol Bolt</label>
 		<graphicData>
 			<texPath>Things/Projectile/BoltShotSml</texPath>
@@ -697,17 +697,17 @@
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>N17Bolt</damageDef>
+			<damageDef>O21Bolt</damageDef>
 			<explosionRadius>0.5</explosionRadius>
 			<damageAmountBase>10</damageAmountBase>
 			<armorPenetrationBase>0.32</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>75</speed>
-			<soundExplode>N17PP_Explosion</soundExplode>
+			<soundExplode>O21PP_Explosion</soundExplode>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>BoltPistol</defName>
 		<label>Bolt Pistol</label>
 		<description>A Bolt Pistol is a smaller version of the Bolter in standard use by the Space Marines and other Imperial forces such as the Orders Militant of the Adepta Sororitas and certain members of the Astra Militarum and the Imperial Navy. Powerful and utilitarian side arms, Bolt Pistols have seen service within many of the Imperium's military forces since its inception in the 30th Millennium. The current standard pattern in use amongst the Space Marines is the Mark III. Bolt Pistols are also used by many other Imperial forces as well as the Chaos Space Marines. A Bolt Pistol is commonly used in conjunction with a close combat weapon by Space Marine officers, Veterans and Assault Squads to make them into melee combat specialists.</description>
@@ -727,7 +727,7 @@
 			<RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGHeavyWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGHeavyWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteMedGrade>80</CeramiteMedGrade>
@@ -748,7 +748,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_BoltPistol</defaultProjectile>
+				<defaultProjectile>O21_Bullet_BoltPistol</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>16</range>
 				<forcedMissRadius>0.5</forcedMissRadius>
@@ -797,7 +797,7 @@
 			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGHeavyWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGHeavyWeapons</researchPrerequisite>
 			<skillRequirements>
 			<Crafting>7</Crafting>
 			</skillRequirements>
@@ -902,7 +902,7 @@
 			<ComponentIndustrial>10</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -958,7 +958,7 @@
 
 	<!-- Krieg Lascarbine -->
 
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>KriegLasCarbine</defName>
 		<label>Lucius no.98 Pattern Lasrifle</label>
 		<description>A variation of the lasgun technology used by the Death Korps of Krieg. Much the same in terms of accuracy but slower firing, this has resulted in the weapon being stronger per shot but overall much preferred by the Death Korps.</description>
@@ -984,7 +984,7 @@
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteLowGrade>120</CeramiteLowGrade>
@@ -1008,7 +1008,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_LasCarbine</defaultProjectile>
+				<defaultProjectile>O21_Bullet_LasCarbine</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>31</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -1050,7 +1050,7 @@
 	</ThingDef>
 
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-		<defName>N17_Bullet_LasCarbine</defName>
+		<defName>O21_Bullet_LasCarbine</defName>
 		<label>Las Gun Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/LasShotLrg</texPath>
@@ -1058,7 +1058,7 @@
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>N17Las</damageDef>
+			<damageDef>O21Las</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>0.14</armorPenetrationBase>
 			<stoppingPower>0.9</stoppingPower>

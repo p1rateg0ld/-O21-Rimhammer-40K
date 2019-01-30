@@ -78,7 +78,7 @@
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>N17_Imp_IGHeavyTurrets</li>
+			<li>O21_Imp_IGHeavyTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/Tarantula/IG_tarantula_bolter_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
@@ -111,7 +111,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_BoltGun</defaultProjectile>
+				<defaultProjectile>O21_Bullet_BoltGun</defaultProjectile>
 				<warmupTime>.30</warmupTime>
 				<range>38</range>
 				<forcedMissRadius>0.5</forcedMissRadius>
@@ -200,7 +200,7 @@
 			<turretTopDrawSize>4</turretTopDrawSize>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Imp_IGHeavyTurrets</li>
+			<li>O21_Imp_IGHeavyTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/Tarantula/IG_tarantula_missile_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
@@ -344,7 +344,7 @@
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>N17_Imp_IGHeavyTurrets</li>
+			<li>O21_Imp_IGHeavyTurrets</li>
 		</researchPrerequisites>
 		<uiIconPath>Things/Building/Security/IG/Tarantula/IG_tarantula_lascannon_menu</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>

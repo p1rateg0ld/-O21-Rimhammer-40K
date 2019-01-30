@@ -5,16 +5,16 @@
 	<!-- Recaf Start -->
 	
 	<ChemicalDef>
-		<defName>N17Recaf</defName>
+		<defName>O21Recaf</defName>
 		<label>recaf</label>
-		<addictionHediff>N17RecafAddiction</addictionHediff>
-		<toleranceHediff>N17RecafTolerance</toleranceHediff>
+		<addictionHediff>O21RecafAddiction</addictionHediff>
+		<toleranceHediff>O21RecafTolerance</toleranceHediff>
 		<canBinge>false</canBinge>
 		<onGeneratedAddictedToleranceChance>0.0</onGeneratedAddictedToleranceChance>
 	</ChemicalDef>
 	
 	<NeedDef ParentName="DrugAddictionNeedBase">
-		<defName>Chemical_N17Recaf</defName>
+		<defName>Chemical_O21Recaf</defName>
 		<needClass>Need_Chemical</needClass>
 		<label>recaf</label>
 		<description>Because of a recaf addiction, this person needs to regularly consume it regularly to avoid withdrawal symptoms.</description>
@@ -22,23 +22,23 @@
 	</NeedDef>
 	
 	<HediffDef ParentName="DrugToleranceBase">
-		<defName>N17RecafTolerance</defName>
+		<defName>O21RecafTolerance</defName>
 		<label>recaf tolerance</label>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.05</severityPerDay>
 			</li>
 			<li Class="HediffCompProperties_DrugEffectFactor">
-				<chemical>N17Recaf</chemical>
+				<chemical>O21Recaf</chemical>
 			</li>
 		</comps>
 	</HediffDef>
   
 	<HediffDef ParentName="AddictionBase">
-		<defName>N17RecafAddiction</defName>
+		<defName>O21RecafAddiction</defName>
 		<hediffClass>Hediff_Addiction</hediffClass>
 		<label>recaf addiction</label>
-		<causesNeed>Chemical_N17Recaf</causesNeed>
+		<causesNeed>Chemical_O21Recaf</causesNeed>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.1</severityPerDay>
@@ -53,9 +53,9 @@
 	</HediffDef>
 	
 	<ThoughtDef>
-		<defName>N17RecafWithdrawal</defName>
+		<defName>O21RecafWithdrawal</defName>
 		<workerClass>ThoughtWorker_Hediff</workerClass>
-		<hediff>N17RecafAddiction</hediff>
+		<hediff>O21RecafAddiction</hediff>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>

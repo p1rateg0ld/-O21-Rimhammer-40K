@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	
-	<ThingDef Name="N17BuildingBase" Abstract="True">
+	<ThingDef Name="O21BuildingBase" Abstract="True">
 		<category>Building</category>
 		<thingClass>Building</thingClass>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -16,8 +16,8 @@
 		</statBases>
 	</ThingDef>
   
-	<!-- <ThingDef ParentName="N17BuildingBase">
-		<defName>N17ReinforcementBeaconIG</defName>
+	<!-- <ThingDef ParentName="O21BuildingBase">
+		<defName>O21ReinforcementBeaconIG</defName>
 		<label>orbital communications array</label>
 		<thingClass>Rimhammer40k.Building_RequisitionRelay</thingClass>
 		<description>A powerful beacon for contacting any allied factions in the area.</description>
@@ -72,7 +72,7 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<researchPrerequisites>
-			<li>N17_Imp_OrbitalRequisition</li>
+			<li>O21_Imp_OrbitalRequisition</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef> -->

@@ -9,6 +9,7 @@
 		<backstoryCategories>
 			<li>KriegBackstory</li>
 		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelTags>
 			<li>KriegApparel</li>
 		</apparelTags>

@@ -23,7 +23,7 @@
 		</costList>
 		<designatorDropdown>RH_NecPowerConnectors</designatorDropdown>
 		<researchPrerequisites Inherit="false">
-			<li>N17_Nec_Research</li>
+			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -211,7 +211,7 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
+			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
 	</ThingDef>
@@ -281,7 +281,7 @@
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
 		<researchPrerequisites>
-			<li>N17_Nec_Research</li>
+			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
 		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
 	</ThingDef>

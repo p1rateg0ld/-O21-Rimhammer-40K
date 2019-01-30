@@ -50,7 +50,7 @@
 		</comps>
 		<designatorDropdown>RH_NecronFloorLamp</designatorDropdown>
 		<researchPrerequisites Inherit="false">
-			<li>N17_Nec_Research</li>
+			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
 	</ThingDef>
 

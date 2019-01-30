@@ -8,6 +8,7 @@
 		<backstoryCategories>
 			<li>NecronBackstory</li>
 		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<itemQuality>Normal</itemQuality>
 		<isFighter>true</isFighter>
 		<gearHealthRange>

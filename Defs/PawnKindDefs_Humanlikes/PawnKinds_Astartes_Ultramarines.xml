@@ -9,6 +9,7 @@
 		<backstoryCategories>
 			<li>AstartesBackstory</li>
 		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	</PawnKindDef>
 
 	<PawnKindDef Name="UltramarinesBase" ParentName="UltramarinesAbstractBase">

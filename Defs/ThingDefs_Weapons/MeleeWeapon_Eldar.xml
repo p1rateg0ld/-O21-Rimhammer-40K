@@ -54,7 +54,7 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>N17_Eld_WeaponsPower</researchPrerequisite>
+			<researchPrerequisite>O21_Eld_WeaponsPower</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>

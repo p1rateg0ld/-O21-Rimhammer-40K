@@ -4,7 +4,7 @@
     <!-- ================== Wheeled ================== -->
    
     <Operation Class="PatchOperationAddModExtension">
-        <xpath>/Defs/ThingDef[defName="IGWheeledBolter"]</xpath>
+        <xpath>/Defs/ThingDef[defName="O21_Turret_ImpWheeled_HeavyBolter"]</xpath>
         <value>
             <li Class="TurretExtensions.TurretFrameworkExtension">
 				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
@@ -16,7 +16,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-        <xpath>/Defs/ThingDef[defName="IGWheeledAutocannon"]</xpath>
+        <xpath>/Defs/ThingDef[defName="O21_Turret_ImpWheeled_Autocannon"]</xpath>
         <value>
             <li Class="TurretExtensions.TurretFrameworkExtension">
 				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
@@ -28,7 +28,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-        <xpath>/Defs/ThingDef[defName="IGWheeledLascannon"]</xpath>
+        <xpath>/Defs/ThingDef[defName="O21_Turret_ImpWheeled_Lascannon"]</xpath>
         <value>
             <li Class="TurretExtensions.TurretFrameworkExtension">
 				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
@@ -40,7 +40,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-        <xpath>/Defs/ThingDef[defName="IGWheeledStubber"]</xpath>
+        <xpath>/Defs/ThingDef[defName="O21_Turret_ImpWheeled_Stubber"]</xpath>
         <value>
             <li Class="TurretExtensions.TurretFrameworkExtension">
 				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
@@ -54,7 +54,7 @@
     <!-- ================== Quadpod ================== -->
 
     <Operation Class="PatchOperationAddModExtension">
-        <xpath>/Defs/ThingDef[defName="IGQuadpodBolter"]</xpath>
+        <xpath>/Defs/ThingDef[defName="O21_Turret_ImpQuadpod_Bolter"]</xpath>
         <value>
             <li Class="TurretExtensions.TurretFrameworkExtension">
 				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
@@ -66,7 +66,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-        <xpath>/Defs/ThingDef[defName="IGQuadpodAutocannon"]</xpath>
+        <xpath>/Defs/ThingDef[defName="O21_Turret_ImpQuadpod_Autocannon"]</xpath>
         <value>
             <li Class="TurretExtensions.TurretFrameworkExtension">
 				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
@@ -78,7 +78,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-        <xpath>/Defs/ThingDef[defName="IGQuadpodLascannon"]</xpath>
+        <xpath>/Defs/ThingDef[defName="O21_Turret_ImpQuadpod_Lascannon"]</xpath>
         <value>
             <li Class="TurretExtensions.TurretFrameworkExtension">
 				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>
@@ -90,7 +90,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-        <xpath>/Defs/ThingDef[defName="IGQuadpodMissile"]</xpath>
+        <xpath>/Defs/ThingDef[defName="O21_Turret_ImpQuadpod_Missile"]</xpath>
         <value>
             <li Class="TurretExtensions.TurretFrameworkExtension">
 				<gunFaceDirectionOnSpawn>Unspecified</gunFaceDirectionOnSpawn>

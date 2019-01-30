@@ -2,10 +2,26 @@
 <Defs>
 	
 	<ThingDef ParentName="BuildingBase">
-		<defName>AstartesConverter</defName>
+		<defName>O21_AstartesConverter</defName>
 		<label>astartes oven</label>
 		<description>An automated device for finalizing new astartes in the field. The process can have interesting effects on the persons mind and often the people they once knew will be strangers, even those people may have a hard time recognising the man who entered the chamber as the same one who left.</description>
+		<!-- Converter MUST be this class to function with the comp further below. -->
 		<thingClass>O21Toolbox.Converter.Building_Converter</thingClass>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Normal</tickerType>
+		<size>(1,2)</size>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		
 		<graphicData>
 			<texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
@@ -16,25 +32,11 @@
 			</shadowData>
 		</graphicData>
 		
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>70</pathCost>
-		<blockWind>true</blockWind>
-		<fillPercent>0.5</fillPercent>
-		<canOverlapZones>false</canOverlapZones>
-		
 		<statBases>
 			<WorkToBuild>3200</WorkToBuild>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 		</statBases>
-		
-		<tickerType>Normal</tickerType>
-		<size>(1,2)</size>
-		<designationCategory>Misc</designationCategory>
-		<hasInteractionCell>true</hasInteractionCell>
-		<interactionCellOffset>(1,0,0)</interactionCellOffset>
-		<defaultPlacingRot>South</defaultPlacingRot>
 		
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
@@ -48,27 +50,29 @@
 		</costList>
 		
 		<comps>
-			<!-- Tells the converter what it can accept and what will come out. -->
 			<li Class="O21Toolbox.Converter.CompProperties_Converter">
 				<compClass>O21Toolbox.Converter.Comp_Converter</compClass>
-				<!-- Supports multiple inputs. Required -->
 				<inputDefs>
 					<li>Human</li>
 					<li>Alien_Terran</li>
 				</inputDefs>
-				<!-- pawnKind of the race you want it to come out as. Required -->
-				<outputDef>Astartes</outputDef>
-				<!-- If the pawn is required to be a specific Sex, say so here. Input can be Male or Female, defaults to Either. Not Required.-->
 				<requiredSex>Male</requiredSex>
-				<!-- Body entry, for forcing body types, helpful when the race they are being converted to only has specific body types. Defaults to no change. Not Required. -->
+				<requiredHediffs />
+				<outputDef>Astartes</outputDef>
+				<outputSex />
+				<forcedHediff />
 				<forcedBody>Hulk</forcedBody>
-				<!-- Can be given a soundDef to be played as it finishes. Not Required -->
+				<forcedHead />
+				<forcedSkinColor />
+				<forcedSkinColorInt />
+				<forcedHair />
+				<forcedHairColor />
+				<forcedHairColorInt />
+				<forcedConversion />
+				<animalConversion />
 				<finishingSound>AstartesOvenDone</finishingSound>
-				<!-- Colour of glower while ready. Defaults to Green. Not Required. -->
 				<greenLight>(100, 255, 100, 0)</greenLight>
-				<!-- Colour of glower while not ready. Defaults to Red. Not Required. -->
 				<redLight>(252, 187, 113, 0)</redLight>
-				<!-- Time in ticks the conversion takes. 60000 = 1 day. Defaults to 1000. Not Required. -->
 				<cookingTime>6000</cookingTime>
 			</li>
 			<li Class="CompProperties_Power">
@@ -86,19 +90,32 @@
 			</li>
 			<li Class="CompProperties_Flickable" />
 		</comps>
-		<researchPrerequisites>
-			<li>N17_Imp_SMGeneSeed</li>
-		</researchPrerequisites>
 		
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>O21_Imp_SMGeneSeed</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
-		<defName>SororitasConverter</defName>
+		<defName>O21_SororitasConverter</defName>
 		<label>sororitas steamer</label>
 		<description>An automated device for quickly training and enhancing new sororitas in the field. The process can have interesting effects on the persons mind and often the people they once knew will be strangers, even those people may have a hard time recognising the woman who entered the chamber as the same one who left.</description>
 		<thingClass>O21Toolbox.Converter.Building_Converter</thingClass>
+		
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Normal</tickerType>
+		<size>(1,2)</size>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		
 		<graphicData>
 			<texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
@@ -109,59 +126,36 @@
 			</shadowData>
 		</graphicData>
 		
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>70</pathCost>
-		<blockWind>true</blockWind>
-		<fillPercent>0.5</fillPercent>
-		<canOverlapZones>false</canOverlapZones>
-		
 		<statBases>
 			<WorkToBuild>3200</WorkToBuild>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		
-		<tickerType>Normal</tickerType>
-		<size>(1,2)</size>
-		<designationCategory>Misc</designationCategory>
-		<hasInteractionCell>true</hasInteractionCell>
-		<interactionCellOffset>(1,0,0)</interactionCellOffset>
-		<defaultPlacingRot>South</defaultPlacingRot>
-		
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 		</building>
 		
 		<costList>
-		  <CeramiteMedGrade>200</CeramiteMedGrade>
-		  <CeramiteHighGrade>60</CeramiteHighGrade>
-		  <ComponentIndustrial>20</ComponentIndustrial>
-		  <ComponentSpacer>10</ComponentSpacer>
+		  <CeramiteMedGrade>180</CeramiteMedGrade>
+		  <CeramiteHighGrade>40</CeramiteHighGrade>
+		  <ComponentIndustrial>15</ComponentIndustrial>
+		  <ComponentSpacer>5</ComponentSpacer>
 		</costList>
 		
 		<comps>
-			<!-- Tells the converter what it can accept and what will come out. -->
 			<li Class="O21Toolbox.Converter.CompProperties_Converter">
 				<compClass>O21Toolbox.Converter.Comp_Converter</compClass>
-				<!-- Supports multiple inputs. Required -->
 				<inputDefs>
 					<li>Human</li>
 					<li>Alien_Terran</li>
 				</inputDefs>
-				<!-- pawnKind of the race you want it to come out as. Required -->
 				<outputDef>Sororitas</outputDef>
-				<!-- If the pawn is required to be a specific Sex, say so here. Input can be Male or Female, defaults to Either. Not Required.-->
 				<requiredSex>Female</requiredSex>
-				<!-- Body entry, for forcing body types, helpful when the race they are being converted to only has specific body types. Defaults to no change. Not Required. -->
 				<forcedBody>Female</forcedBody>
-				<!-- Can be given a soundDef to be played as it finishes. Not Required -->
 				<finishingSound>AstartesOvenDone</finishingSound>
-				<!-- Colour of glower while ready. Defaults to Green. Not Required. -->
 				<greenLight>(100, 255, 100, 0)</greenLight>
-				<!-- Colour of glower while not ready. Defaults to Red. Not Required. -->
 				<redLight>(252, 187, 113, 0)</redLight>
-				<!-- Time in ticks the conversion takes. 60000 = 1 day. Defaults to 1000. Not Required. -->
 				<cookingTime>12000</cookingTime>
 			</li>
 			<li Class="CompProperties_Power">
@@ -180,11 +174,8 @@
 			<li Class="CompProperties_Flickable" />
 		</comps>
 		<researchPrerequisites>
-			<li>N17_Imp_SMGeneSeed</li>
+			<li>O21_Imp_SMGeneSeed</li>
 		</researchPrerequisites>
-		
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 	
 </Defs>

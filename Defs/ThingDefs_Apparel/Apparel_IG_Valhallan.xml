@@ -48,7 +48,7 @@
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
 			</recipeUsers>
-			<researchPrerequisite>N17_Imp_IGBasicArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -69,7 +69,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Imp_IGBasicArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -127,7 +127,7 @@
 		</graphicData>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-			<researchPrerequisite>N17_Imp_IGBasicArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGBasicArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>

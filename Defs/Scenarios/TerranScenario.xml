@@ -22,7 +22,7 @@
 				</li>
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<project>N17_Imp_Research</project>
+					<project>O21_Imp_Research</project>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>

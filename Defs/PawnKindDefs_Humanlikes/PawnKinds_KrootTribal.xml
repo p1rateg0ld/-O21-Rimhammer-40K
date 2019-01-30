@@ -9,6 +9,7 @@
 		<backstoryCategories>
 			<li>KrootBackstory</li>
 		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<chemicalAddictionChance>0.035</chemicalAddictionChance>
 		<baseRecruitDifficulty>0.60</baseRecruitDifficulty>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>

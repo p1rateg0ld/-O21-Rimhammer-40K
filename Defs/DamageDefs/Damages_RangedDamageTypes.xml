@@ -9,7 +9,7 @@
 	<!--==================== Plasma Pistol Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Plasma</defName>
+		<defName>O21Plasma</defName>
 		<label>plasma</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -27,13 +27,13 @@
 		<explosionCellMote>Mote_BlastDry</explosionCellMote>
 		<explosionColorCenter>(0.55, 0.95, 1)</explosionColorCenter>
 		<explosionColorEdge>(0.6, 0.55, 0.9)</explosionColorEdge>
-		<soundExplosion>N17PP_Explosion</soundExplosion>
+		<soundExplosion>O21PP_Explosion</soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
 	</DamageDef>
 	<!--==================== Plasma Cannon Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17PlasmaCannon</defName>
+		<defName>O21PlasmaCannon</defName>
 		<label>plasma cannon</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -51,14 +51,14 @@
 		<explosionCellMote>Mote_BlastDry</explosionCellMote>
 		<explosionColorCenter>(0.55, 0.95, 1)</explosionColorCenter>
 		<explosionColorEdge>(0.6, 0.55, 0.9)</explosionColorEdge>
-		<soundExplosion>N17PC_Explosion</soundExplosion>
+		<soundExplosion>O21PC_Explosion</soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
 	</DamageDef>
 
 	<!--==================== Meltagun Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Melta</defName>
+		<defName>O21Melta</defName>
 		<label>melta</label>
 		<externalViolence>true</externalViolence>
 		<hasForcefulImpact>false</hasForcefulImpact>
@@ -83,7 +83,7 @@
 	<!--==================== Lasgun Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Las</defName>
+		<defName>O21Las</defName>
 		<label>laser</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -101,14 +101,14 @@
 		<explosionCellMote>Mote_BlastDry</explosionCellMote>
 		<explosionColorCenter>(0.55, 0.95, 1)</explosionColorCenter>
 		<explosionColorEdge>(0.6, 0.55, 0.4)</explosionColorEdge>
-		<soundExplosion>N17PP_Explosion</soundExplosion>
+		<soundExplosion>O21PP_Explosion</soundExplosion>
 		<combatLogRules>Damage_Flame</combatLogRules>
 	</DamageDef>
 
 	<!--==================== Autogun Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Auto</defName>
+		<defName>O21Auto</defName>
 		<label>autogun</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -124,12 +124,12 @@
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
 		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
 		<explosionCellMote>Mote_BlastDry</explosionCellMote>
-		<soundExplosion>N17PP_Explosion</soundExplosion>
+		<soundExplosion>O21PP_Explosion</soundExplosion>
 	</DamageDef>
 	<!--==================== Ripper Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Ripper</defName>
+		<defName>O21Ripper</defName>
 		<label>Ripper</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -145,7 +145,7 @@
 	<!--==================== Assaultcannon Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Assault</defName>
+		<defName>O21Assault</defName>
 		<label>assaultcannon</label>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been given the Emperors Justice.</deathMessage>
@@ -159,7 +159,7 @@
 	<!--==================== Boltgun Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Bolt</defName>
+		<defName>O21Bolt</defName>
 		<label>bolt</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -177,13 +177,13 @@
 		<explosionCellMote>Mote_BlastDry</explosionCellMote>
 		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
 		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
-		<soundExplosion>N17PP_Explosion</soundExplosion>
+		<soundExplosion>O21PP_Explosion</soundExplosion>
 	</DamageDef>
 
 	<!--==================== Bomb Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Bomb</defName>
+		<defName>O21Bomb</defName>
 		<label>bomb</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -209,7 +209,7 @@
 	<!--==================== Sonic Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Sonic</defName>
+		<defName>O21Sonic</defName>
 		<label>Sonic</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>false</isExplosive>
@@ -226,7 +226,7 @@
 	<!--==================== ReaperAutocannon Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17RAC</defName>
+		<defName>O21RAC</defName>
 		<label>reaper autocannon</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -242,7 +242,7 @@
 		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
 		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
 		<explosionCellMote>Mote_BlastDry</explosionCellMote>
-		<soundExplosion>N17PP_Explosion</soundExplosion>
+		<soundExplosion>O21PP_Explosion</soundExplosion>
 	</DamageDef>
 	
 	<!--==================== Tau Damage Types =========================-->
@@ -266,7 +266,7 @@
 	<!--==================== Ion Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Ion</defName>
+		<defName>O21Ion</defName>
 		<label>ion beam</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -283,7 +283,7 @@
 		<!--==================== Railgun Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Railgun</defName>
+		<defName>O21Railgun</defName>
 		<label>Railgun Slug</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -299,7 +299,7 @@
 		<!--==================== Kroot Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Kroot</defName>
+		<defName>O21Kroot</defName>
 		<label>Kroot Slug</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -315,7 +315,7 @@
 		<!--==================== Vespid Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Neutron</defName>
+		<defName>O21Neutron</defName>
 		<label>Neutron blast</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -333,7 +333,7 @@
 	<!--==================== Shuriken Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Shuriken</defName>
+		<defName>O21Shuriken</defName>
 		<label>Shuriken</label>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} was cut to ribbons.</deathMessage>
@@ -348,7 +348,7 @@
 	<!--==================== Plasma Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Star</defName>
+		<defName>O21Star</defName>
 		<label>Starfire</label>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0}'s death was forseen.</deathMessage>
@@ -364,7 +364,7 @@
 		<!--==================== Wraithcannon Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Wraith</defName>
+		<defName>O21Wraith</defName>
 		<label>Warp Rift Blast</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -380,7 +380,7 @@
 		<!--==================== Brightlance Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Lance</defName>
+		<defName>O21Lance</defName>
 		<label>Lance</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
@@ -404,7 +404,7 @@
 	<!--==================== Deathspinner Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Deathspinner</defName>
+		<defName>O21Deathspinner</defName>
 		<label>Mono-filament Mesh </label>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} was reduced to a pulp.</deathMessage>
@@ -419,7 +419,7 @@
 	<!--==================== Gauss Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Gauss</defName>
+		<defName>O21Gauss</defName>
 		<label>Gauss</label>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} was Flayed to death.</deathMessage>
@@ -435,7 +435,7 @@
 	<!--==================== Radium Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Radium</defName>
+		<defName>O21Radium</defName>
 		<label>Gauss</label>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} would have died anyway.</deathMessage>
@@ -450,7 +450,7 @@
 	<!--==================== Galvanic Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Galvanic</defName>
+		<defName>O21Galvanic</defName>
 		<label>Gauss</label>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} caught a Galvanic round.</deathMessage>
@@ -465,7 +465,7 @@
 	<!--==================== Transuranic Damage Type =========================-->
 
 	<DamageDef ParentName="LocalInjuryBase">
-		<defName>N17Transuranic</defName>
+		<defName>O21Transuranic</defName>
 		<label>Gauss</label>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} was taken by a Transuranic bolt.</deathMessage>

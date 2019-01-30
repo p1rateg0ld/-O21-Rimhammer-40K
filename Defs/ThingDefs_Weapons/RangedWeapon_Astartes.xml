@@ -3,7 +3,7 @@
 	
 	<!-- ====================== Bolter ===================== -->
   
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>SMBoltGun</defName>
 		<label>Bolter</label>
 		<description>The Bolter, also called a Boltgun, and its variants are some of the most powerful hand-held ballistic anti-personnel weaponry in use by the military forces of the Imperium of Man. It is a powerful assault weapon that fires explosive kinetic rounds colloquially referred to as bolts. The Bolter is a weapon synonymous with the Adeptus Astartes, and rightly so. However, although the Space Marines are its primary users, the Bolter finds itself in use in military organisations throughout the Imperium. The weapon is fearsome, with explosive rounds capable of ripping through or blowing apart a foe. The Chaos Space Marines of the Traitor Legions were issued their Legions' Bolters before the Horus Heresy, and therefore use generally older variants than the patterns available to present-day Loyalist Space Marines.
@@ -31,7 +31,7 @@
 			<RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_SMBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_SMBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteMedGrade>120</CeramiteMedGrade>
@@ -52,7 +52,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_BoltGun</defaultProjectile>
+				<defaultProjectile>O21_Bullet_BoltGun</defaultProjectile>
 				<warmupTime>0.30</warmupTime>
 				<range>28</range>
 				<forcedMissRadius>0.5</forcedMissRadius>
@@ -88,7 +88,7 @@
 	</ThingDef>
   
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_BoltGun</defName>
+		<defName>O21_Bullet_BoltGun</defName>
 		<label>Bolt</label>
 		<graphicData>
 			<texPath>Things/Projectile/BoltShotSml</texPath>
@@ -96,20 +96,20 @@
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
-			<damageDef>N17Bolt</damageDef>
+			<damageDef>O21Bolt</damageDef>
 			<explosionRadius>0.5</explosionRadius>
 			<damageAmountBase>18</damageAmountBase>
 			<armorPenetrationBase>0.32</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>100</speed>
-			<soundExplode>N17PP_Explosion</soundExplode>
+			<soundExplode>O21PP_Explosion</soundExplode>
 		</projectile>
 	</ThingDef>
 	
 	
 	<!-- ====================== Flamer ===================== -->
 	
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>SMFlamer</defName>
 		<label>Flamer</label>
 		<description>Flamers, also known as "Flame Guns", are Flamer Weapons that come in a wide variety of designs and patterns, but all are ideal for flushing out enemies in cover and putting groups of foes to the torch with projected flame. The two most common variants of Flamers either have a detachable fuel canister under the barrel, or a hose connecting to a backpack canister. Flamers are most commonly used by Imperial assault forces such as Space Marine Assault Squads, though xenos races such as the Eldar, Orks and the Tau are also known to make use of similar weapons.</description>
@@ -134,7 +134,7 @@
 			<RangedWeapon_Cooldown>4.00</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGHeavyWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGHeavyWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteMedGrade>120</CeramiteMedGrade>
@@ -155,7 +155,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_Flamer</defaultProjectile>
+				<defaultProjectile>O21_Bullet_Flamer</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>12</range>
 				<minRange>2.5</minRange>
@@ -192,7 +192,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_Flamer</defName>
+		<defName>O21_Bullet_Flamer</defName>
 		<label>burning promethium </label>
 		<graphicData>
 			<texPath>Things/Projectile/FlamerShot</texPath>
@@ -210,13 +210,13 @@
 			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
 			<stoppingPower>0.30</stoppingPower>
 			<speed>20</speed>
-			<soundExplode>N17FL_Explosion</soundExplode>
+			<soundExplode>O21FL_Explosion</soundExplode>
 		</projectile>
 	</ThingDef>
 
 	<!-- ====================== Metla Gun ===================== -->
   
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>SMMeltaGun</defName>
 		<label>MeltaGun</label>
 		<description>The Meltagun, also called a "Fusion Gun," "Melter," or "Cooker," is a powerful, short-ranged anti-armour weapon that produces an intense, energetic beam of heat in the tens of thousands of degrees Centigrade. The Melta Gun is used by the Space Marines, the troops of the Imperial Guard and other military forces of the Imperium of Man such as the Orders Militant of the Adepta Sororitas. Melta Weapons emit devastatingly intense but short-ranged blasts of heat which can melt through almost any material. Most types of Melta Weapon like the Meltagun function by inducing highly pressurised gases from an ammunition canister into an unstable sub-molecular state which produces nuclear fusion and directing the resulting energies down the barrel. Melta Weapon usage is always accompanied by a distinctive hissing sound as the Melta beam boils away the water in the air, then a roaring blast as the beam reduces the target to charred scraps or molten slag. Meltaguns are the premier Imperial anti-armour weapons, and few if any vehicles can withstand their power.</description>
@@ -236,7 +236,7 @@
 			<RangedWeapon_Cooldown>3.00</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Imp_IGAdvancedWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGAdvancedWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteMedGrade>100</CeramiteMedGrade>
@@ -258,7 +258,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_MeltaGun</defaultProjectile>
+				<defaultProjectile>O21_Bullet_MeltaGun</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
 				<range>4</range>
 				<soundCast>MeltaSound</soundCast>
@@ -291,7 +291,7 @@
 	</ThingDef>
 
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
-		<defName>N17_Bullet_MeltaGun</defName>
+		<defName>O21_Bullet_MeltaGun</defName>
 		<label>Melta Blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/MeltaShot</texPath>
@@ -299,13 +299,13 @@
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
-			<damageDef>N17Melta</damageDef>
+			<damageDef>O21Melta</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>1</armorPenetrationBase>
 			<speed>50</speed>
 			<explosionRadius>0.50</explosionRadius>
 			<stoppingPower>4</stoppingPower>
-			<soundExplode>N17FL_Explosion</soundExplode>
+			<soundExplode>O21FL_Explosion</soundExplode>
 		</projectile>
 		<thingClass>JecsTools.Projectile_Laser</thingClass>
 		<createsExplosion>true</createsExplosion>

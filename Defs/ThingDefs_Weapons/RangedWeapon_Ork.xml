@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Ork - Slugga -->
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>OrkSlugga</defName>
 		<label>Slugga</label>
 		<description>A slugga iz da ork equivalent uv a space marine bolt pistol. It iz usually paired wit' a choppa, an mobs uv boyz 'oo karry 'da two are kalled slugga boyz. Due ta ‘da ramshackle nature uv ork weaponry, every slugga iz different, but most if not all sluggas are semi-automatic, large kalibre side arms. Dough not as sophisticated as most otha weapons used ‘n ‘da imperium, sluggas are no less effective dan other, more advanced side arms when used korrectly. As far as ‘da melee-focused ork hold'n it iz koncerned, ‘da effectiveness uv a slugga iz uv little importance, as long as it iz big an' makes a loud noise when it fires.</description>
@@ -22,7 +22,7 @@
 			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
 		</statBases>
 	<recipeMaker>
-		<researchPrerequisite>N17_Ork_Weapons_Basic</researchPrerequisite>
+		<researchPrerequisite>O21_Ork_Weapons_Basic</researchPrerequisite>
 	</recipeMaker>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
@@ -33,7 +33,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_Slugga</defaultProjectile>
+				<defaultProjectile>O21_Bullet_Slugga</defaultProjectile>
 				<warmupTime>0.3</warmupTime>
 				<range>26</range>
 				<soundCast>Shot_Revolver</soundCast>
@@ -82,7 +82,7 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_Slugga</defName>
+		<defName>O21_Bullet_Slugga</defName>
 		<label>Slugga Slug</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -97,7 +97,7 @@
 	</ThingDef>
 
 	<!-- Ork - Shoota -->
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>OrkShoota</defName>
 		<label>Shoota</label>
 		<description>A shoota iz a kinetic, ballistic weapon used by da orks ‘dat iz chosen not for its efficiency but for da amount uv noise it makes an’ da amount uv damage it kan do. ‘da best shootas are deafen'n an' deadly 'n equal measure. Like da slugga, shootas are not very accurate. Dis suits da orks jus fine since dey seem less interested ‘n accuracy dan ‘n kaus'n damage an' rais'n a ruckus. 'da noise uv a shoota will give orks a morale boost an' kan kause enemiez ta lose dere morale an' retreat from 'da overpower'n noise uv dozens uv shootas. None ‘da less, mobs uv shoota boyz make up for dere lack uv accuracy wit' ‘da shea volume uv fire directed at dere targets.</description>
@@ -117,7 +117,7 @@
 			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>N17_Ork_Weapons_Shootas</researchPrerequisite>
+			<researchPrerequisite>O21_Ork_Weapons_Shootas</researchPrerequisite>
 		</recipeMaker>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
@@ -128,7 +128,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_Shoota</defaultProjectile>
+				<defaultProjectile>O21_Bullet_Shoota</defaultProjectile>
 				<warmupTime>0.5</warmupTime>
 				<range>31</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -160,7 +160,7 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_Shoota</defName>
+		<defName>O21_Bullet_Shoota</defName>
 		<label>Shoota Slug</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -190,7 +190,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="N17GunMakeableBase">
+	<ThingDef ParentName="O21GunMakeableBase">
 		<defName>OGO_Gun_OTwinLinkedShoota</defName>
 		<label>Ork Twin Linked Shoota</label>
 		<description>Ork Mekboyz often customise their Shootas by adding an additional barrel for more firepower. These custom Shootas cost their clients much more teef than the usual Shoota, and are often utilised by both Ork Nobs and Warbosses. Often times these deadly weapons are incorporated into Mega Armour.</description>
@@ -254,7 +254,7 @@
 	</ThingDef> -->
 
 	<!--==================== Ork - Big Shoota =========================-->
-	<ThingDef ParentName="N17BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>OrkBigShoota</defName>
 		<label>Big Shoota</label>
 		<description>A Big Shoota is a loud, heavy, large-calibre machine gun that bucks and sparks when the trigger is pulled. Quite simply it is a larger caliber Shoota, and has a greater range and damage potential compared to a Shoota. A Big Shoota is also commonly fitted with an attached bayonet for melee. A Big Shoota has twice the range of a regular Shoota. Big Shootas are also less prevalent on the battlefield, as on average there is only one Ork armed with a Big Shoota for every 10 Orks in a mob, up to an average of three Big Shootas in a mob of 30 Ork Boyz.</description>
@@ -280,7 +280,7 @@
 			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
 		</statBases>
 	<recipeMaker>
-		<researchPrerequisite>N17_Ork_Weapons_Shootas</researchPrerequisite>
+		<researchPrerequisite>O21_Ork_Weapons_Shootas</researchPrerequisite>
 	</recipeMaker>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
@@ -291,7 +291,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>N17_Bullet_BigShoota</defaultProjectile>
+				<defaultProjectile>O21_Bullet_BigShoota</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
 				<range>38</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -323,7 +323,7 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBullet">
-		<defName>N17_Bullet_BigShoota</defName>
+		<defName>O21_Bullet_BigShoota</defName>
 		<label>Big Shoota Slug</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>

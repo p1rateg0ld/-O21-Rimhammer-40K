@@ -40,7 +40,7 @@
 				<li>TableMachining</li>
 			</recipeUsers>
 			
-			<researchPrerequisite>N17_Imp_SMBasicWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_SMBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<CeramiteHighGrade>80</CeramiteHighGrade>

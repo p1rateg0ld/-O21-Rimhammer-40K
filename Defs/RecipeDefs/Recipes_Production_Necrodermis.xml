@@ -13,7 +13,7 @@
 		<products>
 			<Necrodermis>4</Necrodermis>
 		</products>
-		<researchPrerequisite>N17_Nec_Research</researchPrerequisite>
+		<researchPrerequisite>O21_Nec_Research</researchPrerequisite>
 		<recipeUsers>
 			<li>NecronFabricationAltar</li>
 		</recipeUsers>
@@ -31,7 +31,7 @@
 		<products>
 			<Necrodermis>2</Necrodermis>
 		</products>
-		<researchPrerequisite>N17_Nec_Research</researchPrerequisite>
+		<researchPrerequisite>O21_Nec_Research</researchPrerequisite>
 		<recipeUsers>
 			<li>CraftingSpot</li>
 		</recipeUsers>

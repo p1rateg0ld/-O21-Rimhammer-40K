@@ -3,7 +3,7 @@
 <Defs>
 	
 	<RecipeDef>
-		<defName>Brew_N17Recaf</defName>
+		<defName>Brew_O21Recaf</defName>
 		<label>brew 4 cups of recaf</label>
 		<description>Brew four cups of recaf</description>
 		<jobString>Brewing recaf.</jobString>
@@ -22,7 +22,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>N17RawRecaf</li>
+						<li>O21RawRecaf</li>
 					</thingDefs>
 				</filter>
 				<count>20</count>
@@ -30,14 +30,14 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>N17RawRecaf</li>
+				<li>O21RawRecaf</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<N17Recaf>4</N17Recaf>
+			<O21Recaf>4</O21Recaf>
 		</products>
 		<workSkill>Cooking</workSkill>
-		<researchPrerequisite>N17_Imp_FoodDrink</researchPrerequisite>
+		<researchPrerequisite>O21_Imp_FoodDrink</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>
