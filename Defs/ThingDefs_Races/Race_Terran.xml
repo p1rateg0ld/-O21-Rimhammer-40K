@@ -417,8 +417,6 @@ Needless to say, Gue'vesa are considered the worst kind of Traitors to the Emper
 					</alienbodytypes>
 					<customDrawSize>(1.15, 1.15)</customDrawSize>
 					<customHeadDrawSize>(1.15, 1.15)</customHeadDrawSize>
-					<customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize>
-					<customPortraitHeadDrawSize>(0.8, 0.8)</customPortraitHeadDrawSize>
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths Inherit="False">
@@ -631,8 +629,6 @@ There is naturally some overlap between the duties of the Sisterhood and the Imp
 					</alienhaircolorgen>
 					<customDrawSize>(1.05, 1.05)</customDrawSize>
 					<customHeadDrawSize>(1.05, 1.05)</customHeadDrawSize>
-					<customPortraitDrawSize>(0.9, 0.9)</customPortraitDrawSize>
-					<customPortraitHeadDrawSize>(0.9, 0.9)</customPortraitHeadDrawSize>
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths Inherit="False">
