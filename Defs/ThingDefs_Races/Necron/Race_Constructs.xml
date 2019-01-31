@@ -26,7 +26,7 @@
 		<drawGUIOverlay>true</drawGUIOverlay>
 	</ThingDef>
 
-	<ThingDef ParentName="O21BaseConstruct" Name="BaseScarab" Abstract="True">
+	<ThingDef ParentName="BasePawn" Name="O21BaseScarab" Abstract="True">
 		<statBases>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<ToxicSensitivity>0</ToxicSensitivity>
@@ -51,10 +51,9 @@
 			<canBePredatorPrey>false</canBePredatorPrey>
 		</race>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-		
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseScarab">
+	<ThingDef ParentName="O21BaseScarab">
 		<defName>ConstructScarab</defName>
 		<label>canoptek scarab</label>
 		<description>A Necron Canoptek Scarab, capable of performing most simple tasks.</description>
@@ -114,6 +113,12 @@
 			<Steel>20</Steel>
 			<Plasteel>5</Plasteel>
 		</butcherProducts>
+		<modExtensions>
+			<li Class="Rimhammer40k.Necrons.NecronTweaker">
+				<tweakNecronResurrect>false</tweakNecronResurrect>
+				<tweakCorpseRot>true</tweakCorpseRot>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<PawnKindDef>
@@ -123,7 +128,7 @@
 		<combatPower>25</combatPower>
 		<defaultFactionType>PlayerColony</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
-		<isFighter>false</isFighter>
+		<isFighter>true</isFighter>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
