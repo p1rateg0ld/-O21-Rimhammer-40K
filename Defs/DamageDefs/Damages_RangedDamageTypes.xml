@@ -13,7 +13,7 @@
 		<label>plasma</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has been given the Emperors Justice.</deathMessage>
+		<deathMessage>{0} has given in to plasma burns.</deathMessage>
 		<hediff>PlasmaBurn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -37,7 +37,7 @@
 		<label>plasma cannon</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has been given the Emperors Justice.</deathMessage>
+		<deathMessage>{0} has given in to plasma burns.</deathMessage>
 		<hediff>PlasmaBurn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -62,7 +62,7 @@
 		<label>melta</label>
 		<externalViolence>true</externalViolence>
 		<hasForcefulImpact>false</hasForcefulImpact>
-		<deathMessage>{0} has been given the Emperors Justice.</deathMessage>
+		<deathMessage>{0} was doused in fiery promethium.</deathMessage>
 		<hediff>MeltaBurn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -87,7 +87,7 @@
 		<label>laser</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has been given the Emperors Justice.</deathMessage>
+		<deathMessage>{0} was lit up by Las fire.</deathMessage>
 		<hediff>LaserBurn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -112,7 +112,7 @@
 		<label>autogun</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has been given the Emperors Justice.</deathMessage>
+		<deathMessage>{0} has been gunned down.</deathMessage>
 		<hediff>Gunshot</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -133,7 +133,7 @@
 		<label>Ripper</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has been given the Emperors Justice.</deathMessage>
+		<deathMessage>{0} has been ripped a new one.</deathMessage>
 		<hediff>Gunshot</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -213,7 +213,7 @@
 		<label>Sonic</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>false</isExplosive>
-		<deathMessage>{0} has been claimed by Slaanesh.</deathMessage>
+		<deathMessage>{0} was claimed by the wubs.</deathMessage>
 		<hediff>Shredded</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -230,7 +230,7 @@
 		<label>reaper autocannon</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has been taken by the Dark Gods.</deathMessage>
+		<deathMessage>{0} has been reaped.</deathMessage>
 		<hediff>Gunshot</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -253,7 +253,7 @@
 		<label>plasma pulse</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
+		<deathMessage>{0} died to the Greater Good.</deathMessage>
 		<hediff>PlasmaBurn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -270,7 +270,7 @@
 		<label>ion beam</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
+		<deathMessage>{0} died to the Greater Good.</deathMessage>
 		<hediff>Burn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -287,7 +287,7 @@
 		<label>Railgun Slug</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
+		<deathMessage>{0} died to the Greater Good.</deathMessage>
 		<hediff>Gunshot</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -303,7 +303,7 @@
 		<label>Kroot Slug</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
+		<deathMessage>{0} died to the Greater Good.</deathMessage>
 		<hediff>Burn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -319,7 +319,7 @@
 		<label>Neutron blast</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} has perished to the Greater Good.</deathMessage>
+		<deathMessage>{0} died to the Greater Good.</deathMessage>
 		<hediff>Gunshot</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -336,7 +336,7 @@
 		<defName>O21Shuriken</defName>
 		<label>Shuriken</label>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} was cut to ribbons.</deathMessage>
+		<deathMessage>{0} sliced and diced.</deathMessage>
 		<hediff>Cut</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -351,7 +351,7 @@
 		<defName>O21Star</defName>
 		<label>Starfire</label>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0}'s death was forseen.</deathMessage>
+		<deathMessage>{0}'s was engulfed in starfire.</deathMessage>
 		<hediff>PlasmaBurn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -384,7 +384,7 @@
 		<label>Lance</label>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
-		<deathMessage>{0} was slain by a Brightlance.</deathMessage>
+		<deathMessage>{0} was killed by a brightlance.</deathMessage>
 		<hediff>LaserBurn</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -422,7 +422,7 @@
 		<defName>O21Gauss</defName>
 		<label>Gauss</label>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} was Flayed to death.</deathMessage>
+		<deathMessage>{0} was ripped atom from atom.</deathMessage>
 		<hediff>GaussWound</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -436,9 +436,9 @@
 
 	<DamageDef ParentName="LocalInjuryBase">
 		<defName>O21Radium</defName>
-		<label>Gauss</label>
+		<label>Radium</label>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} would have died anyway.</deathMessage>
+		<deathMessage>{0} gave in to the Radium.</deathMessage>
 		<hediff>RadiumGunshot</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -451,9 +451,9 @@
 
 	<DamageDef ParentName="LocalInjuryBase">
 		<defName>O21Galvanic</defName>
-		<label>Gauss</label>
+		<label>Galvanic</label>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} caught a Galvanic round.</deathMessage>
+		<deathMessage>{0} was hit by a Galvanic round.</deathMessage>
 		<hediff>GalvanicWound</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
@@ -466,9 +466,9 @@
 
 	<DamageDef ParentName="LocalInjuryBase">
 		<defName>O21Transuranic</defName>
-		<label>Gauss</label>
+		<label>Transuranic</label>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} was taken by a Transuranic bolt.</deathMessage>
+		<deathMessage>{0} was shocked by a Transuranic bolt.</deathMessage>
 		<hediff>TransuranicWound</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
