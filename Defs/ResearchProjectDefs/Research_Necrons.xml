@@ -8,7 +8,7 @@
 	</ResearchProjectTagDef>
 	
 	<ResearchProjectDef>
-		<tab>RH40K_Tab4</tab>
+		<tab>RH40K_Tab5</tab>
 		<defName>O21_Nec_Research</defName>
 		<label>Necron Research</label>
 		<description>Allows you to research Necron subjects.</description>
@@ -22,7 +22,7 @@
 	</ResearchProjectDef>
 	
 		<ResearchProjectDef>
-			<tab>RH40K_Tab4</tab>
+			<tab>RH40K_Tab5</tab>
 			<defName>O21_Nec_BasicWeapons</defName>
 			<label>Basic Weapons</label>
 			<description>Provides access to knowledge of the Necron basic weapons.</description>
@@ -37,7 +37,7 @@
 		</ResearchProjectDef>
 		
 			<ResearchProjectDef>
-				<tab>RH40K_Tab4</tab>
+				<tab>RH40K_Tab5</tab>
 				<defName>O21_Nec_HeavyWeapons</defName>
 				<label>Heavy Weapons</label>
 				<description>Provides access to knowledge of the Necron heavy weapons.</description>
@@ -52,7 +52,7 @@
 			</ResearchProjectDef>
 		
 		<!-- <ResearchProjectDef>
-			<tab>RH40K_Tab4</tab>
+			<tab>RH40K_Tab5</tab>
 			<defName>O21_Nec_Turrets</defName>
 			<label>Turret Emplacements</label>
 			<description>Provides access to turret emplacements from the Necron.</description>
@@ -67,7 +67,7 @@
 		</ResearchProjectDef> -->
 			
 		<ResearchProjectDef>
-			<tab>RH40K_Tab4</tab>
+			<tab>RH40K_Tab5</tab>
 			<defName>O21_Nec_DefStructures</defName>
 			<label>Defensive Structures</label>
 			<description>Provides access defensive structures like the Aegis.</description>

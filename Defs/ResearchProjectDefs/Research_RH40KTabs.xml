@@ -20,5 +20,10 @@
 		<defName>RH40K_Tab4</defName>
 		<label>R40k-TAU</label>
 	</ResearchTabDef>
+	
+	<ResearchTabDef>
+		<defName>RH40K_Tab5</defName>
+		<label>R40k-NEC</label>
+	</ResearchTabDef>
 
 </Defs>
