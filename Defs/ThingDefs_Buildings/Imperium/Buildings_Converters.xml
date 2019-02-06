@@ -59,17 +59,7 @@
 				<requiredSex>Male</requiredSex>
 				<requiredHediffs />
 				<outputDef>Astartes</outputDef>
-				<outputSex />
-				<forcedHediff />
 				<forcedBody>Hulk</forcedBody>
-				<forcedHead />
-				<forcedSkinColor />
-				<forcedSkinColorInt />
-				<forcedHair />
-				<forcedHairColor />
-				<forcedHairColorInt />
-				<forcedConversion />
-				<animalConversion />
 				<finishingSound>AstartesOvenDone</finishingSound>
 				<greenLight>(100, 255, 100, 0)</greenLight>
 				<redLight>(252, 187, 113, 0)</redLight>
@@ -85,7 +75,7 @@
 				<explosiveDamageType>Flame</explosiveDamageType>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>5</glowRadius>
+				<glowRadius>3</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Flickable" />
@@ -168,7 +158,86 @@
 				<explosiveDamageType>Flame</explosiveDamageType>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>5</glowRadius>
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		<researchPrerequisites>
+			<li>O21_Imp_SMGeneSeed</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_TerranTrainingTube</defName>
+		<label>terran training tube</label>
+		<description>Your one stop shop for Terran training, when you need your puny average humans to stop moaning about how they don't have a table or some other bitch ass complaint, pop them in here and they'll be out and ready to brave the harsh grim dark reality that surrounds them.</description>
+		<thingClass>O21Toolbox.Converter.Building_Converter</thingClass>
+		
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Normal</tickerType>
+		<size>(1,2)</size>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1, 2)</drawSize>
+			<shadowData>
+				<volume>(0.83, 0.3, 1.7)</volume>
+			</shadowData>
+		</graphicData>
+		
+		<statBases>
+			<WorkToBuild>3200</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		
+		<costList>
+		  <CeramiteMedGrade>180</CeramiteMedGrade>
+		  <CeramiteHighGrade>40</CeramiteHighGrade>
+		  <ComponentIndustrial>15</ComponentIndustrial>
+		  <ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		
+		<comps>
+			<li Class="O21Toolbox.Converter.CompProperties_Converter">
+				<compClass>O21Toolbox.Converter.Comp_Converter</compClass>
+				<inputDefs>
+					<li>Human</li>
+				</inputDefs>
+				<outputDef>Terran</outputDef>
+				<finishingSound>AstartesOvenDone</finishingSound>
+				<greenLight>(100, 255, 100, 0)</greenLight>
+				<redLight>(252, 187, 113, 0)</redLight>
+				<cookingTime>12000</cookingTime>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Flickable" />

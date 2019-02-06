@@ -64,5 +64,13 @@
 	<DesignatorDropdownGroupDef>
 		<defName>RH_NecScarabPlatforms</defName>
 	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NEC_LightTurret</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NEC_HeavyTurret</defName>
+	</DesignatorDropdownGroupDef>
 
 </Defs>

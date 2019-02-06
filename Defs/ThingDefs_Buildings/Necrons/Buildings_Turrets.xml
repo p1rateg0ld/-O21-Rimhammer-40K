@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Necron Turrets - Green - Light ============================================================== -->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_Turret_NecronGreen_GaussLight</defName>
+		<label>light gauss turret (green)</label>
+		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<designatorDropdown>RH_NEC_LightTurret</designatorDropdown>
+		<graphicData>
+			<texPath>Things/Necron/Building/Security/Necron_Turret_Green</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<uiIconPath>Things/Necron/Building/Security/Necron_Turret_Green</uiIconPath>
+		
+		<size>(3,3)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<tickerType>Normal</tickerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>O21_Gun_NecronGreen_GaussLight</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+			<turretTopDrawSize>6</turretTopDrawSize>
+		</building>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>450</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+		</statBases>
+		
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,180,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		
+		<costList>
+			<Necrodermis>200</Necrodermis>
+			<GaussCrystalGreen>60</GaussCrystalGreen>
+		</costList>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+		<ThingDef ParentName="BaseHumanGun">
+			<defName>O21_Gun_NecronGreen_GaussLight</defName>
+			<label>gauss turret charge</label>
+			<description>orb of energy produced by a necron turret</description>
+			<graphicData>
+				<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<menuHidden>true</menuHidden>
+			<soundInteract>Interact_Rifle</soundInteract>
+			<tradeability>None</tradeability>
+			<destroyOnDrop>true</destroyOnDrop>
+			<statBases>
+				<Mass>40</Mass>
+				<AccuracyTouch>1.00</AccuracyTouch>
+				<AccuracyShort>0.95</AccuracyShort>
+				<AccuracyMedium>0.90</AccuracyMedium>
+				<AccuracyLong>0.85</AccuracyLong>
+				<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			</statBases>
+			<weaponTags Inherit="false">
+				<li>TurretGun</li>
+			</weaponTags>
+			<verbs>
+				<li>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>O21_Bullet_NecronGreen_GaussLight</defaultProjectile>
+					<warmupTime>1.5</warmupTime>
+					<range>36</range>
+					<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+					<burstShotCount>3</burstShotCount>
+					<soundCast>GaussFlayerSound</soundCast>
+					<muzzleFlashScale>15</muzzleFlashScale>
+				</li>
+			</verbs>
+		</ThingDef>
+			
+		<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+			<defName>O21_Bullet_NecronGreen_GaussLight</defName>
+			<label>gauss blast</label>
+			
+			<graphicData>
+				<texPath>Things/Projectile/GaussBolt</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			
+			<projectile>
+				<damageDef>O21Gauss</damageDef>
+				<flyOverhead>false</flyOverhead>
+				<damageAmountBase>35</damageAmountBase>
+				<armorPenetrationBase>0.6</armorPenetrationBase>
+				<speed>200</speed>
+			</projectile>
+			
+			<thingClass>JecsTools.Projectile_Laser</thingClass>
+			<preFiringInitialIntensity>0</preFiringInitialIntensity>
+			<preFiringFinalIntensity>2</preFiringFinalIntensity>
+			<postFiringInitialIntensity>2</postFiringInitialIntensity>
+			<postFiringFinalIntensity>0</postFiringFinalIntensity>
+			<preFiringDuration>2</preFiringDuration>
+			<postFiringDuration>50</postFiringDuration>
+		</ThingDef>
+
+	<!-- Necron Turrets - Green - Heavy ============================================================== -->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_Turret_NecronGreen_GaussHeavy</defName>
+		<label>heavy gauss turret (green)</label>
+		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<designatorDropdown>RH_NEC_HeavyTurret</designatorDropdown>
+		<graphicData>
+			<texPath>Things/Necron/Building/Security/Necron_Turret_GreenAdv</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<uiIconPath>Things/Necron/Building/Security/Necron_Turret_GreenAdv</uiIconPath>
+		
+		<size>(3,3)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<tickerType>Normal</tickerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>O21_Gun_NecronGreen_GaussHeavy</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+			<turretTopDrawSize>6</turretTopDrawSize>
+		</building>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>450</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+		</statBases>
+		
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,180,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		
+		<costList>
+			<Necrodermis>200</Necrodermis>
+			<GaussCrystalGreen>60</GaussCrystalGreen>
+		</costList>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+		<ThingDef ParentName="BaseHumanGun">
+			<defName>O21_Gun_NecronGreen_GaussHeavy</defName>
+			<label>gauss turret charge</label>
+			<description>orb of energy produced by a necron turret</description>
+			<graphicData>
+				<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<menuHidden>true</menuHidden>
+			<soundInteract>Interact_Rifle</soundInteract>
+			<tradeability>None</tradeability>
+			<destroyOnDrop>true</destroyOnDrop>
+			<statBases>
+				<Mass>40</Mass>
+				<AccuracyTouch>1.00</AccuracyTouch>
+				<AccuracyShort>0.95</AccuracyShort>
+				<AccuracyMedium>0.90</AccuracyMedium>
+				<AccuracyLong>0.85</AccuracyLong>
+				<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			</statBases>
+			<weaponTags Inherit="false">
+				<li>TurretGun</li>
+			</weaponTags>
+			<verbs>
+				<li>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>O21_Bullet_NecronGreen_GaussHeavy</defaultProjectile>
+					<warmupTime>1.5</warmupTime>
+					<range>28</range>
+					<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+					<burstShotCount>2</burstShotCount>
+					<soundCast>GaussFlayerSound</soundCast>
+					<muzzleFlashScale>20</muzzleFlashScale>
+				</li>
+			</verbs>
+		</ThingDef>
+			
+		<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+			<defName>O21_Bullet_NecronGreen_GaussHeavy</defName>
+			<label>gauss blast</label>
+			
+			<graphicData>
+				<texPath>Things/Projectile/GaussBolt</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			
+			<projectile>
+				<damageDef>O21Gauss</damageDef>
+				<flyOverhead>false</flyOverhead>
+				<damageAmountBase>80</damageAmountBase>
+				<armorPenetrationBase>0.6</armorPenetrationBase>
+				<speed>200</speed>
+			</projectile>
+			
+			<thingClass>JecsTools.Projectile_Laser</thingClass>
+			<preFiringInitialIntensity>0</preFiringInitialIntensity>
+			<preFiringFinalIntensity>2</preFiringFinalIntensity>
+			<postFiringInitialIntensity>2</postFiringInitialIntensity>
+			<postFiringFinalIntensity>0</postFiringFinalIntensity>
+			<preFiringDuration>2</preFiringDuration>
+			<postFiringDuration>50</postFiringDuration>
+		</ThingDef>
+
+	<!-- Necron Turrets - Orange - Light ============================================================== -->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_Turret_NecronOrange_GaussLight</defName>
+		<label>light gauss turret (orange)</label>
+		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<designatorDropdown>RH_NEC_LightTurret</designatorDropdown>
+		<graphicData>
+			<texPath>Things/Necron/Building/Security/Necron_Turret_Orange</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<uiIconPath>Things/Necron/Building/Security/Necron_Turret_Orange</uiIconPath>
+		
+		<size>(3,3)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<tickerType>Normal</tickerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>O21_Gun_NecronOrange_GaussLight</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+			<turretTopDrawSize>6</turretTopDrawSize>
+		</building>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>450</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+		</statBases>
+		
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,180,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		
+		<costList>
+			<Necrodermis>200</Necrodermis>
+			<GaussCrystalOrange>60</GaussCrystalOrange>
+		</costList>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+		<ThingDef ParentName="BaseHumanGun">
+			<defName>O21_Gun_NecronOrange_GaussLight</defName>
+			<label>gauss turret charge</label>
+			<description>orb of energy produced by a necron turret</description>
+			<graphicData>
+				<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<menuHidden>true</menuHidden>
+			<soundInteract>Interact_Rifle</soundInteract>
+			<tradeability>None</tradeability>
+			<destroyOnDrop>true</destroyOnDrop>
+			<statBases>
+				<Mass>40</Mass>
+				<AccuracyTouch>1.00</AccuracyTouch>
+				<AccuracyShort>0.95</AccuracyShort>
+				<AccuracyMedium>0.90</AccuracyMedium>
+				<AccuracyLong>0.85</AccuracyLong>
+				<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			</statBases>
+			<weaponTags Inherit="false">
+				<li>TurretGun</li>
+			</weaponTags>
+			<verbs>
+				<li>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>O21_Bullet_NecronOrange_GaussLight</defaultProjectile>
+					<warmupTime>1.5</warmupTime>
+					<range>36</range>
+					<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+					<burstShotCount>3</burstShotCount>
+					<soundCast>GaussFlayerSound</soundCast>
+					<muzzleFlashScale>15</muzzleFlashScale>
+				</li>
+			</verbs>
+		</ThingDef>
+			
+		<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+			<defName>O21_Bullet_NecronOrange_GaussLight</defName>
+			<label>gauss blast</label>
+			
+			<graphicData>
+				<texPath>Things/Projectile/GaussBoltOrange</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			
+			<projectile>
+				<damageDef>O21Gauss</damageDef>
+				<flyOverhead>false</flyOverhead>
+				<damageAmountBase>35</damageAmountBase>
+				<armorPenetrationBase>0.6</armorPenetrationBase>
+				<speed>200</speed>
+			</projectile>
+			
+			<thingClass>JecsTools.Projectile_Laser</thingClass>
+			<preFiringInitialIntensity>0</preFiringInitialIntensity>
+			<preFiringFinalIntensity>2</preFiringFinalIntensity>
+			<postFiringInitialIntensity>2</postFiringInitialIntensity>
+			<postFiringFinalIntensity>0</postFiringFinalIntensity>
+			<preFiringDuration>2</preFiringDuration>
+			<postFiringDuration>50</postFiringDuration>
+		</ThingDef>
+
+	<!-- Necron Turrets - Orange - Heavy ============================================================== -->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_Turret_NecronOrange_GaussHeavy</defName>
+		<label>heavy gauss turret (orange)</label>
+		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<designatorDropdown>RH_NEC_HeavyTurret</designatorDropdown>
+		<graphicData>
+			<texPath>Things/Necron/Building/Security/Necron_Turret_OrangeAdv</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<uiIconPath>Things/Necron/Building/Security/Necron_Turret_OrangeAdv</uiIconPath>
+		
+		<size>(3,3)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<tickerType>Normal</tickerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>O21_Gun_NecronOrange_GaussHeavy</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+			<turretTopDrawSize>6</turretTopDrawSize>
+		</building>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>450</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+		</statBases>
+		
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,180,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		
+		<costList>
+			<Necrodermis>200</Necrodermis>
+			<GaussCrystalOrange>60</GaussCrystalOrange>
+		</costList>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+		<ThingDef ParentName="BaseHumanGun">
+			<defName>O21_Gun_NecronOrange_GaussHeavy</defName>
+			<label>gauss turret charge</label>
+			<description>orb of energy produced by a necron turret</description>
+			<graphicData>
+				<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<menuHidden>true</menuHidden>
+			<soundInteract>Interact_Rifle</soundInteract>
+			<tradeability>None</tradeability>
+			<destroyOnDrop>true</destroyOnDrop>
+			<statBases>
+				<Mass>40</Mass>
+				<AccuracyTouch>1.00</AccuracyTouch>
+				<AccuracyShort>0.95</AccuracyShort>
+				<AccuracyMedium>0.90</AccuracyMedium>
+				<AccuracyLong>0.85</AccuracyLong>
+				<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			</statBases>
+			<weaponTags Inherit="false">
+				<li>TurretGun</li>
+			</weaponTags>
+			<verbs>
+				<li>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>O21_Bullet_NecronOrange_GaussHeavy</defaultProjectile>
+					<warmupTime>1.5</warmupTime>
+					<range>28</range>
+					<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+					<burstShotCount>2</burstShotCount>
+					<soundCast>GaussFlayerSound</soundCast>
+					<muzzleFlashScale>20</muzzleFlashScale>
+				</li>
+			</verbs>
+		</ThingDef>
+			
+		<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+			<defName>O21_Bullet_NecronOrange_GaussHeavy</defName>
+			<label>gauss blast</label>
+			
+			<graphicData>
+				<texPath>Things/Projectile/GaussBoltOrange</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			
+			<projectile>
+				<damageDef>O21Gauss</damageDef>
+				<flyOverhead>false</flyOverhead>
+				<damageAmountBase>80</damageAmountBase>
+				<armorPenetrationBase>0.6</armorPenetrationBase>
+				<speed>200</speed>
+			</projectile>
+			
+			<thingClass>JecsTools.Projectile_Laser</thingClass>
+			<preFiringInitialIntensity>0</preFiringInitialIntensity>
+			<preFiringFinalIntensity>2</preFiringFinalIntensity>
+			<postFiringInitialIntensity>2</postFiringInitialIntensity>
+			<postFiringFinalIntensity>0</postFiringFinalIntensity>
+			<preFiringDuration>2</preFiringDuration>
+			<postFiringDuration>50</postFiringDuration>
+		</ThingDef>
+
+	<!-- Necron Turrets - Blue - Light ============================================================== -->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_Turret_NecronBlue_GaussLight</defName>
+		<label>light gauss turret (blue)</label>
+		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<designatorDropdown>RH_NEC_LightTurret</designatorDropdown>
+		<graphicData>
+			<texPath>Things/Necron/Building/Security/Necron_Turret_Blue</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<uiIconPath>Things/Necron/Building/Security/Necron_Turret_Blue</uiIconPath>
+		
+		<size>(3,3)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<tickerType>Normal</tickerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>O21_Gun_NecronBlue_GaussLight</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+			<turretTopDrawSize>6</turretTopDrawSize>
+		</building>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>450</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+		</statBases>
+		
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,180,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		
+		<costList>
+			<Necrodermis>200</Necrodermis>
+			<GaussCrystalBlue>60</GaussCrystalBlue>
+		</costList>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+		<ThingDef ParentName="BaseHumanGun">
+			<defName>O21_Gun_NecronBlue_GaussLight</defName>
+			<label>gauss turret charge</label>
+			<description>orb of energy produced by a necron turret</description>
+			<graphicData>
+				<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<menuHidden>true</menuHidden>
+			<soundInteract>Interact_Rifle</soundInteract>
+			<tradeability>None</tradeability>
+			<destroyOnDrop>true</destroyOnDrop>
+			<statBases>
+				<Mass>40</Mass>
+				<AccuracyTouch>1.00</AccuracyTouch>
+				<AccuracyShort>0.95</AccuracyShort>
+				<AccuracyMedium>0.90</AccuracyMedium>
+				<AccuracyLong>0.85</AccuracyLong>
+				<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			</statBases>
+			<weaponTags Inherit="false">
+				<li>TurretGun</li>
+			</weaponTags>
+			<verbs>
+				<li>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>O21_Bullet_NecronBlue_GaussLight</defaultProjectile>
+					<warmupTime>1.5</warmupTime>
+					<range>36</range>
+					<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+					<burstShotCount>3</burstShotCount>
+					<soundCast>GaussFlayerSound</soundCast>
+					<muzzleFlashScale>15</muzzleFlashScale>
+				</li>
+			</verbs>
+		</ThingDef>
+			
+		<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+			<defName>O21_Bullet_NecronBlue_GaussLight</defName>
+			<label>gauss blast</label>
+			
+			<graphicData>
+				<texPath>Things/Projectile/GaussBoltBlue</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			
+			<projectile>
+				<damageDef>O21Gauss</damageDef>
+				<flyOverhead>false</flyOverhead>
+				<damageAmountBase>35</damageAmountBase>
+				<armorPenetrationBase>0.6</armorPenetrationBase>
+				<speed>200</speed>
+			</projectile>
+			
+			<thingClass>JecsTools.Projectile_Laser</thingClass>
+			<preFiringInitialIntensity>0</preFiringInitialIntensity>
+			<preFiringFinalIntensity>2</preFiringFinalIntensity>
+			<postFiringInitialIntensity>2</postFiringInitialIntensity>
+			<postFiringFinalIntensity>0</postFiringFinalIntensity>
+			<preFiringDuration>2</preFiringDuration>
+			<postFiringDuration>50</postFiringDuration>
+		</ThingDef>
+
+	<!-- Necron Turrets - Blue - Heavy ============================================================== -->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_Turret_NecronBlue_GaussHeavy</defName>
+		<label>heavy gauss turret (blue)</label>
+		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<designatorDropdown>RH_NEC_HeavyTurret</designatorDropdown>
+		<graphicData>
+			<texPath>Things/Necron/Building/Security/Necron_Turret_BlueAdv</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<uiIconPath>Things/Necron/Building/Security/Necron_Turret_BlueAdv</uiIconPath>
+		
+		<size>(3,3)</size>
+		<passability>Impassable</passability>
+		<castEdgeShadows>False</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<tickerType>Normal</tickerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>O21_Gun_NecronBlue_GaussHeavy</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+			<turretTopDrawSize>6</turretTopDrawSize>
+		</building>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>450</Mass>
+			<Beauty>5</Beauty>
+			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+		</statBases>
+		
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,180,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		
+		<costList>
+			<Necrodermis>200</Necrodermis>
+			<GaussCrystalBlue>60</GaussCrystalBlue>
+		</costList>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+		<ThingDef ParentName="BaseHumanGun">
+			<defName>O21_Gun_NecronBlue_GaussHeavy</defName>
+			<label>gauss turret charge</label>
+			<description>orb of energy produced by a necron turret</description>
+			<graphicData>
+				<texPath>Things/Item/Equipment/WeaponRanged/Minigun</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<menuHidden>true</menuHidden>
+			<soundInteract>Interact_Rifle</soundInteract>
+			<tradeability>None</tradeability>
+			<destroyOnDrop>true</destroyOnDrop>
+			<statBases>
+				<Mass>40</Mass>
+				<AccuracyTouch>1.00</AccuracyTouch>
+				<AccuracyShort>0.95</AccuracyShort>
+				<AccuracyMedium>0.90</AccuracyMedium>
+				<AccuracyLong>0.85</AccuracyLong>
+				<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			</statBases>
+			<weaponTags Inherit="false">
+				<li>TurretGun</li>
+			</weaponTags>
+			<verbs>
+				<li>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>O21_Bullet_NecronBlue_GaussHeavy</defaultProjectile>
+					<warmupTime>1.5</warmupTime>
+					<range>28</range>
+					<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+					<burstShotCount>2</burstShotCount>
+					<soundCast>GaussFlayerSound</soundCast>
+					<muzzleFlashScale>20</muzzleFlashScale>
+				</li>
+			</verbs>
+		</ThingDef>
+			
+		<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+			<defName>O21_Bullet_NecronBlue_GaussHeavy</defName>
+			<label>gauss blast</label>
+			
+			<graphicData>
+				<texPath>Things/Projectile/GaussBoltBlue</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			
+			<projectile>
+				<damageDef>O21Gauss</damageDef>
+				<flyOverhead>false</flyOverhead>
+				<damageAmountBase>80</damageAmountBase>
+				<armorPenetrationBase>0.6</armorPenetrationBase>
+				<speed>200</speed>
+			</projectile>
+			
+			<thingClass>JecsTools.Projectile_Laser</thingClass>
+			<preFiringInitialIntensity>0</preFiringInitialIntensity>
+			<preFiringFinalIntensity>2</preFiringFinalIntensity>
+			<postFiringInitialIntensity>2</postFiringInitialIntensity>
+			<postFiringFinalIntensity>0</postFiringFinalIntensity>
+			<preFiringDuration>2</preFiringDuration>
+			<postFiringDuration>50</postFiringDuration>
+		</ThingDef>
+	
+</Defs>

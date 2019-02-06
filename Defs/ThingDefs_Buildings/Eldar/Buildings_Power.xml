@@ -5,6 +5,7 @@
 		<defName>EldGenerator_A_Small</defName>
 		<label>Small Eldar Generator</label>
 		<description>Our power generation is far superior to the more pitiful attempts by inferior races, bask in its majesty!</description>
+		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Eldar/Building/Power/SmallGenerator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -73,6 +74,7 @@
 		<defName>EldGenerator_B_Large</defName>
 		<label>Large Eldar Generator</label>
 		<description>Our power generation is far superior to the more pitiful attempts by inferior races, bask in its majesty! Note: Must be placed on a steam geyser</description>
+		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Eldar/Building/Power/LargeGenerator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_CanoptekCanneryGreen</defName>
+		<label>canoptek cannery (green)</label>
+		<description>An automated device for converting humans of any kind into Pariahs, the culmination of an unknown Necron Lords work to create a cybernetic combination of Human and Necron. Allowing them to be created without requiring the Pariah gene, giving Necrons a way to defeat an enemy and replenish their own numbers at the same time. Functionally Pariahs are no different from the standard Necron Warrior.</description>
+		<!-- Converter MUST be this class to function with the comp further below. -->
+		<thingClass>O21Toolbox.Converter.Building_Converter</thingClass>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		
+		<graphicData>
+			<texPath>Things/Necron/Building/Converter/CanoptekCannery_Green_Closed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<WorkToBuild>3200</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		
+		<costList>
+		  <CeramiteMedGrade>200</CeramiteMedGrade>
+		  <CeramiteHighGrade>60</CeramiteHighGrade>
+		  <ComponentIndustrial>20</ComponentIndustrial>
+		  <ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		
+		<comps>
+			<li Class="O21Toolbox.Converter.CompProperties_Converter">
+				<compClass>O21Toolbox.Converter.Comp_Converter</compClass>
+				<inputDefs>
+					<li>Human</li>
+					<li>Alien_Terran</li>
+					<li>Alien_Astartes</li>
+					<li>Alien_Sororitas</li>
+				</inputDefs>
+				<outputDef>NecronPariah</outputDef>
+				<forcedBody>Male</forcedBody>
+				<finishingSound>AstartesOvenDone</finishingSound>
+				<greenLight>(100, 255, 100, 0)</greenLight>
+				<redLight>(252, 187, 113, 0)</redLight>
+				<cookingTime>6000</cookingTime>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+</Defs>

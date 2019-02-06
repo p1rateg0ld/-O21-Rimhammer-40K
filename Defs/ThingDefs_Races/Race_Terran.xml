@@ -79,6 +79,24 @@
 					<li>PsychicSensitivity</li>
 					<li>Nudist</li>
 				</disallowedTraits>
+				<alienPartGenerator>
+					<useGenderedHeads>true</useGenderedHeads>
+					<aliencrowntypes>
+						<li>Average_Normal</li>
+						<li>Average_Pointy</li>
+						<li>Average_Wide</li>
+						<li>Narrow_Normal</li>
+						<li>Narrow_Pointy</li>
+						<li>Narrow_Wide</li>
+					</aliencrowntypes>
+					<alienbodytypes>
+						<li>Hulk</li>
+						<li>Male</li>
+						<li>Female</li>
+						<li>Thin</li>
+						<li>Fat</li>
+					</alienbodytypes>
+				</alienPartGenerator>
 				<chemicalSettings />
 				<factionRelations>
 					<li>
@@ -412,7 +430,7 @@ Needless to say, Gue'vesa are considered the worst kind of Traitors to the Emper
 				<forcedRaceTraitEntries>
 				</forcedRaceTraitEntries>
 				<alienPartGenerator>
-					<alienbodytypes>
+					<alienbodytypes Inherit="False">
 						<li>Hulk</li>
 					</alienbodytypes>
 					<customDrawSize>(1.15, 1.15)</customDrawSize>
@@ -610,8 +628,14 @@ There is naturally some overlap between the duties of the Sisterhood and the Imp
 				<maleGenderProbability>0</maleGenderProbability>
 				<forcedRaceTraitEntries>
 				</forcedRaceTraitEntries>
-				<alienPartGenerator>
+				<alienPartGenerator Inherit="False">
 					<aliencrowntypes>
+						<li>Average_Normal</li>
+						<li>Average_Pointy</li>
+						<li>Average_Wide</li>
+						<li>Narrow_Normal</li>
+						<li>Narrow_Pointy</li>
+						<li>Narrow_Wide</li>
 						<li>SisterOfBattle_Normal</li>
 						<li>SisterOfBattle_Tattoo1</li>
 						<li>SisterOfBattle_Tattoo2</li>

@@ -153,8 +153,10 @@
 		<defName>GaussGenerator_A_Small</defName>
 		<label>Small Gauss Generator</label>
 		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe.</description>
+		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Necron/Building/Power/GaussGeneratorSmall</texPath>
+			<shaderType>Transparent</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.3, 3.3)</drawSize>
 			<damageData>
@@ -220,6 +222,7 @@
 		<defName>GaussGenerator_B_Large</defName>
 		<label>Large Gauss Generator</label>
 		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe. Note: Must be placed on a steam geyser</description>
+		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Necron/Building/Power/GaussGeneratorLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

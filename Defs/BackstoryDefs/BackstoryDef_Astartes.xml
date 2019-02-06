@@ -9,7 +9,7 @@
 		<titleShort>Astartes Initiate</titleShort>
 		<baseDescription>As a young boy this Terran was chosen to go through training and implantation process for becoming a Space Marine.</baseDescription>
 		<slot>Childhood</slot>
-		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<maleCommonality>20</maleCommonality>
 		<spawnCategories>
 			<li>AstartesBackstory</li>
@@ -26,7 +26,7 @@
 		<titleShort>Space Marine</titleShort>
 		<baseDescription>Having finished his training, this Terran became one of the greatest warriors in the Imperium, part of the Adeptus Astartes, a Space Marine.</baseDescription>
 		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<maleCommonality>20</maleCommonality>
 		<spawnCategories>
 			<li>AstartesBackstory</li>
@@ -53,7 +53,7 @@
 		<titleShort>Space Marine</titleShort>
 		<baseDescription>Having finished his training, this Terran became one of the greatest warriors in the Imperium, part of the Adeptus Astartes, a Space Marine.</baseDescription>
 		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<maleCommonality>20</maleCommonality>
 		<spawnCategories>
 			<li>AstartesBackstory</li>
@@ -80,7 +80,7 @@
 		<titleShort>Space Marine</titleShort>
 		<baseDescription>Having finished his training, this Terran became one of the greatest warriors in the Imperium, part of the Adeptus Astartes, a Space Marine.</baseDescription>
 		<slot>Adulthood</slot>
-		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 		<maleCommonality>2</maleCommonality>
 		<spawnCategories>
 			<li>AstartesBackstory</li>

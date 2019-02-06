@@ -612,5 +612,93 @@
 			<ArmorRating_Heat>1.25</ArmorRating_Heat>
 		</statBases>
 	</AlienRace.ThingDef_AlienRace>
+
+	<AlienRace.ThingDef_AlienRace ParentName="Alien_Necron">
+		<defName>Alien_NecronPariah</defName>
+		<label>Necron Pariah</label>
+		<description>A Necron Pariah is an experimental cybernetic warrior crafted from a terrible symbiosis of Necron technology and human evolution. They were created from human victims that are abducted by the Necrons, and bear the "Pariah" Gene that severs the bearer completely from the Warp; effectively making them both soulless and immune to the effects of all psychic abilities. The Pariah gene requirement has recently been worked around by an unknown Necron Lord, now humans can simply be converted into these machines, stripping them of their soul, the gene is still required for them to have any immunity to psychic abilites though.</description>
+		<uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
+		<!-- <comps>
+			<li Class="Rimhammer40k.CompProperties_GaussTracker">
+				<canHibernate>true</canHibernate>
+				<hibernationJob>NecronHibernate</hibernationJob>
+			</li>
+		</comps> -->
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator Inherit="false">
+					<useGenderedHeads>false</useGenderedHeads>
+					<aliencrowntypes>
+						<li>Warrior</li>
+					</aliencrowntypes>
+					<alienbodytypes>
+						<li>Male</li>
+					</alienbodytypes>
+					<alienskincolorgen Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<weight>10</weight>
+								<only>(255,255,255)</only>
+							</li>
+						</options>
+					</alienskincolorgen>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths Inherit="false">
+				<li>
+					<head>Things/Necron/Heads/</head>
+					<body>Things/Necron/Body/</body>
+				</li>
+				<li>
+					<lifeStageDefs>
+						<li>HumanlikeAdult</li>
+					</lifeStageDefs>
+				</li>
+			</graphicPaths>
+			<thoughtSettings Inherit="false">
+				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
+				<cannotReceiveThoughts>
+					<li>NeedFood</li>
+					<li>Naked</li>
+					<li>SharedBed</li>
+					<li>AttendedWedding</li>
+					<li>AttendedParty</li>
+					<li>SleepDisturbed</li>
+					<li>SleptOnGround</li>
+					<li>KnowPrisonerSold</li>
+					<li>KnowGuestOrganHarvested</li>
+					<li>KnowColonistOrganHarvested</li>
+					<li>KnowBuriedInSarcophagus</li>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>ObservedLayingCorpse</li>
+					<li>ObservedLayingRottingCorpse</li>
+					<li>WitnessedDeathAlly</li>
+					<li>WitnessedDeathNonAlly</li>
+					<li>ColonistBanished</li>
+					<li>ColonistBanishedToDie</li>
+					<li>PrisonerBanishedToDie</li>
+					<li>BondedAnimalBanished</li>
+					<li>SleptInBedroom</li>
+					<li>ArtifactMoodBoost</li>
+					<li>LowExpectations</li>
+					<li>EnvironmentDark</li>
+					<li>CabinFever</li>
+					<li>ApparelDamaged</li>
+					<li>DeadMansApparel</li>
+					<li>HumanLeatherApparelSad</li>
+					<li>KnowGuestExecuted</li>
+					<li>KnowColonistExecuted</li>
+					<li>KnowPrisonerDiedInnocent</li>
+					<li>KnowColonistDied</li>
+					<li>PawnWithGoodOpinionDied</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+		</alienRace>
+		<statBases>
+			<MarketValue>8500</MarketValue>
+			<MoveSpeed>3.2</MoveSpeed>
+		</statBases>
+	</AlienRace.ThingDef_AlienRace>
 	
 </Defs>

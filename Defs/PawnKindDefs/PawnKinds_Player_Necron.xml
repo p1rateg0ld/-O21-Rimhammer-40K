@@ -101,4 +101,29 @@
 		</techHediffsTags> -->
 	</PawnKindDef>
 
+	<PawnKindDef>
+		<defName>NecronPariah</defName>
+		<label>Necron Pariah</label>
+		<race>Alien_NecronPariah</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronLowerBackstory</li>
+			<li>NecronWarriorBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>80</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<!-- <techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>
+			<min>500</min>
+			<max>1200</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>NecronWarriorTech</li>
+		</techHediffsTags> -->
+	</PawnKindDef>
+
 </Defs>

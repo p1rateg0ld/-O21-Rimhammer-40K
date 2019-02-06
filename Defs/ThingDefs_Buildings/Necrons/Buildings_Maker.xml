@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>NecronTomb_Green</defName>
+		<label>necron tomb entrance</label>
+		<description>Used to awaken necrons from their slumber beneath the surface.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Tomb/NecronTomb_001</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(11, 11)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+        <surfaceType>Item</surfaceType>
+		<pathCost>10000</pathCost>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>false</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <drawerType>RealtimeOnly</drawerType>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<statBases>
+			<WorkToBuild>4000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(10, 10)</size>
+		<costList>
+			<Necrodermis>350</Necrodermis>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>100000</storedEnergyMax>
+				<efficiency>1.0</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>false</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(80,217,80,0)</glowColor>
+			</li>
+			<li Class="CompAnimated.CompProperties_AnimatedOver">
+				<secondsBetweenFrames>0.15</secondsBetweenFrames>
+				<stillFrames>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_001</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_002</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_003</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_004</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_005</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_006</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_007</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_008</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_009</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_010</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_011</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_012</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_013</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_014</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_015</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_016</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_017</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_018</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_019</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Necron/Building/Tomb/NecronTomb_020</texPath>
+						<drawSize>(11, 11)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+				</stillFrames>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_OnSteamGeyser</li>
+		</placeWorkers>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+</Defs>

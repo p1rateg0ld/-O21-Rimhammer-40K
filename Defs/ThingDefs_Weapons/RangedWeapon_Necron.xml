@@ -96,7 +96,7 @@ Unlike more conventional directed energy weapons, a Gauss Flayer does not delive
 	
 	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
 		<defName>O21_Bullet_GaussFlayer</defName>
-		<label>Gauss Blast</label>
+		<label>gauss blast</label>
 		<graphicData>
 			<texPath>Things/Projectile/GaussBolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
