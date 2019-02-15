@@ -1,87 +1,70 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="FurnitureBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>NecronSarcophagus</defName>
 		<label>necron sarcophagus</label>
 		<description>Powered chamber where Necrons slumber.</description>
-		<thingClass>Building_Bed</thingClass>
+		
 		<graphicData>
 			<texPath>Things/Necron/Building/Sarcophagus/NecronSarcophagus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
+		
+		<uiIconScale>0.70</uiIconScale>
+		<size>(1,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<canOverlapZones>false</canOverlapZones>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>true</useHitPoints>
+		<designationCategory>Furniture</designationCategory>
+		<passability>Standable</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<techLevel>Archotech</techLevel>
+		
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>500</WorkToBuild>
 			<Flammability>0.0</Flammability>
 			<Comfort>1.0</Comfort>
 			<Beauty>1</Beauty>
-			<Mass>10</Mass>
-			<BedRestEffectiveness>3</BedRestEffectiveness>
+			<Mass>20</Mass>
 		</statBases>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
-		<minifiedDef>MinifiedThing</minifiedDef>
+		
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>100</basePowerConsumption>
 			</li>
-			<li Class="CompProperties_RoomIdentifier">
-				<roomStat>Impressiveness</roomStat>
-			</li>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>EndTable</li>
-					<li>Dresser</li>
-				</linkableFacilities>
-			</li>
 			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-			<li Class="CompProperties_Art">
-				<nameMaker>NamerArtFurniture</nameMaker>
-				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
-				<minQualityForArtistic>Excellent</minQualityForArtistic>
+				<compClass>O21Toolbox.Needs.Comp_Hibernation</compClass>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>3</glowRadius>
-				<glowColor>(30,255,30,0)</glowColor>
+				<glowRadius>2.5</glowRadius>
+				<glowColor>(30,200,30,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Flickable" />
 		</comps>
-		<size>(1,1)</size>
-		<inspectorTabs>
-			<li>ITab_Art</li>
-		</inspectorTabs>
-		<drawGUIOverlay>true</drawGUIOverlay>
-		<canOverlapZones>false</canOverlapZones>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
-		<pathCost>60</pathCost>
-		<defaultPlacingRot>South</defaultPlacingRot>
+		
 		<costList>
 			<Necrodermis>40</Necrodermis>
+			<GaussCrystalGreen>10</GaussCrystalGreen>
 		</costList>
-		<building>
-			<bed_showSleeperBody>true</bed_showSleeperBody>
-			<bed_healPerDay>10</bed_healPerDay>
-		</building>
-		<rotatable>true</rotatable>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<useHitPoints>true</useHitPoints>
-		<designationCategory>Misc</designationCategory>
-		<passability>Standable</passability>
-		<fillPercent>0.8</fillPercent>
-		<castEdgeShadows>false</castEdgeShadows>
-		<techLevel>Archotech</techLevel>
+		
 		<researchPrerequisites>
 			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
-		<uiIconScale>0.90</uiIconScale>
+		
 	</ThingDef>
+	
 </Defs>

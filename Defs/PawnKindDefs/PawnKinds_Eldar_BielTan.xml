@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="BielTanAbstractBase" Abstract="True">
+		<defaultFactionType>CWBielTan</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>BielTanBackstory</li>
+		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<weaponTags>
+			<li>EldarRanged</li>
+		</weaponTags>
+		<race>Alien_Eldar</race>
+		<combatPower>25</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>5000</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<apparelTags>
+			<li>BielTanApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BielTanAbstractBase"> <!-- EldarGuardian_BielTan -->
+		<defName>EldarGuardian_BielTan</defName>
+		<label>Guardian</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>EldarShurikenPistol</li>
+			<li>EldarShurikenCatapult</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>BielTanGuardianApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>BielTanGuardianArmor</li>
+		</apparelRequired>
+		<combatPower>70</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BielTanAbstractBase"> <!-- EldarBanshee_BielTan -->
+		<defName>EldarBanshee_BielTan</defName>
+		<label>Banshee</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>3000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>EldarMelee</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>BielTanBansheeApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>BielTanBansheeArmor</li>
+		</apparelRequired>
+		<combatPower>75</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BielTanAbstractBase"> <!-- EldarAutarch_BielTan -->
+		<defName>EldarAutarch_BielTan</defName>
+		<label>Autarch</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>EldarRanged</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>BielTanAutarchApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>BielTanAutarchArmor</li>
+		</apparelRequired>
+		<combatPower>80</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BielTanAbstractBase"> <!-- EldarRanger_BielTan -->
+		<defName>EldarRanger_BielTan</defName>
+		<label>Ranger</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>4000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>EldarLongrifle</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>BielTanRangerApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>BielTanRangerArmor</li>
+		</apparelRequired>
+		<combatPower>80</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BielTanAbstractBase"> <!-- EldarTrader_BielTan -->
+		<defName>EldarTrader_BielTan</defName>
+		<label>Eldar Provisioner</label>
+		<isFighter>false</isFighter>
+		<combatPower>25</combatPower>
+		<trader>true</trader>
+		<apparelTags Inherit="false">
+			<li>BielTanCivilianApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>BielTanGuardianArmor</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BielTanAbstractBase"> <!-- EldarFarseer_BielTan -->
+		<defName>EldarFarseer_BielTan</defName>
+		<label>Farseer</label>
+		<isFighter>true</isFighter>
+		<labelPlural>Farseers</labelPlural>
+		<factionLeader>true</factionLeader>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>EldarRanged</li>
+			<li>EldarMelee</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>BielTanFarseerApparel</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>BielTanFarseerArmor</li>
+		</apparelRequired>
+		<combatPower>95</combatPower>
+	</PawnKindDef>
+
+</Defs>

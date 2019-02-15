@@ -3,7 +3,7 @@
 
 	<FactionDef>
 		<defName>TauEmpire</defName>
-		<label>Tau Empire</label>
+		<label>T'au Sept</label>
 		<description>A colony of the young but advanced Tau race.</description>
 		<pawnsPlural>Tau</pawnsPlural>
 		<settlementGenerationWeight>0.3</settlementGenerationWeight>
@@ -18,7 +18,7 @@
 			<min>-100</min>
 			<max>-80</max>
 		</startingGoodwill>
-		<fixedName>Tau Empire</fixedName>
+		<fixedName>T'au Sept</fixedName>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<techLevel>Spacer</techLevel>
 		<backstoryCategories>
@@ -59,8 +59,9 @@
 			<li>
 				<kindDef>Combat</kindDef>
 				<options>
-					<TauAirCaste>5</TauAirCaste>
-					<TauFireCaste>40</TauFireCaste>
+					<TauAirMessenger>5</TauAirMessenger>
+					<TauFireWarrior>40</TauFireWarrior>
+					<TauFireVeteran>5</TauFireVeteran>
 					<TauEtherealCaste>1</TauEtherealCaste>
 					<KrootWarrior>20</KrootWarrior>
 					<KrootSoldier>20</KrootSoldier>
@@ -73,9 +74,10 @@
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<TauFireCaste>40</TauFireCaste>
+					<TauFireWarrior>40</TauFireWarrior>
+					<TauFireVeteran>5</TauFireVeteran>
 					<TauEtherealCaste>1</TauEtherealCaste>
-					<TauAirCaste>10</TauAirCaste>
+					<TauAirMessenger>10</TauAirMessenger>
 					<TauWaterCaste>5</TauWaterCaste>
 					<KrootTrusted>20</KrootTrusted>
 					<Tau_GuevesaUi>5</Tau_GuevesaUi>
@@ -91,8 +93,9 @@
 					<Muffalo>4</Muffalo>
 				</carriers>
 				<guards>
-					<TauFireCaste>40</TauFireCaste>
-					<TauAirCaste>15</TauAirCaste>
+					<TauFireWarrior>40</TauFireWarrior>
+					<TauFireVeteran>5</TauFireVeteran>
+					<TauAirMessenger>15</TauAirMessenger>
 					<KrootTrusted>10</KrootTrusted>
 					<Tau_GuevesaUi>5</Tau_GuevesaUi>
 					<Tau_GuevesaLa>5</Tau_GuevesaLa>
@@ -102,10 +105,11 @@
 				<kindDef>Settlement</kindDef>
 				<options>
 					<TauEarthCaste>5</TauEarthCaste>
-					<TauFireCaste>30</TauFireCaste>
+					<TauFireWarrior>30</TauFireWarrior>
+					<TauFireVeteran>5</TauFireVeteran>
 					<TauEtherealCaste>1</TauEtherealCaste>
 					<TauWaterCaste>5</TauWaterCaste>
-					<TauAirCaste>10</TauAirCaste>
+					<TauAirMessenger>10</TauAirMessenger>
 					<Tau_GuevesaUi>10</Tau_GuevesaUi>
 					<Tau_GuevesaLa>10</Tau_GuevesaLa>
 					<KrootTrusted>10</KrootTrusted>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D681763-EC52-4AAC-8BED-B0E5B98B06B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rimhammer40k</RootNamespace>
+    <AssemblyName>Rarhammer40k</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=1.0.9.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\[O21] Toolbox\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AbilityUser">
+      <HintPath>..\..\..\JecsTools\Assemblies\AbilityUser.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AbilityUserAI">
+      <HintPath>..\..\..\JecsTools\Assemblies\AbilityUserAI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiomeDefOf.cs" />
+    <Compile Include="BiomeWorker_GaussDesertBlue.cs" />
+    <Compile Include="BiomeWorker_GaussDesertGreen.cs" />
+    <Compile Include="BiomeWorker_GaussDesertOrange.cs" />
+    <Compile Include="Common\CompHelp.cs" />
+    <Compile Include="Constructs\AI\JobDriver_ReturnToStation.cs" />
+    <Compile Include="Constructs\AI\JobDriver_SelfTerminate.cs" />
+    <Compile Include="Constructs\AI\JobGiver_ConstructFlee.cs" />
+    <Compile Include="Constructs\AI\JobGiver_ConstructMain.cs" />
+    <Compile Include="Constructs\Building_ConstructStation.cs" />
+    <Compile Include="Constructs\Building_ConstructStationRefuelable.cs" />
+    <Compile Include="Constructs\Building_ConstructStationSpecialGraphics.cs" />
+    <Compile Include="Constructs\Building_WorkGiver_ConstructStation.cs" />
+    <Compile Include="Constructs\ConstructBackstories.cs" />
+    <Compile Include="Constructs\ConstructDefOf.cs" />
+    <Compile Include="Constructs\DefModExtension_ConstructStation.cs" />
+    <Compile Include="Constructs\Pawn_Construct.cs" />
+    <Compile Include="Crystal.cs" />
+    <Compile Include="GenStep_Blackstone.cs" />
+    <Compile Include="Necrons\HediffGiver_NecronRepair.cs" />
+    <Compile Include="Orks\FleshTypeDef_Ork.cs" />
+    <Compile Include="Orks\HediffGiver_OrkHealing.cs" />
+    <Compile Include="Projector\Alert_ProjectorTowerRoofed.cs" />
+    <Compile Include="Projector\Building_FixedProjector.cs" />
+    <Compile Include="Projector\Building_MobileProjector.cs" />
+    <Compile Include="Projector\Building_MobileProjectorTower.cs" />
+    <Compile Include="Projector\Building_MobileProjectorTurret.cs" />
+    <Compile Include="Projector\PlaceWorker_DrawLightedCells.cs" />
+    <Compile Include="Projector\PlaceWorker_DrawProjector.cs" />
+    <Compile Include="Projector\Util_Projector.cs" />
+    <Compile Include="ThoughtWorker_ConstructAlways.cs" />
+    <Compile Include="Necrons\CompProperties_NecronResurrection.cs" />
+    <Compile Include="Necrons\HediffGiver_BirthdayNecron.cs" />
+    <Compile Include="Necrons\CompNecronResurrection.cs" />
+    <Compile Include="Necrons\NecronTweaker.cs" />
+    <Compile Include="Necrons\HediffNecronGrowingPart.cs" />
+    <Compile Include="Necrons\PawnKindDef.cs" />
+    <Compile Include="Settings\Rimhammer40kModSettings.cs" />
+    <None Include="MissionBoard.cs" />
+    <None Include="Building_GraphicSwitchableDef.cs" />
+    <Compile Include="Logic\BodyPartUtility.cs" />
+    <Compile Include="Necrons\HediffNecrodermisRepair.cs" />
+    <Compile Include="Necrons\FleshTypeDef_Necron.cs" />
+    <Compile Include="Necrons\NecronHediffDefOf.cs" />
+    <Compile Include="Orks\HediffOrkGrowingPart.cs" />
+    <Compile Include="Orks\HediffOrkHealing.cs" />
+    <Compile Include="Orks\OrkHediffDefOf.cs" />
+    <Compile Include="PlaceWorker_ShowRequisitionRelayRadius.cs" />
+    <Compile Include="RemovableHediff.cs" />
+    <Compile Include="Rimhammer40k.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Building_RequisitionRelay.cs" />
+    <Compile Include="Rimhammer40kPatches.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

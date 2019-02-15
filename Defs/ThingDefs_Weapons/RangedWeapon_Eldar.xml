@@ -5,10 +5,91 @@
 
 	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>EldarShurikenPistol</defName>
-		<label>Eldar Shuriken Pistol</label>
+		<label>Shuriken Pistol</label>
 		<description>The Shuriken Pistol, known in the Eldar Lexicon as murekh, is a smaller one-handed pistol version of the Shuriken Catapult. Amongst humans these weapons are sometimes referred to as "slingers" or "sling pistols." The shorter barrel length and smaller capacity reduces the weapon's efficiency and so limits the range, rate of fire and power. The shurikens it fires are identical to those used in the larger weapon; a spinning disc which can slice straight through flesh and bone. Certain Eldar heroes and warriors, such as Striking Scorpion Aspect Warriors, use Shuriken Pistols as their main weapon. Other Eldar units usually use them as secondary backup weapons.</description>
 		<graphicData>
 			<texPath>Things/Eldar/Weapons/Ranged/ShurikenPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_WeaponsLight</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>1000</MarketValue>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<PsychicSensitivity>0.15</PsychicSensitivity>
+			<MoveSpeed>0.25</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Bullet_EShurikenPistol</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>25</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>ShurikenPistolSound</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>EldarShurikenPistol</li>
+			<li>EldarRanged</li>
+		</weaponTags>
+		<thingCategories>
+			<li>EldarRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>EldarRanged</li>
+		</tradeTags>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>2</Plasteel>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="O21BaseMakeableGun">
+		<defName>EldarTwinShurikenPistol</defName>
+		<label>Twin Shuriken Pistol</label>
+		<description>The Shuriken Pistol, known in the Eldar Lexicon as murekh, is a smaller one-handed pistol version of the Shuriken Catapult. Amongst humans these weapons are sometimes referred to as "slingers" or "sling pistols." The shorter barrel length and smaller capacity reduces the weapon's efficiency and so limits the range, rate of fire and power. The shurikens it fires are identical to those used in the larger weapon; a spinning disc which can slice straight through flesh and bone. Certain Eldar heroes and warriors, such as Striking Scorpion Aspect Warriors, use Shuriken Pistols as their main weapon. Other Eldar units usually use them as secondary backup weapons.</description>
+		<graphicData>
+			<texPath>Things/Eldar/Weapons/Ranged/DoubleShurikenPistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
@@ -78,9 +159,9 @@
 			<li>EldarRanged</li>
 		</tradeTags>
 		<costList>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<Plasteel>2</Plasteel>
-			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plasteel>3</Plasteel>
+			<Steel>15</Steel>
 		</costList>
 	</ThingDef>
 
@@ -93,7 +174,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>O21Shuriken</damageDef>
-			<damageAmountBase>3</damageAmountBase>
+			<damageAmountBase>4</damageAmountBase>
 			<armorPenetrationBase>0.16</armorPenetrationBase>
 			<speed>100</speed>
 		</projectile>
@@ -104,7 +185,7 @@
 
 	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>Eldar_Gun_EShurikenCatapult</defName>
-		<label>Eldar Shuriken Catapult</label>
+		<label>Shuriken Catapult</label>
 		<description>The Shuriken Catapult, or tuelean in the Eldar Lexicon, is the primary infantry weapon of Eldar Guardians. Like much of the technology of the Eldar, shuriken catapults are grown from the same psychoactive Wraithbone that forms the physical shell of the Craftworlds. A specialised subset of Bonesingers, taken from those who have previously walked the Path of the Warrior, are tasked with crafting the weapons used by those who would defend their home. All citizens of the craftworlds are trained in the use of the Shuriken Catapult as part of their preparation to form the Guardian militia in times of conflict. In the age of constant war that is the 41st Millennium, most Craftworlds are forced to become better acquainted with these lethal weapons than many of them would like.</description>
 		<graphicData>
 			<texPath>Things/Eldar/Weapons/Ranged/ShurikenCatapult</texPath>
@@ -137,7 +218,7 @@
 				<warmupTime>0.7</warmupTime>
 				<range>34</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>14</burstShotCount>
+				<burstShotCount>8</burstShotCount>
 				<soundCast>ShurikenCatapultSound</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>8</muzzleFlashScale>
@@ -192,7 +273,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>O21Shuriken</damageDef>
-			<damageAmountBase>8</damageAmountBase>
+			<damageAmountBase>6</damageAmountBase>
 			<armorPenetrationBase>0.16</armorPenetrationBase>
 			<speed>100</speed>
 		</projectile>

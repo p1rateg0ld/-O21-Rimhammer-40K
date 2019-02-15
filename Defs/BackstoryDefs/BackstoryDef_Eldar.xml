@@ -36,6 +36,23 @@
 		<skillGains>
 		</skillGains>
 	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Craftworld Child -->
+		<defName>BackstoryEldarChild02</defName>
+		<title>Eldar Child</title>
+		<titleShort>Eldar Child</titleShort>
+		<baseDescription>Grew up on the craftworld Biel-Tan.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>BielTanBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
 	
 	<!-- ============================ Ulthwe Adulthoods ========================== -->
 
@@ -178,6 +195,83 @@
 		<maleCommonality>20</maleCommonality>
 		<spawnCategories>
 			<li>AlaitocBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ BielTan Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef> <!-- BielTan Warrior -->
+		<defName>BackstoryEldarBielTan00</defName>
+		<title>Biel-Tan Warrior</title>
+		<titleShort>Biel-Tan Warrior</titleShort>
+		<baseDescription>Well trained warrior of the Craftworld Biel-Tan.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>BielTanBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- BielTan Warrior -->
+		<defName>BackstoryEldarBielTan01</defName>
+		<title>Biel-Tan Warrior</title>
+		<titleShort>Biel-Tan Warrior</titleShort>
+		<baseDescription>Very well trained warrior of the Craftworld Biel-Tan.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>BielTanBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- BielTan Warrior -->
+		<defName>BackstoryEldarBielTan02</defName>
+		<title>Biel-Tan Warrior</title>
+		<titleShort>Biel-Tan Warrior</titleShort>
+		<baseDescription>Exceptionally well trained warrior of the Craftworld Biel-Tan.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>BielTanBackstory</li>
 		</spawnCategories>
 		<skillGains>
 			<li>

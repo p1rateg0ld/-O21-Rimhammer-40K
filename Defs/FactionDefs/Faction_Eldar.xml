@@ -186,4 +186,71 @@ The world-rune of Alaitoc depicts the sword of Khaine bisecting the Red Moon; th
 		</pawnGroupMakers>
 	</FactionDef>
 	
+	<!-- Craftworld Biel-Tan -->
+
+	<FactionDef ParentName="FactionEldarBase">
+		<defName>CWBielTan</defName>
+		<label>Biel-Tan</label>
+		<description>Biel-Tan is the most martial and aggressive of the Eldar Craftworlds. The people of Biel-Tan constantly strive to return the ancient Eldar Empire to its former glory. Consumed with bitterness, they wage an endless campaign of xenocide against those foolish enough to cross their path. The world-rune used by Biel-Tan stands for the principle of reincarnation, a fate thought to have been reserved for every Eldar before the Fall. The name of the world-rune loosely translates as "Rebirth of Ancient Days." For the Biel-Tan, winter has fallen on the Eldar, but they are convinced that spring will soon return. The Biel-Tan Craftworld is currently located on the Southern Rim of the Milky Way Galaxy in Segmentum Tempestus.</description>
+		<pawnsPlural>Biel-Tan</pawnsPlural>
+		<expandingIconTexture>World/Biel-TanBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_Base</homeIconPath>
+		<fixedName>Biel-Tan</fixedName>
+		<backstoryCategories>
+			<li>Biel-TanBackstory</li>
+		</backstoryCategories>
+		<pawnGroupMakers Inherit="false">
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<EldarFarseer_BielTan>1</EldarFarseer_BielTan>
+					<EldarAutarch_BielTan>4</EldarAutarch_BielTan>
+					<EldarRanger_BielTan>10</EldarRanger_BielTan>
+					<EldarBanshee_BielTan>20</EldarBanshee_BielTan>
+					<EldarGuardian_BielTan>50</EldarGuardian_BielTan>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<EldarFarseer_BielTan>1</EldarFarseer_BielTan>
+					<EldarAutarch_BielTan>3</EldarAutarch_BielTan>
+					<EldarGuardian_BielTan>50</EldarGuardian_BielTan>
+					<EldarRanger_BielTan>10</EldarRanger_BielTan>
+					<EldarBanshee_BielTan>20</EldarBanshee_BielTan>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<EldarTrader_BielTan>1</EldarTrader_BielTan>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<EldarAutarch_BielTan>1</EldarAutarch_BielTan>
+					<EldarGuardian_BielTan>50</EldarGuardian_BielTan>
+					<EldarRanger_BielTan>10</EldarRanger_BielTan>
+					<EldarBanshee_BielTan>20</EldarBanshee_BielTan>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<EldarFarseer_BielTan>1</EldarFarseer_BielTan>
+					<EldarAutarch_BielTan>4</EldarAutarch_BielTan>
+					<EldarRanger_BielTan>10</EldarRanger_BielTan>
+					<EldarBanshee_BielTan>50</EldarBanshee_BielTan>
+					<EldarGuardian_BielTan>20</EldarGuardian_BielTan>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
 </Defs>

@@ -61,6 +61,16 @@
 		</hairTags>
 	</HairDef>
 	
+	<HairDef>
+		<defName>FemEldar7</defName>
+		<label>Female Eldar Hair 07</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hairs/FemEldarhair7</texPath>
+		<hairTags>
+			<li>EldarHair</li>
+		</hairTags>
+	</HairDef>
+	
     <HairDef>
 		<defName>MaleEldar1</defName>
 		<label>Male Eldar Hair 01</label>

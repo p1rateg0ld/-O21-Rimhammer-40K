@@ -59,8 +59,9 @@
 			<li>
 				<kindDef>Combat</kindDef>
 				<options>
-					<TauAirCasteSacea>5</TauAirCasteSacea>
-					<TauFireCasteSacea>40</TauFireCasteSacea>
+					<TauAirMessengerSacea>5</TauAirMessengerSacea>
+					<TauFireWarriorSacea>40</TauFireWarriorSacea>
+					<TauFireVeteranSacea>5</TauFireVeteranSacea>
 					<TauEtherealCasteSacea>1</TauEtherealCasteSacea>
 					<KrootWarrior>20</KrootWarrior>
 					<KrootSoldier>20</KrootSoldier>
@@ -73,9 +74,10 @@
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<TauFireCasteSacea>40</TauFireCasteSacea>
+					<TauFireWarriorSacea>40</TauFireWarriorSacea>
+					<TauFireVeteranSacea>5</TauFireVeteranSacea>
 					<TauEtherealCasteSacea>1</TauEtherealCasteSacea>
-					<TauAirCasteSacea>10</TauAirCasteSacea>
+					<TauAirMessengerSacea>10</TauAirMessengerSacea>
 					<TauWaterCaste>5</TauWaterCaste>
 					<KrootTrustedSacea>20</KrootTrustedSacea>
 					<Sacea_GuevesaUi>5</Sacea_GuevesaUi>
@@ -91,8 +93,9 @@
 					<Muffalo>4</Muffalo>
 				</carriers>
 				<guards>
-					<TauFireCasteSacea>40</TauFireCasteSacea>
-					<TauAirCasteSacea>15</TauAirCasteSacea>
+					<TauFireWarriorSacea>40</TauFireWarriorSacea>
+					<TauFireVeteranSacea>5</TauFireVeteranSacea>
+					<TauAirMessengerSacea>15</TauAirMessengerSacea>
 					<KrootTrustedSacea>10</KrootTrustedSacea>
 					<Sacea_GuevesaUi>5</Sacea_GuevesaUi>
 					<Sacea_GuevesaLa>5</Sacea_GuevesaLa>
@@ -102,10 +105,11 @@
 				<kindDef>Settlement</kindDef>
 				<options>
 					<TauEarthCaste>5</TauEarthCaste>
-					<TauFireCasteSacea>30</TauFireCasteSacea>
+					<TauFireWarriorSacea>30</TauFireWarriorSacea>
+					<TauFireVeteranSacea>5</TauFireVeteranSacea>
 					<TauEtherealCasteSacea>1</TauEtherealCasteSacea>
 					<TauWaterCaste>5</TauWaterCaste>
-					<TauAirCasteSacea>10</TauAirCasteSacea>
+					<TauAirMessengerSacea>10</TauAirMessengerSacea>
 					<Sacea_GuevesaUi>10</Sacea_GuevesaUi>
 					<Sacea_GuevesaLa>10</Sacea_GuevesaLa>
 					<KrootTrustedSacea>10</KrootTrustedSacea>

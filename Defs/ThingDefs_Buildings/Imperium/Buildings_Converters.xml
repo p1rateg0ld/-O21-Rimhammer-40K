@@ -143,6 +143,9 @@
 				<outputDef>Sororitas</outputDef>
 				<requiredSex>Female</requiredSex>
 				<forcedBody>Female</forcedBody>
+				<forcedHead>RANDOM</forcedHead>
+				<randomHair>True</randomHair>
+				<randomHairColor>True</randomHairColor>
 				<finishingSound>AstartesOvenDone</finishingSound>
 				<greenLight>(100, 255, 100, 0)</greenLight>
 				<redLight>(252, 187, 113, 0)</redLight>

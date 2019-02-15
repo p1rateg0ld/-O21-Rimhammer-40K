@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ====== BielTan Armors ====== -->
+	
+	<ThingDef ParentName="GuardianArmorBase"> <!-- Guardian Armour -->
+		<defName>BielTanGuardianArmor</defName>
+		<label>Biel-Tan Guardian Armor</label>
+		<graphicData>
+			<texPath>Things/Eldar/BielTan/Apparel/BielTanGuardian</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanGuardianApparel</li>
+				<li>BielTanCivilianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Apparel/BielTanGuardian</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="BansheeArmorBase"> <!-- Banshee Armour -->
+		<defName>BielTanBansheeArmor</defName>
+		<label>Biel-Tan Banshee Armor</label>
+		<graphicData> 
+			<texPath>Things/Eldar/BielTan/Apparel/BielTanBanshee</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanBansheeApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Apparel/BielTanBanshee</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="AutarchArmorBase"> <!-- Autarch Armour -->
+		<defName>BielTanAutarchArmor</defName>
+		<label>Biel-Tan Autarch Armor</label>
+		<graphicData> 
+			<texPath>Things/Eldar/BielTan/Apparel/BielTanAutarch</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanAutarchApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Apparel/BielTanAutarch</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="RangerArmorBase"> <!-- Ranger Armour -->
+		<defName>BielTanRangerArmor</defName>
+		<label>Biel-Tan Ranger Armor</label>
+		<graphicData> 
+			<texPath>Things/Eldar/BielTan/Apparel/BielTanRanger</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanRangerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Apparel/BielTanRanger</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="FarseerArmorBase"> <!-- Farseer Armour -->
+		<defName>BielTanFarseerArmor</defName>
+		<label>Biel-Tan Farseer Armor</label>
+		<graphicData> 
+			<texPath>Things/Eldar/BielTan/Apparel/BielTanFarseer</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanFarseerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Apparel/BielTanFarseer</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+
+	<ThingDef ParentName="GuardianHelmetBase"> <!-- Guardian Helmet -->
+		<defName>BielTanGuardianHelmet</defName>
+		<label>Biel-Tan Guardian Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/BielTan/Hats/BielTanhelmet_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanGuardianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Hats/BielTanhelmet_Normal</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="BansheeHelmetBase"> <!-- Banshee Helmet -->
+		<defName>BielTanBansheeHelmet</defName>
+		<label>Biel-Tan Banshee Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/BielTan/Hats/BielTanhelmet_Banshee</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanBansheeApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Hats/BielTanhelmet_Banshee</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="RangerHelmetBase"> <!-- Ranger Helmet -->
+		<defName>BielTanRangerHelmet</defName>
+		<label>Biel-Tan Ranger Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/BielTan/Hats/BielTanhelmet_Ranger</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanRangerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Hats/BielTanhelmet_Ranger</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="AutarchHelmetBase"> <!-- Autarch Helmet -->
+		<defName>BielTanAutarchHelmet</defName>
+		<label>Biel-Tan Autarch Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/BielTan/Hats/BielTanhelmet_Autarch</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanAutarchApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Hats/BielTanhelmet_Autarch</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Hats ====== -->
+
+	<ThingDef ParentName="EldarHeadgearBase"> <!-- Eldar Chinstrap -->
+		<defName>BielTanHeadgear</defName>
+		<label>Biel-Tan Headgear</label>
+		<graphicData>
+			<texPath>Things/Eldar/BielTan/Hats/BielTanheadpiece</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Eldar/BielTan/Hats/BielTanheadpiece</wornGraphicPath>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanFarseerApparel</li>
+				<li>BielTanCivilianApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="EldarHeadgearBase"> <!-- Eldar Chinstrap -->
+		<defName>BielTanFarseerHeadgear</defName>
+		<label>Biel-Tan Farseer Headgear</label>
+		<graphicData>
+			<texPath>Things/Eldar/BielTan/Hats/BielTanFarseerheadpiece</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_Farseer</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Things/Eldar/BielTan/Hats/BielTanFarseerheadpiece</wornGraphicPath>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanFarseerApparel</li>
+				<li>BielTanCivilianApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="RangerHoodBase"> <!-- Ranger Hood -->
+		<defName>BielTanRangerHood</defName>
+		<label>Biel-Tan Ranger Hood</label>
+		<graphicData> 
+			<texPath>Things/Eldar/BielTan/Hats/BielTanRangerHood</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<defaultOutfitTags Inherit="false">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>BielTanApparel</li>
+				<li>BielTanRangerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/BielTan/Hats/BielTanRangerHood</wornGraphicPath>
+			<layers Inherit="false">
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups Inherit="false">
+				<li>FullHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+</Defs>

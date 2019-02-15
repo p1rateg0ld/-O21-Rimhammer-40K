@@ -19,7 +19,7 @@
 		<rotatable>false</rotatable>
 		<designationCategory>Misc</designationCategory>
 		<hasInteractionCell>true</hasInteractionCell>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -58,14 +58,17 @@
 				</inputDefs>
 				<outputDef>NecronPariah</outputDef>
 				<forcedBody>Male</forcedBody>
+				<randomHair>True</randomHair>
+				<randomSkinColor>True</randomSkinColor>
 				<finishingSound>AstartesOvenDone</finishingSound>
 				<greenLight>(100, 255, 100, 0)</greenLight>
 				<redLight>(252, 187, 113, 0)</redLight>
-				<cookingTime>6000</cookingTime>
+				<cookingTime>4500</cookingTime>
+				<timerBarEnabled>False</timerBarEnabled>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>true</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>600</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Explosive">

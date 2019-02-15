@@ -11,7 +11,7 @@
 		<designatorDropdown>RH_NEC_LightTurret</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Necron/Building/Security/Necron_Turret_Green</texPath>
-			<shaderType>CutoutComplex</shaderType>
+			<shaderType>Transparent</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -148,7 +148,7 @@
 		<designatorDropdown>RH_NEC_HeavyTurret</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Necron/Building/Security/Necron_Turret_GreenAdv</texPath>
-			<shaderType>CutoutComplex</shaderType>
+			<shaderType>Transparent</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -285,7 +285,7 @@
 		<designatorDropdown>RH_NEC_LightTurret</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Necron/Building/Security/Necron_Turret_Orange</texPath>
-			<shaderType>CutoutComplex</shaderType>
+			<shaderType>Transparent</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -422,7 +422,7 @@
 		<designatorDropdown>RH_NEC_HeavyTurret</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Necron/Building/Security/Necron_Turret_OrangeAdv</texPath>
-			<shaderType>CutoutComplex</shaderType>
+			<shaderType>Transparent</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -559,7 +559,7 @@
 		<designatorDropdown>RH_NEC_LightTurret</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Necron/Building/Security/Necron_Turret_Blue</texPath>
-			<shaderType>CutoutComplex</shaderType>
+			<shaderType>Transparent</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -696,7 +696,7 @@
 		<designatorDropdown>RH_NEC_HeavyTurret</designatorDropdown>
 		<graphicData>
 			<texPath>Things/Necron/Building/Security/Necron_Turret_BlueAdv</texPath>
-			<shaderType>CutoutComplex</shaderType>
+			<shaderType>Transparent</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>

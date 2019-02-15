@@ -57,4 +57,20 @@
 		</apparel>
 	</ThingDef>
 
+	<ThingDef ParentName="TauSgtHelmetBase"><!-- Tau Combat Helmet -->
+		<defName>TauCombatHelmetAdvSacea</defName>
+		<label>tau combat helmet adv.(sa'cea)</label>
+		<graphicData> 
+			<texPath>Things/Tau/Sa'cea/Hats/Sa'ceaSergeantHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>SaceaApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Tau/Sa'cea/Hats/Sa'ceaSergeantHelmet</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
 </Defs>

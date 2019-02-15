@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ====== Alaitoc Armors ====== -->
+	
+	<ThingDef ParentName="GuardianArmorBase"> <!-- Guardian Armour -->
+		<defName>AlaitocGuardianArmor</defName>
+		<label>Alaitoc Guardian Armor</label>
+		<graphicData>
+			<texPath>Things/Eldar/Alaitoc/Apparel/AlaitocGuardian</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocGuardianApparel</li>
+				<li>AlaitocCivilianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Apparel/AlaitocGuardian</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="BansheeArmorBase"> <!-- Banshee Armour -->
+		<defName>AlaitocBansheeArmor</defName>
+		<label>Alaitoc Banshee Armor</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Apparel/AlaitocBanshee</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocBansheeApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Apparel/AlaitocBanshee</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="AutarchArmorBase"> <!-- Autarch Armour -->
+		<defName>AlaitocAutarchArmor</defName>
+		<label>Alaitoc Autarch Armor</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Apparel/AlaitocAutarch</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocAutarchApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Apparel/AlaitocAutarch</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="RangerArmorBase"> <!-- Ranger Armour -->
+		<defName>AlaitocRangerArmor</defName>
+		<label>Alaitoc Ranger Armor</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Apparel/AlaitocRanger</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocRangerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Apparel/AlaitocRanger</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="FarseerArmorBase"> <!-- Farseer Armour -->
+		<defName>AlaitocFarseerArmor</defName>
+		<label>Alaitoc Farseer Armor</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Apparel/AlaitocFarseer</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocFarseerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Apparel/AlaitocFarseer</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+
+	<ThingDef ParentName="GuardianHelmetBase"> <!-- Guardian Helmet -->
+		<defName>AlaitocGuardianHelmet</defName>
+		<label>Alaitoc Guardian Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocGuardianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Normal</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="BansheeHelmetBase"> <!-- Banshee Helmet -->
+		<defName>AlaitocBansheeHelmet</defName>
+		<label>Alaitoc Banshee Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Banshee</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocBansheeApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Banshee</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="RangerHelmetBase"> <!-- Ranger Helmet -->
+		<defName>AlaitocRangerHelmet</defName>
+		<label>Alaitoc Ranger Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Ranger</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocRangerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Ranger</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="AutarchHelmetBase"> <!-- Autarch Helmet -->
+		<defName>AlaitocAutarchHelmet</defName>
+		<label>Alaitoc Autarch Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Autarch</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocAutarchApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Autarch</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="FarseerHelmetBase"> <!-- Autarch Helmet -->
+		<defName>AlaitocFarseerHelmet</defName>
+		<label>Alaitoc Farseer Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Farseer</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocFarseerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Hats/Alaitochelmet_Farseer</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Hats ====== -->
+
+	<ThingDef ParentName="EldarHeadgearBase"> <!-- Eldar Chinstrap -->
+		<defName>AlaitocHeadgear</defName>
+		<label>Alaitoc Headgear</label>
+		<graphicData>
+			<texPath>Things/Eldar/Alaitoc/Hats/Alaitocheadpiece</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Hats/Alaitocheadpiece</wornGraphicPath>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocFarseerApparel</li>
+				<li>AlaitocCivilianApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="RangerHoodBase"> <!-- Ranger Hood -->
+		<defName>AlaitocRangerHood</defName>
+		<label>Alaitoc Ranger Hood</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Alaitoc/Hats/AlaitocRangerHood</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<defaultOutfitTags Inherit="false">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>AlaitocApparel</li>
+				<li>AlaitocRangerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Alaitoc/Hats/AlaitocRangerHood</wornGraphicPath>
+			<layers Inherit="false">
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups Inherit="false">
+				<li>FullHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+</Defs>

@@ -112,6 +112,7 @@
 					<li>AteHumanlikeMeatAsIngredient</li>
 					<li>AteHumanlikeMeatAsIngredientCannibal</li>
 					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
 					<li>AteWithoutTable</li>
 					<li>SleepDisturbed</li>
 					<li>SleptOnGround</li>

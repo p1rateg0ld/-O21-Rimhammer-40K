@@ -26,7 +26,7 @@
 		<drawGUIOverlay>true</drawGUIOverlay>
 	</ThingDef>
 
-	<ThingDef ParentName="BasePawn" Name="O21BaseScarab" Abstract="True">
+	<ThingDef ParentName="O21BaseConstruct" Name="O21BaseScarab" Abstract="True">
 		<statBases>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<ToxicSensitivity>0</ToxicSensitivity>

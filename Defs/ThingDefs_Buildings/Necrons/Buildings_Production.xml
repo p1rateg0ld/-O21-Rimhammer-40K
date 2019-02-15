@@ -102,10 +102,13 @@
 				<shortCircuitInRain>true</shortCircuitInRain>
 			</li>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
+			<li Class="O21Toolbox.ResearchBenchSub.CompProperties_ResearchBenchSubstitutes">
+				<ActLikeResearchBench>
+					<li>HiTechResearchBench</li>
+				</ActLikeResearchBench>
+				<ActLikeResearchFacility>
 					<li>MultiAnalyzer</li>
-				</linkableFacilities>
+				</ActLikeResearchFacility>
 			</li>
 		</comps>
 		<fillPercent>0.5</fillPercent>

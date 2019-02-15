@@ -3,7 +3,7 @@
 
 	<BiomeDef>
 		<defName>GaussDesertGreen</defName>
-		<label>gauss desert</label>
+		<label>gauss desert (green)</label>
 		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
 		<workerClass>Rimhammer40k.BiomeWorker_GaussDesertGreen</workerClass>
 		<animalDensity>0.0</animalDensity>
@@ -72,9 +72,161 @@
 			<Plant_GaussCrystalSmall_Green>6</Plant_GaussCrystalSmall_Green>
 			<Plant_GaussCrystalMed_Green>3</Plant_GaussCrystalMed_Green>
 			<Plant_GaussCrystalHuge_Green>1</Plant_GaussCrystalHuge_Green>
+		</wildPlants>
+		<wildAnimals />
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Dromedary</li>
+		</allowedPackAnimals>
+	</BiomeDef>
+
+	<BiomeDef>
+		<defName>GaussDesertOrange</defName>
+		<label>gauss desert (orange)</label>
+		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
+		<workerClass>Rimhammer40k.BiomeWorker_GaussDesertOrange</workerClass>
+		<animalDensity>0.0</animalDensity>
+		<plantDensity>0.1</plantDensity>
+		<settlementSelectionWeight>0.05</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<texture>World/Biomes/BlackDesert</texture>
+		<forageability>0.0</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		<wildPlantsCareAboutLocalFertility>false</wildPlantsCareAboutLocalFertility>
+		<wildPlantRegrowDays>35</wildPlantRegrowDays>
+		<diseaseMtbDays>90</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>NecronBlackSand</terrain>
+				<min>-999</min>
+				<max>0.50</max>
+			</li>
+			<li>
+				<terrain>NecronBlackSand</terrain>
+				<min>0.50</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>10</Fog>
+			<DryThunderstorm>1</DryThunderstorm>
+		</baseWeatherCommonalities>
+		<wildPlants>
 			<Plant_GaussCrystalSmall_Orange>6</Plant_GaussCrystalSmall_Orange>
 			<Plant_GaussCrystalMed_Orange>3</Plant_GaussCrystalMed_Orange>
 			<Plant_GaussCrystalHuge_Orange>1</Plant_GaussCrystalHuge_Orange>
+		</wildPlants>
+		<wildAnimals />
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Dromedary</li>
+		</allowedPackAnimals>
+	</BiomeDef>
+
+	<BiomeDef>
+		<defName>GaussDesertBlue</defName>
+		<label>gauss desert (blue)</label>
+		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
+		<workerClass>Rimhammer40k.BiomeWorker_GaussDesertBlue</workerClass>
+		<animalDensity>0.0</animalDensity>
+		<plantDensity>0.1</plantDensity>
+		<settlementSelectionWeight>0.05</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<texture>World/Biomes/BlackDesert</texture>
+		<forageability>0.0</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		<wildPlantsCareAboutLocalFertility>false</wildPlantsCareAboutLocalFertility>
+		<wildPlantRegrowDays>35</wildPlantRegrowDays>
+		<diseaseMtbDays>90</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>NecronBlackSand</terrain>
+				<min>-999</min>
+				<max>0.50</max>
+			</li>
+			<li>
+				<terrain>NecronBlackSand</terrain>
+				<min>0.50</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>10</Fog>
+			<DryThunderstorm>1</DryThunderstorm>
+		</baseWeatherCommonalities>
+		<wildPlants>
 			<Plant_GaussCrystalSmall_Blue>6</Plant_GaussCrystalSmall_Blue>
 			<Plant_GaussCrystalMed_Blue>3</Plant_GaussCrystalMed_Blue>
 			<Plant_GaussCrystalHuge_Blue>1</Plant_GaussCrystalHuge_Blue>

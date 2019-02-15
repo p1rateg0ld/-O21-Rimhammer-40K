@@ -1,17 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase" Name="NecronTombBase">
 		<defName>NecronTomb_Green</defName>
-		<label>necron tomb entrance</label>
+		<label>necron tomb (green)</label>
 		<description>Used to awaken necrons from their slumber beneath the surface.</description>
-		<thingClass>Building</thingClass>
-		<graphicData>
-			<texPath>Things/Necron/Building/Tomb/NecronTomb_001</texPath>
-			<shaderType>Transparent</shaderType>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(11, 11)</drawSize>
-		</graphicData>
+		<thingClass>O21Toolbox.PawnCrafter.Building_PawnCrafter</thingClass>
+		
 		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
         <surfaceType>Item</surfaceType>
@@ -23,18 +18,36 @@
         <drawerType>RealtimeOnly</drawerType>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Misc</designationCategory>
+		<tickerType>Normal</tickerType>
+		<size>(8, 6)</size>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		
+		<graphicData>
+			<texPath>Things/Necron/Building/Tomb/NecronTomb_001</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(11, 11)</drawSize>
+		</graphicData>
+		
 		<statBases>
 			<WorkToBuild>4000</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<Mass>15</Mass>
 		</statBases>
-		<tickerType>Normal</tickerType>
-		<size>(10, 10)</size>
+		
 		<costList>
 			<Necrodermis>350</Necrodermis>
+			<GaussCrystalGreen>50</GaussCrystalGreen>
 		</costList>
+		
 		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>800</basePowerConsumption>
+			</li>
 			<li Class="CompProperties_Battery">
 				<storedEnergyMax>100000</storedEnergyMax>
 				<efficiency>1.0</efficiency>
@@ -171,16 +184,31 @@
 				</stillFrames>
 			</li>
 		</comps>
+		
 		<placeWorkers>
 			<li>PlaceWorker_OnSteamGeyser</li>
 		</placeWorkers>
+		
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
 		</building>
+		
 		<researchPrerequisites>
 			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
+		
+		<modExtensions>
+			<li Class="O21Toolbox.PawnCrafter.PawnCrafterProperties">
+				<craftingSound>Interact_ConstructMetal</craftingSound>
+				<customOrderProcessor>true</customOrderProcessor>
+				<customCraftingTime>true</customCraftingTime>
+				<listOnlyAllowed>True</listOnlyAllowed>
+				<pawnCraftedLetterLabel>NecronAwakenedLetterLabel</pawnCraftedLetterLabel>
+				<pawnCraftedLetterText>NecronAwakenedLetterDescription</pawnCraftedLetterText>
+				<resourceTick>2500</resourceTick>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 </Defs>

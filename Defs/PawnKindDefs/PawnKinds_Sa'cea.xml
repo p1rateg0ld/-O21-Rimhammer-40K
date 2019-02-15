@@ -182,17 +182,13 @@
 	<!-- ============================ Tau Military Castes ========================== -->
   
 	<PawnKindDef ParentName="TauMilSaceaBase">
-		<defName>TauAirCasteSacea</defName>
-		<label>Air Caste</label>
+		<defName>TauAirMessengerSacea</defName>
+		<label>por'la</label>
 		<backstoryCategories>
 			<li>TauAirBackstory</li>
 		</backstoryCategories>
 		<combatPower>135</combatPower>
-		<minGenerationAge>20</minGenerationAge>
-		<gearHealthRange>
-			<min>0.5</min>
-			<max>2.3</max>
-		</gearHealthRange>
+		<minGenerationAge>19</minGenerationAge>
 		<apparelTags>
 			<li>SaceaApparel</li>
 		</apparelTags>
@@ -204,7 +200,7 @@
 			<li>TauScoutArmorSacea</li>
 			<li>TauCombatHelmetSacea</li>
 		</apparelRequired>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 		<weaponMoney>
 			<min>1200</min>
 			<max>2000</max>
@@ -212,48 +208,17 @@
 		<weaponTags>
 			<li>TauRanged</li>
 		</weaponTags>
-		<techHediffsMoney>
-			<min>2000</min>
-			<max>3000</max>
-		</techHediffsMoney>
-		<combatEnhancingDrugsCount>
-			<min>0</min>
-			<max>2</max>
-		</combatEnhancingDrugsCount>
-		<techHediffsTags>
-			<li>Advanced</li>
-		</techHediffsTags>
-		<techHediffsChance>0.88</techHediffsChance>
-		<inventoryOptions>
-			<skipChance>0.8</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>Silver</thingDef>
-					<countRange>
-						<min>180</min>
-						<max>400</max>
-					</countRange>
-				</li>
-				<li>
-					<thingDef>MedicineIndustrial</thingDef>
-					<countRange>
-						<min>1</min>
-						<max>2</max>
-					</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
 	</PawnKindDef>
 
   
 	<PawnKindDef ParentName="TauMilSaceaBase">
-		<defName>TauFireCasteSacea</defName>
-		<label>Fire Caste</label>
+		<defName>TauFireWarriorSacea</defName>
+		<label>shas'la</label>
 		<backstoryCategories>
 			<li>TauFireBackstory</li>
 		</backstoryCategories>
-		<combatPower>220</combatPower>
-		<minGenerationAge>26</minGenerationAge>
+		<combatPower>180</combatPower>
+		<minGenerationAge>19</minGenerationAge>
 		<gearHealthRange>
 			<min>0.8</min>
 			<max>3.5</max>
@@ -269,46 +234,44 @@
 			<li>TauCombatArmorSacea</li>
 			<li>TauCombatHelmetSacea</li>
 		</apparelRequired>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 		<weaponMoney>
 			<min>1600</min>
-			<max>2000</max>
+			<max>3000</max>
 		</weaponMoney>
 		<weaponTags>
 			<li>TauRanged</li>
 		</weaponTags>
-		<techHediffsMoney>
-			<min>2000</min>
-			<max>3000</max>
-		</techHediffsMoney>
-		<combatEnhancingDrugsCount>
-			<min>1</min>
-			<max>2</max>
-		</combatEnhancingDrugsCount>
-		<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
-		<techHediffsTags>
-			<li>Advanced</li>
-		</techHediffsTags>
-		<techHediffsChance>0.80</techHediffsChance>
-		<inventoryOptions>
-			<skipChance>0.8</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>Silver</thingDef>
-					<countRange>
-						<min>120</min>
-						<max>480</max>
-					</countRange>
-				</li>
-				<li>
-					<thingDef>MedicineIndustrial</thingDef>
-					<countRange>
-						<min>1</min>
-						<max>2</max>
-					</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
 	</PawnKindDef>
+
   
+	<PawnKindDef ParentName="TauMilSaceaBase">
+		<defName>TauFireVeteranSacea</defName>
+		<label>shas'ui</label>
+		<backstoryCategories>
+			<li>TauFireBackstory</li>
+		</backstoryCategories>
+		<combatPower>220</combatPower>
+		<minGenerationAge>26</minGenerationAge>
+		<apparelTags>
+			<li>SaceaApparel</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>2500</min>
+			<max>4200</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>TauCombatArmorSacea</li>
+			<li>TauCombatHelmetAdvSacea</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>1600</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>TauRanged</li>
+		</weaponTags>
+	</PawnKindDef>
 
 </Defs>

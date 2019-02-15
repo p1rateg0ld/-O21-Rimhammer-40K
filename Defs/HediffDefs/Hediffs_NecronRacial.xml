@@ -145,5 +145,28 @@
 			</li>
 		</stages>
 	</HediffDef>
+
+	<HediffDef>
+		<defName>NecronGaussShortage</defName>
+		<label>energy shortage</label>
+		<stages>
+			<li>
+				<minSeverity>0.0</minSeverity>
+				<label>extreme</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.2</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="DiseaseBase">
+		<defName>NecronGaussFailure</defName>
+		<label>energy failure</label>
+		<!-- lethalSeverity>0</lethalSeverity -->
+	</HediffDef>
 	
 </Defs>

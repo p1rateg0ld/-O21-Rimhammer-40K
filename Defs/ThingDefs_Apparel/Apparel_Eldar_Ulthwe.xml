@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ====== Ulthwe Armors ====== -->
+	
+	<ThingDef ParentName="ArmorMachineableBase" Name="GuardianArmorBase"> <!-- Guardian Armour -->
+		<defName>UlthweGuardianArmor</defName>
+		<label>Ulthwe Guardian Armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>The armor commonly worn by the Eldar Guardians.</description>
+		<graphicData>
+			<texPath>Things/Eldar/Ulthwe/Apparel/UlthweGuardian</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Eld_Guardian</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>8</Steel>
+			<Plasteel>60</Plasteel>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<WorkToMake>64000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.52</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.50</ArmorRating_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<ToxicSensitivity>-0.70</ToxicSensitivity>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>EldarApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags>
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweGuardianApparel</li>
+				<li>UlthweCivilianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Apparel/UlthweGuardian</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+				<li>Middle</li>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="GuardianArmorBase" Name="BansheeArmorBase"> <!-- Banshee Armour -->
+		<defName>UlthweBansheeArmor</defName>
+		<label>Ulthwe Banshee Armor</label>
+		<description>The armor commonly worn by the Eldar Banshees.</description>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Apparel/UlthweBanshee</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_HowlingBanshee</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweBansheeApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Apparel/UlthweBanshee</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="GuardianArmorBase" Name="AutarchArmorBase"> <!-- Autarch Armour -->
+		<defName>UlthweAutarchArmor</defName>
+		<label>Ulthwe Autarch Armor</label>
+		<description>The armor commonly worn by the Eldar Autarchs.</description>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Apparel/UlthweAutarch</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_Autarch</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweAutarchApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Apparel/UlthweAutarch</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="GuardianArmorBase" Name="RangerArmorBase"> <!-- Ranger Armour -->
+		<defName>UlthweRangerArmor</defName>
+		<label>Ulthwe Ranger Armor</label>
+		<description>The armor commonly worn by the Eldar Rangers.</description>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Apparel/UlthweRanger</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_Ranger</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweRangerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Apparel/UlthweRanger</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="GuardianArmorBase" Name="FarseerArmorBase"> <!-- Farseer Armour -->
+		<defName>UlthweFarseerArmor</defName>
+		<label>Ulthwe Farseer Armor</label>
+		<description>The armor commonly worn by the Eldar Farseers.</description>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Apparel/UlthweFarseer</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_Farseer</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweFarseerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Apparel/UlthweFarseer</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Ulthwe Helmets ====== -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="GuardianHelmetBase"> <!-- Guardian Helmet -->
+		<defName>UlthweGuardianHelmet</defName>
+		<label>Ulthwe Guardian Helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>The helmet commonly worn by the Eldar Guardians.</description>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Guardian</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Eld_Guardian</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>4</Steel>
+			<Plasteel>60</Plasteel>
+		</costList>
+		<statBases>
+			<Mass>1.8</Mass>
+			<WorkToMake>24000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+	 <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.9</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>EldarApparel</li>
+		</thingCategories>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+    		<tags>
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweGuardianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Guardian</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="GuardianHelmetBase" Name="BansheeHelmetBase"> <!-- Banshee Helmet -->
+		<defName>UlthweBansheeHelmet</defName>
+		<label>Ulthwe Banshee Helmet</label>
+		<description>The helmet commonly worn by the Eldar Banshees.</description>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Banshee</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_HowlingBanshee</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweBansheeApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Banshee</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="GuardianHelmetBase" Name="RangerHelmetBase"> <!-- Ranger Helmet -->
+		<defName>UlthweRangerHelmet</defName>
+		<label>Ulthwe Ranger Helmet</label>
+		<description>The helmet commonly worn by the Eldar Rangers.</description>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Ranger</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_Ranger</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweRangerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Ranger</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="GuardianHelmetBase" Name="AutarchHelmetBase"> <!-- Autarch Helmet -->
+		<defName>UlthweAutarchHelmet</defName>
+		<label>Ulthwe Autarch Helmet</label>
+		<description>The helmet commonly worn by the Eldar Autarchs.</description>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Autarch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType> 
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_Autarch</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweAutarchApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Autarch</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="AutarchHelmetBase" Name="FarseerHelmetBase"> <!-- Autarch Helmet -->
+		<defName>UlthweFarseerHelmet</defName>
+		<label>Ulthwe Farseer Helmet</label>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Farseer</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_Farseer</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweFarseerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Hats/UlthweHelmet_Farseer</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Ulthwe Hats ====== -->
+
+	<ThingDef ParentName="HatMakeableBase" Name="EldarHeadgearBase"> <!-- Eldar Chinstrap -->
+		<defName>UlthweHeadgear</defName>
+		<label>Ulthwe Headgear</label>
+		<description>Some Eldar like to wear this headgear which covers the jaw and often neck, while not particularly effective for defence it does seem to have an unknown purpose.</description>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<graphicData>
+			<texPath>Things/Eldar/Ulthwe/Hats/Ulthweheadpiece</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories>
+			<li>EldarApparel</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>0.14</Mass>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.20</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+			<bodyPartGroups>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Hats/Ulthweheadpiece</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+    		<tags>
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweFarseerApparel</li>
+				<li>UlthweCivilianApparel</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="EldarHeadgearBase" Name="RangerHoodBase"> <!-- Ranger Hood -->
+		<defName>UlthweRangerHood</defName>
+		<label>Ulthwe Ranger Hood</label>
+		<description>The hood commonly worn by the Eldar Rangers.</description>
+		<graphicData> 
+			<texPath>Things/Eldar/Ulthwe/Hats/UlthweRangerHood</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>O21_Eld_Ranger</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<hatRenderedFrontOfFace>false</hatRenderedFrontOfFace>
+			<defaultOutfitTags Inherit="false">
+				<li>Soldier</li>
+			</defaultOutfitTags>
+    		<tags Inherit="false">
+				<li>EldarApparel</li>
+				<li>UlthweApparel</li>
+				<li>UlthweRangerApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Eldar/Ulthwe/Hats/UlthweRangerHood</wornGraphicPath>
+			<layers Inherit="false">
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups Inherit="false">
+				<li>FullHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+</Defs>

@@ -39,7 +39,7 @@
 			<li>
 				<label>point</label>
 				<capacities>
-				  <li>Stab</li>
+					<li>Stab</li>
 				</capacities>
 				<power>26</power>
 				<cooldownTime>2.6</cooldownTime>
@@ -59,6 +59,105 @@
 				<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-	  </ThingDef>
-	  
+		</ThingDef>
+		
+	<!--==================== Eldar	- Singing Spear =========================--> 
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>O21_SingingSpear</defName>
+		<label>Eldar Singing Spear</label>
+		<description>The Singing Spear is potent psychic melee weapon used by Eldar Farseers and Warlocks. It is a silver spear formed of unknown materials and covered in sparkling gems. When held by a psyker, the weapon emits a constant low hum that gives it its name. This weapon is essentially a Witchblade that can be thrown a short distance, automatically returning to the user's hand after each throw and is thus considered both a melee and a limited ranged weapon. However, it is a two-handed weapon that is heavy and difficult to wield, so its use in close combat is less effective than other Eldar blades.</description>
+		<graphicData>
+			<texPath>Things/Eldar/Weapons/Melee/SingingSpear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>			
+		</graphicData>
+		<comps>		 
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_BeatFire</soundInteract>
+		<costStuffCount>400</costStuffCount>
+		<statBases>
+			<WorkToMake>27500</WorkToMake>
+			<Mass>2.5</Mass>
+			<MarketValue>4250</MarketValue>
+			<AccuracyTouch>0.91</AccuracyTouch>
+			<AccuracyShort>0.81</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<targetable>true</targetable>
+				<onlyManualCast>true</onlyManualCast>
+				<defaultProjectile>O21_Bullet_SingingSpear</defaultProjectile>
+				<warmupTime>0.50</warmupTime>
+				<range>10</range>
+				<soundCast>Interact_BeatFire</soundCast>
+			</li> 
+		</verbs>
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>32</power>
+				<armorPenetration>0.5</armorPenetration>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<armorPenetration>0.2</armorPenetration>
+				<cooldownTime>1.3</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<recipeUsers>
+			
+			</recipeUsers>
+			<researchPrerequisite>O21_Eld_WeaponsPower</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<!-- <Wraithbone>20</Wraithbone> -->
+			<Steel>10</Steel>
+			<Plasteel>2</Plasteel>
+		</costList>
+		<weaponTags>
+			<li>EldarMelee</li>
+			<li>EldarSingingSpear</li>
+		</weaponTags>
+		<thingCategories>
+			<li>EldarMelee</li>
+		</thingCategories>
+		<tradeTags>
+			<li>EldarMelee</li>
+		</tradeTags>
+	</ThingDef>
+	
+		<ThingDef ParentName="BaseProjectileNeolithic">
+			<defName>O21_Bullet_SingingSpear</defName>
+			<label>Singing Spear</label>
+			<graphicData>
+				<texPath>Things/Projectile/SingingSpear</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<projectile>
+				<flyOverhead>false</flyOverhead>
+				<damageDef>RangedStab</damageDef>
+				<armorPenetrationBase>0.3</armorPenetrationBase>
+				<damageAmountBase>60</damageAmountBase>
+				<speed>26</speed>
+			</projectile>
+		</ThingDef>
+		
 </Defs>

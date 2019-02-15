@@ -226,4 +226,56 @@
 		</apparel>
 	</ThingDef>
 
+	<ThingDef ParentName="ArmorSmithableBase" Name="TauSgtHelmetBase"><!-- Tau Combat Helmet -->
+		<defName>TauCombatHelmetAdv</defName>
+		<label>tau combat helmet adv.(t'au)</label>
+		<techLevel>Spacer</techLevel>
+		<description>The helmet commonly worn by the Tau Fire Caste.</description>
+		<graphicData> 
+			<texPath>Things/Tau/T'au/Hats/T'auSergeantHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Tau_BasicArmor</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>5</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2.4</Mass>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>1000</MarketValue>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
+			<ToxicSensitivity>-0.20</ToxicSensitivity>
+		</statBases>
+		<thingCategories>
+			<li>TauApparel</li>
+		</thingCategories>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+    		<tags>
+				<li>TauApparel</li>
+				<li>T'auApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Tau/T'au/Hats/T'auSergeantHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+
 </Defs>

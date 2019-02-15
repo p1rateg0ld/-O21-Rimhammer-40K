@@ -4,11 +4,11 @@
 	<!-- Plasma Pistol -->
 
 	<!-- <ThingDef ParentName="O21BaseMakeableGun">
-		<defName>OGI_Gun_PlasmaPistol</defName>
+		<defName>O21_PlasmaPistol</defName>
 		<label>Plasma Pistol</label>
 		<description>The Plasma Pistol is the smallest variant in the Plasma Weapons family. Each shot from a plasma pistol contains all the destructive fury of a larger Plasma Gun, although with a reduced range and rate of fire. The Traitor Legions have long made use of larger plasma weapons containing hydrogen fuel in a higher quantum state, making them both more powerful and more dangerous to wield. The Plasma Pistol is most commonly carried by officers of both the Space Marines and the Imperial Guard. Aside from individual Imperial officers, some specialized assault troops such as Assault Marines are also sometimes armed with Plasma Pistols.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/PlasmaPistol</texPath>
+			<texPath>Things/Imperium/Weapons/Ranged/PlasmaPistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
@@ -23,7 +23,7 @@
 			<RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>WRImpPlasmaTech</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_PlasmaWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>125</Steel>
@@ -32,22 +32,20 @@
 			<Gold>2</Gold>
 		</costList>
 		<weaponTags>
-			<li>Gun</li>
+			<li>IGRanged</li>
 			<li>PlasmaPistol</li>
-			<li>GuevesaAdvPistol</li>
 		</weaponTags>
 		<thingCategories>
-			<li>OGIRanged</li>
+			<li>IGRanged</li>
 		</thingCategories>
 		<tradeTags>
-			<li>OGIRanged</li>
+			<li>IGRanged</li>
 		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
-				<overheat>UR</overheat>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>OGI_Bullet_PlasmaPistol</defaultProjectile>
+				<defaultProjectile>O21_Bullet_PlasmaPistol</defaultProjectile>
 				<warmupTime>0.4</warmupTime>
 				<range>25</range>
 				<forcedMissRadius>0.5</forcedMissRadius>
@@ -83,7 +81,7 @@
 	</ThingDef>
 	
 		<ThingDef ParentName="BaseBullet">
-			<defName>OGI_Bullet_PlasmaPistol</defName>
+			<defName>O21_Bullet_PlasmaPistol</defName>
 			<label>Plasma Bolt</label>
 			<graphicData>
 				<texPath>Things/Projectile/PlamsShotSml</texPath>
@@ -92,27 +90,26 @@
 			<thingClass>Projectile_Explosive</thingClass>
 			<projectile>
 				<flyOverhead>false</flyOverhead>
-				<damageDef>OGIPlasma</damageDef>
+				<damageDef>O21_Plasma</damageDef>
 				<explosionRadius>0.50</explosionRadius>
 				<damageAmountBase>17</damageAmountBase>
 				<armorPenetrationBase>0.68</armorPenetrationBase>
 				<stoppingPower>1.5</stoppingPower>
 				<speed>55</speed>
-				<soundExplode>OGIPP_Explosion</soundExplode>
+				<soundExplode>O21PP_Explosion</soundExplode>
 			</projectile>
 		</ThingDef> -->
  
 	<!-- Plasma Gun -->
 
 	<!-- <ThingDef ParentName="O21BaseMakeableGun">
-		<thingClass>AdeptusMechanicus.ThingDef_GunOH</thingClass>
-		<defName>OGI_Gun_PlasmaGun</defName>
+		<defName>O21_PlasmaGun</defName>
 		<label>Plasma Gun</label>
 		<description>The Plasma Gun is a rifle-sized Plasma Weapon common to many of the armed forces of the Imperium of Man. It is classified as a special weapon and is carried by a variety of Imperial infantry, including Space Marines, Imperial Guardsmen and Storm Troopers. Like other infantry-carried plasma weapons, Imperial Plasma Guns are more powerful than plasma weapons used by xenos races but far more unstable as they have a chance to malfunction and even explode, wounding or even killing the wielder.
 
 Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either fuel flasks or backpack containers. As the fuel is fed into the miniature fusion core inside the weapon, the hydrogen energises into the plasma state of matter which is held in the core by powerful magnetic containment fields. When fired, the fields dilate open and the plasma is ejected via a linear magnetic accelerator as a bolt of superheated matter akin to a solar flare in appearance and temperature. For this reason Plasma Weapons are sometimes colloquially called "Sun Guns" by the common population of the Imperium. Plasma Weapons tax their cooling systems considerably, and the Space Marines push the limits of their own resilience by using hydrogen in a higher quantum state than standard Imperial patterns.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/PlasmaGun</texPath>
+			<texPath>Things/Imperium/Weapons/Ranged/PlasmaGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
@@ -127,7 +124,7 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>WRImpPlasmaTech</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_PlasmaWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>175</Steel>
