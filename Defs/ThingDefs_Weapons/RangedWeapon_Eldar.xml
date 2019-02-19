@@ -13,6 +13,9 @@
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_EldarBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Eld_WeaponsLight</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
@@ -94,6 +97,9 @@
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_EldarBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Eld_WeaponsLight</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
@@ -193,6 +199,9 @@
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_EldarBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Eld_WeaponsLight</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
@@ -291,6 +300,9 @@
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_EldarBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Eld_WeaponsAdvanced</researchPrerequisite>
 		</recipeMaker>
 		<statBases>

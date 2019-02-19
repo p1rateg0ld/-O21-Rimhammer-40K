@@ -90,6 +90,12 @@
 				<graphicClass>Graphic_StackCount</graphicClass>
 				<color>(0, 195, 255)</color>
 			</graphicData>
+			<comps Inherit="False">
+				<li Class="CompProperties_Glower">
+					<glowRadius>3</glowRadius>
+					<glowColor>(0, 195, 255, 0)</glowColor>
+				</li>
+			</comps>
 		</ThingDef>
 
 		<ThingDef ParentName="GaussCrystalBase">
@@ -100,6 +106,12 @@
 				<graphicClass>Graphic_StackCount</graphicClass>
 				<color>(255, 157, 0)</color>
 			</graphicData>
+			<comps Inherit="False">
+				<li Class="CompProperties_Glower">
+					<glowRadius>3</glowRadius>
+					<glowColor>(255, 157, 0, 0)</glowColor>
+				</li>
+			</comps>
 		</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">

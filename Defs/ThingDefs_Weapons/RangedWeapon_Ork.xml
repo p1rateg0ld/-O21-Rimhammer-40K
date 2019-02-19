@@ -22,6 +22,9 @@
 			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
 		</statBases>
 	<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 		<researchPrerequisite>O21_Ork_Weapons_Basic</researchPrerequisite>
 	</recipeMaker>
 		<equippedStatOffsets>
@@ -117,6 +120,9 @@
 			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Ork_Weapons_Shootas</researchPrerequisite>
 		</recipeMaker>
 		<equippedStatOffsets>
@@ -280,6 +286,9 @@
 			<RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
 		</statBases>
 	<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 		<researchPrerequisite>O21_Ork_Weapons_Shootas</researchPrerequisite>
 	</recipeMaker>
 		<equippedStatOffsets>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>O21_OrkBench_Basic</defName>
+        <label>ork crafting bench</label>
+        <description>Ork bench fer kraftin stuff ya git.</description>
+        <thingClass>Building_WorkTable</thingClass>
+
+        <graphicData>
+            <texPath>Things/Ork/Building/WorkstationOrk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,1)</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToBuild>2500</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-5</Cleanliness>
+        </statBases>
+
+        <size>(3,1)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <designationCategory>Production</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+
+        <costList>
+            <Steel>25</Steel>
+            <WoodLog>25</WoodLog>
+        </costList>
+
+        <researchPrerequisites>
+            <li>O21_Ork_Research</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+</Defs>

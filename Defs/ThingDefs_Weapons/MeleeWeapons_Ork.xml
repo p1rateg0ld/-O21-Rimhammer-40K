@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Ork  - Crude Choppa -->
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<ThingDef ParentName="O21_BaseMeleeWeapon">
 		<defName>OrkCrudeChoppa</defName>
 		<label>Ork Crude Choppa</label>
 		<description>Choppas are a general term given ta any ork close kombat weapon, typically heavy swords an' axes. Slugga boyz are always armed wit' a slugga an' choppa, at least until dey save up enough teef ta buy someth'n better, like a shoota. 'der iz little finesse ta a choppa, as most are little more dan sharpened pieces uv scrap metal which have been roughly shaped into someth'n resembl'n a sword or axe. 'der are, however, more advanced choppas, often tak'n 'da form uv a krude chainsword.</description>
@@ -45,11 +45,9 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>CraftingSpot</li>
-			</recipeUsers>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Ork_Weapons_Basic</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -202,7 +200,7 @@
 	 </ThingDef>-->
 	 
 	<!-- Ork  - Big Choppa -->
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<ThingDef ParentName="O21_BaseMeleeWeapon">
 		<defName>OrkBigChoppa</defName>
 		<label>Ork Big Choppa</label>
 		<description>Enormous axes with jagged metal teeth, Big Choppas are chosen more for their sheer weight than subtlety. A Big Choppa is a two-handed weapon, often wielded by Ork Nobz and Warbosses. Some Big Choppas are even outfitted with whirring chainsaw blades or circular saws instead of a standard axe blade.</description>
@@ -226,11 +224,9 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>CraftingSpot</li>
-			</recipeUsers>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 		<researchPrerequisite>O21_Ork_Weapons_Choppas</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>150</costStuffCount>

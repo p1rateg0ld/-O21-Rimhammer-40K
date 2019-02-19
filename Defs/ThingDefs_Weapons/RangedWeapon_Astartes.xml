@@ -31,6 +31,9 @@
 			<RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_SMBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -134,6 +137,9 @@
 			<RangedWeapon_Cooldown>4.00</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGHeavyWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -236,6 +242,9 @@
 			<RangedWeapon_Cooldown>3.00</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGAdvancedWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>

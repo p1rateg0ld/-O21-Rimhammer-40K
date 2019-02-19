@@ -6,7 +6,7 @@
 		<label>canoptek cannery (green)</label>
 		<description>An automated device for converting humans of any kind into Pariahs, the culmination of an unknown Necron Lords work to create a cybernetic combination of Human and Necron. Allowing them to be created without requiring the Pariah gene, giving Necrons a way to defeat an enemy and replenish their own numbers at the same time. Functionally Pariahs are no different from the standard Necron Warrior.</description>
 		<!-- Converter MUST be this class to function with the comp further below. -->
-		<thingClass>O21Toolbox.Converter.Building_Converter</thingClass>
+		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
 		
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -48,8 +48,8 @@
 		</costList>
 		
 		<comps>
-			<li Class="O21Toolbox.Converter.CompProperties_Converter">
-				<compClass>O21Toolbox.Converter.Comp_Converter</compClass>
+			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
+				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
 				<inputDefs>
 					<li>Human</li>
 					<li>Alien_Terran</li>

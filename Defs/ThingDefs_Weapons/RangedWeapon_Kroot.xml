@@ -75,6 +75,9 @@
 				<li>KrootRanged</li>
 			</tradeTags>
 			<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_TauBench_Basic</li>
+            </recipeUsers>
 				<researchPrerequisite>O21_Tau_Allies_KrootWeapons</researchPrerequisite>
 			</recipeMaker>
 			<costList>

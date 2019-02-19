@@ -1,6 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <ThingDef ParentName="BenchBase">
+        <defName>O21_ImpBench_Basic</defName>
+        <label>imperial crafting bench</label>
+        <description>imperial crafting bench, used to create imperial guard equipment.</description>
+        <thingClass>Building_WorkTable</thingClass>
+
+        <graphicData>
+            <texPath>Things/Imperium/Buildings/ImpTechStationA</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3.1,1.1)</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToBuild>2500</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-5</Cleanliness>
+        </statBases>
+
+        <size>(3,1)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <designationCategory>Production</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+
+        <costList>
+            <WoodLog>50</WoodLog>
+        </costList>
+
+        <researchPrerequisites>
+            <li>O21_Imp_Research</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>O21_ImpBench_Advanced</defName>
+        <label>imperial crafting bench (advanced)</label>
+        <description>imperial crafting bench, used to create space marine and sister of battle equipment.</description>
+        <thingClass>Building_WorkTable</thingClass>
+
+        <graphicData>
+            <texPath>Things/Imperium/Buildings/ImpTechStationB</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3.1,1.1)</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToBuild>2500</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-5</Cleanliness>
+        </statBases>
+
+        <size>(3,1)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <designationCategory>Production</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+
+        <costList>
+            <CeramiteLowGrade>50</CeramiteLowGrade>
+            <WoodLog>50</WoodLog>
+        </costList>
+
+        <researchPrerequisites>
+            <li>O21_Imp_Research</li>
+        </researchPrerequisites>
+    </ThingDef>
+
 	<ThingDef ParentName="BenchBase">
 		<defName>O21_CeramiteRefinery</defName>
 		<label>ceramite refinery</label>

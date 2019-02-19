@@ -62,6 +62,9 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 	  </ThingDef>
 
@@ -126,6 +129,9 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 	  </ThingDef>
 		
@@ -192,6 +198,9 @@
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 	  

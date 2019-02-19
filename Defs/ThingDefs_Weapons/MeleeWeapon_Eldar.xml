@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<ThingDef ParentName="O21_BaseMeleeWeapon">
 		<defName>EldarPowerSword</defName>
 		<label>Eldar Power Sword</label>
 		<description>A Power Sword is a Power Weapon that has been shaped into a sword of varying lengths and designs crafted from one of any number of different materials, though usually Adamantium. When its power cell is activated, often by touching a control located on the hilt, the blade is sheathed in a lethal corona of disruptive energy. This energy field allows the blade to carve through flesh, bone and most forms of armour plate alike, making a Power Sword a highly effective Imperial close combat weapon. Power Swords are used by all members of the Imperial armed forces, including the troops of the Imperial Guard and the Space Marines of the Adeptus Astartes. Xenos races such as the Eldar, their evil kin the Dark Eldar, and the Necrons are also known to make use of such weapons.</description>
@@ -58,12 +58,15 @@
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_EldarBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
-		</ThingDef>
+	</ThingDef>
 		
 	<!--==================== Eldar	- Singing Spear =========================--> 
 	
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<ThingDef ParentName="O21_BaseMeleeWeapon">
 		<defName>O21_SingingSpear</defName>
 		<label>Eldar Singing Spear</label>
 		<description>The Singing Spear is potent psychic melee weapon used by Eldar Farseers and Warlocks. It is a silver spear formed of unknown materials and covered in sparkling gems. When held by a psyker, the weapon emits a constant low hum that gives it its name. This weapon is essentially a Witchblade that can be thrown a short distance, automatically returning to the user's hand after each throw and is thus considered both a melee and a limited ranged weapon. However, it is a two-handed weapon that is heavy and difficult to wield, so its use in close combat is less effective than other Eldar blades.</description>
@@ -122,13 +125,16 @@
 			</li>
 		</tools>
 		<recipeMaker>
-			<recipeUsers>
-			
-			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_EldarBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Eld_WeaponsPower</researchPrerequisite>
 		</recipeMaker>
 		<costList>
-			<!-- <Wraithbone>20</Wraithbone> -->
+			<Wraithbone>20</Wraithbone>
 			<Steel>10</Steel>
 			<Plasteel>2</Plasteel>
 		</costList>

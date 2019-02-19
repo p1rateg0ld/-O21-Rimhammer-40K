@@ -36,11 +36,11 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="AbilityUser">
-      <HintPath>..\..\..\JecsTools\Assemblies\AbilityUser.dll</HintPath>
+      <HintPath>..\..\..\..\Mods_Old\JecsTools\Assemblies\AbilityUser.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AbilityUserAI">
-      <HintPath>..\..\..\JecsTools\Assemblies\AbilityUserAI.dll</HintPath>
+      <HintPath>..\..\..\..\Mods_Old\JecsTools\Assemblies\AbilityUserAI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -59,10 +59,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BiomeDefOf.cs" />
-    <Compile Include="BiomeWorker_GaussDesertBlue.cs" />
-    <Compile Include="BiomeWorker_GaussDesertGreen.cs" />
-    <Compile Include="BiomeWorker_GaussDesertOrange.cs" />
+    <Compile Include="Biomes\BiomeDefOf.cs" />
+    <Compile Include="Biomes\BiomeWorker_GaussDesertBlue.cs" />
+    <Compile Include="Biomes\BiomeWorker_GaussDesertGreen.cs" />
+    <Compile Include="Biomes\BiomeWorker_GaussDesertOrange.cs" />
     <Compile Include="Common\CompHelp.cs" />
     <Compile Include="Constructs\AI\JobDriver_ReturnToStation.cs" />
     <Compile Include="Constructs\AI\JobDriver_SelfTerminate.cs" />
@@ -77,7 +77,7 @@
     <Compile Include="Constructs\DefModExtension_ConstructStation.cs" />
     <Compile Include="Constructs\Pawn_Construct.cs" />
     <Compile Include="Crystal.cs" />
-    <Compile Include="GenStep_Blackstone.cs" />
+    <Compile Include="Biomes\GenStep_Blackstone.cs" />
     <Compile Include="Necrons\HediffGiver_NecronRepair.cs" />
     <Compile Include="Orks\FleshTypeDef_Ork.cs" />
     <Compile Include="Orks\HediffGiver_OrkHealing.cs" />
@@ -89,6 +89,19 @@
     <Compile Include="Projector\PlaceWorker_DrawLightedCells.cs" />
     <Compile Include="Projector\PlaceWorker_DrawProjector.cs" />
     <Compile Include="Projector\Util_Projector.cs" />
+    <Compile Include="Biomes\TerrainDefOf.cs" />
+    <Compile Include="Biomes\ThingDefOf.cs" />
+    <None Include="Psyker\Buttons.cs" />
+    <None Include="Psyker\Comp_AbilityUserPsyker.cs" />
+    <None Include="Psyker\ITab_Psyker.cs" />
+    <None Include="Psyker\PsykerAbility.cs" />
+    <None Include="Psyker\PsykerAbilityDef.cs" />
+    <None Include="Psyker\PsykerCardUtility.cs" />
+    <None Include="Psyker\PsykerData.cs" />
+    <None Include="Psyker\PsykerDefOf.cs" />
+    <None Include="Psyker\PsykerPower.cs" />
+    <None Include="Psyker\PsykerSkill.cs" />
+    <None Include="Psyker\PsykerUtility.cs" />
     <Compile Include="ThoughtWorker_ConstructAlways.cs" />
     <Compile Include="Necrons\CompProperties_NecronResurrection.cs" />
     <Compile Include="Necrons\HediffGiver_BirthdayNecron.cs" />
@@ -97,7 +110,6 @@
     <Compile Include="Necrons\HediffNecronGrowingPart.cs" />
     <Compile Include="Necrons\PawnKindDef.cs" />
     <Compile Include="Settings\Rimhammer40kModSettings.cs" />
-    <None Include="MissionBoard.cs" />
     <None Include="Building_GraphicSwitchableDef.cs" />
     <Compile Include="Logic\BodyPartUtility.cs" />
     <Compile Include="Necrons\HediffNecrodermisRepair.cs" />
@@ -106,7 +118,6 @@
     <Compile Include="Orks\HediffOrkGrowingPart.cs" />
     <Compile Include="Orks\HediffOrkHealing.cs" />
     <Compile Include="Orks\OrkHediffDefOf.cs" />
-    <Compile Include="PlaceWorker_ShowRequisitionRelayRadius.cs" />
     <Compile Include="RemovableHediff.cs" />
     <Compile Include="Rimhammer40k.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

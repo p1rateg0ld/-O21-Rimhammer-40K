@@ -53,10 +53,9 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGAdvancedArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
@@ -128,6 +127,9 @@
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>50</Cloth>

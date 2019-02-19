@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>O21_EldarBench_Basic</defName>
+        <label>eldar crafting bench</label>
+        <description>Eldar crafting bench, used to create Wraithbone faster as well as any eldar equipment.</description>
+        <thingClass>Building_WorkTable</thingClass>
+
+        <graphicData>
+            <texPath>Things/Eldar/Building/WorkstationEldar</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3.1,2.1)</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToBuild>2500</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-5</Cleanliness>
+        </statBases>
+
+        <size>(3,2)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <designationCategory>Production</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+
+        <costList>
+            <Wraithbone>50</Wraithbone>
+        </costList>
+
+        <researchPrerequisites>
+            <li>O21_Eld_Research</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+</Defs>

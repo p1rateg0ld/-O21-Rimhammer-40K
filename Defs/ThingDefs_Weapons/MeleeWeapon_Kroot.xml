@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<ThingDef ParentName="O21_BaseMeleeWeapon">
 		<defName>KrootBlade</defName>
 		<label>kroot blade</label>
 		<description>An ancient but effective design, this one has been specifically assigned to be used by Kroot Hunters.</description>
@@ -53,6 +53,9 @@
 		</tools>
 		<recipeMaker>
 			<researchPrerequisite>O21_Tau_Allies_KrootWeapons</researchPrerequisite>
+            <recipeUsers Inherit="False">
+                <li>O21_TauBench_Basic</li>
+            </recipeUsers>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>

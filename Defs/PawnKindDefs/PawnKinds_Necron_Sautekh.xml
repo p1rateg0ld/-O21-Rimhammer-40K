@@ -87,7 +87,7 @@
 		<race>Alien_NecronDeathmark</race>
 		<isFighter>true</isFighter>
 		<weaponTags Inherit="false">
-			<li>GaussFlayer</li>
+			<li>SynapticDisintegrator</li>
 		</weaponTags>
 		<combatPower>300</combatPower>
 	</PawnKindDef>

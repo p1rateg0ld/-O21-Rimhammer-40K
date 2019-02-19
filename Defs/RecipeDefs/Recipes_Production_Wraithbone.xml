@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>FabricateWraithbone</defName>
+		<label>fabricate wraithbone</label>
+		<description>Create Wraithbone in a specialized environment, speeding up the process.</description>
+		<jobString>Fabricating wraithbone.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<products>
+			<Wraithbone>4</Wraithbone>
+		</products>
+		<researchPrerequisite>O21_Eld_Research</researchPrerequisite>
+		<recipeUsers>
+			<li>O21_EldarBench_Basic</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>FabricateWraithbonePowerless</defName>
+		<label>fabricate wraithbone</label>
+		<description>Create Wraithbone anywhere, slower than a prepared environment.</description>
+		<jobString>Fabricating wraithbone.</jobString>
+		<workAmount>2000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<products>
+			<Wraithbone>2</Wraithbone>
+		</products>
+		<researchPrerequisite>O21_Eld_Research</researchPrerequisite>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+</Defs>

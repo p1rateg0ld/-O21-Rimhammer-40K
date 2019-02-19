@@ -59,6 +59,9 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Imp_SMPowerArmor</researchPrerequisite>
 		</recipeMaker>
@@ -136,6 +139,9 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Imp_SMPowerArmor</researchPrerequisite>
 		</recipeMaker>
@@ -149,6 +155,9 @@
 	
 	<ThingDef ParentName="SMHelmetBase" Name="SMTermHelmetBase" Abstract="True"> <!-- Terminator Armour -->
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Imp_SMTerminatorArmor</researchPrerequisite>
 		</recipeMaker>

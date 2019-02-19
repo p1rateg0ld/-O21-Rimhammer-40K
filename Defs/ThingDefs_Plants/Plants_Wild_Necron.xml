@@ -134,14 +134,20 @@
 		<label>gauss crystal cluster (green)</label>
 		<description>A cluster of green crystals, they seem to be brimming with some kind of energy.</description>
 		<graphicData>
-			<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+			<texPath>Things/Flora/Necron/HugeGaussCrystalGreen</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<color>(0, 255, 0, 0)</color>
+			<color>(0, 255, 0)</color>
 		</graphicData>
 		<hideAtSnowDepth>0.60</hideAtSnowDepth>
 		<plant>
 			<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(0, 255, 0, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
 		<ThingDef ParentName="NecCrystalBushBase">
@@ -149,17 +155,23 @@
 			<label>large gauss crystal cluster (green)</label>
 			<description>A large green crystal, it's brimming with some kind of energy.</description>
 			<graphicData>
-				<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+				<texPath>Things/Flora/Necron/HugeGaussCrystalGreen</texPath>
 				<graphicClass>Graphic_Random</graphicClass>
 				<drawSize>1.0</drawSize>
 				<shadowData>
 					<volume>(0.55, 0.2, 0.2)</volume>
 				</shadowData>
-				<color>(0, 255, 0, 0)</color>
+				<color>(0, 255, 0)</color>
 			</graphicData>
 			<plant>
 				<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
 			</plant>
+			<comps>
+				<li Class="CompProperties_Glower">
+					<glowRadius>6</glowRadius>
+					<glowColor>(0, 255, 0, 0)</glowColor>
+				</li>
+			</comps>
 		</ThingDef>
 
 			<ThingDef ParentName="NecCrystalTreeBase">
@@ -167,13 +179,13 @@
 				<label>huge gauss crystal (green)</label>
 				<description>A massive green crystal, it's brimming with some kind of energy.</description>
 				<graphicData>
-					<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+					<texPath>Things/Flora/Necron/HugeGaussCrystalGreen</texPath>
 					<graphicClass>Graphic_Random</graphicClass>
 					<shadowData>
 						<volume>(0.2, 0.35, 0.13)</volume>
 						<offset>(-0.03,0,-0.44)</offset>
 					</shadowData>
-					<color>(0, 255, 0, 0)</color>
+					<color>(0, 255, 0)</color>
 				</graphicData>
 				<plant>
 					<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
@@ -191,14 +203,20 @@
 		<label>gauss crystal cluster (orange)</label>
 		<description>A cluster of orange crystals, they seem to be brimming with some kind of energy.</description>
 		<graphicData>
-			<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+			<texPath>Things/Flora/Necron/HugeGaussCrystalOrange</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<color>(255, 157, 0, 0)</color>
+			<color>(255, 157, 0)</color>
 		</graphicData>
 		<hideAtSnowDepth>0.60</hideAtSnowDepth>
 		<plant>
 			<harvestedThingDef>GaussCrystalOrange</harvestedThingDef>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(255, 157, 0, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
 		<ThingDef ParentName="NecCrystalBushBase">
@@ -206,17 +224,23 @@
 			<label>large gauss crystal (orange)</label>
 			<description>A large orange crystal, it's brimming with some kind of energy.</description>
 			<graphicData>
-				<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+				<texPath>Things/Flora/Necron/HugeGaussCrystalOrange</texPath>
 				<graphicClass>Graphic_Random</graphicClass>
 				<drawSize>1.0</drawSize>
 				<shadowData>
 					<volume>(0.55, 0.2, 0.2)</volume>
 				</shadowData>
-				<color>(255, 157, 0, 0)</color>
+				<color>(255, 157, 0)</color>
 			</graphicData>
 			<plant>
 				<harvestedThingDef>GaussCrystalOrange</harvestedThingDef>
 			</plant>
+			<comps>
+				<li Class="CompProperties_Glower">
+					<glowRadius>6</glowRadius>
+					<glowColor>(255, 157, 0, 0)</glowColor>
+				</li>
+			</comps>
 		</ThingDef>
 
 			<ThingDef ParentName="NecCrystalTreeBase">
@@ -224,13 +248,13 @@
 				<label>huge gauss crystal (orange)</label>
 				<description>A massive orange crystal, it's brimming with some kind of energy.</description>
 				<graphicData>
-					<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+					<texPath>Things/Flora/Necron/HugeGaussCrystalOrange</texPath>
 					<graphicClass>Graphic_Random</graphicClass>
 					<shadowData>
 						<volume>(0.2, 0.35, 0.13)</volume>
 						<offset>(-0.03,0,-0.44)</offset>
 					</shadowData>
-					<color>(255, 157, 0, 0)</color>
+					<color>(255, 157, 0)</color>
 				</graphicData>
 				<plant>
 					<harvestedThingDef>GaussCrystalOrange</harvestedThingDef>
@@ -248,7 +272,7 @@
 		<label>gauss crystal cluster (blue)</label>
 		<description>A cluster of blue crystals, they seem to be brimming with some kind of energy.</description>
 		<graphicData>
-			<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+			<texPath>Things/Flora/Necron/HugeGaussCrystalBlue</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<color>(0, 195, 255, 0)</color>
 		</graphicData>
@@ -256,6 +280,12 @@
 		<plant>
 			<harvestedThingDef>GaussCrystalBlue</harvestedThingDef>
 		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(0, 195, 255, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
 		<ThingDef ParentName="NecCrystalBushBase">
@@ -263,17 +293,23 @@
 			<label>large gauss crystal (blue)</label>
 			<description>A large blue crystal, it's brimming with some kind of energy.</description>
 			<graphicData>
-				<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+				<texPath>Things/Flora/Necron/HugeGaussCrystalBlue</texPath>
 				<graphicClass>Graphic_Random</graphicClass>
 				<drawSize>1.0</drawSize>
 				<shadowData>
 					<volume>(0.55, 0.2, 0.2)</volume>
 				</shadowData>
-				<color>(0, 195, 255, 0)</color>
+				<color>(0, 195, 255)</color>
 			</graphicData>
 			<plant>
 				<harvestedThingDef>GaussCrystalBlue</harvestedThingDef>
 			</plant>
+			<comps>
+				<li Class="CompProperties_Glower">
+					<glowRadius>6</glowRadius>
+					<glowColor>(0, 195, 255, 0)</glowColor>
+				</li>
+			</comps>
 		</ThingDef>
 
 			<ThingDef ParentName="NecCrystalTreeBase">
@@ -281,13 +317,13 @@
 				<label>huge gauss crystal (blue)</label>
 				<description>A massive blue crystal, it's brimming with some kind of energy.</description>
 				<graphicData>
-					<texPath>Things/Flora/Necron/HugeGaussCrystal</texPath>
+					<texPath>Things/Flora/Necron/HugeGaussCrystalBlue</texPath>
 					<graphicClass>Graphic_Random</graphicClass>
 					<shadowData>
 						<volume>(0.2, 0.35, 0.13)</volume>
 						<offset>(-0.03,0,-0.44)</offset>
 					</shadowData>
-					<color>(0, 195, 255, 0)</color>
+					<color>(0, 195, 255)</color>
 				</graphicData>
 				<plant>
 					<harvestedThingDef>GaussCrystalBlue</harvestedThingDef>

@@ -6,7 +6,7 @@
 		<label>astartes oven</label>
 		<description>An automated device for finalizing new astartes in the field. The process can have interesting effects on the persons mind and often the people they once knew will be strangers, even those people may have a hard time recognising the man who entered the chamber as the same one who left.</description>
 		<!-- Converter MUST be this class to function with the comp further below. -->
-		<thingClass>O21Toolbox.Converter.Building_Converter</thingClass>
+		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
 		
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -50,8 +50,8 @@
 		</costList>
 		
 		<comps>
-			<li Class="O21Toolbox.Converter.CompProperties_Converter">
-				<compClass>O21Toolbox.Converter.Comp_Converter</compClass>
+			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
+				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
 				<inputDefs>
 					<li>Human</li>
 					<li>Alien_Terran</li>
@@ -90,7 +90,7 @@
 		<defName>O21_SororitasConverter</defName>
 		<label>sororitas steamer</label>
 		<description>An automated device for quickly training and enhancing new sororitas in the field. The process can have interesting effects on the persons mind and often the people they once knew will be strangers, even those people may have a hard time recognising the woman who entered the chamber as the same one who left.</description>
-		<thingClass>O21Toolbox.Converter.Building_Converter</thingClass>
+		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
 		
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -134,8 +134,8 @@
 		</costList>
 		
 		<comps>
-			<li Class="O21Toolbox.Converter.CompProperties_Converter">
-				<compClass>O21Toolbox.Converter.Comp_Converter</compClass>
+			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
+				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
 				<inputDefs>
 					<li>Human</li>
 					<li>Alien_Terran</li>
@@ -175,7 +175,7 @@
 		<defName>O21_TerranTrainingTube</defName>
 		<label>terran training tube</label>
 		<description>Your one stop shop for Terran training, when you need your puny average humans to stop moaning about how they don't have a table or some other bitch ass complaint, pop them in here and they'll be out and ready to brave the harsh grim dark reality that surrounds them.</description>
-		<thingClass>O21Toolbox.Converter.Building_Converter</thingClass>
+		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
 		
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -219,8 +219,8 @@
 		</costList>
 		
 		<comps>
-			<li Class="O21Toolbox.Converter.CompProperties_Converter">
-				<compClass>O21Toolbox.Converter.Comp_Converter</compClass>
+			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
+				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
 				<inputDefs>
 					<li>Human</li>
 				</inputDefs>

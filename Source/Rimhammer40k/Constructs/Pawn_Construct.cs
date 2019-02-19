@@ -19,7 +19,7 @@ namespace Rimhammer40k.Constructs
             skills = new Pawn_SkillTracker(this);
             foreach(SkillRecord record in skills.skills)
             {
-                record.levelInt = 20;
+                record.levelInt = station.ConstructSkillLevel();
                 record.passion = Passion.None;
             }
             story = new Pawn_StoryTracker(this)

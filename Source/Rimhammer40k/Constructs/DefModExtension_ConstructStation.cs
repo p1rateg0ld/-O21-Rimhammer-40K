@@ -12,5 +12,6 @@ namespace Rimhammer40k.Constructs
         public int maxNumConstructs;
         public bool displayDormantConstructs;
         public List<WorkTypeDef> workTypes;
+        public int constructSkillLevel = 20;
     }
 }

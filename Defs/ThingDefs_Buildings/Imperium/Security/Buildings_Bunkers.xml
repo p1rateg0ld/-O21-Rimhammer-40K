@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ========== Tier 1 Small Bunker ========== -->
+  	<ThingDef ParentName="BuildingBase" Name="BunkerTier1Small">
+		<defName>O21_Bunker_Tier1_Small</defName>
+		<label>imperial bunker (tier 1, small)</label>
+		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
+		<thingClass>O21Toolbox.Bunker.Building_Bunker</thingClass>
+		<graphicData>
+			<texPath>Things/Imperium/Buildings/Bunkers/T1Small</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+    	<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+      		<turretGunDef>O21_Gun_Bunker</turretGunDef>
+      		<turretBurstCooldownTime>2.2</turretBurstCooldownTime>
+      		<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+    	</building>
+		<uiIconPath>Things/Imperium/Buildings/Bunkers/T1Small</uiIconPath>
+		<uiIconScale>1.0</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+    	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    	<designationCategory>Security</designationCategory>
+		<size>(2,2)</size>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<pathCost>4000</pathCost>
+		<fillPercent>0.9</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.9</Flammability>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>0</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="O21Toolbox.Bunker.CompProperties_Bunker">
+				<compClass>O21Toolbox.Bunker.Comp_Bunker</compClass>
+				<pawnCapacity>1</pawnCapacity>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<costList>
+			<WoodLog>50</WoodLog>
+		</costList>
+    	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>O21_Imp_Research</li>
+		</researchPrerequisites>
+  	</ThingDef>
+	
+	<!-- ========== Tier 1 Medium Bunker ========== -->
+  	<ThingDef ParentName="BuildingBase" Name="BunkerTier1Medium">
+		<defName>O21_Bunker_Tier1_Medium</defName>
+		<label>imperial bunker (tier 1, medium)</label>
+		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
+		<thingClass>O21Toolbox.Bunker.Building_Bunker</thingClass>
+		<graphicData>
+			<texPath>Things/Imperium/Buildings/Bunkers/T1Medium</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+    	<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+      		<turretGunDef>O21_Gun_Bunker</turretGunDef>
+      		<turretBurstCooldownTime>2.2</turretBurstCooldownTime>
+      		<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+    	</building>
+		<uiIconPath>Things/Imperium/Buildings/Bunkers/T1Medium</uiIconPath>
+		<uiIconScale>1.0</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+    	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    	<designationCategory>Security</designationCategory>
+		<size>(2,3)</size>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<pathCost>4000</pathCost>
+		<fillPercent>0.9</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<statBases>
+			<MaxHitPoints>950</MaxHitPoints>
+			<Flammability>0.9</Flammability>
+			<WorkToBuild>1250</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>0</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="O21Toolbox.Bunker.CompProperties_Bunker">
+				<compClass>O21Toolbox.Bunker.Comp_Bunker</compClass>
+				<pawnCapacity>2</pawnCapacity>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<costList>
+			<WoodLog>120</WoodLog>
+		</costList>
+    	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>O21_Imp_Research</li>
+		</researchPrerequisites>
+  	</ThingDef>
+	
+	<!-- ========== Tier 1 Large Bunker ========== -->
+  	<ThingDef ParentName="BuildingBase" Name="BunkerTier1Large">
+		<defName>O21_Bunker_Tier1_Large</defName>
+		<label>imperial bunker (tier 1, large)</label>
+		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
+		<thingClass>O21Toolbox.Bunker.Building_Bunker</thingClass>
+		<graphicData>
+			<texPath>Things/Imperium/Buildings/Bunkers/T1Large</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+    	<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+      		<turretGunDef>O21_Gun_Bunker</turretGunDef>
+      		<turretBurstCooldownTime>2.2</turretBurstCooldownTime>
+      		<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+    	</building>
+		<uiIconPath>Things/Imperium/Buildings/Bunkers/T1Large</uiIconPath>
+		<uiIconScale>1.0</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+    	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    	<designationCategory>Security</designationCategory>
+		<size>(5,5)</size>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<pathCost>4000</pathCost>
+		<fillPercent>0.9</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0.9</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>0</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="O21Toolbox.Bunker.CompProperties_Bunker">
+				<compClass>O21Toolbox.Bunker.Comp_Bunker</compClass>
+				<pawnCapacity>4</pawnCapacity>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<costList>
+			<WoodLog>400</WoodLog>
+		</costList>
+    	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>O21_Imp_Research</li>
+		</researchPrerequisites>
+  	</ThingDef>
+	
+	<!-- ========== Tier 2 Small Bunker ========== -->
+  	<ThingDef ParentName="BuildingBase" Name="BunkerTier2Small">
+		<defName>O21_Bunker_Tier2_Small</defName>
+		<label>imperial bunker (tier 2, small)</label>
+		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
+		<thingClass>O21Toolbox.Bunker.Building_Bunker</thingClass>
+		<graphicData>
+			<texPath>Things/Imperium/Buildings/Bunkers/T2Small</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+    	<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+      		<turretGunDef>O21_Gun_Bunker</turretGunDef>
+      		<turretBurstCooldownTime>2.2</turretBurstCooldownTime>
+      		<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+    	</building>
+		<uiIconPath>Things/Imperium/Buildings/Bunkers/T2Small</uiIconPath>
+		<uiIconScale>1.0</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+    	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    	<designationCategory>Security</designationCategory>
+		<size>(2,2)</size>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<pathCost>4000</pathCost>
+		<fillPercent>0.9</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkToBuild>1250</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>0</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="O21Toolbox.Bunker.CompProperties_Bunker">
+				<compClass>O21Toolbox.Bunker.Comp_Bunker</compClass>
+				<pawnCapacity>1</pawnCapacity>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+    	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>O21_Imp_IGBasicTurrets</li>
+		</researchPrerequisites>
+  	</ThingDef>
+	
+	<!-- ========== Tier 2 Large Bunker ========== -->
+  	<ThingDef ParentName="BuildingBase" Name="BunkerTier2Large">
+		<defName>O21_Bunker_Tier2_Large</defName>
+		<label>imperial bunker (tier 2, large)</label>
+		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
+		<thingClass>O21Toolbox.Bunker.Building_Bunker</thingClass>
+		<graphicData>
+			<texPath>Things/Imperium/Buildings/Bunkers/T2Large</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+    	<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+      		<turretGunDef>O21_Gun_Bunker</turretGunDef>
+      		<turretBurstCooldownTime>2.2</turretBurstCooldownTime>
+      		<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+    	</building>
+		<uiIconPath>Things/Imperium/Buildings/Bunkers/T2Large</uiIconPath>
+		<uiIconScale>1.0</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+    	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    	<designationCategory>Security</designationCategory>
+		<size>(5,5)</size>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<pathCost>4000</pathCost>
+		<fillPercent>0.9</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<statBases>
+			<MaxHitPoints>3000</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>0</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="O21Toolbox.Bunker.CompProperties_Bunker">
+				<compClass>O21Toolbox.Bunker.Comp_Bunker</compClass>
+				<pawnCapacity>4</pawnCapacity>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>400</costStuffCount>
+    	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>O21_Imp_IGBasicTurrets</li>
+		</researchPrerequisites>
+  	</ThingDef>
+	
+	<!-- ========== Tier 3 Large Bunker ========== -->
+  	<ThingDef ParentName="BuildingBase" Name="BunkerTier3Large">
+		<defName>O21_Bunker_Tier3_Large</defName>
+		<label>imperial bunker (tier 3, large)</label>
+		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
+		<thingClass>O21Toolbox.Bunker.Building_Bunker</thingClass>
+		<graphicData>
+			<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerBase</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+    	<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+      		<turretGunDef>O21_Gun_Bunker</turretGunDef>
+      		<turretBurstCooldownTime>2.2</turretBurstCooldownTime>
+      		<turretTopGraphicPath>Things/Alpha</turretTopGraphicPath>
+    	</building>
+		<uiIconPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerIcon</uiIconPath>
+		<uiIconScale>1.0</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+    	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    	<designationCategory>Security</designationCategory>
+		<size>(5,5)</size>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<pathCost>4000</pathCost>
+		<fillPercent>0.9</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<statBases>
+			<MaxHitPoints>4000</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkToBuild>3500</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>0</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="O21Toolbox.Bunker.CompProperties_Bunker">
+				<compClass>O21Toolbox.Bunker.Comp_Bunker</compClass>
+				<pawnCapacity>4</pawnCapacity>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+			</li>
+			<li Class="CompAnimated.CompProperties_AnimatedOver">
+				<secondsBetweenFrames>0.25</secondsBetweenFrames>
+				<stillFrames>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim001</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim002</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim003</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim004</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim005</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim006</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim007</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim008</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim009</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim010</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim011</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim012</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim013</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim014</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim015</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim016</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim017</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim018</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim019</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+					<li>
+						<texPath>Things/Imperium/Buildings/Bunkers/T3Large/T3BunkerAnim020</texPath>
+						<drawSize>(5, 5)</drawSize>
+						<shaderType>Transparent</shaderType>
+						<graphicClass>Graphic_Single</graphicClass>
+					</li>
+				</stillFrames>
+			</li>
+		</comps>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>400</costStuffCount>
+    	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>O21_Imp_IGHeavyTurrets</li>
+		</researchPrerequisites>
+  	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanGun">
+		<defName>O21_Gun_Bunker</defName>
+		<label>fake bunker gun</label>
+		<description>Fake bunker gun.</description>
+		<graphicData>
+			<texPath>Things/Alpha</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<menuHidden>true</menuHidden>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<useHitPoints>false</useHitPoints>
+
+		<statBases>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.64</AccuracyShort>
+			<AccuracyMedium>0.41</AccuracyMedium>
+			<AccuracyLong>0.22</AccuracyLong>
+			<RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+
+		<verbs>
+			<li>
+				<verbClass>O21Toolbox.Bunker.Verb_Bunker</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MiniTurret</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>30</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>GunShotA</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+ 	</ThingDef>
+
+</Defs>

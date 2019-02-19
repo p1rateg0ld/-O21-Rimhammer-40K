@@ -57,6 +57,9 @@
 			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>PoweredArmor</researchPrerequisite>
 		</recipeMaker>

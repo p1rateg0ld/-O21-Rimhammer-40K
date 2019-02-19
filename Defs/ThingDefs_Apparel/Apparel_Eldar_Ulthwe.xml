@@ -19,6 +19,9 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_EldarBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>8</Steel>
@@ -165,6 +168,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_EldarBench_Basic</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Eld_Guardian</researchPrerequisite>
 			<skillRequirements>
@@ -180,9 +186,9 @@
 			<WorkToMake>24000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<MarketValue>100</MarketValue>
-	 <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.9</ArmorRating_Heat>
+	 		<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      		<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      		<ArmorRating_Heat>0.9</ArmorRating_Heat>
 			<Insulation_Cold>15</Insulation_Cold>
 			<Insulation_Heat>5</Insulation_Heat>
 			<ToxicSensitivity>-0.30</ToxicSensitivity>
@@ -299,7 +305,7 @@
 	
 	<!-- ====== Ulthwe Hats ====== -->
 
-	<ThingDef ParentName="HatMakeableBase" Name="EldarHeadgearBase"> <!-- Eldar Chinstrap -->
+	<ThingDef ParentName="GuardianHelmetBase" Name="EldarHeadgearBase"> <!-- Eldar Chinstrap -->
 		<defName>UlthweHeadgear</defName>
 		<label>Ulthwe Headgear</label>
 		<description>Some Eldar like to wear this headgear which covers the jaw and often neck, while not particularly effective for defence it does seem to have an unknown purpose.</description>
@@ -311,9 +317,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<thingCategories>
-			<li>EldarApparel</li>
-		</thingCategories>
 		<statBases>
 			<WorkToMake>1800</WorkToMake>
 			<MarketValue>100</MarketValue>

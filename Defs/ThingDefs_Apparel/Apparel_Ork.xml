@@ -44,10 +44,9 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Ork_Apparel</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
@@ -158,6 +157,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Ork_Apparel_Kommando</researchPrerequisite>
 			<skillRequirements>
@@ -213,6 +215,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
 			<skillRequirements>
@@ -238,7 +243,7 @@
 			<ConstructionSpeed>0.2</ConstructionSpeed>
 			<MiningSpeed>0.2</MiningSpeed>
 			<PlantWorkSpeed>0.2</PlantWorkSpeed>
-			<MoveSpeed>0.2</MoveSpeed>
+			<MoveSpeed>0.1</MoveSpeed>
         </equippedStatOffsets>
 		<thingCategories>
 			<li>OrkApparel</li>
@@ -275,6 +280,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
 			<skillRequirements>
@@ -300,7 +308,7 @@
 			<ConstructionSpeed>0.4</ConstructionSpeed>
 			<MiningSpeed>0.4</MiningSpeed>
 			<PlantWorkSpeed>0.4</PlantWorkSpeed>
-			<MoveSpeed>0.4</MoveSpeed>
+			<MoveSpeed>0.2</MoveSpeed>
         </equippedStatOffsets>
 		<thingCategories>
 			<li>OrkApparel</li>
@@ -337,6 +345,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
 			<skillRequirements>
@@ -362,7 +373,7 @@
 			<ConstructionSpeed>0.8</ConstructionSpeed>
 			<MiningSpeed>0.8</MiningSpeed>
 			<PlantWorkSpeed>0.8</PlantWorkSpeed>
-			<MoveSpeed>0.8</MoveSpeed>
+			<MoveSpeed>0.3</MoveSpeed>
         </equippedStatOffsets>
 		<thingCategories>
 			<li>OrkApparel</li>
@@ -401,6 +412,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
 			<skillRequirements>

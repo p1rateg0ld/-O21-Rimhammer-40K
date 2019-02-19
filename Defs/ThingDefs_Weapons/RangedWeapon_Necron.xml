@@ -396,4 +396,117 @@ Unlike more conventional directed energy weapons, a Gauss Cannon does not delive
 		<postFiringDuration>8</postFiringDuration>
 	</ThingDef>
 
+	<!-- Synaptic Disintegrator -->
+	<ThingDef ParentName="O21BaseMakeableGun">
+		<defName>NecronSynapticDisintegrator</defName>
+		<label>Necron Synaptic Disintegrator</label>
+		<description>A Synaptic Disintegrator is an advanced sniper weapon utilised only by Necron Deathmark assassins as their favoured weapon to deliver death from afar. These cruel long-barrelled rifles fire compressed leptonic beams of sub-atomic particles which destroy neural and synaptic tissue. Beginning within the target’s brain and spreading in microseconds throughout their entire body, molecules unbond with one another, causing the luckless target to crumple limply to the ground like a puppet with its strings severed. Synaptic Disintegrators are capable of sustaining a rate of fire at long range -- even when the wielder is on the move -- that few other sniper weapons can match. Those killed by the first shot from a Synaptic Disintegrator are the fortunate ones, for a hit from the weapon that is less than fatal almost invariably leaves the victim an echo of his former self; his neural tissue utterly destroyed and his mind torn apart.</description>
+		<graphicData>
+			<texPath>Things/Necron/Weapons/Ranged/SynapticDisintegrator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>	
+			<drawSize>1.4</drawSize>	
+		</graphicData>
+		<comps>     
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<MarketValue>9000</MarketValue>
+			<Mass>4</Mass>
+			<AccuracyTouch>0.30</AccuracyTouch>
+			<AccuracyShort>0.45</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+			<MoveSpeed>0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Bullet_SynapticDisintegrator</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>38</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>GaussFlayerSound</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+		<techLevel>Archotech</techLevel>
+		<weaponTags>
+			<li>NecronGun</li>
+			<li>SynapticDisintegrator</li>
+		</weaponTags>
+		<thingCategories>
+			<li>NecronRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>NecronRanged</li>
+		</tradeTags>
+		<costList>
+			<Necrodermis>90</Necrodermis>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>O21_Nec_BasicWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>NecronFabricationAltar</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+		<defName>O21_Bullet_SynapticDisintegrator</defName>
+		<label>leptonic burn</label>
+		<graphicData>
+			<texPath>Things/Projectile/GaussBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>O21Gauss</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<speed>200</speed>
+		</projectile>
+		<thingClass>JecsTools.Projectile_Laser</thingClass>
+		<preFiringInitialIntensity>0</preFiringInitialIntensity>
+		<preFiringFinalIntensity>2</preFiringFinalIntensity>
+		<postFiringInitialIntensity>2</postFiringInitialIntensity>
+		<postFiringFinalIntensity>0</postFiringFinalIntensity>
+		<preFiringDuration>2</preFiringDuration>
+		<postFiringDuration>50</postFiringDuration>
+	</ThingDef>
+
 </Defs>

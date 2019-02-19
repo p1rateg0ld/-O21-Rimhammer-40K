@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_GCultist">
-		<defName>Alien_GCultist</defName>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_GSCultist">
+		<defName>Alien_GSCultist</defName>
 		<label>Terran</label>
 		<description>The almighty Humans that rule the Imperium of Man.</description>
 		<alienRace>
@@ -199,23 +199,23 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
-					<def>GCultistBaby</def>
+					<def>GSCultistBaby</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>GCultistToddler</def>
+					<def>GSCultistToddler</def>
 					<minAge>1.2</minAge>
 				</li>
 				<li>
-					<def>GCultistChild</def>
+					<def>GSCultistChild</def>
 					<minAge>4</minAge>
 				</li>
 				<li>
-					<def>GCultistTeenager</def>
+					<def>GSCultistTeenager</def>
 					<minAge>13</minAge>
 				</li>
 				<li>
-					<def>GCultistAdult</def>
+					<def>GSCultistAdult</def>
 					<minAge>18</minAge>
 				</li>
 			</lifeStageAges>

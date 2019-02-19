@@ -30,6 +30,9 @@
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -141,6 +144,9 @@
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -306,6 +312,9 @@
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -393,6 +402,9 @@
 				<RangedWeapon_Cooldown>2.15</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGHeavyWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -521,6 +533,9 @@
 			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -727,6 +742,9 @@
 			<RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGHeavyWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -801,9 +819,9 @@
 			<skillRequirements>
 			<Crafting>7</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-			<li>FabricationBench</li>
-			</recipeUsers>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 		<costList>
 			<CeramiteLowGrade>120</CeramiteLowGrade>
@@ -906,6 +924,9 @@
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 		<verbs>
 			<li>
@@ -984,6 +1005,9 @@
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGBasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>

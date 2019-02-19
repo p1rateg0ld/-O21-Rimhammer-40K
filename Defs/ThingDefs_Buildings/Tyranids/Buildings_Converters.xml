@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_CultistCocoon</defName>
+		<label>cultist cocoon</label>
+		<description>A large cocoon made by genestealer cultists so they can evolve further.</description>
+		<!-- Converter MUST be this class to function with the comp further below. -->
+		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<rotatable>false</rotatable>
+		
+		<graphicData>
+			<texPath>Things/Tyranid/Building/Converter/Cocoon_Closed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<WorkToBuild>3200</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		
+		<costList />
+		
+		<comps>
+			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
+				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
+				<inputDefs>
+					<li>Human</li>
+					<li>Alien_Terran</li>
+					<li>Alien_Astartes</li>
+					<li>Alien_Sororitas</li>
+				</inputDefs>
+				<requiredHediffs>
+					<li>O21_GenestealerInfection</li>
+				</requiredHediffs>
+				<randomSkinColor>True</randomSkinColor>
+				<outputDef>GSCultist</outputDef>
+				<finishingSound>AstartesOvenDone</finishingSound>
+				<cookingTime>6000</cookingTime>
+			</li>
+		</comps>
+		
+		<researchPrerequisites />
+	</ThingDef>
+	
+</Defs>

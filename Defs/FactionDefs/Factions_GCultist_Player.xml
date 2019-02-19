@@ -2,11 +2,11 @@
 <Defs>
   
 	<FactionDef>
-		<defName>GCultistPlayerColony</defName>
+		<defName>GSCultistPlayerColony</defName>
 		<label>Genestealer Cult Colony</label>
 		<description>Your own cult community.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>GCultist</basicMemberKind>
+		<basicMemberKind>GSCultist</basicMemberKind>
 		<pawnsPlural>genestealer cultists</pawnsPlural>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>

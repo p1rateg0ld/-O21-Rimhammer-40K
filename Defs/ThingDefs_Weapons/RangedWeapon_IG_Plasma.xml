@@ -247,10 +247,10 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 			<li>GuevesaHeavyGun</li>
 		</weaponTags>
 		<thingCategories>
-			<li>OGIRanged</li>
+			<li>IGRanged</li>
 		</thingCategories>
 		<tradeTags>
-			<li>OGIRanged</li>
+			<li>IGRanged</li>
 		</tradeTags>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.25</MoveSpeed>
@@ -260,7 +260,7 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 				<verbClass>AdeptusMechanicus.Verb_ShootOH</verbClass>
 				<overheat>UR</overheat>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>OGI_Bullet_PlasmaCannon</defaultProjectile>
+				<defaultProjectile>O21_Bullet_PlasmaCannon</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<range>45</range>
 				<forcedMissRadius>0.5</forcedMissRadius>

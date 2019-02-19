@@ -2,7 +2,7 @@
 <Defs>
 
 	<LifeStageDef>
-		<defName>GCultistBaby</defName>
+		<defName>GSCultistBaby</defName>
 		<label>Baby</label>
 		<bodySizeFactor>0.2</bodySizeFactor>
 		<healthScaleFactor>0.2</healthScaleFactor>
@@ -14,7 +14,7 @@
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>GCultistToddler</defName>
+		<defName>GSCultistToddler</defName>
 		<label>Toddler</label>
 		<bodySizeFactor>0.5</bodySizeFactor>
 		<healthScaleFactor>0.5</healthScaleFactor>
@@ -26,21 +26,21 @@
 	</LifeStageDef>
 
     <LifeStageDef>
-		<defName>GCultistChild</defName>
+		<defName>GSCultistChild</defName>
 		<label>Child</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
 	</LifeStageDef>
   
 	<LifeStageDef>
-		<defName>GCultistTeenager</defName>
+		<defName>GSCultistTeenager</defName>
 		<label>Teen</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>
 	</LifeStageDef>
 
 	<LifeStageDef>
-		<defName>GCultistAdult</defName>
+		<defName>GSCultistAdult</defName>
 		<label>Adult</label>
 		<visible>false</visible>
 		<reproductive>true</reproductive>

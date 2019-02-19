@@ -46,6 +46,7 @@
 		<mineable>true</mineable>
 		
 		<building>
+			<claimable>false</claimable>
 			<isInert>true</isInert>
 			<isNaturalRock>false</isNaturalRock>
 			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>

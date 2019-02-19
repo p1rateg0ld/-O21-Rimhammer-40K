@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="O21_BaseMeleeWeapon" Abstract="True" ParentName="BaseWeapon">
+        <techLevel>Industrial</techLevel>
+        <smeltable>true</smeltable>
+        <thingCategories>
+            <li>WeaponsMelee</li>
+        </thingCategories>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+        <inspectorTabs>
+            <li>ITab_Art</li>
+        </inspectorTabs>
+    </ThingDef>
+
+</Defs>

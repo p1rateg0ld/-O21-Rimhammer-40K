@@ -13,6 +13,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_TauBench_Basic</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Tau_Allies_VespidEquipment</researchPrerequisite>
 		</recipeMaker>

@@ -117,6 +117,11 @@ namespace Rimhammer40k.Constructs
             return construct;
         }
 
+        public int ConstructSkillLevel()
+        {
+            return extension.constructSkillLevel;
+        }
+
         public override IEnumerable<Gizmo> GetGizmos()
         {
             foreach (Gizmo g in base.GetGizmos())

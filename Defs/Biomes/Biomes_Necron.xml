@@ -3,9 +3,9 @@
 
 	<BiomeDef>
 		<defName>GaussDesertGreen</defName>
-		<label>gauss desert (green)</label>
+		<label>gauss fields (green)</label>
 		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
-		<workerClass>Rimhammer40k.BiomeWorker_GaussDesertGreen</workerClass>
+		<workerClass>Rimhammer40k.Biomes.BiomeWorker_GaussDesertGreen</workerClass>
 		<animalDensity>0.0</animalDensity>
 		<plantDensity>0.1</plantDensity>
 		<settlementSelectionWeight>0.05</settlementSelectionWeight>
@@ -82,9 +82,9 @@
 
 	<BiomeDef>
 		<defName>GaussDesertOrange</defName>
-		<label>gauss desert (orange)</label>
+		<label>gauss fields (orange)</label>
 		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
-		<workerClass>Rimhammer40k.BiomeWorker_GaussDesertOrange</workerClass>
+		<workerClass>Rimhammer40k.Biomes.BiomeWorker_GaussDesertOrange</workerClass>
 		<animalDensity>0.0</animalDensity>
 		<plantDensity>0.1</plantDensity>
 		<settlementSelectionWeight>0.05</settlementSelectionWeight>
@@ -161,9 +161,9 @@
 
 	<BiomeDef>
 		<defName>GaussDesertBlue</defName>
-		<label>gauss desert (blue)</label>
+		<label>gauss fields (blue)</label>
 		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
-		<workerClass>Rimhammer40k.BiomeWorker_GaussDesertBlue</workerClass>
+		<workerClass>Rimhammer40k.Biomes.BiomeWorker_GaussDesertBlue</workerClass>
 		<animalDensity>0.0</animalDensity>
 		<plantDensity>0.1</plantDensity>
 		<settlementSelectionWeight>0.05</settlementSelectionWeight>

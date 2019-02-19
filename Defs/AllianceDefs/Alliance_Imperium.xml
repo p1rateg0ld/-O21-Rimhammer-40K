@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<O21Toolbox.Alliances.AllianceDef>
+		<defName>O21_Alliance_Imperium</defName>
+		<label>imperium of man</label>
+		<memberFactions>
+			<li>BlackTemplars</li>
+			<li>BloodRavens</li>
+			<li>Salamanders</li>
+			<li>SpaceWolves</li>
+			<li>Ultramarines</li>
+			<li>IGCadian412</li>
+			<li>IGKrieg143</li>
+			<li>IGSteelLegion808</li>
+			<li>IGValhallan597</li>
+			<li>MartyredLady</li>
+		</memberFactions>
+	</O21Toolbox.Alliances.AllianceDef>
+	
+</Defs>

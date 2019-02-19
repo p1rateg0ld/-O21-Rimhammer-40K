@@ -93,7 +93,7 @@
 			<MaxHitPoints>800</MaxHitPoints>
 			<WorkToBuild>5000</WorkToBuild>
 			<Flammability>1.0</Flammability>
-			<ResearchSpeedFactor>1.0</ResearchSpeedFactor>
+			<ResearchSpeedFactor>2.5</ResearchSpeedFactor>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -119,9 +119,9 @@
 		<surfaceType>Item</surfaceType>
 		<designationHotKey>Misc4</designationHotKey>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-		<placeWorkers>
+		<!-- <placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
+		</placeWorkers> -->
 		<researchPrerequisites>
 			<li>O21_Nec_Research</li>
 		</researchPrerequisites>

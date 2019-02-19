@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- ========== Mining Laser ========== -->
+
+    <ThingDef ParentName="O21BaseMakeableGun">
+		<defName>O21_MiningLaser</defName>
+		<label>dvarlock pattern mining laser</label>
+		<description>The Mining Laser is a tool used for breaching tunnels in the mining process. It can be highly effective when modified and used as a weapon, though, especially by irregular forces such as the Genestealer Cults. For example, Dvarlock pattern Mining Laser, founded and identified by Tempestor Gulack of the Kappic Eagles, have been modified so it can blast the hole through a metres-thick bulkhead with a single pull of a trigger. It also features three hand-grips, indicating its use in combination with a tertia pattern servo-arm.</description>
+		<graphicData>
+			<texPath>Things/Imperium/Weapons/Ranged/MiningLaser</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>	
+		</graphicData>
+		<comps>
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MarketValue>1000</MarketValue>
+			<Mass>1.6</Mass>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
+			<researchPrerequisite>O21_Imp_Research</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<CeramiteLowGrade>80</CeramiteLowGrade>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>IGRanged</li>
+			<li>MiningLaser</li>
+		</weaponTags>
+		<thingCategories>
+			<li>IGRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>IGRanged</li>
+		</tradeTags>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Bullet_MiningLaser</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>16</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>HellgunSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef Class="JecsTools.ThingDef_LaserProjectile" ParentName="BaseBullet">
+		<defName>O21_Bullet_MiningLaser</defName>
+		<label>Laser Blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/LasShotLrg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>O21Las</damageDef>
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<stoppingPower>0.8</stoppingPower>
+			<speed>105</speed>
+		</projectile>
+		<thingClass>JecsTools.Projectile_Laser</thingClass>
+		<preFiringInitialIntensity>0</preFiringInitialIntensity>
+		<preFiringFinalIntensity>2</preFiringFinalIntensity>
+		<postFiringInitialIntensity>2</postFiringInitialIntensity>
+		<postFiringFinalIntensity>0</postFiringFinalIntensity>
+		<preFiringDuration>2</preFiringDuration>
+		<postFiringDuration>10</postFiringDuration>
+		<StartFireChance>0.1</StartFireChance>
+	</ThingDef>
+    
+    <!-- ========== Autogun ========== -->
+
+    <ThingDef ParentName="O21BaseMakeableGun">
+        <defName>O21_CivilianAutogun</defName>
+        <label>imperial autogun</label>
+        <description>The Autogun is a projectile weapon similar in appearance and operation to battle rifles of the twentieth century. Unlike ancient firearms, autoguns typically use caseless ammunition, made of metal, plastic or ceramics, and are constructed with plasteel, increasing their rate of fire and reliability. There are many different patterns and models of autogun produced across the Imperium. A typical weapon may not be incredibly accurate or as reliable as lasgun, but will make up for it with a high rate of fire and cheap ammunition. Most autoguns fire solid low-calibre slugs from standardised clips, and the design is ubiquitous enough that many xenos races have their own variants.
+
+Cheap and easy to produce on even the low-tech planets, autoguns are a staple weapon across the Imperium. Durable, rugged and easily stocked with readily available ammunition, these weapons are a common sight especially in the rougher parts of the galaxy. The simple technology needed to manufacture autoguns makes them common on frontier worlds and also with gang members on Hive Worlds. Autoguns are not as common as the lasgun amongst Imperial Guard regiments, but they are still issued in substantial numbers, especially by second or third line planetary defence forces or militias.</description>
+        <graphicData>
+            <texPath>Things/Imperium/Weapons/Ranged/AutoGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>	
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
+            <researchPrerequisite>O21_Imp_Research</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2.5</Mass>
+            <AccuracyTouch>0.90</AccuracyTouch>
+            <AccuracyShort>0.68</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <CeramiteLowGrade>45</CeramiteLowGrade>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>O21_Bullet_Autogun</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <range>20</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <soundCast>Shot_MachinePistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>O21_Bullet_Autogun</defName>
+        <label>autogun bullet</label>
+        <graphicData>
+        <texPath>Things/Projectile/Bullet_Small</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+        <damageDef>Bullet</damageDef>
+        <damageAmountBase>6</damageAmountBase>
+        <speed>55</speed>
+        </projectile>
+    </ThingDef>
+    
+    <!-- ========== Hand Flamer ========== -->
+	
+	<ThingDef ParentName="O21BaseMakeableGun">
+		<defName>O21_HandFlamer</defName>
+		<label>imperial hand flamer</label>
+		<description>Hand Flamers are a type of compact Imperial Flamer weapon. A called a "burner", the Hand Flamer is a more compact pistol version requiring only one hand. Along with using a lower-capacity fuel tank it has much reduced range, which makes it suited for assault and close-combat purposes, incinerating foes at short range. The weapon is used by assault squads, such as Seraphim units which employ them in pairs.</description>
+		<graphicData>
+			<texPath>Things/Imperium/Weapons/Ranged/HandFlamer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>	
+		</graphicData>
+		<comps>     
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>70000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<Mass>3.2</Mass>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>4.00</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
+			<researchPrerequisite>O21_Imp_Research</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<CeramiteLowGrade>120</CeramiteLowGrade>
+			<ComponentIndustrial>12</ComponentIndustrial>
+		</costList>
+		<techLevel>Industrial</techLevel>
+		<weaponTags>
+			<li>IGRanged</li>
+			<li>HandFlamer</li>
+		</weaponTags>
+		<thingCategories>
+			<li>IGRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>IGRanged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Bullet_Flamer</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>10</range>
+				<minRange>2.5</minRange>
+				<forcedMissRadius>0.5</forcedMissRadius>
+				<burstShotCount>16</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<soundCast>FlamerSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+		  <li>
+			<label>stock</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>1.8</cooldownTime>
+		  </li>
+		  <li>
+			<label>barrel</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>1.9</cooldownTime>
+		  </li>
+		</tools>
+	</ThingDef>
+    
+    <!-- ========== Sniper Rifle ========== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>O21_CivilianSniperRifle</defName>
+        <label>imperial sniper rifle</label>
+        <description>An ancient design of precision sniper rifle. Bolt action. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
+        <graphicData>
+            <texPath>Things/Imperium/Weapons/Ranged/SniperRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>	
+        </graphicData>
+		<comps>
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
+            <researchPrerequisite>O21_Imp_Research</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+        <WorkToMake>45000</WorkToMake>
+        <Mass>4</Mass>
+        <AccuracyTouch>0.50</AccuracyTouch>
+        <AccuracyShort>0.70</AccuracyShort>
+        <AccuracyMedium>0.86</AccuracyMedium>
+        <AccuracyLong>0.88</AccuracyLong>
+        <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <CeramiteLowGrade>60</CeramiteLowGrade>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <verbs>
+        <li>
+            <verbClass>Verb_Shoot</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>O21_Bullet_SniperRifle</defaultProjectile>
+            <warmupTime>2.8</warmupTime>
+            <range>45</range>
+            <soundCast>Shot_SniperRifle</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+        </verbs>
+        <tools>
+        <li>
+            <label>stock</label>
+            <capacities>
+                <li>Blunt</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+        </li>
+        <li>
+            <label>barrel</label>
+            <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+        </li>
+        </tools>
+        <weaponTags Inherit="False">
+            <li>SniperRifle</li>
+        </weaponTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>O21_Bullet_SniperRifle</defName>
+        <label>sniper rifle bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>28</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>100</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>

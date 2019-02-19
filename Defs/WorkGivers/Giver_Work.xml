@@ -19,6 +19,91 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
+		<defName>DoBillsTauBasicCrafting</defName>
+		<label>work at tau crafting bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>97</priorityInType>
+		<fixedBillGiverDefs>
+			<li>O21_TauBench_Basic</li>
+		</fixedBillGiverDefs>
+		<verb>crafting</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsOrkBasicCrafting</defName>
+		<label>work at ork crafting bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>97</priorityInType>
+		<fixedBillGiverDefs>
+			<li>O21_OrkBench_Basic</li>
+		</fixedBillGiverDefs>
+		<verb>crafting</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsEldarBasicCrafting</defName>
+		<label>work at eldar crafting bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>97</priorityInType>
+		<fixedBillGiverDefs>
+			<li>O21_EldarBench_Basic</li>
+		</fixedBillGiverDefs>
+		<verb>crafting</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsImperialBasicCrafting</defName>
+		<label>work at imperial crafting bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>97</priorityInType>
+		<fixedBillGiverDefs>
+			<li>O21_ImpBench_Basic</li>
+		</fixedBillGiverDefs>
+		<verb>crafting</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBillsImperialAdvancedCrafting</defName>
+		<label>work at advanced imperial crafting bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>97</priorityInType>
+		<fixedBillGiverDefs>
+			<li>O21_ImpBench_Advanced</li>
+		</fixedBillGiverDefs>
+		<verb>crafting</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
 		<defName>DoBillsNecronFabricator</defName>
 		<label>work at fabrication altar</label>
 		<giverClass>WorkGiver_DoBill</giverClass>

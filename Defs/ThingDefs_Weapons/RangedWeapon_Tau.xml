@@ -90,6 +90,9 @@
 			<li>TauRanged</li>
 		</tradeTags>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_TauBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Tau_BasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -206,6 +209,9 @@
 			<li>TauRanged</li>
 		</tradeTags>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_TauBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Tau_BasicWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -303,6 +309,9 @@
 			<li>TauRanged</li>
 		</tradeTags>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_TauBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Tau_HeavyWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -416,6 +425,9 @@
 				<li>TauRanged</li>
 			</tradeTags>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_TauBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Tau_HeavyWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -520,6 +532,9 @@
 				<li>TauRanged</li>
 			</tradeTags>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_TauBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Tau_HeavyWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>

@@ -44,10 +44,9 @@
 			</tags>
 		</apparel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<researchPrerequisite>O21_Imp_IGBasicArmor</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>4</Crafting>
@@ -96,6 +95,9 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>10</Cloth>
@@ -152,6 +154,9 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>10</Cloth>
@@ -208,6 +213,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Imp_IGBasicArmor</researchPrerequisite>
 			<skillRequirements>
@@ -393,6 +401,9 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
 		</recipeMaker>
 		<costList Inherit="false">
 			<Cloth>5</Cloth>

@@ -3,7 +3,7 @@
 
 	<!--==================== Imperial  - Power Fist =========================-->
 
-	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+	<ThingDef ParentName="O21_BaseMeleeWeapon">
 		<defName>SMPowerFist</defName>
 		<label>Power Fist</label>
 		<description>A Power Fist (also known as a Power Glove) is essentially an over-sized, armoured gauntlet that generates an energy field around it, one that is capable of violently disrupting any solid matter it touches. It is a favoured close combat weapon for many warriors of the Imperium of Man, as well as the Forces of Chaos (particularly the Chaos Space Marines). It is especially an iconic weapon of the Loyalist Space Marines. A Power Fist is large and slow in combat, and so the bearer must be willing to risk the blows of his enemy before he can strike back. However, a Power Fist vastly augments a user's strength, much as Power Armour does due to the power provided its mechanical servos. The disadvantages of its unwieldy nature are often well worth the limitations, as the combination of the disruptive power field and sheer physical strength afforded by a Power Fist allows a Space Marine to pulverize and tear apart armour plate from even the most well-protected of vehicles, and to wound and kill colossal monstrous creatures in close combat; its brutal effects against more mundane foes goes without saying. It is most commonly found fitted to Space Marine Tactical Dreadnought (Terminator) Armour.</description>
@@ -36,9 +36,9 @@
 		</tools>
 
 		<recipeMaker>
-			<recipeUsers>
-				<li>TableMachining</li>
-			</recipeUsers>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
 			
 			<researchPrerequisite>O21_Imp_SMBasicWeapons</researchPrerequisite>
 		</recipeMaker>
