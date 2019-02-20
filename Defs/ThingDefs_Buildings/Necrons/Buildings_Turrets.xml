@@ -43,7 +43,7 @@
 			<WorkToBuild>8000</WorkToBuild>
 			<Mass>450</Mass>
 			<Beauty>5</Beauty>
-			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+			<ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
 		</statBases>
 		
 		<comps>
@@ -180,7 +180,7 @@
 			<WorkToBuild>8000</WorkToBuild>
 			<Mass>450</Mass>
 			<Beauty>5</Beauty>
-			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+			<ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
 		</statBases>
 		
 		<comps>
@@ -317,7 +317,7 @@
 			<WorkToBuild>8000</WorkToBuild>
 			<Mass>450</Mass>
 			<Beauty>5</Beauty>
-			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+			<ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
 		</statBases>
 		
 		<comps>
@@ -454,7 +454,7 @@
 			<WorkToBuild>8000</WorkToBuild>
 			<Mass>450</Mass>
 			<Beauty>5</Beauty>
-			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+			<ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
 		</statBases>
 		
 		<comps>
@@ -591,7 +591,7 @@
 			<WorkToBuild>8000</WorkToBuild>
 			<Mass>450</Mass>
 			<Beauty>5</Beauty>
-			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+			<ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
 		</statBases>
 		
 		<comps>
@@ -728,7 +728,7 @@
 			<WorkToBuild>8000</WorkToBuild>
 			<Mass>450</Mass>
 			<Beauty>5</Beauty>
-			<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
+			<ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
 		</statBases>
 		
 		<comps>
