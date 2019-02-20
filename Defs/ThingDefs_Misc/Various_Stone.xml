@@ -143,6 +143,10 @@
 			<Beauty>-12</Beauty>
 			<ConstructionSpeedFactor>0.8</ConstructionSpeedFactor>
 		</statBases>
+
+		<thingCategories>
+			<li>StoneBlocks</li>
+		</thingCategories>
 		
 		<soundInteract>Stone_Drop</soundInteract>
 		<soundDrop>Stone_Drop</soundDrop>

@@ -41,10 +41,7 @@
 		</building>
 		
 		<costList>
-		  <CeramiteMedGrade>200</CeramiteMedGrade>
-		  <CeramiteHighGrade>60</CeramiteHighGrade>
-		  <ComponentIndustrial>20</ComponentIndustrial>
-		  <ComponentSpacer>10</ComponentSpacer>
+		  <Necrodermis>200</Necrodermis>
 		</costList>
 		
 		<comps>
