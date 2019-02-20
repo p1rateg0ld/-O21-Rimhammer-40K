@@ -24,6 +24,27 @@
 	</SoundDef>
 
 	<SoundDef>
+		<defName>SilenceMotherfucker</defName>	
+		<eventNames />	
+		<maxVoices>1</maxVoices> 
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>  
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>silence</clipPath>
+					</li>
+				</grains>			
+				<volumeRange>
+					<min>60.0</min>				
+					<max>62.0</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
 		<defName>FreeReinforcementsOneShotRH</defName>	
 		<context>MapOnly</context>
 		<eventNames />	

@@ -53,9 +53,9 @@
 			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
 				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
 				<inputDefs>
-					<li>Human</li>
 					<li>Alien_Terran</li>
 				</inputDefs>
+				<requiresPower>true</requiresPower>
 				<requiredSex>Male</requiredSex>
 				<requiredHediffs />
 				<outputDef>Astartes</outputDef>
@@ -137,9 +137,9 @@
 			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
 				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
 				<inputDefs>
-					<li>Human</li>
 					<li>Alien_Terran</li>
 				</inputDefs>
+				<requiresPower>true</requiresPower>
 				<outputDef>Sororitas</outputDef>
 				<requiredSex>Female</requiredSex>
 				<forcedBody>Female</forcedBody>
@@ -224,6 +224,8 @@
 				<inputDefs>
 					<li>Human</li>
 				</inputDefs>
+				<useOldStoryTransfer>True</useOldStoryTransfer>
+				<requiresPower>true</requiresPower>
 				<outputDef>Terran</outputDef>
 				<finishingSound>AstartesOvenDone</finishingSound>
 				<greenLight>(100, 255, 100, 0)</greenLight>

@@ -3,7 +3,7 @@
 
 	<ThingDef Name="NecCrystalPlantBase" Abstract="True">
 		<category>Plant</category>
-		<thingClass>Rimhammer40k.Crystal</thingClass>
+		<thingClass>Plant</thingClass>
 		<altitudeLayer>LowPlant</altitudeLayer>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>

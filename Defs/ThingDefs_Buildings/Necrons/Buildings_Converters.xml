@@ -48,11 +48,11 @@
 			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
 				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
 				<inputDefs>
-					<li>Human</li>
 					<li>Alien_Terran</li>
 					<li>Alien_Astartes</li>
 					<li>Alien_Sororitas</li>
 				</inputDefs>
+				<requiresPower>true</requiresPower>
 				<outputDef>NecronPariah</outputDef>
 				<forcedBody>Male</forcedBody>
 				<randomHair>True</randomHair>

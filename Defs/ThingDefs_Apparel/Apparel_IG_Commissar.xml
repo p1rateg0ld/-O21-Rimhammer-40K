@@ -26,8 +26,8 @@
 			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.46</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.27</ArmorRating_Heat>
-			<Insulation_Cold>25</Insulation_Cold>
-			<Insulation_Heat>25</Insulation_Heat>
+			<Insulation_Cold>60</Insulation_Cold>
+			<Insulation_Heat>60</Insulation_Heat>
 			<EquipDelay>2.0</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>

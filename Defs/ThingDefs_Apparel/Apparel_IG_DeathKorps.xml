@@ -25,8 +25,8 @@
 			<WorkToMake>3600</WorkToMake>
 			<MarketValue>300</MarketValue>
 			<Mass>1</Mass>
-			<Insulation_Cold>18</Insulation_Cold>
-			<Insulation_Heat>8</Insulation_Heat>
+			<Insulation_Cold>60</Insulation_Cold>
+			<Insulation_Heat>60</Insulation_Heat>
 			<EquipDelay>2.0</EquipDelay>
 		</statBases>
 		<thingCategories>

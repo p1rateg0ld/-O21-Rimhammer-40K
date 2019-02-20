@@ -57,9 +57,6 @@
 			<WoodLog>50</WoodLog>
 		</costList>
     	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-		</placeWorkers>
 		<researchPrerequisites>
 			<li>O21_Imp_Research</li>
 		</researchPrerequisites>
@@ -92,7 +89,7 @@
     	<designationCategory>Security</designationCategory>
 		<size>(2,3)</size>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<interactionCellOffset>(2,0,0)</interactionCellOffset>
 		<tickerType>Normal</tickerType>
 		<passability>Impassable</passability>
 		<pathCost>4000</pathCost>
@@ -121,9 +118,6 @@
 			<WoodLog>120</WoodLog>
 		</costList>
     	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-		</placeWorkers>
 		<researchPrerequisites>
 			<li>O21_Imp_Research</li>
 		</researchPrerequisites>
@@ -185,9 +179,6 @@
 			<WoodLog>400</WoodLog>
 		</costList>
     	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-		</placeWorkers>
 		<researchPrerequisites>
 			<li>O21_Imp_Research</li>
 		</researchPrerequisites>
@@ -250,9 +241,6 @@
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
     	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-		</placeWorkers>
 		<researchPrerequisites>
 			<li>O21_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
@@ -315,9 +303,6 @@
 		</stuffCategories>
 		<costStuffCount>400</costStuffCount>
     	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-		</placeWorkers>
 		<researchPrerequisites>
 			<li>O21_Imp_IGBasicTurrets</li>
 		</researchPrerequisites>
@@ -505,9 +490,6 @@
 		</stuffCategories>
 		<costStuffCount>400</costStuffCount>
     	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-		</placeWorkers>
 		<researchPrerequisites>
 			<li>O21_Imp_IGHeavyTurrets</li>
 		</researchPrerequisites>
@@ -544,11 +526,11 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_MiniTurret</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>30</range>
+				<range>55</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
-				<soundCast>GunShotA</soundCast>
-				<soundCastTail>GunTail_Light</soundCastTail>
+				<soundCast>SilenceMotherfucker</soundCast>
+				<soundCastTail>SilenceMotherfucker</soundCastTail>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<consumeFuelPerShot>1</consumeFuelPerShot>
 			</li>

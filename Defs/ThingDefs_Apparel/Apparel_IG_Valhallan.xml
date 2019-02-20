@@ -23,7 +23,7 @@
 			<MarketValue>100</MarketValue>
 			<Mass>1</Mass>
 			<Insulation_Cold>60</Insulation_Cold>
-			<Insulation_Heat>0</Insulation_Heat>
+			<Insulation_Heat>60</Insulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<thingCategories>
@@ -85,7 +85,7 @@
 			<WorkToMake>64000</WorkToMake>
 			<MaxHitPoints>600</MaxHitPoints>
 			<MarketValue>500</MarketValue>
-			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.46</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.27</ArmorRating_Heat>
 			<Insulation_Cold>3</Insulation_Cold>

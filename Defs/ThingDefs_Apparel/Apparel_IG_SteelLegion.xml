@@ -25,8 +25,8 @@
 			<WorkToMake>3600</WorkToMake>
 			<MarketValue>300</MarketValue>
 			<Mass>1</Mass>
-			<Insulation_Cold>18</Insulation_Cold>
-			<Insulation_Heat>8</Insulation_Heat>
+			<Insulation_Cold>60</Insulation_Cold>
+			<Insulation_Heat>60</Insulation_Heat>
 			<EquipDelay>2.0</EquipDelay>
 		</statBases>
 		<thingCategories>
@@ -170,9 +170,9 @@
 			<WorkToMake>24000</WorkToMake>
 			<MaxHitPoints>300</MaxHitPoints>
 			<MarketValue>250</MarketValue>
-			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.46</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
 			<Insulation_Cold>0.5</Insulation_Cold>
 			<EquipDelay>2.7</EquipDelay>
 		</statBases>
