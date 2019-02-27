@@ -168,7 +168,7 @@
 			</plant>
 			<comps>
 				<li Class="CompProperties_Glower">
-					<glowRadius>6</glowRadius>
+					<glowRadius>4</glowRadius>
 					<glowColor>(0, 255, 0, 0)</glowColor>
 				</li>
 			</comps>
@@ -192,7 +192,7 @@
 				</plant>
 				<comps>
 					<li Class="CompProperties_Glower">
-						<glowRadius>6</glowRadius>
+						<glowRadius>2</glowRadius>
 						<glowColor>(0, 255, 0, 0)</glowColor>
 					</li>
 				</comps>
@@ -237,7 +237,7 @@
 			</plant>
 			<comps>
 				<li Class="CompProperties_Glower">
-					<glowRadius>6</glowRadius>
+					<glowRadius>4</glowRadius>
 					<glowColor>(255, 157, 0, 0)</glowColor>
 				</li>
 			</comps>
@@ -261,7 +261,7 @@
 				</plant>
 				<comps>
 					<li Class="CompProperties_Glower">
-						<glowRadius>6</glowRadius>
+						<glowRadius>2</glowRadius>
 						<glowColor>(255, 157, 0, 0)</glowColor>
 					</li>
 				</comps>
@@ -306,7 +306,7 @@
 			</plant>
 			<comps>
 				<li Class="CompProperties_Glower">
-					<glowRadius>6</glowRadius>
+					<glowRadius>4</glowRadius>
 					<glowColor>(0, 195, 255, 0)</glowColor>
 				</li>
 			</comps>
@@ -330,7 +330,7 @@
 				</plant>
 				<comps>
 					<li Class="CompProperties_Glower">
-						<glowRadius>6</glowRadius>
+						<glowRadius>2</glowRadius>
 						<glowColor>(0, 195, 255, 0)</glowColor>
 					</li>
 				</comps>

@@ -7,6 +7,60 @@
 		<!-- Weapons -->
 		
 		<ThingCategoryDef>
+			<defName>ICWeapons</defName>
+			<label>Imperial Civilian</label>
+			<parent>Weapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>ICRanged</defName>
+			<label>Ranged</label>
+			<parent>ICWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>IGMelee</defName>
+			<label>Melee</label>
+			<parent>ICWeapons</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>ICGrenades</defName>
+			<label>Grenades</label>
+			<parent>ICWeapons</parent>
+		</ThingCategoryDef>
+		
+		<!-- Apparel -->
+		
+		<ThingCategoryDef>
+			<defName>ICApparel</defName>
+			<label>Imperial Civilian</label>
+			<parent>Apparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>ICArmor</defName>
+			<label>Armor</label>
+			<parent>ICApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>ICHelmets</defName>
+			<label>Helmets</label>
+			<parent>ICApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>ICClothing</defName>
+			<label>Clothing</label>
+			<parent>ICApparel</parent>
+		</ThingCategoryDef>
+
+	<!-- Imperial Guard -->
+		
+		<!-- Weapons -->
+		
+		<ThingCategoryDef>
 			<defName>IGWeapons</defName>
 			<label>Imperial Guard</label>
 			<parent>Weapons</parent>
@@ -281,6 +335,26 @@
 			<defName>OrkHelmets</defName>
 			<label>Helmets</label>
 			<parent>OrkApparel</parent>
+		</ThingCategoryDef>
+
+		<!-- Apparel -->
+		
+		<ThingCategoryDef>
+			<defName>GrotApparel</defName>
+			<label>Grot</label>
+			<parent>Apparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>GrotArmor</defName>
+			<label>Armor</label>
+			<parent>GrotApparel</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>GrotHelmets</defName>
+			<label>Helmets</label>
+			<parent>GrotApparel</parent>
 		</ThingCategoryDef>
 	
 	<!-- Necron -->

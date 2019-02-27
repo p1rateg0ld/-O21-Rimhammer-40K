@@ -42,7 +42,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef Abstract="True" Name="BaseValhallanPawnKind">
-		<race>Alien_Valhallan</race>
+		<race>Alien_Terran</race>
 		<combatPower>40</combatPower>
 		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
 		<isFighter>false</isFighter>
@@ -82,7 +82,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef Abstract="True" Name="BaseKriegPawnKind">
-		<race>Alien_Krieg</race>
+		<race>Alien_Terran</race>
 		<combatPower>40</combatPower>
 		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
 		<isFighter>false</isFighter>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Clothing ====== -->
+	
+	<ThingDef ParentName="ApparelMakeableBase" Name="GrotClothingBase">
+		<defName>GrotClothingLoinCloth</defName>
+		<label>Grot Loin Cloth</label>
+		<description>Some grotz like ta wear jus dere trousers, shows off dere teeny pot bellies more, for confus'n 'da enemy.</description>
+		<graphicData>
+			<texPath>Things/Grot/Apparel/Body/LoinCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costList>
+			<Cloth>40</Cloth>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>30</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<Insulation_Cold>50</Insulation_Cold>
+			<Insulation_Heat>50</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>GrotApparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Grot/Apparel/Body/LoinCloth</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>GrotApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
+			<researchPrerequisite>O21_Ork_Apparel</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="GrotClothingBase">
+		<defName>GrotClothingLeather</defName>
+		<label>Grot Light Fatigues</label>
+		<description>Dis cloth'n iz for grotz 'dat like a bit more kover'n dere skin.</description>
+		<graphicData>
+			<texPath>Things/Grot/Apparel/Body/Fatigues2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<apparel>
+			<bodyPartGroups Inherit="false">
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Grot/Apparel/Body/Fatigues2</wornGraphicPath>
+			<layers Inherit="false">
+				<li>OnSkin</li>
+			</layers>
+			<tags Inherit="false">
+				<li>GrotApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkClothingBase">
+		<defName>GrotClothingCloth</defName>
+		<label>Grot Heavy Fatigues</label>
+		<description>Dis cloth'n iz for grotz 'dat like a bit more kover'n dere skin.</description>
+		<graphicData>
+			<texPath>Things/Grot/Apparel/Body/Fatigues</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<Cloth>80</Cloth>
+		</costList>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<apparel>
+			<bodyPartGroups Inherit="false">
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Grot/Apparel/Body/Fatigues</wornGraphicPath>
+			<layers Inherit="false">
+				<li>OnSkin</li>
+			</layers>
+			<tags Inherit="false">
+				<li>GrotApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

@@ -59,5 +59,24 @@
 		</li>
     </comps>
   </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggAmbullFertilized</defName>
+    <label>ambull egg (fert.)</label>
+    <description>Fertilized ambull egg. If all goes well, it should hatch into a baby ambull. Mom won't be happy if you snatch it away.</description>
+    <graphicData>
+		<color>(227,246,230)</color>
+		<drawSize>1.6</drawSize>
+    </graphicData>
+    <statBases>
+		<MarketValue>380.0</MarketValue>
+    </statBases>
+    <comps>
+		<li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>15</hatcherDaystoHatch>
+			<hatcherPawn>O21_Ambull</hatcherPawn>
+		</li>
+    </comps>
+  </ThingDef>
 
 </Defs>

@@ -127,7 +127,7 @@
 	<ThingDef ParentName="ScarabStationBase">
 		<defName>ConstructStation_ScarabCrafter</defName>
 		<label>scarab platform (crafter)</label>
-		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. This platform spawns scarabs capable of cooking. All basic platforms are capable of firefighting, hauling, cleaning and unskilled tasks like flicking switches.</description>
+		<description>A small device which can be place in the floor, it will allow a Scarab to dock into it for when it is not needed or needs to gather energy. This platform spawns scarabs capable of crafting. All basic platforms are capable of firefighting, hauling, cleaning and unskilled tasks like flicking switches.</description>
 		<modExtensions Inherit="false">
 			<li Class="Rimhammer40k.Constructs.DefModExtension_ConstructStation">
 				<displayDormantConstructs>true</displayDormantConstructs>

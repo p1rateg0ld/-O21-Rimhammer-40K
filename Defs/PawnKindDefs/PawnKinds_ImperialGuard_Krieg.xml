@@ -18,7 +18,7 @@
 	<PawnKindDef Name="IGKriegBase" ParentName="IGKriegAbstractBase" Abstract="True">
 		<defName>IGKriegBase</defName>
 		<label>Guardsman</label>
-		<race>Alien_Krieg</race>
+		<race>Alien_Terran</race>
 		<combatPower>25</combatPower>
 		<itemQuality>Poor</itemQuality>
 		<isFighter>true</isFighter>

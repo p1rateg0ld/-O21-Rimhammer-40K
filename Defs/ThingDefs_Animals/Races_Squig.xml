@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
+		<defName>O21_Squig</defName>
+		<label>squig</label>
+		<description>A Squig (short for "Squiggly Beast") is the simplest known form of Orkoid life. There are many types of Squig, each generally filling some functional or utilitarian role in the Ork ecosystem. They currently serve as the Orks' primary food source, much like herd animals are for humans.</description>
+		<statBases>
+			<MoveSpeed>7</MoveSpeed>
+			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<MarketValue>2000</MarketValue>
+			<MeatAmount>40</MeatAmount>
+			<LeatherAmount>20</LeatherAmount>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>FootClawAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.25</chanceFactor>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>FootClawAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.25</chanceFactor>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<body>TheropodWithClaws</body>
+			<leatherDef>Leather_Squig</leatherDef>
+			<baseHungerRate>0.55</baseHungerRate>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<packAnimal>false</packAnimal>
+			<wildness>0.95</wildness>
+			<lifeExpectancy>65</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.45</manhunterOnDamageChance>
+			<meatLabel>squig meat</meatLabel>
+			<wildBiomes>
+				<AridShrubland>0.04</AridShrubland>
+				<TemperateForest>0.05</TemperateForest>
+				<TropicalRainforest>0.07</TropicalRainforest>
+				<IceSheet>0</IceSheet>
+				<BorealForest>0.06</BorealForest>
+				<Tundra>0</Tundra>
+				<Desert>0.1</Desert>
+			</wildBiomes>
+			<nuzzleMtbHours>275</nuzzleMtbHours>
+			<litterSizeCurve>
+				<points>
+					<li>(0.99, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>StandardAnimal</li>
+			<li>BadassAnimal</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>O21_Squig</defName>
+		<label>squig</label>
+		<race>O21_Squig</race>    
+		<combatPower>30</combatPower>
+		<wildGroupSize>
+			<min>3</min>
+			<max>9</max>
+		</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Animals/Squig/Squig</texPath>
+					<drawSize>0.3</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Animals/Squig/Squig</texPath>
+					<drawSize>0.3</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Ostrich/Dessicated_Ostrich</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Animals/Squig/Squig</texPath>
+					<drawSize>0.7</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Animals/Squig/Squig</texPath>
+					<drawSize>0.7</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Ostrich/Dessicated_Ostrich</texPath>
+					<drawSize>2.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Animals/Squig/Squig</texPath>
+					<drawSize>1.1</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<femaleGraphicData>
+					<texPath>Things/Animals/Squig/Squig</texPath>
+					<drawSize>1.1</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Ostrich/Dessicated_Ostrich</texPath>
+					<drawSize>2.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef> 
+	
+</Defs>

@@ -18,7 +18,7 @@
 	<PawnKindDef Name="IGValhallanBase" ParentName="IGValhallanAbstractBase" Abstract="True">
 		<defName>IGValhallanBase</defName>
 		<label>Guardsman</label>
-		<race>Alien_Valhallan</race>
+		<race>Alien_Terran</race>
 		<combatPower>25</combatPower>
 		<itemQuality>Poor</itemQuality>
 		<isFighter>true</isFighter>

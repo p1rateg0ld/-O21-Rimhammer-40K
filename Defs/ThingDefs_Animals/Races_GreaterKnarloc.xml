@@ -7,12 +7,12 @@
 		<description>Dead end evolutionary chain of Kroot, they have little if any of their races intelligence left and are now used as simple animals by the Kroot who have retained their form. Typically used as a pack animal or a mount. This one seems particularly large for an unknown reason.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
-			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>8000</MarketValue>
 			<MeatAmount>60</MeatAmount>
 			<LeatherAmount>80</LeatherAmount>
-			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>
@@ -64,15 +64,15 @@
 			<leatherDef>Leather_Knarloc</leatherDef>
 			<baseHungerRate>0.75</baseHungerRate>
 			<baseBodySize>4</baseBodySize>
-			<baseHealthScale>4.5</baseHealthScale>
+			<baseHealthScale>10.0</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<gestationPeriodDays>40</gestationPeriodDays>
 			<packAnimal>false</packAnimal>
 			<wildness>0.95</wildness>
 			<lifeExpectancy>300</lifeExpectancy>
 			<trainability>Advanced</trainability>
-			<manhunterOnTameFailChance>0.60</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.80</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 			<meatLabel>greater knarloc meat</meatLabel>
 			<wildBiomes>
 				<AridShrubland>0.01</AridShrubland>

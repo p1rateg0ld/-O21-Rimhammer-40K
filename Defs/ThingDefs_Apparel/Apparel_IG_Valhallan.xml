@@ -3,7 +3,7 @@
 
 	<!-- ====== Clothing ====== -->
 	
-	<ThingDef ParentName="ApparelMakeableBase" Name="ValhallanUniform"> <!-- Valhallan Uniform -->
+	<ThingDef ParentName="CadianUniformBase" Name="ValhallanUniform"> <!-- Valhallan Uniform -->
 		<defName>ValhallanUniform</defName>
 		<label>Valhallan Uniform</label>
 		<description>A full-body uniform the Valhallan Ice Warriors most often wear, typically under their armor.</description>
@@ -12,24 +12,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Spacer</techLevel>
-		<costList>
-			<Cloth>60</Cloth>
-		</costList>
-		<tradeability>Sellable</tradeability>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>1800</WorkToMake>
-			<MarketValue>100</MarketValue>
-			<Mass>1</Mass>
-			<Insulation_Cold>60</Insulation_Cold>
-			<Insulation_Heat>60</Insulation_Heat>
-			<EquipDelay>1.5</EquipDelay>
-		</statBases>
-		<thingCategories>
-			<li>IGApparel</li>
-		</thingCategories>
-		<apparel>
+		<apparel Inherit="False">
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Legs</li>
@@ -43,15 +26,6 @@
 				<li>ValhallanApparel</li>
 			</tags>
 		</apparel>
-		<recipeMaker>
-            <recipeUsers Inherit="False">
-                <li>O21_ImpBench_Basic</li>
-            </recipeUsers>
-			<researchPrerequisite>O21_Imp_IGBasicArmor</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-		</recipeMaker>
 	</ThingDef>
 	
 	<!-- ====== Armors ====== -->

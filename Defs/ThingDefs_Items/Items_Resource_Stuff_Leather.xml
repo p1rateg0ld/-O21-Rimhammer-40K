@@ -99,6 +99,25 @@
 			<commonality>0.0025</commonality>
 		</stuffProps>
 	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase"> <!-- Ambull Leather -->
+		<defName>Leather_Ambull</defName>
+		<label>chitinous leather</label>
+		<description>The hide of a Ambull is strange, not quite soft enough to be leather, not quite hard enough to be chitin, but that just makes it malleable and thick enough to be great for cold weather protection.</description>
+		<graphicData>
+			<color>(45, 51, 66)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.2</MarketValue>
+			<StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>32</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(45, 51, 66)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
 
 	<ThingDef ParentName="LeatherBase">
 		<defName>Leather_Eldar</defName>
@@ -134,6 +153,25 @@
 		</statBases>
 		<stuffProps>
 			<color>(91,114,100)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase"> <!-- Ork Leather -->
+		<defName>Leather_Squig</defName>
+		<label>squig leather</label>
+		<description>Tanned, dried, scraped Squig skin. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(183, 92, 80)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(183, 92, 80)</color>
 			<commonality>0.0025</commonality>
 		</stuffProps>
 	</ThingDef>

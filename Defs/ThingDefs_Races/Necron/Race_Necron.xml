@@ -97,6 +97,33 @@
 				<canLayDown>true</canLayDown>
 				<humanRecipeImport>false</humanRecipeImport>
 				<chemicalSettings />
+				<factionRelations>
+					<li>
+						<factions>
+							<li>Sautekh</li>
+						</factions>
+						<goodwill>
+						   <min>70</min>
+						   <max>80</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+							<li>NecronPlayerColony</li>
+						</factions>
+						<goodwill>
+						   <min>70</min>
+						   <max>80</max>
+						</goodwill>
+					</li>    
+				</factionRelations>	
+				<notXenophobistTowards>
+					<li>Alien_NecronWarrior</li>
+					<li>Alien_NecronDeathmark</li>
+					<li>Alien_NecronLord</li>
+					<li>Alien_NecronOverlord</li>
+					<li>Alien_NecronPariah</li>
+				</notXenophobistTowards>
 				<disallowedTraits>
 					<li>DrugDesire</li>
 					<li>NaturalMood</li>

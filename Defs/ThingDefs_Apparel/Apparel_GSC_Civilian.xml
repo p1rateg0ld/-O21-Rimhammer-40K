@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ========== Clothing ========== -->
+	
+	<ThingDef ParentName="CadianUniformBase">
+		<defName>GSCMiningUndersuitA</defName>
+		<label>mining bodysuit (a)</label>
+		<description>A full bodysuit civilian miners often wear, typically under their protective armor.</description>
+		<graphicData>
+			<texPath>Things/Imperium/Apparel/Body/BodysuitA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.20</ToxicSensitivity>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>ICApparel</li>
+		</thingCategories>
+		<apparel Inherit="False">
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Imperium/Apparel/Body/BodysuitA</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+		    	<li>ICApparel</li>
+				<li>GSCApparel</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="O21Toolbox.ApparelRestrict.CompProperties_BodyRestrict">
+				<compClass>O21Toolbox.ApparelRestrict.Comp_BodyRestrict</compClass>
+				<BodyDefs>
+					<li>Male</li>
+					<li>Female</li>
+				</BodyDefs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianUniformBase">
+		<defName>GSCMiningUndersuitB</defName>
+		<label>mining bodysuit (b)</label>
+		<description>A full bodysuit civilian miners often wear, typically under their protective armor.</description>
+		<graphicData>
+			<texPath>Things/Imperium/Apparel/Body/BodysuitB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.20</ToxicSensitivity>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>ICApparel</li>
+		</thingCategories>
+		<apparel Inherit="False">
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Imperium/Apparel/Body/BodysuitB</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+		    	<li>ICApparel</li>
+				<li>GSCApparel</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="O21Toolbox.ApparelRestrict.CompProperties_BodyRestrict">
+				<compClass>O21Toolbox.ApparelRestrict.Comp_BodyRestrict</compClass>
+				<BodyDefs>
+					<li>Male</li>
+					<li>Female</li>
+				</BodyDefs>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <!-- ========== Armour ========== -->
+    
+	<ThingDef ParentName="CadianArmorBase">
+		<defName>GSCMiningTunic</defName>
+		<label>mining tunic</label>
+		<techLevel>Spacer</techLevel>
+		<description>An armored tunic worn by civilian miners, protects as well as some military equipment to deal with the dangers while mining.</description>
+		<graphicData>
+			<texPath>Things/Imperium/Apparel/Body/Tunic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>ICApparel</li>
+		</thingCategories>
+		<apparel Inherit="False">
+			<tags>
+			    <li>ICApparel</li>
+				<li>GSCApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperium/Apparel/Body/Tunic</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker Inherit="False">
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Imp_Research</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+            <recipeUsers>
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
+		</recipeMaker>
+		<comps>
+			<li Class="O21Toolbox.ApparelRestrict.CompProperties_BodyRestrict">
+				<compClass>O21Toolbox.ApparelRestrict.Comp_BodyRestrict</compClass>
+				<BodyDefs>
+					<li>Male</li>
+					<li>Female</li>
+				</BodyDefs>
+			</li>
+		</comps>
+	</ThingDef>
+    
+	<ThingDef ParentName="CadianArmorBase">
+		<defName>GSCMiningRig</defName>
+		<label>mining chest rig</label>
+		<techLevel>Spacer</techLevel>
+		<description>An armored rigging worn by civilian miners, protects well and provides some environmental hazard resistances.</description>
+		<graphicData>
+			<texPath>Things/Imperium/Apparel/Body/ChestRig</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>ICApparel</li>
+		</thingCategories>
+		<apparel Inherit="False">
+			<tags>
+			    <li>ICApparel</li>
+				<li>GSCApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperium/Apparel/Body/ChestRig</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker Inherit="False">
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Imp_Research</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+            <recipeUsers>
+                <li>O21_ImpBench_Basic</li>
+            </recipeUsers>
+		</recipeMaker>
+		<comps>
+			<li Class="O21Toolbox.ApparelRestrict.CompProperties_BodyRestrict">
+				<compClass>O21Toolbox.ApparelRestrict.Comp_BodyRestrict</compClass>
+				<BodyDefs>
+					<li>Male</li>
+					<li>Female</li>
+				</BodyDefs>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <!-- ========== Headwear ========== -->
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>GSCRebreather</defName>
+		<label>mining rebreather</label>
+		<description>a rebreather used by civilians while mining, filters toxins.</description>
+		<graphicData> 
+			<texPath>Things/Imperium/Apparel/Head/Rebreather</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Imperium/Apparel/Head/Rebreather</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="O21Toolbox.ApparelRestrict.CompProperties_BodyRestrict">
+				<compClass>O21Toolbox.ApparelRestrict.Comp_BodyRestrict</compClass>
+				<BodyDefs>
+					<li>Male</li>
+					<li>Female</li>
+				</BodyDefs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>GSCMaskGoggles</defName>
+		<label>mining facemask and goggles</label>
+		<description>a rebreather used by civilians while mining, filters toxins.</description>
+		<graphicData> 
+			<texPath>Things/Imperium/Apparel/Head/FaceMaskGoggles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Imperium/Apparel/Head/FaceMaskGoggles</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="O21Toolbox.ApparelRestrict.CompProperties_BodyRestrict">
+				<compClass>O21Toolbox.ApparelRestrict.Comp_BodyRestrict</compClass>
+				<BodyDefs>
+					<li>Male</li>
+					<li>Female</li>
+				</BodyDefs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHelmet">
+		<defName>GSCCosmonaut</defName>
+		<label>mining helmet (cosmonaut)</label>
+		<description>a full helmet used by civilians while mining, filters toxins and provides good protection.</description>
+		<graphicData> 
+			<texPath>Things/Imperium/Apparel/Head/Cosmonaut</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Imperium/Apparel/Head/Cosmonaut</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="O21Toolbox.ApparelRestrict.CompProperties_BodyRestrict">
+				<compClass>O21Toolbox.ApparelRestrict.Comp_BodyRestrict</compClass>
+				<BodyDefs>
+					<li>Male</li>
+					<li>Female</li>
+				</BodyDefs>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

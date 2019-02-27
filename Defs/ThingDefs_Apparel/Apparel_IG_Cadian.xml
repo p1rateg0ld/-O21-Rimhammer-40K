@@ -12,11 +12,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+
 		<techLevel>Spacer</techLevel>
-		<costList>
-			<Cloth>60</Cloth>
-		</costList>
 		<tradeability>Sellable</tradeability>
+
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>1800</WorkToMake>
@@ -26,9 +25,15 @@
 			<Insulation_Heat>60</Insulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
+
 		<thingCategories>
 			<li>IGApparel</li>
 		</thingCategories>
+
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -43,6 +48,7 @@
 				<li>CadianApparel</li>
 			</tags>
 		</apparel>
+
 		<recipeMaker>
             <recipeUsers Inherit="False">
                 <li>O21_ImpBench_Basic</li>
@@ -58,20 +64,12 @@
 		<defName>CadianTrenchcoat</defName>
 		<label>cadian trenchcoat</label>
 		<description>A trenchcoat the Imperial Guard sometimes wear, provides a little more protection in the cold than the standard uniform.</description>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>1800</WorkToMake>
-			<MarketValue>100</MarketValue>
-			<Mass>1</Mass>
-			<Insulation_Cold>14</Insulation_Cold>
-			<Insulation_Heat>0</Insulation_Heat>
-			<EquipDelay>1.5</EquipDelay>
-		</statBases>
 		<graphicData> 
 			<texPath>Things/Imperial Guard/Cadian/Clothing/CadianTrenchcoat</texPath>
 			<graphicClass>Graphic_Single</graphicClass> 
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		
 		<apparel>
 			<wornGraphicPath>Things/Imperial Guard/Cadian/Clothing/CadianTrenchcoat</wornGraphicPath>
 		</apparel>

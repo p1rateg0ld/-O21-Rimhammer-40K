@@ -18,17 +18,12 @@
 		</graphicData>
 		
 		<statBases>
-			<MaxHitPoints>400</MaxHitPoints>
+			<MaxHitPoints>1800</MaxHitPoints>
 			<WorkToBuild>500</WorkToBuild>
 		</statBases>
 		
-		<costStuffCount>5</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		
 		<costList>
-			<Steel>5</Steel>
+			<Wraithbone>5</Wraithbone>
 		</costList>
 		
 		<researchPrerequisites>

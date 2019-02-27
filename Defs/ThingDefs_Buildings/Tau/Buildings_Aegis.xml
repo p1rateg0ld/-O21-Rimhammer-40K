@@ -15,7 +15,7 @@
 		</graphicData>
 		
 		<statBases>
-			<MaxHitPoints>350</MaxHitPoints>
+			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToBuild>700</WorkToBuild>
 		</statBases>
 		

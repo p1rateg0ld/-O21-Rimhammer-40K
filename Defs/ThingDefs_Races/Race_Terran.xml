@@ -134,12 +134,11 @@
 				</factionRelations>	
 				<notXenophobistTowards>
 					<li>Human</li>
-					<li>Alien_Valhallan</li>
-					<li>Alien_Krieg</li>
+					<li>Alien_Terran</li>
 					<li>Alien_Astartes</li>
 					<li>Alien_Sororitas</li>
 				</notXenophobistTowards>
-				<immuneToXenophobia>true</immuneToXenophobia>
+				<immuneToXenophobia>false</immuneToXenophobia>
 			</generalSettings>
 			<hairSettings>
 				<hasHair>true</hasHair>
@@ -354,66 +353,6 @@
 		</recipes>
 	</AlienRace.ThingDef_AlienRace>
 
-	<AlienRace.ThingDef_AlienRace ParentName="Alien_Terran">
-		<defName>Alien_Valhallan</defName>
-		<label>Valhallan</label>
-		<description>The regiments of Valhalla have a reputation for stoicism and dedication to the Emperor. When attacking, they are renowned for combining massed artillery barrages with infantry assault waves. When defending they show dogged determination, even in the face of defeat.
-
-The Valhallans are a stubborn and stern people who refuse to acknowledge their own hardships, and are rarely deterred by the horrors of the battlefield. They are all but impervious to harsh conditions and have a casual disregard for human life, leading to the superstition amongst other Militarum Regimentos that ice runs through their veins, just as it covers their homeworld.</description>
-		<alienRace>
-			<generalSettings>
-				<forcedRaceTraitEntries>
-				</forcedRaceTraitEntries>
-			</generalSettings>
-		</alienRace>
-		<statBases>
-			<MarketValue>2000</MarketValue>
-			<MoveSpeed>6.42</MoveSpeed>
-			<Flammability>0.3</Flammability>
-			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-			<ComfyTemperatureMax>16</ComfyTemperatureMax>
-			<LeatherAmount>25</LeatherAmount>
-			<PsychicSensitivity>1.0</PsychicSensitivity>
-			<MiningSpeed>1.2</MiningSpeed>
-		</statBases>
-	</AlienRace.ThingDef_AlienRace>	
-
-	<AlienRace.ThingDef_AlienRace ParentName="Alien_Terran">
-		<defName>Alien_Krieg</defName>
-		<label>Krieg</label>
-		<description>The Death Korps of Krieg is the name given to all of the Astra Militarum regiments that originate from the devastated, post-nuclear Death World of Krieg in the Segmentum Tempestus. Krieg was the site of a rebellion against the Imperium of Man over 1,500 standard years ago in the 40th Millennium and was bombarded with nuclear weapons followed by five hundred Terran years of grinding warfare to purge the heretical rebels. After all those years of nuclear destruction and bitter trench warfare, Krieg was reduced to a scorched, radioactive husk of a world composed of dust and mud whose surviving people were forced to retreat into underground hive cities to survive the toxic planetary environment. The Death Korps of Krieg is a siege specialist regiment of the Imperial Guard and the regiments raised on Krieg seek to repent for their former treachery against the Emperor by displaying a disturbing disregard for their own lives in combat. Death Korps troops excel at wars of attrition and defensive combat in particular.</description>
-		<alienRace>
-			<generalSettings>
-				<forcedRaceTraitEntries>
-				</forcedRaceTraitEntries>
-			</generalSettings>
-		</alienRace>
-		<statBases>
-			<MarketValue>2000</MarketValue>
-			<MoveSpeed>6.42</MoveSpeed>
-			<Flammability>0.3</Flammability>
-			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-			<ComfyTemperatureMax>30</ComfyTemperatureMax>
-			<LeatherAmount>25</LeatherAmount>
-			<PsychicSensitivity>1.0</PsychicSensitivity>
-			<MiningSpeed>1.3</MiningSpeed>
-		</statBases>
-	</AlienRace.ThingDef_AlienRace>	
-
-	<AlienRace.ThingDef_AlienRace ParentName="Alien_Terran">
-		<defName>Alien_Guevesa</defName>
-		<label>Gue'vesa</label>
-		<description>The Gue'vesa (which literally means "Human Helper" in the Tau Lexicon) is the name the T'au have given to those humans who have willingly joined the T'au Empire. Many Gue'vesa now fight alongside the Tau Fire Caste on behalf of the Greater Good. They even take up arms when required against their fellow humans of the Imperium of Man.
-
-Needless to say, Gue'vesa are considered the worst kind of Traitors to the Emperor of Mankind and are believed by the Ecclesiarchy to have been spiritually corrupted for willingly associating themselves with a xenos culture. The term Gue'vesa'la is given to the standard human troops of the line; their non-commissioned officers, equivalent to Sergeants in the Astra Militarum, are known as Gue'vesa'ui.</description>
-		<alienRace>
-			<generalSettings>
-				<forcedRaceTraitEntries>
-				</forcedRaceTraitEntries>
-			</generalSettings>
-		</alienRace>
-	</AlienRace.ThingDef_AlienRace>	
-
 	<AlienRace.ThingDef_AlienRace ParentName="Alien_Terran" Name="Alien_Astartes">
 		<defName>Alien_Astartes</defName>
 		<label>Space Marine</label>
@@ -510,7 +449,7 @@ Needless to say, Gue'vesa are considered the worst kind of Traitors to the Emper
 			<MiningSpeed>2.0</MiningSpeed>
 			<ImmunityGainSpeed>4.0</ImmunityGainSpeed>
 			<PainShockThreshold>5</PainShockThreshold>
-			<RestRateMultiplier>0.5</RestRateMultiplier>
+			<RestRateMultiplier>2.0</RestRateMultiplier>
 		</statBases>
 		<tools>
 			<li>

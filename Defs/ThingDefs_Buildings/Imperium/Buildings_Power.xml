@@ -45,12 +45,6 @@
 				<basePowerConsumption>-600</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_Battery">
-				<storedEnergyMax>2000</storedEnergyMax>
-				<efficiency>1.0</efficiency>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<transmitsPower>true</transmitsPower>
-			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(100,100,250,0)</glowColor>
@@ -116,12 +110,6 @@
 				<basePowerConsumption>-4000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_Battery">
-				<storedEnergyMax>10000</storedEnergyMax>
-				<efficiency>1.0</efficiency>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<transmitsPower>true</transmitsPower>
-			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>6</glowRadius>
 				<glowColor>(100,100,250,0)</glowColor>
@@ -144,5 +132,144 @@
 		</researchPrerequisites>
 		<designatorDropdown>RH_ImpPowerGen</designatorDropdown>
 	</ThingDef>
+
+  	<ThingDef ParentName="BuildingBase">
+		<defName>O21_PromethiumPoweredGenerator</defName>
+		<label>promethium powered generator</label>
+		<description>Produces power by consuming promethium or "chemfuel" to the native populace of this world. Must be periodically refueled by hand, or be supplied by promethium piping.</description>
+		<thingClass>Building</thingClass>
+
+		<graphicData>
+			<texPath>Things/Imperium/Buildings/Power/ChemfuelGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.1,4.1)</drawSize>
+		</graphicData>
+
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(4,4)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>1.0</fillPercent>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-1000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>3.0</fuelConsumptionRate>
+				<fuelCapacity>300.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,112,180,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>6</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0</explosiveRadius>
+				<explosiveExpandPerFuel>0.95</explosiveExpandPerFuel>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>
+					<min>70</min>
+					<max>150</max>
+				</wickTicks>
+			</li>
+		</comps>
+
+		<researchPrerequisites>
+			<li>O21_Imp_Research</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_ImpBattery</defName>
+		<label>imperial battery</label>
+		<description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire.</description>
+		<thingClass>Building_Battery</thingClass>
+		<graphicData>
+			<texPath>Things/Imperium/Buildings/Power/ImpBattery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,5)</drawSize>
+		</graphicData>
+		
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(2,4)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.60</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>
+		
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>6000</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+
+		<researchPrerequisites>
+			<li>O21_Imp_Research</li>
+		</researchPrerequisites>
+  	</ThingDef>
 	
 </Defs>
