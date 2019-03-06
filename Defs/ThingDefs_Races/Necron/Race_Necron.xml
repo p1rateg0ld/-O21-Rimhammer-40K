@@ -238,8 +238,8 @@
 			<MarketValue>8000</MarketValue>
 			<MoveSpeed>2.8</MoveSpeed>
 			<Flammability>0</Flammability>
-			<ComfyTemperatureMin>-150</ComfyTemperatureMin>
-			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-15000</ComfyTemperatureMin>
+			<ComfyTemperatureMax>25000</ComfyTemperatureMax>
 			<PainShockThreshold>10</PainShockThreshold>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
@@ -499,45 +499,6 @@
 					</lifeStageDefs>
 				</li>
 			</graphicPaths>
-			<thoughtSettings Inherit="false">
-				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
-				<cannotReceiveThoughts>
-					<li>NeedFood</li>
-					<li>Naked</li>
-					<li>SharedBed</li>
-					<li>AttendedWedding</li>
-					<li>AttendedParty</li>
-					<li>SleepDisturbed</li>
-					<li>SleptOnGround</li>
-					<li>KnowPrisonerSold</li>
-					<li>KnowGuestOrganHarvested</li>
-					<li>KnowColonistOrganHarvested</li>
-					<li>KnowBuriedInSarcophagus</li>
-					<li>ButcheredHumanlikeCorpse</li>
-					<li>KnowButcheredHumanlikeCorpse</li>
-					<li>ObservedLayingCorpse</li>
-					<li>ObservedLayingRottingCorpse</li>
-					<li>WitnessedDeathAlly</li>
-					<li>WitnessedDeathNonAlly</li>
-					<li>ColonistBanished</li>
-					<li>ColonistBanishedToDie</li>
-					<li>PrisonerBanishedToDie</li>
-					<li>BondedAnimalBanished</li>
-					<li>SleptInBedroom</li>
-					<li>ArtifactMoodBoost</li>
-					<li>LowExpectations</li>
-					<li>EnvironmentDark</li>
-					<li>CabinFever</li>
-					<li>ApparelDamaged</li>
-					<li>DeadMansApparel</li>
-					<li>HumanLeatherApparelSad</li>
-					<li>KnowGuestExecuted</li>
-					<li>KnowColonistExecuted</li>
-					<li>KnowPrisonerDiedInnocent</li>
-					<li>KnowColonistDied</li>
-					<li>PawnWithGoodOpinionDied</li>
-				</cannotReceiveThoughts>
-			</thoughtSettings>
 		</alienRace>
 		<statBases>
 			<MarketValue>8500</MarketValue>

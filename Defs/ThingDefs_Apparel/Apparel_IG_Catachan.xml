@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Clothing ====== -->
+	
+	<ThingDef ParentName="CadianUniformBase">
+		<defName>CatachanUniform</defName>
+		<label>catachan uniform</label>
+		<description>A full-body uniform the Catachans most often wear, typically under their armor.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Catachan/Clothing/CatachanFatigues2</texPath>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>CatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Catachan/Clothing/CatachanFatigues2</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianUniformBase">
+		<defName>CatachanUniformShirt</defName>
+		<label>catachan uniform (no jacket)</label>
+		<description>A full-body uniform the Catachans most often wear, typically under their armor.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Catachan/Clothing/CatachanFatigues</texPath>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>CatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Catachan/Clothing/CatachanFatigues</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianUniformBase">
+		<defName>CatachanUniformShirtless</defName>
+		<label>catachan uniform (shirtless)</label>
+		<description>A full-body uniform the Catachans most often wear, typically under their armor.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Catachan/Clothing/CatachanShirtless</texPath>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>CatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Catachan/Clothing/CatachanShirtless</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Armors ====== -->
+	
+	<ThingDef ParentName="CadianArmorBase">
+		<defName>CatachanArmor</defName>
+		<label>catachan armor</label>
+		<description>The armor commonly worn by the Imperial Guard Catachan regiments.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Cadian/Armor/CadianArmor</texPath>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>CatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Cadian/Armor/CadianArmor</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianArmorBase">
+		<defName>CatachanHarness</defName>
+		<label>catachan harness</label>
+		<description>The harness commonly worn by the Imperial Guard Catachan regiments.</description>
+		<graphicData>
+			<texPath>Things/Imperial Guard/Catachan/Armor/CatachanHarness</texPath>
+		</graphicData>
+		<apparel>
+			<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>CatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Catachan/Armor/CatachanHarness</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+
+	<ThingDef ParentName="CadianHelmet">
+		<defName>CatachanHelmet</defName>
+		<label>catachan helmet</label>
+		<description>The helmet commonly worn by the Imperial Guard Catachan regiments. Provides a small bonus to cold protection.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Catachan/Hats/CatachanHelmet_normal</texPath>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>CatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Catachan/Hats/CatachanHelmet_normal</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="CadianFieldCap">
+		<defName>CatachanFieldCap</defName>
+		<label>catachan field cap</label>
+		<description>A hat commonly worn by the Imperial Guard Catachan regiments.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Catachan/Hats/CatachanFieldCap</texPath>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>CatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Catachan/Hats/CatachanFieldCap</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="CadianFieldCap">
+		<defName>CatachanHeadband</defName>
+		<label>catachan headband</label>
+		<description>A headband commonly worn by the Imperial Guard Catachan regiments.</description>
+		<graphicData> 
+			<texPath>Things/Imperial Guard/Catachan/Hats/CatachanHeadband_normal</texPath>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>CatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Imperial Guard/Catachan/Hats/CatachanHeadband_normal</wornGraphicPath>
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+		</apparel>
+	</ThingDef>
+
+</Defs>

@@ -36,6 +36,7 @@
 
 		<apparel>
 			<bodyPartGroups>
+				<li>Arms</li>
 				<li>Torso</li>
 				<li>Legs</li>
 			</bodyPartGroups>
@@ -304,7 +305,7 @@
 		</equippedStatOffsets>
 	</ThingDef>
 	
-	<ThingDef ParentName="CadianHelmet">
+	<ThingDef ParentName="CadianHelmet" Name="CadianFieldCap">
 		<defName>CadianFieldCap</defName>
 		<label>Cadian Fieldcap</label>
 		<description>A hat commonly worn by the Imperial Guard Cadian regiments.</description>

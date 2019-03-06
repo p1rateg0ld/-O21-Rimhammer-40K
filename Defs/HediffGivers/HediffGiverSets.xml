@@ -40,8 +40,11 @@
 	<HediffGiverSetDef>
 		<defName>OrkBasic</defName>
 		<hediffGivers>
-			<li Class="Rimhammer40k.Orks.HediffGiver_OrkHealing">
+			<li Class="Rimhammer40k.Orks.HediffGiver_OrkRacial">
 				<hediff>OrkoidHealing</hediff>
+			</li>
+			<li Class="Rimhammer40k.Orks.HediffGiver_OrkRacial">
+				<hediff>OrkoidSpores</hediff>
 			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>

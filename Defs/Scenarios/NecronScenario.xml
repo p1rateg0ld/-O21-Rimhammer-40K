@@ -3,7 +3,7 @@
 	<ScenarioDef>
 		<defName>NecronScenario</defName>
 		<label>Necron Awakening</label>
-		<description>After millenia you are once again awake on a world you once called home, no idea why or how you have been awoken, but your do know you need to help the others awaken too.</description>
+		<description>After millenia you are once again awake on a world you once called home, no idea why or how you have been awoken, but you do know you need to help the others awaken too.</description>
 		<scenario>
 			<summary>Two Necrons awaken on the surface, your job, awaken the others.</summary>
 			<playerFaction>

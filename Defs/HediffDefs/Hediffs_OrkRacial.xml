@@ -2,25 +2,31 @@
 <Defs>
 
 	<HediffDef>
-		<defName>OrkoidHealing</defName>
-		<hediffClass>Rimhammer40k.Orks.HediffOrkHealing</hediffClass>
-		<label>Orkoid Healing</label>
-		<defaultLabelColor>(0.6,0.85,0.91)</defaultLabelColor>
+		<defName>OrkoidSpores</defName>
+		<hediffClass>Rimhammer40k.Orks.HediffOrkSpores</hediffClass>
+		<label>Orkoid Spores</label>
+		<defaultLabelColor>(0.6,0.6,0.95)</defaultLabelColor>
 		<isBad>false</isBad>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<stages>
 			<li>
-				<capMods>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>0.35</offset>
-					</li>
-					<li>
-						<capacity>BloodPumping</capacity>
-						<offset>0.35</offset>
-					</li>
-				</capMods>
+				<capMods />
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>OrkoidHealing</defName>
+		<hediffClass>Rimhammer40k.Orks.HediffOrkHealing</hediffClass>
+		<label>Orkoid Healing</label>
+		<defaultLabelColor>(0.6,0.6,0.95)</defaultLabelColor>
+		<isBad>false</isBad>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<capMods />
 			</li>
 		</stages>
 	</HediffDef>

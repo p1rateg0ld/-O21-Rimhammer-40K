@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<PrisonerInteractionModeDef>
+		<defName>O21_FiringSquadExecution</defName>
+		<label>Firing Squad Execution</label>
+		<listOrder>10</listOrder>
+	</PrisonerInteractionModeDef>
+	
+</Defs>
