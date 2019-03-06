@@ -6,12 +6,12 @@
 		<label>Sautekh Dynasty</label>
 		<description>In the times before biotransference, the Sautekh Dynasty was ranked as the third most powerful of all the Necrontyr royal dynasties. Through chance or design, many of the Sautekh coreworlds survived the aeons better than those of other dynasties. Now, this Necron dynasty is more powerful than any other in the galaxy, and its nobility is the most aggressive in attempting a new wave of expansion intended to reforge the ancient Necron Empire.</description>
 		<pawnsPlural>Necrons</pawnsPlural>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<requiredCountAtGameStart>3</requiredCountAtGameStart>
 		<earliestRaidDays>100</earliestRaidDays>
 		<canMakeRandomly>True</canMakeRandomly>
 		<autoFlee>false</autoFlee>
 		<canSiege>false</canSiege>
-		<canStageAttacks>true</canStageAttacks>
+		<canStageAttacks>false</canStageAttacks>
 		<leaderTitle>Overlord</leaderTitle>
 		<permanentEnemy>true</permanentEnemy>
 		<expandingIconTexture>World/SautekhBaseIcon</expandingIconTexture>

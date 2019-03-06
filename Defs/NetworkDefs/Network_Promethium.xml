@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<O21Toolbox.Network.NetworkDef>
+		<defName>O21_Network_Promethium</defName>
+		<label>promethium</label>
+		<wirelessNetwork>false</wirelessNetwork>
+	</O21Toolbox.Network.NetworkDef>
+	
+</Defs>

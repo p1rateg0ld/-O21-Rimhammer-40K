@@ -2,8 +2,8 @@
 <Defs>
 
 	<O21Toolbox.Alliances.AllianceDef>
-		<defName>O21_Alliance_Imperium</defName>
-		<label>imperium of man</label>
+		<defName>O21_Alliance_Tau</defName>
+		<label>tau empire</label>
 		<memberFactions>
 			<li>BlackTemplars</li>
 			<li>BloodRavens</li>
@@ -18,21 +18,13 @@
 		</memberFactions>
 		<factionRelations>
 			<li>
-				<faction>TerranPlayerColony</faction>
-				<relation>75</relation>
-			</li>
-			<li>
-				<faction>SororitasPlayerColony</faction>
-				<relation>75</relation>
-			</li>
-			<li>
-				<faction>AstartesPlayerColony</faction>
+				<faction>TauPlayerColony</faction>
 				<relation>75</relation>
 			</li>
 		</factionRelations>
 		<allianceRelations>
 			<li>
-				<alliance>O21_Alliance_Tau</alliance>
+				<alliance>O21_Alliance_Imperium</alliance>
 				<relation>-100</relation>
 			</li>
 			<li>
