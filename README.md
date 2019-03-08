@@ -4,7 +4,7 @@ Warhammer 40K introduced to Rimworld in a vanilla style. See discussions for ful
 
 https://discord.gg/sApZcRS
 
-If you googled this thinking you can be clever and get the non-steam download and are now suffering a massive list of errors, don't expect help. Follow the Discord instructions after accepting the rules and opting into the Rimhammer 40k channels/announcements using the #passport channel.
+If you googled this thinking you can be clever and get the non-steam download and are now suffering a massive list of errors, don't expect help. Follow the Discord instructions after accepting the rules and opting into the Rimhammer 40k channels/announcements using the #passport channel like a good little leech.
 
 ## Permissions:
 Permission must be requested for any addons, alternative versions, or any other use of this mods assets, the only permission you have is for entirely personal use, NOT for redistribution. Permission will NEVER be granted for anything that would result in profiting off of our work or Games Workshops IP.
