@@ -82,6 +82,8 @@
     <Compile Include="Eldar\SpiritStoneUtility.cs" />
     <Compile Include="Logic\ExposedTraitEntry.cs" />
     <Compile Include="Necrons\HediffGiver_NecronRepair.cs" />
+    <Compile Include="Orks\CompProperties_OrkSpore.cs" />
+    <Compile Include="Orks\Comp_OrkSpore.cs" />
     <Compile Include="Orks\FleshTypeDef_Ork.cs" />
     <Compile Include="Orks\HediffGiver_OrkRacial.cs" />
     <Compile Include="Orks\HediffOrkSpores.cs" />
