@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VersionData>
+	<overrideVersion>0.3.0</overrideVersion>
+	<requiredLibraryVersion>6.1.1</requiredLibraryVersion>
+	<gitHubRepository>UnlimitedHugs/RimworldHugsLibChecker</gitHubRepository>
+</VersionData>

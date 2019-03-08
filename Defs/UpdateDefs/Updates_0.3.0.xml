@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="RH40kUpdateFeatureBase">
+		<modNameReadable>Rimhammer 40k</modNameReadable>
+		<modIdentifier>Rimhammer40k</modIdentifier>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1513943591</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+	
+	<HugsLib.UpdateFeatureDef ParentName="RH40kUpdateFeatureBase">
+		<defName>RH40k_0_3_0</defName>
+		<assemblyVersion>0.3.0</assemblyVersion>
+		<content>This update adds a signficant number of new things so I'll highlight a few and then list everything so you can choose to read the short version or everything. Special thanks to Chjees this update, although it's part of [O21] Toolbox the Energy need and PawnCrafter (Necron Tomb) would have taken much longer and would have been much less advanced than it is without the Androids mod.
+Summary:
+- New Factions for Eldar, Imperium, Necrons and Orks
+- New Races/Subraces for Orks and Tyranids
+- Lots of new apparel for the new factions and races.
+- Lots of new buildings for all.
+- New biomes: Gauss Fields. Will be sort of difficult to play on as any race other than Necrons.
+- Fixes for quite a few bugs but only a couple worth mentioning like the vanishing buildings and the factions hating each other.
+
+General:
+- [Added] Creature: Ambull
+- [Added] Creature: Squig
+- [Added] Creature: Clawed Fiend
+Eldar:
+- [Added] Biel-Tan faction
+- [Added] Biel-Tan apparel
+- [Added] Wraithbone material
+- [Added] Spirit Stones
+- [Added] Wraithguard (all main Craftworlds)
+- [Added] Three new weapons
+- [Added] New Building: Battery
+- [Added] New Building: Crafting Bench
+- [Changed] Weapons stats rebalanced
+- [Changed] Weapon and apparel recipes now on new Crafting Bench
+Tyranids:
+- [Added] Event: Mycetic Spore
+- [Added] Species: Genestealers
+- [Added] Species: Termagaunts
+- [Added] Species: Hormagaunts
+- [Added] Species: Pyrovore
+- [Added] Species: Biovore
+- [Added] Infection: Genestealer Cultism
+- [Added] GSC versions of Imperium civilian apparel
+Tau:
+- [Added] New Building: Battery
+- [Added] New Building: Crafting Bench
+- [Changed] Weapon and apparel recipes now on new crafting bench
+Orks:
+- [Added] New Factions: Deathskulls, Bad Moons and Blood Axes
+- [Added] New apparel for the above factions
+- [Added] New Race: Grotz/Gretchins
+- [Added] Apparel for Gretchins
+- [Added] Racial Ability: Orkoid Spores
+- [Added] New Building: Battery
+- [Added] New Building: Crafting Bench
+- [Changed] Adjusted Generator values
+- [Changed] Weapon and apparel recipes now on new Crafting Bench
+Imperium:
+- [Added] Several "Civilian" Tools/Weapons
+- [Added] Several items of "Civilian" apparel
+- [Added] New Faction: Adeptus Mechanicus
+- [Added] Adeptus Mechanicus traders to appropriate factions
+- [Added] Adeptus Mechanicus apparel and weapons
+- [Added] New Faction: Catachan Imperial Guard
+- [Added] Catachan apparel
+- [Added] New Building: Terran Training Tube (Terran Converter)
+- [Added] New Building: Sororitas Steamer (Sister of Battle Converter)
+- [Added] New Building: Puff Priestery (Tech Priest Converter)
+- [Added] New Building: Several Bunker emplacements
+- [Added] New Building: Basic and Advanced Crafting Benches
+- [Added] New Building: Battery
+- [Added] New Building: Promethium Fueled Generator
+- [Changed] Weapon and apparel recipes now on new crafting benches as appropriate
+- [Changed] Imperial Guard armour stats Adjusted
+Necrons:
+- [Added] New Faction: Mephrit (Orange Necrons)
+- [Added] New Faction: Thokt (Blue Necrons) 
+- [Added] One new weapon
+- [Added] Colour variations of all weapons
+- [Added] Colour variations of all buildings
+- [Added] Gauss Crystals material (harvested from natural or crop based crystals)
+- [Added] Gauss Fields biomes (Green = temperate, blue = low temp, orange = high temp)
+- [Added] Blackstone natural resource (overrides any stone type in a Guass Fields biome, acts like any other stone)
+- [Added] Black Sand natural flooring for Gauss Fields biome
+- [Added] Map Generation: Necron Tomb Entrance
+- [Added] New Building: Necron Light and Heavy Turrets
+- [Added] New Building: Necron Tomb, awakens Necrons when built over a tomb entrance, uses necrodermis and appropriate colour gauss crystals to do so along with some energy.
+- [Added] New Building: Canoptek Cannery (Pariah Converter)
+- [Added] New Building: Various new floors
+- [Changed] Scarabs now have a low skill general purpose platform and several average skill specific job platforms.
+- [Changed] Scarab platforms now default to 4 "fuel"
+- [Changed] Necrons now have an energy need, which is part of the O21 Toolbox, there is an option in the toolbox to toggle the disabling of other needs but some other mods want those to exist or they break so it's up to you if you want to try it out but don't bother reporting bugs about it if you do since it's likely just a conflict I can do nothing about.
+Fixes:
+- [Major] Generators vanishing when built due to other mods breaking vanilla code with dirty edits.
+- [Minor] Various typos
+- [Minor] Necrons being xenophobic towards different types of Necrons
+- [Minor] Factions who should be allied with one another weren't, like the various Imperium factions, they now are allied when they should be using a new Alliance system which will be expanded later.
+		</content>
+	</HugsLib.UpdateFeatureDef>
+
+</Defs>

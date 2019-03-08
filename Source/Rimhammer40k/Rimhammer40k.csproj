@@ -35,17 +35,12 @@
       <HintPath>..\..\..\[O21] Toolbox\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="AbilityUser">
-      <HintPath>..\..\..\..\Mods_Old\JecsTools\Assemblies\AbilityUser.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="AbilityUserAI">
-      <HintPath>..\..\..\..\Mods_Old\JecsTools\Assemblies\AbilityUserAI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>..\..\..\..\..\..\..\..\..\Users\Dean\Google Drive\Rimworld Mods\Mod Sources\RimworldHugsLib-master\Mods\HugsLib\Assemblies\HugsLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -95,6 +90,7 @@
     <Compile Include="Projector\Util_Projector.cs" />
     <Compile Include="Biomes\TerrainDefOf.cs" />
     <Compile Include="Biomes\ThingDefOf.cs" />
+    <Compile Include="Rimhammer40kController.cs" />
     <Compile Include="ThoughtWorker_ConstructAlways.cs" />
     <Compile Include="Necrons\CompProperties_NecronResurrection.cs" />
     <Compile Include="Necrons\HediffGiver_BirthdayNecron.cs" />
