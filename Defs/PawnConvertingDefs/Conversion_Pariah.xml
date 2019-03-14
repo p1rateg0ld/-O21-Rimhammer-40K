@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<O21Toolbox.PawnConverter.PawnConvertingDef>
+		<defName>O21_Conversion_PariahGreen</defName>
+		<label>Pariah</label>
+		<description>Converts a terran of any kind into an immortal necron pariah.</description>
+		<orderID>1</orderID>
+
+		<recipeUsers>
+			<li>O21_CanoptekCanneryGreen</li>
+		</recipeUsers>
+		<conversionTime>12000</conversionTime>
+		
+		<requiredResearch>O21_Nec_Research</requiredResearch>
+		<inputDefs>
+			<li>Alien_Terran</li>
+			<li>Alien_Astartes</li>
+			<li>Alien_Sororitas</li>
+		</inputDefs>
+
+		<outputDef>NecronPariah</outputDef>
+		<forcedBody>Male</forcedBody>
+		<randomHair>True</randomHair>
+		<randomSkinColor>True</randomSkinColor>
+	</O21Toolbox.PawnConverter.PawnConvertingDef>
+
+</Defs>

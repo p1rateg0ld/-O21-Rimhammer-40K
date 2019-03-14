@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGTarantulaBolter</defName>
 		<label>Tarantula Heavy Bolter</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -127,7 +127,7 @@
 	
 <!--================== Missle Pod ================== -->
 	
-		<ThingDef ParentName="BuildingBase">
+		<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGTarantulaMissile</defName>
 		<label>Tarantula Missle Platform</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -267,7 +267,7 @@
 
 	<!--================== LasCannon ================== -->
 	
-<ThingDef ParentName="BuildingBase">
+<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGTarantulaLascannon</defName>
 		<label>Tarantula Lascannon</label>
 		<thingClass>Building_TurretGun</thingClass>

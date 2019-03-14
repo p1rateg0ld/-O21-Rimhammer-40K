@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>TAURailgun</defName>
 		<label>Railgun Turret</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -144,7 +144,7 @@
 	
 <!--================== Missle Pod ================== -->
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>TAUMisslePod</defName>
 		<label> Missile Turret</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -294,7 +294,7 @@
 
 	<!--================== Gauss Cannon ================== -->
 	
-		<ThingDef ParentName="BuildingBase">
+		<ThingDef ParentName="O21_BuildingBase">
 		<defName>TAUGaussCannon</defName>
 		<label> Gauss Cannon Turret</label>
 		<thingClass>Building_TurretGun</thingClass>

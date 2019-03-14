@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SpaceshipBuildingBase">
+	<ThingDef ParentName="SpaceshipO21_BuildingBase">
 		<defName>OrbitalRelayImperium</defName>
 		<label>orbital relay (imperium)</label>
 		<description>This communication array is able to contact nearby factions, ships and comms satellites orbiting around the planet.</description>

@@ -264,20 +264,12 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
-					<def>BabyOrkStage</def>
+					<def>TeenOrkStage</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>ChildOrkStage</def>
-					<minAge>2</minAge>
-				</li>
-				<li>
-					<def>TeenOrkStage</def>
-					<minAge>11</minAge>
-				</li>
-				<li>
 					<def>AdultOrkStage</def>
-					<minAge>16</minAge>
+					<minAge>1</minAge>
 				</li>
 				<li>
 					<def>ElderOrkStage</def>

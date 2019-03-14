@@ -3,7 +3,7 @@
 
 		<!-- ==================Autocannon================== -->
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGSabreAutocannon</defName>
 		<label>Sabre Autocannon</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -145,7 +145,7 @@
 
 			<!-- ==================Heavy Bolter================== -->
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGSabreBolter</defName>
 		<label>Sabre Bolter</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -272,7 +272,7 @@
 
 				<!-- ==================Lascannon================== -->
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGSabreLascannon</defName>
 		<label>Sabre Lascannon</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -427,7 +427,7 @@
 
 					<!-- ==================Searchlight================== -->
 	<!--
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGSabreSearchlight</defName>
 		<label> Sabre Searchlight</label>
 		<thingClass>Building_TurretGun</thingClass>

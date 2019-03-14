@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ThingDef ParentName="BuildingBase">
+	<!-- <ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_CultistCocoon</defName>
 		<label>cultist cocoon</label>
 		<description>A large cocoon made by genestealer cultists so they can evolve further.</description>
-		<!-- Converter MUST be this class to function with the comp further below. -->
 		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
 		
 		<altitudeLayer>Building</altitudeLayer>
@@ -62,6 +61,6 @@
 		</comps>
 		
 		<researchPrerequisites />
-	</ThingDef>
+	</ThingDef> -->
 	
 </Defs>

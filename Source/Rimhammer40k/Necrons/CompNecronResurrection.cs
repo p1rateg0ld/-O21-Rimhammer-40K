@@ -10,26 +10,12 @@ namespace Rimhammer40k.Necrons
 {
     public class CompNecronResurrection : ThingComp
     {
-        public CompProperties_NecronResurrection PropsNecRes
+        public CompProperties_NecronResurrection Props
         {
             get
             {
                 return (CompProperties_NecronResurrection)this.props;
             }
-        }
-        public override void CompTick()
-        {
-            this.Tick(1);
-        }
-
-        public override void CompTickRare()
-        {
-            this.Tick(250);
-        }
-
-        private void Tick(int interval)
-        {
-
         }
 
         //Function to get random number

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SpaceshipBuildingBase">
+	<ThingDef ParentName="SpaceshipO21_BuildingBase">
 		<defName>AirStrikeBeacon</defName>
 		<label>air strike beacon</label>
 		<description>A beacon to designate an air strike target position.</description>

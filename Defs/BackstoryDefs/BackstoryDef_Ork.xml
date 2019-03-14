@@ -3,7 +3,7 @@
 	
 	<!-- ============================ Ork Childhoods ========================== -->
 
-	<AlienRace.BackstoryDef> <!-- Child of the Hunt -->
+	<AlienRace.BackstoryDef> <!-- Orkoid -->
 		<defName>BackstoryOrkChild00</defName>
 		<title>Orkoid</title>
 		<titleShort>Orkoid</titleShort>
@@ -19,6 +19,21 @@
 				<defName>Melee</defName>
 				<amount>2</amount>
 			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef> <!-- Feral Ork -->
+		<defName>BackstoryOrkChild00</defName>
+		<title>Feral Ork</title>
+		<titleShort>Feral Ork</titleShort>
+		<baseDescription>Dis boy jus' popped outta th' ground!</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>FeralOrkBackstory</li>
+		</spawnCategories>
+		<skillGains>
 		</skillGains>
 	</AlienRace.BackstoryDef>
 	

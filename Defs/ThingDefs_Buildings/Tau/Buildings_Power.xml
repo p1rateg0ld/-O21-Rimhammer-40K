@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>TauGenerator_A_Small</defName>
 		<label>Small Tau Generator</label>
 		<description>Tau small generator, decent output from such a small building considering the youth of this race.</description>
@@ -70,7 +70,7 @@
 		<designatorDropdown>RH_TauPowerGen</designatorDropdown>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>TauGenerator_B_Large</defName>
 		<label>Large Tau Generator</label>
 		<description>Standard large plasma generator, pushes out a good amount of power for its size. Note: Must be placed on a steam geyser</description>

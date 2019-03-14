@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="BuildingBase" Name="O21MassStorageBase" Abstract="True">
+  <ThingDef ParentName="O21_BuildingBase" Name="O21MassStorageBase" Abstract="True">
     <thingClass>O21Toolbox.Storage.Building_Crate</thingClass>
 	<graphicData>
         <graphicClass>Graphic_Multi</graphicClass>

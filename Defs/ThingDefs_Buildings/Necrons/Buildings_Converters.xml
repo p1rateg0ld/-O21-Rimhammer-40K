@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_CanoptekCanneryGreen</defName>
 		<label>canoptek cannery (green)</label>
 		<description>An automated device for converting humans of any kind into Pariahs, the culmination of an unknown Necron Lords work to create a cybernetic combination of Human and Necron. Allowing them to be created without requiring the Pariah gene, giving Necrons a way to defeat an enemy and replenish their own numbers at the same time. Functionally Pariahs are no different from the standard Necron Warrior.</description>
@@ -45,24 +45,6 @@
 		</costList>
 		
 		<comps>
-			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
-				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
-				<inputDefs>
-					<li>Alien_Terran</li>
-					<li>Alien_Astartes</li>
-					<li>Alien_Sororitas</li>
-				</inputDefs>
-				<requiresPower>true</requiresPower>
-				<outputDef>NecronPariah</outputDef>
-				<forcedBody>Male</forcedBody>
-				<randomHair>True</randomHair>
-				<randomSkinColor>True</randomSkinColor>
-				<finishingSound>AstartesOvenDone</finishingSound>
-				<greenLight>(100, 255, 100, 0)</greenLight>
-				<redLight>(252, 187, 113, 0)</redLight>
-				<cookingTime>4500</cookingTime>
-				<timerBarEnabled>False</timerBarEnabled>
-			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
@@ -78,6 +60,14 @@
 			</li>
 			<li Class="CompProperties_Flickable" />
 		</comps>
+
+		<modExtensions>
+			<li Class="O21Toolbox.PawnConverter.ConverterProperties">
+				<requiresPower>true</requiresPower>
+				<finishingSound>AstartesOvenDone</finishingSound>
+				<timerBarEnabled>False</timerBarEnabled>
+			</li>
+		</modExtensions>
 		
 		<researchPrerequisites>
 			<li>O21_Nec_Research</li>

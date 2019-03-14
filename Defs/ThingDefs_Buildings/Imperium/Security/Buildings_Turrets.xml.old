@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- ================== Manned Gun Complex ================== -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGMannedComplex</defName>
 		<label>Manned Complex</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -149,7 +149,7 @@
 	
 	<!-- ==================Sabre Turret================== -->
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGSabreTurret</defName>
 		<label> Sabre Turret</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -297,7 +297,7 @@
 	
 	<!-- ==================Earthshaker Turret================== -->
 	
-	<!-- <ThingDef ParentName="BuildingBase">
+	<!-- <ThingDef ParentName="O21_BuildingBase">
 		<defName>IGEarthshaker</defName>
 		<label> Earthshaker Cannon</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -450,7 +450,7 @@
 	</ThingDef> -->
 
 <!-- ================== Mobile Heavy Bolter ================== -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGMobileBolter</defName>
 		<label>Mobile Heavy Bolter</label>
 		<thingClass>Building_TurretGun</thingClass>

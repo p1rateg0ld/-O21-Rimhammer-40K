@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Ork Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryFeralGrotChild00</defName>
+		<title>Feral Grot</title>
+		<titleShort>Feral Grot</titleShort>
+		<baseDescription>Dis runt jus' popped outta th' ground!</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>FeralGrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotChild00</defName>
+		<title>Orkoid</title>
+		<titleShort>Orkoid</titleShort>
+		<baseDescription>Dis runt wuz jus' a little snot, now he's eatin' an' bashin'!</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Ork Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotAdult00</defName>
+		<title>Blitza-Bommer Gunner</title>
+		<titleShort>Gunner</titleShort>
+		<baseDescription>[PAWN_nameDef] was dragged an' drown into ‘da gunna seat uv an ork dive bomba known as as blitza-bomma. Da gunnaz job was ta drop da bombs at da korrect time. All while da ork pilot iz speed'n towards da ground kom'n unda enemy fire for da duration. Hop'n ‘dat ‘da pilot remembaz ta pull up. Wun uv 'da most terrify'n 'periences for any grot. [PAWN_nameDef] had ta be accurate droughout all uv dis otherwise dey would face 'da wrath uv dere ork pilot when dey landed. If dey landed.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotAdult01</defName>
+		<title>Ex Killa Kan Pilot</title>
+		<titleShort>Ex-Pilot</titleShort>
+		<baseDescription>Afta be'n painfully wired into a killa kan [PAWN_nameDef] gleefully set about gett'n revenge on dose 'oo had wronged 'em. Lata 'e was sent into WAAAGH! only ta have his kan utterly destroyed. Miraculously [PAWN_nameDef] survived dis destruction an was patched up by a pass'n painboy 'oo was amazed at dis grots strength. Once [PAWN_nameDef] recovered 'e found 'dat 'e had ta hide from all dose 'e had gotten revenge on.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotAdult02</defName>
+		<title>Orderly</title>
+		<titleShort>Orderly</titleShort>
+		<baseDescription>[PAWN_nameDef] followed around an' assisted an ork painboy. Karry'n around all ‘da various "medical" equipment, apply'n bandages, sett'n limbs an' be'n someth'n ta for ‘da unfortunate ork be'n operated on ta thump.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Medicine</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotAdult03</defName>
+		<title>Scrap Collector</title>
+		<titleShort>Scrap Collector</titleShort>
+		<baseDescription>Mekboyz need scrap for all dere various projects. [PAWN_nameDef]'s job was ta go out an' kollect dat scrap. Often from 'da fallen afta a WAAGH!. [PAWN_nameDef] kame ta know which bits uv scrap were 'da most valuable ta 'da mekboyz. Often hav'n ta fight otha gretchen for 'da best bits or hav'n ta finish off a not quite dead foe for wot dey had.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Crafting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotAdult04</defName>
+		<title>Grot Bomb Pilot</title>
+		<titleShort>Bomb Pilot</titleShort>
+		<baseDescription>[PAWN_nameDef] was selected ta become 'da pilot uv a grot bomb. A single use kamikaze weapon. Dese pilots gained 'da respect uv orks an 'da admiration uv otha grots. [PAWN_nameDef] was no 'sept as 'e revelled 'n his new found fame. When WAAAGH! kame 'e was forcefully strapped into ‘da seat. ‘da bomb was fired an' [PAWN_nameDef] flew it into a target. Only ta have it not 'plode. A dud bomb. [PAWN_nameDef] got ta live jus a little bit longa.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotAdult05</defName>
+		<title>Black Marketer</title>
+		<titleShort>Black Marketer</titleShort>
+		<baseDescription>If ya wanted someth'n [PAWN_nameDef] was ‘da wun ya talked ta. 'tra food, grog, stolen goods, even weapons. Not ta mention organiz'n a few bets on 'da side wheneva 'da orks had a punch up. [PAWN_nameDef] had enough teef ta pay for protection so neva had any trouble.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotAdult06</defName>
+		<title>Fungus Farmer</title>
+		<titleShort>Farmer</titleShort>
+		<baseDescription>[PAWN_nameDef] was tasked wit' harvest'n edible fungus for everyone ta eat. Keep'n ‘da snotlings unda kontrol an mak'n sure enough was grown. Not ‘dat orks need food ta survive. Dey jus get mighty angry when dey don't get some. Not ta mention it was a great way for [PAWN_nameDef] ta get some teef an protection.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Plants</defName>
+				<amount>7</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotAdult07</defName>
+		<title>Mek Grot</title>
+		<titleShort>Mek Grot</titleShort>
+		<baseDescription>[PAWN_nameDef] iz pretty well liked by dah local big mek so 'e getz ta help wit' dah tek stuff</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryGrotAdult08</defName>
+		<title>Rebel Grot</title>
+		<titleShort>Rebel Grot</titleShort>
+		<baseDescription>[PAWN_nameDef] was a memba uv 'da grc a very successful rebellion group kurrently liv'n on gorka morka, 'e might be back ‘n a waaagh now but 'da boyz round ere know not ta push 'em around.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>GrotBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>
+
+
+
+

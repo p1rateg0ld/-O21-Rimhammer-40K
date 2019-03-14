@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	
-	<ThingDef Name="O21BuildingBase" Abstract="True">
+	<ThingDef Name="O21O21_BuildingBase" Abstract="True">
 		<category>Building</category>
 		<thingClass>Building</thingClass>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -16,7 +16,7 @@
 		</statBases>
 	</ThingDef>
   
-	<!-- <ThingDef ParentName="O21BuildingBase">
+	<!-- <ThingDef ParentName="O21O21_BuildingBase">
 		<defName>O21ReinforcementBeaconIG</defName>
 		<label>orbital communications array</label>
 		<thingClass>Rimhammer40k.Building_RequisitionRelay</thingClass>

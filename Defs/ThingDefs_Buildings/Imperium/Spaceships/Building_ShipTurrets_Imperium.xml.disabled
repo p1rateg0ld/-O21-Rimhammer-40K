@@ -3,7 +3,7 @@
 
 	<!-- Marauder Bomber Turret -->
 	
-	<ThingDef ParentName="SpaceshipBuildingBase">
+	<ThingDef ParentName="SpaceshipO21_BuildingBase">
 		<defName>MarauderTurret</defName>
 		<label>marauder turret</label>
 		<description>Roof mounted turret attached to the Marauder Bomber.</description>

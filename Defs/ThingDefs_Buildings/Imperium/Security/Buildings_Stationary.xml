@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ==================Main Battle Cannon================== -->
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGStationaryMBC</defName>
 		<label>Main Battle Cannon Emplacement</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -151,7 +151,7 @@
 
 		<!-- ==================Heavy Flamer================== -->
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGStationaryFlamer</defName>
 		<label>Heavy Flamer Emplacement</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -306,7 +306,7 @@
 
 			<!-- ==================Heavy Plasma================== -->
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGStationaryPlasma</defName>
 		<label>Heavy Plasma Emplacement</label>
 		<thingClass>Building_TurretGun</thingClass>

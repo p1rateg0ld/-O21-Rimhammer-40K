@@ -2,7 +2,7 @@
 <Defs>
 
 <!-- ================== Heavy Bolter ================== -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_ImpQuadpod_Bolter</defName>
 		<label>Mobile Heavy Bolter</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -129,7 +129,7 @@
 	</ThingDef>
 	
 <!-- ================== Autocannon ================== -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_ImpQuadpod_Autocannon</defName>
 		<label>Mobile Autocannon</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -254,7 +254,7 @@
 	</ThingDef>
 
 <!-- ================== Lascannon ================== -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_ImpQuadpod_Lascannon</defName>
 		<label>Mobile Lascannon</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -380,7 +380,7 @@
 
 	<!-- ================== Missile ================== -->
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_ImpQuadpod_Missile</defName>
 		<label>Mobile Missle Launcher</label>
 		<thingClass>Building_TurretGun</thingClass>

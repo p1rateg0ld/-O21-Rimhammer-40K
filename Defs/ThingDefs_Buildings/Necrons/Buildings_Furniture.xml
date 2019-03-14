@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>NecronSarcophagus</defName>
 		<label>necron sarcophagus</label>
 		<description>Powered chamber where Necrons slumber.</description>

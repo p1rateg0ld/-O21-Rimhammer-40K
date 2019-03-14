@@ -149,7 +149,7 @@
 	
 	<!-- Generators -->
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>GaussGenerator_A_Small</defName>
 		<label>Small Gauss Generator</label>
 		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe.</description>
@@ -206,7 +206,7 @@
 		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>GaussGenerator_B_Large</defName>
 		<label>Large Gauss Generator</label>
 		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe. Note: Must be placed on a steam geyser</description>
@@ -265,7 +265,7 @@
 		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_NecBattery</defName>
 		<label>necron battery</label>
 		<description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire.</description>

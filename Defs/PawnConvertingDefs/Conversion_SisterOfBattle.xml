@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<O21Toolbox.PawnConverter.PawnConvertingDef>
+		<defName>O21_Conversion_SisterOfBattle</defName>
+		<label>Sister of Battle</label>
+		<description>Converts a terran female into a powerful sister of battle.</description>
+		<orderID>1</orderID>
+
+		<recipeUsers>
+			<li>O21_ConversionPod</li>
+		</recipeUsers>
+		<conversionTime>12000</conversionTime>
+		
+		<requiredResearch>O21_Imp_SMGeneSeed</requiredResearch>
+		<inputDefs>
+			<li>Alien_Terran</li>
+		</inputDefs>
+		<requiredSex>Female</requiredSex>
+
+		<outputDef>Sororitas</outputDef>
+		<forcedBody>Female</forcedBody>
+		<forcedHead>RANDOM</forcedHead>
+		<randomHair>True</randomHair>
+		<randomHairColor>True</randomHairColor>
+	</O21Toolbox.PawnConverter.PawnConvertingDef>
+	
+</Defs>

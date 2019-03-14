@@ -3,7 +3,7 @@
 
 	<!-- Necron Turrets - Green - Light ============================================================== -->
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_NecronGreen_GaussLight</defName>
 		<label>light gauss turret (green)</label>
 		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
@@ -140,7 +140,7 @@
 
 	<!-- Necron Turrets - Green - Heavy ============================================================== -->
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_NecronGreen_GaussHeavy</defName>
 		<label>heavy gauss turret (green)</label>
 		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
@@ -277,7 +277,7 @@
 
 	<!-- Necron Turrets - Orange - Light ============================================================== -->
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_NecronOrange_GaussLight</defName>
 		<label>light gauss turret (orange)</label>
 		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
@@ -414,7 +414,7 @@
 
 	<!-- Necron Turrets - Orange - Heavy ============================================================== -->
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_NecronOrange_GaussHeavy</defName>
 		<label>heavy gauss turret (orange)</label>
 		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
@@ -551,7 +551,7 @@
 
 	<!-- Necron Turrets - Blue - Light ============================================================== -->
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_NecronBlue_GaussLight</defName>
 		<label>light gauss turret (blue)</label>
 		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
@@ -688,7 +688,7 @@
 
 	<!-- Necron Turrets - Blue - Heavy ============================================================== -->
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_NecronBlue_GaussHeavy</defName>
 		<label>heavy gauss turret (blue)</label>
 		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>

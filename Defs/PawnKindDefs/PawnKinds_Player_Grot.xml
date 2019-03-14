@@ -37,4 +37,23 @@
 		</techHediffsTags>
 	</PawnKindDef>
 
+	<PawnKindDef ParentName="BaseGrotPawnKind">
+		<defName>FeralGrot</defName>
+		<label>Feral Grot</label>
+		<defaultFactionType>OrkPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>FeralGrotBackstory</li>
+		</backstoryCategories>
+		<apparelTags>
+			<li>GrotApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.0</techHediffsChance>
+	</PawnKindDef>
+
 </Defs>

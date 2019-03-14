@@ -16,6 +16,7 @@ Summary:
 - New Races/Subraces for Orks and Tyranids
 - Lots of new apparel for the new factions and races.
 - Lots of new buildings for all.
+- Necrons and Orks now have their racial reinforcment methods. (Spores for Orks, Tomb for Necrons)
 - New biomes: Gauss Fields. Will be sort of difficult to play on as any race other than Necrons.
 - Fixes for quite a few bugs but only a couple worth mentioning like the vanishing buildings and the factions hating each other.
 
@@ -44,22 +45,28 @@ Tyranids:
 - [Added] Infection: Genestealer Cultism
 - [Added] GSC versions of Imperium civilian apparel
 Tau:
+- [Added] Racial materials
 - [Added] New Building: Battery
 - [Added] New Building: Crafting Bench
 - [Changed] Weapon and apparel recipes now on new crafting bench
+- [Changed] Weapons, apparel and buildings adjusted to use new materials
 Orks:
 - [Added] New Factions: Deathskulls, Bad Moons and Blood Axes
 - [Added] New apparel for the above factions
 - [Added] New Race: Grotz/Gretchins
-- [Added] Apparel for Gretchins
+- [Added] Apparel for Grotz
 - [Added] Racial Ability: Orkoid Spores
 - [Added] New Building: Battery
 - [Added] New Building: Crafting Bench
+- [Added] Community submitted Grot backstories have been added. 
 - [Changed] Adjusted Generator values
 - [Changed] Weapon and apparel recipes now on new Crafting Bench
 Imperium:
+- [Added] Rockcrete, Ferrocrete and Plascrete
 - [Added] Several "Civilian" Tools/Weapons
 - [Added] Several items of "Civilian" apparel
+- [Added] Race: Ogryn
+- [Added] Ogryn apparel and weapons
 - [Added] New Faction: Adeptus Mechanicus
 - [Added] Adeptus Mechanicus traders to appropriate factions
 - [Added] Adeptus Mechanicus apparel and weapons
@@ -74,6 +81,7 @@ Imperium:
 - [Added] New Building: Promethium Fueled Generator
 - [Changed] Weapon and apparel recipes now on new crafting benches as appropriate
 - [Changed] Imperial Guard armour stats Adjusted
+- [Changed] Imperial Guard Regiments will now spawn with rare Ogryns
 Necrons:
 - [Added] New Faction: Mephrit (Orange Necrons)
 - [Added] New Faction: Thokt (Blue Necrons) 

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SpaceshipBuildingBase">
+	<ThingDef ParentName="SpaceshipO21_BuildingBase">
 		<defName>LandingPad_Imperium</defName>
 		<label>landing pad (imperium)</label>
 		<description>Flat platform allowing voidships to land.</description>

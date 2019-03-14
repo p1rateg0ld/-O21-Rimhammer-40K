@@ -37,4 +37,23 @@
 		</techHediffsTags>
 	</PawnKindDef>
 
+	<PawnKindDef ParentName="BaseOrkPawnKind">
+		<defName>FeralOrk</defName>
+		<label>Feral Ork</label>
+		<defaultFactionType>OrkPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>FeralOrkBackstory</li>
+		</backstoryCategories>
+		<apparelTags>
+			<li>OrkApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.0</techHediffsChance>
+	</PawnKindDef>
+
 </Defs>

@@ -37,12 +37,13 @@ namespace Rimhammer40k.Orks
 
         public void SetNextSporeTick()
         {
-            this.ticksUntilNextSpore = Current.Game.tickManager.TicksGame + UnityEngine.Random.Range(60000, 120000);
+            this.ticksUntilNextSpore = Current.Game.tickManager.TicksGame + UnityEngine.Random.Range(60000, 300000);
         }
 
         public void TryDropSpore()
         {
-            GenSpawn.Spawn(ThingDef.Named("O21_OrkSpore"), pawn.Position, pawn.Map, 0);
+            GenSpawn.Spawn(ThingDef.Named("O21_OrkoidSpore"), pawn.Position, pawn.Map, 0);
+            this.SetNextSporeTick();
         }
     }
 }

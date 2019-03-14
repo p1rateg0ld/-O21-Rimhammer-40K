@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Def Class="StoryFramework.StoryControlDef">
+		<defName>O21_Rimhammer40k</defName>
+        <label>Rimhammer 40k</label>
+		<color>(0,0,0)</color>
+		<borderColor>(0,0,0)</borderColor>
+        <!--Customize the textures of your story's theme (optional)-->
+        <!--Here are the default paths for the textures, make sure to use your own or leave this part out!-->
+        <!-- <activeIconPath>UI/Icons/Active</activeIconPath>
+        <finishedIconPath>UI/Icons/Finished</finishedIconPath>
+        <failedIconPath>UI/Icons/Failed</failedIconPath>
+        <repeatableIconPath>UI/Icons/Repeat</repeatableIconPath>
+        <backGroundPath>UI/MissionBanner</backGroundPath> -->
+	</Def>
+
+</Defs>

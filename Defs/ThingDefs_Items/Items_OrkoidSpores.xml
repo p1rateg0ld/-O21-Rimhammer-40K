@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase" Name="OrkoidSporeBase">
+		<defName>O21_OrkoidSpore</defName>
+		<label>orkoid spore</label>
+  		<description>Orkoid spores are commonly spread from an orkoid species living in the area, they'll eventually plant themselves into the ground and sprout a mushroom on the surface as an Ork or Gretchin grows beneath it. After a day or two you're looking at a full grown orkoid creature jumping out of the ground.
+[Note: Orkoid Spores currently are incomplete, they just spawn an Ork or Grot themselves instead of planting themselves and growing underground, this will change in future]</description>
+		<thingClass>Rimhammer40k.Spore.Spore</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(120,246,150)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MarketValue>0.0</MarketValue>
+			<Mass>0.15</Mass>
+			<Beauty>2</Beauty>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<thingCategories>
+			<li>EggsFertilized</li>
+		</thingCategories>
+  	  	
+		<tickerType>Normal</tickerType>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>1</stackLimit>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+
+  	<ThingDef>
+		<defName>O21_Plant_OrkoidShroom</defName>
+		<label>orkoid mushroom</label>
+    	<description>Most likely a growing ork or grot. These mushrooms pop up from orkoid spores dropped by various orkoid creatures, they only take a day or so before an orkoid creature hops out.</description>
+		<thingClass>Rimhammer40k.Spore.OrkoidShroom</thingClass>
+		<graphicData>
+			<texPath>Things/Plants/OrkoidShroom</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+					<volume>(0.1, 0.2, 0.1)</volume>
+			</shadowData>
+		</graphicData>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+    	
+		<category>Plant</category>
+    	<altitudeLayer>LowPlant</altitudeLayer>
+    	<tickerType>Long</tickerType>
+   	 	<useHitPoints>True</useHitPoints>
+    	<selectable>true</selectable>
+   	 	<drawerType>MapMeshOnly</drawerType>
+    	<neverMultiSelect>false</neverMultiSelect>
+    	<pathCost>10</pathCost>
+		
+		<plant>
+			<fertilityMin>0.7</fertilityMin>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>0.5</growDays>
+			<visualSizeRange>
+				<min>0.6</min>
+				<max>1.1</max>
+			</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+		</plant>
+  	</ThingDef>
+
+</Defs>

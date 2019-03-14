@@ -2,7 +2,7 @@
 <Defs>
 
 <!-- ================== Eldar Brightlance ================== -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>ELDBrightlance</defName>
 		<label>Brightlance Turret</label>
 		<thingClass>Building_TurretGun</thingClass>
@@ -155,7 +155,7 @@
 	</ThingDef>
 	
 	<!-- ================== Eldar Vibro Cannon ================== -->
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>ELDVibrocannon</defName>
 		<label>Vibro Cannon Turret</label>
 		<thingClass>Building_TurretGun</thingClass>

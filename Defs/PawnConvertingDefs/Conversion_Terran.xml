@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<O21Toolbox.PawnConverter.PawnConvertingDef>
+		<defName>O21_Conversion_Terran</defName>
+		<label>Terran Training</label>
+		<description>Converts a typical human colonist into a mentally and physically hardened Terran.</description>
+		<orderID>0</orderID>
+
+		<recipeUsers>
+			<li>O21_ConversionPod</li>
+			<li>O21_CanoptekCanneryGreen</li>
+		</recipeUsers>
+		<conversionTime>12000</conversionTime>
+
+		<inputDefs>
+			<li>Human</li>
+		</inputDefs>
+
+		<vanillaToAlien>True</vanillaToAlien>
+		<outputDef>Terran</outputDef>
+	</O21Toolbox.PawnConverter.PawnConvertingDef>
+	
+</Defs>

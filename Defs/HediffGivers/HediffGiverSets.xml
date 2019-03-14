@@ -48,5 +48,14 @@
 			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>
+
+	<HediffGiverSetDef>
+    <defName>O21_Construct</defName>
+		<hediffGivers>
+			<li Class="HediffGiver_Bleeding">
+				<hediff>O21_Construct_CoolantLoss</hediff>
+			</li>
+		</hediffGivers>
+  	</HediffGiverSetDef>
 	
 </Defs>

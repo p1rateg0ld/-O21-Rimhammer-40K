@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StoryFramework.MissionDef>
+		<defName>O21_General_Restrict</defName>
+		<label>[General] Tutorial: Restrictions</label>
+		<description>Races in Rimhammer 40k sometimes have specific restrictions placed on the equipment they use to prevent others from using it. A few examples are Tau, Space Marines, Eldar and Sisters of Battle. 
+		
+There are others but it's good to keep this in mind when checking what equipment you want to make, be sure to check their stats for any restrictions placed on them. This is done usually because it happens to be the only body shape available for the race and allowing the clothing on any other race would just make it show up as a big pink square or the texture just would look ridiculous on them.
+
+Along with racial restrictions some items may have other types of restriction, such as body type for apparel, or requiring a specific piece of apparel to work such as a back mounted promethium tank to use a heavy flamer. These are also listed in the stats of the items.</description>
+		<objectives>
+			<li>O21_General_Restrict_01</li>
+		</objectives>
+		<chronological>true</chronological>
+		<hideOnComplete>true</hideOnComplete>
+		<repeatable>false</repeatable>
+	</StoryFramework.MissionDef>
+
+	<StoryFramework.ObjectiveDef>
+		<defName>O21_General_Restrict_01</defName>
+		<label>Wait</label>
+		<description>[This mission purely exists as a helpful tutorial, it will remove itself in 3 days.]</description>
+		<type>Wait</type>
+		<timer>
+			<days>3</days>
+			<continueWhenFinished>false</continueWhenFinished>
+		</timer>
+		<images>
+        	<li>Story/Tutorial/ApparelRestriction</li>
+    	</images>
+	</StoryFramework.ObjectiveDef>
+
+</Defs>

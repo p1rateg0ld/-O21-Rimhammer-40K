@@ -257,20 +257,12 @@
 			</litterSizeCurve>
 			<lifeStageAges>
 				<li>
-					<def>BabyGrotStage</def>
+					<def>TeenGrotStage</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>ChildGrotStage</def>
-					<minAge>2</minAge>
-				</li>
-				<li>
-					<def>TeenGrotStage</def>
-					<minAge>11</minAge>
-				</li>
-				<li>
 					<def>AdultGrotStage</def>
-					<minAge>16</minAge>
+					<minAge>1</minAge>
 				</li>
 				<li>
 					<def>ElderGrotStage</def>

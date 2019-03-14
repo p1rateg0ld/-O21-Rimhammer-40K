@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SpaceshipBuildingBase">
+	<ThingDef ParentName="SpaceshipO21_BuildingBase">
 		<defName>LandingPadBeacon</defName>
 		<label>landing pad beacon</label>
 		<description>Beacon used by ships to land on.</description>
@@ -39,7 +39,7 @@
 		</statBases>
 	</ThingDef>
 
-	<ThingDef ParentName="SpaceshipBuildingBase">
+	<ThingDef ParentName="SpaceshipO21_BuildingBase">
 		<defName>LandingPadBeaconGlowerRed</defName>
 		<label>beacon light</label>
 		<description>Landing pad beacon red light.</description>
@@ -63,7 +63,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SpaceshipBuildingBase">
+	<ThingDef ParentName="SpaceshipO21_BuildingBase">
 		<defName>LandingPadBeaconGlowerGreen</defName>
 		<label>beacon light</label>
 		<description>Landing pad beacon green light.</description>
@@ -87,7 +87,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="SpaceshipBuildingBase">
+	<ThingDef ParentName="SpaceshipO21_BuildingBase">
 		<defName>LandingPadBeaconGlowerWhite</defName>
 		<label>beacon light</label>
 		<description>Landing pad beacon white light.</description>

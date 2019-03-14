@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_ImpGenerator_A_Small</defName>
 		<label>Small Imperial Generator</label>
 		<description>Generates energy through technology unknown to most of the Imperium, all they need to know is that it works.</description>
@@ -65,7 +65,7 @@
 		<designatorDropdown>RH_ImpPowerGen</designatorDropdown>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_ImpGenerator_B_Large</defName>
 		<label>Large Imperial Generator</label>
 		<description>Generates energy through technology unknown to most of the Imperium, all they need to know is that it works. Note: Must be placed on a steam geyser</description>
@@ -133,7 +133,7 @@
 		<designatorDropdown>RH_ImpPowerGen</designatorDropdown>
 	</ThingDef>
 
-  	<ThingDef ParentName="BuildingBase">
+  	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_PromethiumPoweredGenerator</defName>
 		<label>promethium powered generator</label>
 		<description>Produces power by consuming promethium or "chemfuel" to the native populace of this world. Must be periodically refueled by hand, or be supplied by promethium piping.</description>
@@ -216,7 +216,7 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_ImpBattery</defName>
 		<label>imperial battery</label>
 		<description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire.</description>

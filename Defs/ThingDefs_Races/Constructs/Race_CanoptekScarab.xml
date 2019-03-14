@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="O21_ConstructBase">
+		<defName>ConstructSwarmScarab</defName>
+		<label>small canoptek scarab</label>
+		<description>A small Necron Canoptek Scarab, they wonder around aimlessly till they aquire a target.</description>
+		<graphicData>
+			<texPath>Things/Necron/Constructs/Scarab/Necron_Scarab</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>0.8</drawSize>
+			<shadowData>
+					<volume>(0.4, 0.4, 0.4)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MoveSpeed>6.6</MoveSpeed>
+			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>CanoptekScarab</body>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHealthScale>1.0</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Melee_MechanoidSlash_HitBuilding</soundWounded>
+					<!--soundDeath>Pawn_Mech_Scyther_Death</soundDeath-->
+					<!--soundCall>Pawn_Mech_Scyther_Call</soundCall-->
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>2000</min>
+				<max>4000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+			<ageGenerationCurve>
+				<points>
+					<li>(1,0)</li>
+					<li>(16,100)</li>
+					<li>(200,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>O21_Construct</li>
+			</hediffGiverSets>
+		</race>
+		<butcherProducts>
+			<Necrodermis>5</Necrodermis>
+			<GaussCrystalGreen>2</GaussCrystalGreen>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="Rimhammer40k.Necrons.NecronTweaker">
+				<tweakNecronResurrect>false</tweakNecronResurrect>
+				<tweakCorpseRot>true</tweakCorpseRot>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<PawnKindDef>
+		<defName>ConstructSwarmScarab</defName>
+		<label>canoptek scarab</label>
+		<race>ConstructSwarmScarab</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<defaultFactionType>O21_FriendlyConstruct_Necron</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<isFighter>true</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Necron/Constructs/Scarab/Necron_Scarab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+					<shadowData>
+							<volume>(0.4, 0.4, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+</Defs>

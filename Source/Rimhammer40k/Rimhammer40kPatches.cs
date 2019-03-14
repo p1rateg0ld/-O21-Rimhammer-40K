@@ -24,28 +24,5 @@ namespace Rimhammer40k
 
             Rimhammer40k.PatchAll(Assembly.GetExecutingAssembly());
         }
-
-        [HarmonyPatch(typeof(UI_BackgroundMain)), HarmonyPatch("BackgroundOnGUI"), StaticConstructorOnStartup]
-        internal static class Custom_UI_BackgroundMain
-        {
-            private static readonly Texture2D Custom_Background = ContentFinder<Texture2D>.Get("ui/heroart/RimhammerNecronBG", true);
-
-            internal static readonly Vector2 MainBackgroundSize = new Vector2(2048f, 1280f);
-
-            private static bool Prefix()
-            {
-                if (Rimhammer40kSettings.settings.UseCustomBackground)
-                {
-                    if (Custom_Background)
-                    {
-                        float width = (float)UI.screenWidth;
-                        float num = (float)UI.screenWidth * (MainBackgroundSize.y / MainBackgroundSize.x);
-                        GUI.DrawTexture(new Rect(0f, (float)UI.screenHeight / 2f - num / 2f, width, num), Custom_Background, ScaleMode.ScaleToFit, true);
-                    }
-                    return false;
-                }
-                return true;
-            }
-        }
     }
 }

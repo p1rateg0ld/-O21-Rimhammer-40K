@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<O21Toolbox.PawnConverter.PawnConvertingDef>
+		<defName>O21_Conversion_SpaceMarine</defName>
+		<label>space marine conversion</label>
+		<description>Converts a terran male into a powerful space marine.</description>
+		<orderID>2</orderID>
+
+		<recipeUsers>
+			<li>O21_ConversionPod</li>
+		</recipeUsers>
+		<conversionTime>12000</conversionTime>
+		
+		<requiredResearch>O21_Imp_SMGeneSeed</requiredResearch>
+		<inputDefs>
+			<li>Alien_Terran</li>
+		</inputDefs>
+		<requiredSex>Male</requiredSex>
+
+		<outputDef>Astartes</outputDef>
+		<forcedBody>Hulk</forcedBody>
+	</O21Toolbox.PawnConverter.PawnConvertingDef>
+
+</Defs>

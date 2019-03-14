@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGSabreProjector</defName>
 		<label>sabre projector</label>
 		<description>A projector mounted on a sabre turret chassis. Can automatically lock onto a nearby hostile. Can be built under roof.</description>
@@ -67,7 +67,7 @@
 		</placeWorkers>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 	<defName>IGSabreProjectorLight</defName>
 	<label>projector light</label>
 	<description>Projector light.</description>

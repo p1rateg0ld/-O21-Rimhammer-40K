@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ThingDef ParentName="BuildingBase">
+	<!-- <ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_AstartesConverter</defName>
 		<label>astartes oven</label>
 		<description>An automated device for finalizing new astartes in the field. The process can have interesting effects on the persons mind and often the people they once knew will be strangers, even those people may have a hard time recognising the man who entered the chamber as the same one who left.</description>
-		<!-- Converter MUST be this class to function with the comp further below. -->
 		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
 		
 		<altitudeLayer>Building</altitudeLayer>
@@ -86,7 +85,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_SororitasConverter</defName>
 		<label>sororitas steamer</label>
 		<description>An automated device for quickly training and enhancing new sororitas in the field. The process can have interesting effects on the persons mind and often the people they once knew will be strangers, even those people may have a hard time recognising the woman who entered the chamber as the same one who left.</description>
@@ -169,12 +168,12 @@
 		<researchPrerequisites>
 			<li>O21_Imp_SMGeneSeed</li>
 		</researchPrerequisites>
-	</ThingDef>
+	</ThingDef> -->
 	
-	<ThingDef ParentName="BuildingBase">
-		<defName>O21_TerranTrainingTube</defName>
-		<label>terran training tube</label>
-		<description>Your one stop shop for Terran training, when you need your puny average humans to stop moaning about how they don't have a table or some other bitch ass complaint, pop them in here and they'll be out and ready to brave the harsh grim dark reality that surrounds them.</description>
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>O21_ConversionPod</defName>
+		<label>conversion pod</label>
+		<description>Standard pod used for converting pawns, available recipes depends on research.</description>
 		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
 		
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -212,26 +211,12 @@
 		</building>
 		
 		<costList>
-		  <CeramiteMedGrade>180</CeramiteMedGrade>
-		  <CeramiteHighGrade>40</CeramiteHighGrade>
-		  <ComponentIndustrial>15</ComponentIndustrial>
-		  <ComponentSpacer>5</ComponentSpacer>
+		  <CeramiteMedGrade>120</CeramiteMedGrade>
+		  <ComponentIndustrial>8</ComponentIndustrial>
+		  <ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		
 		<comps>
-			<li Class="O21Toolbox.PawnConverter.CompProperties_Converter">
-				<compClass>O21Toolbox.PawnConverter.Comp_Converter</compClass>
-				<inputDefs>
-					<li>Human</li>
-				</inputDefs>
-				<useOldStoryTransfer>True</useOldStoryTransfer>
-				<requiresPower>true</requiresPower>
-				<outputDef>Terran</outputDef>
-				<finishingSound>AstartesOvenDone</finishingSound>
-				<greenLight>(100, 255, 100, 0)</greenLight>
-				<redLight>(252, 187, 113, 0)</redLight>
-				<cookingTime>12000</cookingTime>
-			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
@@ -247,8 +232,17 @@
 			</li>
 			<li Class="CompProperties_Flickable" />
 		</comps>
+
+		<modExtensions>
+			<li Class="O21Toolbox.PawnConverter.ConverterProperties">
+				<requiresPower>true</requiresPower>
+				<finishingSound>AstartesOvenDone</finishingSound>
+				<timerBarEnabled>True</timerBarEnabled>
+			</li>
+		</modExtensions>
+
 		<researchPrerequisites>
-			<li>O21_Imp_SMGeneSeed</li>
+			<li>O21_Imp_Research</li>
 		</researchPrerequisites>
 	</ThingDef>
 	

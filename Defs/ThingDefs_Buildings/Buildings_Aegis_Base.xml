@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--Setting up the base for Aegis walls -->
-	<ThingDef ParentName="BuildingBase" Name="O21_AegisWall_Base" Abstract="True">
+	<ThingDef ParentName="O21_BuildingBase" Name="O21_AegisWall_Base" Abstract="True">
 		<defName>AegisWall_Base</defName>
 		<label>Aegis Wall</label>
 		<description>A defensive wall that provide cover to fire from.</description>

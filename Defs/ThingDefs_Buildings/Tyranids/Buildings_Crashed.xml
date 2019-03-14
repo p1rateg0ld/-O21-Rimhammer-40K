@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--
-	<ThingDef ParentName="BuildingBase" Name="TyranidOrganicBuildingBase" Abstract="True">
+	<ThingDef ParentName="O21_BuildingBase" Name="TyranidOrganicO21_BuildingBase" Abstract="True">
 		<thingClass>Building_MyceticSpore</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>150</pathCost>
@@ -42,7 +42,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="TyranidOrganicBuildingBase">
+	<ThingDef ParentName="TyranidOrganicO21_BuildingBase">
 		<defName>CrashedMyceticSpore</defName>
 		<label>mycetic spore</label>
 		<description>Mycetic Spores are large, living shells used to transport Tyranid creatures from Tyranid Hive Ships to a planet's surface. They could be considered the Tyranid equivalent of an Imperial Drop Pod.</description>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>EldGenerator_A_Small</defName>
 		<label>Small Eldar Generator</label>
 		<description>Our power generation is far superior to the more pitiful attempts by inferior races, bask in its majesty!</description>
@@ -70,7 +70,7 @@
 		<designatorDropdown>RH_EldarPowerGen</designatorDropdown>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>EldGenerator_B_Large</defName>
 		<label>Large Eldar Generator</label>
 		<description>Our power generation is far superior to the more pitiful attempts by inferior races, bask in its majesty! Note: Must be placed on a steam geyser</description>

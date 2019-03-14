@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase" Name="NecronTombBase">
+	<ThingDef ParentName="O21_BuildingBase" Name="NecronTombBase">
 		<defName>NecronTomb_Green</defName>
 		<label>necron tomb (green)</label>
 		<description>Used to awaken necrons from their slumber beneath the surface.</description>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Heavy Bolter -->
-	<ThingDef Name="O21_Turret_ImpWheeled" ParentName="BuildingBase">
+	<ThingDef Name="O21_Turret_ImpWheeled" ParentName="O21_BuildingBase">
 		<defName>O21_Turret_ImpWheeled_HeavyBolter</defName>
 		<label>Wheeled Heavy Bolter</label>
 		<description>A wheeled weapons platform fitted with a Heavy Bolter.</description>

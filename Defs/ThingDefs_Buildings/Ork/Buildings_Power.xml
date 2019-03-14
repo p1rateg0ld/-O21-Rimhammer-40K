@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>OrkGenerator_A_Small</defName>
 		<label>Small Ork Generator</label>
 		<description>Dis should be gud enough ta get our gear runn'n!</description>
@@ -70,7 +70,7 @@
 		<designatorDropdown>RH_OrkPowerGen</designatorDropdown>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="O21_BuildingBase">
 		<defName>OrkGenerator_B_Large</defName>
 		<label>Large Ork Generator</label>
 		<description>We need more power, so lets jus makoe da small wun bigger! Note: Mus' be put on top o' a steam geysa</description>

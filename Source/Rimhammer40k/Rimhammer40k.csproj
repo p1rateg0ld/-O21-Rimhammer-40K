@@ -35,12 +35,17 @@
       <HintPath>..\..\..\[O21] Toolbox\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\Mods_Old\AlienRace\Assemblies\AlienRace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="HugsLib">
-      <HintPath>..\..\..\..\..\..\..\..\..\Users\Dean\Google Drive\Rimworld Mods\Mod Sources\RimworldHugsLib-master\Mods\HugsLib\Assemblies\HugsLib.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\GoogleDrive\Rimworld Mods\Mod Sources\RimworldHugsLib-master\Mods\HugsLib\Assemblies\HugsLib.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,18 +64,18 @@
     <Compile Include="Biomes\BiomeWorker_GaussDesertGreen.cs" />
     <Compile Include="Biomes\BiomeWorker_GaussDesertOrange.cs" />
     <Compile Include="Common\CompHelp.cs" />
-    <Compile Include="Constructs\AI\JobDriver_ReturnToStation.cs" />
-    <Compile Include="Constructs\AI\JobDriver_SelfTerminate.cs" />
-    <Compile Include="Constructs\AI\JobGiver_ConstructFlee.cs" />
-    <Compile Include="Constructs\AI\JobGiver_ConstructMain.cs" />
-    <Compile Include="Constructs\Building_ConstructStation.cs" />
-    <Compile Include="Constructs\Building_ConstructStationRefuelable.cs" />
-    <Compile Include="Constructs\Building_ConstructStationSpecialGraphics.cs" />
-    <Compile Include="Constructs\Building_WorkGiver_ConstructStation.cs" />
-    <Compile Include="Constructs\ConstructBackstories.cs" />
-    <Compile Include="Constructs\ConstructDefOf.cs" />
-    <Compile Include="Constructs\DefModExtension_ConstructStation.cs" />
-    <Compile Include="Constructs\Pawn_Construct.cs" />
+    <None Include="Constructs\AI\JobDriver_ReturnToStation.cs" />
+    <None Include="Constructs\AI\JobDriver_SelfTerminate.cs" />
+    <None Include="Constructs\AI\JobGiver_ConstructFlee.cs" />
+    <None Include="Constructs\AI\JobGiver_ConstructMain.cs" />
+    <None Include="Constructs\Building_ConstructStation.cs" />
+    <None Include="Constructs\Building_ConstructStationRefuelable.cs" />
+    <None Include="Constructs\Building_ConstructStationSpecialGraphics.cs" />
+    <None Include="Constructs\Building_WorkGiver_ConstructStation.cs" />
+    <None Include="Constructs\ConstructBackstories.cs" />
+    <None Include="Constructs\ConstructDefOf.cs" />
+    <None Include="Constructs\DefModExtension_ConstructStation.cs" />
+    <None Include="Constructs\Pawn_Construct.cs" />
     <Compile Include="Crystal.cs" />
     <Compile Include="Biomes\GenStep_Blackstone.cs" />
     <Compile Include="Eldar\SpiritStone.cs" />
@@ -93,6 +98,10 @@
     <Compile Include="Biomes\TerrainDefOf.cs" />
     <Compile Include="Biomes\ThingDefOf.cs" />
     <Compile Include="Rimhammer40kController.cs" />
+    <Compile Include="Spore\CompProperties_SporeSelfPlanting.cs" />
+    <Compile Include="Spore\Comp_SporeSelfPlanting.cs" />
+    <Compile Include="Spore\OrkoidShroom.cs" />
+    <Compile Include="Spore\Spore.cs" />
     <Compile Include="ThoughtWorker_ConstructAlways.cs" />
     <Compile Include="Necrons\CompProperties_NecronResurrection.cs" />
     <Compile Include="Necrons\HediffGiver_BirthdayNecron.cs" />
@@ -100,7 +109,7 @@
     <Compile Include="Necrons\NecronTweaker.cs" />
     <Compile Include="Necrons\HediffNecronGrowingPart.cs" />
     <Compile Include="Necrons\PawnKindDef.cs" />
-    <Compile Include="Settings\Rimhammer40kModSettings.cs" />
+    <Compile Include="Settings.cs" />
     <None Include="Building_GraphicSwitchableDef.cs" />
     <Compile Include="Logic\BodyPartUtility.cs" />
     <Compile Include="Necrons\HediffNecrodermisRepair.cs" />

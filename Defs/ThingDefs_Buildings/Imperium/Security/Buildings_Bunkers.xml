@@ -2,7 +2,7 @@
 <Defs>
 	
 	<!-- ========== Tier 1 Small Bunker ========== -->
-  	<ThingDef ParentName="BuildingBase" Name="BunkerTier1Small">
+  	<ThingDef ParentName="O21_BuildingBase" Name="BunkerTier1Small">
 		<defName>O21_Bunker_Tier1_Small</defName>
 		<label>imperial bunker (tier 1, small)</label>
 		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
@@ -63,7 +63,7 @@
   	</ThingDef>
 	
 	<!-- ========== Tier 1 Medium Bunker ========== -->
-  	<ThingDef ParentName="BuildingBase" Name="BunkerTier1Medium">
+  	<ThingDef ParentName="O21_BuildingBase" Name="BunkerTier1Medium">
 		<defName>O21_Bunker_Tier1_Medium</defName>
 		<label>imperial bunker (tier 1, medium)</label>
 		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
@@ -124,7 +124,7 @@
   	</ThingDef>
 	
 	<!-- ========== Tier 1 Large Bunker ========== -->
-  	<ThingDef ParentName="BuildingBase" Name="BunkerTier1Large">
+  	<ThingDef ParentName="O21_BuildingBase" Name="BunkerTier1Large">
 		<defName>O21_Bunker_Tier1_Large</defName>
 		<label>imperial bunker (tier 1, large)</label>
 		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
@@ -185,7 +185,7 @@
   	</ThingDef>
 	
 	<!-- ========== Tier 2 Small Bunker ========== -->
-  	<ThingDef ParentName="BuildingBase" Name="BunkerTier2Small">
+  	<ThingDef ParentName="O21_BuildingBase" Name="BunkerTier2Small">
 		<defName>O21_Bunker_Tier2_Small</defName>
 		<label>imperial bunker (tier 2, small)</label>
 		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
@@ -247,7 +247,7 @@
   	</ThingDef>
 	
 	<!-- ========== Tier 2 Large Bunker ========== -->
-  	<ThingDef ParentName="BuildingBase" Name="BunkerTier2Large">
+  	<ThingDef ParentName="O21_BuildingBase" Name="BunkerTier2Large">
 		<defName>O21_Bunker_Tier2_Large</defName>
 		<label>imperial bunker (tier 2, large)</label>
 		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>
@@ -309,7 +309,7 @@
   	</ThingDef>
 	
 	<!-- ========== Tier 3 Large Bunker ========== -->
-  	<ThingDef ParentName="BuildingBase" Name="BunkerTier3Large">
+  	<ThingDef ParentName="O21_BuildingBase" Name="BunkerTier3Large">
 		<defName>O21_Bunker_Tier3_Large</defName>
 		<label>imperial bunker (tier 3, large)</label>
 		<description>Imperial bunker, keeps pawns inside safe while letting them fire out. Stored ammo inside may become volatile if the bunker is compromised.</description>

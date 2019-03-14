@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StoryFramework.MissionDef>
+		<defName>O21_General_DropdownSelectors</defName>
+		<label>[General] Tutorial: Dropdown Selectors</label>
+		<description>To avoid clogging up the build menu we've come up with a solution in Rimhammer 40k using the same style of selection as most things in vanilla have for selecting the material you build with, in this case you'll be using it to choose specifically what you want to make out of a type of object. So when it comes to Necrons it's simply used to choose the colour of gauss crystals you use and thus the colour of the energy visually shown on the structure as a whole.
+		
+All factions use this, so keep an eye out for the little mark like in the image on icons when building, you might have been missing something when it was right in front of you the whole time.</description>
+		<objectives>
+			<li>O21_General_DropdownSelectors_01</li>
+		</objectives>
+		<chronological>true</chronological>
+		<hideOnComplete>true</hideOnComplete>
+		<repeatable>false</repeatable>
+	</StoryFramework.MissionDef>
+
+	<StoryFramework.ObjectiveDef>
+		<defName>O21_General_DropdownSelectors_01</defName>
+		<label>Wait</label>
+		<description>[This mission purely exists as a helpful tutorial, it will remove itself in 3 days.]</description>
+		<type>Wait</type>
+		<timer>
+			<days>3</days>
+			<continueWhenFinished>false</continueWhenFinished>
+		</timer>
+		<images>
+        	<li>Story/Tutorial/Dropdown01</li>
+        	<li>Story/Tutorial/Dropdown02</li>
+    	</images>
+	</StoryFramework.ObjectiveDef>
+
+</Defs>

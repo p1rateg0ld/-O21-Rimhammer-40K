@@ -132,7 +132,8 @@
 					<li>PsychicSensitivity</li>
 					<li>Cannibal</li>
 					<li>TooSmart</li>
-					<li>Prosthophobe</li>
+					<li>Transhumanist</li>
+					<li>BodyPurist</li>
 					<li>Greedy</li>
 					<li>Jealous</li>
 					<li>Nudist</li>
@@ -142,6 +143,7 @@
 					<li>CreepyBreathing</li>
 					<li>Pyromaniac</li>
 					<li>Wimp</li>
+					<li>Gourmand</li>
 				</disallowedTraits>
 				<alienPartGenerator>
 					<useGenderedHeads>false</useGenderedHeads>
@@ -225,7 +227,7 @@
 					<li>KnowColonistExecuted</li>
 					<li>KnowPrisonerDiedInnocent</li>
 					<li>KnowColonistDied</li>
-					<li>PawnWithGoodOpinionDied</li>
+					<li>ProsthophileNoProsthetic</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction>
