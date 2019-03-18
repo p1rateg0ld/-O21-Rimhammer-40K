@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ThingDef ParentName="O21_BuildingBase">
 		<defName>NecronSarcophagus</defName>
 		<label>necron sarcophagus</label>
@@ -60,11 +61,148 @@
 			<Necrodermis>40</Necrodermis>
 			<GaussCrystalGreen>10</GaussCrystalGreen>
 		</costList>
+
+		<designatorDropdown>RH_NecSarcophagi</designatorDropdown>
 		
 		<researchPrerequisites>
 			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>NecronSarcophagusBlue</defName>
+		<label>necron sarcophagus (blue)</label>
+		<description>Powered chamber where Necrons slumber.</description>
 		
+		<graphicData>
+			<texPath>Things/Necron/Building/Sarcophagus/Blue/NecronSarcophagus</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		
+		<uiIconScale>0.70</uiIconScale>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<canOverlapZones>false</canOverlapZones>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>true</useHitPoints>
+		<designationCategory>Furniture</designationCategory>
+		<passability>Standable</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<techLevel>Archotech</techLevel>
+		
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Comfort>1.0</Comfort>
+			<Beauty>1</Beauty>
+			<Mass>20</Mass>
+		</statBases>
+		
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li>
+				<compClass>O21Toolbox.Needs.Comp_Hibernation</compClass>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.5</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		
+		<costList>
+			<Necrodermis>40</Necrodermis>
+			<GaussCrystalBlue>10</GaussCrystalBlue>
+		</costList>
+
+		<designatorDropdown>RH_NecSarcophagi</designatorDropdown>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>NecronSarcophagusOrange</defName>
+		<label>necron sarcophagus (orange)</label>
+		<description>Powered chamber where Necrons slumber.</description>
+		
+		<graphicData>
+			<texPath>Things/Necron/Building/Sarcophagus/Orange/NecronSarcophagus</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+		</graphicData>
+		
+		<uiIconScale>0.70</uiIconScale>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<canOverlapZones>false</canOverlapZones>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>true</useHitPoints>
+		<designationCategory>Furniture</designationCategory>
+		<passability>Standable</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<techLevel>Archotech</techLevel>
+		
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Comfort>1.0</Comfort>
+			<Beauty>1</Beauty>
+			<Mass>20</Mass>
+		</statBases>
+		
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li>
+				<compClass>O21Toolbox.Needs.Comp_Hibernation</compClass>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.5</glowRadius>
+				<glowColor>(252,187,80, 0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		
+		<costList>
+			<Necrodermis>40</Necrodermis>
+			<GaussCrystalOrange>10</GaussCrystalOrange>
+		</costList>
+
+		<designatorDropdown>RH_NecSarcophagi</designatorDropdown>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 </Defs>

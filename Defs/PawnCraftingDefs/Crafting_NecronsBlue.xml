@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<O21Toolbox.PawnCrafter.PawnCraftingDef>
+		<defName>PawnCraft_SpyderBlue</defName>
+		<label>Canoptek Spyder</label>
+		<pawnKind>NecronSpyderBlue</pawnKind>
+		<orderID>1</orderID>
+		<costList>
+			<Necrodermis>600</Necrodermis>
+			<GaussCrystalBlue>60</GaussCrystalBlue>
+		</costList>
+		<timeCost>24000</timeCost>
+		<recipeUser>NecronTomb_Blue</recipeUser>
+		<requiredResearch>O21_Nec_Research</requiredResearch>
+	</O21Toolbox.PawnCrafter.PawnCraftingDef>
+
+	<O21Toolbox.PawnCrafter.PawnCraftingDef>
+		<defName>PawnCraft_NecronWarriorBlue</defName>
+		<label>Necron Warrior</label>
+		<pawnKind>NecronWarriorBlue</pawnKind>
+		<orderID>2</orderID>
+		<costList>
+			<Necrodermis>200</Necrodermis>
+			<GaussCrystalBlue>30</GaussCrystalBlue>
+		</costList>
+		<timeCost>15000</timeCost>
+		<recipeUser>NecronTomb_Blue</recipeUser>
+		<requiredResearch>O21_Nec_Research</requiredResearch>
+	</O21Toolbox.PawnCrafter.PawnCraftingDef>
+
+	<O21Toolbox.PawnCrafter.PawnCraftingDef>
+		<defName>PawnCraft_NecronDeathmarkBlue</defName>
+		<label>Necron Deathmark</label>
+		<pawnKind>NecronDeathmarkBlue</pawnKind>
+		<orderID>3</orderID>
+		<timeCost>15000</timeCost>
+		<costList>
+			<Necrodermis>230</Necrodermis>
+			<GaussCrystalBlue>30</GaussCrystalBlue>
+		</costList>
+		<recipeUser>NecronTomb_Blue</recipeUser>
+		<requiredResearch>O21_Nec_Research</requiredResearch>
+	</O21Toolbox.PawnCrafter.PawnCraftingDef>
+
+	<O21Toolbox.PawnCrafter.PawnCraftingDef>
+		<defName>PawnCraft_NecronLordBlue</defName>
+		<label>Necron Lord</label>
+		<pawnKind>NecronLordBlue</pawnKind>
+		<orderID>4</orderID>
+		<timeCost>30000</timeCost>
+		<costList>
+			<Necrodermis>300</Necrodermis>
+			<GaussCrystalBlue>60</GaussCrystalBlue>
+		</costList>
+		<recipeUser>NecronTomb_Blue</recipeUser>
+		<requiredResearch>O21_Nec_Research</requiredResearch>
+	</O21Toolbox.PawnCrafter.PawnCraftingDef>
+	
+</Defs>

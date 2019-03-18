@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="IGOgrynBase" Abstract="True">
+		<defName>IGBase</defName>
+		<label>Guardsman</label>
+		<race>Alien_Ogryn</race>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>OgrynBackstory</li>
+		</backstoryCategories>
+		<combatPower>250</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>45</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelTags>
+			<li>CadianApparel</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>IGCadianRanged</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>3.0</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>25</min>
+						<max>200</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGOgrynBase">
+		<defName>IGOgryn_Cadian</defName>
+		<label>Ogryn</label>
+		<labelPlural>Ogryns</labelPlural>
+		<defaultFactionType>IGCadian412</defaultFactionType>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>OgrynCadianBodysuit</li>
+			<li>OgrynCadianArmor</li>
+			<li>OgrynRebreather</li>
+		</apparelRequired>
+		<combatPower>250</combatPower>
+		<apparelTags Inherit="False">
+			<li>OgrynCadianApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGOgrynBase">
+		<defName>IGOgryn_Catachan</defName>
+		<label>Ogryn</label>
+		<labelPlural>Ogryns</labelPlural>
+		<defaultFactionType>CatachanXXV</defaultFactionType>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>OgrynCatachanPants</li>
+			<li>OgrynHelmetCatachan</li>
+		</apparelRequired>
+		<combatPower>250</combatPower>
+		<apparelTags Inherit="False">
+			<li>OgrynCatachanApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGOgrynBase">
+		<defName>IGOgryn_Krieg</defName>
+		<label>Ogryn</label>
+		<labelPlural>Ogryns</labelPlural>
+		<defaultFactionType>IGKrieg143</defaultFactionType>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>OgrynKriegBodysuit</li>
+			<li>OgrynKriegArmor</li>
+		</apparelRequired>
+		<combatPower>250</combatPower>
+		<apparelTags Inherit="False">
+			<li>OgrynKriegApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGOgrynBase">
+		<defName>IGOgryn_SteelLegion</defName>
+		<label>Ogryn</label>
+		<labelPlural>Ogryns</labelPlural>
+		<defaultFactionType>IGSteelLegion808</defaultFactionType>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>OgrynSteelLegionBodysuit</li>
+			<li>OgrynSteelLegionArmor</li>
+		</apparelRequired>
+		<combatPower>250</combatPower>
+		<apparelTags Inherit="False">
+			<li>OgrynSteelLegionApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="IGOgrynBase">
+		<defName>IGOgryn_Valhallan</defName>
+		<label>Ogryn</label>
+		<labelPlural>Ogryns</labelPlural>
+		<defaultFactionType>IGValhallan597</defaultFactionType>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li>OgrynValhallanBodysuit</li>
+			<li>OgrynValhallanFurhat</li>
+		</apparelRequired>
+		<combatPower>250</combatPower>
+		<apparelTags Inherit="False">
+			<li>OgrynValhallanApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+</Defs>

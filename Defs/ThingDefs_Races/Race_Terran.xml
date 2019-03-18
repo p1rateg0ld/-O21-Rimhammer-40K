@@ -686,5 +686,151 @@ There is naturally some overlap between the duties of the Sisterhood and the Imp
 			<lifeExpectancy>150</lifeExpectancy>
 		</race>
 	</AlienRace.ThingDef_AlienRace>	
+
+	<AlienRace.ThingDef_AlienRace ParentName="Alien_Terran">
+		<defName>Alien_Ogryn</defName>
+		<label>Ogryn</label>
+		<description>The Ogryn (Homo sapiens gigantus) are a huge and physically powerful Abhuman mutant subspecies of humanity, often employed by the Imperium of Man as shock troopers in the Astra Militarum's Militarum Auxilla. Ogryns possess many traits prized by the Imperium; they are brutally strong and completely loyal, although extremely limited intellectually, which restricts their battlefield role to simple and direct assaults.
+
+They hail from a series of cold and barren planets across the galaxy that possess high gravity, such as Anark Zeta, which is why they appear larger, heavier and bulkier compared to baseline humans. Ogryns compensate for their stupidity with overwhelming physicality -- the brutish creatures stand around ten Terran feet tall and can shrug off wounds that would kill an Imperial Guardsman several times over. These qualities mean that Ogryns make exceptional shock troops, and are often deployed on the front lines of battle by Imperial commanders.
+
+It is fair to say that Ogryns do have their limitations. Their equipment must be simple and exceptionally rugged, as anything within arm's reach is likely to see brief and violent service as an improvised club. Their heavily built Ripper Guns must also be fitted with burst limiters to stop the Ogryns from firing ceaselessly -- thirty solar seconds of noisy enjoyment can easily leave these Abhumans short of ammunition before a battle has even begun. Ogryns are easily confused, meaning they work best when given simple, straightforward missions, and their lack of personal hygiene borders on the criminal. However, once indoctrinated into the Imperial Creed they are doggedly loyal, and their strength and resilience make them a potent weapon.</description>
+		<alienRace>
+			<generalSettings>
+				<chemicalSettings>
+					<li>
+						<chemical>Luciferium</chemical>
+						<ingestible>false</ingestible>
+					</li>
+				</chemicalSettings>
+				<maleGenderProbability>1</maleGenderProbability>
+				<forcedRaceTraitEntries>
+				</forcedRaceTraitEntries>
+				<alienPartGenerator Inherit="False">
+					<useGenderedHeads>false</useGenderedHeads>
+					<aliencrowntypes>
+						<li>OgrynHead1</li>
+						<li>OgrynHead2</li>
+						<li>OgrynHead3</li>
+						<li>OgrynHead4</li>
+					</aliencrowntypes>
+					<alienbodytypes>
+						<li>Male</li>
+					</alienbodytypes>
+					<alienhaircolorgen Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<weight>10</weight>
+								<only>RGBA(1,1,1,1)</only>
+							</li>
+						</options>
+					</alienhaircolorgen>
+					<customDrawSize>(1.25, 1.25)</customDrawSize>
+					<customHeadDrawSize>(1.25, 1.25)</customHeadDrawSize>
+					<headOffset>(0.0, 0.175)</headOffset>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths Inherit="False">
+				<li>
+					<head>Things/Ogryn/Head/</head>
+					<body>Things/Ogryn/Body/</body>
+				</li>
+			</graphicPaths>
+			<raceRestriction>
+				<apparelList>
+					<li>OgrynCadianBodysuit</li>
+					<li>OgrynCadianPants</li>
+					<li>OgrynRebreather</li>
+					<li>OgrynCadianArmor</li>
+					<li>OgrynCatachanPants</li>
+					<li>OgrynHelmetCatachan</li>
+					<li>OgrynHeadbandCatachan</li>
+					<li>OgrynKriegBodysuit</li>
+					<li>OgrynKriegArmor</li>
+					<li>OgrynKriegHelmet</li>
+					<li>OgrynKriegPickelhaube</li>
+					<li>OgrynKriegGasmask</li>
+					<li>OgrynSteelLegionBodysuit</li>
+					<li>OgrynSteelLegionArmor</li>
+					<li>OgrynSteelLegionGasmask</li>
+					<li>OgrynValhallanBodysuit</li>
+					<li>OgrynValhallanFurhat</li>
+				</apparelList>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+			</raceRestriction>
+		</alienRace>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<MoveSpeed>5.2</MoveSpeed>
+			<Flammability>0.3</Flammability>
+			<ComfyTemperatureMin>-16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>28</ComfyTemperatureMax>
+			<LeatherAmount>32</LeatherAmount>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<MiningSpeed>2.0</MiningSpeed>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>25</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>25</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+			<lifeExpectancy>150</lifeExpectancy>
+		</race>
+	</AlienRace.ThingDef_AlienRace>	
 	
 </Defs>

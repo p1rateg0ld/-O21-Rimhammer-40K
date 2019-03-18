@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef>
+		<defName>OrkBadMoons</defName>
+		<label>Bad Moons</label>
+		<description>‘da bad moons are a powerful an’ very snobby ork "klan." ‘da bad moons are ‘da richest uv all ‘da ork klanz. Dis iz 'cos dere teeth grow fasta dan anyone else's, mean'n dat even ‘da lowliest bad moon ork ‘as a steady supply uv ‘da standard form uv ork flash. Dis iz not regarded as an unfair advantage, as any ork 'oo iz big an’ ferocious enough kan simply smash 'da teeth outta a bad moons' head.
+ 
+‘n fact, many ork warbosses like ta keep a mob uv bad moons around for jus dis purpose, dere tooty gobs a ready supply uv 'tra teef. It iz often not a terrible deal for da bad moons either, as any ork tough enough ta smash dere teeth outta im iz usually wun worth follow'n into a fight. Da bad moons essentially fulfill da role uv a merchant kaste ‘n wot passes for ork society, an’ have a reputation for show'n off.
+ 
+dey are always kontinuously buying, selling, swapping, an’ konn'n ta get teeth. ‘da highest-rank'n amongst im wear garishly decorated WAAAGH! bannaz on dere backs an' ‘da richest openly flaunt dere flash by wear'n necklaces uv ork teeth. Dese orks prefa a posh an' refined lifestyle, at least by ork standards.</description>
+		<pawnsPlural>Orks</pawnsPlural>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>15</earliestRaidDays>
+		<canMakeRandomly>True</canMakeRandomly>
+		<autoFlee>false</autoFlee>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Warboss</leaderTitle>
+		<permanentEnemy>false</permanentEnemy>
+		<expandingIconTexture>World/BadMoonsBaseIcon</expandingIconTexture>
+		<homeIconPath>World/ZoomedIn_OrkzBase</homeIconPath>
+		<colorSpectrum>
+			<li>(1, 1, 1)</li>
+		</colorSpectrum>
+		<startingGoodwill>
+			<min>-100</min>
+			<max>-80</max>
+		</startingGoodwill>
+		<fixedName>Bad Moons</fixedName>
+		<settlementNameMaker>NamerOrkBase</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategories>
+			<li>OrkBackstory</li>
+		</backstoryCategories>
+		<hairTags>
+			<li>OrkHair</li>
+		</hairTags>
+		<naturalColonyGoodwill>
+			<min>-100</min>
+			<max>100</max>
+		</naturalColonyGoodwill>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-75</min>
+			<max>60</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<OrkWarboss_BM>1</OrkWarboss_BM>
+					<OrkNob_BM>4</OrkNob_BM>
+					<OrkKommando_BM>4</OrkKommando_BM>
+					<OrkArdBoy_BM>10</OrkArdBoy_BM>
+					<OrkShootaBoy_BM>20</OrkShootaBoy_BM>
+					<OrkSluggaBoy_BM>50</OrkSluggaBoy_BM>
+					<GrotWeak_BM>10</GrotWeak_BM>
+					<GrotTough_BM>20</GrotTough_BM>
+					<GrotStrong_BM>30</GrotStrong_BM>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<OrkWarboss_BM>1</OrkWarboss_BM>
+					<OrkNob_BM>3</OrkNob_BM>
+					<OrkKommando_BM>4</OrkKommando_BM>
+					<OrkSluggaBoy_BM>50</OrkSluggaBoy_BM>
+					<OrkArdBoy_BM>10</OrkArdBoy_BM>
+					<OrkShootaBoy_BM>20</OrkShootaBoy_BM>
+					<GrotWeak_BM>10</GrotWeak_BM>
+					<GrotTough_BM>20</GrotTough_BM>
+					<GrotStrong_BM>30</GrotStrong_BM>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<OrkTradaBoy_BM>1</OrkTradaBoy_BM>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<OrkNob_BM>1</OrkNob_BM>
+					<OrkSluggaBoy_BM>50</OrkSluggaBoy_BM>
+					<OrkArdBoy_BM>10</OrkArdBoy_BM>
+					<OrkShootaBoy_BM>20</OrkShootaBoy_BM>
+					<GrotWeak_BM>10</GrotWeak_BM>
+					<GrotTough_BM>20</GrotTough_BM>
+					<GrotStrong_BM>30</GrotStrong_BM>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<OrkWarboss_BM>1</OrkWarboss_BM>
+					<OrkNob_BM>4</OrkNob_BM>
+					<OrkKommando_BM>4</OrkKommando_BM>
+					<OrkArdBoy_BM>10</OrkArdBoy_BM>
+					<OrkShootaBoy_BM>50</OrkShootaBoy_BM>
+					<OrkSluggaBoy_BM>20</OrkSluggaBoy_BM>
+					<GrotWeak_BM>10</GrotWeak_BM>
+					<GrotTough_BM>20</GrotTough_BM>
+					<GrotStrong_BM>30</GrotStrong_BM>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

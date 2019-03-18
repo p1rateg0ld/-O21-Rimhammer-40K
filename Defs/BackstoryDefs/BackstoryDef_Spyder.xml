@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Spyder Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryNecronSpyderChild00</defName>
+		<title>Canoptek Spyder</title>
+		<titleShort>Spyder</titleShort>
+		<baseDescription>Canoptek Spyders are massive robotic Necron constructs, all Canoptek Spyders have a Fabricator Claw Array that allows them to effect repairs on a Necron tomb’s systems, and these also make for frighteningly destructive weapons. Canoptek Spyders also sometimes sport additional weaponry to better repel crypt intruders.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>SpyderBackstory</li>
+		</spawnCategories>
+		<workDisables>
+        	<li>Intellectual</li>
+        	<li>Social</li>
+        	<li>Caring</li>
+    	</workDisables>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Spyder Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryNecronSpyderAdult00</defName>
+		<title>Canoptek Spyder</title>
+		<titleShort>Spyder</titleShort>
+		<baseDescription>Canoptek Spyders are massive robotic Necron constructs, all Canoptek Spyders have a Fabricator Claw Array that allows them to effect repairs on a Necron tomb’s systems, and these also make for frighteningly destructive weapons. Canoptek Spyders also sometimes sport additional weaponry to better repel crypt intruders.</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>SpyderBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Artistic</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

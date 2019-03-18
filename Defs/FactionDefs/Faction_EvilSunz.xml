@@ -74,6 +74,9 @@ ta assist dere highly-mobile warbands, da evil sunz have many mekboyz, ta keep d
 					<OrkArdBoy_ES>10</OrkArdBoy_ES>
 					<OrkShootaBoy_ES>20</OrkShootaBoy_ES>
 					<OrkSluggaBoy_ES>50</OrkSluggaBoy_ES>
+					<GrotWeak_ES>10</GrotWeak_ES>
+					<GrotTough_ES>20</GrotTough_ES>
+					<GrotStrong_ES>30</GrotStrong_ES>
 				</options>
 			</li>
 			<li>
@@ -86,6 +89,9 @@ ta assist dere highly-mobile warbands, da evil sunz have many mekboyz, ta keep d
 					<OrkSluggaBoy_ES>50</OrkSluggaBoy_ES>
 					<OrkArdBoy_ES>10</OrkArdBoy_ES>
 					<OrkShootaBoy_ES>20</OrkShootaBoy_ES>
+					<GrotWeak_ES>10</GrotWeak_ES>
+					<GrotTough_ES>20</GrotTough_ES>
+					<GrotStrong_ES>30</GrotStrong_ES>
 				</options>
 			</li>
 			<li>
@@ -104,6 +110,9 @@ ta assist dere highly-mobile warbands, da evil sunz have many mekboyz, ta keep d
 					<OrkSluggaBoy_ES>50</OrkSluggaBoy_ES>
 					<OrkArdBoy_ES>10</OrkArdBoy_ES>
 					<OrkShootaBoy_ES>20</OrkShootaBoy_ES>
+					<GrotWeak_ES>10</GrotWeak_ES>
+					<GrotTough_ES>20</GrotTough_ES>
+					<GrotStrong_ES>30</GrotStrong_ES>
 				</guards>
 			</li>
 			<li>
@@ -115,6 +124,9 @@ ta assist dere highly-mobile warbands, da evil sunz have many mekboyz, ta keep d
 					<OrkArdBoy_ES>10</OrkArdBoy_ES>
 					<OrkShootaBoy_ES>50</OrkShootaBoy_ES>
 					<OrkSluggaBoy_ES>20</OrkSluggaBoy_ES>
+					<GrotWeak_ES>10</GrotWeak_ES>
+					<GrotTough_ES>20</GrotTough_ES>
+					<GrotStrong_ES>30</GrotStrong_ES>
 				</options>
 			</li>
 		</pawnGroupMakers>

@@ -137,7 +137,7 @@
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="ArmorMachineableBase"> <!-- Kasrkin Armour -->
+	<ThingDef ParentName="ArmorMachineableBase" Name="CadianHeavyArmorBase"> <!-- Kasrkin Armour -->
 		<defName>KasrkinArmor</defName>
 		<label>kasrkin armor</label>
 		<techLevel>Spacer</techLevel>
@@ -331,7 +331,7 @@
 		</statBases>
 	</ThingDef>
 	
-	<ThingDef ParentName="CadianHelmet">
+	<ThingDef ParentName="CadianFieldCap">
 		<defName>CadianOfficerCap</defName>
 		<label>Cadian Officers Cap</label>
 		<description>A hat commonly worn by the Imperial Guard Cadian officers.</description>
@@ -343,18 +343,6 @@
 		<apparel>
 			<wornGraphicPath>Things/Imperial Guard/Cadian/Hats/CadianOfficercap</wornGraphicPath>
 		</apparel>
-		<costList Inherit="false">
-			<Cloth>20</Cloth>
-			<CeramiteLowGrade>5</CeramiteLowGrade>
-		</costList>
-		<statBases Inherit="False">
-			<Mass>1.8</Mass>
-			<WorkToMake>16000</WorkToMake>
-			<MaxHitPoints>200</MaxHitPoints>
-			<MarketValue>100</MarketValue>
-			<Insulation_Cold>0.5</Insulation_Cold>
-			<EquipDelay>2.5</EquipDelay>
-		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.10</SocialImpact>
 		</equippedStatOffsets>
@@ -385,7 +373,7 @@
 		</statBases>
 	</ThingDef>
 	
-	<ThingDef ParentName="CadianHelmet">
+	<ThingDef ParentName="CadianHelmet" Name="CadianHeavyHelmet">
 		<defName>KasrkinHelmet</defName>
 		<label>Kasrkin Helmet (Gasmask &amp; Goggles)</label>
 		<description>The helmet commonly worn by Kasrkin troops, part of the Imperial Guard Cadian regiments.</description>
@@ -425,6 +413,83 @@
 			<Insulation_Cold>5</Insulation_Cold>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
+	</ThingDef>
+
+	<!-- Ogryn Gear -->
+	
+	<ThingDef ParentName="CadianUniformBase" Name="CadianOgrynFatigues">
+		<defName>OgrynCadianBodysuit</defName>
+		<label>ogryn bodysuit (cadian)</label>
+		<description>Simple clothing worn by Ogryn.</description>
+		<graphicData> 
+			<texPath>Things/Ogryn/Cadians/Apparel/CadianJumpSuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>OgrynCadianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ogryn/Cadians/Apparel/CadianJumpSuit</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianUniformBase">
+		<defName>OgrynCadianPants</defName>
+		<label>ogryn pants (cadian)</label>
+		<description>Simple clothing worn by Ogryn.</description>
+		<graphicData> 
+			<texPath>Things/Ogryn/Cadians/Apparel/CadianPants</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>OgrynCadianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ogryn/Cadians/Apparel/CadianPants</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHeavyHelmet" Name="CadianOgrynHelmet">
+		<defName>OgrynRebreather</defName>
+		<label>ogryn rebreather</label>
+		<description>A durable rebreather built for Ogryn to withstand toxic effects.</description>
+		<graphicData> 
+			<texPath>Things/Ogryn/Cadians/Hats/OgrynRebreather</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>OgrynApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ogryn/Cadians/Hats/OgrynRebreather</wornGraphicPath>
+		</apparel>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianHeavyArmorBase" Name="CadianOgrynArmor"> <!-- Kasrkin Armour -->
+		<defName>OgrynCadianArmor</defName>
+		<label>ogryn armor (cadian)</label>
+		<description>Armor designed for Ogryns, heavy, durable.</description>
+		<graphicData>
+			<texPath>Things/Ogryn/Cadians/Armor/CadianArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>OgrynCadianApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ogryn/Cadians/Armor/CadianArmor</wornGraphicPath>
+		</apparel>
 	</ThingDef>
 
 </Defs>

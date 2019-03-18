@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="DeathskullsGrotAbstractBase" Abstract="True">
+		<defaultFactionType>OrkDeathskulls</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+		<backstoryCategories>
+			<li>GrotBackstory</li>
+		</backstoryCategories>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<weaponTags>
+			<li>OrkRanged</li>
+			<li>OrkMelee</li>
+		</weaponTags>
+		<race>Alien_Grot</race>
+		<combatPower>25</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<maxGenerationAge>100</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>6000</min>
+			<max>6000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>2040</min>
+			<max>3000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.01</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>100</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<apparelTags>
+			<li>DeathskullsApparel</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DeathskullsGrotAbstractBase">
+		<defName>GrotWeak_DS</defName>
+		<label>Weak Grot</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>CrudeChoppa</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>GrotClothingLoinCloth</li>
+		</apparelRequired>
+		<combatPower>30</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DeathskullsGrotAbstractBase">
+		<defName>GrotTough_DS</defName>
+		<label>Tough Grot</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>CrudeChoppa</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>GrotClothingLeather</li>
+		</apparelRequired>
+		<combatPower>40</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DeathskullsGrotAbstractBase">
+		<defName>GrotStrong_DS</defName>
+		<label>Strong Grot</label>
+		<isFighter>true</isFighter>
+		<weaponMoney>
+			<min>2000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit="false">
+			<li>CrudeChoppa</li>
+		</weaponTags>
+		<apparelMoney>
+			<min>5000</min>
+			<max>8000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>GrotClothingCloth</li>
+		</apparelRequired>
+		<combatPower>50</combatPower>
+	</PawnKindDef>
+
+</Defs>

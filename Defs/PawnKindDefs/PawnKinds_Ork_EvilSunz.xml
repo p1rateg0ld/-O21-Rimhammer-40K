@@ -74,7 +74,7 @@
 			<max>10000</max>
 		</weaponMoney>
 		<weaponTags Inherit="false">
-			<li>Choppa</li>
+			<li>CrudeChoppa</li>
 			<li>Slugga</li>
 		</weaponTags>
 		<apparelMoney>
@@ -97,6 +97,7 @@
 			<max>10000</max>
 		</weaponMoney>
 		<weaponTags Inherit="False">
+			<li>CrudeChoppa</li>
 			<li>Shoota</li>
 		</weaponTags>
 		<apparelMoney>

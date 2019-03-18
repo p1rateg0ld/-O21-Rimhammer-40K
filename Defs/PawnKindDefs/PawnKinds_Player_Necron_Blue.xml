@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="PawnNecronWarriorBase">
+		<defName>NecronWarriorBlue</defName>
+		<race>Alien_NecronWarriorBlue</race>
+		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronDeathmarkBase">
+		<defName>NecronDeathmarkBlue</defName>
+		<race>Alien_NecronDeathmarkBlue</race>
+		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronLordBase">
+		<defName>NecronLordBlue</defName>
+		<race>Alien_NecronLordBlue</race>
+		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronOverlordBase">
+		<defName>NecronOverlordBlue</defName>
+		<race>Alien_NecronOverlordBlue</race>
+		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronPariahBase">
+		<defName>NecronPariahBlue</defName>
+		<race>Alien_NecronPariahBlue</race>
+		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronSpyderBase">
+		<defName>NecronSpyderBlue</defName>
+		<race>Alien_NecronSpyderBlue</race>
+		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+</Defs>

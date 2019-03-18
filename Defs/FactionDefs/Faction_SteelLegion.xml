@@ -68,6 +68,7 @@
 					<IGGuardsman_SteelLegion>30</IGGuardsman_SteelLegion>
 					<IGSniper_SteelLegion>20</IGSniper_SteelLegion>
 					<IGOfficer_SteelLegion>5</IGOfficer_SteelLegion>
+					<IGOgryn_SteelLegion>10</IGOgryn_SteelLegion>
 				</options>
 			</li>
 			<li>
@@ -77,6 +78,7 @@
 					<IGCommissar_SteelLegion>1</IGCommissar_SteelLegion>
 					<IGGuardsman_SteelLegion>30</IGGuardsman_SteelLegion>
 					<IGOfficer_SteelLegion>5</IGOfficer_SteelLegion>
+					<IGOgryn_SteelLegion>10</IGOgryn_SteelLegion>
 				</options>
 			</li>
 			<li>
@@ -94,6 +96,7 @@
 					<IGGuardsman_SteelLegion>30</IGGuardsman_SteelLegion>
 					<IGSniper_SteelLegion>10</IGSniper_SteelLegion>
 					<IGOfficer_SteelLegion>3</IGOfficer_SteelLegion>
+					<IGOgryn_SteelLegion>10</IGOgryn_SteelLegion>
 				</guards>
 			</li>
 			<li>
@@ -103,6 +106,7 @@
 					<IGGrenadier_Krieg>30</IGGrenadier_Krieg>
 					<IGSniper_SteelLegion>20</IGSniper_SteelLegion>
 					<IGOfficer_SteelLegion>5</IGOfficer_SteelLegion>
+					<IGOgryn_SteelLegion>10</IGOgryn_SteelLegion>
 				</options>
 			</li>
     </pawnGroupMakers>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_NecronSpyder">
+    <AlienRace.ThingDef_AlienRace ParentName="Alien_Necron" Name="Alien_NecronSpyder">
         <defName>Alien_NecronSpyder</defName>
         <label>Canoptek Spyder</label>
         <description>Canoptek Spyders are massive robotic Necron constructs, their immense weight effortlessly propelled by sophisticated anti-gravitic engines. Their bodies are large and rounded in the shape of a hooded carapace, in order to accommodate the internal systems that construct Canoptek Scarabs as needed. This is combined with their multiple limbs and many compound visual sensors which stare out from a featureless, metallic block to give an arachnoid aspect that enhances the fearful appearance of these monstrous robots. All Canoptek Spyders have a Fabricator Claw Array that allows them to effect repairs on a Necron tomb’s systems, and these also make for frighteningly destructive weapons. Canoptek Spyders also sometimes sport additional weaponry to better repel crypt intruders. When the Necrons rise from their crypts, Canoptek Spyders often follow them in battle, both for their combat abilities and their capability for repairing damage that is beyond even the abilities of their Necron masters’ advanced regenerative systems.</description>
@@ -18,27 +18,7 @@
 				<immuneToAge>true</immuneToAge>
 				<canLayDown>false</canLayDown>
 				<humanRecipeImport>false</humanRecipeImport>
-				<chemicalSettings />
-				<disallowedTraits>
-					<li>DrugDesire</li>
-					<li>NaturalMood</li>
-					<li>Nerves</li>
-					<li>Neurotic</li>
-					<li>PsychicSensitivity</li>
-					<li>Cannibal</li>
-					<li>TooSmart</li>
-					<li>Prosthophobe</li>
-					<li>Greedy</li>
-					<li>Jealous</li>
-					<li>Nudist</li>
-					<li>DislikesMen</li>
-					<li>DislikesWomen</li>
-					<li>AnnoyingVoice</li>
-					<li>CreepyBreathing</li>
-					<li>Pyromaniac</li>
-					<li>Wimp</li>
-				</disallowedTraits>
-				<alienPartGenerator>
+				<alienPartGenerator Inherit="False">
 					<useGenderedHeads>false</useGenderedHeads>
 					<aliencrowntypes>
 						<li>Head</li>
@@ -57,7 +37,7 @@
 					<customDrawSize>(2.0, 2.0)</customDrawSize>
 				</alienPartGenerator>
 			</generalSettings>
-			<graphicPaths>
+			<graphicPaths Inherit="False">
 				<li>
 					<head>Things/Necron/Constructs/Spyder/</head>
 					<body>Things/Necron/Constructs/Spyder/</body>
@@ -68,10 +48,10 @@
 					</lifeStageDefs>
 				</li>
 			</graphicPaths>
-			<hairSettings>
+			<hairSettings Inherit="False">
 				<hasHair>false</hasHair>
 			</hairSettings>
-			<relationSettings>
+			<relationSettings Inherit="False">
 				<relationChanceModifierChild>0</relationChanceModifierChild>
 				<relationChanceModifierExLover>0</relationChanceModifierExLover>
 				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
@@ -81,7 +61,7 @@
 				<relationChanceModifierSibling>0</relationChanceModifierSibling>
 				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
 			</relationSettings>
-			<thoughtSettings>
+			<thoughtSettings Inherit="False">
 				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
 				<cannotReceiveThoughts>
 					<li>NeedFood</li>
@@ -124,13 +104,15 @@
 					<li>PawnWithGoodOpinionDied</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
-			<raceRestriction>
+			<raceRestriction Inherit="False">
 				<apparelList>
 				</apparelList>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<whiteTraitList>
+				</whiteTraitList>
 			</raceRestriction>
         </alienRace>
-		<statBases>
+		<statBases Inherit="False">
 			<MarketValue>10000</MarketValue>
 			<MoveSpeed>5.6</MoveSpeed>
 			<Flammability>0</Flammability>
@@ -196,7 +178,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-        <race>
+        <race Inherit="False">
 			<fleshType>Necron</fleshType>
 			<hasGenders>false</hasGenders>
 			<thinkTreeMain>Necron</thinkTreeMain>
@@ -249,6 +231,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>NecronBasic</li>
+				<li>O21_Construct</li>
 			</hediffGiverSets>
 		</race>
 		<butcherProducts>
@@ -268,6 +251,40 @@
 				<powerFailure>NecronGaussFailure</powerFailure>
 			</li>
 		</modExtensions>
+	</AlienRace.ThingDef_AlienRace>
+
+    <AlienRace.ThingDef_AlienRace ParentName="Alien_NecronSpyder">
+        <defName>Alien_NecronSpyderBlue</defName>
+        <alienRace>
+			<graphicPaths Inherit="False">
+				<li>
+					<head>Things/Necron/Constructs/Spyder/</head>
+					<body>Things/Necron/Constructs/Spyder/Blue/</body>
+				</li>
+				<li>
+					<lifeStageDefs>
+						<li>HumanlikeAdult</li>
+					</lifeStageDefs>
+				</li>
+			</graphicPaths>
+        </alienRace>
+	</AlienRace.ThingDef_AlienRace>
+
+    <AlienRace.ThingDef_AlienRace ParentName="Alien_NecronSpyder">
+        <defName>Alien_NecronSpyderOrange</defName>
+        <alienRace>
+			<graphicPaths Inherit="False">
+				<li>
+					<head>Things/Necron/Constructs/Spyder/</head>
+					<body>Things/Necron/Constructs/Spyder/Orange/</body>
+				</li>
+				<li>
+					<lifeStageDefs>
+						<li>HumanlikeAdult</li>
+					</lifeStageDefs>
+				</li>
+			</graphicPaths>
+        </alienRace>
 	</AlienRace.ThingDef_AlienRace>
 
 </Defs>

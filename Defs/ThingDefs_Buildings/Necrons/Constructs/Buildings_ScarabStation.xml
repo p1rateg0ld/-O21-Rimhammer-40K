@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="O21_BuildingBase" Name="ScarabStationBase">
 		<defName>O21_ConstructStation_Scarab</defName>
-		<label>scarab platform (swarm)</label>
-		<description>A small device which can be place in the floor, scarabs are automatically produced, and will wander the area until they find things to attack.</description>
+		<label>scarab platform (green)</label>
+		<description>A small device which can be place in the floor, scarabs are automatically produced up to a maximum of 4, and will wander the area until they find things to attack.</description>
 		<thingClass>O21Toolbox.CustomHive.CustomHive</thingClass>
 		<costList>
 			<Necrodermis>25</Necrodermis>
@@ -60,9 +60,84 @@
 		</modExtensions>
 		<rotatable>false</rotatable>
 		<designationCategory>Misc</designationCategory>
+		<designatorDropdown>RH_NecScarabPlatforms</designatorDropdown>
 		<researchPrerequisites>
 			<li>O21_Nec_Research</li>
 		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="ScarabStationBase">
+		<defName>O21_ConstructStation_ScarabBlue</defName>
+		<label>scarab platform (blue)</label>
+		<costList Inherit="False">
+			<Necrodermis>25</Necrodermis>
+			<GaussCrystalBlue>5</GaussCrystalBlue>
+		</costList>
+		<graphicData>
+			<texPath>Things/Necron/Building/ScarabStationBlue</texPath>
+		</graphicData>
+		<modExtensions Inherit="False">
+			<li Class="O21Toolbox.CustomHive.HiveProperties">
+				<initialPawnSpawnDelay>500</initialPawnSpawnDelay>
+				<pawnSpawnRadius>3</pawnSpawnRadius>
+				<maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
+				<initialPawnsPoints>250</initialPawnsPoints>
+				<pawnsDieOnHiveDeath>true</pawnsDieOnHiveDeath>
+				<pawnSpawnIntervalMin>0.85</pawnSpawnIntervalMin>
+				<pawnSpawnIntervalMax>1.1</pawnSpawnIntervalMax>
+				<pawnSpawnIntervalTicks>15000</pawnSpawnIntervalTicks>
+				<usePawnKindCosts>false</usePawnKindCosts>
+				<maxSpawns>4</maxSpawns>
+				<pawnKindDefs>
+					<li>ConstructSwarmScarabBlue</li>
+				</pawnKindDefs>
+				<pawnKindCosts>
+					<li>50</li>
+				</pawnKindCosts>
+				<pawnFactionAsHive>true</pawnFactionAsHive>
+				<pawnFactionDef>O21_FriendlyConstruct_Necron</pawnFactionDef>
+				<pawnDutyDef>O21_DefendCustomHive_Scarab</pawnDutyDef>
+				<distToHiveAttackDocile>20.0</distToHiveAttackDocile>
+				<distToHiveAttackAgitated>32.0</distToHiveAttackAgitated>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="ScarabStationBase">
+		<defName>O21_ConstructStation_ScarabOrange</defName>
+		<label>scarab platform (orange)</label>
+		<costList Inherit="False">
+			<Necrodermis>25</Necrodermis>
+			<GaussCrystalOrange>5</GaussCrystalOrange>
+		</costList>
+		<graphicData>
+			<texPath>Things/Necron/Building/ScarabStationOrange</texPath>
+		</graphicData>
+		<modExtensions Inherit="False">
+			<li Class="O21Toolbox.CustomHive.HiveProperties">
+				<initialPawnSpawnDelay>500</initialPawnSpawnDelay>
+				<pawnSpawnRadius>3</pawnSpawnRadius>
+				<maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
+				<initialPawnsPoints>250</initialPawnsPoints>
+				<pawnsDieOnHiveDeath>true</pawnsDieOnHiveDeath>
+				<pawnSpawnIntervalMin>0.85</pawnSpawnIntervalMin>
+				<pawnSpawnIntervalMax>1.1</pawnSpawnIntervalMax>
+				<pawnSpawnIntervalTicks>15000</pawnSpawnIntervalTicks>
+				<usePawnKindCosts>false</usePawnKindCosts>
+				<maxSpawns>4</maxSpawns>
+				<pawnKindDefs>
+					<li>ConstructSwarmScarabOrange</li>
+				</pawnKindDefs>
+				<pawnKindCosts>
+					<li>50</li>
+				</pawnKindCosts>
+				<pawnFactionAsHive>true</pawnFactionAsHive>
+				<pawnFactionDef>O21_FriendlyConstruct_Necron</pawnFactionDef>
+				<pawnDutyDef>O21_DefendCustomHive_Scarab</pawnDutyDef>
+				<distToHiveAttackDocile>20.0</distToHiveAttackDocile>
+				<distToHiveAttackAgitated>32.0</distToHiveAttackAgitated>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 </Defs>

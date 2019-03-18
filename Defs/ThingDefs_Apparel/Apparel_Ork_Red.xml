@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Clothing ====== -->
+	
+	<ThingDef ParentName="ApparelMakeableBase" Name="OrkClothingBase">
+		<defName>OrkClothingLight</defName>
+		<label>Ork Light Fatigues</label>
+		<description>Some orks like ta wear jus dere trousers, shows off dere rippl'n muscles an' abs more, for intimidat'n 'da enemy.</description>
+		<graphicData>
+			<texPath>Things/Ork/Apparel/OrkOutfit_Fatigues3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costList>
+			<Cloth>40</Cloth>
+		</costList>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>30</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<Insulation_Cold>50</Insulation_Cold>
+			<Insulation_Heat>50</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>OrkApparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Ork/Apparel/OrkOutfit_Fatigues3</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>OrkApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
+			<researchPrerequisite>O21_Ork_Apparel</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkClothingBase">
+		<defName>OrkClothingMedium</defName>
+		<label>Ork Medium Fatigues</label>
+		<description>Dis cloth'n iz for orks 'dat like a bit more kover'n dere skin.</description>
+		<graphicData>
+			<texPath>Things/Ork/Apparel/OrkOutfit_Fatigues</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<statBases>
+			<MarketValue>40</MarketValue>
+		</statBases>
+		<apparel>
+			<bodyPartGroups Inherit="false">
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Ork/Apparel/OrkOutfit_Fatigues</wornGraphicPath>
+			<layers Inherit="false">
+				<li>OnSkin</li>
+			</layers>
+			<tags Inherit="false">
+				<li>OrkApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkClothingBase">
+		<defName>OrkClothingHeavy</defName>
+		<label>Ork Heavy Fatigues</label>
+		<description>Dis cloth'n iz for orks 'dat like a bit more kover'n dere skin.</description>
+		<graphicData>
+			<texPath>Things/Ork/Apparel/OrkOutfit_Fatigues2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<Cloth>80</Cloth>
+		</costList>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<apparel>
+			<bodyPartGroups Inherit="false">
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Ork/Apparel/OrkOutfit_Fatigues2</wornGraphicPath>
+			<layers Inherit="false">
+				<li>OnSkin</li>
+			</layers>
+			<tags Inherit="false">
+				<li>OrkApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkClothingBase">
+		<defName>OrkRobe</defName>
+		<label>Ork Robe</label>
+		<description>Dis cloth'n iz usually for im weird Boyz an dere psyka abilitiez.</description>
+		<graphicData>
+			<texPath>Things/Ork/Apparel/OrkOutfit_Robe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<Cloth>90</Cloth>
+		</costList>
+		<statBases>
+			<MarketValue>60</MarketValue>
+		</statBases>
+		<apparel>
+			<bodyPartGroups Inherit="false">
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Ork/Apparel/OrkOutfit_Robe</wornGraphicPath>
+			<layers Inherit="false">
+				<li>OnSkin</li>
+			</layers>
+			<tags Inherit="false">
+				<li>OrkApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Armors ====== -->
+	
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>OrkKommandoBandolier</defName>
+		<label>Ork Kommando Bandolier</label>
+		<techLevel>Industrial</techLevel>
+		<description>Dis stuff iz wot kommandos wear, da sneaky fellas like ta wear less so dey won't get heard or spotted by da stupid 'umiez.</description>
+		<graphicData>
+			<texPath>Things/Ork/Armor/OrkKommando</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Ork_Apparel_Kommando</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Cloth>40</Cloth>
+			<Steel>20</Steel>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<WorkToMake>14000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.46</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>1.0</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>OrkApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags>
+				<li>OrkApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Armor/OrkKommando</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="ArmorMachineableBase" Name="OrkLightArmorBase">
+		<defName>OrkLightArmorRed</defName>
+		<label>ork light armor (red)</label>
+		<techLevel>Industrial</techLevel>
+		<description>Armor dose speedy Boyz have, painted red so dey kan go fasta an’ fasta.</description>
+		<graphicData>
+			<texPath>Things/Ork/Armor/Red/OrkArmor_Light</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<WorkToMake>14000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<ArmorRating_Sharp>0.87</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.35</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>1.0</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.2</ConstructionSpeed>
+			<MiningSpeed>0.2</MiningSpeed>
+			<PlantWorkSpeed>0.2</PlantWorkSpeed>
+			<MoveSpeed>0.1</MoveSpeed>
+        </equippedStatOffsets>
+		<thingCategories>
+			<li>OrkApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags>
+				<li>OrkApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Armor/Red/OrkArmor_Light</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="ArmorMachineableBase" Name="OrkMediumArmorBase">
+		<defName>OrkMediumArmorRed</defName>
+		<label>Ork Medium Armor (Red)</label>
+		<techLevel>Industrial</techLevel>
+		<description>Armor dose speedy Boyz have, painted red so dey kan go fasta an’ fasta.</description>
+		<graphicData>
+			<texPath>Things/Ork/Armor/Red/OrkArmor_Medium</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>800</MaxHitPoints>
+			<MarketValue>650</MarketValue>
+			<ArmorRating_Sharp>0.91</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.45</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.4</ConstructionSpeed>
+			<MiningSpeed>0.4</MiningSpeed>
+			<PlantWorkSpeed>0.4</PlantWorkSpeed>
+			<MoveSpeed>0.2</MoveSpeed>
+        </equippedStatOffsets>
+		<thingCategories>
+			<li>OrkApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags>
+				<li>OrkApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Armor/Red/OrkArmor_Medium</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="ArmorMachineableBase" Name="OrkHeavyArmorBase"> <!-- Ork Light Armour -->
+		<defName>OrkHeavyArmorRed</defName>
+		<label>Ork Heavy Armor (Red)</label>
+		<techLevel>Industrial</techLevel>
+		<description>Armor dose speedy Boyz have, painted red so dey kan go fasta an’ fasta.</description>
+		<graphicData>
+			<texPath>Things/Ork/Armor/Red/OrkArmor_Heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>800</MaxHitPoints>
+			<MarketValue>650</MarketValue>
+			<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.12</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.90</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.8</ConstructionSpeed>
+			<MiningSpeed>0.8</MiningSpeed>
+			<PlantWorkSpeed>0.8</PlantWorkSpeed>
+			<MoveSpeed>0.3</MoveSpeed>
+        </equippedStatOffsets>
+		<thingCategories>
+			<li>OrkApparel</li>
+		</thingCategories>
+		<apparel>
+			<tags>
+				<li>OrkApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Armor/Red/OrkArmor_Heavy</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			    <li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkHeavyArmorBase">
+		<defName>OrkHeavyArmorYellow</defName>
+		<label>ork heavy armor (yellow)</label>
+		<description>Worn by snobby Boyz, also gud for improv'n 'plosions!</description>
+		<graphicData>
+			<texPath>Things/Ork/Armor/Yellow/OrkArmor_Heavy</texPath>
+		</graphicData>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<equippedStatOffsets Inherit="False">
+			<SellPriceFactor>1.3</SellPriceFactor>
+			<AnimalGatherYield>1.3</AnimalGatherYield>
+			<PlantHarvestYield>1.3</PlantHarvestYield>
+        </equippedStatOffsets>
+		<apparel>
+			<tags Inherit="False">
+				<li>OrkApparel</li>
+				<li>BadMoonsApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Armor/Yellow/OrkArmor_Heavy</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="OrkRedHelmetBase">
+		<defName>OrkRedHelmet</defName>
+		<label>Ork Helmet (Red)</label>
+		<techLevel>Industrial</techLevel>
+		<description>Bit uv metal ta help protect yer boyz skulls.</description>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/Red/OrkHelmet_normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>O21_OrkBench_Basic</li>
+            </recipeUsers>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Ork_Apparel_Red</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<statBases>
+			<Mass>1.8</Mass>
+			<WorkToMake>14000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>30</MarketValue>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>1.1</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>OrkApparel</li>
+		</thingCategories>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+    		<tags>
+				<li>OrkApparel</li>
+				<li>EvilSunzApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Hats/Red/OrkHelmet_normal</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkRedHelmetHorned</defName>
+		<label>ork horned helmet (red)</label>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/Red/OrkHelmet_horned</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Ork/Hats/Red/OrkHelmet_horned</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkGasmask</defName>
+		<label>Ork Gasmask</label>
+		<description>Bit uv metal ta help protect yer boyz skulls. Dis wun also makes yer boy able ta breath ‘n toxic stuff.</description>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/OrkGasmask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Ork/Hats/OrkGasmask</wornGraphicPath>
+		</apparel>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-1.0</ToxicSensitivity>
+		</equippedStatOffsets>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkRedBandana</defName>
+		<label>ork bandana (red)</label>
+		<description>Bit uv cloth, won't do much, but itz betta than nuthin!</description>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/Red/OrkBandana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Ork/Hats/Red/OrkBandana</wornGraphicPath>
+		</apparel>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkKommandoGoggles</defName>
+		<label>Ork Kommando Goggles</label>
+		<description>Set uv of shiny glass, won't do much, but itz betta than nuthin!</description>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/OrkKommandoGoggles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Ork/Hats/OrkKommandoGoggles</wornGraphicPath>
+		</apparel>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>O21_Ork_Apparel_Kommando</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkGoggles</defName>
+		<label>Ork Goggles</label>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/OrkGoggles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Ork/Hats/OrkGoggles</wornGraphicPath>
+		</apparel>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>1.0</EquipDelay>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkRedJaw</defName>
+		<label>ork gob (red)</label>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/Red/OrkJaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Ork/Hats/Red/OrkJaw</wornGraphicPath>
+		</apparel>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+
+</Defs>

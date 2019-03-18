@@ -6,7 +6,7 @@
 			<subNodes>
 				<li Class="O21Toolbox.CustomHive.JobGiver_CustomHiveDefense">
 					<needLOSToAcquireNonPawnTargets>false</needLOSToAcquireNonPawnTargets>
-					<targetAcquireRadius>32</targetAcquireRadius>
+					<targetAcquireRadius>64</targetAcquireRadius>
 					<chaseTarget>false</chaseTarget>
 				</li>
 				<li Class="ThinkNode_PrioritySorter">

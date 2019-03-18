@@ -39,8 +39,8 @@
 				</li>
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
-					<thingDef>InactiveScarab</thingDef>
-					<count>2</count>
+					<thingDef>GaussCrystalGreen</thingDef>
+					<count>150</count>
 				</li>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>

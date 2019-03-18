@@ -22,7 +22,6 @@
 			<min>100</min>
 			<max>100</max>
 		</naturalColonyGoodwill>
-		<homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
 		<allowedArrivalTemperatureRange>
 			<min>-100</min>
 			<max>200</max>

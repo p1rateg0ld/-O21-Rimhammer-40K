@@ -136,4 +136,60 @@
 		</apparel>
 	</ThingDef>
 
+	<!-- Ogryn Gear -->
+	
+	<ThingDef ParentName="CadianOgrynFatigues">
+		<defName>OgrynCatachanPants</defName>
+		<label>ogryn pants (catachan)</label>
+		<description>Simple clothing worn by Ogryn.</description>
+		<graphicData> 
+			<texPath>Things/Ogryn/Catachan/Apparel/CatachanPants</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>OgrynCatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ogryn/Catachan/Apparel/CatachanPants</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianOgrynHelmet">
+		<defName>OgrynHelmetCatachan</defName>
+		<label>ogryn helmet (catachan)</label>
+		<description>Helmet large enough for Ogryns, designed for Catachans.</description>
+		<graphicData> 
+			<texPath>Things/Ogryn/Catachan/Hats/CatachanHelmet_Ogryn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>OgrynCatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ogryn/Catachan/Hats/CatachanHelmet_Ogryn</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="CadianFieldCap" Name="OgrynFieldCap">
+		<defName>OgrynHeadbandCatachan</defName>
+		<label>ogryn headband</label>
+		<description>Headband large enough for Ogryns, designed by Catachans.</description>
+		<graphicData> 
+			<texPath>Things/Ogryn/Catachan/Hats/CatachanHelmet_Ogryn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>ImperialGuardApparel</li>
+				<li>OgrynCatachanApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ogryn/Catachan/Hats/CatachanHelmet_Ogryn</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
 </Defs>

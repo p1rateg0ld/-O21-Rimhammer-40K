@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<R40KConstructStation_NumberOfDrones>Number of Constructs:</R40KConstructStation_NumberOfDrones>
+	<ConstructStationLockdown>Lockdown</ConstructStationLockdown>
+	<ConstructStationLockdownDesc>Force Constructs belonging to this station to return and stay until told otherwise.</ConstructStationLockdownDesc>
+ 
+</LanguageData>

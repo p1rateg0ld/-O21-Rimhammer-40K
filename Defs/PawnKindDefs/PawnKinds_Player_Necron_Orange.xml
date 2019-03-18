@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="PawnNecronWarriorBase">
+		<defName>NecronWarriorOrange</defName>
+		<race>Alien_NecronWarriorOrange</race>
+		<defaultFactionType>NecronOrangePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronDeathmarkBase">
+		<defName>NecronDeathmarkOrange</defName>
+		<race>Alien_NecronDeathmarkOrange</race>
+		<defaultFactionType>NecronOrangePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronLordBase">
+		<defName>NecronLordOrange</defName>
+		<race>Alien_NecronLordOrange</race>
+		<defaultFactionType>NecronOrangePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronOverlordBase">
+		<defName>NecronOverlordOrange</defName>
+		<race>Alien_NecronOverlordOrange</race>
+		<defaultFactionType>NecronOrangePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronPariahBase">
+		<defName>NecronPariahOrange</defName>
+		<race>Alien_NecronPariahOrange</race>
+		<defaultFactionType>NecronOrangePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PawnNecronSpyderBase">
+		<defName>NecronSpyderOrange</defName>
+		<race>Alien_NecronSpyderOrange</race>
+		<defaultFactionType>NecronOrangePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+</Defs>

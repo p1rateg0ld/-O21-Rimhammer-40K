@@ -114,10 +114,11 @@
 			</comps>
 		</ThingDef>
 
-	<ThingDef ParentName="ResourceBase">
+	<!-- <ThingDef ParentName="ResourceBase">
 		<defName>InactiveScarab</defName>
 		<label>inactive scarab</label>
-		<description>Canoptek scarab, installed in a Scarab Platform to activate it.</description>
+		<description>Canoptek scarab, installed in a Scarab Platform to activate it. 
+[CURRENTLY NOT USED, WILL HAVE FUNCTION IN FUTURE]</description>
 		<graphicData>
 			<texPath>Things/Necron/Constructs/Scarab/Stack/Necron_Scarab</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -148,6 +149,86 @@
 				<li>NecronFabricationAltar</li>
 			</recipeUsers>
 		</recipeMaker>
+	</ThingDef> -->
+
+	<ThingDef ParentName="ResourceBase" Name="GaussCellBase">
+		<defName>O21_NecronGaussCell_Green</defName>
+		<label>gauss cell (green)</label>
+		<description>Consumable cells of energy used by Necrons to recharge. Colour is irellevant other than determining colour of crytsals used to craft.</description>
+		<graphicData>
+			<texPath>Things/Necron/Item/GaussCell/Green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>0.025</Mass>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>0.3</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>O21_Nec_Research</researchPrerequisite>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>800</workAmount>
+			<targetCountAdjustment>5</targetCountAdjustment>
+			<productCount>5</productCount>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>NecronFabricationAltar</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Necrodermis>2</Necrodermis>
+			<GaussCrystalGreen>10</GaussCrystalGreen>
+		</costList>
+		<comps>
+			<li Class="O21Toolbox.Needs.CompProperties_EnergySource">
+				<isConsumable>true</isConsumable>
+				<energyWhenConsumed>0.80</energyWhenConsumed>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
 	</ThingDef>
+
+	<ThingDef ParentName="GaussCellBase">
+		<defName>O21_NecronGaussCell_Blue</defName>
+		<label>gauss cell (blue)</label>
+		<graphicData>
+			<texPath>Things/Necron/Item/GaussCell/Blue</texPath>
+		</graphicData>
+		<costList Inherit="False">
+			<Necrodermis>2</Necrodermis>
+			<GaussCrystalBlue>10</GaussCrystalBlue>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="GaussCellBase">
+		<defName>O21_NecronGaussCell_Orange</defName>
+		<label>gauss cell (orange)</label>
+		<graphicData>
+			<texPath>Things/Necron/Item/GaussCell/Orange</texPath>
+		</graphicData>
+		<costList Inherit="False">
+			<Necrodermis>2</Necrodermis>
+			<GaussCrystalOrange>10</GaussCrystalOrange>
+		</costList>
+	</ThingDef>
+
+  	<ThingDef ParentName="UnfinishedBase">
+    	<defName>UnfinishedScarab</defName>
+    	<label>unfinished scarab</label>
+    	<graphicData>
+      		<texPath>Things/Necron/Constructs/Scarab/Stack/Necron_Scarab</texPath>
+      		<graphicClass>Graphic_Single</graphicClass>
+			<color>(255, 255, 255)</color>
+	  		<drawSize>(1, 1)</drawSize>
+    	</graphicData>
+    	<stuffCategories Inherit="false" />
+  	</ThingDef>
 	
 </Defs>

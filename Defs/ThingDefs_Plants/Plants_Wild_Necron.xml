@@ -166,12 +166,6 @@
 			<plant>
 				<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
 			</plant>
-			<comps>
-				<li Class="CompProperties_Glower">
-					<glowRadius>4</glowRadius>
-					<glowColor>(0, 255, 0, 0)</glowColor>
-				</li>
-			</comps>
 		</ThingDef>
 
 			<ThingDef ParentName="NecCrystalTreeBase">
@@ -190,12 +184,6 @@
 				<plant>
 					<harvestedThingDef>GaussCrystalGreen</harvestedThingDef>
 				</plant>
-				<comps>
-					<li Class="CompProperties_Glower">
-						<glowRadius>2</glowRadius>
-						<glowColor>(0, 255, 0, 0)</glowColor>
-					</li>
-				</comps>
 			</ThingDef>
 
 	<ThingDef ParentName="NecCrystalPlantBase">
@@ -235,12 +223,6 @@
 			<plant>
 				<harvestedThingDef>GaussCrystalOrange</harvestedThingDef>
 			</plant>
-			<comps>
-				<li Class="CompProperties_Glower">
-					<glowRadius>4</glowRadius>
-					<glowColor>(255, 157, 0, 0)</glowColor>
-				</li>
-			</comps>
 		</ThingDef>
 
 			<ThingDef ParentName="NecCrystalTreeBase">
@@ -259,12 +241,6 @@
 				<plant>
 					<harvestedThingDef>GaussCrystalOrange</harvestedThingDef>
 				</plant>
-				<comps>
-					<li Class="CompProperties_Glower">
-						<glowRadius>2</glowRadius>
-						<glowColor>(255, 157, 0, 0)</glowColor>
-					</li>
-				</comps>
 			</ThingDef>
 
 	<ThingDef ParentName="NecCrystalPlantBase">
@@ -304,12 +280,6 @@
 			<plant>
 				<harvestedThingDef>GaussCrystalBlue</harvestedThingDef>
 			</plant>
-			<comps>
-				<li Class="CompProperties_Glower">
-					<glowRadius>4</glowRadius>
-					<glowColor>(0, 195, 255, 0)</glowColor>
-				</li>
-			</comps>
 		</ThingDef>
 
 			<ThingDef ParentName="NecCrystalTreeBase">
@@ -328,12 +298,6 @@
 				<plant>
 					<harvestedThingDef>GaussCrystalBlue</harvestedThingDef>
 				</plant>
-				<comps>
-					<li Class="CompProperties_Glower">
-						<glowRadius>2</glowRadius>
-						<glowColor>(0, 195, 255, 0)</glowColor>
-					</li>
-				</comps>
 			</ThingDef>
 
 </Defs>

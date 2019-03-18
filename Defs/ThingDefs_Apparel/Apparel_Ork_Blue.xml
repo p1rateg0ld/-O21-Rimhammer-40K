@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ====== Armors ====== -->
+	
+	<ThingDef ParentName="OrkLightArmorBase">
+		<defName>OrkLightArmorBlue</defName>
+		<label>ork light armor (blue)</label>
+		<description>Worn by snobby Boyz, also gud for improv'n 'plosions!</description>
+		<graphicData>
+			<texPath>Things/Ork/Armor/Blue/OrkArmor_Light</texPath>
+		</graphicData>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<equippedStatOffsets Inherit="False">
+			<SellPriceFactor>1.1</SellPriceFactor>
+			<AnimalGatherYield>1.1</AnimalGatherYield>
+			<PlantHarvestYield>1.1</PlantHarvestYield>
+        </equippedStatOffsets>
+		<apparel>
+			<tags Inherit="False">
+				<li>OrkApparel</li>
+				<li>DeathskullsApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Armor/Blue/OrkArmor_Light</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkMediumArmorBase">
+		<defName>OrkMediumArmorBlue</defName>
+		<label>ork medium armor (blue)</label>
+		<description>Worn by snobby Boyz, also gud for improv'n 'plosions!</description>
+		<graphicData>
+			<texPath>Things/Ork/Armor/Blue/OrkArmor_Medium</texPath>
+		</graphicData>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<equippedStatOffsets Inherit="False">
+			<SellPriceFactor>1.2</SellPriceFactor>
+			<AnimalGatherYield>1.2</AnimalGatherYield>
+			<PlantHarvestYield>1.2</PlantHarvestYield>
+        </equippedStatOffsets>
+		<apparel>
+			<tags Inherit="False">
+				<li>OrkApparel</li>
+				<li>DeathskullsApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Armor/Blue/OrkArmor_Medium</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="OrkHeavyArmorBase">
+		<defName>OrkHeavyArmorBlue</defName>
+		<label>ork heavy armor (blue)</label>
+		<description>Worn by snobby Boyz, also gud for improv'n 'plosions!</description>
+		<graphicData>
+			<texPath>Things/Ork/Armor/Blue/OrkArmor_Heavy</texPath>
+		</graphicData>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<equippedStatOffsets Inherit="False">
+			<SellPriceFactor>1.3</SellPriceFactor>
+			<AnimalGatherYield>1.3</AnimalGatherYield>
+			<PlantHarvestYield>1.3</PlantHarvestYield>
+        </equippedStatOffsets>
+		<apparel>
+			<tags Inherit="False">
+				<li>OrkApparel</li>
+				<li>DeathskullsApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Armor/Blue/OrkArmor_Heavy</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<!-- ====== Helmets ====== -->
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkBlueHelmet</defName>
+		<label>ork helmet (blue)</label>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/Blue/OrkHelmet_normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>OrkApparel</li>
+				<li>DeathskullsApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Hats/Blue/OrkHelmet_normal</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkBlueHelmetHorned</defName>
+		<label>ork horned helmet (blue)</label>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/Blue/OrkHelmet_horned</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>OrkApparel</li>
+				<li>DeathskullsApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Hats/Blue/OrkHelmet_horned</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkBlueBandana</defName>
+		<label>ork bandana (blue)</label>
+		<description>Bit uv cloth, won't do much, but itz betta than nuthin!</description>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/Blue/OrkBandana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>OrkApparel</li>
+				<li>DeathskullsApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Hats/Blue/OrkBandana</wornGraphicPath>
+		</apparel>
+		<statBases Inherit="False">
+			<Mass>1.8</Mass>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="OrkRedHelmetBase">
+		<defName>OrkBlueJaw</defName>
+		<label>ork gob (blue)</label>
+		<graphicData> 
+			<texPath>Things/Ork/Hats/Blue/OrkJaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+    		<tags Inherit="False">
+				<li>OrkApparel</li>
+				<li>DeathskullsApparel</li>
+			</tags>
+			<wornGraphicPath>Things/Ork/Hats/Blue/OrkJaw</wornGraphicPath>
+		</apparel>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+	</ThingDef>
+
+</Defs>

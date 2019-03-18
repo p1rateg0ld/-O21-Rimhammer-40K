@@ -66,7 +66,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="EvilSunzGrotAbstractBase">
-		<defName>GrotWeak</defName>
+		<defName>GrotWeak_ES</defName>
 		<label>Weak Grot</label>
 		<isFighter>true</isFighter>
 		<weaponMoney>
@@ -87,7 +87,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="EvilSunzGrotAbstractBase">
-		<defName>GrotTough</defName>
+		<defName>GrotTough_ES</defName>
 		<label>Tough Grot</label>
 		<isFighter>true</isFighter>
 		<weaponMoney>
@@ -108,7 +108,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="EvilSunzGrotAbstractBase">
-		<defName>GrotStrong</defName>
+		<defName>GrotStrong_ES</defName>
 		<label>Strong Grot</label>
 		<isFighter>true</isFighter>
 		<weaponMoney>

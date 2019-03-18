@@ -11,5 +11,13 @@
 	<SettingsGeneral>General Settings</SettingsGeneral>
 	<UseCustomBackgroundLabel>Use Custom Background</UseCustomBackgroundLabel>
 	<UseCustomBackgroundDesc>Enables the custom background to show on the main menu.</UseCustomBackgroundDesc>
+	
+	<!-- Zones -->
+	<CrystalGrowingZone>crystal growing zone</CrystalGrowingZone>
+	<DesignatorGrowingZoneDesc>Create a zone where your colonists will try to grow a certain kind of crystal.</DesignatorGrowingZoneDesc>
+	
+	<!-- PawnCrafter: Necrons -->
+	<NecronAwakenedLetterLabel>Necron Awakened: {0}</NecronAwakenedLetterLabel>
+	<NecronAwakenedLetterDescription>{0} rises from the tomb at last, ready to serve.</NecronAwakenedLetterDescription>
  
 </LanguageData>

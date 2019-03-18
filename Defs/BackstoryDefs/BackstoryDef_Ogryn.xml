@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ Ogryn Childhoods ========================== -->
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryOgrynChild00</defName>
+		<title>Ogryn Child</title>
+		<titleShort>Ogryn</titleShort>
+		<baseDescription>Hailing from a series of cold and barren planets across the galaxy which posess high gravity, Ogryns grow up in relatively brutish cultures, and so are extremely limited in mental capacity. What they lack in brain power they more than make up for in brute strength. Their practically animalistic minds do well working with animals as they tend to bond easier.</baseDescription>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>OgrynBackstory</li>
+		</spawnCategories>
+		<workDisables>
+        	<li>Intellectual</li>
+        	<li>Artistic</li>
+        	<li>Social</li>
+        	<li>Caring</li>
+        	<li>Cooking</li>
+        	<li>Construction</li>
+        	<li>PlantWork</li>
+        	<li>Crafting</li>
+        	<li>Artistic</li>
+    	</workDisables>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>8</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+	<!-- ============================ Ogryn Adulthoods ========================== -->
+
+	<AlienRace.BackstoryDef>
+		<defName>BackstoryOgrynAdult00</defName>
+		<title>Ogryn Soldier</title>
+		<titleShort>Soldier</titleShort>
+		<baseDescription>[PAWN_nameDef] was recruited at an early age to be part of the Imperial Guard, this brought with it some training in how to use firearms, not that it's helped much more than getting the general direction correct...</baseDescription>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<maleCommonality>20</maleCommonality>
+		<spawnCategories>
+			<li>OgrynBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

@@ -64,6 +64,18 @@
 	<DesignatorDropdownGroupDef>
 		<defName>RH_NecScarabPlatforms</defName>
 	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NecTombs</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NecSarcophagi</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>RH_NecCannery</defName>
+	</DesignatorDropdownGroupDef>
 	
 	<DesignatorDropdownGroupDef>
 		<defName>RH_NEC_LightTurret</defName>

@@ -167,6 +167,20 @@
 					<li>OrkKommandoGoggles</li>
 					<li>OrkGoggles</li>
 					<li>OrkRedJaw</li>
+					<li>OrkLightArmorYellow</li>
+					<li>OrkMediumArmorYellow</li>
+					<li>OrkHeavyArmorYellow</li>
+					<li>OrkYellowHelmet</li>
+					<li>OrkYellowHelmetHorned</li>
+					<li>OrkYellowBandana</li>
+					<li>OrkYellowJaw</li>
+					<li>OrkLightArmorBlue</li>
+					<li>OrkMediumArmorBlue</li>
+					<li>OrkHeavyArmorBlue</li>
+					<li>OrkBlueHelmet</li>
+					<li>OrkBlueHelmetHorned</li>
+					<li>OrkBlueBandana</li>
+					<li>OrkBlueJaw</li>
 				</apparelList>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 			</raceRestriction>

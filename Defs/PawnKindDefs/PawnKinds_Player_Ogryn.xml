@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Abstract="True" Name="BaseOgrynPawnKind">
+		<race>Alien_Ogryn</race>
+		<combatPower>80</combatPower>
+		<baseRecruitDifficulty>0.20</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseOgrynPawnKind">
+		<defName>Ogryn</defName>
+		<label>Ogryn</label>
+		<defaultFactionType>TerranPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>OgrynBackstory</li>
+		</backstoryCategories>
+		<apparelTags Inherit="false">
+			<li>OgrynApparel</li>
+			<li>OgrynCadianApparel</li>
+			<li>OgrynCatachanApparel</li>
+			<li>OgrynKriegApparel</li>
+			<li>OgrynValhallanApparel</li>
+			<li>OgrynSteelLegionApparel</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>100</min>
+			<max>1200</max>
+		</apparelMoney>
+		<apparelRequired Inherit="False">
+			<li>OgrynCadianBodysuit</li>
+			<li>OgrynCadianArmor</li>
+			<li>OgrynRebreather</li>
+		</apparelRequired>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+
+</Defs>

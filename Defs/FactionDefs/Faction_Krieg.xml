@@ -69,6 +69,7 @@
 					<IGGrenadier_Krieg>30</IGGrenadier_Krieg>
 					<IGSniper_Krieg>30</IGSniper_Krieg>
 					<IGPickelTrooper>5</IGPickelTrooper>
+					<IGOgryn_Krieg>10</IGOgryn_Krieg>
 				</options>
 			</li>
 			<li>
@@ -78,6 +79,7 @@
 					<IGCommissar_Krieg>30</IGCommissar_Krieg>
 					<IGGuardsman_Krieg>30</IGGuardsman_Krieg>
 					<IGPickelTrooper>5</IGPickelTrooper>
+					<IGOgryn_Krieg>10</IGOgryn_Krieg>
 				</options>
 			</li>
 			<li>
@@ -95,6 +97,7 @@
 					<IGGuardsman_Krieg>30</IGGuardsman_Krieg>
 					<IGGrenadier_Krieg>30</IGGrenadier_Krieg>
 					<IGSniper_Krieg>30</IGSniper_Krieg>
+					<IGOgryn_Krieg>10</IGOgryn_Krieg>
 				</guards>
 			</li>
 			<li>
@@ -103,6 +106,7 @@
 					<IGGrenadier_Krieg>30</IGGrenadier_Krieg>
 					<IGSniper_Krieg>30</IGSniper_Krieg>
 					<IGPickelTrooper>5</IGPickelTrooper>
+					<IGOgryn_Krieg>10</IGOgryn_Krieg>
 				</options>
 			</li>
     </pawnGroupMakers>

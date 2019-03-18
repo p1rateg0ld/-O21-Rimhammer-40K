@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="PawnNecronWarriorBase">
+		<defName>NecronWarrior</defName>
+		<label>Necron Warrior</label>
+		<race>Alien_NecronWarrior</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronLowerBackstory</li>
+			<li>NecronWarriorBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>80</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef Name="PawnNecronDeathmarkBase">
+		<defName>NecronDeathmark</defName>
+		<label>Necron Deathmark</label>
+		<race>Alien_NecronDeathmark</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronLowerBackstory</li>
+			<li>NecronDeathmarkBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>80</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef Name="PawnNecronLordBase">
+		<defName>NecronLord</defName>
+		<label>Necron Lord</label>
+		<race>Alien_NecronLord</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronHighBackstory</li>
+			<li>NecronLordBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>90</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef Name="PawnNecronOverlordBase">
+		<defName>NecronOverlord</defName>
+		<label>Necron Overlord</label>
+		<race>Alien_NecronOverlord</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronHighBackstory</li>
+			<li>NecronOverlordBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>100</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef Name="PawnNecronPariahBase">
+		<defName>NecronPariah</defName>
+		<label>Necron Pariah</label>
+		<race>Alien_NecronPariah</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>NecronLowerBackstory</li>
+			<li>NecronWarriorBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>80</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+	<PawnKindDef Name="PawnNecronSpyderBase">
+		<defName>NecronSpyder</defName>
+		<label>Necron Spyder</label>
+		<race>Alien_NecronSpyder</race>
+		<defaultFactionType>NecronPlayerColony</defaultFactionType>
+		<backstoryCategories>
+			<li>SpyderBackstory</li>
+		</backstoryCategories>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<combatPower>120</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+</Defs>

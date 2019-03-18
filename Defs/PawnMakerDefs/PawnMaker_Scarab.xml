@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="O21CustomPawnMakerBase" Abstract="True">
+        <description>Creates a Necron Scarab.</description>
+        <thingClass>Building</thingClass>
+
+        <graphicData>
+            <texPath>Things/Alpha</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <statBases>
+            <WorkToMake>550</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>0.1</Flammability>
+        </statBases>
+
+        <size>(1,1)</size>
+        <category>Building</category>
+        <pathCost>200</pathCost>
+        <passability>Standable</passability>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <filthLeaving>Filth_RubbleRock</filthLeaving>
+        <hasInteractionCell>false</hasInteractionCell>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <repairEffect>Repair</repairEffect>
+        <useHitPoints>True</useHitPoints>
+        <selectable>true</selectable>
+        <surfaceType>Item</surfaceType>
+        <tickerType>Normal</tickerType>
+    </ThingDef>
+	  
+    <ThingDef ParentName="O21CustomPawnMakerBase">
+        <defName>O21_CPM_ScarabGreen</defName>
+        <label>canoptek scarab (green)</label>
+        <comps>
+			<li Class="O21Toolbox.CustomThingMaker.CompProperties_PawnMaker">
+				<compClass>O21Toolbox.CustomThingMaker.Comp_PawnMaker</compClass>
+				<Pawnkind>ConstructScarab</Pawnkind>
+			</li>
+        </comps>
+    </ThingDef>
+	  
+    <ThingDef ParentName="O21CustomPawnMakerBase">
+        <defName>O21_CPM_ScarabBlue</defName>
+        <label>canoptek scarab (blue)</label>
+        <comps>
+			<li Class="O21Toolbox.CustomThingMaker.CompProperties_PawnMaker">
+				<compClass>O21Toolbox.CustomThingMaker.Comp_PawnMaker</compClass>
+				<Pawnkind>ConstructScarabBlue</Pawnkind>
+			</li>
+        </comps>
+    </ThingDef>
+	  
+    <ThingDef ParentName="O21CustomPawnMakerBase">
+        <defName>O21_CPM_ScarabOrange</defName>
+        <label>canoptek scarab (orange)</label>
+        <comps>
+			<li Class="O21Toolbox.CustomThingMaker.CompProperties_PawnMaker">
+				<compClass>O21Toolbox.CustomThingMaker.Comp_PawnMaker</compClass>
+				<Pawnkind>ConstructScarabOrange</Pawnkind>
+			</li>
+        </comps>
+    </ThingDef>
+
+   <RecipeDef>
+      	<defName>CreateCanoptekScarabGreen</defName>
+      	<label>create canoptek scarab (green)</label>
+      	<description>Create a canoptek scarab from necrodermis and gauss crystals.</description>
+      	<jobString>Creating Scarab</jobString>  
+      	<allowMixingIngredients>false</allowMixingIngredients>
+      	<ingredients>
+         	<li>
+            	<filter>
+               		<thingDefs>
+                  		<li>Necrodermis</li>
+               		</thingDefs>
+            	</filter>
+            	<count>80</count>
+         	</li>
+         	<li>
+				<filter>
+					<thingDefs>
+						<li>GaussCrystalGreen</li>
+					</thingDefs>
+				</filter>
+            	<count>30</count>
+         	</li>
+      	</ingredients>
+      	<products>
+         	<O21_CPM_ScarabGreen>1</O21_CPM_ScarabGreen>
+      	</products>
+	 	<recipeUsers>
+			<li>NecronFabricationAltar</li>
+      	</recipeUsers>
+	  	<skillRequirements>
+			<Crafting>6</Crafting>
+      	</skillRequirements>
+		
+	  	<researchPrerequisite>O21_Nec_Research</researchPrerequisite>
+      	<workAmount>3000</workAmount>
+	  	<unfinishedThingDef>UnfinishedScarab</unfinishedThingDef>
+      	<workSkill>Crafting</workSkill>
+    	<effectWorking>Repair</effectWorking>
+    	<soundWorking>Recipe_Machining</soundWorking>
+    	<workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+	</RecipeDef>
+
+   <RecipeDef>
+      	<defName>CreateCanoptekScarabBlue</defName>
+      	<label>create canoptek scarab (blue)</label>
+      	<description>Create a canoptek scarab from necrodermis and gauss crystals.</description>
+      	<jobString>Creating Scarab</jobString>  
+      	<allowMixingIngredients>false</allowMixingIngredients>
+      	<ingredients>
+         	<li>
+            	<filter>
+               		<thingDefs>
+                  		<li>Necrodermis</li>
+               		</thingDefs>
+            	</filter>
+            	<count>80</count>
+         	</li>
+         	<li>
+				<filter>
+					<thingDefs>
+						<li>GaussCrystalBlue</li>
+					</thingDefs>
+				</filter>
+            	<count>30</count>
+         	</li>
+      	</ingredients>
+      	<products>
+         	<O21_CPM_ScarabBlue>1</O21_CPM_ScarabBlue>
+      	</products>
+	 	<recipeUsers>
+			<li>NecronFabricationAltar</li>
+      	</recipeUsers>
+	  	<skillRequirements>
+			<Crafting>6</Crafting>
+      	</skillRequirements>
+		
+	  	<researchPrerequisite>O21_Nec_Research</researchPrerequisite>
+      	<workAmount>3000</workAmount>
+	  	<unfinishedThingDef>UnfinishedScarab</unfinishedThingDef>
+      	<workSkill>Crafting</workSkill>
+    	<effectWorking>Repair</effectWorking>
+    	<soundWorking>Recipe_Machining</soundWorking>
+    	<workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+	</RecipeDef>
+
+   <RecipeDef>
+      	<defName>CreateCanoptekScarabOrange</defName>
+      	<label>create canoptek scarab (orange)</label>
+      	<description>Create a canoptek scarab from necrodermis and gauss crystals.</description>
+      	<jobString>Creating Scarab</jobString>  
+      	<allowMixingIngredients>false</allowMixingIngredients>
+      	<ingredients>
+         	<li>
+            	<filter>
+               		<thingDefs>
+                  		<li>Necrodermis</li>
+               		</thingDefs>
+            	</filter>
+            	<count>80</count>
+         	</li>
+         	<li>
+				<filter>
+					<thingDefs>
+						<li>GaussCrystalOrange</li>
+					</thingDefs>
+				</filter>
+            	<count>30</count>
+         	</li>
+      	</ingredients>
+      	<products>
+         	<O21_CPM_ScarabOrange>1</O21_CPM_ScarabOrange>
+      	</products>
+	 	<recipeUsers>
+			<li>NecronFabricationAltar</li>
+      	</recipeUsers>
+	  	<skillRequirements>
+			<Crafting>6</Crafting>
+      	</skillRequirements>
+		
+	  	<researchPrerequisite>O21_Nec_Research</researchPrerequisite>
+      	<workAmount>3000</workAmount>
+	  	<unfinishedThingDef>UnfinishedScarab</unfinishedThingDef>
+      	<workSkill>Crafting</workSkill>
+    	<effectWorking>Repair</effectWorking>
+    	<soundWorking>Recipe_Machining</soundWorking>
+    	<workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+	</RecipeDef>
+
+</Defs>

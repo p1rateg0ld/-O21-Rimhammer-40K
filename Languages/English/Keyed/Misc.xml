@@ -14,7 +14,7 @@
 	
 	<!-- Zones -->
 	<CrystalGrowingZone>crystal growing zone</CrystalGrowingZone>
-	<DesignatorGrowingZoneDesc>Create a zone where your colonists will try to grow a certain kind of crystal.</DesignatorGrowingZoneDesc>
+	<CrystalDesignatorGrowingZoneDesc>Create a zone where your colonists will try to grow a certain kind of crystal.</CrystalDesignatorGrowingZoneDesc>
 	
 	<!-- PawnCrafter: Necrons -->
 	<NecronAwakenedLetterLabel>Necron Awakened: {0}</NecronAwakenedLetterLabel>

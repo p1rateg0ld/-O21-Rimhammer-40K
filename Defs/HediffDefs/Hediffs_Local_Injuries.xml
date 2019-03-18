@@ -185,13 +185,5 @@
 			<destroyedOutLabel>Shot Out</destroyedOutLabel>
 		</injuryProps>
 	</HediffDef>
-	
-	<!-- BASES -->
-	
-	  <HediffDef Name="InjuryBase" Abstract="True">
-    <hediffClass>Hediff_Injury</hediffClass>
-    <tendable>true</tendable>
-    <displayWound>true</displayWound>
-  </HediffDef>
 
 </Defs>

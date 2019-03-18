@@ -41,7 +41,8 @@
 		</building>
 		
 		<costList>
-		  <Necrodermis>200</Necrodermis>
+		  	<Necrodermis>200</Necrodermis>
+			<GaussCrystalGreen>50</GaussCrystalGreen>
 		</costList>
 		
 		<comps>
@@ -60,6 +61,160 @@
 			</li>
 			<li Class="CompProperties_Flickable" />
 		</comps>
+
+		<designatorDropdown>RH_NecCannery</designatorDropdown>
+
+		<modExtensions>
+			<li Class="O21Toolbox.PawnConverter.ConverterProperties">
+				<requiresPower>true</requiresPower>
+				<finishingSound>AstartesOvenDone</finishingSound>
+				<timerBarEnabled>False</timerBarEnabled>
+			</li>
+		</modExtensions>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>O21_CanoptekCanneryBlue</defName>
+		<label>canoptek cannery (blue)</label>
+		<description>An automated device for converting humans of any kind into Pariahs, the culmination of an unknown Necron Lords work to create a cybernetic combination of Human and Necron. Allowing them to be created without requiring the Pariah gene, giving Necrons a way to defeat an enemy and replenish their own numbers at the same time. Functionally Pariahs are no different from the standard Necron Warrior.</description>
+		<!-- Converter MUST be this class to function with the comp further below. -->
+		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		
+		<graphicData>
+			<texPath>Things/Necron/Building/Converter/CanoptekCannery_Blue_Closed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<WorkToBuild>3200</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		
+		<costList>
+		  	<Necrodermis>200</Necrodermis>
+			<GaussCrystalBlue>50</GaussCrystalBlue>
+		</costList>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(80,80,217,0,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+
+		<designatorDropdown>RH_NecCannery</designatorDropdown>
+
+		<modExtensions>
+			<li Class="O21Toolbox.PawnConverter.ConverterProperties">
+				<requiresPower>true</requiresPower>
+				<finishingSound>AstartesOvenDone</finishingSound>
+				<timerBarEnabled>False</timerBarEnabled>
+			</li>
+		</modExtensions>
+		
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>O21_CanoptekCanneryOrange</defName>
+		<label>canoptek cannery (orange)</label>
+		<description>An automated device for converting humans of any kind into Pariahs, the culmination of an unknown Necron Lords work to create a cybernetic combination of Human and Necron. Allowing them to be created without requiring the Pariah gene, giving Necrons a way to defeat an enemy and replenish their own numbers at the same time. Functionally Pariahs are no different from the standard Necron Warrior.</description>
+		<!-- Converter MUST be this class to function with the comp further below. -->
+		<thingClass>O21Toolbox.PawnConverter.Building_Converter</thingClass>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		
+		<graphicData>
+			<texPath>Things/Necron/Building/Converter/CanoptekCannery_Orange_Closed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<WorkToBuild>3200</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		
+		<costList>
+		  	<Necrodermis>200</Necrodermis>
+			<GaussCrystalOrange>50</GaussCrystalOrange>
+		</costList>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+
+		<designatorDropdown>RH_NecCannery</designatorDropdown>
 
 		<modExtensions>
 			<li Class="O21Toolbox.PawnConverter.ConverterProperties">

@@ -14,7 +14,7 @@
 			</shadowData>
 		</graphicData>
 		<statBases>
-			<MoveSpeed>6.6</MoveSpeed>
+			<MoveSpeed>8</MoveSpeed>
 			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.95</ArmorRating_Heat>
@@ -26,18 +26,26 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>7</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<chanceFactor>0.2</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
 			</li>
 		</tools>
 		<race>
-			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<body>CanoptekScarab</body>
-			<baseBodySize>0.2</baseBodySize>
-			<baseHealthScale>1.0</baseHealthScale>
+			<baseBodySize>1.0</baseBodySize>
+	  		<lifeExpectancy>2750</lifeExpectancy>
+			<baseHealthScale>0.5</baseHealthScale>
+	  		<canBePredatorPrey>false</canBePredatorPrey>
 			<lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -63,6 +71,94 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>O21_Construct</li>
+				<li>NecronBasic</li>
+			</hediffGiverSets>
+		</race>
+		<butcherProducts>
+			<Necrodermis>1</Necrodermis>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="Rimhammer40k.Necrons.NecronTweaker">
+				<tweakNecronResurrect>false</tweakNecronResurrect>
+				<tweakCorpseRot>true</tweakCorpseRot>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_ConstructBase">
+		<defName>ConstructScarab</defName>
+		<label>canoptek scarab</label>
+		<description>A Necron Canoptek Scarab, they wonder around aimlessly till they are given work to do. They will passively drop Necrodermis as a byproduct of consuming biomass.</description>
+		<graphicData>
+			<texPath>Things/Necron/Constructs/Scarab/Necron_Scarab</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>1.0</drawSize>
+			<shadowData>
+					<volume>(0.4, 0.4, 0.4)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MoveSpeed>6.6</MoveSpeed>
+			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
+			<MeatAmount>0</MeatAmount>
+	  		<MarketValue>1</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Necrodermis</woolDef>
+				<shearIntervalDays>1</shearIntervalDays>
+				<woolAmount>25</woolAmount>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+      		<thinkTreeMain>Animal</thinkTreeMain>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+	  		<foodType>OmnivoreAnimal, OvivoreAnimal, VegetarianRoughAnimal</foodType>
+			<body>CanoptekScarab</body>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>1.0</baseHealthScale>
+      		<trainability>Advanced</trainability>
+      		<herdAnimal>false</herdAnimal>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Melee_MechanoidSlash_HitBuilding</soundWounded>
+					<!--soundDeath>Pawn_Mech_Scyther_Death</soundDeath-->
+					<!--soundCall>Pawn_Mech_Scyther_Call</soundCall-->
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>2000</min>
+				<max>4000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+			<ageGenerationCurve>
+				<points>
+					<li>(1,0)</li>
+					<li>(16,100)</li>
+					<li>(200,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>O21_Construct</li>
+				<li>NecronBasic</li>
 			</hediffGiverSets>
 		</race>
 		<butcherProducts>
@@ -81,7 +177,7 @@
 		<defName>ConstructSwarmScarab</defName>
 		<label>canoptek scarab</label>
 		<race>ConstructSwarmScarab</race>
-		<combatPower>50</combatPower>
+		<combatPower>25</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<defaultFactionType>O21_FriendlyConstruct_Necron</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
@@ -90,6 +186,118 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Necron/Constructs/Scarab/Necron_Scarab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+					<shadowData>
+							<volume>(0.4, 0.4, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<PawnKindDef>
+		<defName>ConstructSwarmScarabBlue</defName>
+		<label>canoptek scarab</label>
+		<race>ConstructSwarmScarab</race>
+		<combatPower>25</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<defaultFactionType>O21_FriendlyConstruct_Necron</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<isFighter>true</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Necron/Constructs/Scarab/Blue/Necron_Scarab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+					<shadowData>
+							<volume>(0.4, 0.4, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<PawnKindDef>
+		<defName>ConstructSwarmScarabOrange</defName>
+		<label>canoptek scarab</label>
+		<race>ConstructSwarmScarab</race>
+		<combatPower>25</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<defaultFactionType>O21_FriendlyConstruct_Necron</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<isFighter>true</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Necron/Constructs/Scarab/Orange/Necron_Scarab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+					<shadowData>
+							<volume>(0.4, 0.4, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<PawnKindDef>
+		<defName>ConstructScarab</defName>
+		<label>canoptek scarab</label>
+		<race>ConstructScarab</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<aiAvoidCover>true</aiAvoidCover>
+		<isFighter>true</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Necron/Constructs/Scarab/Necron_Scarab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+					<shadowData>
+							<volume>(0.4, 0.4, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<PawnKindDef>
+		<defName>ConstructScarabBlue</defName>
+		<label>canoptek scarab</label>
+		<race>ConstructScarab</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<aiAvoidCover>true</aiAvoidCover>
+		<isFighter>true</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Necron/Constructs/Scarab/Blue/Necron_Scarab</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+					<shadowData>
+							<volume>(0.4, 0.4, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<PawnKindDef>
+		<defName>ConstructScarabOrange</defName>
+		<label>canoptek scarab</label>
+		<race>ConstructScarab</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<aiAvoidCover>true</aiAvoidCover>
+		<isFighter>true</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Necron/Constructs/Scarab/Orange/Necron_Scarab</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1</drawSize>
 					<shadowData>

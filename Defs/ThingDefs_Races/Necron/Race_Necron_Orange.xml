@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>NecronOrange_Settings</defName>
+		<pawnKindSettings>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>NecronOverlordOrange</li>
+							</kindDefs>
+							<chance>1.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>NecronOrangePlayerColony</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>NecronWarriorOrange</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>NecronDeathmarkOrange</li>
+							</kindDefs>
+							<chance>10.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>NecronLordOrange</li>
+							</kindDefs>
+							<chance>5.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>NecronOverlordOrange</li>
+							</kindDefs>
+							<chance>1.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>NecronOrangePlayerColony</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+	<AlienRace.ThingDef_AlienRace ParentName="Alien_Necron">
+		<defName>Alien_NecronWarriorOrange</defName>
+		<alienRace>
+			<graphicPaths Inherit="False">
+				<li>
+					<head>Things/Necron/Orange/Heads/</head>
+					<body>Things/Necron/Orange/Body/</body>
+				</li>
+				<li>
+					<lifeStageDefs>
+						<li>HumanlikeAdult</li>
+					</lifeStageDefs>
+				</li>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+
+	<AlienRace.ThingDef_AlienRace ParentName="Alien_NecronLord">
+		<defName>Alien_NecronLordOrange</defName>
+		<alienRace>
+			<graphicPaths Inherit="false">
+				<li>
+					<head>Things/Necron/Orange/Heads/</head>
+					<body>Things/Necron/Orange/Body/</body>
+				</li>
+				<li>
+					<lifeStageDefs>
+						<li>HumanlikeAdult</li>
+					</lifeStageDefs>
+				</li>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+
+	<AlienRace.ThingDef_AlienRace ParentName="Alien_NecronDeathmark">
+		<defName>Alien_NecronDeathmarkOrange</defName>
+		<label>Necron Deathmark</label>
+		<alienRace>
+			<graphicPaths Inherit="false">
+				<li>
+					<head>Things/Necron/Orange/Heads/</head>
+					<body>Things/Necron/Orange/Body/</body>
+				</li>
+				<li>
+					<lifeStageDefs>
+						<li>HumanlikeAdult</li>
+					</lifeStageDefs>
+				</li>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+
+	<AlienRace.ThingDef_AlienRace ParentName="Alien_NecronOverlord">
+		<defName>Alien_NecronOverlordOrange</defName>
+		<alienRace>
+			<graphicPaths Inherit="false">
+				<li>
+					<head>Things/Necron/Orange/Heads/</head>
+					<body>Things/Necron/Orange/Body/Overlord/</body>
+				</li>
+				<li>
+					<lifeStageDefs>
+						<li>HumanlikeAdult</li>
+					</lifeStageDefs>
+				</li>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+
+	<AlienRace.ThingDef_AlienRace ParentName="Alien_NecronPariah">
+		<defName>Alien_NecronPariahOrange</defName>
+		<alienRace>
+			<graphicPaths Inherit="false">
+				<li>
+					<head>Things/Necron/Orange/Heads/</head>
+					<body>Things/Necron/Orange/Body/Pariah/</body>
+				</li>
+				<li>
+					<lifeStageDefs>
+						<li>HumanlikeAdult</li>
+					</lifeStageDefs>
+				</li>
+			</graphicPaths>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+	
+</Defs>

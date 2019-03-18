@@ -69,6 +69,7 @@
 					<IGSoldier_Valhallan>250</IGSoldier_Valhallan>
 					<IGHvyTrooper_Valhallan>250</IGHvyTrooper_Valhallan>
 					<IGTrooper_Valhallan>250</IGTrooper_Valhallan>
+					<IGOgryn_Valhallan>10</IGOgryn_Valhallan>
 				</options>
 			</li>
 			<li>
@@ -78,6 +79,7 @@
 					<IGCommissar_Valhallan>200</IGCommissar_Valhallan>
 					<IGOfficer_Valhallan>200</IGOfficer_Valhallan>
 					<IGTrooper_Valhallan>250</IGTrooper_Valhallan>
+					<IGOgryn_Valhallan>10</IGOgryn_Valhallan>
 				</options>
 			</li>
 			<li>
@@ -95,6 +97,7 @@
 					<IGTrooper_Valhallan>60</IGTrooper_Valhallan>
 					<IGSoldier_Valhallan>70</IGSoldier_Valhallan>
 					<IGHvyTrooper_Valhallan>80</IGHvyTrooper_Valhallan>
+					<IGOgryn_Valhallan>10</IGOgryn_Valhallan>
 				</guards>
 			</li>
 			<li>
@@ -103,6 +106,7 @@
 					<IGSoldier_Valhallan>250</IGSoldier_Valhallan>
 					<IGHvyTrooper_Valhallan>350</IGHvyTrooper_Valhallan>
 					<IGTrooper_Valhallan>280</IGTrooper_Valhallan>
+					<IGOgryn_Valhallan>30</IGOgryn_Valhallan>
 				</options>
 			</li>
     </pawnGroupMakers>
