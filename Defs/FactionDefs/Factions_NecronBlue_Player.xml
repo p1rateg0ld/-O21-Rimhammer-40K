@@ -3,6 +3,8 @@
   
 	<FactionDef ParentName="NecronPlayerFactionBase">
 		<defName>NecronBluePlayerColony</defName>
+		<label>necron tomb (blue)</label>
+		<basicMemberKind>NecronOverlordBlue</basicMemberKind>
 	</FactionDef>
 
 </Defs>

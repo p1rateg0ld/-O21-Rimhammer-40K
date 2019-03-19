@@ -3,10 +3,10 @@
   
 	<FactionDef Name="NecronPlayerFactionBase">
 		<defName>NecronPlayerColony</defName>
-		<label>Necron Tomb</label>
+		<label>necron tomb (green)</label>
 		<description>Your own community.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>NecronWarrior</basicMemberKind>
+		<basicMemberKind>NecronOverlord</basicMemberKind>
 		<pawnsPlural>Necrons</pawnsPlural>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>

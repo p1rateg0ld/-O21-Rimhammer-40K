@@ -179,7 +179,7 @@
 		<label>ogryn headband</label>
 		<description>Headband large enough for Ogryns, designed by Catachans.</description>
 		<graphicData> 
-			<texPath>Things/Ogryn/Catachan/Hats/CatachanHelmet_Ogryn</texPath>
+			<texPath>Things/Ogryn/Catachan/Hats/CatachanHeadband_Ogryn</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -188,7 +188,7 @@
 				<li>ImperialGuardApparel</li>
 				<li>OgrynCatachanApparel</li>
 			</tags>
-			<wornGraphicPath>Things/Ogryn/Catachan/Hats/CatachanHelmet_Ogryn</wornGraphicPath>
+			<wornGraphicPath>Things/Ogryn/Catachan/Hats/CatachanHeadband_Ogryn</wornGraphicPath>
 		</apparel>
 	</ThingDef>
 

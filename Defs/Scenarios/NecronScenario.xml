@@ -5,7 +5,7 @@
 		<label>Necron Awakening</label>
 		<description>After millenia you are once again awake on a world you once called home, no idea why or how you have been awoken, but you do know you need to help the others awaken too.</description>
 		<scenario>
-			<summary>Two Necrons awaken on the surface, your job, awaken the others.</summary>
+			<summary>One Necron Overlord awakens on the surface, your job, awaken the others. Accompanied by two Canoptek Spyders and three Canoptek Scarabs.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>NecronPlayerColony</factionDef>
@@ -13,7 +13,7 @@
 			<parts>
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
-					<pawnCount>2</pawnCount>
+					<pawnCount>3</pawnCount>
 					<pawnChoiceCount>6</pawnChoiceCount>
 				</li>
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
@@ -25,12 +25,12 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>NecronGaussFlayer</thingDef>
-					<count>2</count>
+					<thingDef>NecronStaffOfLight</thingDef>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>NecronHyperphaseSword</thingDef>
+					<thingDef>O21_NecronGaussCell_Green</thingDef>
+					<count>60</count>
 				</li>
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
@@ -40,13 +40,19 @@
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">
 					<def>ScatterThingsNearPlayerStart</def>
 					<thingDef>GaussCrystalGreen</thingDef>
-					<count>150</count>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>ConstructScarab</animalKind>
+					<count>3</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
 				</li>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
 					<text>After millenia you are once again awake on a world you once called home, no idea why or how you have been awoken, but your do know you need to help the others awaken too.
 
-	Note: Necrons are unfinished, but playable, there will be a lot of weirdness compared to lore, some of it just can't be helped with Rimworld, some of it is just down to not being done yet. All Necron tech uses Necrodermis, you can craft this from nothing at a crafting spot for now, to guarantee you can always get some. Make sure to build a generator and scarab platform to get started, using scarabs is pretty much essential.</text>
+Note: Necrons are unfinished, but playable, there will be a lot of weirdness compared to lore, some of it just can't be helped with Rimworld, some of it is just down to not being done yet. All Necron tech uses Necrodermis, you can craft this from nothing at a crafting spot for now, to guarantee you can always get some. The intended method of getting Necrodermis is from Canoptek Scarabs, who eat any biomass and 'shed' Necrodermis passively.</text>
 					<textKey>GameStartDialog</textKey>
 					<closeSound>GameStartSting</closeSound>
 				</li>

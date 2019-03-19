@@ -28,7 +28,7 @@ some uv wot dey steal dey trade or sell ta otha orks, or turn into upgraded warg
 			<min>-100</min>
 			<max>-80</max>
 		</startingGoodwill>
-		<fixedName>Deatskulls</fixedName>
+		<fixedName>Deathskulls</fixedName>
 		<settlementNameMaker>NamerOrkBase</settlementNameMaker>
 		<techLevel>Spacer</techLevel>
 		<backstoryCategories>

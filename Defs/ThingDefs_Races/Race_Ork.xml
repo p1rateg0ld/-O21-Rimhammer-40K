@@ -11,6 +11,12 @@
 					</kindDefs>
 					<chance>20.0</chance>
 				</li>
+				<li>
+					<kindDefs>
+						<li>Grot</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
@@ -18,6 +24,12 @@
 						<li>Ork</li>
 					</kindDefs>
 					<chance>20.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>Grot</li>
+					</kindDefs>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -28,6 +40,12 @@
 								<li>Ork</li>
 							</kindDefs>
 							<chance>20.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Grot</li>
+							</kindDefs>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -43,6 +61,12 @@
 								<li>Ork</li>
 							</kindDefs>
 							<chance>20.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Grot</li>
+							</kindDefs>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>

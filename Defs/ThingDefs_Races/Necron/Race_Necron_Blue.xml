@@ -11,7 +11,13 @@
 							<kindDefs>
 								<li>NecronOverlordBlue</li>
 							</kindDefs>
-							<chance>1.0</chance>
+							<chance>20.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>NecronSpyderBlue</li>
+							</kindDefs>
+							<chance>40.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -42,9 +48,9 @@
 						</li>
 						<li>
 							<kindDefs>
-								<li>NecronOverlordBlue</li>
+								<li>NecronSpyderBlue</li>
 							</kindDefs>
-							<chance>1.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>

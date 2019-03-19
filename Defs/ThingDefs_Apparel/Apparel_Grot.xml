@@ -82,7 +82,7 @@
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="OrkClothingBase">
+	<ThingDef ParentName="GrotClothingBase">
 		<defName>GrotClothingCloth</defName>
 		<label>Grot Heavy Fatigues</label>
 		<description>Dis cloth'n iz for grotz 'dat like a bit more kover'n dere skin.</description>

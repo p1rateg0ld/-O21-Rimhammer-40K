@@ -151,7 +151,7 @@
 
 	<ThingDef ParentName="O21_BuildingBase">
 		<defName>GaussGenerator_A_Small</defName>
-		<label>Small Gauss Generator</label>
+		<label>small gauss generator (green)</label>
 		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
@@ -208,7 +208,7 @@
 
 	<ThingDef ParentName="O21_BuildingBase">
 		<defName>GaussGenerator_B_Large</defName>
-		<label>Large Gauss Generator</label>
+		<label>large gauss generator (green)</label>
 		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe. Note: Must be placed on a steam geyser</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
@@ -267,7 +267,7 @@
 
 	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_NecBattery</defName>
-		<label>necron battery</label>
+		<label>necron battery (green)</label>
 		<description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire.</description>
 		<thingClass>Building_Battery</thingClass>
 		<graphicData>
@@ -316,6 +316,364 @@
 			<li Class="CompProperties_Glower">
 				<glowRadius>4</glowRadius>
 				<glowColor>(80,217,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+  	</ThingDef>
+
+
+	  
+
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>GaussGenerator_A_SmallBlue</defName>
+		<label>small gauss generator (blue)</label>
+		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Power/Blue/GaussGeneratorSmall</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.3, 3.3)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>10000</pathCost>
+		<fillPercent>1.0</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>false</castEdgeShadows>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3, 3)</size>
+		<costList>
+			<Necrodermis>150</Necrodermis>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-1000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.1</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>GaussGenerator_B_LargeBlue</defName>
+		<label>large gauss generator (blue)</label>
+		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe. Note: Must be placed on a steam geyser</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Power/Blue/GaussGeneratorLarge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6.2, 6.2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>10000</pathCost>
+		<fillPercent>1.0</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>false</castEdgeShadows>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<statBases>
+			<WorkToBuild>4000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(6, 6)</size>
+		<costList>
+			<Necrodermis>350</Necrodermis>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlantSteam</compClass>
+				<basePowerConsumption>-4000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.1</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_OnSteamGeyser</li>
+		</placeWorkers>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>O21_NecBatteryBlue</defName>
+		<label>necron battery (blue)</label>
+		<description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire.</description>
+		<thingClass>Building_Battery</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Power/Blue/Battery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.2,3.2)</drawSize>
+		</graphicData>
+		
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(2,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.60</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>
+		
+		<costList>
+			<Necrodermis>140</Necrodermis>
+			<GaussCrystalGreen>20</GaussCrystalGreen>
+		</costList>
+		
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>6000</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+  	</ThingDef>
+
+
+	  
+
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>GaussGenerator_A_SmallOrange</defName>
+		<label>small gauss generator (orange)</label>
+		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Power/Orange/GaussGeneratorSmall</texPath>
+			<shaderType>Transparent</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.3, 3.3)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>10000</pathCost>
+		<fillPercent>1.0</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>false</castEdgeShadows>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3, 3)</size>
+		<costList>
+			<Necrodermis>150</Necrodermis>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-1000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.1</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>GaussGenerator_B_LargeOrange</defName>
+		<label>large gauss generator (orange)</label>
+		<description>Generates free energy, forever, without using fuel. Practically by magic to the savage races of the universe. Note: Must be placed on a steam geyser</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Power/Orange/GaussGeneratorLarge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6.2, 6.2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>10000</pathCost>
+		<fillPercent>1.0</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>false</castEdgeShadows>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<statBases>
+			<WorkToBuild>4000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(6, 6)</size>
+		<costList>
+			<Necrodermis>350</Necrodermis>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlantSteam</compClass>
+				<basePowerConsumption>-4000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(252,187,80,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>8.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.1</chanceNeverExplodeFromDamage>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_OnSteamGeyser</li>
+		</placeWorkers>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+		<researchPrerequisites>
+			<li>O21_Nec_Research</li>
+		</researchPrerequisites>
+		<designatorDropdown>RH_NecPowerGen</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="O21_BuildingBase">
+		<defName>O21_NecBatteryOrange</defName>
+		<label>necron battery (orange)</label>
+		<description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire.</description>
+		<thingClass>Building_Battery</thingClass>
+		<graphicData>
+			<texPath>Things/Necron/Building/Power/Orange/Battery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.2,3.2)</drawSize>
+		</graphicData>
+		
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(2,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.60</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>
+		
+		<costList>
+			<Necrodermis>140</Necrodermis>
+			<GaussCrystalGreen>20</GaussCrystalGreen>
+		</costList>
+		
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>6000</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(252,187,80,0)</glowColor>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>

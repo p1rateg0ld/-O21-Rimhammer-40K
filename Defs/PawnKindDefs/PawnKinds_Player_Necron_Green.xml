@@ -3,7 +3,7 @@
 
 	<PawnKindDef Name="PawnNecronWarriorBase">
 		<defName>NecronWarrior</defName>
-		<label>Necron Warrior</label>
+		<label>Necron Warrior (Green)</label>
 		<race>Alien_NecronWarrior</race>
 		<defaultFactionType>NecronPlayerColony</defaultFactionType>
 		<backstoryCategories>
@@ -20,7 +20,7 @@
 
 	<PawnKindDef Name="PawnNecronDeathmarkBase">
 		<defName>NecronDeathmark</defName>
-		<label>Necron Deathmark</label>
+		<label>Necron Deathmark (Green)</label>
 		<race>Alien_NecronDeathmark</race>
 		<defaultFactionType>NecronPlayerColony</defaultFactionType>
 		<backstoryCategories>
@@ -37,7 +37,7 @@
 
 	<PawnKindDef Name="PawnNecronLordBase">
 		<defName>NecronLord</defName>
-		<label>Necron Lord</label>
+		<label>Necron Lord (Green)</label>
 		<race>Alien_NecronLord</race>
 		<defaultFactionType>NecronPlayerColony</defaultFactionType>
 		<backstoryCategories>
@@ -54,7 +54,7 @@
 
 	<PawnKindDef Name="PawnNecronOverlordBase">
 		<defName>NecronOverlord</defName>
-		<label>Necron Overlord</label>
+		<label>Necron Overlord (Green)</label>
 		<race>Alien_NecronOverlord</race>
 		<defaultFactionType>NecronPlayerColony</defaultFactionType>
 		<backstoryCategories>
@@ -71,7 +71,7 @@
 
 	<PawnKindDef Name="PawnNecronPariahBase">
 		<defName>NecronPariah</defName>
-		<label>Necron Pariah</label>
+		<label>Necron Pariah (Green)</label>
 		<race>Alien_NecronPariah</race>
 		<defaultFactionType>NecronPlayerColony</defaultFactionType>
 		<backstoryCategories>
@@ -88,7 +88,7 @@
 
 	<PawnKindDef Name="PawnNecronSpyderBase">
 		<defName>NecronSpyder</defName>
-		<label>Necron Spyder</label>
+		<label>Necron Spyder (Green)</label>
 		<race>Alien_NecronSpyder</race>
 		<defaultFactionType>NecronPlayerColony</defaultFactionType>
 		<backstoryCategories>

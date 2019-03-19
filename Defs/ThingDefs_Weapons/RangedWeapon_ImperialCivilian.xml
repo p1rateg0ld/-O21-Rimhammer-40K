@@ -28,6 +28,10 @@
 			<AccuracyLong>0.30</AccuracyLong>
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<MiningSpeed>2.0</MiningSpeed>
+			<MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
 		<recipeMaker>
             <recipeUsers Inherit="False">
                 <li>O21_ImpBench_Basic</li>
@@ -49,8 +53,6 @@
 		<tradeTags>
 			<li>IGRanged</li>
 		</tradeTags>
-		<equippedStatOffsets>
-		</equippedStatOffsets>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -148,6 +150,17 @@ Cheap and easy to produce on even the low-tech planets, autoguns are a staple we
             <CeramiteLowGrade>45</CeramiteLowGrade>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>IGRanged</li>
+			<li>ImperialAutogun</li>
+		</weaponTags>
+		<thingCategories>
+			<li>IGRanged</li>
+		</thingCategories>
+		<tradeTags>
+			<li>IGRanged</li>
+		</tradeTags>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>

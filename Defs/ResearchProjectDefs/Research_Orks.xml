@@ -31,7 +31,7 @@
 					<li>O21_Ork_Research</li>
 				</prerequisites>
 				<techLevel>Spacer</techLevel>
-				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+
 				<researchViewX>0</researchViewX>
 				<researchViewY>0</researchViewY>
 			</ResearchProjectDef>
@@ -46,7 +46,7 @@
 						<li>O21_Ork_Apparel</li>
 					</prerequisites>
 					<techLevel>Spacer</techLevel>
-					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	
 					<researchViewX>0</researchViewX>
 					<researchViewY>0</researchViewY>
 				</ResearchProjectDef>
@@ -61,7 +61,7 @@
 						<li>O21_Ork_Apparel</li>
 					</prerequisites>
 					<techLevel>Spacer</techLevel>
-					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	
 					<researchViewX>0</researchViewX>
 					<researchViewY>0</researchViewY>
 				</ResearchProjectDef>
@@ -76,7 +76,7 @@
 					<li>O21_Ork_Research</li>
 				</prerequisites>
 				<techLevel>Spacer</techLevel>
-				<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+
 				<researchViewX>0</researchViewX>
 				<researchViewY>0</researchViewY>
 			</ResearchProjectDef>
@@ -91,7 +91,7 @@
 						<li>O21_Ork_Apparel</li>
 					</prerequisites>
 					<techLevel>Spacer</techLevel>
-					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	
 					<researchViewX>0</researchViewX>
 					<researchViewY>0</researchViewY>
 				</ResearchProjectDef>
@@ -106,7 +106,7 @@
 						<li>O21_Ork_Apparel</li>
 					</prerequisites>
 					<techLevel>Spacer</techLevel>
-					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	
 					<researchViewX>0</researchViewX>
 					<researchViewY>0</researchViewY>
 				</ResearchProjectDef>

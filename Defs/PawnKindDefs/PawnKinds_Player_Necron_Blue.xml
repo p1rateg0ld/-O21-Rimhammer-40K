@@ -3,36 +3,42 @@
 
 	<PawnKindDef ParentName="PawnNecronWarriorBase">
 		<defName>NecronWarriorBlue</defName>
+		<label>Necron Warrior (Blue)</label>
 		<race>Alien_NecronWarriorBlue</race>
 		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="PawnNecronDeathmarkBase">
 		<defName>NecronDeathmarkBlue</defName>
+		<label>Necron Warrior (Blue)</label>
 		<race>Alien_NecronDeathmarkBlue</race>
 		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="PawnNecronLordBase">
 		<defName>NecronLordBlue</defName>
+		<label>Necron Lord (Blue)</label>
 		<race>Alien_NecronLordBlue</race>
 		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="PawnNecronOverlordBase">
 		<defName>NecronOverlordBlue</defName>
+		<label>Necron Overlord (Blue)</label>
 		<race>Alien_NecronOverlordBlue</race>
 		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="PawnNecronPariahBase">
 		<defName>NecronPariahBlue</defName>
+		<label>Necron Pariah (Blue)</label>
 		<race>Alien_NecronPariahBlue</race>
 		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="PawnNecronSpyderBase">
 		<defName>NecronSpyderBlue</defName>
+		<label>Necron Spyder (Blue)</label>
 		<race>Alien_NecronSpyderBlue</race>
 		<defaultFactionType>NecronBluePlayerColony</defaultFactionType>
 	</PawnKindDef>

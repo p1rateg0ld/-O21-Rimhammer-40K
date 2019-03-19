@@ -175,7 +175,7 @@
 	
 	<PawnKindDef>
 		<defName>ConstructSwarmScarab</defName>
-		<label>canoptek scarab</label>
+		<label>swarm scarab (green)</label>
 		<race>ConstructSwarmScarab</race>
 		<combatPower>25</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -198,7 +198,7 @@
 	
 	<PawnKindDef>
 		<defName>ConstructSwarmScarabBlue</defName>
-		<label>canoptek scarab</label>
+		<label>canoptek scarab (blue)</label>
 		<race>ConstructSwarmScarab</race>
 		<combatPower>25</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -221,7 +221,7 @@
 	
 	<PawnKindDef>
 		<defName>ConstructSwarmScarabOrange</defName>
-		<label>canoptek scarab</label>
+		<label>canoptek scarab (orange)</label>
 		<race>ConstructSwarmScarab</race>
 		<combatPower>25</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -244,7 +244,7 @@
 	
 	<PawnKindDef>
 		<defName>ConstructScarab</defName>
-		<label>canoptek scarab</label>
+		<label>canoptek scarab (green)</label>
 		<race>ConstructScarab</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -266,7 +266,7 @@
 	
 	<PawnKindDef>
 		<defName>ConstructScarabBlue</defName>
-		<label>canoptek scarab</label>
+		<label>canoptek scarab (blue)</label>
 		<race>ConstructScarab</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -288,7 +288,7 @@
 	
 	<PawnKindDef>
 		<defName>ConstructScarabOrange</defName>
-		<label>canoptek scarab</label>
+		<label>canoptek scarab (green)</label>
 		<race>ConstructScarab</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
