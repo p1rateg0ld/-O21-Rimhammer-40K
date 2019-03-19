@@ -65,6 +65,9 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<forcedRaceTraitEntries>
 				</forcedRaceTraitEntries>
+				<notXenophobistTowards>
+					<li>Alien_Ork</li>
+				</notXenophobistTowards>
 				<disallowedTraits>
 					<li>PsychicSensitivity</li>
 					<li>Nudist</li>

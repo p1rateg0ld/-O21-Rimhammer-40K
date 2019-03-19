@@ -89,6 +89,9 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<forcedRaceTraitEntries>
 				</forcedRaceTraitEntries>
+				<notXenophobistTowards>
+					<li>Alien_Grot</li>
+				</notXenophobistTowards>
 				<disallowedTraits>
 					<li>PsychicSensitivity</li>
 					<li>Nudist</li>
