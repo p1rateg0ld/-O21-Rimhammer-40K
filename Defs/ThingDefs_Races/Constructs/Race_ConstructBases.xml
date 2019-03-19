@@ -51,6 +51,7 @@
 			<useMeatFrom>Human</useMeatFrom>
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
+      		<nameGenerator>NamerAnimalGenericMale</nameGenerator>
 			<foodType>None</foodType>
 			<trainability>None</trainability>
 		</race>
