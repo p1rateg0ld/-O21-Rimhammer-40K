@@ -23,7 +23,7 @@
 			<RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>O21_Imp_PlasmaWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGAdvancedWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>125</Steel>
@@ -102,7 +102,7 @@
  
 	<!-- Plasma Gun -->
 
-	<!-- <ThingDef ParentName="O21BaseMakeableGun">
+	<ThingDef ParentName="O21BaseMakeableGun">
 		<defName>O21_PlasmaGun</defName>
 		<label>Plasma Gun</label>
 		<description>The Plasma Gun is a rifle-sized Plasma Weapon common to many of the armed forces of the Imperium of Man. It is classified as a special weapon and is carried by a variety of Imperial infantry, including Space Marines, Imperial Guardsmen and Storm Troopers. Like other infantry-carried plasma weapons, Imperial Plasma Guns are more powerful than plasma weapons used by xenos races but far more unstable as they have a chance to malfunction and even explode, wounding or even killing the wielder.
@@ -111,49 +111,57 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 		<graphicData>
 			<texPath>Things/Imperium/Weapons/Ranged/PlasmaGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
 		</graphicData>
+		<comps>     
+			<li>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<statBases>
 			<WorkToMake>18000</WorkToMake>
 			<MarketValue>3250</MarketValue>
 			<Mass>1.2</Mass>
-			<AccuracyTouch>0.91</AccuracyTouch>
-			<AccuracyShort>0.81</AccuracyShort>
-			<AccuracyMedium>0.70</AccuracyMedium>
-			<AccuracyLong>0.52</AccuracyLong>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
 			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>O21_Imp_PlasmaWeapons</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGAdvancedWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
 		</recipeMaker>
 		<costList>
-			<Steel>175</Steel>
-			<Plasteel>55</Plasteel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-			<Gold>4</Gold>
+			<CeramiteMedGrade>120</CeramiteMedGrade>
+			<ComponentIndustrial>10</ComponentIndustrial>
 		</costList>
 		<weaponTags>
-			<li>EliteGun</li>
+			<li>IGRanged</li>
 			<li>PlasmaGun</li>
-			<li>GuevesaAdvGun</li>
 		</weaponTags>
 		<thingCategories>
-			<li>OGIRanged</li>
+			<li>IGRanged</li>
 		</thingCategories>
 		<tradeTags>
-			<li>OGIRanged</li>
+			<li>IGRanged</li>
 		</tradeTags>
 		<verbs>
-			<li Class="AdeptusMechanicus.VerbPropertiesOH">
-				<verbClass>AdeptusMechanicus.Verb_ShootOHRF</verbClass>
-				<overheat>UR</overheat>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>OGI_Bullet_PlasmaGun</defaultProjectile>
+				<defaultProjectile>O21_Bullet_PlasmaGun</defaultProjectile>
+				<forcedMissRadius>0.5</forcedMissRadius>
 				<warmupTime>1.25</warmupTime>
 				<range>31</range>
-				<forcedMissRadius>0.5</forcedMissRadius>
 				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>1</burstShotCount>
 				<soundCast>PlasmaPistolSound</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -184,7 +192,7 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 	</ThingDef>
 
 		<ThingDef ParentName="BaseBullet">
-			<defName>OGI_Bullet_PlasmaGun</defName>
+			<defName>O21_Bullet_PlasmaGun</defName>
 			<label>Plasma Bolt</label>
 			<graphicData>
 				<texPath>Things/Projectile/PlamsShotSml</texPath>
@@ -193,31 +201,30 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 			<thingClass>Projectile_Explosive</thingClass>
 			<projectile>
 				<flyOverhead>false</flyOverhead>
-				<damageDef>OGIPlasma</damageDef>
+				<damageDef>O21Plasma</damageDef>
 				<explosionRadius>0.50</explosionRadius>
 				<damageAmountBase>45</damageAmountBase>
-				<armorPenetrationBase>0.68</armorPenetrationBase>
+				<armorPenetrationBase>0.2</armorPenetrationBase>
 				<stoppingPower>2</stoppingPower>
 				<speed>55</speed>
-				<soundExplode>OGIPP_Explosion</soundExplode>
+				<soundExplode>O21PP_Explosion</soundExplode>
 			</projectile>
 		</ThingDef> -->
 	
 	<!-- Plasma Cannon -->
 	
 	<!-- <ThingDef ParentName="O21BaseMakeableGun">
-		<thingClass>AdeptusMechanicus.ThingDef_GunOH</thingClass>
-		<defName>OGI_Gun_PlasmaCannon</defName>
+		<defName>O21_Gun_PlasmaCannon</defName>
 		<label>Plasma Cannon</label>
 		<description>The Plasma Cannon, also sometimes called the Heavy Plasma Gun, is an Imperial heavy weapon that relies on plasma technology to deliver lethal blasts of superheated matter to the target. Plasma Weapons work by using hydrogen fuel suspended in a cryogenic state, in either fuel flasks or backpack containers. As the fuel is fed into the miniature fusion core inside the weapon, the hydrogen energises into plasma which is held in the core of the weapon by powerful electromagnetic containment fields. When fired, the fields dilate open and the plasma is ejected via a linear magnetic accelerator as a bolt of superheated matter akin to a solar flare in appearance and temperature. This bolt will explode on impact and can generate the destructive heat of a small sun. For this reason, Plasma Weapons are sometimes called “Sun Guns” by the common Imperial population.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/Imperial/PlasmaCannon</texPath>
+			<texPath>Things/Imperium/Weapons/Ranged/PlasmaCannon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.250</drawSize>			
 		</graphicData>
 		<comps>     
 			<li>
-				<compClass>AdeptusMechanicus.CompOversizedWeapon</compClass>
+				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
 			</li>
 		</comps>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -232,7 +239,7 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 			<RangedWeapon_Cooldown>3.00</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>WRImpPlasmaTech</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_IGAdvancedWeapons</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Steel>200</Steel>
@@ -256,9 +263,8 @@ Plasma Weapons make use of hydrogen fuel suspended in a liquid state in either f
 			<MoveSpeed>-0.25</MoveSpeed>
 		</equippedStatOffsets>
 		<verbs>
-			<li Class="AdeptusMechanicus.VerbPropertiesOH">
-				<verbClass>AdeptusMechanicus.Verb_ShootOH</verbClass>
-				<overheat>UR</overheat>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>O21_Bullet_PlasmaCannon</defaultProjectile>
 				<warmupTime>4</warmupTime>

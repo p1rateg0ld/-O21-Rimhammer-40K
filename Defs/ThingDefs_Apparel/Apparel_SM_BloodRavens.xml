@@ -93,6 +93,23 @@
 		</apparel>
 	</ThingDef>
 	
+	<ThingDef ParentName="SMScoutArmorBase"> <!-- BloodRavens Commander Armour -->
+		<defName>BloodRavensScoutArmor</defName>
+		<label>blood ravens scout armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BloodRavens/Armor/Scout</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BloodRavens/Armor/Scout</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BloodRavensApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
 	<!-- Blood Raven Helmets -->
 	
 	<ThingDef ParentName="SMHelmetBase"> <!-- BloodRavens Grunt Armour -->

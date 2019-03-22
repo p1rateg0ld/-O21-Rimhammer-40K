@@ -76,9 +76,9 @@
 	<ThingDef ParentName="SMArmorBase" Name="SMTermArmorBase" Abstract="True"> <!-- Terminator Armour -->
 		<statBases>
 			<Mass>24</Mass>
-			<ArmorRating_Blunt>1.05</ArmorRating_Blunt>
-			<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
-			<ArmorRating_Heat>1.18</ArmorRating_Heat>
+			<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.03</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets Inherit="False">
             <MoveSpeed>-1.75</MoveSpeed>
@@ -92,6 +92,18 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="SMArmorBase" Name="SMCmdrArmorBase" Abstract="True"> <!-- Commander Armour -->
+	</ThingDef>
+	
+	<ThingDef ParentName="SMArmorBase" Name="SMScoutArmorBase" Abstract="True"> <!-- Scout Armour -->
+		<statBases>
+			<Mass>24</Mass>
+			<ArmorRating_Blunt>1.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.18</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+            <MoveSpeed>1.2</MoveSpeed>
+        </equippedStatOffsets>
 	</ThingDef>
 	
 	<!-- ====== Helmets ====== -->

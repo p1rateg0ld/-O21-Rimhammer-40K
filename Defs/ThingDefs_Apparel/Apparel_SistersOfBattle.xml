@@ -17,7 +17,7 @@
 		</thingCategories>
 		<techLevel>Spacer</techLevel>
 		<tradeability>Sellable</tradeability>
-		<costList>
+		<costList Inherit="False">
 			<CeramiteLowGrade>120</CeramiteLowGrade>
 			<CeramiteMedGrade>100</CeramiteMedGrade>
 			<CeramiteHighGrade>80</CeramiteHighGrade>
@@ -36,7 +36,7 @@
 			<ToxicSensitivity>-0.70</ToxicSensitivity>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
-		<apparel>
+		<apparel Inherit="False">
 			<wornGraphicPath>Things/SistersOfBattle/Apparel/Sororitas</wornGraphicPath>
 			<tags>
 				<li>SororitasApparel</li>
@@ -44,8 +44,11 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Legs</li>
+				<li>Feet</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
+				<li>Hands</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<layers>
 				<li>OnSkin</li>
@@ -56,13 +59,47 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<recipeMaker>
+		<recipeMaker Inherit="False">
             <recipeUsers Inherit="False">
                 <li>O21_ImpBench_Advanced</li>
             </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<researchPrerequisite>O21_Imp_SMPowerArmor</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 
+	<!-- SOB Helmet -->
+	
+	<ThingDef ParentName="CadianHeavyHelmet">
+		<defName>SororitasHelmet</defName>
+		<label>sororitas helmet</label>
+		<description>A strong helmet worn by Sisters of Battle.</description>
+		<graphicData> 
+			<texPath>Things/SistersOfBattle/Apparel/SororitaHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.30</ToxicSensitivity>
+		</equippedStatOffsets>
+		<costList Inherit="False">
+			<CeramiteLowGrade>45</CeramiteLowGrade>
+			<CeramiteMedGrade>30</CeramiteMedGrade>
+			<CeramiteHighGrade>25</CeramiteHighGrade>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<apparel>
+			<wornGraphicPath>Things/SistersOfBattle/Apparel/SororitaHelmet</wornGraphicPath>
+			<tags Inherit="False">
+				<li>SororitasApparel</li>
+			</tags>
+		</apparel>
+		<recipeMaker Inherit="False">
+            <recipeUsers>
+                <li>O21_ImpBench_Advanced</li>
+            </recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>O21_Imp_SMPowerArmor</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 </Defs>

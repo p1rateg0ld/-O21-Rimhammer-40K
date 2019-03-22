@@ -189,6 +189,10 @@
 				<isConsumable>true</isConsumable>
 				<energyWhenConsumed>0.80</energyWhenConsumed>
 			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(0, 255, 0, 0)</glowColor>
+			</li>
 		</comps>
 		<thingCategories>
 			<li>Manufactured</li>
@@ -205,6 +209,16 @@
 			<Necrodermis>2</Necrodermis>
 			<GaussCrystalBlue>10</GaussCrystalBlue>
 		</costList>
+		<comps Inherit="False">
+			<li Class="O21Toolbox.Needs.CompProperties_EnergySource">
+				<isConsumable>true</isConsumable>
+				<energyWhenConsumed>0.80</energyWhenConsumed>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(0, 255, 0, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="GaussCellBase">
@@ -217,6 +231,16 @@
 			<Necrodermis>2</Necrodermis>
 			<GaussCrystalOrange>10</GaussCrystalOrange>
 		</costList>
+		<comps Inherit="False">
+			<li Class="O21Toolbox.Needs.CompProperties_EnergySource">
+				<isConsumable>true</isConsumable>
+				<energyWhenConsumed>0.80</energyWhenConsumed>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(255, 157, 0, 0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 
   	<ThingDef ParentName="UnfinishedBase">

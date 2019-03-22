@@ -4,7 +4,7 @@
 	<ThingDef ParentName="O21_ConstructBase">
 		<defName>ConstructSwarmScarab</defName>
 		<label>small canoptek scarab</label>
-		<description>A small Necron Canoptek Scarab, they wonder around aimlessly till they aquire a target.</description>
+		<description>A small Necron Canoptek Scarab, they wander around aimlessly till they aquire a target.</description>
 		<graphicData>
 			<texPath>Things/Necron/Constructs/Scarab/Necron_Scarab</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -48,7 +48,7 @@
 	  		<canBePredatorPrey>false</canBePredatorPrey>
 			<lifeStageAges>
 				<li>
-					<def>MechanoidFullyFormed</def>
+					<def>ConstructFullyFormed</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Melee_MechanoidSlash_HitBuilding</soundWounded>
 					<!--soundDeath>Pawn_Mech_Scyther_Death</soundDeath-->
@@ -88,7 +88,7 @@
 	<ThingDef ParentName="O21_ConstructBase">
 		<defName>ConstructScarab</defName>
 		<label>canoptek scarab</label>
-		<description>A Necron Canoptek Scarab, they wonder around aimlessly till they are given work to do. They will passively drop Necrodermis as a byproduct of consuming biomass.</description>
+		<description>A Necron Canoptek Scarab, they wander around aimlessly till they are given work to do. They will passively produce Necrodermis as a byproduct of consuming biomass, which needs to be collected from them.</description>
 		<graphicData>
 			<texPath>Things/Necron/Constructs/Scarab/Necron_Scarab</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -108,8 +108,8 @@
 		<comps>
 			<li Class="CompProperties_Shearable">
 				<woolDef>Necrodermis</woolDef>
-				<shearIntervalDays>1</shearIntervalDays>
-				<woolAmount>25</woolAmount>
+				<shearIntervalDays>0.5</shearIntervalDays>
+				<woolAmount>20</woolAmount>
 			</li>
 		</comps>
 		<tools>
@@ -135,7 +135,7 @@
       		<herdAnimal>false</herdAnimal>
 			<lifeStageAges>
 				<li>
-					<def>MechanoidFullyFormed</def>
+					<def>ConstructFullyFormed</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Melee_MechanoidSlash_HitBuilding</soundWounded>
 					<!--soundDeath>Pawn_Mech_Scyther_Death</soundDeath-->

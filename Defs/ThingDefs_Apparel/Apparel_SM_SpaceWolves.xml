@@ -93,6 +93,23 @@
 		</apparel>
 	</ThingDef>
 	
+	<ThingDef ParentName="SMScoutArmorBase"> <!-- space wolves Commander Armour -->
+		<defName>SpaceWolvesScoutArmor</defName>
+		<label>space wolves scout armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/SpaceWolves/Armor/Scout</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/SpaceWolves/Armor/Scout</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SpaceWolvesApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
 	<!-- SpaceWolf Helmets -->
 	
 	<ThingDef ParentName="SMHelmetBase"> <!-- space wolves Grunt Armour -->

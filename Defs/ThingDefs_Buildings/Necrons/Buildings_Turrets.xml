@@ -143,7 +143,7 @@
 	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_NecronGreen_GaussHeavy</defName>
 		<label>heavy gauss turret (green)</label>
-		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
+		<description>Heavy gauss turret, fires arcs of gauss energy at enemies.</description>
 		<thingClass>Building_TurretGun</thingClass>
 		<designatorDropdown>RH_NEC_HeavyTurret</designatorDropdown>
 		<graphicData>
@@ -202,8 +202,8 @@
 		</comps>
 		
 		<costList>
-			<Necrodermis>200</Necrodermis>
-			<GaussCrystalGreen>60</GaussCrystalGreen>
+			<Necrodermis>400</Necrodermis>
+			<GaussCrystalGreen>80</GaussCrystalGreen>
 		</costList>
 		
 		<researchPrerequisites>
@@ -417,7 +417,7 @@
 	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_NecronOrange_GaussHeavy</defName>
 		<label>heavy gauss turret (orange)</label>
-		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
+		<description>Heavy gauss turret, fires arcs of gauss energy at enemies.</description>
 		<thingClass>Building_TurretGun</thingClass>
 		<designatorDropdown>RH_NEC_HeavyTurret</designatorDropdown>
 		<graphicData>
@@ -476,8 +476,8 @@
 		</comps>
 		
 		<costList>
-			<Necrodermis>200</Necrodermis>
-			<GaussCrystalOrange>60</GaussCrystalOrange>
+			<Necrodermis>400</Necrodermis>
+			<GaussCrystalOrange>80</GaussCrystalOrange>
 		</costList>
 		
 		<researchPrerequisites>
@@ -691,7 +691,7 @@
 	<ThingDef ParentName="O21_BuildingBase">
 		<defName>O21_Turret_NecronBlue_GaussHeavy</defName>
 		<label>heavy gauss turret (blue)</label>
-		<description>Light gauss turret, fires arcs of gauss energy at enemies.</description>
+		<description>Heavy gauss turret, fires arcs of gauss energy at enemies.</description>
 		<thingClass>Building_TurretGun</thingClass>
 		<designatorDropdown>RH_NEC_HeavyTurret</designatorDropdown>
 		<graphicData>
@@ -750,8 +750,8 @@
 		</comps>
 		
 		<costList>
-			<Necrodermis>200</Necrodermis>
-			<GaussCrystalBlue>60</GaussCrystalBlue>
+			<Necrodermis>400</Necrodermis>
+			<GaussCrystalBlue>80</GaussCrystalBlue>
 		</costList>
 		
 		<researchPrerequisites>

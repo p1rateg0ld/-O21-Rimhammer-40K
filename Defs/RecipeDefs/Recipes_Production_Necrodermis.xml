@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef>
+	<!-- <RecipeDef>
 		<defName>FabricateNecrodermis</defName>
 		<label>fabricate necrodermis</label>
 		<description>Create Necrodermis from raw energy.</description>
@@ -35,6 +35,6 @@
 		<recipeUsers>
 			<li>CraftingSpot</li>
 		</recipeUsers>
-	</RecipeDef>
+	</RecipeDef> -->
 	
 </Defs>

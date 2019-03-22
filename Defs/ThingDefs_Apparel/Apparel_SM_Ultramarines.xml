@@ -108,6 +108,23 @@
 		</apparel>
 	</ThingDef>
 	
+	<ThingDef ParentName="SMScoutArmorBase"> <!-- Ultramarine Commander Armour -->
+		<defName>UltramarineScoutArmor</defName>
+		<label>ultramarine scout armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Ultramarines/Armor/Scout</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Ultramarines/Armor/Scout</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>UltramarineApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
 	<!-- ====== Helmets ====== -->
 
 	<ThingDef ParentName="SMHelmetBase">

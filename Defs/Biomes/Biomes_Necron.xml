@@ -69,9 +69,9 @@
 			<DryThunderstorm>1</DryThunderstorm>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_GaussCrystalSmall_Green>6</Plant_GaussCrystalSmall_Green>
-			<Plant_GaussCrystalMed_Green>3</Plant_GaussCrystalMed_Green>
-			<Plant_GaussCrystalHuge_Green>1</Plant_GaussCrystalHuge_Green>
+			<Plant_GaussCrystalSmall_Green>3</Plant_GaussCrystalSmall_Green>
+			<Plant_GaussCrystalMed_Green>1.5</Plant_GaussCrystalMed_Green>
+			<Plant_GaussCrystalHuge_Green>0.5</Plant_GaussCrystalHuge_Green>
 		</wildPlants>
 		<wildAnimals />
 		<allowedPackAnimals>
@@ -148,9 +148,9 @@
 			<DryThunderstorm>1</DryThunderstorm>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_GaussCrystalSmall_Orange>6</Plant_GaussCrystalSmall_Orange>
-			<Plant_GaussCrystalMed_Orange>3</Plant_GaussCrystalMed_Orange>
-			<Plant_GaussCrystalHuge_Orange>1</Plant_GaussCrystalHuge_Orange>
+			<Plant_GaussCrystalSmall_Orange>3</Plant_GaussCrystalSmall_Orange>
+			<Plant_GaussCrystalMed_Orange>1.5</Plant_GaussCrystalMed_Orange>
+			<Plant_GaussCrystalHuge_Orange>0.5</Plant_GaussCrystalHuge_Orange>
 		</wildPlants>
 		<wildAnimals />
 		<allowedPackAnimals>
@@ -227,9 +227,9 @@
 			<DryThunderstorm>1</DryThunderstorm>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_GaussCrystalSmall_Blue>6</Plant_GaussCrystalSmall_Blue>
-			<Plant_GaussCrystalMed_Blue>3</Plant_GaussCrystalMed_Blue>
-			<Plant_GaussCrystalHuge_Blue>1</Plant_GaussCrystalHuge_Blue>
+			<Plant_GaussCrystalSmall_Blue>3</Plant_GaussCrystalSmall_Blue>
+			<Plant_GaussCrystalMed_Blue>1.5</Plant_GaussCrystalMed_Blue>
+			<Plant_GaussCrystalHuge_Blue>0.5</Plant_GaussCrystalHuge_Blue>
 		</wildPlants>
 		<wildAnimals />
 		<allowedPackAnimals>

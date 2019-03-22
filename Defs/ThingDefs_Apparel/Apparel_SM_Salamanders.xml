@@ -93,6 +93,23 @@
 		</apparel>
 	</ThingDef>
 	
+	<ThingDef ParentName="SMScoutArmorBase"> <!-- Salamanders Commander Armour -->
+		<defName>SalamandersScoutArmor</defName>
+		<label>Salamanders scout armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/Salamanders/Armor/Scout</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/Salamanders/Armor/Scout</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>SalamandersApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
 	<!-- Salamander Helmets -->
 	
 	<ThingDef ParentName="SMHelmetBase"> <!-- Salamanders Grunt Armour -->

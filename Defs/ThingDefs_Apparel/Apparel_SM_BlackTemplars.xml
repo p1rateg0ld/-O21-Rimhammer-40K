@@ -92,6 +92,23 @@
 			</tags>
 		</apparel>
 	</ThingDef>
+	
+	<ThingDef ParentName="SMScoutArmorBase"> <!-- BlackTemplars Commander Armour -->
+		<defName>BlackTemplarsScoutArmor</defName>
+		<label>black templars scout armor</label>
+		<graphicData>
+			<texPath>Things/SpaceMarines/BlackTemplars/Armor/Scout</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/SpaceMarines/BlackTemplars/Armor/Scout</wornGraphicPath>
+			<tags Inherit="false">
+				<li>AstartesApparel</li>
+				<li>BlackTemplarsApparel</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 
 	<!-- black templar Helmets -->
 	

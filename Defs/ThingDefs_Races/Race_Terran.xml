@@ -385,6 +385,7 @@
 			<raceRestriction>
 				<apparelList>
 					<li>UltramarineArmor</li>
+					<li>UltramarineScoutArmor</li>
 					<li>UltramarineHelmet</li>
 					<li>UltramarineApothecaryArmor</li>
 					<li>UltramarineApothecaryHelmet</li>
@@ -395,6 +396,7 @@
 					<li>UltramarineCmdrArmor</li>
 					<li>UltramarineCmdrHelmet</li>
 					<li>BloodRavensArmor</li>
+					<li>BloodRavensScoutArmor</li>
 					<li>BloodRavensHelmet</li>
 					<li>BloodRavensApothecaryArmor</li>
 					<li>BloodRavensApothecaryHelmet</li>
@@ -405,6 +407,7 @@
 					<li>BloodRavensCmdrArmor</li>
 					<li>BloodRavensCmdrHelmet</li>
 					<li>BlackTemplarsArmor</li>
+					<li>BlackTemplarsScoutArmor</li>
 					<li>BlackTemplarsHelmet</li>
 					<li>BlackTemplarsApothecaryArmor</li>
 					<li>BlackTemplarsApothecaryHelmet</li>
@@ -414,6 +417,7 @@
 					<li>BlackTemplarsTermHelmet</li>
 					<li>BlackTemplarsCmdrArmor</li>
 					<li>SalamandersArmor</li>
+					<li>SalamandersScoutArmor</li>
 					<li>SalamandersHelmet</li>
 					<li>SalamandersApothecaryArmor</li>
 					<li>SalamandersApothecaryHelmet</li>
@@ -424,6 +428,7 @@
 					<li>SalamandersCmdrArmor</li>
 					<li>SalamandersCmdrHelmet</li>
 					<li>SpaceWolvesArmor</li>
+					<li>SpaceWolvesScoutArmor</li>
 					<li>SpaceWolvesHelmet</li>
 					<li>SpaceWolvesApothecaryArmor</li>
 					<li>SpaceWolvesApothecaryHelmet</li>
@@ -757,6 +762,9 @@ It is fair to say that Ogryns do have their limitations. Their equipment must be
 					<li>OgrynValhallanBodysuit</li>
 					<li>OgrynValhallanFurhat</li>
 				</apparelList>
+				<weaponList>
+					<li>O21_IG_RipperGun</li>
+				</weaponList>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 			</raceRestriction>
 		</alienRace>

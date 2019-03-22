@@ -326,6 +326,7 @@
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<MarketValue>100</MarketValue>
+			<Flammability>1.0</Flammability>
 			<Insulation_Cold>0.5</Insulation_Cold>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
