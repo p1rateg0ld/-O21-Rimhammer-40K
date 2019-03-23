@@ -66,6 +66,7 @@ namespace Rimhammer40k.Spore
 
         public Pawn GenerateOrk()
         {
+            Log.Message("Spawning Ork...", false);
             PawnGenerationRequest request = new PawnGenerationRequest(
                 PawnKindDef.Named("FeralOrk"),
             faction: Faction.OfPlayer,
@@ -86,6 +87,7 @@ namespace Rimhammer40k.Spore
 
         public Pawn GenerateGrot()
         {
+            Log.Message("Spawning Grot...", false);
             PawnGenerationRequest request = new PawnGenerationRequest(
                 PawnKindDef.Named("FeralGrot"),
             faction: Faction.OfPlayer,
@@ -106,7 +108,7 @@ namespace Rimhammer40k.Spore
 
         public bool CanSpawnOrk()
         {
-            if (ColonistOrkCount < Rimhammer40kMod.maxOrkPopulation)
+            if (ColonistOrkCount > Rimhammer40kMod.maxOrkPopulation)
             {
                 return false;
             }
@@ -123,8 +125,10 @@ namespace Rimhammer40k.Spore
 
         public bool CanSpawnGrot()
         {
-            if (ColonistGrotCount < Rimhammer40kMod.maxOrkPopulation)
+            if (ColonistGrotCount > Rimhammer40kMod.maxOrkPopulation)
             {
+                Log.Message("Current Grot Count: " + this.Map.mapPawns.AllPawns.Count((Pawn x) => (x.IsColonist && x.def.defName == "Alien_Grot")).ToString(), false);
+                Log.Message("Max Grot Count: " + Rimhammer40kMod.maxGrotPopulation.ToString(), false);
                 return false;
             }
             return true;

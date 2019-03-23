@@ -147,8 +147,8 @@
 				<MaxHitPoints>4.6</MaxHitPoints>
 				<Beauty>1</Beauty>
 				<Flammability>0.0</Flammability>
-				<WorkToMake>4.4</WorkToMake>
-				<WorkToBuild>4.4</WorkToBuild>
+        		<WorkToMake>2.2</WorkToMake>
+				<WorkToBuild>2.2</WorkToBuild>
 				<MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 			<smeltable>true</smeltable>
@@ -196,8 +196,8 @@
 				<MaxHitPoints>6.2</MaxHitPoints>
 				<Beauty>1</Beauty>
 				<Flammability>0.0</Flammability>
-				<WorkToMake>6.6</WorkToMake>
-				<WorkToBuild>6.6</WorkToBuild>
+        		<WorkToMake>2.2</WorkToMake>
+				<WorkToBuild>2.2</WorkToBuild>
 				<MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 			<smeltable>true</smeltable>

@@ -179,8 +179,8 @@
 			<MarketValue>300</MarketValue>
 			<MoveSpeed>6.0</MoveSpeed>
 			<Flammability>0.3</Flammability>
-			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
 			<LeatherAmount>15</LeatherAmount>
 			<PsychicSensitivity>1.0</PsychicSensitivity>
 			<MiningSpeed>1.0</MiningSpeed>
