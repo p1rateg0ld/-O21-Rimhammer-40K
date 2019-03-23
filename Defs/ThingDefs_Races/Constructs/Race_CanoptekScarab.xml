@@ -108,8 +108,8 @@
 		<comps>
 			<li Class="CompProperties_Shearable">
 				<woolDef>Necrodermis</woolDef>
-				<shearIntervalDays>0.5</shearIntervalDays>
-				<woolAmount>20</woolAmount>
+				<shearIntervalDays>1.0</shearIntervalDays>
+				<woolAmount>40</woolAmount>
 			</li>
 		</comps>
 		<tools>

@@ -122,13 +122,13 @@
 			<Mass>0.075</Mass>
 			<MarketValue>7.5</MarketValue>
 			<Flammability>0.0</Flammability>
-			<StuffPower_Armor_Sharp>1.62</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.81</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>1.44</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Sharp>1.26</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.63</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.08</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-			<SharpDamageMultiplier>1.2</SharpDamageMultiplier>
-			<BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
 		</statBases>
 		<thingCategories>
 			<li>ResourcesRaw</li>
@@ -171,13 +171,13 @@
 			<Mass>0.1</Mass>
 			<MarketValue>12</MarketValue>
 			<Flammability>0.0</Flammability>
-			<StuffPower_Armor_Sharp>1.98</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.99</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>1.80</StuffPower_Armor_Heat>
+			<StuffPower_Armor_Sharp>1.26</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.63</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.08</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-			<SharpDamageMultiplier>1.3</SharpDamageMultiplier>
-			<BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
 		</statBases>
 		<thingCategories>
 			<li>ResourcesRaw</li>

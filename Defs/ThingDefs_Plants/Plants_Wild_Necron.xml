@@ -116,7 +116,6 @@
 			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
 			<sowWork>4000</sowWork>
 			<sowMinSkill>6</sowMinSkill>
-			<mustBeWildToSow>true</mustBeWildToSow>
 			<harvestWork>900</harvestWork>
 			<harvestYield>30</harvestYield>
 			<harvestMinGrowth>0.40</harvestMinGrowth>
