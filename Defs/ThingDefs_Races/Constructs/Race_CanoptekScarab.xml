@@ -127,7 +127,7 @@
 		<race>
       		<thinkTreeMain>Animal</thinkTreeMain>
 			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
-	  		<foodType>OmnivoreAnimal, OvivoreAnimal, VegetarianRoughAnimal</foodType>
+	  		<foodType>OmnivoreAnimal, OvivoreAnimal, OmnivoreRoughAnimal, DendrovoreAnimal</foodType>
 			<body>CanoptekScarab</body>
 			<baseBodySize>1.0</baseBodySize>
 			<baseHealthScale>1.0</baseHealthScale>

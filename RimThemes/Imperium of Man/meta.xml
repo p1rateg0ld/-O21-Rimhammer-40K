@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RimThemes>
+  <description>Rimhammer 40k - Imperium of Man Theme</description>    			<!-- The description showed in the theme manager dialog -->
+  <windowAnim>clip</windowAnim>                      			<!-- Window appear animation to use (clip, slideLeft, slideTop, slideRight, slideBottom, none)-->
+  <category>games</category>						 			<!-- Theme's category (can be one of the following values : "future", "medieval", "nature", "horror","wtf","games","historic","technology","other")-->
+  <description>Rimhammer 40k - Imperium of Man Theme</description>
+  <dialogStacking>true</dialogStacking>							<!-- [2019R2 min] : If false disable the dialog stacking (usefull essentially for transparent themes), by default true -->
+  <disableMainRimthemesLogo>false</disableMainRimthemesLogo>	<!-- [2019R2 min] : If true hide the display of RimTheme logo in the main menu (bottom left), by default false -->
+  <disableMainThemeSelector>false</disableMainThemeSelector>    <!-- [2019R2 min] : If true hide the theme selector in the main menu (bottom right), by default false -->
+  <menuAlignment>right</menuAlignment>							<!-- The alignment of RimWorld's main menu (can be left, middle, right), by default right) -->
+
+  <GenUI.MouseoverColor>(182,84,19)</GenUI.MouseoverColor>                <!-- General mouseover color -->
+  
+  <!-- Tutor windows colors -->
+  <Widgets.TutorWindowBGFillColor>(182, 84, 19)</Widgets.TutorWindowBGFillColor>
+  <Widgets.TutorWindowBGBorderColor>(193, 90, 21)</Widgets.TutorWindowBGBorderColor>
+
+  <!-- FloatMenu colors -->
+  <FloatMenuOption.ColorTextDisabled>(255,255,255)</FloatMenuOption.ColorTextDisabled>
+  <FloatMenuOption.ColorBGDisabled>(155,0,0)</FloatMenuOption.ColorBGDisabled>
+  <FloatMenuOption.ColorBGActiveMouseover>(182,84,19)</FloatMenuOption.ColorBGActiveMouseover>
+  
+</RimThemes>

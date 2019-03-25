@@ -54,8 +54,8 @@
 				<pawnFactionAsHive>true</pawnFactionAsHive>
 				<pawnFactionDef>O21_FriendlyConstruct_Necron</pawnFactionDef>
 				<pawnDutyDef>O21_DefendCustomHive_Scarab</pawnDutyDef>
-				<distToHiveAttackDocile>20.0</distToHiveAttackDocile>
-				<distToHiveAttackAgitated>32.0</distToHiveAttackAgitated>
+				<distToHiveAttackDocile>25.0</distToHiveAttackDocile>
+				<distToHiveAttackAgitated>45.0</distToHiveAttackAgitated>
 			</li>
 		</modExtensions>
 		<rotatable>false</rotatable>

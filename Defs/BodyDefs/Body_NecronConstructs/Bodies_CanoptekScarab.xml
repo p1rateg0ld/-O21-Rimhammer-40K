@@ -52,6 +52,9 @@
 									<customLabel>front left manipulator</customLabel>
 									<coverage>0.01</coverage>
 									<depth>Outside</depth>
+									<groups>
+										<li>LeftManipulator</li>
+									</groups>
 								</li>
 							</parts>
 						</li>
@@ -118,6 +121,9 @@
 									<customLabel>front right manipulator</customLabel>
 									<coverage>0.01</coverage>
 									<depth>Outside</depth>
+									<groups>
+										<li>RightManipulator</li>
+									</groups>
 								</li>
 							</parts>
 						</li>

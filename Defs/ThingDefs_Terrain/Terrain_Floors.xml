@@ -21,7 +21,7 @@
 		<label>necrodermis tile (green, gold, low)</label>
 		<description>Necrodermis tiles, strong, durable, sexy.</description>
 		<texturePath>Things/Necron/Floor/TileGreen1</texturePath>
-		<costList>
+		<costList Inherit="False">
 			<Necrodermis>3</Necrodermis>
 			<Gold>2</Gold>
 		</costList>
@@ -44,7 +44,7 @@
 		<label>necrodermis tile (green, basic, low)</label>
 		<description>Necrodermis tiles, strong, durable, sexy.</description>
 		<texturePath>Things/Necron/Floor/FloorGreen1</texturePath>
-		<costList>
+		<costList Inherit="False">
 			<Necrodermis>5</Necrodermis>
 		</costList>
 	</TerrainDef>
@@ -66,7 +66,7 @@
 		<label>necrodermis tile (green, crystal, low)</label>
 		<description>Necrodermis tiles, strong, durable, sexy.</description>
 		<texturePath>Things/Necron/Floor/BacklitTileGreen1</texturePath>
-		<costList>
+		<costList Inherit="False">
 			<Necrodermis>3</Necrodermis>
 			<GaussCrystalGreen>2</GaussCrystalGreen>
 		</costList>
@@ -76,7 +76,7 @@
 			<defName>NecronTileCrystalB</defName>
 			<label>necrodermis tile (green, crystal, med)</label>
 			<texturePath>Things/Necron/Floor/BacklitTileGreen2</texturePath>
-			<costList>
+			<costList Inherit="False">
 				<Necrodermis>3</Necrodermis>
 				<GaussCrystalGreen>4</GaussCrystalGreen>
 			</costList>
@@ -86,7 +86,7 @@
 				<defName>NecronTileCrystalC</defName>
 				<label>necrodermis tile (green, crystal, high)</label>
 				<texturePath>Things/Necron/Floor/BacklitTileGreen3</texturePath>
-				<costList>
+				<costList Inherit="False">
 					<Necrodermis>3</Necrodermis>
 					<GaussCrystalGreen>6</GaussCrystalGreen>
 				</costList>
@@ -96,7 +96,7 @@
 			<defName>NecronTileCrystalD</defName>
 			<label>necrodermis tile (blue, crystal, low)</label>
 			<texturePath>Things/Necron/Floor/BacklitTileBlue1</texturePath>
-			<costList>
+			<costList Inherit="False">
 				<Necrodermis>3</Necrodermis>
 				<GaussCrystalBlue>2</GaussCrystalBlue>
 			</costList>
@@ -106,7 +106,7 @@
 				<defName>NecronTileCrystalE</defName>
 				<label>necrodermis tile (blue, crystal, med)</label>
 				<texturePath>Things/Necron/Floor/BacklitTileBlue2</texturePath>
-				<costList>
+				<costList Inherit="False">
 					<Necrodermis>3</Necrodermis>
 					<GaussCrystalBlue>4</GaussCrystalBlue>
 				</costList>
@@ -116,7 +116,7 @@
 					<defName>NecronTileCrystalF</defName>
 					<label>necrodermis tile (blue, crystal, high)</label>
 					<texturePath>Things/Necron/Floor/BacklitTileBlue3</texturePath>
-					<costList>
+					<costList Inherit="False">
 						<Necrodermis>3</Necrodermis>
 						<GaussCrystalBlue>6</GaussCrystalBlue>
 					</costList>
@@ -126,7 +126,7 @@
 			<defName>NecronTileCrystalG</defName>
 			<label>necrodermis tile (orange, crystal, low)</label>
 			<texturePath>Things/Necron/Floor/BacklitTileOrange1</texturePath>
-			<costList>
+			<costList Inherit="False">
 				<Necrodermis>3</Necrodermis>
 				<GaussCrystalOrange>2</GaussCrystalOrange>
 			</costList>
@@ -136,7 +136,7 @@
 				<defName>NecronTileCrystalH</defName>
 				<label>necrodermis tile (orange, crystal, med)</label>
 				<texturePath>Things/Necron/Floor/BacklitTileOrange2</texturePath>
-				<costList>
+				<costList Inherit="False">
 					<Necrodermis>3</Necrodermis>
 					<GaussCrystalOrange>4</GaussCrystalOrange>
 				</costList>
@@ -146,7 +146,7 @@
 					<defName>NecronTileCrystalI</defName>
 					<label>necrodermis tile (orange, crystal, high)</label>
 					<texturePath>Things/Necron/Floor/BacklitTileOrange3</texturePath>
-					<costList>
+					<costList Inherit="False">
 						<Necrodermis>3</Necrodermis>
 						<GaussCrystalOrange>6</GaussCrystalOrange>
 					</costList>
@@ -157,7 +157,7 @@
 		<label>necrodermis tile (green, vent, low)</label>
 		<description>Necrodermis tiles, strong, durable, sexy.</description>
 		<texturePath>Things/Necron/Floor/VentGreen1</texturePath>
-		<costList>
+		<costList Inherit="False">
 			<Necrodermis>5</Necrodermis>
 		</costList>
 	</TerrainDef>
@@ -216,7 +216,7 @@
 		<defName>TileBlackstone</defName>
 		<label>blackstone tile</label>
 		<color>(20,20,20)</color>
-		<costList>
+		<costList Inherit="False">
 			<BlocksBlackstone>4</BlocksBlackstone>
 		</costList>
 	</TerrainDef>
@@ -225,7 +225,7 @@
 		<defName>FlagstoneBlackstone</defName>
 		<label>blackstone flagstone</label>
 		<color>(20,20,20)</color>
-		<costList>
+		<costList Inherit="False">
 			<BlocksBlackstone>4</BlocksBlackstone>
 		</costList>
 	</TerrainDef>

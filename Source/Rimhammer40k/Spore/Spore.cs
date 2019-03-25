@@ -25,7 +25,7 @@ namespace Rimhammer40k.Spore
 
             if(Current.Game.tickManager.TicksGame >= ticksTillSelfPlant)
             {
-                if (this.Map.terrainGrid.TerrainAt(this.Position).fertility >= 0.7)
+                if (this.Map.terrainGrid.TerrainAt(this.Position).fertility != null && this.Map.terrainGrid.TerrainAt(this.Position).fertility >= 0.7)
                 {
                     if (this.Position.GetPlant(this.Map) != null)
                     {

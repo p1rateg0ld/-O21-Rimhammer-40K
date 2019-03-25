@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <BodyPartGroupDef>
+    <defName>LeftManipulator</defName>
+    <label>left manipulator</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>RightManipulator</defName>
+    <label>right manipulator</label>
+  </BodyPartGroupDef>
+
+</Defs>

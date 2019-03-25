@@ -131,37 +131,37 @@
 			<ArmorRating_Heat>1.15</ArmorRating_Heat>
 			<ImmunityGainSpeed>30</ImmunityGainSpeed>
 		</statBases>
-		<tools>
+		<tools Inherit="False">
 			<li>
-				<label>left arm</label>
+				<label>front left manipulator</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>8.2</power>
+				<power>15</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>LeftManipulator</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>20</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
 			<li>
-				<label>right arm</label>
+				<label>front right manipulator</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>8.2</power>
+				<power>15</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>RightManipulator</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>20</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -171,7 +171,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>5</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -184,10 +184,10 @@
 			<thinkTreeMain>Necron</thinkTreeMain>
 			<thinkTreeConstant>NecronConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
-			<makesFootprints>true</makesFootprints>
+			<makesFootprints>false</makesFootprints>
 			<lifeExpectancy>2500</lifeExpectancy>
 			<nameGenerator>NamerNecron</nameGenerator>
-			<body>Necron</body>
+			<body>CanoptekScarab</body>
 			<useMeatFrom>Human</useMeatFrom>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<bloodDef>FilthBloodNecron</bloodDef>

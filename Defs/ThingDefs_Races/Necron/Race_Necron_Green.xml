@@ -300,7 +300,7 @@
 			<baseBodySize>1.0</baseBodySize>
 			<baseHealthScale>1.0</baseHealthScale>
 			<needsRest>false</needsRest>
-			<foodType>None</foodType>
+			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>45</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>

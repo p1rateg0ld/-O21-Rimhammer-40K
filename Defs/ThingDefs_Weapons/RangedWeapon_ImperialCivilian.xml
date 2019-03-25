@@ -267,7 +267,7 @@ Cheap and easy to produce on even the low-tech planets, autoguns are a staple we
 				<range>10</range>
 				<minRange>2.5</minRange>
 				<forcedMissRadius>0.5</forcedMissRadius>
-				<burstShotCount>16</burstShotCount>
+				<burstShotCount>8</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>FlamerSound</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
