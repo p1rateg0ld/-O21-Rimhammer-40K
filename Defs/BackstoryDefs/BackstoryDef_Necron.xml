@@ -15,6 +15,16 @@
 			<li>NecronBackstory</li>
 			<li>NecronLowerBackstory</li>
 		</spawnCategories>
+		<workDisables>
+        	<li>Intellectual</li>
+        	<li>Artistic</li>
+        	<li>Social</li>
+        	<li>Caring</li>
+        	<li>Cooking</li>
+        	<li>PlantWork</li>
+        	<li>Crafting</li>
+        	<li>Artistic</li>
+    	</workDisables>
 		<skillGains>
 			<li>
 				<defName>Shooting</defName>

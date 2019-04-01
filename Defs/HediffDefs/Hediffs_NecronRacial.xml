@@ -3,7 +3,7 @@
 
 	<HediffDef>
 		<defName>NecrodermisRepair</defName>
-		<hediffClass>Rimhammer40k.Necrons.HediffNecrodermisRepair</hediffClass>
+		<hediffClass>O21Toolbox.AutoHeal.Hediff_AutoHeal</hediffClass>
 		<label>necrodermis repair</label>
 		<defaultLabelColor>(0.6,0.85,0.91)</defaultLabelColor>
 		<isBad>false</isBad>
@@ -28,7 +28,7 @@
 	<HediffDef>
 		<defName>NecronProtoBodypart</defName>
 		<label>repairing</label>
-		<hediffClass>Rimhammer40k.Necrons.HediffNecronGrowingPart</hediffClass>
+		<hediffClass>O21Toolbox.AutoHeal.Hediff_GrowingPart</hediffClass>
 		<defaultLabelColor>(0.59, 0.92, 0.69)</defaultLabelColor>
 		<isBad>false</isBad>
 		<addedPartProps>
@@ -57,7 +57,7 @@
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>0.07</severityPerDayNotImmune> <!-- 0.07 is roughly a Quadrum (15 days) -->
+				<severityPerDayNotImmune>0.2</severityPerDayNotImmune> <!-- 0.07 is roughly a Quadrum (15 days) -->
 			</li>
 		</comps>
 	</HediffDef>
@@ -65,7 +65,7 @@
 	<HediffDef>
 		<defName>NecronCuredBodypart</defName>
 		<label>cured bodypart</label>
-		<hediffClass>Rimhammer40k.RemovableHediff</hediffClass>
+		<hediffClass>O21Toolbox.Utility.RemovableHediff</hediffClass>
 		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
 		<isBad>false</isBad>
 		<initialSeverity>0.0</initialSeverity>

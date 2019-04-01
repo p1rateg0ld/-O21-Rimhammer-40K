@@ -359,6 +359,18 @@
 				</stillFrames>
 			</li>
 		</comps>
+		
+		<modExtensions>
+			<li Class="O21Toolbox.PawnCrafter.PawnCrafterProperties">
+				<craftingSound>Interact_ConstructMetal</craftingSound>
+				<customOrderProcessor>true</customOrderProcessor>
+				<customCraftingTime>true</customCraftingTime>
+				<listOnlyAllowed>True</listOnlyAllowed>
+				<pawnCraftedLetterLabel>NecronAwakenedLetterLabel</pawnCraftedLetterLabel>
+				<pawnCraftedLetterText>NecronAwakenedLetterDescription</pawnCraftedLetterText>
+				<resourceTick>2500</resourceTick>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="NecronTombBase">
@@ -513,6 +525,18 @@
 				</stillFrames>
 			</li>
 		</comps>
+		
+		<modExtensions>
+			<li Class="O21Toolbox.PawnCrafter.PawnCrafterProperties">
+				<craftingSound>Interact_ConstructMetal</craftingSound>
+				<customOrderProcessor>true</customOrderProcessor>
+				<customCraftingTime>true</customCraftingTime>
+				<listOnlyAllowed>True</listOnlyAllowed>
+				<pawnCraftedLetterLabel>NecronAwakenedLetterLabel</pawnCraftedLetterLabel>
+				<pawnCraftedLetterText>NecronAwakenedLetterDescription</pawnCraftedLetterText>
+				<resourceTick>2500</resourceTick>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 </Defs>

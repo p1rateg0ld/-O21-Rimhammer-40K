@@ -2,8 +2,13 @@
 <Defs>
 
 	<ResearchTabDef>
-		<defName>RH40K_Tab</defName>
-		<label>R40k-IMP</label>
+		<defName>RH40K_Tab0</defName>
+		<label>R40k-IMP1</label>
+	</ResearchTabDef>
+
+	<ResearchTabDef>
+		<defName>RH40K_Tab1</defName>
+		<label>R40k-IMP2</label>
 	</ResearchTabDef>
 
 	<ResearchTabDef>
@@ -24,6 +29,11 @@
 	<ResearchTabDef>
 		<defName>RH40K_Tab5</defName>
 		<label>R40k-NEC</label>
+	</ResearchTabDef>
+	
+	<ResearchTabDef>
+		<defName>RH40K_Tab6</defName>
+		<label>R40k-GSC</label>
 	</ResearchTabDef>
 
 </Defs>

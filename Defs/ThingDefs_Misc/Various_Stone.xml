@@ -55,6 +55,7 @@
 			<mineableDropChance>0.25</mineableDropChance>
 			<smoothedThing>SmoothedBlackstone</smoothedThing>
 			<mineableYieldWasteable>false</mineableYieldWasteable>
+			<leaveTerrain>Blackstone_RoughHewn</leaveTerrain>
 		</building>
 	</ThingDef>
 

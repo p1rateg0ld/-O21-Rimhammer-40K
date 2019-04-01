@@ -31,7 +31,7 @@
 	<HediffGiverSetDef>
 		<defName>NecronBasic</defName>
 		<hediffGivers>
-			<li Class="Rimhammer40k.Necrons.HediffGiver_NecronRepair">
+			<li Class="O21Toolbox.HediffGiver_Racial">
 				<hediff>NecrodermisRepair</hediff>
 			</li>
 		</hediffGivers>
@@ -40,10 +40,10 @@
 	<HediffGiverSetDef>
 		<defName>OrkBasic</defName>
 		<hediffGivers>
-			<li Class="Rimhammer40k.Orks.HediffGiver_OrkRacial">
+			<li Class="O21Toolbox.HediffGiver_Racial">
 				<hediff>OrkoidHealing</hediff>
 			</li>
-			<li Class="Rimhammer40k.Orks.HediffGiver_OrkRacial">
+			<li Class="O21Toolbox.HediffGiver_Racial">
 				<hediff>OrkoidSpores</hediff>
 			</li>
 		</hediffGivers>

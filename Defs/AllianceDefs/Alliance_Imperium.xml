@@ -40,6 +40,10 @@
 				<alliance>O21_Alliance_Eldar</alliance>
 				<relation>-100</relation>
 			</li>
+			<li>
+				<alliance>O21_Alliance_Ork</alliance>
+				<relation>-100</relation>
+			</li>
 		</allianceRelations>
 	</O21Toolbox.Alliances.AllianceDef>
 	

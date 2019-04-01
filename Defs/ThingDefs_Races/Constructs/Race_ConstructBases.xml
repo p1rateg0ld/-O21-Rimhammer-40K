@@ -54,6 +54,8 @@
       		<nameGenerator>NamerAnimalGenericMale</nameGenerator>
 			<foodType>None</foodType>
 			<trainability>None</trainability>
+			<wildness>0</wildness>
+			<herdMigrationAllowed>False</herdMigrationAllowed>
 		</race>
   	</ThingDef>
 

@@ -2,30 +2,30 @@
 <Defs>
 
 	<O21Toolbox.Alliances.AllianceDef>
-		<defName>O21_Alliance_Eldar</defName>
-		<label>eldar craftworlds</label>
+		<defName>O21_Alliance_Ork</defName>
+		<label>ork waaagh!</label>
 		<memberFactions>
-			<li>CWUlthwe</li>
-			<li>CWAlaitoc</li>
-			<li>CWBielTan</li>
+			<li>OrkBadMoons</li>
+			<li>OrkDeathskulls</li>
+			<li>OrkEvilSunz</li>
 		</memberFactions>
 		<factionRelations>
 			<li>
-				<faction>EldarPlayerColony</faction>
+				<faction>OrkPlayerColony</faction>
 				<relation>75</relation>
 			</li>
 		</factionRelations>
 		<allianceRelations>
 			<li>
-				<alliance>O21_Alliance_Tau</alliance>
-				<relation>-100</relation>
-			</li>
-			<li>
 				<alliance>O21_Alliance_Imperium</alliance>
 				<relation>-100</relation>
 			</li>
 			<li>
-				<alliance>O21_Alliance_Ork</alliance>
+				<alliance>O21_Alliance_Eldar</alliance>
+				<relation>-100</relation>
+			</li>
+			<li>
+				<alliance>O21_Alliance_Tau</alliance>
 				<relation>-100</relation>
 			</li>
 		</allianceRelations>

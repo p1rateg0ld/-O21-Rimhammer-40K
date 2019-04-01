@@ -5,16 +5,8 @@
 		<defName>O21_Alliance_Tau</defName>
 		<label>tau empire</label>
 		<memberFactions>
-			<li>BlackTemplars</li>
-			<li>BloodRavens</li>
-			<li>Salamanders</li>
-			<li>SpaceWolves</li>
-			<li>Ultramarines</li>
-			<li>IGCadian412</li>
-			<li>IGKrieg143</li>
-			<li>IGSteelLegion808</li>
-			<li>IGValhallan597</li>
-			<li>MartyredLady</li>
+			<li>TauEmpire</li>
+			<li>SaceaSept</li>
 		</memberFactions>
 		<factionRelations>
 			<li>
@@ -29,6 +21,10 @@
 			</li>
 			<li>
 				<alliance>O21_Alliance_Eldar</alliance>
+				<relation>-100</relation>
+			</li>
+			<li>
+				<alliance>O21_Alliance_Ork</alliance>
 				<relation>-100</relation>
 			</li>
 		</allianceRelations>

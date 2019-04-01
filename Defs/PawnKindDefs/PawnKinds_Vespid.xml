@@ -64,14 +64,6 @@
 						<max>70</max>
 					</countRange>
 				</li>
-				<li>
-					<choiceChance>10</choiceChance>
-					<thingDef>Silver</thingDef>
-					<countRange>
-						<min>700</min>
-						<max>1000</max>
-					</countRange>
-				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
 	</PawnKindDef>

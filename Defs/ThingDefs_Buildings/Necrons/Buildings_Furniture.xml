@@ -45,7 +45,7 @@
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
-				<basePowerConsumption>100</basePowerConsumption>
+				<basePowerConsumption>250</basePowerConsumption>
 			</li>
 			<li>
 				<compClass>O21Toolbox.Needs.Comp_Hibernation</compClass>

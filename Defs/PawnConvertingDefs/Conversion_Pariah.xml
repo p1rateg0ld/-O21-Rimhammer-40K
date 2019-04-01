@@ -14,6 +14,7 @@
 		
 		<requiredResearch>O21_Nec_Research</requiredResearch>
 		<inputDefs>
+			<li>Human</li>
 			<li>Alien_Terran</li>
 			<li>Alien_Astartes</li>
 			<li>Alien_Sororitas</li>

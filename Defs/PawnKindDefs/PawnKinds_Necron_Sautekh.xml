@@ -27,25 +27,6 @@
 			<li>Advanced</li>
 		</techHediffsTags>
 		<techHediffsChance>0</techHediffsChance>
-		<inventoryOptions>
-			<skipChance>1.0</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>Silver</thingDef>
-					<countRange>
-						<min>50</min>
-						<max>100</max>
-					</countRange>
-				</li>
-				<li>
-					<thingDef>MedicineUltratech</thingDef>
-					<countRange>
-						<min>1</min>
-						<max>1</max>
-					</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SautekhAbstractBase">

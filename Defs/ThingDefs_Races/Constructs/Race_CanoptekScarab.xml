@@ -42,6 +42,7 @@
 		<race>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<body>CanoptekScarab</body>
+			<hasGenders>false</hasGenders>
 			<baseBodySize>1.0</baseBodySize>
 	  		<lifeExpectancy>2750</lifeExpectancy>
 			<baseHealthScale>0.5</baseHealthScale>
@@ -81,6 +82,17 @@
 			<li Class="Rimhammer40k.Necrons.NecronTweaker">
 				<tweakNecronResurrect>false</tweakNecronResurrect>
 				<tweakCorpseRot>true</tweakCorpseRot>
+			</li>
+			<li Class="O21Toolbox.Needs.EnergyHediffs">
+				<powerShortage>NecronGaussShortage</powerShortage>
+				<powerFailure>NecronGaussFailure</powerFailure>
+			</li>
+			<li Class="O21Toolbox.AutoHeal.DefModExtension_AutoHealProps">
+				<healTicks>1000</healTicks>
+				<growthTicks>200</growthTicks>
+				<growthText>Reassembly: </growthText>
+				<protoBodyPart>NecronProtoBodypart</protoBodyPart>
+				<curedBodyPart>NecronCuredBodypart</curedBodyPart>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -129,6 +141,7 @@
 			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
 	  		<foodType>OmnivoreAnimal, OvivoreAnimal, OmnivoreRoughAnimal, DendrovoreAnimal</foodType>
 			<body>CanoptekScarab</body>
+			<hasGenders>false</hasGenders>
 			<baseBodySize>1.0</baseBodySize>
 			<baseHealthScale>1.0</baseHealthScale>
       		<trainability>Advanced</trainability>
@@ -169,6 +182,17 @@
 			<li Class="Rimhammer40k.Necrons.NecronTweaker">
 				<tweakNecronResurrect>false</tweakNecronResurrect>
 				<tweakCorpseRot>true</tweakCorpseRot>
+			</li>
+			<li Class="O21Toolbox.Needs.EnergyHediffs">
+				<powerShortage>NecronGaussShortage</powerShortage>
+				<powerFailure>NecronGaussFailure</powerFailure>
+			</li>
+			<li Class="O21Toolbox.AutoHeal.DefModExtension_AutoHealProps">
+				<healTicks>1000</healTicks>
+				<growthTicks>200</growthTicks>
+				<growthText>Reassembly: </growthText>
+				<protoBodyPart>NecronProtoBodypart</protoBodyPart>
+				<curedBodyPart>NecronCuredBodypart</curedBodyPart>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -288,7 +312,7 @@
 	
 	<PawnKindDef>
 		<defName>ConstructScarabOrange</defName>
-		<label>canoptek scarab (green)</label>
+		<label>canoptek scarab (orange)</label>
 		<race>ConstructScarab</race>
 		<combatPower>50</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>

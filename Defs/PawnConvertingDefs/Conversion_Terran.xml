@@ -9,7 +9,6 @@
 
 		<recipeUsers>
 			<li>O21_ConversionPod</li>
-			<li>O21_CanoptekCanneryGreen</li>
 		</recipeUsers>
 		<conversionTime>12000</conversionTime>
 
@@ -17,7 +16,6 @@
 			<li>Human</li>
 		</inputDefs>
 
-		<vanillaToAlien>True</vanillaToAlien>
 		<outputDef>Terran</outputDef>
 	</O21Toolbox.PawnConverter.PawnConvertingDef>
 	

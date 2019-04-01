@@ -58,13 +58,6 @@
 						<max>100</max>
 					</countRange>
 				</li>
-				<li>
-					<thingDef>MedicineUltratech</thingDef>
-					<countRange>
-						<min>1</min>
-						<max>1</max>
-					</countRange>
-				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
 	</PawnKindDef>

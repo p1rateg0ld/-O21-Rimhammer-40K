@@ -140,4 +140,44 @@
 		</modExtensions>
 	</WorkGiverDef>
 	
+	<WorkGiverDef>
+		<defName>DoBillsNecronTombBlue</defName>
+		<label>supply necron tomb</label>
+		<giverClass>O21Toolbox.PawnCrafter.WorkGiver_PawnCrafter</giverClass>
+		<workType>Hauling</workType>
+		<verb>fill</verb>
+		<gerund>filling</gerund>
+		<priorityInType>60</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+		<modExtensions>
+			<li Class="O21Toolbox.PawnCrafter.PawnCrafterWorkgiverProperties">
+				<defToScan>NecronTomb_Blue</defToScan>
+				<fillJob>FillNecronTomb</fillJob>
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DoBillsNecronTombOrange</defName>
+		<label>supply necron tomb</label>
+		<giverClass>O21Toolbox.PawnCrafter.WorkGiver_PawnCrafter</giverClass>
+		<workType>Hauling</workType>
+		<verb>fill</verb>
+		<gerund>filling</gerund>
+		<priorityInType>60</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+		<modExtensions>
+			<li Class="O21Toolbox.PawnCrafter.PawnCrafterWorkgiverProperties">
+				<defToScan>NecronTomb_Orange</defToScan>
+				<fillJob>FillNecronTomb</fillJob>
+			</li>
+		</modExtensions>
+	</WorkGiverDef>
+	
 </Defs>

@@ -51,7 +51,7 @@
 				<pawnKindCosts>
 					<li>50</li>
 				</pawnKindCosts>
-				<pawnFactionAsHive>true</pawnFactionAsHive>
+				<pawnFactionAsHive>false</pawnFactionAsHive>
 				<pawnFactionDef>O21_FriendlyConstruct_Necron</pawnFactionDef>
 				<pawnDutyDef>O21_DefendCustomHive_Scarab</pawnDutyDef>
 				<distToHiveAttackDocile>25.0</distToHiveAttackDocile>

@@ -7,7 +7,7 @@
 		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
 		<workerClass>Rimhammer40k.Biomes.BiomeWorker_GaussDesertGreen</workerClass>
 		<animalDensity>0.0</animalDensity>
-		<plantDensity>0.1</plantDensity>
+		<plantDensity>0.01</plantDensity>
 		<settlementSelectionWeight>0.05</settlementSelectionWeight>
 		<movementDifficulty>1</movementDifficulty>
 		<texture>World/Biomes/BlackDesert</texture>
@@ -53,13 +53,8 @@
 		</diseases>
 		<terrainsByFertility>
 			<li>
-				<terrain>NecronBlackSand</terrain>
+				<terrain>NecronBlackSoil</terrain>
 				<min>-999</min>
-				<max>0.50</max>
-			</li>
-			<li>
-				<terrain>NecronBlackSand</terrain>
-				<min>0.50</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
@@ -69,11 +64,13 @@
 			<DryThunderstorm>1</DryThunderstorm>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_GaussCrystalSmall_Green>3</Plant_GaussCrystalSmall_Green>
-			<Plant_GaussCrystalMed_Green>1.5</Plant_GaussCrystalMed_Green>
-			<Plant_GaussCrystalHuge_Green>0.5</Plant_GaussCrystalHuge_Green>
+			<Plant_GaussCrystalSmall_Green>0.5</Plant_GaussCrystalSmall_Green>
+			<Plant_GaussCrystalMed_Green>0.3</Plant_GaussCrystalMed_Green>
+			<Plant_GaussCrystalHuge_Green>0.2</Plant_GaussCrystalHuge_Green>
 		</wildPlants>
-		<wildAnimals />
+		<wildAnimals>
+			<ConstructScarab>1</ConstructScarab>
+		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
 			<li>Dromedary</li>
@@ -86,7 +83,7 @@
 		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
 		<workerClass>Rimhammer40k.Biomes.BiomeWorker_GaussDesertOrange</workerClass>
 		<animalDensity>0.0</animalDensity>
-		<plantDensity>0.1</plantDensity>
+		<plantDensity>0.01</plantDensity>
 		<settlementSelectionWeight>0.05</settlementSelectionWeight>
 		<movementDifficulty>1</movementDifficulty>
 		<texture>World/Biomes/BlackDesert</texture>
@@ -134,11 +131,6 @@
 			<li>
 				<terrain>NecronBlackSand</terrain>
 				<min>-999</min>
-				<max>0.50</max>
-			</li>
-			<li>
-				<terrain>NecronBlackSand</terrain>
-				<min>0.50</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
@@ -148,11 +140,13 @@
 			<DryThunderstorm>1</DryThunderstorm>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_GaussCrystalSmall_Orange>3</Plant_GaussCrystalSmall_Orange>
-			<Plant_GaussCrystalMed_Orange>1.5</Plant_GaussCrystalMed_Orange>
-			<Plant_GaussCrystalHuge_Orange>0.5</Plant_GaussCrystalHuge_Orange>
+			<Plant_GaussCrystalSmall_Orange>0.5</Plant_GaussCrystalSmall_Orange>
+			<Plant_GaussCrystalMed_Orange>0.3</Plant_GaussCrystalMed_Orange>
+			<Plant_GaussCrystalHuge_Orange>0.2</Plant_GaussCrystalHuge_Orange>
 		</wildPlants>
-		<wildAnimals />
+		<wildAnimals>
+			<ConstructScarabBlue>1</ConstructScarabBlue>
+		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
 			<li>Dromedary</li>
@@ -165,7 +159,7 @@
 		<description>A blackened desert, scattered with large crystals filled with an unknown energy, this is not a place for the living.</description>
 		<workerClass>Rimhammer40k.Biomes.BiomeWorker_GaussDesertBlue</workerClass>
 		<animalDensity>0.0</animalDensity>
-		<plantDensity>0.1</plantDensity>
+		<plantDensity>0.01</plantDensity>
 		<settlementSelectionWeight>0.05</settlementSelectionWeight>
 		<movementDifficulty>1</movementDifficulty>
 		<texture>World/Biomes/BlackDesert</texture>
@@ -211,13 +205,8 @@
 		</diseases>
 		<terrainsByFertility>
 			<li>
-				<terrain>NecronBlackSand</terrain>
+				<terrain>NecronBlackSoil</terrain>
 				<min>-999</min>
-				<max>0.50</max>
-			</li>
-			<li>
-				<terrain>NecronBlackSand</terrain>
-				<min>0.50</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
@@ -227,11 +216,13 @@
 			<DryThunderstorm>1</DryThunderstorm>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_GaussCrystalSmall_Blue>3</Plant_GaussCrystalSmall_Blue>
-			<Plant_GaussCrystalMed_Blue>1.5</Plant_GaussCrystalMed_Blue>
-			<Plant_GaussCrystalHuge_Blue>0.5</Plant_GaussCrystalHuge_Blue>
+			<Plant_GaussCrystalSmall_Blue>0.5</Plant_GaussCrystalSmall_Blue>
+			<Plant_GaussCrystalMed_Blue>0.3</Plant_GaussCrystalMed_Blue>
+			<Plant_GaussCrystalHuge_Blue>0.2</Plant_GaussCrystalHuge_Blue>
 		</wildPlants>
-		<wildAnimals />
+		<wildAnimals>
+			<ConstructScarabOrange>1</ConstructScarabOrange>
+		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
 			<li>Dromedary</li>

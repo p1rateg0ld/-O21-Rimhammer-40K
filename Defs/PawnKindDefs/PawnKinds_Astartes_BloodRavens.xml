@@ -59,7 +59,7 @@
 				<li>
 					<thingDef>MedicineUltratech</thingDef>
 					<countRange>
-						<min>1</min>
+						<min>0</min>
 						<max>1</max>
 					</countRange>
 				</li>

@@ -41,25 +41,6 @@
 		</techHediffsTags>
 		<techHediffsChance>0.1</techHediffsChance>
 		<invNutrition>2.55</invNutrition>
-		<inventoryOptions>
-			<skipChance>0.01</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>Silver</thingDef>
-					<countRange>
-						<min>50</min>
-						<max>100</max>
-					</countRange>
-				</li>
-				<li>
-					<thingDef>MedicineUltratech</thingDef>
-					<countRange>
-						<min>1</min>
-						<max>1</max>
-					</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
 		<apparelTags>
 			<li>BadMoonsApparel</li>
 		</apparelTags>

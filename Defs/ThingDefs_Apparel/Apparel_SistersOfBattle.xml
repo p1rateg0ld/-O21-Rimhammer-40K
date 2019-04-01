@@ -33,9 +33,11 @@
 			<ArmorRating_Heat>1.03</ArmorRating_Heat>
 			<Insulation_Cold>80</Insulation_Cold>
 			<Insulation_Heat>80</Insulation_Heat>
-			<ToxicSensitivity>-0.70</ToxicSensitivity>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.70</ToxicSensitivity>
+		</equippedStatOffsets>
 		<apparel Inherit="False">
 			<wornGraphicPath>Things/SistersOfBattle/Apparel/Sororitas</wornGraphicPath>
 			<tags>

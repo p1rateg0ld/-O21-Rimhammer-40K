@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Necron  Research-->
+
+	<ResearchProjectTagDef>
+		<defName>GSCStart</defName>
+	</ResearchProjectTagDef>
+	
+	<ResearchProjectDef>
+		<tab>RH40K_Tab6</tab>
+		<defName>O21_GSC_Research</defName>
+		<label>Genestealer Cultist Research</label>
+		<description>Allows you to research Genestealer Cult subjects.</description>
+		<baseCost>100</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tags>
+			<li>GSCStart</li>
+		</tags>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+		
+</Defs>

@@ -376,6 +376,15 @@
 			<li>Euthanize</li>
 			<li>Anesthetize</li>
 		</recipes>
+		<modExtensions>
+			<li Class="O21Toolbox.AutoHeal.DefModExtension_AutoHealProps">
+				<healTicks>3000</healTicks>
+				<growthTicks>6000</growthTicks>
+				<growthText>Growth: </growthText>
+				<protoBodyPart>OrkProtoBodypart</protoBodyPart>
+				<curedBodyPart>OrkCuredBodypart</curedBodyPart>
+			</li>
+		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>
 	
 </Defs>

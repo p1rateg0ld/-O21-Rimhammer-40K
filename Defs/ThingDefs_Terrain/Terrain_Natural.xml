@@ -2,11 +2,150 @@
 <Defs>
 
 	<TerrainDef>
+		<defName>Blackstone_Rough</defName>
+		<label>rough blackstone</label>
+		<texturePath>Terrain/Surfaces/RoughStone</texturePath>
+		<color>(20,20,20)</color>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>189</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<acceptFilth>False</acceptFilth>
+		<fertility>0</fertility>
+		<takeFootprints>False</takeFootprints>
+		<smoothedTerrain>Blackstone_Smooth</smoothedTerrain>
+	</TerrainDef>
+
+	<TerrainDef>
+		<defName>Blackstone_RoughHewn</defName>
+		<label>rough hewn blackstone</label>
+		<texturePath>Terrain/Surfaces/RoughHewnRock</texturePath>
+		<color>(20,20,20)</color>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>49</renderPrecedence>
+		<pathCost>1</pathCost>
+		<statBases>
+			<Beauty>-1</Beauty>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>SmoothableStone</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>False</takeFootprints>
+		<smoothedTerrain>Blackstone_Smooth</smoothedTerrain>
+	</TerrainDef>
+
+	<TerrainDef>
+		<defName>Blackstone_Smooth</defName>
+		<label>smooth blackstone</label>
+		<texturePath>Terrain/Surfaces/SmoothStone</texturePath>
+		<color>(20,20,20)</color>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>49</renderPrecedence>
+		<pathCost>0</pathCost>
+		<statBases>
+			<Beauty>2</Beauty>
+			<MarketValue>8</MarketValue>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>False</takeFootprints>
+	</TerrainDef>
+
+	<TerrainDef>
+		<defName>NecronBlackSoil</defName>
+		<label>black soil</label>
+		<texturePath>Things/Terrain/Natural/BlackSoil</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>341</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>black dirt</label>
+				<capacities>
+				<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</TerrainDef>
+
+	<TerrainDef>
+		<defName>NecronBlackGravel</defName>
+		<label>black gravel</label>
+		<texturePath>Things/Terrain/Natural/BlackGravel</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.7</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>black gravel</label>
+				<capacities>
+				<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>GravelInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</TerrainDef>
+
+	<TerrainDef>
 		<defName>NecronBlackSand</defName>
 		<label>black sand</label>
 		<texturePath>Things/Terrain/Natural/BlackSand</texturePath>
 		<edgeType>FadeRough</edgeType>
-		<renderPrecedence>350</renderPrecedence>
+		<renderPrecedence>351</renderPrecedence>
 		<pathCost>4</pathCost>
 		<statBases>
 			<WorkToBuild>100</WorkToBuild>
@@ -33,13 +172,6 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
-		
-			<!-- Temporary Buildable Data -->
-			<designationCategory>Floors</designationCategory>
-			<costList />
-			<researchPrerequisites>
-				<li>O21_Nec_Research</li>
-			</researchPrerequisites>
 	</TerrainDef>
 
 </Defs>

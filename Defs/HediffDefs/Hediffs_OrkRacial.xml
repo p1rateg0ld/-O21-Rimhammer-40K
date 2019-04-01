@@ -18,7 +18,7 @@
 
 	<HediffDef>
 		<defName>OrkoidHealing</defName>
-		<hediffClass>Rimhammer40k.Orks.HediffOrkHealing</hediffClass>
+		<hediffClass>O21Toolbox.AutoHeal.Hediff_AutoHeal</hediffClass>
 		<label>Orkoid Healing</label>
 		<defaultLabelColor>(0.6,0.6,0.95)</defaultLabelColor>
 		<isBad>false</isBad>
@@ -34,7 +34,7 @@
 	<HediffDef>
 		<defName>OrkProtoBodypart</defName>
 		<label>regrowing</label>
-		<hediffClass>Rimhammer40k.Orks.HediffOrkGrowingPart</hediffClass>
+		<hediffClass>O21Toolbox.AutoHeal.Hediff_GrowingPart</hediffClass>
 		<defaultLabelColor>(0.59, 0.92, 0.69)</defaultLabelColor>
 		<isBad>false</isBad>
 		<addedPartProps>
@@ -71,7 +71,7 @@
 	<HediffDef>
 		<defName>OrkCuredBodypart</defName>
 		<label>cured bodypart</label>
-		<hediffClass>Rimhammer40k.RemovableHediff</hediffClass>
+		<hediffClass>O21Toolbox.Utility.RemovableHediff</hediffClass>
 		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
 		<isBad>false</isBad>
 		<initialSeverity>0.0</initialSeverity>

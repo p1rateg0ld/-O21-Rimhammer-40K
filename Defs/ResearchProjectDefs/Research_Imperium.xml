@@ -8,7 +8,7 @@
 	</ResearchProjectTagDef>
 	
 	<ResearchProjectDef>
-		<tab>RH40K_Tab</tab>
+		<tab>RH40K_Tab0</tab>
 		<defName>O21_Imp_Research</defName>
 		<label>Imperial Research</label>
 		<description>Allows you to research Imperial Guard subjects.</description>
@@ -22,7 +22,7 @@
 	</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_Refining</defName>
 				<label>Imperial Refining</label>
 				<description>Provides access to knowledge of standard Imperial refinement processes.</description>
@@ -37,7 +37,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_Ceramite01</defName>
 				<label>Mid-Grade Ceramite</label>
 				<description>Provides access to refinement of medium grade ceramite, using a mixture of ceramite and steel.</description>
@@ -52,7 +52,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_Ceramite02</defName>
 				<label>High-Grade Ceramite</label>
 				<description>Provides access to refinement of high grade ceramite, using a mixture of ceramite and plasteel.</description>
@@ -67,7 +67,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_Agriculture</defName>
 				<label>Imperial Agriculture</label>
 				<description>Provides access to knowledge of standard Imperial crops.</description>
@@ -82,7 +82,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_FoodDrink</defName>
 				<label>Imperial Food and Drink</label>
 				<description>Provides access to standard Imperial food and drink preperation.</description>
@@ -97,7 +97,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_OrbitalRequisition</defName>
 				<label>Orbital Requisition</label>
 				<description>Provides access to requisitions, what is available will rely on other research.</description>
@@ -114,7 +114,7 @@
 		<!-- IG Armour and Weapons -->
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_IGBasicWeapons</defName>
 				<label>IG Basic Weapons</label>
 				<description>Provides access to basic Imperial Guard Weapons.</description>
@@ -129,7 +129,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_IGHeavyWeapons</defName>
 				<label>IG Heavy Weapons</label>
 				<description>Provides access to heavy Imperial Guard Weapons.</description>
@@ -144,7 +144,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_IGAdvancedWeapons</defName>
 				<label>IG Advanced Weapons</label>
 				<description>Provides access to Advanced Imperial Guard Weapons.</description>
@@ -159,7 +159,7 @@
 			</ResearchProjectDef>
 		
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_IGBasicArmor</defName>
 				<label>IG Basic Armor</label>
 				<description>Provides access to basic Imperial Guard armor and uniforms.</description>
@@ -174,7 +174,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_IGHeavyArmor</defName>
 				<label>IG Heavy Armor</label>
 				<description>Provides access to heavy Imperial Guard armor.</description>
@@ -189,7 +189,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_IGAdvancedArmor</defName>
 				<label>IG Advanced Armor</label>
 				<description>Provides Access to advanced Imperial Guard equipment.</description>
@@ -206,7 +206,7 @@
 		<!-- SM Armour and Weapons -->
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_SMGeneSeed</defName>
 				<label>Gene-Seed Implantation</label>
 				<description>Provides access to the gene-seed implantation process for creating Astartes from humans.</description>
@@ -221,7 +221,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_SMPowerArmor</defName>
 				<label>SM Power Armor</label>
 				<description>Provides access to Space Marine power armor.</description>
@@ -236,7 +236,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_SMTerminatorArmor</defName>
 				<label>SM Terminator Armor</label>
 				<description>Provides access to Space Marine Terminator armor.</description>
@@ -251,7 +251,7 @@
 			</ResearchProjectDef>
 		
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_SMBasicWeapons</defName>
 				<label>SM Basic Weapons</label>
 				<description>Provides access to Space Marine basic weapons.</description>
@@ -266,7 +266,7 @@
 			</ResearchProjectDef>
 	
 			<!-- <ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_SMHeavyWeapons</defName>
 				<label>SM Heavy Weapons</label>
 				<description>Provides access to Space Marine heavy weapons.</description>
@@ -283,7 +283,7 @@
 		<!-- Turrets -->
 		
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_Construction</defName>
 				<label>IG Construction</label>
 				<description>Provides access to basic Imperial Guard construction and defences.</description>
@@ -298,7 +298,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_IGBasicTurrets</defName>
 				<label>IG Basic Turrets</label>
 				<description>Provides access to basic Imperial Guard turrets.</description>
@@ -313,7 +313,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_IGHeavyTurrets</defName>
 				<label>IG Heavy Turrets</label>
 				<description>Provides access to heavy Imperial Guard turrets.</description>
@@ -328,7 +328,7 @@
 			</ResearchProjectDef>
 	
 			<ResearchProjectDef>
-				<tab>RH40K_Tab</tab>
+				<tab>RH40K_Tab0</tab>
 				<defName>O21_Imp_IGPortableTurrets</defName>
 				<label>IG Portable Turrets</label>
 				<description>Provides access to portable Imperial Guard turrets.</description>

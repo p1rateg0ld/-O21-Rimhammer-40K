@@ -4,7 +4,7 @@
 	<ThingDef ParentName="O21_BuildingBase">
 		<defName>IGSabreProjector</defName>
 		<label>sabre projector</label>
-		<description>A projector mounted on a sabre turret chassis. Can automatically lock onto a nearby hostile. Can be built under roof.</description>
+		<description>A projector mounted on a sabre turret chassis. Can automatically lock onto a nearby hostile. Cannot be built under roof.</description>
 		<thingClass>Rimhammer40k.Projector.Building_MobileProjectorTower</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Security/IG/Sabre/IG_sabre_base</texPath>
