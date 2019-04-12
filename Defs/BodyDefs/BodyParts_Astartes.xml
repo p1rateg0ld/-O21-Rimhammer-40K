@@ -20,22 +20,34 @@
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_Ossmodula</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
-		<defName>Bidcopea</defName>
+		<defName>Biscopea</defName>
 		<label>biscopea</label>
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_Biscopea</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
 		<defName>LarramansOrgan</defName>
-		<label>Larraman's organ</label>
+		<label>larraman's organ</label>
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_LarramansOrgan</spawnThingOnRemoved>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>Haemastamen</defName>
+		<label>haemastamen</label>
+		<hitPoints>15</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_Haemastamen</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
@@ -44,6 +56,7 @@
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_CatelpseanNode</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
@@ -52,14 +65,16 @@
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_Preomnor</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
-		<defName>Omophadea</defName>
-		<label>omophadea</label>
+		<defName>Omophagea</defName>
+		<label>omophagea</label>
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_Omophagea</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
@@ -71,25 +86,28 @@
 		<tags>
 			<li>BreathingSource</li>
 		</tags>
+		<spawnThingOnRemoved>O21_MultiLung</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
 		<defName>Occulobe</defName>
-		<label>Occulobe</label>
+		<label>occulobe</label>
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
 		<tags>
 			<li>SightSource</li>
 		</tags>
+		<spawnThingOnRemoved>O21_Occulobe</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
 		<defName>SusanMembrane</defName>
-		<label>Sus-an Membrane</label>
+		<label>sus-an Membrane</label>
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_SusanMembrane</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
@@ -102,6 +120,7 @@
 			<li>BloodFiltrationLiver</li>
 			<li>BloodFiltrationKidney</li>
 		</tags>
+		<spawnThingOnRemoved>O21_OoliticKidney</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
@@ -110,6 +129,7 @@
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_Neuroglottis</spawnThingOnRemoved>
 	</BodyPartDef>
 	
 	<BodyPartDef>
@@ -118,14 +138,16 @@
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_Mucranoid</spawnThingOnRemoved>
 	</BodyPartDef>	
 	
 	<BodyPartDef>
 		<defName>BetchersGland</defName>
-		<label>Betcher's gland</label>
+		<label>betcher's gland</label>
 		<hitPoints>15</hitPoints>
 		<bleedRate>5</bleedRate>
 		<skinCovered>false</skinCovered>
+		<spawnThingOnRemoved>O21_BetchersGland</spawnThingOnRemoved>
 	</BodyPartDef>	
 	
 	<BodyPartDef>
@@ -133,6 +155,7 @@
 		<label>progenoid gland</label>
 		<hitPoints>30</hitPoints>
 		<skinCovered>false</skinCovered>
-	</BodyPartDef>	
+		<spawnThingOnRemoved>O21_Progenoid</spawnThingOnRemoved>
+	</BodyPartDef>
   
 </Defs>

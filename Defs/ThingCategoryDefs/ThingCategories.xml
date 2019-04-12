@@ -356,6 +356,20 @@
 			<label>Helmets</label>
 			<parent>GrotApparel</parent>
 		</ThingCategoryDef>
+
+		<!-- Orkoid Bits -->
+		
+		<ThingCategoryDef>
+			<defName>OrkoidBits</defName>
+			<label>Orkoid Bits</label>
+			<parent>BodyPartsNatural</parent>
+		</ThingCategoryDef>
+		
+		<ThingCategoryDef>
+			<defName>OrkyBits</defName>
+			<label>Orky Bits</label>
+			<parent>OrkoidBits</parent>
+		</ThingCategoryDef>
 	
 	<!-- Necron -->
 		

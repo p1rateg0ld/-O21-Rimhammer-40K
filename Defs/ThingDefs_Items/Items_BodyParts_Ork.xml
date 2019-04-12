@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="O21_Orkoid_BodyPartNaturalBase" ParentName="BodyPartBase"	Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemNatural</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>OrkyBits</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="O21_Orkoid_BodyPartNaturalBase">
+		<defName>O21_OrkoidHeart</defName>
+		<label>orkoid heart</label>
+		<description>A biological orkoid heart. Pumps blood around the body.</description>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="O21_Orkoid_BodyPartNaturalBase">
+		<defName>O21_OrkoidLung</defName>
+		<label>orkoid lung</label>
+		<description>A biological orkoid lung. A pair of these form the core of the human respiratory system.</description>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="O21_Orkoid_BodyPartNaturalBase">
+		<defName>O21_OrkoidKidney</defName>
+		<label>orkoid kidney</label>
+		<description>A biological orkoid kidney. Filters and removes waste products from the blood.</description>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="O21_Orkoid_BodyPartNaturalBase">
+		<defName>O21_OrkoidLiver</defName>
+		<label>orkoid liver</label>
+		<description>A biological orkoid liver. Plays an important role in metabolism.</description>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

@@ -250,13 +250,6 @@
 				<powerShortage>NecronGaussShortage</powerShortage>
 				<powerFailure>NecronGaussFailure</powerFailure>
 			</li>
-			<li Class="O21Toolbox.AutoHeal.DefModExtension_AutoHealProps">
-				<healTicks>1000</healTicks>
-				<growthTicks>200</growthTicks>
-				<growthText>Reassembly: </growthText>
-				<protoBodyPart>NecronProtoBodypart</protoBodyPart>
-				<curedBodyPart>NecronCuredBodypart</curedBodyPart>
-			</li>
 		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>
 

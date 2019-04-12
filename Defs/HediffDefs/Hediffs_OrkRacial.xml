@@ -29,6 +29,14 @@
 				<capMods />
 			</li>
 		</stages>
+		<modExtensions>
+			<li Class="O21Toolbox.AutoHeal.DefModExtension_AutoHealProps">
+				<healTicks>3000</healTicks>
+				<growthText>Growth: </growthText>
+				<protoBodyPart>OrkProtoBodypart</protoBodyPart>
+				<curedBodyPart>OrkCuredBodypart</curedBodyPart>
+			</li>
+		</modExtensions>
 	</HediffDef>
 	
 	<HediffDef>
@@ -38,7 +46,6 @@
 		<defaultLabelColor>(0.59, 0.92, 0.69)</defaultLabelColor>
 		<isBad>false</isBad>
 		<addedPartProps>
-			<!-- isSolid>true</isSolid -->
 			<partEfficiency>0.1</partEfficiency>
 		</addedPartProps>
 		<initialSeverity>0.0</initialSeverity>
@@ -66,6 +73,11 @@
 				<severityPerDayNotImmune>0.07</severityPerDayNotImmune> <!-- 0.07 is roughly a Quadrum (15 days) -->
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="O21Toolbox.AutoHeal.DefModExtension_AutoHealProps">
+				<autoHealHediff>OrkoidHealing</autoHealHediff>
+			</li>
+		</modExtensions>
 	</HediffDef>
 	
 	<HediffDef>

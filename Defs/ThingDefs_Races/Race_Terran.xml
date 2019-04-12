@@ -523,6 +523,23 @@
 				<li>OrganicAgeless</li>
 			</hediffGiverSets>
 		</race>
+		<recipes>
+			<li>O21_InstallSecondaryHeart</li>
+			<li>O21_InstallBetchersGland</li>
+			<li>O21_InstallMucranoid</li>
+			<li>O21_InstallNeuroglottis</li>
+			<li>O21_InstallOoliticKidney</li>
+			<li>O21_InstallSusanMembrane</li>
+			<li>O21_InstallOcculobe</li>
+			<li>O21_InstallMultiLung</li>
+			<li>O21_InstallOmophagea</li>
+			<li>O21_InstallPreomnor</li>
+			<li>O21_InstallCatelpseanNode</li>
+			<li>O21_InstallHaemastamen</li>
+			<li>O21_InstallLarramansOrgan</li>
+			<li>O21_InstallBiscopea</li>
+			<li>O21_InstallOssmodula</li>
+		</recipes>
 	</AlienRace.ThingDef_AlienRace>	
 	
 	<AlienRace.ThingDef_AlienRace ParentName="Alien_Astartes">

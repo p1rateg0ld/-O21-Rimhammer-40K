@@ -235,7 +235,7 @@
 
 		<modExtensions>
 			<li Class="O21Toolbox.PawnConverter.ConverterProperties">
-				<requiresPower>true</requiresPower>
+				<requiresPower>True</requiresPower>
 				<finishingSound>AstartesOvenDone</finishingSound>
 				<timerBarEnabled>True</timerBarEnabled>
 			</li>
