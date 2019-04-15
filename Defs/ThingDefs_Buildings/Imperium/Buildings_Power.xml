@@ -194,7 +194,6 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>6</heatPerSecond>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>0</explosiveRadius>
 				<explosiveExpandPerFuel>0.95</explosiveExpandPerFuel>
@@ -261,10 +260,9 @@
 			<li Class="CompProperties_Battery">
 				<storedEnergyMax>6000</storedEnergyMax>
 				<efficiency>0.5</efficiency>
-				<shortCircuitInRain>true</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 
 		<researchPrerequisites>
