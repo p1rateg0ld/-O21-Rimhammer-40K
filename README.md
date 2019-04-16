@@ -1,4 +1,4 @@
-# N17 Rimhammer 40K
+# [O21] Rimhammer 40K
 Warhammer 40K introduced to Rimworld in a vanilla style. See discussions for full feature list and compatibility.
 #
 
