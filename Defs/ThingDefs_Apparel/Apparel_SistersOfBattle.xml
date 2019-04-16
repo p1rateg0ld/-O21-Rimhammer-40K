@@ -67,6 +67,9 @@
             </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Imp_SMPowerArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
 
@@ -102,6 +105,9 @@
             </recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>O21_Imp_SMPowerArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 	</ThingDef>
 </Defs>
