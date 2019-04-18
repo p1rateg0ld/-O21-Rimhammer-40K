@@ -48,7 +48,7 @@ namespace Rimhammer40k.Necrons
         //Start Resurrection Loop
         public void ResurrectNecron()
         {
-            IsResurrectable = true;
+            this.IsResurrectable = true;
         }
 
         public void TickRare()
